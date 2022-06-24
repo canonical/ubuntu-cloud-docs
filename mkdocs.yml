@@ -1,0 +1,11 @@
+site_name: Ubuntu Cloud Documentations
+repo_url: https://github.com/canonical/ubuntu-cloud-docs
+site_dir: public
+use_directory_urls: false
+theme:
+  name: material
+strict: true
+site_url: "https://canonical.github.io/ubuntu-cloud-docs"
+plugins:
+  - search:
+      separator: '[^\w]+'
