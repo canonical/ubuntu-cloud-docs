@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://canonical.github.io/ubuntu-cloud-docs/index.html</loc>
+         <lastmod>2022-06-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://canonical.github.io/ubuntu-cloud-docs/explanations/index.html</loc>
+         <lastmod>2022-06-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://canonical.github.io/ubuntu-cloud-docs/how_tos/index.html</loc>
+         <lastmod>2022-06-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://canonical.github.io/ubuntu-cloud-docs/reference/index.html</loc>
+         <lastmod>2022-06-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://canonical.github.io/ubuntu-cloud-docs/tutorials/index.html</loc>
+         <lastmod>2022-06-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+</urlset>
