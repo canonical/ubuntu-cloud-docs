@@ -86,6 +86,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://canonical.github.io/ubuntu-cloud-docs/how_tos/Azure/Install_Azure_CLI.html</loc>
+         <lastmod>2022-07-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://canonical.github.io/ubuntu-cloud-docs/how_tos/Canonical-Downloads/index.html</loc>
          <lastmod>2022-07-01</lastmod>
          <changefreq>daily</changefreq>
