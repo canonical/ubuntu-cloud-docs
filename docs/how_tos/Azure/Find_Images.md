@@ -8,6 +8,8 @@ To learn more about LTS versions of Ubuntu read [this article](https://ubuntu.co
 
 #### Ubuntu 22.04 LTS - Jammy Jellyfish
 
+Quick Start: [portal.azure.com](https://portal.azure.com/#create/canonical.0001-com-ubuntu-server-jammy22_04-lts-ARM)
+
 | **Kind**                                                     | **URN**                                                      |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | Architecture: **AMD64**<br />Hyper-V Generation: **Gen1**<br /> | `Canonical:0001-com-ubuntu-server-jammy:22_04-lts:latest`    |
@@ -16,6 +18,8 @@ To learn more about LTS versions of Ubuntu read [this article](https://ubuntu.co
 
 #### Ubuntu 20.04 LTS - Focal Fossa
 
+Quick Start: [portal.azure.com](https://portal.azure.com/#create/canonical.0001-com-ubuntu-server-focal20_04-lts-ARM)
+
 | **Kind**                                                     | **URN**                                                      |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | Architecture: **AMD64**<br />Hyper-V Generation: **Gen1**<br /> | `Canonical:0001-com-ubuntu-server-focal:20_04-lts:latest`    |
@@ -23,6 +27,8 @@ To learn more about LTS versions of Ubuntu read [this article](https://ubuntu.co
 | Architecture: **Arm64**<br />Hyper-V Generation: **Gen2**<br /> | `Canonical:0001-com-ubuntu-server-focal:20_04-lts-arm64:latest` |
 
 #### Ubuntu 18.04 LTS - Bionic Beaver
+
+Quick Start: [portal.azure.com](https://portal.azure.com/#create/Canonical.UbuntuServer1804LTS-ARM)
 
 | **Kind**                                                     | **URN**                                         |
 | ------------------------------------------------------------ | ----------------------------------------------- |
@@ -36,6 +42,8 @@ To learn more about Ubuntu Pro on Azure: [Ubuntu Pro for Azure](https://ubuntu.c
 
 #### Ubuntu Pro 22.04 LTS - Jammy Jellyfish
 
+Quick Start: [portal.azure.com](https://portal.azure.com/#create/canonical.0001-com-ubuntu-pro-jammypro-22_04-lts)
+
 | **Kind**                                                     | **URN**                                                      |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | Architecture: **AMD64**<br />Hyper-V Generation: **Gen1**<br /> | `Canonical:0001-com-ubuntu-pro-jammy:pro-22_04-lts:latest`   |
@@ -43,12 +51,16 @@ To learn more about Ubuntu Pro on Azure: [Ubuntu Pro for Azure](https://ubuntu.c
 
 #### Ubuntu Pro 20.04 LTS - Focal Fossa
 
+Quick Start: [portal.azure.com](https://portal.azure.com/#create/canonical.0001-com-ubuntu-pro-focalpro-20_04-lts)
+
 | **Kind**                                                     | **URN**                                                      |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | Architecture: **AMD64**<br />Hyper-V Generation: **Gen1**<br /> | `Canonical:0001-com-ubuntu-pro-focal:pro-20_04-lts:latest`   |
 | Architecture: **AMD64**<br />Hyper-V Generation: **Gen2**<br /> | `Canonical:0001-com-ubuntu-pro-focal:pro-20_04-lts-gen2:latest` |
 
 #### Ubuntu Pro 18.04 LTS - Bionic Beaver
+
+Quick Start: [portal.azure.com](https://portal.azure.com/#create/canonical.0001-com-ubuntu-pro-bionicpro-18_04-lts)
 
 | **Kind**                                                     | **URN**                                                      |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
@@ -61,6 +73,8 @@ To learn more about Confidential Compute: [Azure confidential computing](https:/
 
 #### Ubuntu CVM 20.04 LTS - Focal Fossa
 
+Quick Start: [portal.azure.com](https://portal.azure.com/#create/canonical.0001-com-ubuntu-confidential-vm-focal20_04-lts-cvm)
+
 | **Kind**                                                     | **URN**                                                      |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | Architecture: **AMD64**<br />Hyper-V Generation: **Gen2**<br /> | `Canonical:0001-com-ubuntu-confidential-vm-focal:20_04-lts-cvm:latest` |
@@ -71,12 +85,16 @@ To learn more about FIPS: [FIPS for Ubuntu](https://ubuntu.com/security/certific
 
 #### Ubuntu Pro FIPS 20.04 LTS - Bionic Beaver
 
+Quick Start: [portal.azure.com](https://portal.azure.com/#create/canonical.0001-com-ubuntu-pro-focal-fipspro-fips-20_04)
+
 | **Kind**                                                     | **URN**                                                      |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | Architecture: **AMD64**<br />Hyper-V Generation: **Gen1**<br /> | `Canonical:0001-com-ubuntu-pro-focal-fips:pro-fips-20_04:latest` |
 | Architecture: **AMD64**<br />Hyper-V Generation: **Gen2**<br /> | `Canonical:0001-com-ubuntu-pro-focal-fips:pro-fips-20_04-gen2:latest` |
 
 #### Ubuntu Pro FIPS 18.04 LTS - Bionic Beaver
+
+Quick Start: [portal.azure.com](https://portal.azure.com/#create/canonical.0001-com-ubuntu-pro-bionic-fipspro-fips-18_04)
 
 | **Kind**                                                     | **URN**                                                      |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
@@ -88,6 +106,8 @@ To learn more about FIPS: [FIPS for Ubuntu](https://ubuntu.com/security/certific
 To learn more about CIS compliance: [CIS compliance with Ubuntu LTS](https://ubuntu.com/security/certifications/docs/cis)
 
 #### Ubuntu Minimal Pro CIS 20.04 LTS - Bionic Beaver
+
+Quick Start: [portal.azure.com](https://portal.azure.com/#create/canonical.0001-com-ubuntu-pro-minimal-cis-focalpro-cis-minimal-20_04)
 
 | **Kind**                                                     | **URN**                                                      |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |

@@ -1,0 +1,49 @@
+# Install Azure CLI on Ubuntu
+
+This documentation is based on the [official Azure documentation](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-linux?pivots=apt#option-2-step-by-step-installation-instructions).
+
+Install a few pre-requisites:
+
+```bash
+sudo apt-get update
+sudo apt-get install ca-certificates curl apt-transport-https lsb-release gnupg
+```
+
+Download the key for the Microsoft archive:
+
+```bash
+curl -sL https://packages.microsoft.com/keys/microsoft.asc |
+    gpg --dearmor |
+        sudo tee /etc/apt/trusted.gpg.d/microsoft.gpg > /dev/null
+```
+
+Add the repository to the sources list:
+
+```bash
+SUITE=$(lsb_release -cs)
+echo "deb [arch=amd64] https://packages.microsoft.com/repos/azure-cli/ $SUITE main" |
+    sudo tee /etc/apt/sources.list.d/microsoft.list
+```
+
+Pin a few rules to only allow the Azure CLI to be fetch from Microsoft's archive:
+
+```bash
+cat << EOF | sudo tee /etc/apt/preferences.d/99-microsoft
+# Never prefer packages from the Microsoft repository
+Package: *
+Pin: origin https://packages.microsoft.com/repos/azure-cli
+Pin-Priority: 1
+
+# ...except if it is the Azure CLI
+Package: azure-cli
+Pin: origin https://packages.microsoft.com/repos/azure-cli
+Pin-Priority: 500
+EOF
+```
+
+Finally, install the CLI:
+
+```bash
+sudo apt-get update && \
+     sudo apt-get install -y azure-cli
+```
