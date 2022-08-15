@@ -8,18 +8,18 @@
       
       
       
-        <link rel="canonical" href="https://canonical.github.io/ubuntu-cloud-docs/explanations/Azure/index.html">
+        <link rel="canonical" href="https://canonical.github.io/ubuntu-cloud-docs/explanations/Azure/Focal_To_Jammy_Upgrade.html">
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.8">
+      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.4.0">
     
     
       
-        <title>Index - Ubuntu Cloud Documentations</title>
+        <title>Upgrading from Focal to Jammy on Azure - Ubuntu Cloud Documentations</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.1d29e8d0.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.69437709.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.cbb835fc.min.css">
@@ -38,7 +38,7 @@
       
     
     
-    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -60,6 +60,11 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#upgrading-from-focal-to-jammy-on-azure" class="md-skip">
+          Skip to content
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -90,7 +95,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Index
+              Upgrading from Focal to Jammy on Azure
             
           </span>
         </div>
@@ -137,7 +142,7 @@
         <a href="https://github.com/canonical/ubuntu-cloud-docs" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
     GitHub
@@ -182,7 +187,7 @@
       <a href="https://github.com/canonical/ubuntu-cloud-docs" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
     GitHub
@@ -418,10 +423,112 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
       
+        
       
-      <a href="index.html" class="md-nav__link md-nav__link--active">
-        Index
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Upgrading from Focal to Jammy on Azure
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="Focal_To_Jammy_Upgrade.html" class="md-nav__link md-nav__link--active">
+        Upgrading from Focal to Jammy on Azure
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#general-advice" class="md-nav__link">
+    General Advice
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#manual-upgrade-steps" class="md-nav__link">
+    Manual upgrade steps
+  </a>
+  
+    <nav class="md-nav" aria-label="Manual upgrade steps">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#additional-ssh-daemon" class="md-nav__link">
+    Additional SSH daemon
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#optional-firewall-rules-for-additional-ssh-daemon" class="md-nav__link">
+    Optional firewall rules for additional SSH daemon
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#start-upgrade" class="md-nav__link">
+    Start upgrade
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#restart-services-automatically" class="md-nav__link">
+    Restart services automatically
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chrony-configuration-modified" class="md-nav__link">
+    Chrony configuration modified
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sshd-configuration-modified" class="md-nav__link">
+    SSHD configuration modified
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remove-obsolete-packages" class="md-nav__link">
+    Remove obsolete packages
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#restart-to-finish-upgrade" class="md-nav__link">
+    Restart to finish upgrade
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -2642,6 +2749,92 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#general-advice" class="md-nav__link">
+    General Advice
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#manual-upgrade-steps" class="md-nav__link">
+    Manual upgrade steps
+  </a>
+  
+    <nav class="md-nav" aria-label="Manual upgrade steps">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#additional-ssh-daemon" class="md-nav__link">
+    Additional SSH daemon
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#optional-firewall-rules-for-additional-ssh-daemon" class="md-nav__link">
+    Optional firewall rules for additional SSH daemon
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#start-upgrade" class="md-nav__link">
+    Start upgrade
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#restart-services-automatically" class="md-nav__link">
+    Restart services automatically
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chrony-configuration-modified" class="md-nav__link">
+    Chrony configuration modified
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sshd-configuration-modified" class="md-nav__link">
+    SSHD configuration modified
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remove-obsolete-packages" class="md-nav__link">
+    Remove obsolete packages
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#restart-to-finish-upgrade" class="md-nav__link">
+    Restart to finish upgrade
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -2653,13 +2846,44 @@
             <article class="md-content__inner md-typeset">
               
                 
-  <a href="https://github.com/canonical/ubuntu-cloud-docs/edit/main/docs/explanations/Azure/index.md" title="Edit this page" class="md-content__button md-icon">
+  <a href="https://github.com/canonical/ubuntu-cloud-docs/edit/main/docs/explanations/Azure/Focal_To_Jammy_Upgrade.md" title="Edit this page" class="md-content__button md-icon">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
   </a>
 
 
 
-  <h1>Index</h1>
+<h1 id="upgrading-from-focal-to-jammy-on-azure">Upgrading from Focal to Jammy on Azure</h1>
+<h2 id="general-advice">General Advice</h2>
+<p>When deciding how to upgrade the main consideration is whether your system can be setup/deployed with automation or requires manual configuration.</p>
+<p>Running <a href="https://manpages.ubuntu.com/manpages/focal/man8/do-release-upgrade.8.html"><code>do-release-upgrade</code></a> requires some manual intervention (<a href="#manual-upgrade-steps">see Manual upgrade steps</a>), which makes it a good option for systems which require manual configuration and cannot be easily created or destroyed.</p>
+<p>For system deployments which are fully automated it is recommended to redeploy with new Jammy instances instead of upgrading from Focal.</p>
+<h2 id="manual-upgrade-steps">Manual upgrade steps</h2>
+<p>If you are upgrading from Focal to Jammy you can expect to run into the following prompts requesting manual input.</p>
+<h3 id="additional-ssh-daemon">Additional SSH daemon</h3>
+<p>When upgrading in a session over SSH there is an inherent risk of losing access if something goes wrong with the SSH daemon. To mitigate this risk an additional SSH daemon is started on a different port as a backup.
+<img alt="A warning regarding the risk of upgrading in a session over SSH. The prompt is notifying the user that an additional SSH daemon will be started to mitigate the risk. The user is prompted whether they would like to continue or cancel the upgrade." src="/docs/explanations/Azure/Focal_To_Jammy_Upgrade_Images/0_additional_ssh_daemon.png" /></p>
+<h3 id="optional-firewall-rules-for-additional-ssh-daemon">Optional firewall rules for additional SSH daemon</h3>
+<p>If you are using a firewall there is a chance the port used by the backup SSHD is not open. Opening this port is not done automatically since it could be security risk.
+<img alt="An informational warning that the port used by the backup SSH daemon could be blocked if you are using a firewall. Opening the port is not done automatically due to security risks. An optional command to open the port is provided. The user is prompted to press enter to continue" src="/docs/explanations/Azure/Focal_To_Jammy_Upgrade_Images/1_firewall_for_additional_ssh.png" /></p>
+<h3 id="start-upgrade">Start upgrade</h3>
+<p>A final prompt before starting the upgrade. Information regarding the amount of changes and estimated time are provided because once you start the upgrade process it cannot be cancelled.
+<img alt="A prompt asking if the user would like to start the upgrade process. Some information is provided regarding the amount of changes and estimated time to complete. The user is prompted to continue, cancel or see additional details." src="/docs/explanations/Azure/Focal_To_Jammy_Upgrade_Images/2_start_upgrade.png" /></p>
+<h3 id="restart-services-automatically">Restart services automatically</h3>
+<p>Some services need to be restarted when certain libraries are upgraded. The user has the option to allow the system to automatically restart these services or to be asked after every library upgrade which services they want to be restarted.
+<img alt="A prompt asking the user if they would like services to be restarted automatically during package upgrades. If no is selected there will be prompts later for which services to restart on each library upgrade." src="/docs/explanations/Azure/Focal_To_Jammy_Upgrade_Images/3_restart_services.png" /></p>
+<h3 id="chrony-configuration-modified">Chrony configuration modified</h3>
+<p>Canonical makes changes to <code>/etc/chrony/chrony.conf</code> for Azure images. As a result when upgrading there will be a prompt asking whether to keep this version, use the default in the newer version or take some other action.
+<img alt="A prompt notifying the user that there is a newer version available of the chrony.conf file. Options include keeping the local version, using the default and a couple other actions." src="/docs/explanations/Azure/Focal_To_Jammy_Upgrade_Images/4_chrony_modified_config.png" /></p>
+<h3 id="sshd-configuration-modified">SSHD configuration modified</h3>
+<p>Canonical makes changes to <code>/etc/ssh/sshd_config</code> for Azure images. As a result when upgrading there will be a prompt asking whether to keep this version, use the default in the newer version or take some other action.
+<img alt="A prompt notifying the user that there is a newer version available of the sshd_config file. Options include keeping the local version, using the default and a couple other actions." src="/docs/explanations/Azure/Focal_To_Jammy_Upgrade_Images/5_sshd_modified_config.png" /></p>
+<h3 id="remove-obsolete-packages">Remove obsolete packages</h3>
+<p>An obsolete package is a package which is no longer available in any of the sources for Apt. Usually it is safe and recommended to remove obsolete packages but you can verify which packages would be removed before doing so.
+<img alt="A prompt asking the user if they wish to remove obsolete packages. There are options for yes, no and more details." src="/docs/explanations/Azure/Focal_To_Jammy_Upgrade_Images/6_remove_obsolete.png" /></p>
+<h3 id="restart-to-finish-upgrade">Restart to finish upgrade</h3>
+<p>A restart will be necessary for some parts of the upgrade to be applied. If you select no to the restart you can check <code>/var/run/reboot-required.pkgs</code> to see which things need a reboot to be applied.
+<img alt="A prompt asking the user to restart the system because it is required to complete the upgrade." src="/docs/explanations/Azure/Focal_To_Jammy_Upgrade_Images/7_finish_upgrade.png" /></p>
+
 
 
 
@@ -2729,10 +2953,11 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.ecf98df9.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.0238f547.min.js"></script>
+      <script src="../../assets/javascripts/bundle.9c69f0bc.min.js"></script>
       
     
   </body>
