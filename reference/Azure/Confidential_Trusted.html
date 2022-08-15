@@ -8,14 +8,14 @@
       
       
       
-        <link rel="canonical" href="https://canonical.github.io/ubuntu-cloud-docs/reference/Azure/index.html">
+        <link rel="canonical" href="https://canonical.github.io/ubuntu-cloud-docs/reference/Azure/Confidential_Trusted.html">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.4.0">
     
     
       
-        <title>Index - Ubuntu Cloud Documentations</title>
+        <title>Trusted Launch and Confidential VM - Ubuntu Cloud Documentations</title>
       
     
     
@@ -61,6 +61,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#trusted-launch-and-confidential-vm" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -90,7 +95,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Index
+              Trusted Launch and Confidential VM
             
           </span>
         </div>
@@ -1628,10 +1633,70 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
       
+        
       
-      <a href="index.html" class="md-nav__link md-nav__link--active">
-        Index
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Trusted Launch and Confidential VM
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="Confidential_Trusted.html" class="md-nav__link md-nav__link--active">
+        Trusted Launch and Confidential VM
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#trusted-launch" class="md-nav__link">
+    Trusted Launch
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#confidential-vm" class="md-nav__link">
+    Confidential VM
+  </a>
+  
+    <nav class="md-nav" aria-label="Confidential VM">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#use-confidential-vm-on-ubuntu" class="md-nav__link">
+    Use Confidential VM on Ubuntu
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-is-it" class="md-nav__link">
+    What is it?
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -2642,6 +2707,50 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#trusted-launch" class="md-nav__link">
+    Trusted Launch
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#confidential-vm" class="md-nav__link">
+    Confidential VM
+  </a>
+  
+    <nav class="md-nav" aria-label="Confidential VM">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#use-confidential-vm-on-ubuntu" class="md-nav__link">
+    Use Confidential VM on Ubuntu
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-is-it" class="md-nav__link">
+    What is it?
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -2653,15 +2762,35 @@
             <article class="md-content__inner md-typeset">
               
                 
-  <a href="https://github.com/canonical/ubuntu-cloud-docs/edit/main/docs/reference/Azure/index.md" title="Edit this page" class="md-content__button md-icon">
+  <a href="https://github.com/canonical/ubuntu-cloud-docs/edit/main/docs/reference/Azure/Confidential_Trusted.md" title="Edit this page" class="md-content__button md-icon">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
   </a>
 
 
 
-  <h1>Index</h1>
-
-
+<h1 id="trusted-launch-and-confidential-vm">Trusted Launch and Confidential VM</h1>
+<p>Azure provides two <em>security types</em>:</p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/azure/virtual-machines/trusted-launch">Trusted Launch</a> which is a set of features including vTPM and <a href="https://wiki.ubuntu.com/UEFI/SecureBoot">Secure Boot</a></li>
+<li><a href="https://docs.microsoft.com/en-us/azure/confidential-computing/confidential-vm-overview">Confidential VM</a> with support for <a href="https://www.amd.com/system/files/TechDocs/SEV-SNP-strengthening-vm-isolation-with-integrity-protection-and-more.pdf">AMD SEV-SNP</a>, along with <a href="https://docs.microsoft.com/en-us/azure/security/fundamentals/measured-boot-host-attestation">measured boot</a> using a vTPM</li>
+</ul>
+<h2 id="trusted-launch">Trusted Launch</h2>
+<p>All Ubuntu images from 20.04 (Focal Fossa) support Trusted Launch and secure boot on Hyper-V Gen2 instances. One can start an instance of Ubuntu with secure boot enabled and a vTPM with the Azure CLI by using the following flags: <code>--security-type TrustedLaunch --enable-secure-boot true --enable-vtpm</code>.</p>
+<h2 id="confidential-vm">Confidential VM</h2>
+<h3 id="use-confidential-vm-on-ubuntu">Use Confidential VM on Ubuntu</h3>
+<p>Confidential VM require the use a special instance sizes and a special version of Ubuntu.</p>
+<ul>
+<li>the list of instance sizes that can be used with Confidential VM can be found in <a href="https://docs.microsoft.com/en-us/azure/confidential-computing/confidential-vm-overview">Azure's documentation</a></li>
+<li>only <a href="https://azuremarketplace.microsoft.com/en-gb/marketplace/apps/canonical.0001-com-ubuntu-confidential-vm-focal">this specific offer of Ubuntu</a> supports Confidential VM</li>
+</ul>
+<h3 id="what-is-it">What is it?</h3>
+<p>See <a href="https://canonical.com/blog/lets-get-confidential-canonical-ubuntu-confidential-vms-are-now-generally-available-on-microsoft-azure">our techincal blog post about Confidential VM</a>.</p>
+<p>In short, Confidential VM is the combination of two features:</p>
+<ul>
+<li>Memory encryption: the memory of the virtual machine is encrypted and decrypted on the fly by the CPU. This is done using AMD SEV-SNP technology. This ensures that the host machine cannot read the memory of the guest since the encryption is done at the hardware level</li>
+<li>(v)TPM backed Full-disk encryption (FDE): not only the file system of the guest OS is encrypted at rest but the keys are stored in an enclave and cannot be retrieved unless the boot process stayed untouched since the key was sealed. Re-sealing happen when a new kernel is installed as replacing the kernel binary changes the boot sequence. The vTPM is part of the guest VM and its address space. As such, it benefits from the same run-time security guarantees as the guest VM memory.</li>
+</ul>
+<p>It's important to note that memory encryption is always enabled with Confidential VM, but FDE is optional and require explicit activation on VM provisioning.</p>
 
 
 
