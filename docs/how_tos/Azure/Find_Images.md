@@ -83,7 +83,7 @@ Quick Start: [portal.azure.com](https://portal.azure.com/#create/canonical.0001-
 
 To learn more about FIPS: [FIPS for Ubuntu](https://ubuntu.com/security/certifications/docs/fips)
 
-#### Ubuntu Pro FIPS 20.04 LTS - Bionic Beaver
+#### Ubuntu Pro FIPS 20.04 LTS - Focal Fossa
 
 Quick Start: [portal.azure.com](https://portal.azure.com/#create/canonical.0001-com-ubuntu-pro-focal-fipspro-fips-20_04)
 
@@ -105,7 +105,7 @@ Quick Start: [portal.azure.com](https://portal.azure.com/#create/canonical.0001-
 
 To learn more about CIS compliance: [CIS compliance with Ubuntu LTS](https://ubuntu.com/security/certifications/docs/cis)
 
-#### Ubuntu Minimal Pro CIS 20.04 LTS - Bionic Beaver
+#### Ubuntu Minimal Pro CIS 20.04 LTS - Focal Fossa
 
 Quick Start: [portal.azure.com](https://portal.azure.com/#create/canonical.0001-com-ubuntu-pro-minimal-cis-focalpro-cis-minimal-20_04)
 
