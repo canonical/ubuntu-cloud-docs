@@ -10,3 +10,9 @@ site_url: "https://canonical.github.io/ubuntu-cloud-docs"
 plugins:
   - search:
       separator: '[^\w]+'
+markdown_extensions:
+  - abbr
+  - attr_list
+  - pymdownx.snippets:
+      auto_append:
+        - includes/abbreviations.md
