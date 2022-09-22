@@ -2,257 +2,262 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://canonical.github.io/ubuntu-cloud-docs/index.html</loc>
-         <lastmod>2022-08-29</lastmod>
+         <lastmod>2022-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://canonical.github.io/ubuntu-cloud-docs/explanations/AWS/index.html</loc>
-         <lastmod>2022-08-29</lastmod>
+         <lastmod>2022-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://canonical.github.io/ubuntu-cloud-docs/explanations/AWS/EC2/index.html</loc>
-         <lastmod>2022-08-29</lastmod>
+         <lastmod>2022-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://canonical.github.io/ubuntu-cloud-docs/explanations/AWS/EKS/index.html</loc>
-         <lastmod>2022-08-29</lastmod>
+         <lastmod>2022-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://canonical.github.io/ubuntu-cloud-docs/explanations/Azure/Focal_To_Jammy_Upgrade.html</loc>
-         <lastmod>2022-08-29</lastmod>
+         <lastmod>2022-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://canonical.github.io/ubuntu-cloud-docs/explanations/Canonical-Downloads/index.html</loc>
-         <lastmod>2022-08-29</lastmod>
+         <lastmod>2022-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://canonical.github.io/ubuntu-cloud-docs/explanations/Google/index.html</loc>
-         <lastmod>2022-08-29</lastmod>
+         <lastmod>2022-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://canonical.github.io/ubuntu-cloud-docs/explanations/Google/GCE/index.html</loc>
-         <lastmod>2022-08-29</lastmod>
+         <lastmod>2022-09-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://canonical.github.io/ubuntu-cloud-docs/explanations/Google/GCE/Focal_To_Jammy_Upgrade.html</loc>
+         <lastmod>2022-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://canonical.github.io/ubuntu-cloud-docs/explanations/Google/GKE/index.html</loc>
-         <lastmod>2022-08-29</lastmod>
+         <lastmod>2022-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://canonical.github.io/ubuntu-cloud-docs/explanations/IBM/index.html</loc>
-         <lastmod>2022-08-29</lastmod>
+         <lastmod>2022-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://canonical.github.io/ubuntu-cloud-docs/explanations/IBM/IBM-Classic/index.html</loc>
-         <lastmod>2022-08-29</lastmod>
+         <lastmod>2022-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://canonical.github.io/ubuntu-cloud-docs/explanations/IBM/IBM-VPC/index.html</loc>
-         <lastmod>2022-08-29</lastmod>
+         <lastmod>2022-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://canonical.github.io/ubuntu-cloud-docs/explanations/Oracle/index.html</loc>
-         <lastmod>2022-08-29</lastmod>
+         <lastmod>2022-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://canonical.github.io/ubuntu-cloud-docs/explanations/Oracle/Focal_To_Jammy_Upgrade.html</loc>
-         <lastmod>2022-08-29</lastmod>
+         <lastmod>2022-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://canonical.github.io/ubuntu-cloud-docs/how_tos/AWS/index.html</loc>
-         <lastmod>2022-08-29</lastmod>
+         <lastmod>2022-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://canonical.github.io/ubuntu-cloud-docs/how_tos/AWS/EC2/index.html</loc>
-         <lastmod>2022-08-29</lastmod>
+         <lastmod>2022-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://canonical.github.io/ubuntu-cloud-docs/how_tos/AWS/EKS/index.html</loc>
-         <lastmod>2022-08-29</lastmod>
+         <lastmod>2022-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://canonical.github.io/ubuntu-cloud-docs/how_tos/Azure/Find_Images.html</loc>
-         <lastmod>2022-08-29</lastmod>
+         <lastmod>2022-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://canonical.github.io/ubuntu-cloud-docs/how_tos/Azure/Install_Azure_CLI.html</loc>
-         <lastmod>2022-08-29</lastmod>
+         <lastmod>2022-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://canonical.github.io/ubuntu-cloud-docs/how_tos/Canonical-Downloads/index.html</loc>
-         <lastmod>2022-08-29</lastmod>
+         <lastmod>2022-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://canonical.github.io/ubuntu-cloud-docs/how_tos/Google/index.html</loc>
-         <lastmod>2022-08-29</lastmod>
+         <lastmod>2022-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://canonical.github.io/ubuntu-cloud-docs/how_tos/Google/GCE/index.html</loc>
-         <lastmod>2022-08-29</lastmod>
+         <lastmod>2022-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://canonical.github.io/ubuntu-cloud-docs/how_tos/Google/GKE/index.html</loc>
-         <lastmod>2022-08-29</lastmod>
+         <lastmod>2022-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://canonical.github.io/ubuntu-cloud-docs/how_tos/IBM/index.html</loc>
-         <lastmod>2022-08-29</lastmod>
+         <lastmod>2022-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://canonical.github.io/ubuntu-cloud-docs/how_tos/IBM/IBM-Classic/index.html</loc>
-         <lastmod>2022-08-29</lastmod>
+         <lastmod>2022-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://canonical.github.io/ubuntu-cloud-docs/how_tos/IBM/IBM-VPC/index.html</loc>
-         <lastmod>2022-08-29</lastmod>
+         <lastmod>2022-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://canonical.github.io/ubuntu-cloud-docs/how_tos/Oracle/index.html</loc>
-         <lastmod>2022-08-29</lastmod>
+         <lastmod>2022-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://canonical.github.io/ubuntu-cloud-docs/reference/AWS/index.html</loc>
-         <lastmod>2022-08-29</lastmod>
+         <lastmod>2022-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://canonical.github.io/ubuntu-cloud-docs/reference/AWS/EC2/index.html</loc>
-         <lastmod>2022-08-29</lastmod>
+         <lastmod>2022-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://canonical.github.io/ubuntu-cloud-docs/reference/AWS/EKS/index.html</loc>
-         <lastmod>2022-08-29</lastmod>
+         <lastmod>2022-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://canonical.github.io/ubuntu-cloud-docs/reference/Azure/Confidential_Trusted.html</loc>
-         <lastmod>2022-08-29</lastmod>
+         <lastmod>2022-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://canonical.github.io/ubuntu-cloud-docs/reference/Canonical-Downloads/index.html</loc>
-         <lastmod>2022-08-29</lastmod>
+         <lastmod>2022-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://canonical.github.io/ubuntu-cloud-docs/reference/Google/index.html</loc>
-         <lastmod>2022-08-29</lastmod>
+         <lastmod>2022-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://canonical.github.io/ubuntu-cloud-docs/reference/Google/GCE/index.html</loc>
-         <lastmod>2022-08-29</lastmod>
+         <lastmod>2022-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://canonical.github.io/ubuntu-cloud-docs/reference/Google/GKE/index.html</loc>
-         <lastmod>2022-08-29</lastmod>
+         <lastmod>2022-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://canonical.github.io/ubuntu-cloud-docs/reference/IBM/index.html</loc>
-         <lastmod>2022-08-29</lastmod>
+         <lastmod>2022-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://canonical.github.io/ubuntu-cloud-docs/reference/IBM/IBM-Classic/index.html</loc>
-         <lastmod>2022-08-29</lastmod>
+         <lastmod>2022-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://canonical.github.io/ubuntu-cloud-docs/reference/IBM/IBM-VPC/index.html</loc>
-         <lastmod>2022-08-29</lastmod>
+         <lastmod>2022-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://canonical.github.io/ubuntu-cloud-docs/reference/Oracle/index.html</loc>
-         <lastmod>2022-08-29</lastmod>
+         <lastmod>2022-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://canonical.github.io/ubuntu-cloud-docs/tutorials/AWS/index.html</loc>
-         <lastmod>2022-08-29</lastmod>
+         <lastmod>2022-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://canonical.github.io/ubuntu-cloud-docs/tutorials/AWS/EC2/index.html</loc>
-         <lastmod>2022-08-29</lastmod>
+         <lastmod>2022-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://canonical.github.io/ubuntu-cloud-docs/tutorials/AWS/EKS/index.html</loc>
-         <lastmod>2022-08-29</lastmod>
+         <lastmod>2022-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://canonical.github.io/ubuntu-cloud-docs/tutorials/Azure/index.html</loc>
-         <lastmod>2022-08-29</lastmod>
+         <lastmod>2022-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://canonical.github.io/ubuntu-cloud-docs/tutorials/Canonical-Downloads/index.html</loc>
-         <lastmod>2022-08-29</lastmod>
+         <lastmod>2022-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://canonical.github.io/ubuntu-cloud-docs/tutorials/Google/index.html</loc>
-         <lastmod>2022-08-29</lastmod>
+         <lastmod>2022-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://canonical.github.io/ubuntu-cloud-docs/tutorials/Google/GCE/index.html</loc>
-         <lastmod>2022-08-29</lastmod>
+         <lastmod>2022-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://canonical.github.io/ubuntu-cloud-docs/tutorials/Google/GKE/index.html</loc>
-         <lastmod>2022-08-29</lastmod>
+         <lastmod>2022-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://canonical.github.io/ubuntu-cloud-docs/tutorials/IBM/index.html</loc>
-         <lastmod>2022-08-29</lastmod>
+         <lastmod>2022-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://canonical.github.io/ubuntu-cloud-docs/tutorials/IBM/IBM-Classic/index.html</loc>
-         <lastmod>2022-08-29</lastmod>
+         <lastmod>2022-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://canonical.github.io/ubuntu-cloud-docs/tutorials/IBM/IBM-VPC/index.html</loc>
-         <lastmod>2022-08-29</lastmod>
+         <lastmod>2022-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://canonical.github.io/ubuntu-cloud-docs/tutorials/Oracle/index.html</loc>
-         <lastmod>2022-08-29</lastmod>
+         <lastmod>2022-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
