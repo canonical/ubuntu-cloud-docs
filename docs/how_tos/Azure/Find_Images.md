@@ -36,6 +36,20 @@ Quick Start: [portal.azure.com](https://portal.azure.com/#create/Canonical.Ubunt
 | Architecture: **AMD64**<br />Hyper-V Generation: **Gen2**<br /> | `Canonical:UbuntuServer:18_04-lts-gen2:latest`  |
 | Architecture: **Arm64**<br />Hyper-V Generation: **Gen2**<br /> | `Canonical:UbuntuServer:18_04-lts-arm64:latest` |
 
+### Interim releases
+
+To learn more about the difference between LTS releases and interim releases, see [this page](https://ubuntu.com/about/release-cycle#ubuntu).
+
+#### Ubuntu 22.10 - Kinetic Kudu
+
+Quick Start: [portal.azure.com](https://portal.azure.com/#create/canonical.0001-com-ubuntu-server-kinetic22_10-ARM)
+
+| **Kind**                                                        | **URN**                                                           |
+| ------------------------------------------------------------    | ------------------------------------------------------------      |
+| Architecture: **AMD64**<br />Hyper-V Generation: **Gen1**<br /> | `Canonical:0001-com-ubuntu-server-kinetic:22_10:latest`       |
+| Architecture: **AMD64**<br />Hyper-V Generation: **Gen2**<br /> | `Canonical:0001-com-ubuntu-server-kinetic:22_10-gen2:latest`  |
+| Architecture: **Arm64**<br />Hyper-V Generation: **Gen2**<br /> | `Canonical:0001-com-ubuntu-server-kinetic:22_10-arm64:latest` |
+
 ### Ubuntu Pro Offers
 
 To learn more about Ubuntu Pro on Azure: [Ubuntu Pro for Azure](https://ubuntu.com/azure/pro)
