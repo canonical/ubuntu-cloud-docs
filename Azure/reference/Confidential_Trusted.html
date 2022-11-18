@@ -8,21 +8,21 @@
       
       
       
-        <link rel="canonical" href="https://canonical.github.io/ubuntu-cloud-docs/index.html">
+        <link rel="canonical" href="https://canonical.github.io/ubuntu-cloud-docs/Azure/reference/Confidential_Trusted.html">
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.5.10">
     
     
       
-        <title>Ubuntu Cloud Documentations</title>
+        <title>Trusted Launch and Confidential VM - Ubuntu Cloud Documentations</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.472b142f.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.472b142f.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.08040f6c.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.08040f6c.min.css">
         
       
       
@@ -39,7 +39,7 @@
       
     
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#welcome" class="md-skip">
+        <a href="#trusted-launch-and-confidential-vm" class="md-skip">
           Skip to content
         </a>
       
@@ -78,7 +78,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="index.html" title="Ubuntu Cloud Documentations" class="md-header__button md-logo" aria-label="Ubuntu Cloud Documentations" data-md-component="logo">
+    <a href="../../index.html" title="Ubuntu Cloud Documentations" class="md-header__button md-logo" aria-label="Ubuntu Cloud Documentations" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -97,7 +97,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              WELCOME
+              Trusted Launch and Confidential VM
             
           </span>
         </div>
@@ -176,7 +176,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="index.html" title="Ubuntu Cloud Documentations" class="md-nav__button md-logo" aria-label="Ubuntu Cloud Documentations" data-md-component="logo">
+    <a href="../../index.html" title="Ubuntu Cloud Documentations" class="md-nav__button md-logo" aria-label="Ubuntu Cloud Documentations" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -205,21 +205,11 @@
 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="index.html" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../index.html" class="md-nav__link">
         WELCOME
       </a>
-      
     </li>
   
 
@@ -281,7 +271,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="AWS/EC2/index.html">EC2</a>
+          <a href="../../AWS/EC2/index.html">EC2</a>
           
         </div>
       
@@ -324,7 +314,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="AWS/EKS/index.html">EKS</a>
+          <a href="../../AWS/EKS/index.html">EKS</a>
           
         </div>
       
@@ -356,12 +346,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
       
       
       
@@ -381,7 +373,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="Azure/index.html">Azure</a>
+          <a href="../index.html">Azure</a>
           
             <label for="__nav_3">
               <span class="md-nav__icon md-icon"></span>
@@ -434,7 +426,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Azure/explanations/Focal_To_Jammy_Upgrade.html" class="md-nav__link">
+      <a href="../explanations/Focal_To_Jammy_Upgrade.html" class="md-nav__link">
         Upgrading from Focal to Jammy on Azure
       </a>
     </li>
@@ -487,7 +479,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Azure/how_tos/Find_Images.html" class="md-nav__link">
+      <a href="../how_tos/Find_Images.html" class="md-nav__link">
         Find Ubuntu images on Azure
       </a>
     </li>
@@ -501,7 +493,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Azure/how_tos/Install_Azure_CLI.html" class="md-nav__link">
+      <a href="../how_tos/Install_Azure_CLI.html" class="md-nav__link">
         Install Azure CLI on Ubuntu
       </a>
     </li>
@@ -520,12 +512,14 @@
               
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_4" type="checkbox" id="__nav_3_4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_4" type="checkbox" id="__nav_3_4" checked>
       
       
       
@@ -550,11 +544,79 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="Azure/reference/Confidential_Trusted.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Trusted Launch and Confidential VM
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="Confidential_Trusted.html" class="md-nav__link md-nav__link--active">
         Trusted Launch and Confidential VM
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#trusted-launch" class="md-nav__link">
+    Trusted Launch
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#confidential-vm" class="md-nav__link">
+    Confidential VM
+  </a>
+  
+    <nav class="md-nav" aria-label="Confidential VM">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#use-confidential-vm-on-ubuntu" class="md-nav__link">
+    Use Confidential VM on Ubuntu
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-is-it" class="md-nav__link">
+    What is it?
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -598,7 +660,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="Canonical-Downloads/index.html">Canonical Downloads</a>
+          <a href="../../Canonical-Downloads/index.html">Canonical Downloads</a>
           
         </div>
       
@@ -676,7 +738,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="Google/GCE/index.html">GCE</a>
+          <a href="../../Google/GCE/index.html">GCE</a>
           
             <label for="__nav_5_1">
               <span class="md-nav__icon md-icon"></span>
@@ -718,7 +780,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="Google/GCE/explanations/index.html">Explanations</a>
+          <a href="../../Google/GCE/explanations/index.html">Explanations</a>
           
             <label for="__nav_5_1_2">
               <span class="md-nav__icon md-icon"></span>
@@ -741,7 +803,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Google/GCE/explanations/Focal_To_Jammy_Upgrade.html" class="md-nav__link">
+      <a href="../../Google/GCE/explanations/Focal_To_Jammy_Upgrade.html" class="md-nav__link">
         Upgrading from Focal Fossa to Jammy Jellyfish on GCE
       </a>
     </li>
@@ -786,7 +848,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="Google/GKE/index.html">GKE</a>
+          <a href="../../Google/GKE/index.html">GKE</a>
           
         </div>
       
@@ -869,7 +931,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="IBM/IBM-Classic/index.html">IBM Classic</a>
+          <a href="../../IBM/IBM-Classic/index.html">IBM Classic</a>
           
         </div>
       
@@ -912,7 +974,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="IBM/IBM-VPC/index.html">IBM VPC</a>
+          <a href="../../IBM/IBM-VPC/index.html">IBM VPC</a>
           
         </div>
       
@@ -965,7 +1027,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="Oracle/index.html">Oracle</a>
+          <a href="../../Oracle/index.html">Oracle</a>
           
             <label for="__nav_7">
               <span class="md-nav__icon md-icon"></span>
@@ -1018,7 +1080,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Oracle/explanations/Focal_To_Jammy_Upgrade.html" class="md-nav__link">
+      <a href="../../Oracle/explanations/Focal_To_Jammy_Upgrade.html" class="md-nav__link">
         Upgrading from Focal to Jammy on Oracle
       </a>
     </li>
@@ -1064,7 +1126,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="general/index.html">General</a>
+          <a href="../../general/index.html">General</a>
           
         </div>
       
@@ -1103,6 +1165,48 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#trusted-launch" class="md-nav__link">
+    Trusted Launch
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#confidential-vm" class="md-nav__link">
+    Confidential VM
+  </a>
+  
+    <nav class="md-nav" aria-label="Confidential VM">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#use-confidential-vm-on-ubuntu" class="md-nav__link">
+    Use Confidential VM on Ubuntu
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-is-it" class="md-nav__link">
+    What is it?
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1115,23 +1219,35 @@
                 
                   
 
-  <a href="https://github.com/canonical/ubuntu-cloud-docs/edit/main/docs/index.md" title="Edit this page" class="md-content__button md-icon">
+  <a href="https://github.com/canonical/ubuntu-cloud-docs/edit/main/docs/Azure/reference/Confidential_Trusted.md" title="Edit this page" class="md-content__button md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
   </a>
 
 
-<h1 id="welcome">WELCOME</h1>
-<p>Welcome to the Canonical Public Clouds Documentation. This site contains documentation related to Canonical offerings in the major clouds, as supported by the Canonical Public Cloud team. This includes information about supported Ubuntu versions and Canonical specific offerings.</p>
-<p>This site is laid out following <a href="https://diataxis.fr/">Diataxis</a>. The cloud directories are placed at the highest level. Under clouds (AWS, Azure, Google, Oracle, IBM, Canonical-Downloads) are products (EC2, EKS, GCE, GKE, etc.) and under products are the for documentations categories. Documentation is found at a corresponding level. Thus</p>
+<h1 id="trusted-launch-and-confidential-vm">Trusted Launch and Confidential VM</h1>
+<p>Azure provides two <em>security types</em>:</p>
 <ul>
-<li>a reference describing AWS EKS is in AWS/EKS/reference</li>
-<li>a reference describing Canonical's general work on AWS is in AWS/reference</li>
-<li>a reference that describes something common to all clouds is in general/reference</li>
-<li>explanation of how to use the site is here, at the top level.</li>
+<li><a href="https://docs.microsoft.com/en-us/azure/virtual-machines/trusted-launch">Trusted Launch</a> which is a set of features including vTPM and <a href="https://wiki.ubuntu.com/UEFI/SecureBoot">Secure Boot</a></li>
+<li><a href="https://docs.microsoft.com/en-us/azure/confidential-computing/confidential-vm-overview">Confidential VM</a> with support for <a href="https://www.amd.com/system/files/TechDocs/SEV-SNP-strengthening-vm-isolation-with-integrity-protection-and-more.pdf">AMD SEV-SNP</a>, along with <a href="https://docs.microsoft.com/en-us/azure/security/fundamentals/measured-boot-host-attestation">measured boot</a> using a vTPM</li>
 </ul>
-<h1 id="contribution">Contribution</h1>
-<p>If you would like to contribute to this site, please visit see our <a href="https://github.com/canonical/ubuntu-cloud-docs">Github</a>. Pull requests and issues are welcome!</p>
+<h2 id="trusted-launch">Trusted Launch</h2>
+<p>All Ubuntu images from 20.04 (Focal Fossa) support Trusted Launch and secure boot on Hyper-V Gen2 instances. One can start an instance of Ubuntu with secure boot enabled and a vTPM with the Azure CLI by using the following flags: <code>--security-type TrustedLaunch --enable-secure-boot true --enable-vtpm</code>.</p>
+<h2 id="confidential-vm">Confidential VM</h2>
+<h3 id="use-confidential-vm-on-ubuntu">Use Confidential VM on Ubuntu</h3>
+<p>Confidential VM require the use a special instance sizes and a special version of Ubuntu.</p>
+<ul>
+<li>the list of instance sizes that can be used with Confidential VM can be found in <a href="https://docs.microsoft.com/en-us/azure/confidential-computing/confidential-vm-overview">Azure's documentation</a></li>
+<li>only <a href="https://azuremarketplace.microsoft.com/en-gb/marketplace/apps/canonical.0001-com-ubuntu-confidential-vm-focal">this specific offer of Ubuntu</a> supports Confidential VM</li>
+</ul>
+<h3 id="what-is-it">What is it?</h3>
+<p>See <a href="https://canonical.com/blog/lets-get-confidential-canonical-ubuntu-confidential-vms-are-now-generally-available-on-microsoft-azure">our techincal blog post about Confidential VM</a>.</p>
+<p>In short, Confidential VM is the combination of two features:</p>
+<ul>
+<li>Memory encryption: the memory of the virtual machine is encrypted and decrypted on the fly by the CPU. This is done using AMD SEV-SNP technology. This ensures that the host machine cannot read the memory of the guest since the encryption is done at the hardware level</li>
+<li>(v)TPM backed Full-disk encryption (FDE): not only the file system of the guest OS is encrypted at rest but the keys are stored in an enclave and cannot be retrieved unless the boot process stayed untouched since the key was sealed. Re-sealing happen when a new kernel is installed as replacing the kernel binary changes the boot sequence. The vTPM is part of the guest VM and its address space. As such, it benefits from the same run-time security guarantees as the guest VM memory.</li>
+</ul>
+<p>It's important to note that memory encryption is always enabled with Confidential VM, but FDE is optional and require explicit activation on VM provisioning.</p>
 
 
 
@@ -1151,15 +1267,30 @@
     
     <nav class="md-footer__inner md-grid" aria-label="Footer" >
       
+        
+        <a href="../how_tos/Install_Azure_CLI.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: Install Azure CLI on Ubuntu" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Install Azure CLI on Ubuntu
+            </div>
+          </div>
+        </a>
+      
       
         
-        <a href="AWS/EC2/index.html" class="md-footer__link md-footer__link--next" aria-label="Next: EC2" rel="next">
+        <a href="../../Canonical-Downloads/index.html" class="md-footer__link md-footer__link--next" aria-label="Next: Canonical-Downloads" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              EC2
+              Canonical-Downloads
             </div>
           </div>
           <div class="md-footer__button md-icon">
@@ -1190,10 +1321,10 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.indexes"], "search": "assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.indexes"], "search": "../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="assets/javascripts/bundle.d6c3db9e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.d6c3db9e.min.js"></script>
       
     
   </body>
