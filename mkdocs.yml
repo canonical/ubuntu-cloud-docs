@@ -5,6 +5,8 @@ site_dir: public
 use_directory_urls: false
 theme:
   name: material
+  features:
+    - navigation.indexes
 strict: true
 site_url: "https://canonical.github.io/ubuntu-cloud-docs"
 plugins:
