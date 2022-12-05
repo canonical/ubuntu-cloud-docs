@@ -2,92 +2,97 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://canonical.github.io/ubuntu-cloud-docs/index.html</loc>
-         <lastmod>2022-11-18</lastmod>
+         <lastmod>2022-12-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://canonical.github.io/ubuntu-cloud-docs/AWS/EC2/index.html</loc>
-         <lastmod>2022-11-18</lastmod>
+         <lastmod>2022-12-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://canonical.github.io/ubuntu-cloud-docs/AWS/EC2/explanations/Focal_To_Jammy_Upgrade.html</loc>
+         <lastmod>2022-12-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://canonical.github.io/ubuntu-cloud-docs/AWS/EKS/index.html</loc>
-         <lastmod>2022-11-18</lastmod>
+         <lastmod>2022-12-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://canonical.github.io/ubuntu-cloud-docs/Azure/index.html</loc>
-         <lastmod>2022-11-18</lastmod>
+         <lastmod>2022-12-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://canonical.github.io/ubuntu-cloud-docs/Azure/explanations/Focal_To_Jammy_Upgrade.html</loc>
-         <lastmod>2022-11-18</lastmod>
+         <lastmod>2022-12-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://canonical.github.io/ubuntu-cloud-docs/Azure/how_tos/Find_Images.html</loc>
-         <lastmod>2022-11-18</lastmod>
+         <lastmod>2022-12-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://canonical.github.io/ubuntu-cloud-docs/Azure/how_tos/Install_Azure_CLI.html</loc>
-         <lastmod>2022-11-18</lastmod>
+         <lastmod>2022-12-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://canonical.github.io/ubuntu-cloud-docs/Azure/reference/Confidential_Trusted.html</loc>
-         <lastmod>2022-11-18</lastmod>
+         <lastmod>2022-12-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://canonical.github.io/ubuntu-cloud-docs/Canonical-Downloads/index.html</loc>
-         <lastmod>2022-11-18</lastmod>
+         <lastmod>2022-12-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://canonical.github.io/ubuntu-cloud-docs/Google/GCE/index.html</loc>
-         <lastmod>2022-11-18</lastmod>
+         <lastmod>2022-12-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://canonical.github.io/ubuntu-cloud-docs/Google/GCE/explanations/index.html</loc>
-         <lastmod>2022-11-18</lastmod>
+         <lastmod>2022-12-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://canonical.github.io/ubuntu-cloud-docs/Google/GCE/explanations/Focal_To_Jammy_Upgrade.html</loc>
-         <lastmod>2022-11-18</lastmod>
+         <lastmod>2022-12-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://canonical.github.io/ubuntu-cloud-docs/Google/GKE/index.html</loc>
-         <lastmod>2022-11-18</lastmod>
+         <lastmod>2022-12-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://canonical.github.io/ubuntu-cloud-docs/IBM/IBM-Classic/index.html</loc>
-         <lastmod>2022-11-18</lastmod>
+         <lastmod>2022-12-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://canonical.github.io/ubuntu-cloud-docs/IBM/IBM-VPC/index.html</loc>
-         <lastmod>2022-11-18</lastmod>
+         <lastmod>2022-12-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://canonical.github.io/ubuntu-cloud-docs/Oracle/index.html</loc>
-         <lastmod>2022-11-18</lastmod>
+         <lastmod>2022-12-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://canonical.github.io/ubuntu-cloud-docs/Oracle/explanations/Focal_To_Jammy_Upgrade.html</loc>
-         <lastmod>2022-11-18</lastmod>
+         <lastmod>2022-12-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://canonical.github.io/ubuntu-cloud-docs/general/index.html</loc>
-         <lastmod>2022-11-18</lastmod>
+         <lastmod>2022-12-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
