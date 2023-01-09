@@ -8,27 +8,27 @@
       
       
       
-        <link rel="canonical" href="https://canonical.github.io/ubuntu-cloud-docs/Azure/how_tos/Install_Azure_CLI.html">
+        <link rel="canonical" href="https://canonical.github.io/ubuntu-cloud-docs/AWS/EKS/reference/deletion-policy.html">
       
       
-        <link rel="prev" href="Find_Images.html">
+        <link rel="prev" href="../index.html">
       
       
-        <link rel="next" href="../reference/Confidential_Trusted.html">
+        <link rel="next" href="../../../Azure/index.html">
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.3">
     
     
       
-        <title>Install Azure CLI on Ubuntu - Ubuntu Cloud Documentations</title>
+        <title>EKS image deletion policy - Ubuntu Cloud Documentations</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.6b71719e.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.6b71719e.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.2505c338.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.2505c338.min.css">
       
       
 
@@ -44,7 +44,7 @@
       
     
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -69,7 +69,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#install-azure-cli-on-ubuntu" class="md-skip">
+        <a href="#eks-image-deletion-policy" class="md-skip">
           Skip to content
         </a>
       
@@ -83,7 +83,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../index.html" title="Ubuntu Cloud Documentations" class="md-header__button md-logo" aria-label="Ubuntu Cloud Documentations" data-md-component="logo">
+    <a href="../../../index.html" title="Ubuntu Cloud Documentations" class="md-header__button md-logo" aria-label="Ubuntu Cloud Documentations" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -102,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Install Azure CLI on Ubuntu
+              EKS image deletion policy
             
           </span>
         </div>
@@ -181,7 +181,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../index.html" title="Ubuntu Cloud Documentations" class="md-nav__button md-logo" aria-label="Ubuntu Cloud Documentations" data-md-component="logo">
+    <a href="../../../index.html" title="Ubuntu Cloud Documentations" class="md-nav__button md-logo" aria-label="Ubuntu Cloud Documentations" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -212,7 +212,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../index.html" class="md-nav__link">
+      <a href="../../../index.html" class="md-nav__link">
         WELCOME
       </a>
     </li>
@@ -225,14 +225,16 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
       
       
         
@@ -242,7 +244,7 @@
         
       
       
-        <label class="md-nav__link" for="__nav_2" tabindex="0" aria-expanded="false">
+        <label class="md-nav__link" for="__nav_2" tabindex="0" aria-expanded="true">
           AWS
           <span class="md-nav__icon md-icon"></span>
         </label>
@@ -280,7 +282,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../AWS/EC2/index.html">EC2</a>
+          <a href="../../EC2/index.html">EC2</a>
           
             <label for="__nav_2_1">
               <span class="md-nav__icon md-icon"></span>
@@ -334,7 +336,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../AWS/EC2/explanations/Focal_To_Jammy_Upgrade.html" class="md-nav__link">
+      <a href="../../EC2/explanations/Focal_To_Jammy_Upgrade.html" class="md-nav__link">
         Upgrading from Focal to Jammy on AWS EC2
       </a>
     </li>
@@ -360,14 +362,16 @@
               
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2_2" type="checkbox" id="__nav_2_2" >
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2_2" type="checkbox" id="__nav_2_2" checked>
       
       
         
@@ -382,7 +386,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../AWS/EKS/index.html">EKS</a>
+          <a href="../index.html">EKS</a>
           
             <label for="__nav_2_2">
               <span class="md-nav__icon md-icon"></span>
@@ -403,14 +407,16 @@
               
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2_2_2" type="checkbox" id="__nav_2_2_2" >
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2_2_2" type="checkbox" id="__nav_2_2_2" checked>
       
       
         
@@ -418,7 +424,7 @@
         
       
       
-        <label class="md-nav__link" for="__nav_2_2_2" tabindex="0" aria-expanded="false">
+        <label class="md-nav__link" for="__nav_2_2_2" tabindex="0" aria-expanded="true">
           Reference
           <span class="md-nav__icon md-icon"></span>
         </label>
@@ -434,11 +440,52 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../AWS/EKS/reference/deletion-policy.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          EKS image deletion policy
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="deletion-policy.html" class="md-nav__link md-nav__link--active">
         EKS image deletion policy
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -470,16 +517,14 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
       
       
         
@@ -498,7 +543,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../index.html">Azure</a>
+          <a href="../../../Azure/index.html">Azure</a>
           
             <label for="__nav_3">
               <span class="md-nav__icon md-icon"></span>
@@ -552,7 +597,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../explanations/Focal_To_Jammy_Upgrade.html" class="md-nav__link">
+      <a href="../../../Azure/explanations/Focal_To_Jammy_Upgrade.html" class="md-nav__link">
         Upgrading from Focal to Jammy on Azure
       </a>
     </li>
@@ -571,16 +616,14 @@
               
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_3_3" type="checkbox" id="__nav_3_3" checked>
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_3_3" type="checkbox" id="__nav_3_3" >
       
       
         
@@ -590,7 +633,7 @@
         
       
       
-        <label class="md-nav__link" for="__nav_3_3" tabindex="0" aria-expanded="true">
+        <label class="md-nav__link" for="__nav_3_3" tabindex="0" aria-expanded="false">
           How tos
           <span class="md-nav__icon md-icon"></span>
         </label>
@@ -608,7 +651,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Find_Images.html" class="md-nav__link">
+      <a href="../../../Azure/how_tos/Find_Images.html" class="md-nav__link">
         Find Ubuntu images on Azure
       </a>
     </li>
@@ -620,21 +663,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="Install_Azure_CLI.html" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../Azure/how_tos/Install_Azure_CLI.html" class="md-nav__link">
         Install Azure CLI on Ubuntu
       </a>
-      
     </li>
   
 
@@ -684,7 +717,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../reference/Confidential_Trusted.html" class="md-nav__link">
+      <a href="../../../Azure/reference/Confidential_Trusted.html" class="md-nav__link">
         Trusted Launch and Confidential VM
       </a>
     </li>
@@ -731,7 +764,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../Canonical-Downloads/index.html">Canonical Downloads</a>
+          <a href="../../../Canonical-Downloads/index.html">Canonical Downloads</a>
           
         </div>
       
@@ -811,7 +844,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../Google/GCE/index.html">GCE</a>
+          <a href="../../../Google/GCE/index.html">GCE</a>
           
             <label for="__nav_5_1">
               <span class="md-nav__icon md-icon"></span>
@@ -854,7 +887,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../Google/GCE/explanations/index.html">Explanations</a>
+          <a href="../../../Google/GCE/explanations/index.html">Explanations</a>
           
             <label for="__nav_5_1_2">
               <span class="md-nav__icon md-icon"></span>
@@ -877,7 +910,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Google/GCE/explanations/Focal_To_Jammy_Upgrade.html" class="md-nav__link">
+      <a href="../../../Google/GCE/explanations/Focal_To_Jammy_Upgrade.html" class="md-nav__link">
         Upgrading from Focal Fossa to Jammy Jellyfish on GCE
       </a>
     </li>
@@ -923,7 +956,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../Google/GKE/index.html">GKE</a>
+          <a href="../../../Google/GKE/index.html">GKE</a>
           
         </div>
       
@@ -1008,7 +1041,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../IBM/IBM-Classic/index.html">IBM Classic</a>
+          <a href="../../../IBM/IBM-Classic/index.html">IBM Classic</a>
           
         </div>
       
@@ -1052,7 +1085,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../IBM/IBM-VPC/index.html">IBM VPC</a>
+          <a href="../../../IBM/IBM-VPC/index.html">IBM VPC</a>
           
         </div>
       
@@ -1106,7 +1139,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../Oracle/index.html">Oracle</a>
+          <a href="../../../Oracle/index.html">Oracle</a>
           
             <label for="__nav_7">
               <span class="md-nav__icon md-icon"></span>
@@ -1160,7 +1193,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Oracle/explanations/Focal_To_Jammy_Upgrade.html" class="md-nav__link">
+      <a href="../../../Oracle/explanations/Focal_To_Jammy_Upgrade.html" class="md-nav__link">
         Upgrading from Focal to Jammy on Oracle
       </a>
     </li>
@@ -1207,7 +1240,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../general/index.html">General</a>
+          <a href="../../../general/index.html">General</a>
           
         </div>
       
@@ -1246,6 +1279,21 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1263,39 +1311,23 @@
 
 
 
-<h1 id="install-azure-cli-on-ubuntu">Install Azure CLI on Ubuntu</h1>
-<p>This documentation is based on the <a href="https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-linux?pivots=apt#option-2-step-by-step-installation-instructions">official Azure documentation</a>.</p>
-<p>Install a few pre-requisites:</p>
-<pre><code class="language-bash">sudo apt-get update
-sudo apt-get install ca-certificates curl apt-transport-https lsb-release gnupg
+<h1 id="eks-image-deletion-policy">EKS image deletion policy</h1>
+<p>There are multiple EKS images for every EKS version (eg. 1.23, 1.24, ...). When a EKS version
+is no longer <a href="https://docs.aws.amazon.com/eks/latest/userguide/kubernetes-versions.html">supported by AWS</a>,
+all the images except the latest released one for that unsupported EKS version will be deleted on the Canonical AWS account.</p>
+<h2 id="example">Example</h2>
+<p>Let's assume there are currently these images under the Canonical AWS account:</p>
+<pre><code>ubuntu-eks/k8s_1.24/images/hvm-ssd/ubuntu-focal-20.04-arm64-server-20221214
+ubuntu-eks/k8s_1.24/images/hvm-ssd/ubuntu-focal-20.04-arm64-server-20221206.1
+ubuntu-eks/k8s_1.23/images/hvm-ssd/ubuntu-focal-20.04-arm64-server-20221214
+ubuntu-eks/k8s_1.23/images/hvm-ssd/ubuntu-focal-20.04-arm64-server-20221011
+ubuntu-eks/k8s_1.23/images/hvm-ssd/ubuntu-focal-20.04-arm64-server-20220822.2
 </code></pre>
-<p>Download the key for the Microsoft archive:</p>
-<pre><code class="language-bash">curl -sL https://packages.microsoft.com/keys/microsoft.asc |
-    gpg --dearmor |
-        sudo tee /etc/apt/trusted.gpg.d/microsoft.gpg &gt; /dev/null
+<p>Now EKS 1.23 is no longer supported. That would result in deleting the following 2 images:</p>
+<pre><code>ubuntu-eks/k8s_1.23/images/hvm-ssd/ubuntu-focal-20.04-arm64-server-20221011
+ubuntu-eks/k8s_1.23/images/hvm-ssd/ubuntu-focal-20.04-arm64-server-20220822.2
 </code></pre>
-<p>Add the repository to the sources list:</p>
-<pre><code class="language-bash">SUITE=$(lsb_release -cs)
-echo &quot;deb [arch=amd64] https://packages.microsoft.com/repos/azure-cli/ $SUITE main&quot; |
-    sudo tee /etc/apt/sources.list.d/microsoft.list
-</code></pre>
-<p>Pin a few rules to only allow the Azure CLI to be fetch from Microsoft's archive:</p>
-<pre><code class="language-bash">cat &lt;&lt; EOF | sudo tee /etc/apt/preferences.d/99-microsoft
-# Never prefer packages from the Microsoft repository
-Package: *
-Pin: origin https://packages.microsoft.com/repos/azure-cli
-Pin-Priority: 1
-
-# ...except if it is the Azure CLI
-Package: azure-cli
-Pin: origin https://packages.microsoft.com/repos/azure-cli
-Pin-Priority: 500
-EOF
-</code></pre>
-<p>Finally, install the CLI:</p>
-<pre><code class="language-bash">sudo apt-get update &amp;&amp; \
-     sudo apt-get install -y azure-cli
-</code></pre>
+<p>but the single latest image <code>ubuntu-eks/k8s_1.23/images/hvm-ssd/ubuntu-focal-20.04-arm64-server-20221214</code> would still be there.</p>
 
 
 
@@ -1333,10 +1365,10 @@ EOF
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.indexes"], "search": "../../assets/javascripts/workers/search.e5c33ebb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.indexes"], "search": "../../../assets/javascripts/workers/search.e5c33ebb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.ba449ae6.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.ba449ae6.min.js"></script>
       
     
   </body>
