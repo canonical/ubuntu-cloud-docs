@@ -1,4 +1,4 @@
-# EKS image deletion policy
+# EKS image retention policy
 
 There are multiple EKS images for every EKS version (eg. 1.23, 1.24, ...). When a EKS version
 is no longer [supported by AWS](https://docs.aws.amazon.com/eks/latest/userguide/kubernetes-versions.html),
