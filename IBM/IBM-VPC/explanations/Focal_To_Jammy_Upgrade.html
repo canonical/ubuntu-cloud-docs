@@ -8,27 +8,27 @@
       
       
       
-        <link rel="canonical" href="https://canonical.github.io/ubuntu-cloud-docs/AWS/EKS/index.html">
+        <link rel="canonical" href="https://canonical.github.io/ubuntu-cloud-docs/IBM/IBM-VPC/explanations/Focal_To_Jammy_Upgrade.html">
       
       
-        <link rel="prev" href="../EC2/explanations/Focal_To_Jammy_Upgrade.html">
+        <link rel="prev" href="../index.html">
       
       
-        <link rel="next" href="reference/retention-policy.html">
+        <link rel="next" href="../../../Oracle/index.html">
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.11">
     
     
       
-        <title>EKS - Ubuntu Cloud Documentations</title>
+        <title>Upgrading from Focal to Jammy on IBM VPC - Ubuntu Cloud Documentations</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.0d440cfe.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.0d440cfe.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.2505c338.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.2505c338.min.css">
       
       
 
@@ -44,7 +44,7 @@
       
     
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -69,7 +69,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#eks" class="md-skip">
+        <a href="#upgrading-from-focal-to-jammy-on-ibm-vpc" class="md-skip">
           Skip to content
         </a>
       
@@ -83,7 +83,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../index.html" title="Ubuntu Cloud Documentations" class="md-header__button md-logo" aria-label="Ubuntu Cloud Documentations" data-md-component="logo">
+    <a href="../../../index.html" title="Ubuntu Cloud Documentations" class="md-header__button md-logo" aria-label="Ubuntu Cloud Documentations" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -102,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              EKS
+              Upgrading from Focal to Jammy on IBM VPC
             
           </span>
         </div>
@@ -181,7 +181,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../index.html" title="Ubuntu Cloud Documentations" class="md-nav__button md-logo" aria-label="Ubuntu Cloud Documentations" data-md-component="logo">
+    <a href="../../../index.html" title="Ubuntu Cloud Documentations" class="md-nav__button md-logo" aria-label="Ubuntu Cloud Documentations" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -212,7 +212,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../index.html" class="md-nav__link">
+      <a href="../../../index.html" class="md-nav__link">
         WELCOME
       </a>
     </li>
@@ -225,16 +225,14 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
       
       
         
@@ -249,7 +247,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_2">
           <span class="md-nav__icon md-icon"></span>
           AWS
@@ -282,7 +280,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../EC2/index.html">EC2</a>
+          <a href="../../../AWS/EC2/index.html">EC2</a>
           
             <label for="__nav_2_1">
               <span class="md-nav__icon md-icon"></span>
@@ -336,7 +334,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../EC2/explanations/Focal_To_Jammy_Upgrade.html" class="md-nav__link">
+      <a href="../../../AWS/EC2/explanations/Focal_To_Jammy_Upgrade.html" class="md-nav__link">
         Upgrading from Focal to Jammy on AWS EC2
       </a>
     </li>
@@ -362,16 +360,14 @@
               
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
       
       
         
@@ -385,8 +381,8 @@
       
         
         
-        <div class="md-nav__link md-nav__link--index md-nav__link--active">
-          <a href="index.html">EKS</a>
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../AWS/EKS/index.html">EKS</a>
           
             <label for="__nav_2_2">
               <span class="md-nav__icon md-icon"></span>
@@ -394,7 +390,7 @@
           
         </div>
       
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_2_2">
           <span class="md-nav__icon md-icon"></span>
           EKS
@@ -440,7 +436,7 @@
   
   
     <li class="md-nav__item">
-      <a href="reference/retention-policy.html" class="md-nav__link">
+      <a href="../../../AWS/EKS/reference/retention-policy.html" class="md-nav__link">
         EKS image retention policy
       </a>
     </li>
@@ -500,7 +496,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../Azure/index.html">Azure</a>
+          <a href="../../../Azure/index.html">Azure</a>
           
             <label for="__nav_3">
               <span class="md-nav__icon md-icon"></span>
@@ -554,7 +550,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Azure/explanations/Focal_To_Jammy_Upgrade.html" class="md-nav__link">
+      <a href="../../../Azure/explanations/Focal_To_Jammy_Upgrade.html" class="md-nav__link">
         Upgrading from Focal to Jammy on Azure
       </a>
     </li>
@@ -608,7 +604,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Azure/how_tos/Find_Images.html" class="md-nav__link">
+      <a href="../../../Azure/how_tos/Find_Images.html" class="md-nav__link">
         Find Ubuntu images on Azure
       </a>
     </li>
@@ -622,7 +618,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Azure/how_tos/Install_Azure_CLI.html" class="md-nav__link">
+      <a href="../../../Azure/how_tos/Install_Azure_CLI.html" class="md-nav__link">
         Install Azure CLI on Ubuntu
       </a>
     </li>
@@ -674,7 +670,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Azure/reference/Confidential_Trusted.html" class="md-nav__link">
+      <a href="../../../Azure/reference/Confidential_Trusted.html" class="md-nav__link">
         Trusted Launch and Confidential VM
       </a>
     </li>
@@ -721,7 +717,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../Canonical-Downloads/index.html">Canonical Downloads</a>
+          <a href="../../../Canonical-Downloads/index.html">Canonical Downloads</a>
           
         </div>
       
@@ -801,7 +797,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../Google/GCE/index.html">GCE</a>
+          <a href="../../../Google/GCE/index.html">GCE</a>
           
             <label for="__nav_5_1">
               <span class="md-nav__icon md-icon"></span>
@@ -844,7 +840,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../Google/GCE/explanations/index.html">Explanations</a>
+          <a href="../../../Google/GCE/explanations/index.html">Explanations</a>
           
             <label for="__nav_5_1_2">
               <span class="md-nav__icon md-icon"></span>
@@ -867,7 +863,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Google/GCE/explanations/Focal_To_Jammy_Upgrade.html" class="md-nav__link">
+      <a href="../../../Google/GCE/explanations/Focal_To_Jammy_Upgrade.html" class="md-nav__link">
         Upgrading from Focal Fossa to Jammy Jellyfish on GCE
       </a>
     </li>
@@ -913,7 +909,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../Google/GKE/index.html">GKE</a>
+          <a href="../../../Google/GKE/index.html">GKE</a>
           
         </div>
       
@@ -945,14 +941,16 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
       
       
         
@@ -967,7 +965,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_6">
           <span class="md-nav__icon md-icon"></span>
           IBM
@@ -998,7 +996,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../IBM/IBM-Classic/index.html">IBM Classic</a>
+          <a href="../../IBM-Classic/index.html">IBM Classic</a>
           
         </div>
       
@@ -1022,14 +1020,16 @@
               
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_2" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_2" checked>
       
       
         
@@ -1044,7 +1044,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../IBM/IBM-VPC/index.html">IBM VPC</a>
+          <a href="../index.html">IBM VPC</a>
           
             <label for="__nav_6_2">
               <span class="md-nav__icon md-icon"></span>
@@ -1052,7 +1052,7 @@
           
         </div>
       
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_2_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_2_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_6_2">
           <span class="md-nav__icon md-icon"></span>
           IBM VPC
@@ -1065,14 +1065,16 @@
               
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_2_2" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_2_2" checked>
       
       
         
@@ -1085,7 +1087,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_6_2_2_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_6_2_2_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_6_2_2">
           <span class="md-nav__icon md-icon"></span>
           Explanations
@@ -1096,11 +1098,107 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../IBM/IBM-VPC/explanations/Focal_To_Jammy_Upgrade.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Upgrading from Focal to Jammy on IBM VPC
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="Focal_To_Jammy_Upgrade.html" class="md-nav__link md-nav__link--active">
         Upgrading from Focal to Jammy on IBM VPC
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#general-advice" class="md-nav__link">
+    General Advice
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#manual-upgrade-steps" class="md-nav__link">
+    Manual upgrade steps
+  </a>
+  
+    <nav class="md-nav" aria-label="Manual upgrade steps">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#additional-ssh-daemon" class="md-nav__link">
+    Additional SSH daemon
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#update-sourceslist" class="md-nav__link">
+    Update sources.list
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#start-upgrade" class="md-nav__link">
+    Start upgrade
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#restart-services-automatically" class="md-nav__link">
+    Restart services automatically
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sshd-configuration-modified" class="md-nav__link">
+    SSHD configuration modified
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#restart-to-finish-upgrade" class="md-nav__link">
+    Restart to finish upgrade
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1154,7 +1252,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../Oracle/index.html">Oracle</a>
+          <a href="../../../Oracle/index.html">Oracle</a>
           
             <label for="__nav_7">
               <span class="md-nav__icon md-icon"></span>
@@ -1208,7 +1306,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Oracle/explanations/Focal_To_Jammy_Upgrade.html" class="md-nav__link">
+      <a href="../../../Oracle/explanations/Focal_To_Jammy_Upgrade.html" class="md-nav__link">
         Upgrading from Focal to Jammy on Oracle
       </a>
     </li>
@@ -1255,7 +1353,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../general/index.html">General</a>
+          <a href="../../../general/index.html">General</a>
           
         </div>
       
@@ -1294,6 +1392,76 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#general-advice" class="md-nav__link">
+    General Advice
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#manual-upgrade-steps" class="md-nav__link">
+    Manual upgrade steps
+  </a>
+  
+    <nav class="md-nav" aria-label="Manual upgrade steps">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#additional-ssh-daemon" class="md-nav__link">
+    Additional SSH daemon
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#update-sourceslist" class="md-nav__link">
+    Update sources.list
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#start-upgrade" class="md-nav__link">
+    Start upgrade
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#restart-services-automatically" class="md-nav__link">
+    Restart services automatically
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sshd-configuration-modified" class="md-nav__link">
+    SSHD configuration modified
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#restart-to-finish-upgrade" class="md-nav__link">
+    Restart to finish upgrade
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1311,7 +1479,31 @@
 
 
 
-<h1 id="eks">EKS</h1>
+<h1 id="upgrading-from-focal-to-jammy-on-ibm-vpc">Upgrading from Focal to Jammy on IBM VPC</h1>
+<h2 id="general-advice">General Advice</h2>
+<p>When deciding how to upgrade the main consideration is whether your system can be setup/deployed with automation or requires manual configuration.</p>
+<p>Running <a href="https://manpages.ubuntu.com/manpages/focal/man8/do-release-upgrade.8.html"><code>do-release-upgrade</code></a> requires some manual intervention (<a href="#manual-upgrade-steps">see Manual upgrade steps</a>), which makes it a good option for systems which require manual configuration and cannot be easily created or destroyed.</p>
+<p>For system deployments which are fully automated it is recommended to redeploy with new Jammy instances instead of upgrading from Focal.</p>
+<h2 id="manual-upgrade-steps">Manual upgrade steps</h2>
+<p>If you are upgrading from Focal to Jammy you can expect to run into the following prompts requesting manual input.</p>
+<h3 id="additional-ssh-daemon">Additional SSH daemon</h3>
+<p>When upgrading in a session over SSH there is an inherent risk of losing access if something goes wrong with the SSH daemon. To mitigate this risk an additional SSH daemon is started on a different port as a backup.
+<img alt="A warning regarding the risk of upgrading in a session over SSH. The prompt is notifying the user that an additional SSH daemon will be started to mitigate the risk. The user is prompted whether they would like to continue or cancel the upgrade." src="Focal_To_Jammy_Upgrade_Images/0_additional_ssh_daemon.png" /></p>
+<h3 id="update-sourceslist">Update sources.list</h3>
+<p>Since the IMB VPC Focal image is configured to use internal mirrors by default, the <code>sources.list</code> entries will likely need to be updated from 'focal' to 'jammy'. Confirm 'Y' on the prompt to automatically update the <code>sources.list</code> entires
+<img alt="A prompt asking to update source.list file entries from focal to jammy.  Information is provided that needs to be done when running an interal mirror.  The options are Yes or No." src="Focal_To_Jammy_Upgrade_Images/1_sources_list.png" /></p>
+<h3 id="start-upgrade">Start upgrade</h3>
+<p>A final prompt before starting the upgrade. Information regarding the amount of changes and estimated time are provided because once you start the upgrade process it cannot be cancelled.
+<img alt="A prompt asking if the user would like to start the upgrade process. Some information is provided regarding the amount of changes and estimated time to complete. The user is prompted to continue, cancel or see additional details." src="Focal_To_Jammy_Upgrade_Images/2_start_upgrade.png" /></p>
+<h3 id="restart-services-automatically">Restart services automatically</h3>
+<p>Some services need to be restarted when certain libraries are upgraded. The user has the option to allow the system to automatically restart these services or to be asked after every library upgrade which services they want to be restarted.
+<img alt="A prompt asking the user if they would like services to be restarted automatically during package upgrades. If no is selected there will be prompts later for which services to restart on each library upgrade." src="Focal_To_Jammy_Upgrade_Images/3_restart_services.png" /></p>
+<h3 id="sshd-configuration-modified">SSHD configuration modified</h3>
+<p>Canonical makes changes to <code>/etc/ssh/sshd_config</code> for IBM VPC images. As a result when upgrading there will be a prompt asking whether to keep this version, use the default in the newer version or take some other action.
+<img alt="A prompt notifying the user that there is a newer version available of the sshd_config file. Options include keeping the local version, using the default and a couple other actions." src="Focal_To_Jammy_Upgrade_Images/4_sshd_modified_config.png" /></p>
+<h3 id="restart-to-finish-upgrade">Restart to finish upgrade</h3>
+<p>A restart will be necessary for some parts of the upgrade to be applied. If you select no to the restart you can check <code>/var/run/reboot-required.pkgs</code> to see which things need a reboot to be applied.
+<img alt="A prompt asking the user to restart the system because it is required to complete the upgrade." src="Focal_To_Jammy_Upgrade_Images/5_finish_upgrade.png" /></p>
 
 
 
@@ -1349,10 +1541,10 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.indexes"], "search": "../../assets/javascripts/workers/search.db81ec45.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.indexes"], "search": "../../../assets/javascripts/workers/search.db81ec45.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.6df46069.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.6df46069.min.js"></script>
       
     
   </body>
