@@ -33,8 +33,7 @@ Start the ``sphinx-autobuild`` documentation server::
 
 	make run
 
-The documentation will be available at `127.0.0.1:8000 <http://127.0.0.1:8000>`_ 
-or at `localhost:8000 <http://localhost:8000>`_.
+The documentation will be available at `127.0.0.1:8000 <http://127.0.0.1:8000>`_.
 
 The command:
 
@@ -53,4 +52,4 @@ Run a spell check::
 
 	make spelling
 	
-If new words are to be added to the allowed list, update .wordlist.txt accordingly.
+If new words are to be added to the allowed list, update ``.wordlist.txt`` accordingly.
