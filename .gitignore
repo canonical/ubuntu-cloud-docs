@@ -1,1 +1,8 @@
-public/
+/*env*/
+.sphinx/venv
+.sphinx/warnings.txt
+.sphinx/.wordlist.dic
+_build
+.DS_Store
+__pycache__
+.idea/
