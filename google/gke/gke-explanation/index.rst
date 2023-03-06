@@ -1,3 +1,3 @@
-How-to guides
+Explanation
 =============
 
