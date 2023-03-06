@@ -20,22 +20,22 @@ In this documentation
 
 ..  grid:: 1 1 2 2
 
-   ..  grid-item:: :doc:`Tutorial <azure_tutorial/index>`
+   ..  grid-item:: :doc:`Tutorial <azure-tutorial/index>`
 
        **Start here**: a hands-on introduction to getting Ubuntu images for Azure VMs
 
-   ..  grid-item:: :doc:`How-to guides <azure_how-to/index>`
+   ..  grid-item:: :doc:`How-to guides <azure-how-to/index>`
 
       **Step-by-step guides** covering key operations and common tasks
 
 .. grid:: 1 1 2 2
    :reverse:
 
-   .. grid-item:: :doc:`Reference <azure_reference/index>`
+   .. grid-item:: :doc:`Reference <azure-reference/index>`
 
       **Technical information** - services, features, pricing
 
-   .. grid-item:: :doc:`Explanation <azure_explanation/index>`
+   .. grid-item:: :doc:`Explanation <azure-explanation/index>`
 
       **Discussion and clarification** of key topics
 
@@ -56,8 +56,8 @@ Ubuntu public cloud is open source project that warmly welcomes community projec
    :hidden:
    :maxdepth: 2
 
-   azure_tutorial/index
-   azure_how-to/index
-   azure_reference/index
-   azure_explanation/index
+   azure-tutorial/index
+   azure-how-to/index
+   azure-reference/index
+   azure-explanation/index
 
