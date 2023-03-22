@@ -100,4 +100,5 @@ Ubuntu public cloud is open source project that warmly welcomes community projec
    google/index
    ibm/index
    oracle/index
+   oci/index
    
