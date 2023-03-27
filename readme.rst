@@ -3,7 +3,7 @@ Ubuntu cloud documentation
 
 Documentation for Ubuntu on public clouds.
 
-The documentation is currently published to: ___ will be updated soon ___
+The documentation is currently published to: https://canonical-public-cloud.readthedocs-hosted.com
 
 
 How to work with this documentation
@@ -11,7 +11,6 @@ How to work with this documentation
 
 Download and install
 ~~~~~~~~~~~~~~~~~~~~
-
 Fork and clone this repository.
 
 Once cloned, run::
@@ -51,5 +50,5 @@ Check spelling
 Run a spell check::
 
 	make spelling
-	
+
 If new words are to be added to the allowed list, update ``.wordlist.txt`` accordingly.
