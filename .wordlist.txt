@@ -54,3 +54,6 @@ namespace
 ubuntu
 ESM
 readthedocs
+SKU
+linux
+untrusted
