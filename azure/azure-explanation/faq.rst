@@ -5,7 +5,7 @@ Ubuntu on Azure - FAQ
 Is Ubuntu available on Azure?
 =============================
 
-Yes, all the supported versions of Ubuntu are available for free on Azure. Here is how you can find them: `article <../azure-how-to/find-ubuntu-images.rst>`_.
+Yes, all the supported versions of Ubuntu are available for free on Azure. Here is how you can find them: :doc:`../azure-how-to/find-ubuntu-images`.
 
 Why are there multiple offers from Canonical on Azure?
 =============================================================
