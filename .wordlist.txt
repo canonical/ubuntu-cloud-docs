@@ -66,3 +66,13 @@ MicroK
 gcloud
 kubeconfig
 VM's
+LaunchTemplate
+AMI
+customize
+yaml
+initialize
+init
+overrideBootstrapCommand
+json
+eks
+fips
