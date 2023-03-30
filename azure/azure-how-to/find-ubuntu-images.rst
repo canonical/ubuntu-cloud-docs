@@ -90,6 +90,8 @@ Quick start: `22.10 on Azure <https://portal.azure.com/#create/canonical.0001-co
    * - Architecture: **Arm64** Hyper-V Generation: **Gen2**
      - ``Canonical:0001-com-ubuntu-server-kinetic:22_10-arm64:latest``
 
+.. _find-ubuntu-pro-on-azure:
+
 Ubuntu Pro Offers
 ~~~~~~~~~~~~~~~~~
 

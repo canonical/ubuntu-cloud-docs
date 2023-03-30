@@ -7,3 +7,4 @@ How-to guides
    install-azure-cli
    find-ubuntu-images
    upgrade-from-focal-to-jammy
+   get-ubuntu-pro
