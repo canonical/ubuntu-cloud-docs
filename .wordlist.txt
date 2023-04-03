@@ -59,3 +59,10 @@ linux
 untrusted
 programmatically
 HIPAA
+intranode
+UA
+microk
+MicroK
+gcloud
+kubeconfig
+VM's
