@@ -1,7 +1,7 @@
 Deploy an Ubuntu Pro EKS cluster
 ================================
 
-This guide shows how to deploy a Ubuntu Pro EKS Cluster. Depending on whether you need to enable FIPS for your cluster nodes, you only need to follow one of the following two sections.
+This guide shows how to deploy an EKS Cluster with Ubuntu Pro nodes.
 
 Prerequisites
 ~~~~~~~~~~~~~
@@ -9,27 +9,42 @@ Prerequisites
 You need:
 
 - ``eksctl``: see how to install it `here <https://docs.aws.amazon.com/eks/latest/userguide/eksctl.html>`_
-- ``packer``: needed if you want to enable FIPS for the cluster nodes ``sudo snap install packer``
+- ``packer``: only needed if you want to enable FIPS for the cluster nodes. Install it with ``sudo snap install packer``
 - your AWS access key ID and secret access key
 - an Ubuntu Pro token
 
+
+Cluster deployment preparation
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Depending on whether you need to enable FIPS or not, you only need to follow one of the following two sections.
+
+Please note that, while there are Ubuntu Pro AMIs available in AWS, at the time
+of writing this guide, there is no such offering for the EKS service, so you'll
+need to provision the EKS cluster with customised Ubuntu nodes.
+
+
 With FIPS
-~~~~~~~~~
+^^^^^^^^^
 
-Why Packer?
-***********
+When enabling FIPS, a reboot of the underlying node is required, which if done post-cluster creation, In rare cases errors may occur for example that the node is flag as defective (`documentation <https://docs.aws.amazon.com/eks/latest/userguide/troubleshooting.html>`_).
+For this reason, the most reliable way to deploy an Ubuntu Pro EKS cluster is to actually build a
+custom Ubuntu Pro AMI (with `Packer <https://www.packer.io/>`_) and use it at cluster creation time.
 
-We use Packer because to enable FIPS, you need to reboot the node. Packer permits to create a golden AMI to avoid the node being flagged as defective.
  
-What are the limitations/caveats of Packer
-******************************************
+What are the caveats?
+*********************
 
-You must rebuild your image to have the latest software versions (including security fixes). Also, storing AMI has a cost on AWS, and you will need to replicate it to multiple regions if you need to.
+You need to keep rebuilding your custom Ubuntu Pro image in order to have the
+latest updates and security fixes from upstream.
+
+Also, storing AMI has a cost on AWS, and you will have to replicate it to multiple regions if you need to.
 
 Get and modify the Packer file
 ******************************
 
-Create an eks-ubuntu-fips.json file and copy the code below
+Create an ``eks-ubuntu-fips.json`` file with the following content (replacing the
+placeholder credentials with your own in the "variables" section):
 
 ..  code-block:: bash
 
@@ -37,8 +52,8 @@ Create an eks-ubuntu-fips.json file and copy the code below
         "variables": {
             "aws_access_key": "YOUR_IAM_ACCESS_KEY",
             "aws_secret_key": "YOUR_IAM_SECRET_KEY",
-            "ua_token": "YOUR UBUNTU.COM/ADVANTAGE TOKEN",
-            "eks_ver": "1.23"
+            "ua_token": "YOUR_UA_TOKEN",
+            "eks_ver": "YOUR_EKS_VERSION"
         },
         "builders": [
         {
@@ -86,14 +101,23 @@ Create an eks-ubuntu-fips.json file and copy the code below
         ]
     }
 
-We will use it with Packer to build our AMI, add your information in the variable section, and modify the source AMI region if needed. Remember that our final AMI needs to be in the same region where you want your cluster.
+This is the file that will be used by Packer to build the custom Ubuntu Pro AMI.
 
-This Packer file takes as a source an AMI of Ubuntu Focal Server amd64 EKS. After that, he launches shell commands to wait for cloud-init to finish and upgrade the package. After that, he attaches your Pro token with the AMI and enables FIPS. To conclude, he removes the machine-id to have a unique machine-id by node.
+Remember that the final AMI needs to be in the same region as the EKS cluster, 
+so make sure to adjust the "region" above accordingly.
 
-Build your AMI
-**************
+This Packer file takes as a source an existing AMI of an EKS-based Ubuntu Focal
+Server for amd64. It will then launch shell commands to wait for cloud-init to
+finish and upgrade the system. Afterwards, it attaches the machine to a Pro subscription
+using your UA token and enables FIPS. To conclude, it removes the machine-id
+from the custom image, to have a unique machine-id on every node instantiation.
 
-To build your AMI image, do ``packer build eks-ubuntu-fips.json``. At the end of the command, you have crucial logs:
+
+Build the custom Ubuntu Pro AMI
+*******************************
+
+To build the image, run ``packer build eks-ubuntu-fips.json``.
+The resulting logs should look something like:
 
 ..  code-block:: bash
 
@@ -105,10 +129,15 @@ To build your AMI image, do ``packer build eks-ubuntu-fips.json``. At the end of
     --> amazon-ebs: amis were created:
     us-east-1: ami-xxxxxxx
 
-Create the config file
-**********************
+NOTE: copy the provided AMI ID for the next step.
 
-So to create your cluster with your custom AMI, create a cluster.yaml file and copy this code
+Create the EKS cluster config file
+**********************************
+
+You're now ready to deploy the EKS cluster from the custom Ubuntu Pro AMI.
+To do so, start by creating a ``cluster.yaml`` with the following content
+(replacing the "ami" field with the AMI ID from the previous step, the
+"ssh" field with a valid SSH key name, and version by the same EKS version you use on the Packer file):
 
 ..  code-block:: yaml
 
@@ -117,7 +146,7 @@ So to create your cluster with your custom AMI, create a cluster.yaml file and c
     metadata:
     name: procluster
     region: us-east-1
-    version: '1.23'
+    version: 'YOUR_EKS_VERSION'
     managedNodeGroups:
     - name: ng-procluster
     instanceType: t3.small
@@ -131,18 +160,33 @@ So to create your cluster with your custom AMI, create a cluster.yaml file and c
         #!/bin/bash
         sudo /etc/eks/bootstrap.sh procluster
 
-This config file permits you to create a cluster using the AMI you created with two nodes and ssh into the node using your ssh key name. The overrideBootstrapCommand permit to launch the bootstrap script of AWS EKS to initialize the nodes. To customize your cluster more, check `here <https://eksctl.io/>`_.
+This config file allows you to create a cluster using the AMI from the previous step,
+with two nodes and SSH access.
+
+Also we use AmazonLinux2 in amiFamily because at this date it's the only native option support by eksctl.
+
+The "overrideBootstrapCommand" lets you launch the bootstrap script from AWS EKS
+to initialise the nodes. For further cluster customisation see `this <https://eksctl.io/>`_.
 
 
 Without FIPS
-~~~~~~~~~~~~
+^^^^^^^^^^^^
 
-We use the `ubuntu-advantage module <https://cloudinit.readthedocs.io/en/latest/reference/modules.html#ubuntu-advantage>`_ from cloud-init. You also need to have a LaunchTemplate existing on AWS.
+Without FIPS enabled, there's no need to reboot the cluster nodes and thus
+the overall process can be simplified by leveraging one of the existing Ubuntu
+EKS AMIs and customising it at deployment time, via cloud-init.
 
-LaunchTemplate user-data
-************************
+You should use the cloud-init's
+`ubuntu-advantage module <https://cloudinit.readthedocs.io/en/latest/reference/modules.html#ubuntu-advantage>`_.
+For this deployment, you'll also need to have an existing
+`launch template <https://docs.aws.amazon.com/autoscaling/ec2/userguide/launch-templates.html>`_
+on AWS.
 
-On the advanced section of your LaunchTemplate (user-data section), copy this code
+launch template user-data
+*************************
+
+On the advanced section of your launch template (user-data section), copy
+the following code (replacing the "token" field by your UA token):
 
 ..  code-block:: bash
 
@@ -160,16 +204,18 @@ On the advanced section of your LaunchTemplate (user-data section), copy this co
     Content-Type: text/x-shellscript; charset="us-ascii"
 
     #!/bin/bash
-    sudo /etc/eks/bootstrap.sh <name_of_the_cluster>
+    sudo /etc/eks/bootstrap.sh procluster
 
     --==MYBOUNDARY==--
 
-So, this user-data permits you to enable ESM on your nodes. The shell command launches the bootstrap script of AWS EKS to initialize the nodes.
+Cloud-init will use this user-data to enable ESM on the cluster nodes and bootstrap the AWS EKS cluster.
 
-Create the config file
-**********************
+Create the EKS cluster config file
+**********************************
 
-So to create your cluster with your custom LaunchTemplate, create a cluster.yaml file and copy this code
+To create a cluster with your custom launch template, create a ``cluster.yaml``
+with the following content (make sure the "launchTemplate" ID matches the one
+from the template modified in the previous step and that version matches the EKS version of the AMI you choose in the launch template):
 
 ..  code-block:: yaml
 
@@ -179,7 +225,7 @@ So to create your cluster with your custom LaunchTemplate, create a cluster.yaml
     metadata:
     name: procluster
     region: us-east-1
-    version: '1.23'
+    version: 'YOUR_EKS_VERSION'
 
     managedNodeGroups:
     - name: ng-procluster
@@ -188,13 +234,16 @@ So to create your cluster with your custom LaunchTemplate, create a cluster.yaml
         id: lt-12345
         version: "1"
         
-So, this config file permits you to create a cluster using the LaunchTemplate you created with two nodes. To customize your cluster more, check `here <https://eksctl.io/>`_.
+This config file will allow you to create an EKS cluster using the launch template
+from above, with two nodes. For further cluster customisation see `this <https://eksctl.io/>`_.
 
 
-Create the cluster
-~~~~~~~~~~~~~~~~~~
+Create the EKS cluster
+~~~~~~~~~~~~~~~~~~~~~~
 
-To create the cluster, do ``eksctl create cluster --profile default -f cluster.yaml``. When this command finishes, see the nodes with
+To create the EKS cluster, run ``eksctl create cluster -f cluster.yaml``
+(you might need to specify the ``--profile`` option if you have multiple
+profiles). When this command finishes, see the nodes with
 
 ..  code-block:: bash
 
@@ -206,12 +255,14 @@ To create the cluster, do ``eksctl create cluster --profile default -f cluster.y
 
 
 
-So now check if your nodes have Ubuntu Pro and, if the services are enabled, ssh into a node with this command ( get the external IP of your node with ``kubectl get nodes -o wide``):
+To ensure your nodes have an Ubuntu Pro subscription, SSH into one of the cluster nodes
+(get the external IP of your node with ``kubectl get nodes -o wide``):
 
 ..  code-block:: bash
 
-    $ ssh -i yoursshkeyname.pem ubuntu@external_ip_of_node
-    $ pro status
+    $ # Replace the private SSH key and node IP according to your setup
+    $ ssh -i yoursshkeyname.pem ubuntu@<external_ip_of_node>
+    $ ua status
 
     SERVICE          ENTITLED  STATUS    DESCRIPTION
     esm-apps         yes       enabled   Expanded Security Maintenance for Applications
@@ -220,8 +271,8 @@ So now check if your nodes have Ubuntu Pro and, if the services are enabled, ssh
     fips-updates     yes       disabled  NIST-certified core packages with priority security updates
     usg              yes       disabled  Security compliance and audit tools
 
-
-So we see that our node has Ubuntu Pro and FIPS enable
+Please note that your services' statuses might differ from this snippet based
+on the Pro services that you've chosen to enable in the above configurations.
 
 Conclusion
 ~~~~~~~~~~
@@ -230,4 +281,4 @@ You now have an Ubuntu Pro Kubernetes cluster on EKS. Your Ubuntu Pro subscripti
 
 ..  code-block:: bash
 
-    $ pro status
+    $ ua status
