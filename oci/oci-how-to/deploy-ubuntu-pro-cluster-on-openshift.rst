@@ -20,5 +20,5 @@ OpenShift does not have Ubuntu Pro image offerings for the nodes, i.e. you canno
 Conclusion
 ~~~~~~~~~~
 
-You can reach out to `here <https://ubuntu.com/support/contact-us?product=contextual-footer-ua>`_ for attaching the cluster nodes to an Ubuntu Pro subscription, or contact rocks@canonical.com if you need additional support.
+You can reach out `here <https://ubuntu.com/support/contact-us?product=contextual-footer-ua>`_ for attaching the cluster nodes to an Ubuntu Pro subscription, or contact rocks@canonical.com if you need additional support.
 
