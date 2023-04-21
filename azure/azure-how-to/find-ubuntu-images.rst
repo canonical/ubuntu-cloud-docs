@@ -19,14 +19,14 @@ Quick start: `22.04 LTS on Azure <https://portal.azure.com/#create/canonical.000
    :header-rows: 1
 
    * - **Kind**
-     - **URN**     
+     - **URN**
    * - Architecture: **AMD64** Hyper-V Generation: **Gen1**
      - ``Canonical:0001-com-ubuntu-server-jammy:22_04-lts:latest``
    * - Architecture: **AMD64** Hyper-V Generation: **Gen2**
      - ``Canonical:0001-com-ubuntu-server-jammy:22_04-lts-gen2:latest``
    * - Architecture: **Arm64** Hyper-V Generation: **Gen2**
      - ``Canonical:0001-com-ubuntu-server-jammy:22_04-lts-arm64:latest``
-     
+
 
 Ubuntu 20.04 LTS - Focal Fossa
 ++++++++++++++++++++++++++++++
@@ -38,7 +38,7 @@ Quick start: `20.04 LTS on Azure <https://portal.azure.com/#create/canonical.000
    :header-rows: 1
 
    * - **Kind**
-     - **URN**     
+     - **URN**
    * - Architecture: **AMD64** Hyper-V Generation: **Gen1**
      - ``Canonical:0001-com-ubuntu-server-focal:20_04-lts:latest``
    * - Architecture: **AMD64** Hyper-V Generation: **Gen2**
@@ -58,7 +58,7 @@ Quick start: `18.04 LTS on Azure <https://portal.azure.com/#create/Canonical.Ubu
    :header-rows: 1
 
    * - **Kind**
-     - **URN**     
+     - **URN**
    * - Architecture: **AMD64** Hyper-V Generation: **Gen1**
      - ``Canonical:UbuntuServer:18.04-LTS:latest``
    * - Architecture: **AMD64** Hyper-V Generation: **Gen2**
@@ -72,6 +72,24 @@ Interim releases
 
 To learn more about the difference between LTS releases and interim releases, see `this page <https://ubuntu.com/about/release-cycle#ubuntu>`_.
 
+Ubuntu 23.04 - Lunar Lobster
+++++++++++++++++++++++++++++
+
+Quick start: `23.04 on Azure <https://portal.azure.com/#create/canonical.0001-com-ubuntu-server-lunar23_04-gen2>`_
+
+.. list-table::
+   :widths: 19 50
+   :header-rows: 1
+
+   * - **Kind**
+     - **URN**
+   * - Architecture: **AMD64** Hyper-V Generation: **Gen1**
+     - ``Canonical:0001-com-ubuntu-server-lunar:23_04:latest``
+   * - Architecture: **AMD64** Hyper-V Generation: **Gen2**
+     - ``Canonical:0001-com-ubuntu-server-lunar:23_04-gen2:latest``
+   * - Architecture: **Arm64** Hyper-V Generation: **Gen2**
+     - ``Canonical:0001-com-ubuntu-server-lunar:23_04-arm64:latest``
+
 Ubuntu 22.10 - Kinetic Kudu
 +++++++++++++++++++++++++++
 
@@ -82,7 +100,7 @@ Quick start: `22.10 on Azure <https://portal.azure.com/#create/canonical.0001-co
    :header-rows: 1
 
    * - **Kind**
-     - **URN**     
+     - **URN**
    * - Architecture: **AMD64** Hyper-V Generation: **Gen1**
      - ``Canonical:0001-com-ubuntu-server-kinetic:22_10:latest``
    * - Architecture: **AMD64** Hyper-V Generation: **Gen2**
@@ -108,7 +126,7 @@ Quick start: `Ubuntu Pro 22.04 LTS on Azure <https://portal.azure.com/#create/ca
    :header-rows: 1
 
    * - **Kind**
-     - **URN**     
+     - **URN**
    * - Architecture: **AMD64** Hyper-V Generation: **Gen1**
      - ``Canonical:0001-com-ubuntu-pro-jammy:pro-22_04-lts:latest``
    * - Architecture: **AMD64** Hyper-V Generation: **Gen2**
@@ -125,7 +143,7 @@ Quick start: `Ubuntu Pro 20.04 LTS on Azure <https://portal.azure.com/#create/ca
    :header-rows: 1
 
    * - **Kind**
-     - **URN**     
+     - **URN**
    * - Architecture: **AMD64** Hyper-V Generation: **Gen1**
      - ``Canonical:0001-com-ubuntu-pro-focal:pro-20_04-lts:latest``
    * - Architecture: **AMD64** Hyper-V Generation: **Gen2**
@@ -142,7 +160,7 @@ Quick start: `Ubuntu Pro 18.04 LTS on Azure <https://portal.azure.com/#create/ca
    :header-rows: 1
 
    * - **Kind**
-     - **URN**     
+     - **URN**
    * - Architecture: **AMD64** Hyper-V Generation: **Gen1**
      - ``Canonical:0001-com-ubuntu-pro-bionic:pro-18_04-lts:latest``
    * - Architecture: **AMD64** Hyper-V Generation: **Gen2**
@@ -164,7 +182,7 @@ Quick start: `Ubuntu CVM 20.04 LTS on Azure <https://portal.azure.com/#create/ca
    :header-rows: 1
 
    * - **Kind**
-     - **URN**     
+     - **URN**
    * - Architecture: **AMD64** Hyper-V Generation: **Gen2**
      - ``Canonical:0001-com-ubuntu-confidential-vm-focal:20_04-lts-cvm:latest``
 
@@ -184,7 +202,7 @@ Quick start: `Ubuntu Pro FIPS 20.04 LTS on Azure <https://portal.azure.com/#crea
    :header-rows: 1
 
    * - **Kind**
-     - **URN**     
+     - **URN**
    * - Architecture: **AMD64** Hyper-V Generation: **Gen1**
      - ``Canonical:0001-com-ubuntu-pro-focal-fips:pro-fips-20_04:latest``
    * - Architecture: **AMD64** Hyper-V Generation: **Gen2**
@@ -201,7 +219,7 @@ Quick start: `Ubuntu Pro FIPS 18.04 LTS on Azure <https://portal.azure.com/#crea
    :header-rows: 1
 
    * - **Kind**
-     - **URN**     
+     - **URN**
    * - Architecture: **AMD64** Hyper-V Generation: **Gen1**
      - ``Canonical:0001-com-ubuntu-pro-bionic-fips:pro-fips-18_04:latest``
    * - Architecture: **AMD64** Hyper-V Generation: **Gen2**
@@ -223,7 +241,7 @@ Quick start: `Ubuntu Pro CIS 20.04 LTS on Azure  <https://portal.azure.com/#crea
    :header-rows: 1
 
    * - **Kind**
-     - **URN**     
+     - **URN**
    * - Architecture: **AMD64** Hyper-V Generation: **Gen1**
      - ``Canonical:0001-com-ubuntu-pro-minimal-cis-focal:pro-cis-minimal-20_04:latest``
    * - Architecture: **AMD64** Hyper-V Generation: **Gen2**
