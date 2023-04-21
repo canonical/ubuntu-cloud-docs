@@ -66,3 +66,10 @@ MicroK
 gcloud
 kubeconfig
 VM's
+Nutanix
+CentOS
+Karbon
+Tanzu
+OpenShift
+RHCOS
+RHEL
