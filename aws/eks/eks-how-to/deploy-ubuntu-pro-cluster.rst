@@ -30,7 +30,7 @@ With FIPS
 When enabling FIPS, a reboot of the underlying node is required. If this reboot is done after the cluster is created, in rare cases, it might result in the node being flagged as defective (`troubleshooting options <https://docs.aws.amazon.com/eks/latest/userguide/troubleshooting.html>`_).
 
 For this reason, the most reliable way to deploy an Ubuntu Pro EKS cluster is to build a
-custom Ubuntu Pro AMI (with `Packer <https://www.packer.io/>`_) and use it and use it during cluster creation.
+custom Ubuntu Pro AMI (with `Packer <https://www.packer.io/>`_) and use it during cluster creation.
 
  
 What are the caveats?
