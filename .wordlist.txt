@@ -76,9 +76,5 @@ ami
 AmazonLinux
 amiFamily
 eksctl
-aws
-eks
-html
-userguide
 launchTemplate
 
