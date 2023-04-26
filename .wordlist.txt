@@ -66,6 +66,17 @@ MicroK
 gcloud
 kubeconfig
 VM's
+AMI
+init
+init's
+AMIs
+overrideBootstrapCommand
+instantiation
+ami
+AmazonLinux
+amiFamily
+eksctl
+launchTemplate
 Nutanix
 CentOS
 Karbon
