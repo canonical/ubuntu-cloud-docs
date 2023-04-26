@@ -77,4 +77,10 @@ AmazonLinux
 amiFamily
 eksctl
 launchTemplate
-
+Nutanix
+CentOS
+Karbon
+Tanzu
+OpenShift
+RHCOS
+RHEL
