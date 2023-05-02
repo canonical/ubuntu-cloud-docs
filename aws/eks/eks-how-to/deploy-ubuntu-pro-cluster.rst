@@ -19,10 +19,49 @@ Cluster deployment preparation
 
 Depending on whether you need to enable FIPS or not, you only need to follow one of the following two sections.
 
-Please note that, while there are Ubuntu Pro AMIs available in AWS, at the time
+Please note that while there are Ubuntu Pro AMIs available in AWS, at the time
 of writing this guide, there is no such offering for the EKS service, so you'll
 need to provision the EKS cluster with customised Ubuntu nodes.
 
+
+Without FIPS
+^^^^^^^^^^^^
+
+When FIPS is not enabled, you can use one of the existing Ubuntu EKS AMIs and customise it using cloud-init during deployment.
+
+You should use the cloud-init's
+`ubuntu-advantage module <https://cloudinit.readthedocs.io/en/latest/reference/modules.html#ubuntu-advantage>`_.
+For this deployment, you'll also need to have an existing
+`launch template <https://docs.aws.amazon.com/autoscaling/ec2/userguide/launch-templates.html>`_
+on AWS.
+
+Launch template's user-data
+***************************
+
+On the advanced section of your launch template (user-data section), copy
+the following code (replacing the "token" field by your Pro token):
+
+..  code-block:: bash
+
+    MIME-Version: 1.0
+    Content-Type: multipart/mixed; boundary="==MYBOUNDARY=="
+
+    --==MYBOUNDARY==
+    Content-Type: text/cloud-config; charset="us-ascii"
+    ubuntu_advantage:
+    token: <pro_token>
+    enable:
+    - esm
+  
+    --==MYBOUNDARY==
+    Content-Type: text/x-shellscript; charset="us-ascii"
+
+    #!/bin/bash
+    sudo /etc/eks/bootstrap.sh procluster
+
+    --==MYBOUNDARY==--
+
+Cloud-init will use this user-data to enable ESM on the cluster nodes and bootstrap the AWS EKS cluster.
 
 With FIPS
 ^^^^^^^^^
@@ -30,14 +69,13 @@ With FIPS
 When enabling FIPS, a reboot of the underlying node is required. If this reboot is done after the cluster is created, in rare cases, it might result in the node being flagged as defective (`troubleshooting options <https://docs.aws.amazon.com/eks/latest/userguide/troubleshooting.html>`_).
 
 For this reason, the most reliable way to deploy an Ubuntu Pro EKS cluster is to build a
-custom Ubuntu Pro AMI (with `Packer <https://www.packer.io/>`_) and use it during cluster creation.
+custom Ubuntu Pro AMI (with `Packer <https://www.packer.io/>`_) and use it during cluster creation until this `bug <https://bugs.launchpad.net/cloud-images/+bug/2017782>`_ is fixed.
 
- 
+
 What are the caveats?
 *********************
 
-You need to keep rebuilding your custom Ubuntu Pro image in order to have the
-latest updates and security fixes from upstream.
+You need to keep rebuilding your custom Ubuntu Pro image in order to have the latest updates and security fixes from upstream.
 
 Also, storing AMI has a cost on AWS, and you will have to replicate it to multiple regions if you need to.
 
@@ -53,7 +91,7 @@ placeholder credentials with your own in the "variables" section):
         "variables": {
             "aws_access_key": "YOUR_IAM_ACCESS_KEY",
             "aws_secret_key": "YOUR_IAM_SECRET_KEY",
-            "ua_token": "YOUR_UA_TOKEN",
+            "pro_token": "YOUR_PRO_TOKEN",
             "eks_ver": "YOUR_EKS_VERSION"
         },
         "builders": [
@@ -87,9 +125,9 @@ placeholder credentials with your own in the "variables" section):
         {
             "type": "shell",
             "inline": [
-            "sudo ua attach {{user `ua_token`}}",
-            "sudo ua status --wait",
-            "sudo ua enable fips --assume-yes"
+            "sudo pro attach {{user `pro_token`}}",
+            "sudo pro status --wait",
+            "sudo pro enable fips --assume-yes"
             ]
         },
         {
@@ -110,7 +148,7 @@ so make sure to adjust the "region" above accordingly.
 This Packer file takes as a source an existing AMI of an EKS-based Ubuntu Focal
 Server for amd64. It will then launch shell commands to wait for cloud-init to
 finish and upgrade the system. Afterwards, it attaches the machine to a Pro subscription
-using your UA token and enables FIPS. To conclude, it removes the machine-id
+using your Pro token and enables FIPS. To conclude, it removes the machine-id
 from the custom image, to have a unique machine-id on every node instantiation.
 
 
@@ -128,17 +166,16 @@ The resulting logs should look something like:
 
     ==> Builds finished. The artifacts of successful builds are:
     --> amazon-ebs: amis were created:
-    us-east-1: ami-xxxxxxx
+    us-east-1: ami-xxxxxxxx
 
 NOTE: copy the provided AMI ID for the next step.
 
-Create the EKS cluster config file
-**********************************
+Create the eksctl config file
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-You're now ready to deploy the EKS cluster from the custom Ubuntu Pro AMI.
+You're now ready to deploy the EKS cluster with Ubuntu Pro nodes.
 To do so, start by creating a ``cluster.yaml`` with the following content
-(replacing the "ami" field with the AMI ID from the previous step, the
-"ssh" field with a valid SSH key name, and version by the same EKS version you use on the Packer file):
+
 
 ..  code-block:: yaml
 
@@ -148,96 +185,54 @@ To do so, start by creating a ``cluster.yaml`` with the following content
     name: procluster
     region: us-east-1
     version: 'YOUR_EKS_VERSION'
-    managedNodeGroups:
-    - name: ng-procluster
-    instanceType: t3.small
-    desiredCapacity: 2
-    labels: {role: worker}
-    ami: ami-xxxxx
-    amiFamily: AmazonLinux2
-    ssh:
-        publicKeyName: yoursshkeyname
-    overrideBootstrapCommand: |
-        #!/bin/bash
-        sudo /etc/eks/bootstrap.sh procluster
-
-This config file allows you to create a cluster using the AMI from the previous step,
-with two nodes and SSH access.
-
-Also we use AmazonLinux2 in amiFamily because at this date it's the only native option support by eksctl.
-
-The "overrideBootstrapCommand" lets you launch the bootstrap script from AWS EKS
-to initialise the nodes. For further cluster customisation see `this <https://eksctl.io/>`_.
 
 
-Without FIPS
-^^^^^^^^^^^^
+Add the following content to your file
 
-Without FIPS enabled, there's no need to reboot the cluster nodes and thus
-the overall process can be simplified by leveraging one of the existing Ubuntu
-EKS AMIs and customising it at deployment time, via cloud-init.
 
-You should use the cloud-init's
-`ubuntu-advantage module <https://cloudinit.readthedocs.io/en/latest/reference/modules.html#ubuntu-advantage>`_.
-For this deployment, you'll also need to have an existing
-`launch template <https://docs.aws.amazon.com/autoscaling/ec2/userguide/launch-templates.html>`_
-on AWS.
+.. tabs::
 
-launch template user-data
-*************************
+	.. tab:: Without FIPS
 
-On the advanced section of your launch template (user-data section), copy
-the following code (replacing the "token" field by your UA token):
+         .. code-block:: yaml
 
-..  code-block:: bash
+            managedNodeGroups:
+            - name: ng-procluster
+            desiredCapacity: 2
+            launchTemplate:
+              id: lt-12345
+              version: "1"
+                        
+         This config file will allow you to create an EKS cluster using the launch template
+         from above, with two nodes. 
 
-    MIME-Version: 1.0
-    Content-Type: multipart/mixed; boundary="==MYBOUNDARY=="
+	.. tab:: With FIPS
 
-    --==MYBOUNDARY==
-    Content-Type: text/cloud-config; charset="us-ascii"
-    ubuntu_advantage:
-    token: <ua_contract_token>
-    enable:
-    - esm
-  
-    --==MYBOUNDARY==
-    Content-Type: text/x-shellscript; charset="us-ascii"
+         .. code-block:: yaml
 
-    #!/bin/bash
-    sudo /etc/eks/bootstrap.sh procluster
+            managedNodeGroups:
+            - name: ng-procluster
+            instanceType: t3.small
+            desiredCapacity: 2
+            labels: {role: worker}
+            ami: ami-xxxxx
+            amiFamily: AmazonLinux2
+            ssh:
+                publicKeyName: yoursshkeyname
+            overrideBootstrapCommand: |
+                #!/bin/bash
+                sudo /etc/eks/bootstrap.sh procluster
+            
+         This config file allows you to create a cluster using the AMI from the previous step,
+         with two nodes and SSH access.
 
-    --==MYBOUNDARY==--
+         Also, we use AmazonLinux2 as the amiFamily because currently it's the only native option supported by eksctl.
 
-Cloud-init will use this user-data to enable ESM on the cluster nodes and bootstrap the AWS EKS cluster.
+         The "overrideBootstrapCommand" lets you launch the bootstrap script from AWS EKS
+         to initialise the nodes.
 
-Create the EKS cluster config file
-**********************************
 
-To create a cluster with your custom launch template, create a ``cluster.yaml``
-with the following content (make sure the "launchTemplate" ID matches the one
-from the template modified in the previous step and that version matches the EKS version of the AMI you choose in the launch template):
-
-..  code-block:: yaml
-
-    apiVersion: eksctl.io/v1alpha5
-    kind: ClusterConfig
-
-    metadata:
-    name: procluster
-    region: us-east-1
-    version: 'YOUR_EKS_VERSION'
-
-    managedNodeGroups:
-    - name: ng-procluster
-      desiredCapacity: 2
-      launchTemplate:
-        id: lt-12345
-        version: "1"
-        
-This config file will allow you to create an EKS cluster using the launch template
-from above, with two nodes. For further cluster customisation see `this <https://eksctl.io/>`_.
-
+For further cluster customisation see `this <https://eksctl.io/>`_.
 
 Create the EKS cluster
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -263,7 +258,7 @@ To ensure your nodes have an Ubuntu Pro subscription, SSH into one of the cluste
 
     $ # Replace the private SSH key and node IP according to your setup
     $ ssh -i yoursshkeyname.pem ubuntu@<external_ip_of_node>
-    $ ua status
+    $ pro status
 
     SERVICE          ENTITLED  STATUS    DESCRIPTION
     esm-apps         yes       enabled   Expanded Security Maintenance for Applications
@@ -282,4 +277,4 @@ You now have an Ubuntu Pro Kubernetes cluster on EKS. Your Ubuntu Pro subscripti
 
 ..  code-block:: bash
 
-    $ ua status
+    $ pro status
