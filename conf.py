@@ -11,7 +11,6 @@ import datetime
 project = 'Public Cloud'
 author = 'Canonical Group Ltd'
 copyright = "%s, %s" % (datetime.date.today().year, author)
-release = '0.1'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
