@@ -12,7 +12,8 @@ To learn more about LTS versions of Ubuntu read `this article <https://ubuntu.co
 Ubuntu 22.04 LTS - Jammy Jellyfish
 ++++++++++++++++++++++++++++++++++
 
-Quick start: `22.04 LTS on Azure <https://portal.azure.com/#create/canonical.0001-com-ubuntu-server-jammy22_04-lts-ARM>`_
+| Quick start: `22.04 LTS on Azure <https://portal.azure.com/#create/canonical.0001-com-ubuntu-server-jammy22_04-lts-ARM>`_
+| Quick start (China): `22.04 LTS on Azure China <https://portal.azure.cn/#create/canonical.0001-com-ubuntu-server-jammy22_04-lts-ARM>`_
 
 .. list-table::
    :widths: 19 50
@@ -31,7 +32,8 @@ Quick start: `22.04 LTS on Azure <https://portal.azure.com/#create/canonical.000
 Ubuntu 20.04 LTS - Focal Fossa
 ++++++++++++++++++++++++++++++
 
-Quick start: `20.04 LTS on Azure <https://portal.azure.com/#create/canonical.0001-com-ubuntu-server-focal20_04-lts-ARM>`_
+| Quick start: `20.04 LTS on Azure <https://portal.azure.com/#create/canonical.0001-com-ubuntu-server-focal20_04-lts-ARM>`_
+| Quick start (China): `20.04 LTS on Azure China <https://portal.azure.cn/#create/canonical.0001-com-ubuntu-server-focal20_04-lts-ARM>`_
 
 .. list-table::
    :widths: 19 50
@@ -50,7 +52,8 @@ Quick start: `20.04 LTS on Azure <https://portal.azure.com/#create/canonical.000
 Ubuntu 18.04 LTS - Bionic Beaver
 ++++++++++++++++++++++++++++++++
 
-Quick start: `18.04 LTS on Azure <https://portal.azure.com/#create/Canonical.UbuntuServer1804LTS-ARM>`_
+| Quick start: `18.04 LTS on Azure <https://portal.azure.com/#create/Canonical.UbuntuServer1804LTS-ARM>`_
+| Quick start (China): `18.04 LTS on Azure China <https://portal.azure.cn/#create/Canonical.UbuntuServer1804LTS-ARM>`_
 
 
 .. list-table::
@@ -75,7 +78,8 @@ To learn more about the difference between LTS releases and interim releases, se
 Ubuntu 23.04 - Lunar Lobster
 ++++++++++++++++++++++++++++
 
-Quick start: `23.04 on Azure <https://portal.azure.com/#create/canonical.0001-com-ubuntu-server-lunar23_04-gen2>`_
+| Quick start: `23.04 on Azure <https://portal.azure.com/#create/canonical.0001-com-ubuntu-server-lunar23_04-gen2>`_
+| Quick start (China): `23.04 on Azure China <https://portal.azure.cn/#create/canonical.0001-com-ubuntu-server-lunar23_04-gen2>`_
 
 .. list-table::
    :widths: 19 50
@@ -93,7 +97,8 @@ Quick start: `23.04 on Azure <https://portal.azure.com/#create/canonical.0001-co
 Ubuntu 22.10 - Kinetic Kudu
 +++++++++++++++++++++++++++
 
-Quick start: `22.10 on Azure <https://portal.azure.com/#create/canonical.0001-com-ubuntu-server-kinetic22_10-ARM>`_
+| Quick start: `22.10 on Azure <https://portal.azure.com/#create/canonical.0001-com-ubuntu-server-kinetic22_10-ARM>`_
+| Quick start (China): `22.10 on Azure China <https://portal.azure.cn/#create/canonical.0001-com-ubuntu-server-kinetic22_10-ARM>`_
 
 .. list-table::
    :widths: 19 50
@@ -175,7 +180,8 @@ To learn more about Confidential Compute: `Azure confidential computing <https:/
 Ubuntu CVM 20.04 LTS - Focal Fossa
 ++++++++++++++++++++++++++++++++++
 
-Quick start: `Ubuntu CVM 20.04 LTS on Azure <https://portal.azure.com/#create/canonical.0001-com-ubuntu-confidential-vm-focal20_04-lts-cvm>`_
+| Quick start: `Ubuntu CVM 20.04 LTS on Azure <https://portal.azure.com/#create/canonical.0001-com-ubuntu-confidential-vm-focal20_04-lts-cvm>`_
+| Quick start (China): `Ubuntu CVM 20.04 LTS on Azure China <https://portal.azure.cn/#create/canonical.0001-com-ubuntu-confidential-vm-focal20_04-lts-cvm>`_
 
 .. list-table::
    :widths: 19 50
