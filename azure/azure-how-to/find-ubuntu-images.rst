@@ -177,6 +177,21 @@ Confidential compute capable offer
 
 To learn more about Confidential Compute: `Azure confidential computing <https://azure.microsoft.com/en-us/solutions/confidential-compute/#overview>`_
 
+Ubuntu CVM 22.04 LTS - Jammy Jellyfish
+++++++++++++++++++++++++++++++++++
+
+| Quick start: `Ubuntu CVM 22.04 LTS on Azure <https://portal.azure.com/#create/canonical.0001-com-ubuntu-confidential-vm-jammy22_04-lts-cvm>`_
+| Quick start (China): `Ubuntu CVM 22.04 LTS on Azure China <https://portal.azure.cn/#create/canonical.0001-com-ubuntu-confidential-vm-jammy22_04-lts-cvm>`_
+
+.. list-table::
+   :widths: 19 50
+   :header-rows: 1
+
+   * - **Kind**
+     - **URN**
+   * - Architecture: **AMD64** Hyper-V Generation: **Gen2**
+     - ``Canonical:0001-com-ubuntu-confidential-vm-jammy:22_04-lts-cvm:latest``
+
 Ubuntu CVM 20.04 LTS - Focal Fossa
 ++++++++++++++++++++++++++++++++++
 
