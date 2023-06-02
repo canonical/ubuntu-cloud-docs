@@ -101,6 +101,9 @@ from independent software vendors that make it easy to find, test, buy, and
 deploy software that runs on AWS.
 Canonical maintains `image listings <https://aws.amazon.com/marketplace/seller-profile?id=565feec9-3d43-413e-9760-c651546613f2>`_ for recent Ubuntu releases and special flavors (e.g. `Anbox`, `Pro`, `Pro FIPS`, `EKS`) on this marketplace.
 
+Customers can also use the AWS Marketplace to launch and subscribe to official
+Ubuntu Pro images that allow users to pay for additional support.
+
 All the above mentioned marketplace images can also be found in the SSM parameter store:
 
 .. code-block::
