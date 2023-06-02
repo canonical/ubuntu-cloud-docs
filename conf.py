@@ -16,13 +16,22 @@ copyright = "%s, %s" % (datetime.date.today().year, author)
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
 extensions = [
+    'multiproject',
     'sphinx_design',
     'sphinx_tabs.tabs',
     'sphinx_reredirects']
 
-exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', '.sphinx']
+exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', '.sphinx', 'readme.rst']
 
-
+#  -- Projects that will share this configuration file -----------------------------
+multiproject_projects = {
+    "aws": {},
+    "azure": {},
+    "google": {},
+    "ibm": {},
+    "oracle": {},
+    "oci": {}
+}
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
