@@ -11,8 +11,8 @@ Prerequisites
 
 You will need
 
-- an Ubuntu Pro container image on a private registry. See how to build one
-  :doc:`here <build-ubuntu-pro-container-image>`.
+- an Ubuntu Pro container image on a private registry. This can be built using the procedure given at 
+  :doc:`build-ubuntu-pro-container-image`.
   The image should be kept private to avoid sharing your Ubuntu Pro subscription with
   unwanted users since the image is attached to your Ubuntu Pro subscription.
 
@@ -30,12 +30,12 @@ Deploy Pro Kubernetes clusters
 
 	.. tab:: EKS
 
-		Please see :doc:`here </aws/eks/eks-how-to/deploy-ubuntu-pro-cluster>` to learn
+		Please see :doc:`aws:eks/eks-how-to/deploy-ubuntu-pro-cluster` to learn
 		how to deploy an Ubuntu Pro Kubernetes cluster on Elastic Kubernetes Service (EKS).
 
 	.. tab:: GCE
 
-		Please see :doc:`here </google/gce/gce-how-to/deploy-kubernetes-with-ubuntu-pro>` to learn
+		Please see :doc:`google:gce/gce-how-to/deploy-kubernetes-with-ubuntu-pro` to learn
 		how to deploy an Ubuntu Pro Kubernetes cluster on Google Compute Engine (GCE).
 
 	.. tab:: OpenShift
@@ -56,7 +56,7 @@ Deploy Pro Kubernetes clusters
 
 		**Get an Ubuntu Pro subscription**
 
-		You can reach out `here <https://ubuntu.com/support/contact-us?product=contextual-footer-ua>`_
+		You can `reach out to us <https://ubuntu.com/support/contact-us?product=contextual-footer-ua>`_
 		to attach the cluster nodes to an Ubuntu Pro subscription, or contact
 		`rocks@canonical.com <mailto:rocks@canonical.com>`_ if you need additional support.
 
@@ -74,9 +74,9 @@ Deploy Pro Kubernetes clusters
 		**Get an Ubuntu Pro subscription**
 
 		If the resulting Kubernetes cluster is composed of Ubuntu nodes, you must attach them
-		to a Pro subscription as described in `here <https://ubuntu.com/pro/tutorial>`_. Otherwise,
-		if the Kubernetes cluster is not running on Ubuntu nodes, you can reach out
-		`here <https://ubuntu.com/support/contact-us?product=contextual-footer-ua>`_
+		to a Pro subscription as described in `this tutorial <https://ubuntu.com/pro/tutorial>`_. Otherwise,
+		if the Kubernetes cluster is not running on Ubuntu nodes, you can 
+		`contact us <https://ubuntu.com/support/contact-us?product=contextual-footer-ua>`_
 		to attach the nodes to an Ubuntu Pro subscription, or contact
 		`rocks@canonical.com <mailto:rocks@canonical.com>`_ if you need additional support.
 
@@ -105,7 +105,7 @@ Deploy Pro Kubernetes clusters
 
 		**Get an Ubuntu Pro subscription**
 
-		You can reach out `here <https://ubuntu.com/support/contact-us?product=contextual-footer-ua>`_
+		You can `contact us <https://ubuntu.com/support/contact-us?product=contextual-footer-ua>`_
 		to attach the cluster nodes to an Ubuntu Pro subscription, or contact
 		`rocks@canonical.com <mailto:rocks@canonical.com>`_ if you need additional support.
 
@@ -116,13 +116,13 @@ Deploy Pro Kubernetes clusters
 		Ubuntu Pro Kubernetes cluster running on Nutanix.
 
 .. _create-k8s-secret:
+
 Create a Secret for Private Registry
 ------------------------------------
 
 Since your Ubuntu Pro container image is in a private registry, you will need to create a
 `secret <https://kubernetes.io/docs/concepts/configuration/secret/>`_ in Kubernetes
-(`see here <https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/>`_
-for more details about pulling images from private registries).
+(For more details about pulling images from private registries, check out the `kuberetes documentation <https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/>`_).
 
 You can use the following example command to create a secret named ``regcred`` for
 `Docker Hub <https://hub.docker.com>`_  (i.e. using ``https://index.docker.io/v1/``

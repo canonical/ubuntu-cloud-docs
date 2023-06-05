@@ -12,7 +12,7 @@ How to get Ubuntu Pro on Azure?
 New instances
 ~~~~~~~~~~~~~
 
-For new instances or instances that are easy to redeploy (e.g. launched programmatically in a CI/CD pipeline), the best option is to redeploy onto a new Azure Ubuntu Pro instance. These Ubuntu Pro instances on Azure attach to their entitlements automatically and will receive all the Pro features by default without further steps. Pro offers on Azure are listed here: :ref:`find-ubuntu-pro-on-azure`.
+For new instances or instances that are easy to redeploy (e.g. launched programmatically in a CI/CD pipeline), the best option is to redeploy onto a new Azure Ubuntu Pro instance. These Ubuntu Pro instances on Azure attach to their entitlements automatically and will receive all the Pro features by default without further steps. Pro offers on Azure are listed at: :ref:`find-ubuntu-pro-on-azure`.
 
 Running instances
 ~~~~~~~~~~~~~~~~~
