@@ -8,7 +8,7 @@ Prerequisites
 
 You need:
 
-- ``eksctl``: see how to install it `here <https://docs.aws.amazon.com/eks/latest/userguide/eksctl.html>`_
+- ``eksctl``: you can install it based on these `instructions <https://docs.aws.amazon.com/eks/latest/userguide/eksctl.html>`_
 - ``packer``: only needed if you want to enable FIPS for the cluster nodes. Install it with ``sudo snap install packer``
 - your AWS access key ID and secret access key
 - an Ubuntu Pro token

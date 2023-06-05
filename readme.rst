@@ -28,9 +28,11 @@ A complete set of pinned, known-working dependencies is included in
 Build and serve the documentation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Start the ``sphinx-autobuild`` documentation server::
+Start the ``sphinx-autobuild`` documentation server using the ``make run`` command. Specify the cloud/project by as a command line parameter::
 
-	make run
+	PROJECT=aws make run
+
+The different projects available are 'aws', 'azure', 'google', 'ibm', 'oracle' and 'oci'.
 
 The documentation will be available at `127.0.0.1:8000 <http://127.0.0.1:8000>`_.
 
