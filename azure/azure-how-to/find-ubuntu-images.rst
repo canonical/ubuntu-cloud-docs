@@ -49,27 +49,6 @@ Ubuntu 20.04 LTS - Focal Fossa
      - ``Canonical:0001-com-ubuntu-server-focal:20_04-lts-arm64:latest``
 
 
-Ubuntu 18.04 LTS - Bionic Beaver
-++++++++++++++++++++++++++++++++
-
-| Quick start: `18.04 LTS on Azure <https://portal.azure.com/#create/Canonical.UbuntuServer1804LTS-ARM>`_
-| Quick start (China): `18.04 LTS on Azure China <https://portal.azure.cn/#create/Canonical.UbuntuServer1804LTS-ARM>`_
-
-
-.. list-table::
-   :widths: 19 50
-   :header-rows: 1
-
-   * - **Kind**
-     - **URN**
-   * - Architecture: **AMD64** Hyper-V Generation: **Gen1**
-     - ``Canonical:UbuntuServer:18.04-LTS:latest``
-   * - Architecture: **AMD64** Hyper-V Generation: **Gen2**
-     - ``Canonical:UbuntuServer:18_04-lts-gen2:latest``
-   * - Architecture: **Arm64** Hyper-V Generation: **Gen2**
-     - ``Canonical:UbuntuServer:18_04-lts-arm64:latest``
-
-
 Interim releases
 ~~~~~~~~~~~~~~~~
 
