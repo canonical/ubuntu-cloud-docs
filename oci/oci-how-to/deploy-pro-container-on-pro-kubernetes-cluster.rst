@@ -122,7 +122,7 @@ Create a Secret for Private Registry
 
 Since your Ubuntu Pro container image is in a private registry, you will need to create a
 `secret <https://kubernetes.io/docs/concepts/configuration/secret/>`_ in Kubernetes
-(For more details about pulling images from private registries, check out the `kuberetes documentation <https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/>`_).
+(For more details about pulling images from private registries, check out the `Kubernetes documentation <https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/>`_).
 
 You can use the following example command to create a secret named ``regcred`` for
 `Docker Hub <https://hub.docker.com>`_  (i.e. using ``https://index.docker.io/v1/``
@@ -177,8 +177,8 @@ Create the Pod, and verify that the Pod is running:
 	kubectl get pod pro-container-pod
 
 
-Conclusion
-----------
+Check pod logs
+--------------
 
 Your Pro container image is deployed in the Pro Kubernetes cluster and running inside
 a Pod. You can check the logs by running:

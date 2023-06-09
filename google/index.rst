@@ -1,6 +1,5 @@
 Ubuntu on GCP
-======================================================
-
+=============
 
 With an optimised Ubuntu GCP kernel built in collaboration between Google and Canonical to
 deliver the very best performance on the Google Cloud hypervisor, Ubuntu is a popular
@@ -19,9 +18,22 @@ Google cloud services
 
        **Ubuntu images on GCE** 
 
-   ..  grid-item:: :doc:`GKE <gke/index>`
+..   ..  grid-item:: :doc:`GKE <gke/index>`
 
       **Ubuntu images on GKE** 
+
+---------
+
+Project and community
+---------------------
+
+Ubuntu on GCP is a member of the Ubuntu family and the project warmly welcomes community projects, contributions, 
+suggestions, fixes and constructive feedback.
+
+* `Code of conduct <https://ubuntu.com/community/governance/code-of-conduct>`_
+* `Get support <https://ubuntu.com/cloud/public-cloud>`_
+* `Join our online chat <https://discourse.ubuntu.com/>`_	
+* `Talk to us about Ubuntu on Google cloud <https://ubuntu.com/gcp#get-in-touch>`_
 
 
 .. toctree::
@@ -29,5 +41,4 @@ Google cloud services
    :maxdepth: 2
 
    gce/index
-   gke/index
    

@@ -24,6 +24,19 @@ AWS Services
 
       **Ubuntu images on EKS** 
 
+---------
+
+Project and community
+---------------------
+
+Ubuntu on AWS is a member of the Ubuntu family and the project warmly welcomes community projects, contributions, 
+suggestions, fixes and constructive feedback.
+
+* `Code of conduct <https://ubuntu.com/community/governance/code-of-conduct>`_
+* `Get support <https://ubuntu.com/cloud/public-cloud>`_
+* `Join our online chat <https://discourse.ubuntu.com/>`_	
+* `Talk to us about Ubuntu on AWS <https://ubuntu.com/aws#get-in-touch>`_
+
 
 .. toctree::
    :hidden:

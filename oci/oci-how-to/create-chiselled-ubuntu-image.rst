@@ -140,10 +140,11 @@ And the output should be:
 
    Hello World!
 
-Conclusion
-----------
 
+What's achieved?
+----------------
+
+The demonstrated chiselled Ubuntu image provides a sub-5MB runtime container image for your C/C++, Go and Rust applications whilst still allowing for additional slices to be easily added to cope with more complex use cases.
 
 Chiselled Ubuntu images offer the benefits of a well-known and well-maintained Linux distribution combined with the advantages of ultra-small distroless-type container images, offering a secure and efficient foundation for building and deploying containerised applications.
 
-The demonstrated chiselled Ubuntu image provides a sub-5MB runtime container image for your C/C++, Go and Rust applications whilst still allowing for additional slices to be easily added to cope with more complex use cases.

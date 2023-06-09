@@ -86,7 +86,6 @@ AMI
 init
 init's
 AMIs
-overrideBootstrapCommand
 instantiation
 ami
 AmazonLinux
@@ -115,3 +114,5 @@ io
 xenial
 paravirtual
 discoverable
+ENA
+GPUs

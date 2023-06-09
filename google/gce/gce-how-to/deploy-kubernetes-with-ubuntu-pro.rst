@@ -134,8 +134,8 @@ Update firewall to allow HTTPS traffic
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 On the control plane VM, during creation if you haven't allowed HTTPS traffic in the firewall, 
-you can allow it by editing the configuration on the `GCE VM Instances`_ page. Click on the VM name to go
-to the instance details page and press the "Edit" button to change the configuration.
+you can allow it by editing the configuration on the `GCE VM Instances`_ page. Select the VM 
+name to access the instance details page and use the "Edit" button to change the configuration.
 In the "Networking" section, you'll find a header named "Firewall". Check the "Allow
 HTTPS traffic" box there and save. This should add a network tag ``https-server`` to your VM.
 
@@ -222,8 +222,8 @@ workstation. Run the following command on your local workstation to check.
 	kubectl get nodes --output=wide
 
 
-Conclusion
-----------
+Verify Pro subscription
+-----------------------
 
 You now have an Ubuntu Pro Kubernetes cluster running in GCE. Your Pro subscription can be
 verified on each of the provisioned nodes by running:
