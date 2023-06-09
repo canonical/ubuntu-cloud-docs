@@ -1,7 +1,9 @@
 Ubuntu on EC2
-======================================================
+=============
 
-Add details here.
+Canonical provides customised Ubuntu AMIs for EC2 instances. These AMIs are based on an
+AWS-optimised kernel, which includes improved device drivers, like ENA, and out of the 
+box support for accelerators like GPUs.
 
 ---------
 
@@ -10,15 +12,17 @@ In this documentation
 
 ..  grid:: 1 1 2 2
 
-   ..  grid-item:: :doc:`Tutorial <ec2-tutorial/index>`
-
-       **Start here**: a hands-on introduction to getting Ubuntu images on EC2 VMs
-
    ..  grid-item:: :doc:`How-to guides <ec2-how-to/index>`
 
       **Step-by-step guides** covering key operations and common tasks
 
-.. grid:: 1 1 2 2
+   
+
+..   ..  grid-item:: :doc:`Tutorial <ec2-tutorial/index>`
+
+       **Start here**: a hands-on introduction to getting Ubuntu images on EC2 VMs
+
+.. .. grid:: 1 1 2 2
    :reverse:
 
    .. grid-item:: :doc:`Reference <ec2-reference/index>`
@@ -34,10 +38,7 @@ In this documentation
    :hidden:
    :maxdepth: 2
 
-   ec2-tutorial/index
    ec2-how-to/index
-   ec2-reference/index
-   ec2-explanation/index
-
+   
 
 

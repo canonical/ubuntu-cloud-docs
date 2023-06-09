@@ -8,170 +8,162 @@ Prerequisites
 
 You need:
 
-- ``eksctl``: you can install it based on these `instructions <https://docs.aws.amazon.com/eks/latest/userguide/eksctl.html>`_
+- ``eksctl``: Check the instructions to `install eksctl <https://docs.aws.amazon.com/eks/latest/userguide/eksctl.html>`_
 - ``packer``: only needed if you want to enable FIPS for the cluster nodes. Install it with ``sudo snap install packer``
 - your AWS access key ID and secret access key
 - an Ubuntu Pro token
 
 
-Cluster deployment preparation
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Prepare the cluster for deployment
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Depending on whether you need to enable FIPS or not, you only need to follow one of the following two sections.
+Although Ubuntu Pro AMIs are available in AWS, at the time of writing this guide, 
+there is no such offer for the EKS service. So you'll need to provision the EKS cluster 
+with customised Ubuntu nodes.
 
-Please note that while there are Ubuntu Pro AMIs available in AWS, at the time
-of writing this guide, there is no such offering for the EKS service, so you'll
-need to provision the EKS cluster with customised Ubuntu nodes.
-
-
-Without FIPS
-^^^^^^^^^^^^
-
-When FIPS is not enabled, you can use one of the existing Ubuntu EKS AMIs and customise it using cloud-init during deployment.
-
-You should use the cloud-init's
-`ubuntu-advantage module <https://cloudinit.readthedocs.io/en/latest/reference/modules.html#ubuntu-advantage>`_.
-For this deployment, you'll also need to have an existing
-`launch template <https://docs.aws.amazon.com/autoscaling/ec2/userguide/launch-templates.html>`_
-on AWS.
-
-Launch template's user-data
-***************************
-
-On the advanced section of your launch template (user-data section), copy
-the following code (replacing the "token" field by your Pro token):
-
-..  code-block:: bash
-
-    MIME-Version: 1.0
-    Content-Type: multipart/mixed; boundary="==MYBOUNDARY=="
-
-    --==MYBOUNDARY==
-    Content-Type: text/cloud-config; charset="us-ascii"
-    ubuntu_advantage:
-    token: <pro_token>
-    enable:
-    - esm
-  
-    --==MYBOUNDARY==
-    Content-Type: text/x-shellscript; charset="us-ascii"
-
-    #!/bin/bash
-    sudo /etc/eks/bootstrap.sh procluster
-
-    --==MYBOUNDARY==--
-
-Cloud-init will use this user-data to enable ESM on the cluster nodes and bootstrap the AWS EKS cluster.
-
-With FIPS
-^^^^^^^^^
-
-When enabling FIPS, a reboot of the underlying node is required. If this reboot is done after the cluster is created, in rare cases, it might result in the node being flagged as defective (`troubleshooting options <https://docs.aws.amazon.com/eks/latest/userguide/troubleshooting.html>`_).
-
-For this reason, the most reliable way to deploy an Ubuntu Pro EKS cluster is to build a
-custom Ubuntu Pro AMI (with `Packer <https://www.packer.io/>`_) and use it during cluster creation until this `bug <https://bugs.launchpad.net/cloud-images/+bug/2017782>`_ is fixed.
+The steps needed for deploying the cluster depend on whether you need to enable FIPS or not.
 
 
-What are the caveats?
-*********************
+.. tabs::
 
-You need to keep rebuilding your custom Ubuntu Pro image in order to have the latest updates and security fixes from upstream.
+    .. tab:: Without FIPS
+        
+        When FIPS is not enabled, you can use one of the existing Ubuntu EKS AMIs and
+        customise it using cloud-init's `ubuntu-advantage module <https://cloudinit.readthedocs.io/en/latest/reference/modules.html#ubuntu-advantage>`_ during deployment.
 
-Also, storing AMI has a cost on AWS, and you will have to replicate it to multiple regions if you need to.
+        For this deployment, you'll also need to have an existing `launch template <https://docs.aws.amazon.com/autoscaling/ec2/userguide/launch-templates.html>`_ on AWS.
 
-Get and modify the Packer file
-******************************
+        **Update user-data in launch template**        
+        
+        On the advanced section of your launch template (user-data section), copy
+        the following code (replacing the "token" field with your Pro token):
 
-Create an ``eks-ubuntu-fips.json`` file with the following content (replacing the
-placeholder credentials with your own in the "variables" section):
+        ..  code-block:: bash
 
-..  code-block:: bash
+            MIME-Version: 1.0
+            Content-Type: multipart/mixed; boundary="==MYBOUNDARY=="
 
-    {
-        "variables": {
-            "aws_access_key": "YOUR_IAM_ACCESS_KEY",
-            "aws_secret_key": "YOUR_IAM_SECRET_KEY",
-            "pro_token": "YOUR_PRO_TOKEN",
-            "eks_ver": "YOUR_EKS_VERSION"
-        },
-        "builders": [
-        {
-            "type": "amazon-ebs",
-            "access_key": "{{user `aws_access_key`}}",
-            "secret_key": "{{user `aws_secret_key`}}",
-            "region": "us-east-1",
-            "instance_type": "t2.micro",
-            "ami_name": "eks{{user `eks_ver`}}-fips-ubuntu20.04-{{timestamp}}",
-            "source_ami_filter": {
-                "filters": {
-                    "virtualization-type": "hvm",
-                    "name": "ubuntu-eks/k8s_{{user `eks_ver`}}/images/hvm-ssd/ubuntu-focal-20.04-amd64-server-*",
-                    "root-device-type": "ebs"
+            --==MYBOUNDARY==
+            Content-Type: text/cloud-config; charset="us-ascii"
+            ubuntu_advantage:
+            token: <pro_token>
+            enable:
+            - esm
+        
+            --==MYBOUNDARY==
+            Content-Type: text/x-shellscript; charset="us-ascii"
+
+            #!/bin/bash
+            sudo /etc/eks/bootstrap.sh procluster
+
+            --==MYBOUNDARY==--
+
+        Cloud-init will use this user-data to enable ESM on the cluster nodes and bootstrap the AWS EKS cluster.
+      
+    
+    .. tab:: With FIPS
+    
+        When enabling FIPS, a reboot of the underlying node is required. If this reboot is done after the cluster is created, in rare cases, it might result in the node being flagged as defective (`troubleshooting options <https://docs.aws.amazon.com/eks/latest/userguide/troubleshooting.html>`_). For this reason, the most reliable way to deploy an Ubuntu Pro EKS cluster is to build a custom Ubuntu Pro AMI (with `Packer <https://www.packer.io/>`_) and use it during cluster creation until this `issue <https://bugs.launchpad.net/cloud-images/+bug/2017782>`_ is resolved.
+
+
+        **Caveats:**
+
+        To get the latest updates and security fixes from upstream, you'll have to regularly rebuild your custom Ubuntu Pro image. Also, storing an AMI on AWS has a cost associated with it, and if required you might have to replicate it in multiple regions too.
+
+
+        **Get and modify the Packer file:**
+
+        Create an ``eks-ubuntu-fips.json`` file with the following content (replacing the
+        placeholder credentials with your own in the "variables" section):
+
+        ..  code-block:: bash
+
+            { 
+                "variables": {
+                    "aws_access_key": "YOUR_IAM_ACCESS_KEY",
+                    "aws_secret_key": "YOUR_IAM_SECRET_KEY",
+                    "pro_token": "YOUR_PRO_TOKEN",
+                    "eks_ver": "YOUR_EKS_VERSION"
                 },
-            "owners": ["099720109477"],
-            "most_recent": true
-        },
-        "ssh_username": "ubuntu"
-        }
-        ],
-        "provisioners": [
-        {
-            "type": "shell",
-            "inline": [
-            "cloud-init status --wait",
-            "sudo apt-get update && sudo apt-get upgrade -y --with-new-pkgs"
-            ]
-        },
-        {
-            "type": "shell",
-            "inline": [
-            "sudo pro attach {{user `pro_token`}}",
-            "sudo pro status --wait",
-            "sudo pro enable fips --assume-yes"
-            ]
-        },
-        {
-            "type": "shell",
-            "inline": [
-            "sudo truncate -s 0 /etc/machine-id",
-            "sudo truncate -s 0 /var/lib/dbus/machine-id"
-            ]
-        }
-        ]
-    }
+                "builders": [
+                {
+                    "type": "amazon-ebs",
+                    "access_key": "{{user `aws_access_key`}}",
+                    "secret_key": "{{user `aws_secret_key`}}",
+                    "region": "us-east-1",
+                    "instance_type": "t2.micro",
+                    "ami_name": "eks{{user `eks_ver`}}-fips-ubuntu20.04-{{timestamp}}",
+                    "source_ami_filter": {
+                        "filters": {
+                            "virtualization-type": "hvm",
+                            "name": "ubuntu-eks/k8s_{{user `eks_ver`}}/images/hvm-ssd/ubuntu-focal-20.04-amd64-server-*",
+                            "root-device-type": "ebs"
+                        },
+                    "owners": ["099720109477"],
+                    "most_recent": true
+                },
+                "ssh_username": "ubuntu"
+                }
+                ],
+                "provisioners": [
+                {
+                    "type": "shell",
+                    "inline": [
+                    "cloud-init status --wait",
+                    "sudo apt-get update && sudo apt-get upgrade -y --with-new-pkgs"
+                    ]
+                },
+                {
+                    "type": "shell",
+                    "inline": [
+                    "sudo pro attach {{user `pro_token`}}",
+                    "sudo pro status --wait",
+                    "sudo pro enable fips --assume-yes"
+                    ]
+                },
+                {
+                    "type": "shell",
+                    "inline": [
+                    "sudo truncate -s 0 /etc/machine-id",
+                    "sudo truncate -s 0 /var/lib/dbus/machine-id"
+                    ]
+                }
+                ]
+            }
+        
+        This is the file that will be used by Packer to build the custom Ubuntu Pro AMI.
 
-This is the file that will be used by Packer to build the custom Ubuntu Pro AMI.
-
-Remember that the final AMI needs to be in the same region as the EKS cluster, 
-so make sure to adjust the "region" above accordingly.
-
-This Packer file takes as a source an existing AMI of an EKS-based Ubuntu Focal
-Server for amd64. It will then launch shell commands to wait for cloud-init to
-finish and upgrade the system. Afterwards, it attaches the machine to a Pro subscription
-using your Pro token and enables FIPS. To conclude, it removes the machine-id
-from the custom image, to have a unique machine-id on every node instantiation.
+        Remember that the final AMI needs to be in the same region as the EKS cluster, 
+        so make sure to adjust the "region" above accordingly.
+        
+        This Packer file takes as a source an existing AMI of an EKS-based Ubuntu Focal
+        Server for amd64. It will then launch shell commands to wait for cloud-init to
+        finish and upgrade the system. Afterwards, it attaches the machine to a Pro subscription
+        using your Pro token and enables FIPS. To conclude, it removes the machine-id
+        from the custom image, to have a unique machine-id on every node instantiation.
 
 
-Build the custom Ubuntu Pro AMI
-*******************************
+        **Build the custom Ubuntu Pro AMI:**
 
-To build the image, run ``packer build eks-ubuntu-fips.json``.
-The resulting logs should look something like:
+        To build the image, run ``packer build eks-ubuntu-fips.json``.
+        The resulting logs should look something like:
 
-..  code-block:: bash
+        .. code-block:: bash
 
-    Build 'amazon-ebs' finished after 9 minutes 35 seconds.
+            Build 'amazon-ebs' finished after 9 minutes 35 seconds.
 
-    ==> Wait completed after 9 minutes 35 seconds
+            ==> Wait completed after 9 minutes 35 seconds
 
-    ==> Builds finished. The artifacts of successful builds are:
-    --> amazon-ebs: amis were created:
-    us-east-1: ami-xxxxxxxx
+            ==> Builds finished. The artifacts of successful builds are:
+            --> amazon-ebs: amis were created:
+            us-east-1: ami-xxxxxxxx
 
-NOTE: copy the provided AMI ID for the next step.
+        .. note::
+            Save a copy of the provided AMI ID for the next step.
 
-Create the eksctl config file
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Create the ``eksctl`` config file
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 You're now ready to deploy the EKS cluster with Ubuntu Pro nodes.
 To do so, start by creating a ``cluster.yaml`` with the following content
@@ -226,13 +218,14 @@ Add the following content to your file
          This config file allows you to create a cluster using the AMI from the previous step,
          with two nodes and SSH access.
 
-         Also, we use AmazonLinux2 as the amiFamily because currently it's the only native option supported by eksctl.
+         Also, we use AmazonLinux2 as the amiFamily because currently it's the only native option supported by ``eksctl``.
 
-         The "overrideBootstrapCommand" lets you launch the bootstrap script from AWS EKS
+         The ``overrideBootstrapCommand`` lets you launch the bootstrap script from AWS EKS
          to initialise the nodes.
 
 
-For further cluster customisation see `this <https://eksctl.io/>`_.
+For further cluster customisation check out `eksctl details <https://eksctl.io/>`_.
+
 
 Create the EKS cluster
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -256,7 +249,7 @@ To ensure your nodes have an Ubuntu Pro subscription, SSH into one of the cluste
 
 ..  code-block:: bash
 
-    $ # Replace the private SSH key and node IP according to your setup
+    # Replace the private SSH key and node IP according to your setup
     $ ssh -i yoursshkeyname.pem ubuntu@<external_ip_of_node>
     $ pro status
 
@@ -270,8 +263,9 @@ To ensure your nodes have an Ubuntu Pro subscription, SSH into one of the cluste
 Please note that your services' statuses might differ from this snippet based
 on the Pro services that you've chosen to enable in the above configurations.
 
-Conclusion
-~~~~~~~~~~
+
+Verify Pro subscription
+~~~~~~~~~~~~~~~~~~~~~~~
 
 You now have an Ubuntu Pro Kubernetes cluster on EKS. Your Ubuntu Pro subscription can be verified on each of the provisioned nodes with
 

@@ -1,2 +1,2 @@
 # Configuration file for the Sphinx documentation builder.
-project = 'Ubuntu on OCI Registeries'
+project = 'Ubuntu on OCI Registries'

@@ -10,21 +10,36 @@ works seamlessly across IBM platforms, including IBM Z and LinuxONE, IBM Power S
 IBM Services
 ---------------------
 
-..  grid:: 1 1 2 2
-
-   ..  grid-item:: :doc:`IBM Classic <ibm-classic/index>`
-
-       **Ubuntu images on IBM Classic** 
+..  grid:: 1 
 
    ..  grid-item:: :doc:`IBM VPC <ibm-vpc/index>`
 
       **Ubuntu images on IBM VPC** 
 
 
+..   ..  grid-item:: :doc:`IBM Classic <ibm-classic/index>`
+
+       **Ubuntu images on IBM Classic** 
+
+
+---------
+
+Project and community
+---------------------
+
+Ubuntu on IBM is a member of the Ubuntu family and the project warmly welcomes community projects, contributions, 
+suggestions, fixes and constructive feedback.
+
+* `Code of conduct <https://ubuntu.com/community/governance/code-of-conduct>`_
+* `Get support <https://ubuntu.com/cloud/public-cloud>`_
+* `Join our online chat <https://discourse.ubuntu.com/>`_	
+* `Talk to us about Ubuntu on IBM <https://ubuntu.com/ibm#get-in-touch>`_
+
+
+
 .. toctree::
    :hidden:
    :maxdepth: 2
-
-   ibm-classic/index
+   
    ibm-vpc/index
    
