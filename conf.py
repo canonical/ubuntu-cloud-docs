@@ -26,11 +26,7 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', '.sphinx', 'readme.rst']
 
 intersphinx_mapping = {
     'aws': ('https://canonical-aws.readthedocs-hosted.com/en/latest/', None),
-    'azure': ('https://canonical-azure.readthedocs-hosted.com/en/latest/', None),
-    'google': ('https://canonical-gcp.readthedocs-hosted.com/en/latest/', None),
-    'ibm': ('https://canonical-ibm.readthedocs-hosted.com/en/latest/', None),
-    'oracle': ('https://canonical-oracle.readthedocs-hosted.com/en/latest/', None),
-    'oci': ('https://canonical-oci.readthedocs-hosted.com/en/latest/', None)
+    'azure': ('https://canonical-azure.readthedocs-hosted.com/en/latest/', None)
 }
 
 #  -- Projects that will share this configuration file -----------------------------
