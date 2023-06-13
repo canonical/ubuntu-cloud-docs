@@ -3,7 +3,8 @@
 Ubuntu on public cloud
 ======================================================
 
-
+ Master Slave
+ 
 **Ubuntu is the world’s most popular cloud operating system across public clouds.** 
 Thanks to its security, versatility and policy of regular updates, 
 Ubuntu is the leading cloud guest OS and the only free cloud operating system
