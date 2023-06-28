@@ -85,10 +85,10 @@ Project and community
 
 Ubuntu public cloud is open source project that warmly welcomes community projects, contributions, suggestions, fixes and constructive feedback.
 
-* `Code of conduct <https://ubuntu.com/community/governance/code-of-conduct>`_
-* `Get support <https://ubuntu.com/cloud/public-cloud>`_
-* `Join our online chat <https://discourse.ubuntu.com/>`_
-* `Start using Ubuntu today! <https://ubuntu.com/download/cloud>`_
+* `Code of conduct`_
+* `Get support`_
+* `Join our online chat`_
+* `Start using Ubuntu today`_ 
 
 
 .. toctree::
@@ -102,3 +102,7 @@ Ubuntu public cloud is open source project that warmly welcomes community projec
    oracle/index
    oci/index
    
+.. _Code of conduct: https://ubuntu.com/community/governance/code-of-conduct
+.. _Get support: https://ubuntu.com/cloud/public-cloud
+.. _Join our online chat: https://discourse.ubuntu.com
+.. _Start using Ubuntu today: https://ubuntu.com/download/cloud

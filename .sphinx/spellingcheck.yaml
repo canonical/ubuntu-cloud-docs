@@ -22,4 +22,5 @@ matrix:
       - link
       - title
       - div.relatedlinks
-      - "#aws-marketplace-identifiers"
+      - div.visually-hidden
+      - img
