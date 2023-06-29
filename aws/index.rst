@@ -32,11 +32,10 @@ Project and community
 Ubuntu on AWS is a member of the Ubuntu family and the project warmly welcomes community projects, contributions, 
 suggestions, fixes and constructive feedback.
 
-* `Code of conduct <https://ubuntu.com/community/governance/code-of-conduct>`_
-* `Get support <https://ubuntu.com/cloud/public-cloud>`_
-* `Join our online chat <https://discourse.ubuntu.com/>`_	
-* `Talk to us about Ubuntu on AWS <https://ubuntu.com/aws#get-in-touch>`_
-
+* `Code of conduct`_
+* `Get support`_
+* `Join our online chat`_
+* `Talk to us about Ubuntu on AWS`_
 
 .. toctree::
    :hidden:
@@ -45,3 +44,7 @@ suggestions, fixes and constructive feedback.
    ec2/index
    eks/index
    
+.. _Code of conduct: https://ubuntu.com/community/governance/code-of-conduct
+.. _Get support: https://ubuntu.com/cloud/public-cloud
+.. _Join our online chat: https://discourse.ubuntu.com
+.. _Talk to us about Ubuntu on AWS: https://ubuntu.com/aws#get-in-touch

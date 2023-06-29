@@ -1,39 +1,39 @@
-"Name", "Architecture", "Identifier", "GovCloud"
-"Ubuntu 16.04 LTS", "amd64", "prod-aq7wy7l65auna", "✓"
-"Ubuntu 16.04 LTS", "arm64", "prod-zjzktzfox3gz6", "✓"
-"Ubuntu 18.04 LTS", "amd64", "prod-43pfd7pfsijnm", "✓"
-"Ubuntu 18.04 LTS", "arm64", "prod-nanaj5afkj4gq", "✓"
-"Minimal Ubuntu 18.04 LTS", "amd64", "prod-gv4aco7axss42", "✓"
-"Minimal Ubuntu 18.04 LTS", "arm64", "prod-jfs2osz6fmem4", "✓"
-"Ubuntu 20.04 LTS", "amd64", "prod-x7h6cigkuiul6", "✓"
-"Ubuntu 20.04 LTS", "arm64", "prod-gprrntd234sfc", "✓"
-"Minimal Ubuntu 20.04 LTS", "amd64", "prod-df2jln3gjtwps", "✓"
-"Minimal Ubuntu 20.04 LTS", "arm64", "prod-emtsb6upxf6us", "✓"
-"Ubuntu 22.04 LTS", "amd64", "prod-lfutkwiaknxsk", "✓"
-"Ubuntu 22.04 LTS", "arm64", "prod-amd2rg3s3i7tc", "✓"
-"Minimal Ubuntu 22.04 LTS", "amd64", "prod-smq32swynllqw", "✓"
-"Minimal Ubuntu 22.04 LTS", "arm64", "prod-zvdejcufto6ps", "✓"
-"Ubuntu 22.10", "amd64", "prod-663ryfcvanyqi", "✓"
-"Ubuntu 22.10", "arm64", "prod-aizbragkux5k2", "✓"
-"Minimal Ubuntu 22.10", "amd64", "prod-k62pbab6qb6ws", "✓"
-"Minimal Ubuntu 22.10", "arm64", "prod-haniqpk5itina", "✓"
-"Ubuntu 23.04", "amd64", "prod-5k5cl7gpbkr26", "✓"
-"Ubuntu 23.04", "arm64", "prod-ad4brywknigv4", "✓"
-"Minimal Ubuntu 23.04", "amd64", "prod-4q2ov7d2gozxk", "✓"
-"Minimal Ubuntu 23.04", "arm64", "prod-wq7aqb3abhaay", "✓"
-"Ubuntu Pro FIPS 16.04 LTS", "amd64", "prod-hykkbajyverq4", "✓"
-"Ubuntu Pro FIPS 18.04 LTS", "amd64", "prod-7izp2xqnddwdc", "✓"
-"Ubuntu Pro FIPS 20.04 LTS", "amd64", "prod-k6fgbnayirmrc", "✓"
-"Ubuntu Pro 14.04 LTS", "amd64", "prod-7u42cjnp5pcuo", "✓"
-"Ubuntu Pro 16.04 LTS", "amd64", "prod-f6ogoaqs7lwre", "✓"
-"Ubuntu Pro 18.04 LTS", "amd64", "prod-jlgu4232gpnwa", "✓"
-"Ubuntu Pro 20.04 LTS", "amd64", "prod-3sk4unyn4iwqu", "✓"
-"Ubuntu Pro 22.04 LTS", "amd64", "prod-uwytposjsg3du", "✓"
-"Ubuntu 20.04 LTS for EKS 1.22", "amd64", "prod-2m2caolrsf3dy", "✓"
-"Ubuntu 20.04 LTS for EKS 1.22", "arm64", "prod-mm6rjsecuihx4", "✓"
-"Ubuntu 20.04 LTS for EKS 1.23", "amd64", "prod-d6nvbzhhqtsnc", "✓"
-"Ubuntu 20.04 LTS for EKS 1.23", "arm64", "prod-w4kdatfulcfk2", "✓"
-"Ubuntu 20.04 LTS for EKS 1.24", "amd64", "prod-q56ww7nfnmv72", "✓"
-"Ubuntu 20.04 LTS for EKS 1.24", "arm64", "prod-pikds4f276lq6", "✓"
-"Ubuntu 20.04 LTS for EKS 1.25", "amd64", "prod-h232pdamfnj5w", "✓"
-"Ubuntu 20.04 LTS for EKS 1.25", "arm64", "prod-exeixbb2fbrog", "✓"
+Name,Architecture,Identifier,GovCloud
+Ubuntu 16.04 LTS,amd64,``prod-aq7wy7l65auna``,✓
+Ubuntu 16.04 LTS,arm64,``prod-zjzktzfox3gz6``,✓
+Ubuntu 18.04 LTS,amd64,``prod-43pfd7pfsijnm``,✓
+Ubuntu 18.04 LTS,arm64,``prod-nanaj5afkj4gq``,✓
+Minimal Ubuntu 18.04 LTS,amd64,``prod-gv4aco7axss42``,✓
+Minimal Ubuntu 18.04 LTS,arm64,``prod-jfs2osz6fmem4``,✓
+Ubuntu 20.04 LTS,amd64,``prod-x7h6cigkuiul6``,✓
+Ubuntu 20.04 LTS,arm64,``prod-gprrntd234sfc``,✓
+Minimal Ubuntu 20.04 LTS,amd64,``prod-df2jln3gjtwps``,✓
+Minimal Ubuntu 20.04 LTS,arm64,``prod-emtsb6upxf6us``,✓
+Ubuntu 22.04 LTS,amd64,``prod-lfutkwiaknxsk``,✓
+Ubuntu 22.04 LTS,arm64,``prod-amd2rg3s3i7tc``,✓
+Minimal Ubuntu 22.04 LTS,amd64,``prod-smq32swynllqw``,✓
+Minimal Ubuntu 22.04 LTS,arm64,``prod-zvdejcufto6ps``,✓
+Ubuntu 22.10,amd64,``prod-663ryfcvanyqi``,✓
+Ubuntu 22.10,arm64,``prod-aizbragkux5k2``,✓
+Minimal Ubuntu 22.10,amd64,``prod-k62pbab6qb6ws``,✓
+Minimal Ubuntu 22.10,arm64,``prod-haniqpk5itina``,✓
+Ubuntu 23.04,amd64,``prod-5k5cl7gpbkr26``,✓
+Ubuntu 23.04,arm64,``prod-ad4brywknigv4``,✓
+Minimal Ubuntu 23.04,amd64,``prod-4q2ov7d2gozxk``,✓
+Minimal Ubuntu 23.04,arm64,``prod-wq7aqb3abhaay``,✓
+Ubuntu Pro FIPS 16.04 LTS,amd64,``prod-hykkbajyverq4``,✓
+Ubuntu Pro FIPS 18.04 LTS,amd64,``prod-7izp2xqnddwdc``,✓
+Ubuntu Pro FIPS 20.04 LTS,amd64,``prod-k6fgbnayirmrc``,✓
+Ubuntu Pro 14.04 LTS,amd64,``prod-7u42cjnp5pcuo``,✓
+Ubuntu Pro 16.04 LTS,amd64,``prod-f6ogoaqs7lwre``,✓
+Ubuntu Pro 18.04 LTS,amd64,``prod-jlgu4232gpnwa``,✓
+Ubuntu Pro 20.04 LTS,amd64,``prod-3sk4unyn4iwqu``,✓
+Ubuntu Pro 22.04 LTS,amd64,``prod-uwytposjsg3du``,✓
+Ubuntu 20.04 LTS for EKS 1.22,amd64,``prod-2m2caolrsf3dy``,✓
+Ubuntu 20.04 LTS for EKS 1.22,arm64,``prod-mm6rjsecuihx4``,✓
+Ubuntu 20.04 LTS for EKS 1.23,amd64,``prod-d6nvbzhhqtsnc``,✓
+Ubuntu 20.04 LTS for EKS 1.23,arm64,``prod-w4kdatfulcfk2``,✓
+Ubuntu 20.04 LTS for EKS 1.24,amd64,``prod-q56ww7nfnmv72``,✓
+Ubuntu 20.04 LTS for EKS 1.24,arm64,``prod-pikds4f276lq6``,✓
+Ubuntu 20.04 LTS for EKS 1.25,amd64,``prod-h232pdamfnj5w``,✓
+Ubuntu 20.04 LTS for EKS 1.25,arm64,``prod-exeixbb2fbrog``,✓
