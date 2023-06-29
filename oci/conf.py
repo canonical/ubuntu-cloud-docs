@@ -14,3 +14,11 @@ html_context = {
     # Change to an empty value if your GitHub repo doesn't have issues enabled
     "github_issues": "enabled"
 }
+
+# Used for related links - no need to change
+if 'discourse' in html_context:
+    html_context['discourse_prefix'] = html_context['discourse'] + "/t/"
+
+html_js_files = []
+if "github_issues" in html_context and html_context["github_issues"]:
+    html_js_files.append('github_issue_links.js')

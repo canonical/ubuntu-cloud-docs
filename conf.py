@@ -21,9 +21,6 @@ ogp_image = "https://assets.ubuntu.com/v1/6c10be67-UbuntuCloud.jpg"
 # Update with the favicon for your product
 html_favicon = ".sphinx/_static/favicon.png"
 
-# Used for related links - no need to change
-if 'discourse' in html_context:
-    html_context['discourse_prefix'] = html_context['discourse'] + "/t/"
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
@@ -159,10 +156,6 @@ html_css_files = [
     'custom.css',
     'github_issue_links.css',
 ]
-
-html_js_files = []
-if "github_issues" in html_context and html_context["github_issues"]:
-    html_js_files.append('github_issue_links.js')
 
 
 
