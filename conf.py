@@ -30,7 +30,7 @@ html_context = {
     # Change to the branch for this version of the documentation
     "github_version": "main",
     # Change to the folder that contains the documentation (usually "/" or "/docs/")
-    "github_folder": "/",
+    "github_folder": "/$PROJECT",
     # Change to an empty value if your GitHub repo doesn't have issues enabled
     "github_issues": "enabled"
 }
