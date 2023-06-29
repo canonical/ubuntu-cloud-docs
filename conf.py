@@ -94,6 +94,8 @@ linkcheck_ignore = [
     'http://localhost:8000'
     ]
 
+linkcheck_anchors = False
+
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
