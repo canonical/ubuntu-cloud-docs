@@ -7,5 +7,6 @@ html_context = {
     # Change to the branch for this version of the documentation
     "github_version": "main",
     # Change to the folder that contains the documentation (usually "/" or "/docs/")
-    "github_folder": "/oracle/"
+    "github_folder": "/oracle/",
+    "display_github": True
 }
