@@ -8,5 +8,5 @@ html_context = {
     "github_version": "main",
     # Change to the folder that contains the documentation (usually "/" or "/docs/")
     "github_folder": "/oracle/",
-    "display_github": True
+    "conf_py_path": "/oracle"
 }
