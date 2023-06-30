@@ -32,7 +32,9 @@ html_context = {
     # Change to the folder that contains the documentation (usually "/" or "/docs/")
     "github_folder": "/",
     # Change to an empty value if your GitHub repo doesn't have issues enabled
-    "github_issues": "enabled"
+    "github_issues": "enabled",
+    # Change to the folder that contains the documentation (usually "/" or "/docs/")
+    "conf_py_path": "/"
 }
 
 # Used for related links - no need to change
