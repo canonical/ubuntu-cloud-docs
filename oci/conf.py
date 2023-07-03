@@ -13,3 +13,13 @@ html_context = {
     # Change to the folder that contains the documentation (usually "/" or "/docs/")
     "conf_py_path": "/oci/"
 }
+
+html_static_path = ['.sphinx/_static']
+html_css_files = [
+    'custom.css',
+    'github_issue_links.css',
+]
+
+html_js_files = []
+html_js_files.append('github_issue_links.js')
+
