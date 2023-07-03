@@ -1,10 +1,15 @@
 import datetime
 import sys
+import os
 
 # Configuration file for the Sphinx documentation builder.
 #
 # For the full list of built-in configuration values, see the documentation:
 # https://www.sphinx-doc.org/en/master/usage/configuration.html
+
+# Access to our custom environment variables
+subproject = os.environ.get("PROJECT")
+subproject_path = "/" + subproject + "/"
 
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
@@ -30,11 +35,11 @@ html_context = {
     # Change to the branch for this version of the documentation
     "github_version": "main",
     # Change to the folder that contains the documentation (usually "/" or "/docs/")
-    "github_folder": "/$PROJECT/",
+    "github_folder": "/subproject/",
     # Change to an empty value if your GitHub repo doesn't have issues enabled
     "github_issues": "enabled",
     # Change to the folder that contains the documentation (usually "/" or "/docs/")
-    "conf_py_path": "/$PROJECT/"
+    "conf_py_path": subproject_path
 }
 
 # Used for related links - no need to change
