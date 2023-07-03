@@ -34,7 +34,7 @@ html_context = {
     # Change to an empty value if your GitHub repo doesn't have issues enabled
     "github_issues": "enabled",
     # Change to the folder that contains the documentation (usually "/" or "/docs/")
-    "conf_py_path": "/"
+    "conf_py_path": "/oracle"
 }
 
 # Used for related links - no need to change
