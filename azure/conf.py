@@ -2,11 +2,12 @@
 project = 'Ubuntu on Azure'
 
 
-html_context = {
-    # Change to the GitHub info for your project
-    "github_url": "https://github.com/canonical/ubuntu-cloud-docs/",
-    # Change to the branch for this version of the documentation
-    "github_version": "main",
-    # Change to the folder that contains the documentation (usually "/" or "/docs/")
-    "github_folder": "/azure/"
-}
+html_static_path = ['.sphinx/_static']
+html_css_files = [
+    'custom.css',
+    'github_issue_links.css',
+]
+
+html_js_files = []
+html_js_files.append('github_issue_links.js')
+

@@ -21,5 +21,6 @@ html_css_files = [
 ]
 
 html_js_files = []
-html_js_files.append('github_issue_links.js')
+if "github_issues" in html_context and html_context["github_issues"]:
+    html_js_files.append('github_issue_links.js')
 
