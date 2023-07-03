@@ -1,5 +1,6 @@
 import datetime
 import sys
+import os
 
 # Configuration file for the Sphinx documentation builder.
 #
@@ -21,6 +22,12 @@ ogp_image = "https://assets.ubuntu.com/v1/6c10be67-UbuntuCloud.jpg"
 # Update with the favicon for your product
 html_favicon = ".sphinx/_static/favicon.png"
 
+# Access to custom environment variable to detect project being built
+subproject = os.environ.get("PROJECT")
+subproject_path = "/"
+if subproject:
+    subproject_path = "/" + subproject + "/"
+
 html_context = {
     # Change to the discourse instance you want to be able to link to
     # (use an empty value if you don't want to link)
@@ -30,9 +37,11 @@ html_context = {
     # Change to the branch for this version of the documentation
     "github_version": "main",
     # Change to the folder that contains the documentation (usually "/" or "/docs/")
-    "github_folder": "/",
+    "github_folder": subproject_path,
     # Change to an empty value if your GitHub repo doesn't have issues enabled
-    "github_issues": "enabled"
+    "github_issues": "enabled",
+    # Change to the folder that contains the documentation (usually "/" or "/docs/")
+    "conf_py_path": subproject_path
 }
 
 # Used for related links - no need to change
