@@ -35,7 +35,7 @@ html_context = {
     # Change to the branch for this version of the documentation
     "github_version": "main",
     # Change to the folder that contains the documentation (usually "/" or "/docs/")
-    "github_folder": "/subproject/",
+    "github_folder": subproject_path,
     # Change to an empty value if your GitHub repo doesn't have issues enabled
     "github_issues": "enabled",
     # Change to the folder that contains the documentation (usually "/" or "/docs/")
@@ -184,7 +184,6 @@ html_css_files = [
 html_js_files = []
 if "github_issues" in html_context and html_context["github_issues"]:
     html_js_files.append('github_issue_links.js')
-
 
 
 # Set up redirects (https://documatt.gitlab.io/sphinx-reredirects/usage.html)
