@@ -2,6 +2,10 @@
 project = 'Ubuntu on Azure'
 
 
+html_context = {    
+    
+}
+
 html_static_path = ['.sphinx/_static']
 html_css_files = [
     'custom.css',
