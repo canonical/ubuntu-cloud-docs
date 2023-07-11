@@ -23,7 +23,7 @@ Add the repository to the sources list::
        sudo tee /etc/apt/sources.list.d/microsoft.list
 
 
-Pin a few rules to only allow the Azure CLI to be fetch from Microsoft's archive::
+Pin a few rules to ensure that the Azure CLI is fetched only from Microsoft's archive::
 
    cat << EOF | sudo tee /etc/apt/preferences.d/99-microsoft
 
