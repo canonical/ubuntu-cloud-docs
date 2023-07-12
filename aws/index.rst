@@ -21,7 +21,7 @@ various security-certified images are also available.
 
 ---------
 
-AWS Services
+AWS services
 ------------
 
 The two main AWS services that use Ubuntu images are EC2 and EKS.
@@ -62,7 +62,7 @@ but the latest image ``ubuntu-eks/k8s_1.23/images/hvm-ssd/ubuntu-focal-20.04-arm
 ----------
 
 How-to guides
---------------------------------
+-------------
 
 Step-by-step guides for some of the key operations related to Ubuntu on AWS such as finding the right Ubuntu images and deploying an Ubuntu Pro EKS cluster are available here:
 

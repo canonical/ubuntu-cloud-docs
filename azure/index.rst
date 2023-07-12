@@ -61,7 +61,7 @@ Ubuntu is a distribution of free software. Anyone is free to re-publish the OS. 
 Canonical's offerings on Azure
 ------------------------------
 
-1. Ubuntu server and Ubuntu Pro for all supported LTSes across all Azure architectures, including ARM
+1. Ubuntu server and Ubuntu Pro for all supported LTS versions across all Azure architectures, including ARM
 #. Minimal Ubuntu images for Independent Software Vendors and others who want to build on Azure
 #. Ubuntu Pro FIPS images that allow US government Ubuntu users to easily move their workloads to Azure
 #. Pre-hardened (CIS) Ubuntu minimal images, for those who want best security practices for Ubuntu out of the box
