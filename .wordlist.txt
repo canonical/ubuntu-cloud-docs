@@ -51,6 +51,7 @@ ECR
 OCIR
 lts
 namespace
+namespaces
 ubuntu
 ESM
 readthedocs
@@ -117,3 +118,6 @@ discoverable
 ENA
 GPUs
 softwares
+livepatch
+TDX
+AKS
