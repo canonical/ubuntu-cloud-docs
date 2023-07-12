@@ -116,3 +116,4 @@ paravirtual
 discoverable
 ENA
 GPUs
+softwares
