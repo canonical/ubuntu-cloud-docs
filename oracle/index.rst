@@ -1,35 +1,30 @@
 Ubuntu on Oracle
 ================
 
+**Ubuntu on Oracle is a set of customised Ubuntu images** that allow easy access to a wide range 
+of products and services - offered by both Oracle cloud and Canonical.
 
-Ubuntu is the operating system of choice for next-generation, cloud workloads on Oracle cloud.
+**These images provide a foundation for deploying cloud-based software solutions,** specifically
+for softwares built on Ubuntu and running on Oracle cloud. They focus on providing the optimal tools 
+and features needed to run specific workloads.
 
------------
+**The images create a stable and secure cloud platform** that is ideal for scaling development work
+done on Ubuntu-based systems. Since Ubuntu is one of the most favoured operating systems amongst
+developers, using an Ubuntu-based image for the corresponding cloud deployment becomes the simplest
+option.
 
-In this documentation
----------------------
-
-..  grid:: 1 
-
-   ..  grid-item:: :doc:`How-to guides <oracle-how-to/index>`
-
-      **Step-by-step guides** covering key operations and common tasks
-
-..   ..  grid-item:: :doc:`Tutorial <oracle-tutorial/index>`
-
-       **Start here**: a hands-on introduction to getting Ubuntu images for Oracle
+**Everyone from individual developers to large enterprises use these images** for developing and deploying
+their softwares. For highly regulated industries from the government, medical and finance sectors, 
+various security-certified images are also available.
 
 
-.. .. grid:: 1 1 2 2
-   :reverse:
+----------
 
-   .. grid-item:: :doc:`Reference <oracle-reference/index>`
+How-to guide
+-------------
+Instructions for upgrading from Ubuntu 20.04 to 22.04 on Oracle cloud virtual machines: :doc:`./oracle-how-to/upgrade-from-focal-to-jammy`
 
-      **Technical information** - services, features, pricing
 
-   .. grid-item:: :doc:`Explanation <oracle-explanation/index>`
-
-      **Discussion and clarification** of key topics
 
 ----------
 
@@ -48,7 +43,8 @@ community projects, contributions, suggestions, fixes and constructive feedback.
    :hidden:
    :maxdepth: 2
 
-   oracle-how-to/index
+   oracle-how-to/upgrade-from-focal-to-jammy
+
    
 .. _Code of conduct: https://ubuntu.com/community/governance/code-of-conduct
 .. _Get support: https://ubuntu.com/cloud/public-cloud
