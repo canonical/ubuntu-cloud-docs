@@ -10,9 +10,7 @@ On AWS, cloud images are referred to as Amazon Machine Images (AMIs). Canonical 
 
 Finding images with SSM
 -----------------------
-The AWS Systems Manager (SSM) agent is used by Canonical to store the latest AMI release versions. This provides users with a programmatic method of querying for the latest AMI ID.
-
-Canonical stores SSM parameters under `/aws/service/canonical/` and the AWS CLI can be used to find the latest AMI ID.
+The SSM Parameter Store is a hierarchical data service provided by AWS for configuration management. It can be used to store passwords, license codes, configuration strings, Amazon Machine Image (AMI) IDs, and more. Canonical provides a set of publicly available parameters in the parameter store under the hierarchy ``/aws/service/canonical``. One useful set of parameters available under that hierarchy is the set of latest AMI IDs for Ubuntu images. These IDs can be found programmatically using the AWS CLI.
 
 Images for EC2 and EKS
 ~~~~~~~~~~~~~~~~~~~~~~

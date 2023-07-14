@@ -19,6 +19,51 @@ their softwares. For highly regulated industries from the government, medical an
 various security-certified images are also available.
 
 
+----------
+
+Canonical's offerings on AWS
+----------------------------
+
+Ubuntu images
+~~~~~~~~~~~~~
+
+For each Ubuntu release, multiple Ubuntu images are delivered to AWS. This could be based on the underlying architecture, required features, the storage type and the virtualisation type that is used. For example, a non-exhaustive list is:
+
+.. list-table::
+   :stub-columns: 1
+  
+   * - Architectures
+     - AMD64
+     - ARM64
+   * - Image types
+     - Ubuntu server
+     - Ubuntu minimal
+   * - Storage types
+     - Instance store
+     - Elastic Block Store (EBS)
+   * - Virtualisation types
+     - Paravirtual (PV) 
+     - Hardware Virtual Machine (HVM)
+
+Ubuntu Pro FIPS
+~~~~~~~~~~~~~~~
+
+`Ubuntu Pro FIPS for AWS`_ are FIPS certified created by Canonical for AWS compliance in production environments. These premium images are available only through the AWS Marketplace or through private offers.
+
+Workspaces
+~~~~~~~~~~
+
+Workspaces is a paid offering supported through `Amazon Workspaces`_. The image provided for Workspaces is basically an Ubuntu Desktop running on EC2 and comes with Ubuntu Pro services (ESM, livepatch) enabled by default.
+
+Anbox
+~~~~~
+
+`Anbox`_ is Android containers in the cloud. There are 2 AWS marketplace listings available to deploy Anbox directly on AWS:
+
+* `Anbox Cloud - AMD64`_
+* `Anbox Cloud - ARM64`_
+
+
 ---------
 
 AWS services
@@ -98,3 +143,8 @@ suggestions, fixes and constructive feedback.
 .. _Get support: https://ubuntu.com/cloud/public-cloud
 .. _Join our online chat: https://discourse.ubuntu.com
 .. _Talk to us about Ubuntu on AWS: https://ubuntu.com/aws#get-in-touch
+.. _Anbox: https://anbox-cloud.io/
+.. _Anbox Cloud - AMD64: https://aws.amazon.com/marketplace/pp/prodview-3lx6xyaapstz4?
+.. _Anbox Cloud - ARM64: https://aws.amazon.com/marketplace/pp/prodview-aqmdt52vqs5qk
+.. _Ubuntu Pro FIPS for AWS: https://ubuntu.com/aws/fips
+.. _Amazon Workspaces: https://aws.amazon.com/workspaces/
