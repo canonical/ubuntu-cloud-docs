@@ -121,3 +121,4 @@ softwares
 livepatch
 TDX
 AKS
+Workspaces
