@@ -109,10 +109,11 @@ but the latest image ``ubuntu-eks/k8s_1.23/images/hvm-ssd/ubuntu-focal-20.04-arm
 How-to guides
 -------------
 
-Step-by-step guides for some of the key operations related to Ubuntu on AWS such as finding the right Ubuntu images and deploying an Ubuntu Pro EKS cluster are available here:
+Linked below are step-by-step guides for some key operations: finding the right Ubuntu images, deploying an EKS cluster, deploying Charmed Kubernetes on Ubuntu Pro and upgrading from Ubuntu 20.04 to 22.04.
 
 * :doc:`./aws-how-to/find-ubuntu-images`
 * :doc:`./aws-how-to/deploy-ubuntu-pro-cluster`
+* :doc:`./aws-how-to/deploy-charmed-kubernetes-on-ubuntu-pro`
 * :doc:`./aws-how-to/upgrade-from-focal-to-jammy`
 
    
@@ -136,8 +137,8 @@ suggestions, fixes and constructive feedback.
 
    aws-how-to/find-ubuntu-images
    aws-how-to/deploy-ubuntu-pro-cluster
+   aws-how-to/deploy-charmed-kubernetes-on-ubuntu-pro
    aws-how-to/upgrade-from-focal-to-jammy
-   
 
 .. _Code of conduct: https://ubuntu.com/community/governance/code-of-conduct
 .. _Get support: https://ubuntu.com/cloud/public-cloud

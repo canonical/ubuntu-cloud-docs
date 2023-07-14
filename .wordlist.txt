@@ -122,3 +122,6 @@ livepatch
 TDX
 AKS
 Workspaces
+Juju
+uptime
+IAM
