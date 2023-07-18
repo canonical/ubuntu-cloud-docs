@@ -1,9 +1,16 @@
 Ubuntu cloud documentation
 ==========================
 
-Documentation for Ubuntu on public clouds.
+Documentation for Ubuntu on public clouds. This documentation is composed of six related documentation sets. Five of them pertain to different cloud partners (AWS, Azure, IBM, Google cloud and Oracle cloud), while the sixth one is for OCI registries.
 
-The documentation is currently published to: https://canonical-public-cloud.readthedocs-hosted.com
+The documentation is currently published to six different locations:
+
+https://canonical-aws.readthedocs-hosted.com/
+https://canonical-azure.readthedocs-hosted.com/
+https://canonical-gcp.readthedocs-hosted.com/
+https://canonical-ibm.readthedocs-hosted.com/
+https://canonical-oci.readthedocs-hosted.com/
+https://canonical-oracle.readthedocs-hosted.com/
 
 
 How to work with this documentation
@@ -53,6 +60,16 @@ Check spelling
 
 Run a spell check::
 
-	make spelling
+	PROJECT=azure make spelling
 
 If new words are to be added to the allowed list, update ``.wordlist.txt`` accordingly.
+
+
+Check links
+~~~~~~~~~~~
+
+Run a check for broken links::
+
+	PROJECT=google make linkcheck
+
+
