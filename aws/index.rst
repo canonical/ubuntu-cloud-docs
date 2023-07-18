@@ -115,6 +115,7 @@ Linked below are step-by-step guides for some key operations: finding the right 
 * :doc:`./aws-how-to/deploy-ubuntu-pro-cluster`
 * :doc:`./aws-how-to/deploy-charmed-kubernetes-on-ubuntu-pro`
 * :doc:`./aws-how-to/upgrade-from-focal-to-jammy`
+* :doc:`./aws-how-to/secureboot-and-vtpm`
 
    
 ---------
@@ -139,6 +140,7 @@ suggestions, fixes and constructive feedback.
    aws-how-to/deploy-ubuntu-pro-cluster
    aws-how-to/deploy-charmed-kubernetes-on-ubuntu-pro
    aws-how-to/upgrade-from-focal-to-jammy
+   aws-how-to/secureboot-and-vtpm
 
 .. _Code of conduct: https://ubuntu.com/community/governance/code-of-conduct
 .. _Get support: https://ubuntu.com/cloud/public-cloud
