@@ -131,11 +131,5 @@ cryptographically
 prebuilt
 keypair
 NitroTPM
-github
-eg
-dev
-tpmrm
-dac
 artifacts
 AMI's
-flavors
