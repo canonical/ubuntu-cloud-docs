@@ -3,7 +3,7 @@ Use UEFI Secure Boot and TPM on Ubuntu-based EC2 instances
 
 UEFI Secure Boot is a security feature specified in UEFI, which verifies the state of the boot chain.
 With UEFI Secure Boot enabled, after firmware self-initialisation only cryptographically verified UEFI 
-binaries are allowed to be executed. This prevents any unauthorized modification of the instance boot flow.
+binaries are allowed to be executed. This prevents any unauthorised modification of the instance boot flow.
 
 Trusted Platform Module (TPM) is a virtual device provided by the AWS Nitro System. It securely stores artifacts 
 (such as passwords, certificates, or encryption keys) that are used to authenticate the instance. Check the `AWS NitroTPM documentation <https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/nitrotpm.html>`_ for more details.
@@ -33,7 +33,7 @@ The variable store is prebuilt and can be downloaded using:
 
    wget https://github.com/canonical/aws-secureboot-blob/releases/latest/download/blob.bin
 
-For information on how this binary blob gets created, you can refer to its `source code <https://github.com/canonical/aws-secureboot-blob>`_ 
+For information on how this binary blob gets created, you can refer to its `source code`_
 and read the relevant `AWS documentation <https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/aws-binary-blob-creation.html>`_.
 
 Get an Ubuntu AMI ID
@@ -140,3 +140,6 @@ Finally check that the TPM device is available:
 
    crw-rw---- 1 tss root  10,   224 Jul 18 10:53 /dev/tpm0
    crw-rw---- 1 tss tss  253, 65536 Jul 18 10:53 /dev/tpmrm0
+
+
+.. _`source code`: https://github.com/canonical/aws-secureboot-blob/
