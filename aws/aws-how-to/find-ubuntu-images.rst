@@ -1,4 +1,4 @@
-Find Ubuntu images on AWS 
+Find Ubuntu images on AWS
 =========================
 
 On AWS, cloud images are referred to as Amazon Machine Images (AMIs). Canonical produces a wide variety of images to support numerous features found on AWS:

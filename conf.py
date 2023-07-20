@@ -63,7 +63,8 @@ extensions = [
     'terminal-output',
     'sphinx_copybutton',
     'sphinxext.opengraph',
-    'myst_parser'
+    'myst_parser',
+    'sphinx.ext.autosectionlabel',
     ]
 
 myst_enable_extensions = [

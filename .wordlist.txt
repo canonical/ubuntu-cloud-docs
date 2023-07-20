@@ -125,3 +125,11 @@ Workspaces
 Juju
 uptime
 IAM
+TPM
+UEFI
+cryptographically
+prebuilt
+keypair
+NitroTPM
+artifacts
+AMI's
