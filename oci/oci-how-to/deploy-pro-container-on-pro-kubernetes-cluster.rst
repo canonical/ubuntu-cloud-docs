@@ -12,19 +12,12 @@ Prerequisites
 You will need
 
 - an Ubuntu Pro container image on a private registry. This can be built using the procedure given at 
-  :doc:`build-ubuntu-pro-container-image`.
-  The image should be kept private to avoid sharing your Ubuntu Pro subscription with
-  unwanted users since the image is attached to your Ubuntu Pro subscription.
+  :ref:`Building Ubuntu Pro OCI images <building_ubuntu_pro_oci_images>`. Since the image is attached to your Ubuntu Pro subscription, it should be kept private to avoid the sharing of your Ubuntu Pro subscription with unwanted users. 
 
-- a Kubernetes cluster with an Ubuntu Pro subscription. See the
-  :ref:`section below <deploy-pro-kubernetes-cluster>` to learn how to deploy it
-  for various clouds.
+- a Kubernetes cluster with an Ubuntu Pro subscription. To learn to deploy it for different clouds, refer to the options shown below: 
 
-
-.. _deploy-pro-kubernetes-cluster:
-
-Deploy Pro Kubernetes clusters
-******************************
+Deploying Pro Kubernetes clusters in various clouds
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. tabs::
 
@@ -35,7 +28,7 @@ Deploy Pro Kubernetes clusters
 
 	.. tab:: GCE
 
-		Please see :doc:`google:gce/gce-how-to/deploy-kubernetes-with-ubuntu-pro` to learn
+		Please see :doc:`google:google-how-to/deploy-kubernetes-with-ubuntu-pro` to learn
 		how to deploy an Ubuntu Pro Kubernetes cluster on Google Compute Engine (GCE).
 
 	.. tab:: OpenShift
