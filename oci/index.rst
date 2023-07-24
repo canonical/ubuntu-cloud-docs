@@ -1,7 +1,7 @@
 Ubuntu on OCI Registries
 ========================
 
-Ubuntu OCI tarball is minimal rootfs tarball ready for use to build OCI/Docker 
+Ubuntu OCI tarball is a minimal rootfs tarball ready for use to build OCI/Docker 
 container base images. It is similar to `Ubuntu Base <https://wiki.ubuntu.com/Base>`_ 
 but already contains the modifications needed to make the rootfs suitable for 
 building OCI/Docker container images. It is available for the amd64, armhf, arm64, 
@@ -15,31 +15,33 @@ and `lts <https://gallery.ecr.aws/lts/ubuntu>`_ namespaces), ACR (Azure Containe
 OCIR (Oracle Container Infrastructure Registry), and there are plans to publish to more
 registries in the future.
 
----------
+----------
 
-In this documentation
----------------------
+.. _building_ubuntu_pro_oci_images:
 
-..  grid:: 1 
-   
-   ..  grid-item:: :doc:`How-to guides <oci-how-to/index>`
+Building Ubuntu Pro OCI images
+------------------------------
 
-      **Step-by-step guides** covering key operations and common tasks
+Similar to the `Ubuntu Pro images in public clouds <https://canonical-ubuntu-pro-client.readthedocs-hosted.com/en/latest/explanations/what_are_ubuntu_pro_cloud_instances.html>`_, one can build an Ubuntu Pro OCI image to leverage services like ESM (Extended Security Maintenance) and FIPS.
 
-..   ..  grid-item:: :doc:`Tutorial <oci-tutorial/index>`
+The easiest way to build an Ubuntu Pro container image is to make use of existing container management tools (like Docker) and enable the Pro services on top of an existing Ubuntu container image (e.g. `ubuntu:focal <https://hub.docker.com/layers/library/ubuntu/focal/images/sha256-b39db7fc56971aac21dee02187e898db759c4f26b9b27b1d80b6ad32ff330c76?context=explore>`_).
 
-       **Start here**: a hands-on introduction to Ubuntu OCI images
+.. note::
+   It is highly recommended that Ubuntu Pro container images should be built on hosts that are already covered by an Ubuntu Pro subscription.
 
-.. .. grid:: 1 1 2 2
-   :reverse:
+This process is described in detail in the `pro client documentation <https://canonical-ubuntu-pro-client.readthedocs-hosted.com/en/latest/howtoguides/enable_in_dockerfile.html>`_. The resulting Ubuntu Pro container image can then be loaded into your local Docker daemon (by using ``--load`` when running ``docker build``) and can be deployed/published normally as any other container image.
 
-   .. grid-item:: :doc:`Reference <oci-reference/index>`
 
-      **Technical information** - services, features, pricing
+----------
 
-   .. grid-item:: :doc:`Explanation <oci-explanation/index>`
+How-to guides
+-------------
 
-      **Discussion and clarification** of key topics
+Instructions for deploying Ubuntu Pro containers on Kubernetes and for creating a 'chiselled' Ubuntu base image are linked below:
+
+* :doc:`./oci-how-to/deploy-pro-container-on-pro-kubernetes-cluster`
+* :doc:`./oci-how-to/create-chiselled-ubuntu-image`
+
 
 ---------
 
@@ -57,7 +59,9 @@ community projects, contributions, suggestions, fixes and constructive feedback.
    :hidden:
    :maxdepth: 2
 
-   oci-how-to/index
+   oci-how-to/deploy-pro-container-on-pro-kubernetes-cluster
+   oci-how-to/create-chiselled-ubuntu-image
+
   
 .. _Code of conduct: https://ubuntu.com/community/governance/code-of-conduct
 .. _Get support: https://ubuntu.com/cloud/public-cloud
