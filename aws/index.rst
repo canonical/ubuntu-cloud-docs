@@ -27,6 +27,15 @@ Canonical's offerings on AWS
 Ubuntu images
 ~~~~~~~~~~~~~
 
+..  grid:: 1 1 2 2
+
+   ..  grid-item:: 
+       **EC2 Images:** Customised Ubuntu Amazon Machine Images (AMIs) are available for Elastic Compute Cloud (EC2) instances. These AMIs are based on an AWS-optimised kernel, which includes improved device drivers and out of the box support for accelerators like GPUs. 
+
+   ..  grid-item:: 
+      **EKS Images:** Canonical works with the Elastic Kubernetes Services (EKS) team to provide an optimised Ubuntu AMI for running Kubernetes on AWS. The AMI uses a slimmed-down, minimal image, a custom kernel and is optimised for performance and security on EKS clusters.
+
+
 For each Ubuntu release, multiple Ubuntu images are delivered to AWS. This could be based on the underlying architecture, required features, the storage type and the virtualisation type that is used. For example, a non-exhaustive list is:
 
 .. list-table::
@@ -45,15 +54,23 @@ For each Ubuntu release, multiple Ubuntu images are delivered to AWS. This could
      - Paravirtual (PV) 
      - Hardware Virtual Machine (HVM)
 
+
+
+Ubuntu Pro
+~~~~~~~~~~
+`Ubuntu Pro for AWS`_ are premium images from Canonical that includes certified components, hardening options,  comprehensive open source security coverage (for packages in main and universe) for 10 years, kernel Livepatch service and optional 24/7 enterprise-grade support. These images are available on AMD64 and Graviton architectures.
+
+
 Ubuntu Pro FIPS
 ~~~~~~~~~~~~~~~
 
-`Ubuntu Pro FIPS for AWS`_ are FIPS certified created by Canonical for AWS compliance in production environments. These premium images are available only through the AWS Marketplace or through private offers.
+`Ubuntu Pro FIPS for AWS`_ are FIPS certified images created by Canonical for AWS compliance in production environments. These premium images are available only through the AWS Marketplace or through private offers.
 
-Workspaces
-~~~~~~~~~~
 
-Workspaces is a paid offering supported through `Amazon Workspaces`_. The image provided for Workspaces is basically an Ubuntu Desktop running on EC2 and comes with Ubuntu Pro services (ESM, livepatch) enabled by default.
+Ubuntu Workspace
+~~~~~~~~~~~~~~~~
+
+`Ubuntu Workspaces`_ are virtual Ubuntu desktops powered by AWS. Workspaces is a paid offering supported through `Amazon Workspaces`_ and the image provided for Workspaces is basically an Ubuntu Desktop running on EC2, with Ubuntu Pro services (ESM, livepatch) enabled by default.
 
 Anbox
 ~~~~~
@@ -66,22 +83,8 @@ Anbox
 
 ---------
 
-AWS services
-------------
-
-The two main AWS services that use Ubuntu images are EC2 and EKS.
-
-..  grid:: 1 1 2 2
-
-   ..  grid-item:: 
-       **Elastic Compute Cloud (EC2):** Customised Ubuntu Amazon Machine Images (AMIs) are available for EC2 instances. These AMIs are based on an AWS-optimised kernel, which includes improved device drivers and out of the box support for accelerators like GPUs. 
-
-   ..  grid-item:: 
-      **Elastic Kubernetes Services (EKS):** Canonical works with the EKS team to provide an optimised Ubuntu AMI for running Kubernetes on AWS. The AMI uses a slimmed-down, minimal image, a custom kernel and is optimised for performance and security on EKS clusters.
-
-
 EKS image retention policy
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+--------------------------
 
 There are multiple EKS images available for every EKS Kubernetes version (1.23, 1.24, ...). When an EKS Kubernetes version is no longer `supported by AWS <https://docs.aws.amazon.com/eks/latest/userguide/kubernetes-versions.html>`_,
 all the images for that unsupported version are deleted from the Canonical AWS account, except for the latest released one.
@@ -151,4 +154,6 @@ suggestions, fixes and constructive feedback.
 .. _Anbox Cloud - AMD64: https://aws.amazon.com/marketplace/pp/prodview-3lx6xyaapstz4?
 .. _Anbox Cloud - ARM64: https://aws.amazon.com/marketplace/pp/prodview-aqmdt52vqs5qk
 .. _Ubuntu Pro FIPS for AWS: https://ubuntu.com/aws/fips
-.. _Amazon Workspaces: https://aws.amazon.com/workspaces/
+.. _Ubuntu Pro for AWS: https://ubuntu.com/aws/pro
+.. _Amazon Workspaces: https://aws.amazon.com/workspaces
+.. _Ubuntu Workspaces: https://ubuntu.com/aws/workspaces
