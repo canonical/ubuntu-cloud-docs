@@ -141,3 +141,8 @@ STIG
 OVAs
 VMware
 Graviton
+AIB
+ACG
+SLAs
+JSON
+deregister

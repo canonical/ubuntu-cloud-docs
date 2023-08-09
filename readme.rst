@@ -5,12 +5,12 @@ Documentation for Ubuntu on public clouds. This documentation is composed of six
 
 The documentation is currently published to six different locations:
 
-https://canonical-aws.readthedocs-hosted.com/
-https://canonical-azure.readthedocs-hosted.com/
-https://canonical-gcp.readthedocs-hosted.com/
-https://canonical-ibm.readthedocs-hosted.com/
-https://canonical-oci.readthedocs-hosted.com/
-https://canonical-oracle.readthedocs-hosted.com/
+* https://canonical-aws.readthedocs-hosted.com/
+* https://canonical-azure.readthedocs-hosted.com/
+* https://canonical-gcp.readthedocs-hosted.com/
+* https://canonical-ibm.readthedocs-hosted.com/
+* https://canonical-oci.readthedocs-hosted.com/
+* https://canonical-oracle.readthedocs-hosted.com/
 
 
 How to work with this documentation
