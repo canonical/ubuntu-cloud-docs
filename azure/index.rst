@@ -127,6 +127,7 @@ Step-by-step guides for some of the common tasks related to Ubuntu on Azure are 
 * :doc:`./azure-how-to/install-azure-cli`
 * :doc:`./azure-how-to/find-ubuntu-images`
 * :doc:`./azure-how-to/get-ubuntu-pro`
+* :doc:`./azure-how-to/create-pro-fips-golden-image`
 * :doc:`./azure-how-to/upgrade-from-focal-to-jammy`
 
    
@@ -151,6 +152,7 @@ contributions, suggestions, fixes and constructive feedback.
    azure-how-to/install-azure-cli
    azure-how-to/find-ubuntu-images
    azure-how-to/get-ubuntu-pro
+   azure-how-to/create-pro-fips-golden-image
    azure-how-to/upgrade-from-focal-to-jammy
 
 .. _Code of conduct: https://ubuntu.com/community/governance/code-of-conduct
