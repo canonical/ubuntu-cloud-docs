@@ -3,11 +3,11 @@ Create Ubuntu Pro FIPS golden image with Azure Image Builder
 
 This guide will provide instructions for using the Azure Image Builder (AIB) to create an Ubuntu Pro 20.04 FIPS “golden” image in an Azure Compute Gallery, (formerly Shared Image Gallery). In the process, you'll:
 
-- set up an environment with an Azure Compute Gallery (ACG) and the necessary resources to distribute an image from it,
-- create an image definition for Ubuntu Pro 20.04 FIPS, 
-- create a build configuration template to add optional applications, 
-- create the golden image using the AIB service and
-- create a VM from the golden image in the ACG.
+- Set up an environment with an Azure Compute Gallery (ACG) and the necessary resources to distribute an image from it
+- Create an image definition for Ubuntu Pro 20.04 FIPS
+- Create a build configuration template to add optional applications
+- Create the golden image using the AIB service
+- Create a VM from the golden image in the ACG
 
 .. note::
     We are using a pre-enabled FIPS image, but you can also use the standard Ubuntu Pro if it better suits your needs.
