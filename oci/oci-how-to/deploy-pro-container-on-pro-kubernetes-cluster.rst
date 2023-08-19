@@ -23,12 +23,12 @@ Deploying Pro Kubernetes clusters in various clouds
 
 	.. tab:: EKS
 
-		Please see :doc:`aws:aws-how-to/deploy-ubuntu-pro-cluster` to learn
+		Check out :doc:`aws:aws-how-to/deploy-ubuntu-pro-cluster` to learn
 		how to deploy an Ubuntu Pro Kubernetes cluster on Elastic Kubernetes Service (EKS).
 
 	.. tab:: GCE
 
-		Please see :doc:`google:google-how-to/deploy-kubernetes-with-ubuntu-pro` to learn
+		Check out :doc:`google:google-how-to/deploy-kubernetes-with-ubuntu-pro` to learn
 		how to deploy an Ubuntu Pro Kubernetes cluster on Google Compute Engine (GCE).
 
 	.. tab:: OpenShift

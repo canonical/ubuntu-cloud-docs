@@ -12,6 +12,7 @@ with the option of enterprise-grade commercial support.
 **Ubuntu builds optimised and certified server images.** This is done for partners 
 like Amazon AWS, Microsoft Azure, Google Cloud Platform, IBM Cloud and Oracle. 
 
+
 ---------
 
 Public Cloud Partners
@@ -49,30 +50,8 @@ Public Cloud Partners
 Why Ubuntu?
 -----------
 
-Ubuntu is the best Linux experience on public clouds. It includes .... 
+Ubuntu is the platform of choice for deploying and running workloads on public clouds. No other operating system gives you better performance and consistency of experience across public clouds, including Amazon, Azure, Google, IBM and Oracle. There is a reason behind this exceptional experience. By design, Ubuntu images in public clouds include an optimized Linux kernel for each cloud, giving you the best performance and functionality across all instance types and services. At the same time, Ubuntu integrates with cloud-native tooling, enabling you to manage your fleet from the cloud’s dashboards. 
 
-
-
-Products 
-~~~~~~~~
-
-**What are ROCKs?** They are a new generation of secure, stable and OCI-compliant 
-container images, powered by Ubuntu.
-
-The Open Container Initiative (OCI) establishes standards for constructing container 
-images that can be reliably installed across a variety of compliant host environments.
-
-Ubuntu’s `LTS Docker Image Portfolio <https://ubuntu.com/security/docker-images>`_ 
-provides OCI-compliant images that receive stable security updates and predictable 
-software updates, thus ensuring consistency in both maintenance schedule and operational 
-interfaces for the underlying software your software builds on.
-
-
-
-Services
-~~~~~~~~
-
-Ubuntu support.
 
 
 

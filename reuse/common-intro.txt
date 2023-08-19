@@ -1,0 +1,14 @@
+.. Introduction to clouds
+
+Start: Product need and user
+
+**The images create a stable and secure cloud platform** that is ideal for scaling development work
+done on Ubuntu-based systems. Since Ubuntu is one of the most favoured operating systems amongst
+developers, using an Ubuntu-based image for the corresponding cloud deployment becomes the simplest
+option.
+
+**Everyone from individual developers to large enterprises use these images** for developing and deploying
+their softwares. For highly regulated industries from the government, medical and finance sectors, 
+various security-certified images are also available.
+
+End: Product need and user
