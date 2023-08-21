@@ -2,28 +2,31 @@ Ubuntu on Oracle
 ================
 
 **Ubuntu on Oracle is a set of customised Ubuntu images** that allow easy access to a wide range 
-of products and services - offered by both Oracle cloud and Canonical.
+of products and services - offered by both Oracle cloud and Canonical. These images have an optimised
+kernel that boots faster, has a smaller footprint and includes Oracle-specific drivers.
 
 **These images provide a foundation for deploying cloud-based software solutions,** specifically
 for softwares built on Ubuntu and running on Oracle cloud. They focus on providing the optimal tools 
 and features needed to run specific workloads.
 
-**The images create a stable and secure cloud platform** that is ideal for scaling development work
-done on Ubuntu-based systems. Since Ubuntu is one of the most favoured operating systems amongst
-developers, using an Ubuntu-based image for the corresponding cloud deployment becomes the simplest
-option.
+.. include:: ../reuse/common-intro.txt
+   :start-after: Start: Product need and user
+   :end-before: End: Product need and user
 
-**Everyone from individual developers to large enterprises use these images** for developing and deploying
-their softwares. For highly regulated industries from the government, medical and finance sectors, 
-various security-certified images are also available.
+----------
 
+Canonical's offerings on Oracle cloud
+-------------------------------------
+
+Customised Ubuntu images for Oracle cloud include the ``linux-oracle`` flavor of our kernel. This kernel enables fast networking and boot by taking advantage of the native hardware, while supporting the live migration of Ubuntu guests. The arm64 version of the kernel also takes advantage of the unique features of Ampere native CPUs.
+
+Ubuntu LTS instances on Oracle cloud can be attached to Ubuntu Advantage subscriptions. This enables access to enterprise lifecycle, kernel livepatching, CIS compliance automation tooling, and FIPS 140 certified cryptography.
 
 ----------
 
 How-to guide
 -------------
 Instructions for upgrading from Ubuntu 20.04 to 22.04 on Oracle cloud virtual machines: :doc:`./oracle-how-to/upgrade-from-focal-to-jammy`
-
 
 
 ----------

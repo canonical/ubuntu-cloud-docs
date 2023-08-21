@@ -2,22 +2,16 @@ Ubuntu on GCP
 =============
 
 **Ubuntu on Google Cloud Platform (GCP) is a set of customised Ubuntu images** that allow easy access 
-to a wide range of products and services - offered by both Google Cloud and Canonical.
+to a wide range of products and services - offered by both Google Cloud and Canonical. These images 
+have an optimised kernel that boots faster, has a smaller footprint and includes GCP-specific drivers.
 
 **These images provide a foundation for deploying cloud-based software solutions,** specifically
 for softwares built on Ubuntu and running on Google cloud. They focus on providing the optimal tools 
 and features needed to run specific workloads.
 
-**The images create a stable and secure cloud platform** that is ideal for scaling development work
-done on Ubuntu-based systems. Since Ubuntu is one of the most favoured operating systems amongst
-developers, using an Ubuntu-based image for the corresponding cloud deployment becomes the simplest
-option.
-
-**Everyone from individual developers to large enterprises use these images** for developing and deploying
-their softwares. For highly regulated industries from the government, medical and finance sectors, 
-various security-certified images are also available.
-
-
+.. include:: ../reuse/common-intro.txt
+   :start-after: Start: Product need and user
+   :end-before: End: Product need and user
 
 ---------
 
@@ -28,6 +22,9 @@ With an optimised Ubuntu GCP kernel built in collaboration between Google and Ca
 best performance on the Google Cloud hypervisor, Ubuntu is a popular Linux OS on GCP for both virtual machines 
 and container workloads - i.e. for both Google Cloud Engine (GCE) and Google Kubernetes Engine (GKE).
 
+The ``linux-gcp`` kernel enables accelerated networking with the Compute Engine Virtual Ethernet device and supports the Google latest Tau VM, enabling scale-out optimised workloads. These advantages contribute to Ubuntu being the default host images for Anthos Multi-cloud.
+
+Another useful feature is the native integration of Ubuntu images with the Administrator console. This enables things like patch management and in-place upgrade of Ubuntu LTS images to Ubuntu Pro without the need for workload redeployment.
 
 GCE Images
 ~~~~~~~~~~

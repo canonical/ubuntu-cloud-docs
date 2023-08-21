@@ -3,22 +3,16 @@ Ubuntu on IBM
 
 
 **Ubuntu on IBM is a set of customised Ubuntu images** that allow easy access to a wide range 
-of products and services - offered by both IBM cloud and Canonical.
+of products and services - offered by both IBM cloud and Canonical. These images have an optimised
+kernel that boots faster, has a smaller footprint and includes IBM-specific drivers.
 
 **These images provide a foundation for deploying cloud-based software solutions,** specifically
 for softwares built on Ubuntu and running on IBM cloud. They focus on providing the optimal tools 
 and features needed to run specific workloads.
 
-**The images create a stable and secure cloud platform** that is ideal for scaling development work
-done on Ubuntu-based systems. Since Ubuntu is one of the most favoured operating systems amongst
-developers, using an Ubuntu-based image for the corresponding cloud deployment becomes the simplest
-option.
-
-**Everyone from individual developers to large enterprises use these images** for developing and deploying
-their softwares. For highly regulated industries from the government, medical and finance sectors, 
-various security-certified images are also available.
-
-
+.. include:: ../reuse/common-intro.txt
+   :start-after: Start: Product need and user
+   :end-before: End: Product need and user
 
 ---------
 

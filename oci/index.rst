@@ -1,6 +1,14 @@
 Ubuntu on OCI Registries
 ========================
 
+The Open Container Initiative (OCI) establishes standards for constructing container 
+images that can be reliably installed across a variety of compliant host environments.
+
+Ubuntu’s `LTS Docker Image Portfolio <https://ubuntu.com/security/docker-images>`_ 
+provides OCI-compliant images that receive stable security updates and predictable 
+software updates, thus ensuring consistency in both maintenance schedule and operational 
+interfaces for the underlying software your software builds on.
+
 Ubuntu OCI tarball is a minimal rootfs tarball ready for use to build OCI/Docker 
 container base images. It is similar to `Ubuntu Base <https://wiki.ubuntu.com/Base>`_ 
 but already contains the modifications needed to make the rootfs suitable for 
@@ -14,6 +22,7 @@ built from the Ubuntu OCI rootfs tarballs. Images are also published to AWS ECR
 and `lts <https://gallery.ecr.aws/lts/ubuntu>`_ namespaces), ACR (Azure Container Registry),
 OCIR (Oracle Container Infrastructure Registry), and there are plans to publish to more
 registries in the future.
+
 
 ----------
 

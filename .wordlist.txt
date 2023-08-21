@@ -146,3 +146,16 @@ ACG
 SLAs
 JSON
 deregister
+Adapter
+adapter
+CPUs
+livepatching
+lifecycle
+Center
+Databricks
+natively
+ASIC
+FPGA
+IOV
+InfiniBand
+
