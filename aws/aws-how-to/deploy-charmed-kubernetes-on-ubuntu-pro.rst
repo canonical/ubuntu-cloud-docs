@@ -151,15 +151,6 @@ Test it
 You now have a fully working Kubernetes cluster, deployed painlessly and running on Ubuntu Pro based EC2 nodes.
 
 
-
-
-
-
-
-
-
-
-
 .. _premium container images: https://ubuntu.com/security/docker-images
 .. _Juju: https://juju.is
 .. _install AWS CLI: https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html

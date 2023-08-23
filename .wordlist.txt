@@ -158,4 +158,8 @@ ASIC
 FPGA
 IOV
 InfiniBand
+provisioner
+provisioners
+EAL
+Ansible
 
