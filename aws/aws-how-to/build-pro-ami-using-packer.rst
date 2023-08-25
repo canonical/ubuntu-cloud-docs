@@ -3,7 +3,12 @@ Build an Ubuntu Pro AMI using Packer
 
 This guide will provide instructions for using Packer to create your own golden image of Ubuntu Pro. You'll be able to customise your Packer template file, while keeping the the Ubuntu Pro activation mechanism intact.
 
-We'll be using Ubuntu Pro 20.04 for this guide, but the method is applicable to any other version. If you want to create a FIPS AMI, it is better to use a pre-enabled FIPS image from the marketplace to avoid unnecessary additional steps.
+We'll be using Ubuntu Pro 20.04 for this guide, but the method is equally applicable to other Pro versions.
+
+.. note::
+
+   * For **Ubuntu Pro FIPS**, it is better to use a pre-enabled FIPS image from the marketplace to avoid unnecessary additional steps. 
+   * For **Ubuntu LTS**, you can use this method with a small change. As explained in the :ref:`Define provisioners` section below, don't include the two specific sets of commands in the *provisioners* component of the packer template. 
 
 
 Basic setup
@@ -109,7 +114,11 @@ Define provisioners
 
 The *provisioners* component is used to specify things that have to be installed and their configuration details. This specification can be done via inline shell commands, bash scripts or even using configuration tools such as Ansible, Chef and Puppet. Some of the typical use cases that can be configured are - hardening the image, configuring Active Directory login, adding specific configurations for management and compliance, installing software and copying plain files.
 
-Irrespective of the use-cases and tools being used, there are two sets of commands that have to be included - one at the beginning and the other at the end. These are needed to ensure the smooth functioning of Ubuntu Advantage.
+Irrespective of the use-cases and tools being used, there are two sets of commands that have to be included - one at the beginning and the other at the end. These are needed to ensure the smooth functioning of Ubuntu Pro.
+
+.. note::
+
+   For an Ubuntu LTS AMI (i.e. for all non-Pro versions), these two sets of commands are not needed.
 
 The first set used at the beginning includes a ``cloud-init status --wait`` command. Using an "inline shell", it will look like:
 
@@ -220,7 +229,7 @@ Log in to the instance and run:
 
    sudo ua status --wait
 
-The results should show that the machine is attached to a Pro subscription and have ``esm-apps``, ``esm-infra`` and ``livepatch`` enabled.
+The results should show that the machine is attached to a Pro subscription and has ``esm-apps``, ``esm-infra`` and ``livepatch`` enabled.
 
 
 
