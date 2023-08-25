@@ -1,20 +1,13 @@
-Build CloudFormation templates with the latest Ubuntu AMI
-=========================================================
+Create CloudFormation templates with the latest Ubuntu AMI
+==========================================================
 
 While launching instances using `CloudFormation templates`_, it is a common practice to map hard-coded AMI IDs with their respective regions.  While this solves the problem of having a unique AMI ID per region, it does not help with getting the latest AMI for a given Ubuntu version.
 
 If you are using an old AMI, the update & upgrade process during boot-up takes time and it might even result in a reboot. Using the latest AMI avoids this process, resulting in faster boot times and lesser reboots.
 
 
-Prerequisites
--------------
-
-- An AWS account
-- Basic understanding of EC2 and AWS CloudFormation templates
-
-
-Getting the latest AMI ID
--------------------------
+Get the latest AMI ID
+---------------------
 
 You can query the SSM parameter store to get the latest AMI IDs. Each AMI has its own parameter store namespace which returns the regional image ID when queried. Once you know the query string for the namespace (the 'Default' value in the subsections below), the process is the same for different Ubuntu versions.
 
@@ -103,10 +96,10 @@ For Ubuntu-EKS AMI IDs, use the following query string with any required changes
                 Default: '/aws/service/canonical/ubuntu/eks/20.04/1.23/stable/current/amd64/hvm/ebs-gp2/ami-id'
 
 
-Sample template
+Create template
 ---------------
 
-A very basic CloudFormation template for Ubuntu LTS:
+A very basic CloudFormation template for Ubuntu LTS could look like:
 
 .. code::
 
