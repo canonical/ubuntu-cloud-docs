@@ -67,10 +67,6 @@ Since Ubuntu Pro FIPS is only available at the AWS Marketplace, the product ID n
      - amd64
      - ``prod-k6fgbnayirmrc``
 
-.. note::
-
-   For ARM (Graviton) and other Ubuntu versions in the Marketplace, use the IDs from :ref:`Find Ubuntu images on AWS`.
-
 To create the parameter in your CloudFormation template, choose a product ID from above and use it in place of <product-id> in:
 
 .. code::
