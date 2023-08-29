@@ -70,9 +70,10 @@ For the various Anthos versions available for different clouds, Canonical provid
 How-to guides
 -------------
 
-Linked below are step-by-step guides for some key operations: deploying Kubernetes with Ubuntu Pro on GCE and upgrading from Ubuntu 20.04 to 22.04.
+Linked below are step-by-step guides for some key operations: deploying Kubernetes with Ubuntu Pro on GCE, enabling confidential computing and upgrading from Ubuntu 20.04 to 22.04.
 
 * :doc:`./google-how-to/deploy-kubernetes-with-ubuntu-pro`
+* :doc:`./google-how-to/enable-confidential-computing`
 * :doc:`./google-how-to/upgrade-from-focal-to-jammy`
 
 ---------
@@ -94,6 +95,7 @@ suggestions, fixes and constructive feedback.
    :maxdepth: 2
 
    google-how-to/deploy-kubernetes-with-ubuntu-pro
+   google-how-to/enable-confidential-computing
    google-how-to/upgrade-from-focal-to-jammy
    
 .. _Code of conduct: https://ubuntu.com/community/governance/code-of-conduct

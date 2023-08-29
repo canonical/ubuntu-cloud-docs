@@ -1,7 +1,11 @@
 Confidential computing on Azure
 ===============================
 
-Confidential computing is a set of technologies created to hide and protect sensitive workloads against cloud and host providers. The goal is for a user to be able to run programs on untrusted systems with the technical assurance that the remote host provider cannot read nor modify the program's data and memory. When these requirements cannot be totally satisfied, confidential computing solutions are usually at least able to detect if the user's data has been modified.
+.. include:: ../reuse/common-intro.txt
+   :start-after: Start: Confidential computing
+   :end-before: End: Confidential computing
+
+The idea is to hide and protect sensitive workloads. It allows a user to run programs on untrusted systems with the technical assurance that the remote host provider cannot read nor modify the program's data and memory. When these requirements cannot be totally satisfied, confidential computing solutions are usually at least able to detect if the user's data has been modified.
 
 Azure provides two types of *security*:
 
