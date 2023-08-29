@@ -12,3 +12,17 @@ their softwares. For highly regulated industries from the government, medical an
 various security-certified images are also available.
 
 End: Product need and user
+
+Start: Confidential computing
+
+Data can be thought of as being in one of three states:  
+
+* in-transit - being transmitted from one location to another
+* at-rest - stored somewhere and
+* in-use - being used by a CPU to perform some operation
+  
+Both data in-transit and data at-rest can be encrypted using well-known techniques, but for securing data in-use, you need confidential computing.
+
+Confidential computing is the protection of data in-use by performing computation in a hardware-based trusted execution environment. It allows the encryption of data while it is in the system memory. This requires the support of both hardware and the OS. For example, your hardware could be based on AMD's Secure Encrypted Virtualisation (SEV) architecture and the OS could be Ubuntu. 
+
+End: Confidential computing
