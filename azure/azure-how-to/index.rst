@@ -10,4 +10,5 @@ Step-by-step guides for some of the common tasks related to Ubuntu on Azure are 
    find-ubuntu-images
    get-ubuntu-pro
    create-pro-fips-golden-image
+   install-kubeflow-on-aks
    upgrade-from-focal-to-jammy
