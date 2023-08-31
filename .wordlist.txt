@@ -186,3 +186,9 @@ IOPS
 vCPUs
 PAYG
 preemptible
+CVEs
+config.toml
+DaemonSet
+containerd
+CUDA
+allocatable
