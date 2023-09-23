@@ -7,7 +7,7 @@ of products and services - offered by both Amazon Web Services (AWS) and Canonic
 have an optimised kernel that boots faster, has a smaller footprint and includes AWS-specific drivers.
 
 **These images provide a foundation for deploying cloud-based software solutions,** specifically
-for softwares built on Ubuntu and running on AWS. They focus on providing the optimal tools 
+for software built on Ubuntu and running on AWS. They focus on providing the optimal tools 
 and features needed to run specific workloads.
 
 .. include:: ../reuse/common-intro.txt

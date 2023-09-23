@@ -169,4 +169,10 @@ RBAC
 macOS
 microservices
 MLOps
+ideation
+hyperparameter
+checkpointing
+datastores
+UI
+backoff
 
