@@ -7,7 +7,7 @@ of products and services - offered by both IBM cloud and Canonical. These images
 kernel that boots faster, has a smaller footprint and includes IBM-specific drivers.
 
 **These images provide a foundation for deploying cloud-based software solutions,** specifically
-for softwares built on Ubuntu and running on IBM cloud. They focus on providing the optimal tools 
+for software built on Ubuntu and running on IBM cloud. They focus on providing the optimal tools 
 and features needed to run specific workloads.
 
 .. include:: ../reuse/common-intro.txt

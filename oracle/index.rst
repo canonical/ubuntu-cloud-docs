@@ -6,7 +6,7 @@ of products and services - offered by both Oracle cloud and Canonical. These ima
 kernel that boots faster, has a smaller footprint and includes Oracle-specific drivers.
 
 **These images provide a foundation for deploying cloud-based software solutions,** specifically
-for softwares built on Ubuntu and running on Oracle cloud. They focus on providing the optimal tools 
+for software built on Ubuntu and running on Oracle cloud. They focus on providing the optimal tools 
 and features needed to run specific workloads.
 
 .. include:: ../reuse/common-intro.txt
