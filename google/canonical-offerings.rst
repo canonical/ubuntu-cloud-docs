@@ -47,5 +47,3 @@ For the various Anthos versions available for different clouds, Canonical provid
 * **Anthos on bare metal** - Ubuntu images based on a DISA STIG hardened 20.04 FIPS compliant version.
 * **Anthos on VMware** - A series of CIS hardened and unhardened Ubuntu images in the form of OVAs to be used with VMware
 
-
-----------
