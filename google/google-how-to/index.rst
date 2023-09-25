@@ -10,4 +10,6 @@ Linked below are step-by-step guides for some key operations such as: creating i
    find-ubuntu-images
    create-different-instance-types
    deploy-kubernetes-with-ubuntu-pro
+   cis-harden-your-ubuntu-pro
    upgrade-from-focal-to-jammy
+   
