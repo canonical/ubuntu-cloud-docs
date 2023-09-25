@@ -7,7 +7,7 @@ The procedure for creating different instance types on GCP basically boils down 
 Create and Ubuntu Pro 22.04 instance
 ------------------------------------
 
-On your google console, while creating a new instance from :guilabel:`Compute Engine` > :guilabel:`VM instances`> :guilabel:`CREATE INSTANCE`:
+On your Google Cloud console, while creating a new instance from :guilabel:`Compute Engine` > :guilabel:`VM instances`> :guilabel:`CREATE INSTANCE`:
 
 * select ``Ubuntu Pro`` and ``Ubuntu 22.04 Pro Server`` in :guilabel:`Boot disk` > :guilabel:`CHANGE` > :guilabel:`Operating system` and :guilabel:`Version`
 
@@ -24,7 +24,7 @@ to check that ``livepatch``, ``esm-apps`` and ``esm-infra`` are enabled.
 Create an ARM-based instance
 ----------------------------
 
-On your google console, while creating a new instance from :guilabel:`Compute Engine` > :guilabel:`VM instances`> :guilabel:`CREATE INSTANCE`:
+On your Google Cloud console, while creating a new instance from :guilabel:`Compute Engine` > :guilabel:`VM instances`> :guilabel:`CREATE INSTANCE`:
 
 * choose the ARM CPU platform ``T2A`` in :guilabel:`Machine configuration` > :guilabel:`Series`
 * choose an ARM compatible OS and version, say ``Ubuntu`` and ``Ubuntu 22.04 LTS Minimal`` in :guilabel:`Boot disk` > :guilabel:`CHANGE` > :guilabel:`Operating system` and :guilabel:`Version` 
@@ -34,7 +34,7 @@ On your google console, while creating a new instance from :guilabel:`Compute En
 Create a confidential compute enabled VM
 ----------------------------------------
 
-On your google console, while creating a new instance from :guilabel:`Compute Engine` > :guilabel:`VM instances`> :guilabel:`CREATE INSTANCE`:
+On your Google Cloud console, while creating a new instance from :guilabel:`Compute Engine` > :guilabel:`VM instances`> :guilabel:`CREATE INSTANCE`:
 
 * select :guilabel:`Confidential VM service` > :guilabel:`ENABLE`
 
