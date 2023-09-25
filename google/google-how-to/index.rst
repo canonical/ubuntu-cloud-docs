@@ -7,6 +7,7 @@ Linked below are step-by-step guides for some key operations such as: creating i
 .. toctree::
    :maxdepth: 1
    
+   find-ubuntu-images
    create-different-instance-types
    deploy-kubernetes-with-ubuntu-pro
    upgrade-from-focal-to-jammy
