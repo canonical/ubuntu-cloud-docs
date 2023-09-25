@@ -15,69 +15,6 @@ and features needed to run specific workloads.
 
 ---------
 
-Canonical's Offerings on Google Cloud
--------------------------------------
-
-With an optimised Ubuntu GCP kernel built in collaboration between Google and Canonical to deliver the very
-best performance on the Google Cloud hypervisor, Ubuntu is a popular Linux OS on GCP for both virtual machines 
-and container workloads - i.e. for both Google Cloud Engine (GCE) and Google Kubernetes Engine (GKE).
-
-The ``linux-gcp`` kernel enables accelerated networking with the Compute Engine Virtual Ethernet device and supports the Google latest Tau VM, enabling scale-out optimised workloads. These advantages contribute to Ubuntu being the default host images for Anthos Multi-cloud.
-
-Another useful feature is the native integration of Ubuntu images with the Administrator console. This enables things like patch management and in-place upgrade of Ubuntu LTS images to Ubuntu Pro without the need for workload redeployment.
-
-GCE Images
-~~~~~~~~~~
-
-For each active Ubuntu release, at least two image variants are created for GCE: 
-
-* **Base** images that contain a full Ubuntu development environment
-* **Minimal** images that have a smaller footprint than base images, and are designed for production instances that will never be accessed by a human
-
-Apart from these, 
-
-* **Ubuntu Pro** images are created for 16.04, 18.04, 20.04, 22.04 and 
-* **Ubuntu Pro FIPS** images are created for 18.04 and 20.04
-
-Finally, there's a special sub-family of Google images:
-
-* **Guest** images that are built with the Google guest agent and
-* **Kernel** images that are built with the Google kernel
-
-These are used by Google to do automated testing of new kernels and/or guests.
-
-
-GKE images
-~~~~~~~~~~
-
-GKE is Google Cloud's Kubernetes offering. Canonical produces host images for GKE that act as a base for running end user containers. These images include GKE's own custom cloud ``gke`` kernel and custom NVIDIA drivers for use with the custom kernel.
-
-
-
-Anthos - Google's multi-cloud GKE strategy
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-For the various Anthos versions available for different clouds, Canonical provides the following:
-
-* **Anthos on AWS** - Consultation support
-* **Anthos on Azure** - Consultation support
-* **Anthos on bare metal** - Ubuntu images based on a DISA STIG hardened 20.04 FIPS compliant version.
-* **Anthos on VMware** - A series of CIS hardened and unhardened Ubuntu images in the form of OVAs to be used with VMware
-
-
-----------
-
-How-to guides
--------------
-
-Linked below are step-by-step guides for some key operations: deploying Kubernetes with Ubuntu Pro on GCE, enabling confidential computing and upgrading from Ubuntu 20.04 to 22.04.
-
-* :doc:`./google-how-to/deploy-kubernetes-with-ubuntu-pro`
-* :doc:`./google-how-to/enable-confidential-computing`
-* :doc:`./google-how-to/upgrade-from-focal-to-jammy`
-
----------
-
 Project and community
 ---------------------
 
@@ -94,9 +31,9 @@ suggestions, fixes and constructive feedback.
    :hidden:
    :maxdepth: 2
 
-   google-how-to/deploy-kubernetes-with-ubuntu-pro
-   google-how-to/enable-confidential-computing
-   google-how-to/upgrade-from-focal-to-jammy
+   canonical-offerings
+   google-how-to/index
+
    
 .. _Code of conduct: https://ubuntu.com/community/governance/code-of-conduct
 .. _Get support: https://ubuntu.com/cloud/public-cloud
