@@ -1,9 +1,9 @@
 CIS harden your Ubuntu Pro
 ==========================
 
-`CIS Benchmarks`_ are best practices for the secure configuration of a system. Ubuntu Pro is packaged with CIS toolings and can be made CIS compliant.
+`CIS Benchmarks`_ are best practices for the secure configuration of a system. Ubuntu Pro includes CIS tooling packages and can be made CIS compliant.
 
-If you don't have an Ubuntu Pro VM, you can either create a new instance with Ubuntu Pro on it (as described in :doc:`create-different-instance-types`) or you can do an in-place upgrade of your Ubuntu LTS VM to Ubuntu Pro (as explained in :doc:`upgrade in-place-from-lts-to-pro`).
+If you don't have an Ubuntu Pro VM, you can either create a new instance with Ubuntu Pro on it (as described in :doc:`create-different-instance-types`) or you can do an in-place upgrade of your Ubuntu LTS VM to Ubuntu Pro (as explained in :doc:`upgrade-in-place-from-lts-to-pro`).
 
 SSH into your Ubuntu Pro VM and run:
 
