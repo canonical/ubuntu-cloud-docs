@@ -3,7 +3,6 @@ Create different instance types on GCP
 
 The procedure for creating different instance types on GCP basically boils down to choosing the correct options on your google console. Some specific examples are given below.
 
-
 Create and Ubuntu Pro 22.04 instance
 ------------------------------------
 
