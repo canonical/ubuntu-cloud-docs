@@ -3,8 +3,8 @@ Create different instance types on GCP
 
 The procedure for creating different instance types on GCP basically boils down to choosing the correct options on your google console. Some specific examples are given below.
 
-Create and Ubuntu Pro 22.04 instance
-------------------------------------
+Create an Ubuntu Pro instance
+-----------------------------
 
 On your Google Cloud console, while creating a new instance from :guilabel:`Compute Engine` > :guilabel:`VM instances`> :guilabel:`CREATE INSTANCE`:
 
@@ -18,6 +18,27 @@ Once the instance is up, ssh into it and run
 
 to check that ``livepatch``, ``esm-apps`` and ``esm-infra`` are enabled.
 
+
+Create an Ubuntu Pro FIPS instance
+----------------------------------
+
+On your Google Cloud console, while creating a new instance from :guilabel:`Compute Engine` > :guilabel:`VM instances`> :guilabel:`CREATE INSTANCE`:
+
+* select ``Ubuntu Pro`` and ``Ubuntu 20.04 Pro FIPS Server`` in :guilabel:`Boot disk` > :guilabel:`CHANGE` > :guilabel:`Operating system` and :guilabel:`Version`
+
+Once the instance is up, ssh into it and run
+
+.. code::
+
+   uname -r
+
+The kernel version will include ``fips`` in the name. To check the FIPS packages, run:
+
+.. code::
+
+   dpkg-query -l | grep fips
+
+It should show you a long list of packages with ``fips`` in the name or version.
 
 
 Create an ARM-based instance
