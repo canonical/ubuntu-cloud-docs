@@ -29,11 +29,15 @@ Ubuntu Pro 16.04 LTS,amd64,``prod-f6ogoaqs7lwre``,✓
 Ubuntu Pro 18.04 LTS,amd64,``prod-jlgu4232gpnwa``,✓
 Ubuntu Pro 20.04 LTS,amd64,``prod-3sk4unyn4iwqu``,✓
 Ubuntu Pro 22.04 LTS,amd64,``prod-uwytposjsg3du``,✓
-Ubuntu 20.04 LTS for EKS 1.22,amd64,``prod-2m2caolrsf3dy``,✓
-Ubuntu 20.04 LTS for EKS 1.22,arm64,``prod-mm6rjsecuihx4``,✓
 Ubuntu 20.04 LTS for EKS 1.23,amd64,``prod-d6nvbzhhqtsnc``,✓
 Ubuntu 20.04 LTS for EKS 1.23,arm64,``prod-w4kdatfulcfk2``,✓
 Ubuntu 20.04 LTS for EKS 1.24,amd64,``prod-q56ww7nfnmv72``,✓
 Ubuntu 20.04 LTS for EKS 1.24,arm64,``prod-pikds4f276lq6``,✓
 Ubuntu 20.04 LTS for EKS 1.25,amd64,``prod-h232pdamfnj5w``,✓
 Ubuntu 20.04 LTS for EKS 1.25,arm64,``prod-exeixbb2fbrog``,✓
+Ubuntu 20.04 LTS for EKS 1.26,amd64,``prod-paebp5ekgg6uu``,✓
+Ubuntu 20.04 LTS for EKS 1.26,arm64,``prod-lrqczh7vqe7ve``,✓
+Ubuntu 20.04 LTS for EKS 1.27,amd64,``prod-ldmift6l2jtbk``,✓
+Ubuntu 20.04 LTS for EKS 1.27,arm64,``prod-rmbj4hjbxq3s4``,✓
+Ubuntu 20.04 LTS for EKS 1.28,amd64,``prod-liwkeak7e3q7e``,✓
+Ubuntu 20.04 LTS for EKS 1.28,arm64,``prod-lnp3hmtlqxkes``,✓
