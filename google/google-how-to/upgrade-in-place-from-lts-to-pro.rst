@@ -13,11 +13,11 @@ If your production environment is based on Ubuntu LTS and you need the premium s
 
 .. code::
 
-    gcloud beta compute disks update $INSTANCE_NAME --zone=$ZONE --update-user-licenses=”LICENSE_URI”
+    gcloud beta compute disks update $BOOT_DISK_NAME --zone=$ZONE --update-user-licenses=”LICENSE_URI”
 
 where,
 
-* INSTANCE_NAME: is the name of the boot disk to append the license to
+* BOOT_DISK_NAME: is the name of the boot disk to append the license to
 * ZONE: is the zone containing the boot disk 
 * LICENSE_URI: is the license URI for the Pro version that you are upgrading to. If your VM runs Ubuntu 16.04 LTS, you need to upgrade to Ubuntu Pro 16.04 LTS. Choose the appropriate URI from: 
 

@@ -10,7 +10,7 @@ Linked below are step-by-step guides for some key operations such as: finding Ub
    find-ubuntu-images
    create-different-instance-types
    upgrade-in-place-from-lts-to-pro
-   cis-harden-your-ubuntu-pro
+   enable-pro-features
    deploy-kubernetes-with-ubuntu-pro
    upgrade-from-focal-to-jammy
    
