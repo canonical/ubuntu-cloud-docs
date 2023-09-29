@@ -1,7 +1,7 @@
 How-to guides
 =============
 
-Linked below are step-by-step guides for some key operations such as: finding Ubuntu images, creating instances of different types, upgrading in-place from LTS to Pro, CIS hardening your instance, deploying Kubernetes on Pro and upgrading from Ubuntu 20.04 to 22.04.
+Linked below are step-by-step guides for some key operations such as: finding Ubuntu images, creating instances of different types, upgrading in-place from LTS to Pro, enabling  different Pro features, deploying Kubernetes on Pro, creating a customised docker container and upgrading from Ubuntu 20.04 to 22.04.
 
 
 .. toctree::
@@ -12,5 +12,6 @@ Linked below are step-by-step guides for some key operations such as: finding Ub
    upgrade-in-place-from-lts-to-pro
    enable-pro-features
    deploy-kubernetes-with-ubuntu-pro
+   create-customised-docker-container
    upgrade-from-focal-to-jammy
    
