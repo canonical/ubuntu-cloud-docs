@@ -3,12 +3,25 @@ Create different instance types on GCP
 
 The procedure for creating different instance types on GCP basically boils down to choosing the correct options on your google console. Some specific examples are given below.
 
+
+.. _create-lts-on-gcp:
+
+Create an Ubuntu LTS instance
+-----------------------------
+
+On your Google Cloud console, while creating a new instance from :guilabel:`Compute Engine` > :guilabel:`VM instances`> :guilabel:`CREATE INSTANCE`:
+
+* select ``Ubuntu`` and ``Ubuntu 22.04 LTS`` in :guilabel:`Boot disk` > :guilabel:`CHANGE` > :guilabel:`Operating system` and :guilabel:`Version`
+
+
+.. _create-pro-on-gcp:
+
 Create an Ubuntu Pro instance
 -----------------------------
 
 On your Google Cloud console, while creating a new instance from :guilabel:`Compute Engine` > :guilabel:`VM instances`> :guilabel:`CREATE INSTANCE`:
 
-* select ``Ubuntu Pro`` and ``Ubuntu 22.04 Pro Server`` in :guilabel:`Boot disk` > :guilabel:`CHANGE` > :guilabel:`Operating system` and :guilabel:`Version`
+* select ``Ubuntu Pro`` and ``Ubuntu 22.04 LTS Pro Server`` in :guilabel:`Boot disk` > :guilabel:`CHANGE` > :guilabel:`Operating system` and :guilabel:`Version`
 
 Once the instance is up, ssh into it and run
 
@@ -19,12 +32,14 @@ Once the instance is up, ssh into it and run
 to check that ``livepatch``, ``esm-apps`` and ``esm-infra`` are enabled.
 
 
+.. _create-pro-fips-on-gcp:
+
 Create an Ubuntu Pro FIPS instance
 ----------------------------------
 
 On your Google Cloud console, while creating a new instance from :guilabel:`Compute Engine` > :guilabel:`VM instances`> :guilabel:`CREATE INSTANCE`:
 
-* select ``Ubuntu Pro`` and ``Ubuntu 20.04 Pro FIPS Server`` in :guilabel:`Boot disk` > :guilabel:`CHANGE` > :guilabel:`Operating system` and :guilabel:`Version`
+* select ``Ubuntu Pro`` and ``Ubuntu 20.04 LTS Pro FIPS Server`` in :guilabel:`Boot disk` > :guilabel:`CHANGE` > :guilabel:`Operating system` and :guilabel:`Version`
 
 Once the instance is up, ssh into it and run
 
@@ -41,6 +56,8 @@ The kernel version will include ``fips`` in the name. To check the FIPS packages
 It should show you a long list of packages with ``fips`` in the name or version.
 
 
+.. _create-arm-on-gcp:
+
 Create an ARM-based instance
 ----------------------------
 
@@ -50,6 +67,7 @@ On your Google Cloud console, while creating a new instance from :guilabel:`Comp
 * choose an ARM compatible OS and version, say ``Ubuntu`` and ``Ubuntu 22.04 LTS Minimal`` in :guilabel:`Boot disk` > :guilabel:`CHANGE` > :guilabel:`Operating system` and :guilabel:`Version` 
 
 
+.. _create-conf-compute-on-gcp:
 
 Create a confidential compute enabled VM
 ----------------------------------------

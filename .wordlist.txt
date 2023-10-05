@@ -178,3 +178,5 @@ backoff
 URI
 NIST
 CVEs
+SLiM
+Authorize
