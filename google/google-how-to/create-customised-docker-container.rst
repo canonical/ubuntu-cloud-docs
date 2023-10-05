@@ -8,7 +8,7 @@ Docker is the underlying technology used to run these containers / images. Docke
 
 .. Note::
 
-    If you don't have an Ubuntu Pro VM already, you can create one based on the first example given at :doc:`create-different-instance-types`
+    If you don't have an Ubuntu Pro VM already, you can create one based on :ref:`create-pro-on-gcp`
 
 
 Install Docker

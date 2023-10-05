@@ -5,7 +5,7 @@ Not all Pro features are automatically enabled when you create your Ubuntu Pro V
 
 .. Note::
 
-    If you don't have an Ubuntu Pro VM already, you can either create a new instance (refer: :doc:`create-different-instance-types`) or do an in-place upgrade of your LTS VM to Pro (refer: :doc:`upgrade-in-place-from-lts-to-pro`).
+    If you don't have an Ubuntu Pro VM already, you can either create a new instance (refer: :ref:`create-pro-on-gcp`) or do an in-place upgrade of your LTS VM to Pro (refer: :doc:`upgrade-in-place-from-lts-to-pro`).
 
 
 To check the current status of different Pro services on your VM, SSH into it and run:
