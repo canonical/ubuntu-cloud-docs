@@ -1,10 +1,27 @@
 How-to guides
 =============
 
-Linked below are step-by-step guides for some key operations such as: finding Ubuntu images, creating instances of different types, launching an Ubuntu desktop on a VM, upgrading in-place from LTS to Pro, enabling  different Pro features, building a Pro golden image, deploying Kubernetes on Pro, creating a customised docker container and upgrading from Ubuntu 20.04 to 22.04.
+If you want to find Ubuntu images on GCP, create different types of instances based on those images or just launch an Ubuntu desktop on your VM, refer to these guides:
+
+* :doc:`./find-ubuntu-images`
+* :doc:`./create-different-instance-types`
+* :doc:`./launch-ubuntu-desktop`
+
+For step-by-step guides related to Ubuntu Pro, use: 
+
+* :doc:`./upgrade-in-place-from-lts-to-pro`
+* :doc:`./enable-pro-features`
+* :doc:`./build-ubuntu-pro-golden-image`
+* :doc:`./deploy-kubernetes-with-ubuntu-pro`
+
+Finally, if you are creating a customised docker container or upgrading from Ubuntu 20.04 to 22.04, use:
+
+* :doc:`./create-customised-docker-container`
+* :doc:`./upgrade-from-focal-to-jammy`
 
 
 .. toctree::
+   :hidden:
    :maxdepth: 1
    
    find-ubuntu-images
