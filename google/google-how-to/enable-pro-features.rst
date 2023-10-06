@@ -12,7 +12,7 @@ To check the current status of different Pro services on your VM, SSH into it an
 
 .. code::
 
-    ua status
+    pro status
 
 Use the appropriate section below to enable the service that you need.
 
@@ -20,14 +20,15 @@ Use the appropriate section below to enable the service that you need.
 ESM
 ---
 
-Extended Security Maintenance (ESM) guarantees a security coverage of 10 years for your Pro VM. So e.g. Ubuntu 22.04 will get security updates till 2032. This feature is automatically enabled with Pro and on running ``ua status``, you should see something like:
+Extended Security Maintenance (ESM) guarantees a security coverage of 10 years for your Pro VM. So e.g. Ubuntu 22.04 will get security updates till 2032. This feature is automatically enabled with Pro and on running ``pro status``, you should see something like:
 
 .. code::
 
-    SERVICE	    ENTITLED	STATUS	    DESCRIPTION
+    SERVICE          ENTITLED  STATUS    DESCRIPTION
+    esm-apps         yes       enabled   Expanded Security Maintenance for Applications
+    esm-infra        yes       enabled   Expanded Security Maintenance for Infrastructure
     [...]
-    esm-apps	yes	        enabled	    UA Apps: Extended Security Maintenance (ESM)
-    esm-infra	yes	        enabled	    UA Infra: Extended Security Maintenance (ESM)
+
 
 ``esm-infra`` guarantees 10-year security coverage for packages in the "main" repository, which includes Canonical-supported free and open-source software.
 
@@ -44,11 +45,11 @@ CIS hardening
 
     sudo ua enable cis
 
-With the tooling packages now installed, you can for instance, harden your Ubuntu 16.04 Pro system with CIS level 1 server profile, by running:
+With the tooling packages now installed, you can for instance, harden your Ubuntu 20.04 Pro system with CIS level 1 server profile, by running:
 
 .. code::
 
-    sudo /usr/share/ubuntu-scap-security-guides/cis-hardening/Canonical_Ubuntu_16.04_CIS_v1.1.0-harden.sh level1_server
+    sudo /usr/share/ubuntu-scap-security-guides/cis-hardening/Canonical_Ubuntu_20.04_CIS-harden.sh lvl1_server
 
 In a few minutes, the hardening process will complete to give you a CIS level 1 compliant environment. To audit the system, run:
 
@@ -61,10 +62,11 @@ The output should be similar to:
 .. code::
 
     Title   Ensure mounting of cramfs filesystems is disabled
-    Rule    xccdf_com.ubuntu.xenial.cis_rule_CIS-1.1.1.1
+    Rule    xccdf_com.ubuntu.focal.cis_rule_CIS-1.1.1.1
     Result  pass
     […]
-    CIS audit scan completed. The scan results are available in /usr/share/ubuntu-scap-security-guides/cis-16.04-report.html report.
+
+    CIS audit scan completed. The scan results are available in /usr/share/ubuntu-scap-security-guides/cis-20.04-report.html report.
 
 The HTML report mentioned above will show you your CIS score. For comprehensive CIS hardening instructions, refer to the `Ubuntu CIS Compliance documentation`_.
 
@@ -72,13 +74,7 @@ The HTML report mentioned above will show you your CIS score. For comprehensive 
 FIPS compliance
 ---------------
 
-`Federal Information Processing Standards (FIPS)`_ are standards and guidelines for federal computer systems developed by National Institute of Standards and Technology (NIST).
-
-.. note::
-
-    If your Pro VM was created using the basic Pro version of the OS instead of the FIPS one (i.e say using ``Ubuntu 22.04 Pro Server`` rather than ``Ubuntu 22.04 Pro FIPS Server``), then it will not include the FIPS related packages. You can check this by running ``ua status`` which will show the status of ``fips`` and ``fips-update`` services as ``n/a`` instead of ``disabled`` 
-
-To enable FIPS on your Pro FIPS VM, run:
+`Federal Information Processing Standards (FIPS)`_ are standards and guidelines for federal computer systems developed by National Institute of Standards and Technology (NIST). To enable FIPS on your Pro VM, run:
 
 .. code::
 
@@ -96,7 +92,7 @@ The output will be similar to:
     FIPS enabled
     A reboot is required to complete install.
 
-Reboot the instance by running ``sudo reboot`` or through the Google Cloud console. Once the machine restarts, you can SSH into it again and run ``ua status`` to verify that the ``fips`` service is enabled.
+Reboot the instance by running ``sudo reboot`` or through the Google Cloud console. Once the machine restarts, you can SSH into it again and run ``pro status`` to verify that the ``fips`` service is enabled.
 
 
 Livepatch
@@ -110,7 +106,7 @@ To enable livepatch, run:
 
     sudo ua enable livepatch
 
-Run ``ua status`` to verify that the ``livepatch`` service is enabled.
+Run ``pro status`` to verify that the ``livepatch`` service is enabled.
 
 
 .. _`CIS Benchmarks`: https://www.cisecurity.org/cis-benchmarks

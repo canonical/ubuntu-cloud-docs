@@ -27,7 +27,7 @@ Once the instance is up, ssh into it and run
 
 .. code::
 
-   ua status
+   pro status
 
 to check that ``livepatch``, ``esm-apps`` and ``esm-infra`` are enabled.
 
@@ -76,16 +76,31 @@ On your Google Cloud console, while creating a new instance from :guilabel:`Comp
 
 * select :guilabel:`Confidential VM service` > :guilabel:`ENABLE`
 
-It'll show you the available machine type - ``N2d-standard-2`` and OS image - ``Ubuntu 20.04 LTS Pro FIPS Server``. On selecting :guilabel:`ENABLE` again, the changes will be reflected under the :guilabel:`Machine configuration` and :guilabel:`Boot disk` sections.
+It'll show you the available machine type - ``n2d-standard-2`` and boot disk image - ``Ubuntu 20.04 LTS``. Select :guilabel:`ENABLE` again and the changes will be reflected under the :guilabel:`Machine configuration` and :guilabel:`Boot disk` sections. However, we need to change the disk image to one with Pro FIPS:
+
+* Go to :guilabel:`Boot disk` > :guilabel:`CHANGE` > :guilabel:`Confidential Images` and filter using 'ubuntu' to select ``Ubuntu 20.04 LTS Pro FIPS Server``. Select that and create the instance.
 
 To check that confidential computing has been enabled correctly, once the instance is up, ssh into it and run
 
 .. code::
    
-   dmesg | grep SEV | head
+   dmesg | grep SEV
 
 A statement containing: ``AMD Secure Encryption Virtulization (SEV) active`` should be displayed. 
 
-Back on the google console, select the instance and open :guilabel:`Logs` > :guilabel:`Cloud Logging`. From the list of logs, expand the one for ``sevLaunchAttestationReportEvent`` and check that the field ``integrityEvaluationPassed`` is set to ``true``.
+Back on the google console, open the instance details and go to :guilabel:`Logs` > :guilabel:`Logging`. In the list of logs, look for one that mentions ``sevLaunchAttestationReportEvent`` and expand it. In the resulting JSON, check that the field ``integrityEvaluationPassed`` is set to ``true``, under ``sevLaunchAttestationReportEvent``, something like:
+
+.. code::
+
+   insertId: "0",
+   jsonPayload: {
+      @type: "type.googleapis.com/cloud_integrity.IntegrityEvent",
+      bootCounter: "0",
+      sevLaunchAttestationReportEvent: {
+         integrityEvaluationPassed: true
+         sevPolicy: {0}
+         [...]         
+
+
 
 
