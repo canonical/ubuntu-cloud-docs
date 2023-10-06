@@ -40,14 +40,14 @@ From the options seen, choose Ubuntu Pro 22.04 and use its family name in the go
 
 .. code::
 
-    gcloud compute images create golden-image3 --source-image-family=ubuntu-pro-2204-lts --source-image-project=ubuntu-os-pro-cloud
+    gcloud compute images create golden-image --source-image-family=ubuntu-pro-2204-lts --source-image-project=ubuntu-os-pro-cloud
 
 In a bit you'll see output similar to the following and the created golden image will be available in your `image gallery`_. 
 
 .. code::
 
-    Created [https://www.googleapis.com/compute/v1/projects/[YOUR_PROJECT]/global/images/golden-image3].
-    NAME: golden-image3
+    Created [https://www.googleapis.com/compute/v1/projects/[YOUR_PROJECT]/global/images/golden-image].
+    NAME: golden-image
     PROJECT: [YOUR_PROJECT]
     FAMILY: 
     DEPRECATED: 
@@ -57,7 +57,7 @@ Verify that the image contains the Ubuntu Pro license:
 
 .. code::
 
-    gcloud compute images describe golden-image3
+    gcloud compute images describe golden-image
 
 .. code::
 
@@ -79,8 +79,8 @@ Verify that the image contains the Ubuntu Pro license:
     - '2592866803419978320'
     licenses:
     - https://www.googleapis.com/compute/v1/projects/ubuntu-os-pro-cloud/global/licenses/ubuntu-pro-2204-lts
-    name: golden-image3
-    selfLink: https://www.googleapis.com/compute/v1/projects/ubuntu-dimple/global/images/golden-image3
+    name: golden-image
+    selfLink: https://www.googleapis.com/compute/v1/projects/ubuntu-dimple/global/images/golden-image
     shieldedInstanceInitialState:
     [...]
 
@@ -94,7 +94,7 @@ To create an instance based on this golden image, run:
 
 .. code::
 
-    gcloud compute instances create instance-from-golden-image --image=golden-image3
+    gcloud compute instances create instance-from-golden-image --image=golden-image
 
 .. code::
 
@@ -117,7 +117,7 @@ The SSH command might need you to create an SSH key for gcloud if you don't have
 
 .. code::
 
-    ua status
+    pro status
 
 The output should be similar to the following and indicates that Pro features such as ESM and livepatch are enabled.
 

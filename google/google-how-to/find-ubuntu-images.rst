@@ -8,7 +8,7 @@ For a programmatic method, you can use the gcloud command:
 
 .. code::
 
-  gcloud compute images list --filter ubuntu-os-cloud
+  gcloud compute images list --filter ubuntu-os
 
 Daily, untested images are found under the ``ubuntu-os-cloud-devel`` project:
 
