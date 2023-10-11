@@ -1,4 +1,4 @@
-Canonical's Offerings on GCP
+Canonical's offerings on GCP
 ============================
 
 With an optimised Ubuntu GCP kernel built in collaboration between Google and Canonical to deliver the very
