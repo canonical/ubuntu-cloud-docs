@@ -31,8 +31,8 @@ suggestions, fixes and constructive feedback.
    :hidden:
    :maxdepth: 2
 
-   canonical-offerings
    google-how-to/index
+   google-explanation/index
 
    
 .. _Code of conduct: https://ubuntu.com/community/governance/code-of-conduct
