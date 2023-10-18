@@ -1,5 +1,5 @@
-Enable GPUs on AWS Ubuntu EKS worker nodes
-==========================================
+Enable GPUs on EKS worker nodes
+===============================
 
 GPU-based EKS worker nodes are needed for many applications, such as for the training of deep learning models.
 

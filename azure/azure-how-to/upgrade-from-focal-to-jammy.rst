@@ -1,5 +1,5 @@
-Upgrade from Focal to Jammy on Azure
-====================================
+Upgrade from Focal to Jammy
+===========================
 
 General Advice
 ---------------
