@@ -14,3 +14,4 @@ Linked below are step-by-step guides for some key operations such as: finding th
    secureboot-and-vtpm
    build-cloudformation-templates
    upgrade-from-focal-to-jammy
+   eks-gpu-enablement
