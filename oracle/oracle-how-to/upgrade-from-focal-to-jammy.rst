@@ -1,5 +1,5 @@
-Upgrade from Focal to Jammy on Oracle
-=====================================
+Upgrade from Focal to Jammy
+===========================
 
 General Advice
 ---------------

@@ -29,7 +29,7 @@ For each Ubuntu release, we deliver multiple customised images to AWS. These ima
 * **virtualisation types** - Paravirtual (PV), Hardware Virtual Machine (HVM)
 * **support/security compliance levels** - standard, Ubuntu Pro, Ubuntu Pro FIPS
 
-For more details read about :doc:`canonical-offerings`
+For more details read about :doc:`aws-explanation/canonical-offerings`
 
 ---------
 
@@ -49,10 +49,8 @@ suggestions, fixes and constructive feedback.
    :hidden:
    :maxdepth: 2
 
-   canonical-offerings
    aws-how-to/index
-   eks-image-retention-policy
-
+   aws-explanation/index
 
 .. _Code of conduct: https://ubuntu.com/community/governance/code-of-conduct
 .. _Get support: https://ubuntu.com/cloud/public-cloud
