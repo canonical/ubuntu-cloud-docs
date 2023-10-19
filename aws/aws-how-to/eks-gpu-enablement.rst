@@ -5,7 +5,7 @@ GPU-based EKS worker nodes are needed for many applications, such as for the tra
 
 Before enabling GPUs on your worker nodes, you'll have to create a cluster and node groups with `GPU based instances <https://docs.aws.amazon.com/dlami/latest/devguide/gpu.html>`_. You'll also need SSH access to the nodes.
 
-==============================================
+
 
 Install a GPU driver on each node
 ---------------------------------
