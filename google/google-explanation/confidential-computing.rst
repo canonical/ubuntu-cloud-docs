@@ -24,6 +24,21 @@ These features are integral to ensuring the security and trustworthiness of TD e
 In essence, Intel® TDX empowers you to execute your workloads within a logically isolated hardware-based execution environment. This is achieved by allocating a dedicated segment of system memory that undergoes real-time encryption using an advanced AES-128 encryption engine. TDX also introduces stringent access control measures that govern memory access. This prevents external access, including access from the cloud's privileged system software.
 
 
+AMD SEV-SNP
+-----------
+
+Secure Encrypted Virtualisation-Secure Nested Paging (SEV-SNP) is a security feature available on AMD's EPYC processors. It provides the following benefits for your VMs: 
+
+* `Improved security` - it encrypts the memory pages that contain firmware code. This makes it much more difficult for attackers to gain access to the firmware and launch attacks.
+* `Increased isolation` - it allows each VM to have its own secure memory space. This means that a VM cannot access the memory of another VM, even if the hypervisor is compromised.
+* `Enhanced performance` - it can be used to improve the performance of virtualised applications. This is because SEV-SNP allows the hypervisor to offload some of the security processing to the processor.
+
+SEV-SNP provides an extra layer of safeguard against malicious hypervisor-based attacks, such as data reply and memory re-mapping, by establishing a secure and isolated execution environment.
+
+It also introduces several optional security enhancements, strengthens protection around interrupt behaviour and bolsters defences against side channel attacks.
+
+For further details, check out this white paper on `AMD SEV-SNP - Strengthening VM Isolation with Integrity Protection and More`_.
+
 
 Confidential computing on GCP
 -----------------------------
@@ -35,3 +50,4 @@ To create and launch confidential compute enabled instances on GCE, refer to:
 
 
 .. _`Intel® Trust Domain Extensions`: https://www.intel.com/content/dam/develop/external/us/en/documents/tdx-whitepaper-v4.pdf
+.. _`AMD SEV-SNP - Strengthening VM Isolation with Integrity Protection and More`: https://www.amd.com/content/dam/amd/en/documents/epyc-business-docs/white-papers/SEV-SNP-strengthening-vm-isolation-with-integrity-protection-and-more.pdf
