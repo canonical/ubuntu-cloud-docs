@@ -5,12 +5,10 @@ Confidential computing on Azure
    :start-after: Start: Confidential computing
    :end-before: End: Confidential computing
 
-The idea is to hide and protect sensitive workloads. It allows a user to run programs on untrusted systems with the technical assurance that the remote host provider cannot read nor modify the program's data and memory. When these requirements cannot be totally satisfied, confidential computing solutions are usually at least able to detect if the user's data has been modified.
-
 Azure provides two types of *security*:
 
 * `Trusted launch <https://docs.microsoft.com/en-us/azure/virtual-machines/trusted-launch>`_ which is a set of features including virtual Trusted Platform Module (vTPM) and `secure boot <https://wiki.ubuntu.com/UEFI/SecureBoot>`_
-* `Confidential virtual machine (VM) <https://docs.microsoft.com/en-us/azure/confidential-computing/confidential-vm-overview>`_ with support for `AMD Secure Encrypted Virtualisation-Secure Nested Paging (SEV-SNP) <https://www.amd.com/system/files/TechDocs/SEV-SNP-strengthening-vm-isolation-with-integrity-protection-and-more.pdf>`_, along with `measured boot <https://docs.microsoft.com/en-us/azure/security/fundamentals/measured-boot-host-attestation>`_ using a vTPM
+* `Confidential virtual machine <https://docs.microsoft.com/en-us/azure/confidential-computing/confidential-vm-overview>`_ with support for `AMD Secure Encrypted Virtualisation-Secure Nested Paging (SEV-SNP) <https://www.amd.com/system/files/TechDocs/SEV-SNP-strengthening-vm-isolation-with-integrity-protection-and-more.pdf>`_, along with `measured boot <https://docs.microsoft.com/en-us/azure/security/fundamentals/measured-boot-host-attestation>`_ using a vTPM
 
 
 Trusted launch
