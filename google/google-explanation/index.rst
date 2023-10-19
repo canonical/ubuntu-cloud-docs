@@ -9,4 +9,5 @@ Discussion and clarification of some key topics are available here:
    
    canonical-offerings
    how-gcp-pricing-works
+   confidential-computing
    

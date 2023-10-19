@@ -20,6 +20,8 @@ End: Product need and user
 
 Start: Confidential computing
 
+Confidential computing addresses the question of trust between cloud providers and their customers. By using confidential compute enabled machines, protection of the customer's data is directly enforced by the underlying cloud hardware. In the process, a large class of attacks on cloud guest machines are avoided or at least mitigated.
+
 Data can be thought of as being in one of three states:  
 
 * in-transit - being transmitted from one location to another
@@ -28,7 +30,8 @@ Data can be thought of as being in one of three states:
   
 Both data in-transit and data at-rest can be encrypted using well-known techniques, but for securing data in-use, you need confidential computing.
 
-Confidential computing is the protection of data in-use by performing computation in a hardware-based trusted execution environment. It allows the encryption of data while it is in the system memory. This requires the support of both hardware and the OS. For example, your hardware could be based on AMD's Secure Encrypted Virtualisation (SEV) architecture and the OS could be Ubuntu. 
+Confidential computing is the protection of data in-use by performing computation in a hardware-based trusted execution environment. It allows the encryption of data while it is in the system memory. This requires the support of both hardware and the OS. For example, your hardware could be based on Intel's TDX (Trust Domain Extensions) processors or AMD's SEV (Secure Encrypted Virtualisation) architecture and the OS could be Ubuntu. 
+
 
 End: Confidential computing
 

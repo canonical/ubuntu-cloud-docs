@@ -194,3 +194,10 @@ VNC
 TightVNC
 URL
 TCP
+AES
+TDX
+Xeon
+th
+TDs
+VMM
+

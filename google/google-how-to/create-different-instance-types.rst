@@ -67,10 +67,10 @@ On your Google Cloud console, while creating a new instance from :guilabel:`Comp
 * choose an ARM compatible OS and version, say ``Ubuntu`` and ``Ubuntu 22.04 LTS Minimal`` in :guilabel:`Boot disk` > :guilabel:`CHANGE` > :guilabel:`Operating system` and :guilabel:`Version` 
 
 
-.. _create-conf-compute-on-gcp:
+.. _create-amd-sev-conf-compute-on-gcp:
 
-Create a confidential compute enabled VM
-----------------------------------------
+Create an AMD SEV based confidential computing VM 
+--------------------------------------------------
 
 On your Google Cloud console, while creating a new instance from :guilabel:`Compute Engine` > :guilabel:`VM instances`> :guilabel:`CREATE INSTANCE`:
 
@@ -102,5 +102,27 @@ Back on the google console, open the instance details and go to :guilabel:`Logs`
          [...]         
 
 
+.. _create-intel-tdx-conf-compute-on-gcp:
+
+Create an Intel® TDX based confidential computing VM 
+-----------------------------------------------------
+
+In GCE, Intel® TDX is supported in the `C3 machine series`_ since they use the 4th Gen Intel® Xeon CPUs. To create the VM, in the Google Cloud CLI, use the ``instances create`` command with ``confidential-compute-type=TDX``:
+
+.. code::
+
+   gcloud alpha compute instances create INSTANCE_NAME \
+      --machine-type MACHINE_TYPE --zone us-central1-a \
+      --confidential-compute-type=TDX \
+      --on-host-maintenance=TERMINATE \
+      --image-family=IMAGE_FAMILY_NAME \
+      --image-project=IMAGE_PROJECT \
+      --project PROJECT_NAME
+
+where:
+
+* MACHINE_TYPE: is the C3 machine type to use and 
+* IMAGE_FAMILY_NAME: is the name of the confidential VM supported image family to use, such as Ubuntu 22.04 LTS or Ubuntu 22.04 LTS Pro Server
 
 
+.. _`C3 machine series`: https://cloud.google.com/compute/docs/general-purpose-machines#c3_series
