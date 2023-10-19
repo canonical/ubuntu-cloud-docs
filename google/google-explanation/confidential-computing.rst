@@ -37,6 +37,7 @@ SEV-SNP provides an extra layer of safeguard against malicious hypervisor-based 
 
 It also introduces several optional security enhancements, strengthens protection around interrupt behaviour and bolsters defences against side channel attacks.
 
+For further details, check out this white paper on `AMD SEV-SNP - Strengthening VM Isolation with Integrity Protection and More`_.
 
 
 Confidential computing on GCP
@@ -49,3 +50,4 @@ To create and launch confidential compute enabled instances on GCE, refer to:
 
 
 .. _`Intel® Trust Domain Extensions`: https://www.intel.com/content/dam/develop/external/us/en/documents/tdx-whitepaper-v4.pdf
+.. _`AMD SEV-SNP - Strengthening VM Isolation with Integrity Protection and More`: https://www.amd.com/content/dam/amd/en/documents/epyc-business-docs/white-papers/SEV-SNP-strengthening-vm-isolation-with-integrity-protection-and-more.pdf
