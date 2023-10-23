@@ -28,9 +28,11 @@ Finally, if you are creating a customised docker container use:
    create-different-instance-types
    upgrade-from-focal-to-jammy
    launch-ubuntu-desktop
+
    upgrade-in-place-from-lts-to-pro
    enable-pro-features
    build-ubuntu-pro-golden-image
    deploy-kubernetes-with-ubuntu-pro
+   
    create-customised-docker-container
    
