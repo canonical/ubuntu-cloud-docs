@@ -32,7 +32,7 @@ SSM Maintenance windows allow you to configure time slots for automatically runn
 
 Now schedule the task, by specifying how often you would like to run it, say:
 
-.. image:: automatically-update-ubuntu-servers-images/schedule_task.png
+.. image:: automatically-update-ubuntu-instances-images/schedule_task.png
    :align: center
 
 After saving, you should be able to open the new maintenance window page under :guilabel:`AWS Systems Manager` > :guilabel:`Maintenance Windows`.
