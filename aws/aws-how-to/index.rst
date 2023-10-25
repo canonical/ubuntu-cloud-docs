@@ -9,7 +9,7 @@ If you want to find the right Ubuntu image, upgrade from Ubuntu 20.04 to 22.04, 
 * :doc:`./automatically-update-ubuntu-instances` 
 * :doc:`./launch-ubuntu-desktop`
 
-For step-by-step guides related to Ubuntu Pro, use: 
+Ubuntu Pro related user guides: 
 
 * :doc:`./build-pro-ami-using-packer`
 * :doc:`./deploy-ubuntu-pro-cluster`

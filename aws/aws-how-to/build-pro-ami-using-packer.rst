@@ -7,7 +7,7 @@ We'll be using Ubuntu Pro 20.04 for this guide, but the method is equally applic
 
 .. note::
 
-   * For **Ubuntu Pro FIPS**, it is better to use a pre-enabled FIPS image from the marketplace to avoid unnecessary additional steps. 
+   * For **Ubuntu Pro FIPS**, it is better to use a pre-enabled FIPS image from the Marketplace to avoid unnecessary additional steps. 
    * For **Ubuntu LTS**, you can use this method with a small change as explained at the end of the :ref:`Define provisioners` section below. 
 
 

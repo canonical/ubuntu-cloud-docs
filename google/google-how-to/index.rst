@@ -8,7 +8,7 @@ If you want to find Ubuntu images on GCP, create different types of instances ba
 * :doc:`./upgrade-from-focal-to-jammy`
 * :doc:`./launch-ubuntu-desktop`
 
-For step-by-step guides related to Ubuntu Pro, use: 
+Ubuntu Pro related user guides: 
 
 * :doc:`./upgrade-in-place-from-lts-to-pro`
 * :doc:`./enable-pro-features`

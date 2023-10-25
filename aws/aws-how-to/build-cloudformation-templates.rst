@@ -77,7 +77,7 @@ To create the parameter in your CloudFormation template, choose a product ID fro
 
 .. note::
 
-   Before launching any marketplace product you'll have to subscribe to it, even if it is free of charge. 
+   Before launching any Marketplace product you'll have to subscribe to it, even if it is free of charge.
 
 
 Ubuntu LTS for EKS
