@@ -1,7 +1,7 @@
 Deploy an Ubuntu Pro EKS cluster
 ================================
 
-This guide shows how to deploy an EKS Cluster with Ubuntu Pro nodes.
+This guide shows how to deploy an EKS Cluster with Ubuntu Pro nodes using Ubuntu Pro tokens and EC2 launch templates.
 
 Prerequisites
 ~~~~~~~~~~~~~
