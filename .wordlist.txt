@@ -202,5 +202,6 @@ TDs
 VMM
 EPYC
 virtualised
+CNCF
 
 

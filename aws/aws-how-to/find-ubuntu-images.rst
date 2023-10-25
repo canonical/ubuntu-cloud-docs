@@ -84,7 +84,7 @@ Users can then run the `describe-images` command against an AMI ID and verify th
 Note that listings on the AWS Marketplace will always show the `OwnerId` as Amazon (e.g. `679593333241`). In these cases, users can verify the Amazon ID and look for `aws-marketplace/ubuntu` in the `ImageLocation` field.
 
 
-Images in the AWS marketplace
+Images in the AWS Marketplace
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 AWS Marketplace is a digital catalogue with thousands of software listings from independent software vendors that make it easy to find, test, buy, and deploy software that runs on AWS.
@@ -92,7 +92,7 @@ Canonical maintains `image listings <https://aws.amazon.com/marketplace/seller-p
 
 Customers can also use the AWS Marketplace to launch and subscribe to official Ubuntu Pro images that allow users to pay for additional support.
 
-All the above mentioned marketplace images can also be found in the SSM parameter store:
+All the above mentioned Marketplace images can also be found in the SSM parameter store:
 
 .. code-block::
 

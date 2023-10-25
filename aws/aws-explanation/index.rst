@@ -1,8 +1,7 @@
 Explanation
 ===========
 
-Discussion and clarification of some key topics are available here:
-
+Discussion and clarification of some key topics:
 
 .. toctree::
    :maxdepth: 1
