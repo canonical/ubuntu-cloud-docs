@@ -81,7 +81,7 @@ Ubuntu public cloud is open source project that warmly welcomes community projec
    oracle/index
    oci/index
    
-.. _Code of conduct: https://ubuntu.com/community/governance/code-of-conduct
+.. _Code of conduct: https://ubuntu.com/community/ethos/code-of-conduct
 .. _Get support: https://ubuntu.com/cloud/public-cloud
 .. _Join our online chat: https://discourse.ubuntu.com
 .. _Start using Ubuntu today: https://ubuntu.com/download/cloud
