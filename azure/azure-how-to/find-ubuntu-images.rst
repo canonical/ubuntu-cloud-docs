@@ -229,7 +229,7 @@ Quick start: `Ubuntu Pro FIPS 18.04 LTS on Azure <https://portal.azure.com/#crea
 CIS Hardened offer
 ~~~~~~~~~~~~~~~~~~
 
-To learn more about CIS compliance: `CIS compliance with Ubuntu LTS <https://ubuntu.com/security/certifications/docs/cis>`_
+To learn more about CIS compliance: `CIS compliance with Ubuntu LTS <https://ubuntu.com/security/certifications/docs/usg/cis>`_
 
 Ubuntu Minimal Pro CIS 20.04 LTS - Focal Fossa
 ++++++++++++++++++++++++++++++++++++++++++++++
