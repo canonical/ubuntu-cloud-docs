@@ -72,6 +72,6 @@ community projects, contributions, suggestions, fixes and constructive feedback.
    oci-how-to/create-chiselled-ubuntu-image
 
   
-.. _Code of conduct: https://ubuntu.com/community/governance/code-of-conduct
+.. _Code of conduct: https://ubuntu.com/community/ethos/code-of-conduct
 .. _Get support: https://ubuntu.com/cloud/public-cloud
 .. _Join our online chat: https://discourse.ubuntu.com

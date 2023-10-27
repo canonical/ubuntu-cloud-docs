@@ -58,7 +58,7 @@ contributions, suggestions, fixes and constructive feedback.
    understanding-ubuntu-on-azure
    confidential-computing
 
-.. _Code of conduct: https://ubuntu.com/community/governance/code-of-conduct
+.. _Code of conduct: https://ubuntu.com/community/ethos/code-of-conduct
 .. _Get support: https://ubuntu.com/cloud/public-cloud
 .. _Join our online chat: https://discourse.ubuntu.com
 .. _Talk to us about Ubuntu on Azure: https://ubuntu.com/azure#get-in-touch
