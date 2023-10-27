@@ -44,8 +44,10 @@ Yes, Ubuntu on Azure is customised to make it better for Azure. This customisati
 ----------------------------------------------------
 Why are there so many publishers of Ubuntu on Azure?
 ----------------------------------------------------
-                                                    
-Ubuntu is a distribution of free software. Anyone is free to re-publish the OS. You are free to build your own software on top of Ubuntu and to sell it as a paid product. This is what makes Ubuntu so great. However, be very careful when downloading or using Ubuntu from an untrusted source. At best you will pay for the same product that you could get for free from Canonical. At worst, those offers could contain spyware or other malware programs that could put you and your business at risk.
 
-*Always use Canonical's offers for running Ubuntu* except if you trust the other publisher.
+Ubuntu is a collection of free and open source software, and redistribution is permitted in accordance with `Ubuntu's intellectual property policy`_. 
 
+We do, however, advise caution when installing third-party Ubuntu images. You need to ensure that you trust the third party and the security of their image building pipeline. If you are paying for a third-party Ubuntu image, make sure that you not only trust it, but that you are receiving value beyond what you could obtain for free from Canonical or as part of Ubuntu Pro.
+
+
+.. _`Ubuntu's intellectual property policy`: https://ubuntu.com/legal/intellectual-property-policy
