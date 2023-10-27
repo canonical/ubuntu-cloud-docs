@@ -27,7 +27,7 @@ How often are images deprecated?
 Microsoft Azure Partner Center has a hard limit of 100 images. To comply with this policy, Canonical has the following deprecation policy
 
 * No more than 90 active images will be kept for a publication
-* when the limit of 90 images is reach, Canonical will deprecate the oldest version to allow publishing of the latest version
+* When the limit of 90 images is reached, Canonical will deprecate the oldest version to allow publishing of the latest version
 * Images will have a 90 day deprecation time. During this time, users will receive warnings from Microsoft about the deprecation
 * After 90 days, the deprecated images will be fully removed, and users will no longer have access.
 
