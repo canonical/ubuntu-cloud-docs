@@ -76,6 +76,7 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', '.sphinx']
 
 #  -- Projects that will share this configuration file -----------------------------
 multiproject_projects = {
+    "all-clouds": {},
     "aws": {},
     "azure": {},
     "google": {},

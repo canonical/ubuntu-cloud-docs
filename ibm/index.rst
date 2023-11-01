@@ -19,7 +19,7 @@ and features needed to run specific workloads.
 IBM services
 ------------
 
-Canonical and the Ubuntu community work together with IBM to ensure that Ubuntu works seamlessly across IBM platforms,including IBM Z and LinuxONE, IBM Power Systems and the IBM Cloud.
+Canonical and the Ubuntu community work together with IBM to ensure that Ubuntu works seamlessly across IBM platforms, including IBM Z and LinuxONE, IBM Power Systems and the IBM Cloud.
 
 Canonical provides optimised Ubuntu LTS images with a custom kernel, minimal size, livepatch and support.
 
