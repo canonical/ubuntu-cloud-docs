@@ -19,10 +19,6 @@ Ubuntu Pro FIPS 16.04 LTS,amd64,``prod-hykkbajyverq4``,✓
 Ubuntu Pro FIPS 18.04 LTS,amd64,``prod-7izp2xqnddwdc``,✓
 Ubuntu Pro FIPS 20.04 LTS,amd64,``prod-k6fgbnayirmrc``,✓
 Ubuntu Pro 14.04 LTS,amd64,``prod-7u42cjnp5pcuo``,✓
-Ubuntu Pro 16.04 LTS,amd64,``prod-f6ogoaqs7lwre``,✓
-Ubuntu Pro 18.04 LTS,amd64,``prod-jlgu4232gpnwa``,✓
-Ubuntu Pro 20.04 LTS,amd64,``prod-3sk4unyn4iwqu``,✓
-Ubuntu Pro 22.04 LTS,amd64,``prod-uwytposjsg3du``,✓
 Ubuntu 20.04 LTS for EKS 1.23,amd64,``prod-d6nvbzhhqtsnc``,✓
 Ubuntu 20.04 LTS for EKS 1.23,arm64,``prod-w4kdatfulcfk2``,✓
 Ubuntu 20.04 LTS for EKS 1.24,amd64,``prod-q56ww7nfnmv72``,✓
