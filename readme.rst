@@ -1,10 +1,11 @@
 Ubuntu cloud documentation
 ==========================
 
-Documentation for Ubuntu on public clouds. This documentation is composed of six related documentation sets. Five of them pertain to different cloud partners (AWS, Azure, IBM, Google cloud and Oracle cloud), while the sixth one is for OCI registries.
+Documentation for Ubuntu on public clouds. This documentation is composed of seven related documentation sets. The first one is for content related to public clouds in general and includes links to the remaining six. Five of the remaining six pertain to different cloud partners (AWS, Azure, IBM, Google cloud and Oracle cloud), while the last one is for OCI registries.
 
-The documentation is currently published to six different locations:
+Each documentation set is currently published to a different location:
 
+* https://canonical-public-cloud.readthedocs-hosted.com/
 * https://canonical-aws.readthedocs-hosted.com/
 * https://canonical-azure.readthedocs-hosted.com/
 * https://canonical-gcp.readthedocs-hosted.com/
@@ -40,7 +41,7 @@ Since each cloud has it's own separate documentation set, you have to specify th
 
 	PROJECT=aws make run
 
-The different projects that can be specfied are 'aws', 'azure', 'google', 'ibm', 'oracle' and 'oci'.
+The different projects that can be specfied are 'all-clouds', 'aws', 'azure', 'google', 'ibm', 'oracle' and 'oci'.
 
 The documentation will be available at `127.0.0.1:8000 <http://127.0.0.1:8000>`_ or equivalently at `localhost:8000 <http://localhost:8000>`_.
 
