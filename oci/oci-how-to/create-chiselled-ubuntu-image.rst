@@ -30,18 +30,16 @@ Start by creating a Dockerfile with the following content:
 ..  code-block:: dockerfile
 
    ARG UBUNTU_RELEASE=22.04
-
-   # Get the Chisel source code and compile it.
-   FROM golang:1.18 AS chisel
-   ARG UBUNTU_RELEASE
-   RUN git clone --depth 1 -b main https://github.com/canonical/chisel /opt/chisel
-   WORKDIR /opt/chisel
-   RUN go generate internal/deb/version.go \
-      && go build ./cmd/chisel
+   ARG ARCH
 
    # Build the chiselled filesystem based on the desired slices.
    FROM ubuntu:$UBUNTU_RELEASE AS builder
    ARG UBUNTU_RELEASE
+   ARG ARCH
+
+   # Get chisel binary
+   ADD "https://github.com/canonical/chisel/releases/download/v0.8.0/chisel_v0.8.0_linux_$ARCH.tar.gz" chisel.tar.gz
+   RUN tar -xvf chisel.tar.gz -C /usr/bin/
    RUN apt-get update \
       && DEBIAN_FRONTEND=noninteractive apt-get install -y ca-certificates
    COPY --from=chisel /opt/chisel/chisel /usr/bin/
@@ -62,7 +60,7 @@ Build the chiselled Ubuntu base image by running:
 
 ..  code-block:: bash
    
-   docker build -t chiselled-ubuntu-base:latest .
+   docker build -t chiselled-ubuntu-base:latest . --build-arg ARCH=<your_arch> # example ARCH=amd64
 
 You'll then find yourself with a new container image with approximately 5MB (or 2.5MB when compressed). 
 
