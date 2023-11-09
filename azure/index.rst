@@ -55,8 +55,7 @@ contributions, suggestions, fixes and constructive feedback.
    :maxdepth: 2
 
    azure-how-to/index
-   understanding-ubuntu-on-azure
-   confidential-computing
+   azure-explanation/index
 
 .. _Code of conduct: https://ubuntu.com/community/ethos/code-of-conduct
 .. _Get support: https://ubuntu.com/cloud/public-cloud
