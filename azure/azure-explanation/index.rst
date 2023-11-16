@@ -7,8 +7,10 @@ Discussion and clarification of some key topics:
    :maxdepth: 1
    
    understanding-ubuntu-on-azure
+   daily-vs-release-images
    ubuntu-on-aks-worker-nodes
    confidential-computing
+
    
    
    

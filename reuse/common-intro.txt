@@ -36,3 +36,16 @@ Confidential computing is the protection of data in-use by performing computatio
 End: Confidential computing
 
 ==============================================================
+
+
+Start: Daily vs release images
+
+Canonical publishes two types of Ubuntu images:
+
+* 'release' images - fully tested, production grade images
+* 'daily' images - test / preview images that contain all the latest updates from the Ubuntu archive
+
+End: Daily vs release images
+
+==============================================================
+
