@@ -86,6 +86,7 @@ multiproject_projects = {
 }
 
 intersphinx_mapping = {
+    'all-clouds': ('https://canonical-public-cloud.readthedocs-hosted.com/en/latest/', None),
     'aws': ('https://canonical-aws.readthedocs-hosted.com/en/latest/', None),
     'azure': ('https://canonical-azure.readthedocs-hosted.com/en/latest/', None),
     'google': ('https://canonical-gcp.readthedocs-hosted.com/en/latest/', None),

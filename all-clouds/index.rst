@@ -46,6 +46,15 @@ Ubuntu public cloud is open source project that warmly welcomes community projec
 * `Get support`_
 * `Join our online chat`_
 * `Start using Ubuntu today`_ 
+
+
+.. toctree::
+   :hidden:
+   :maxdepth: 2
+
+   all-clouds-explanation/release-types
+   
+
    
 .. _Code of conduct: https://ubuntu.com/community/ethos/code-of-conduct
 .. _Get support: https://ubuntu.com/cloud/public-cloud
