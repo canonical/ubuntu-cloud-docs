@@ -5,6 +5,8 @@ Ubuntu images: 'release' vs 'daily'
    :start-after: Start: Daily vs release images
    :end-before: End: Daily vs release images
 
+For further details about these image types, check out :doc:`all-clouds:all-clouds-explanation/release-types`.
+
 On Azure, release and daily images for a given Ubuntu release are published under two distinct offers. To avoid confusion, only release images of Ubuntu are displayed on the Azure Marketplace and daily images are 'hidden'.
 
 To find the daily images, use the Azure CLI and run: 
