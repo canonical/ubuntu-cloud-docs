@@ -15,6 +15,10 @@ Ubuntu 23.04,amd64,``prod-5k5cl7gpbkr26``,✓
 Ubuntu 23.04,arm64,``prod-ad4brywknigv4``,✓
 Minimal Ubuntu 23.04,amd64,``prod-4q2ov7d2gozxk``,✓
 Minimal Ubuntu 23.04,arm64,``prod-wq7aqb3abhaay``,✓
+Ubuntu 23.10,amd64,``prod-tx7uupluohrfk``,✓
+Ubuntu 23.10,arm64,``prod-2ajtlwthyvpc6``,✓
+Minimal Ubuntu 23.10,amd64,``prod-segy4h4e5x5zq``,✓
+Minimal Ubuntu 23.10,arm64,``prod-xxfuncfabpasi``,✓
 Ubuntu Pro FIPS 16.04 LTS,amd64,``prod-hykkbajyverq4``,✓
 Ubuntu Pro FIPS 18.04 LTS,amd64,``prod-7izp2xqnddwdc``,✓
 Ubuntu Pro FIPS 20.04 LTS,amd64,``prod-k6fgbnayirmrc``,✓
