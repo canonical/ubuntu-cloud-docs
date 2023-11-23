@@ -42,8 +42,8 @@ Start: Daily vs release images
 
 Canonical publishes two types of Ubuntu images:
 
-* 'release' images - fully tested, production grade images
-* 'daily' images - test / preview images that contain all the latest updates from the Ubuntu archive
+* *release* images - fully tested, production grade images
+* *daily* images - test / preview images that contain all the latest updates from the Ubuntu archive
 
 End: Daily vs release images
 
