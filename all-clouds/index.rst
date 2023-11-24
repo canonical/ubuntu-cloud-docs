@@ -12,7 +12,7 @@ Ubuntu on public cloud
 
 ---------
 
-Public Cloud Partners
+Public Cloud Partners   -- testing!!!!!!!!
 ---------------------
 
 Canonical in collaboration with cloud partners such as Amazon, Google, IBM, Microsoft and Oracle, creates optimised Ubuntu images for each of those clouds. These images are available in the respective marketplaces, and work seamlessly across different platforms within each cloud. 
