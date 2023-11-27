@@ -1,39 +1,35 @@
 How-to guides
 =============
 
-If you want to find the right Ubuntu image, upgrade from Ubuntu 20.04 to 22.04, create CloudFormation templates, automatically update your Ubuntu instances, or just launch an Ubuntu desktop on EC2, refer to these guides:
+Launching and using Ubuntu instances:
 
-* :doc:`./find-ubuntu-images`
-* :doc:`./upgrade-from-focal-to-jammy`
-* :doc:`./build-cloudformation-templates`
-* :doc:`./automatically-update-ubuntu-instances` 
-* :doc:`./launch-ubuntu-desktop`
+* :doc:`instances/find-ubuntu-images`
+* :doc:`instances/build-pro-ami-using-packer`
+* :doc:`instances/build-cloudformation-templates`
+* :doc:`instances/launch-ubuntu-desktop`
+* :doc:`instances/automatically-update-ubuntu-instances` 
+* :doc:`instances/upgrade-from-focal-to-jammy`
 
-Ubuntu Pro related user guides: 
+Using Kubernetes: 
 
-* :doc:`./build-pro-ami-using-packer`
-* :doc:`./deploy-ubuntu-pro-cluster`
-* :doc:`./deploy-charmed-kubernetes-on-ubuntu-pro`
+* :doc:`kubernetes/deploy-ubuntu-pro-cluster`
+* :doc:`kubernetes/enable-gpus-on-eks`
+* :doc:`kubernetes/deploy-charmed-kubernetes-on-ubuntu-pro`
 
-Finally, if you want to use UEFI Secure Boot or enable GPUs on EKS worker nodes, use:
+Security:
 
-* :doc:`./use-secureboot-and-vtpm` 
-* :doc:`./enable-gpus-on-eks`
+* :doc:`security/use-secureboot-and-vtpm` 
 
+Contributions:
+
+* :doc:`contributions/contribute-to-these-docs`
 
 .. toctree::
    :hidden:
    :maxdepth: 1
    
-   find-ubuntu-images   
-   upgrade-from-focal-to-jammy
-   build-cloudformation-templates
-   automatically-update-ubuntu-instances
-   launch-ubuntu-desktop
-
-   build-pro-ami-using-packer
-   deploy-ubuntu-pro-cluster  
-   deploy-charmed-kubernetes-on-ubuntu-pro
-
-   use-secureboot-and-vtpm   
-   enable-gpus-on-eks
+   instances/index    
+   kubernetes/index
+   security/index   
+   contributions/index
+  
