@@ -194,26 +194,26 @@ if "github_issues" in html_context and html_context["github_issues"]:
 # Set up redirects (https://documatt.gitlab.io/sphinx-reredirects/usage.html)
 # For example: "explanation/old-name.html": "../how-to/prettify.html",
 redirects = {
-    "aws/aws-how-to/automatically-update-ubuntu-instances":
-        "https://canonical-aws.readthedocs-hosted.com/en/latest/aws-how-to/instances/automatically-update-ubuntu-instances/",
-    "aws/aws-how-to/build-cloudformation-templates":
-        "https://canonical-aws.readthedocs-hosted.com/en/latest/aws-how-to/instances/build-cloudformation-templates/",
-    "aws/aws-how-to/build-pro-ami-using-packer":
-        "https://canonical-aws.readthedocs-hosted.com/en/latest/aws-how-to/instances/build-pro-ami-using-packer/",
-    "aws/aws-how-to/find-ubuntu-images":
-        "https://canonical-aws.readthedocs-hosted.com/en/latest/aws-how-to/instances/find-ubuntu-images/",
-    "aws/aws-how-to/launch-ubuntu-desktop":
-        "https://canonical-aws.readthedocs-hosted.com/en/latest/aws-how-to/instances/launch-ubuntu-desktop/",
-    "aws/aws-how-to/upgrade-from-focal-to-jammy":
-        "https://canonical-aws.readthedocs-hosted.com/en/latest/aws-how-to/instances/upgrade-from-focal-to-jammy/",
+    "aws-how-to/automatically-update-ubuntu-instances":
+        "../instances/automatically-update-ubuntu-instances/",
+    "aws-how-to/build-cloudformation-templates":
+        "../instances/build-cloudformation-templates/",
+    "aws-how-to/build-pro-ami-using-packer":
+        "../instances/build-pro-ami-using-packer/",
+    "aws-how-to/find-ubuntu-images":
+        "../instances/find-ubuntu-images/",
+    "aws-how-to/launch-ubuntu-desktop":
+        "../instances/launch-ubuntu-desktop/",
+    "aws-how-to/upgrade-from-focal-to-jammy":
+        "../instances/upgrade-from-focal-to-jammy/",
 
-    "aws/aws-how-to/deploy-charmed-kubernetes-on-ubuntu-pro":
-        "https://canonical-aws.readthedocs-hosted.com/en/latest/aws-how-to/kubernetes/deploy-charmed-kubernetes-on-ubuntu-pro/",
-    "aws/aws-how-to/deploy-ubuntu-pro-cluster":
-        "https://canonical-aws.readthedocs-hosted.com/en/latest/aws-how-to/kubernetes/deploy-ubuntu-pro-cluster/",
-    "aws/aws-how-to/enable-gpus-on-eks":
-        "https://canonical-aws.readthedocs-hosted.com/en/latest/aws-how-to/kubernetes/enable-gpus-on-eks/",
+    "aws-how-to/deploy-charmed-kubernetes-on-ubuntu-pro":
+        "..o/kubernetes/deploy-charmed-kubernetes-on-ubuntu-pro/",
+    "aws-how-to/deploy-ubuntu-pro-cluster":
+        "../kubernetes/deploy-ubuntu-pro-cluster/",
+    "aws-how-to/enable-gpus-on-eks":
+        "../kubernetes/enable-gpus-on-eks/",
 
-    "aws/aws-how-to/use-secureboot-and-vtpm":
-        "https://canonical-aws.readthedocs-hosted.com/en/latest/aws-how-to/security/use-secureboot-and-vtpm/"
+    "aws-how-to/use-secureboot-and-vtpm":
+        "../security/use-secureboot-and-vtpm/"
 }
