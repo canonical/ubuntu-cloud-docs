@@ -193,4 +193,27 @@ if "github_issues" in html_context and html_context["github_issues"]:
 
 # Set up redirects (https://documatt.gitlab.io/sphinx-reredirects/usage.html)
 # For example: "explanation/old-name.html": "../how-to/prettify.html",
-redirects = {}
+redirects = {
+    "aws/aws-how-to/automatically-update-ubuntu-instances":
+        "aws/aws-how-to/instances/automatically-update-ubuntu-instances/",
+    "aws/aws-how-to/build-cloudformation-templates":
+        "aws/aws-how-to/instances/build-cloudformation-templates/",
+    "aws/aws-how-to/build-pro-ami-using-packer":
+        "aws/aws-how-to/instances/build-pro-ami-using-packer/",
+    "aws/aws-how-to/find-ubuntu-images":
+        "aws/aws-how-to/instances/find-ubuntu-images/",
+    "aws/aws-how-to/launch-ubuntu-desktop":
+        "aws/aws-how-to/instances/launch-ubuntu-desktop/",
+    "aws/aws-how-to/upgrade-from-focal-to-jammy":
+        "aws/aws-how-to/instances/upgrade-from-focal-to-jammy/",
+
+    "aws/aws-how-to/deploy-charmed-kubernetes-on-ubuntu-pro":
+        "aws/aws-how-to/kubernetes/deploy-charmed-kubernetes-on-ubuntu-pro/",
+    "aws/aws-how-to/deploy-ubuntu-pro-cluster":
+        "aws/aws-how-to/kubernetes/deploy-ubuntu-pro-cluster/",
+    "aws/aws-how-to/enable-gpus-on-eks":
+        "aws/aws-how-to/kubernetes/enable-gpus-on-eks/",
+
+    "aws/aws-how-to/use-secureboot-and-vtpm":
+        "aws/aws-how-to/security/use-secureboot-and-vtpm/"
+}
