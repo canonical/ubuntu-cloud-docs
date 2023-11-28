@@ -1,0 +1,52 @@
+==============================================================
+
+Start: How to contribute
+
+These docs are on located on a GitHub repository at: `ubuntu-cloud-docs`_ and you'll need a GitHub account to make contributions. The docs are:
+
+	* structured using the `Diátaxis`_ approach,
+	* written in `reStructuredText`_ as per the `Canonical style guide`_,
+	* built with `Sphinx`_ and
+	* hosted on `Read the Docs`_.
+
+We are always looking for ways to improve our docs, so we appreciate your contributions! 
+
+Minor changes
+-------------
+
+If you've found a problem that can be fixed with a small change, you can use the pencil icon at the top of the relevant page to edit it on GitHub. When you are done with your edits, select :guilabel:`Commit changes...` on the top right. This will help you create a new branch and start a pull request (PR). Use :guilabel:`Propose changes` to submit the PR. We will review it and merge the changes.
+
+
+Suggestions and questions
+-------------------------
+
+Use the :guilabel:`Give feedback` button at the top of any page to create a GitHub issue for any suggestions or questions that you might have.
+
+
+New content
+-----------
+
+While contributing new content, it is easier to work with the docs on your local machine. You can submit a PR after all the checks have passed and things looks satisfactory.
+
+Download and install the docs
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+If you are working with these docs for the first time, you'll need to fork and clone the `ubuntu-cloud-docs`_ repository to your local machine. Once cloned, go into the ubuntu-cloud-docs directory and run:
+
+.. code::
+
+	make install
+
+This creates a virtual environment and installs all the dependencies specified in ``.sphinx/requirements.txt``. You only have to do this once (unless you run a ``make clean`` sometime), and can skip this step the next time you want to contribute.
+
+
+Build and serve the docs
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+Use the ``make run`` command to build and serve the docs at `127.0.0.1:8000 <http://127.0.0.1:8000>`_ or equivalently at `localhost:8000 <http://localhost:8000>`_. This gives you a live preview of the changes that you make (and save), without the need for a rebuild:
+
+
+End: How to contribute
+
+==============================================================
+

@@ -205,3 +205,7 @@ virtualised
 CNCF
 AgentBaker
 sku
+Diátaxis
+reStructuredText
+localhost
+HTML

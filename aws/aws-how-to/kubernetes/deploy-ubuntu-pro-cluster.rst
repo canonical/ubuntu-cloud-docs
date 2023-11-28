@@ -26,7 +26,7 @@ The steps needed for deploying the cluster depend on whether you need to enable 
 
 .. tabs::
 
-    .. tab:: Without FIPS
+    .. group-tab:: Without FIPS
         
         When FIPS is not enabled, you can use one of the existing Ubuntu EKS AMIs and
         customise it using cloud-init's `ubuntu-advantage module <https://cloudinit.readthedocs.io/en/latest/reference/modules.html#ubuntu-advantage>`_ during deployment.
@@ -61,7 +61,7 @@ The steps needed for deploying the cluster depend on whether you need to enable 
         Cloud-init will use this user-data to enable ESM on the cluster nodes and bootstrap the AWS EKS cluster.
       
     
-    .. tab:: With FIPS
+    .. group-tab:: With FIPS
     
         When enabling FIPS, a reboot of the underlying node is required. If this reboot is done after the cluster is created, in rare cases, it might result in the node being flagged as defective (`troubleshooting options <https://docs.aws.amazon.com/eks/latest/userguide/troubleshooting.html>`_). For this reason, the most reliable way to deploy an Ubuntu Pro EKS cluster is to build a custom Ubuntu Pro AMI (with `Packer <https://www.packer.io/>`_) and use it during cluster creation until this `issue <https://bugs.launchpad.net/cloud-images/+bug/2017782>`_ is resolved.
 
@@ -184,7 +184,7 @@ Add the following content to your file
 
 .. tabs::
 
-	.. tab:: Without FIPS
+	.. group-tab:: Without FIPS
 
          .. code-block:: yaml
 
@@ -198,7 +198,7 @@ Add the following content to your file
          This config file will allow you to create an EKS cluster using the launch template
          from above, with two nodes. 
 
-	.. tab:: With FIPS
+	.. group-tab:: With FIPS
 
          .. code-block:: yaml
 

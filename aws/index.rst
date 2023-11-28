@@ -43,11 +43,12 @@ suggestions, fixes and constructive feedback.
 * `Get support`_
 * `Join our online chat`_
 * `Talk to us about Ubuntu on AWS`_
+* :doc:`aws-how-to/contributions/contribute-to-these-docs`
 
 
 .. toctree::
    :hidden:
-   :maxdepth: 2
+   :maxdepth: 1
 
    aws-how-to/index
    aws-explanation/index
