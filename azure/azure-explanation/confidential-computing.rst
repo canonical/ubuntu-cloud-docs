@@ -7,8 +7,8 @@ Confidential computing
 
 Azure provides two types of *security*:
 
-* `Trusted launch <https://docs.microsoft.com/en-us/azure/virtual-machines/trusted-launch>`_ which is a set of features including virtual Trusted Platform Module (vTPM) and `secure boot <https://wiki.ubuntu.com/UEFI/SecureBoot>`_
-* `Confidential virtual machine <https://docs.microsoft.com/en-us/azure/confidential-computing/confidential-vm-overview>`_ with support for `AMD Secure Encrypted Virtualisation-Secure Nested Paging (SEV-SNP) <https://www.amd.com/system/files/TechDocs/SEV-SNP-strengthening-vm-isolation-with-integrity-protection-and-more.pdf>`_, along with `measured boot <https://docs.microsoft.com/en-us/azure/security/fundamentals/measured-boot-host-attestation>`_ using a vTPM
+* `Trusted launch <https://learn.microsoft.com/en-us/azure/virtual-machines/trusted-launch>`_ which is a set of features including virtual Trusted Platform Module (vTPM) and `secure boot <https://wiki.ubuntu.com/UEFI/SecureBoot>`_
+* `Confidential virtual machine <https://learn.microsoft.com/en-us/azure/confidential-computing/confidential-vm-overview>`_ with support for `AMD Secure Encrypted Virtualisation-Secure Nested Paging (SEV-SNP) <https://www.amd.com/system/files/TechDocs/SEV-SNP-strengthening-vm-isolation-with-integrity-protection-and-more.pdf>`_, along with `measured boot <https://learn.microsoft.com/en-us/azure/security/fundamentals/measured-boot-host-attestation>`_ using a vTPM
 
 
 Trusted launch
@@ -40,7 +40,7 @@ Using Ubuntu on confidential VMs
 
 Confidential VMs require the use of special instance sizes and a special version of Ubuntu.
 
-* A list of instance sizes that can be used for confidential VMs is given in `Azure's documentation <https://docs.microsoft.com/en-us/azure/confidential-computing/confidential-vm-overview>`_ 
+* A list of instance sizes that can be used for confidential VMs is given in `Azure's documentation <https://learn.microsoft.com/en-us/azure/confidential-computing/confidential-vm-overview>`_ 
 * Only `this specific offer of Ubuntu <https://azuremarketplace.microsoft.com/en-gb/marketplace/apps/canonical.0001-com-ubuntu-confidential-vm-focal>`_ supports confidential VMs.
 
 

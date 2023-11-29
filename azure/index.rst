@@ -64,5 +64,4 @@ contributions, suggestions, fixes and constructive feedback.
 .. _Talk to us about Ubuntu on Azure: https://ubuntu.com/azure#get-in-touch
 .. _Chiselled .Net images: https://devblogs.microsoft.com/dotnet/dotnet-6-is-now-in-ubuntu-2204
 .. _SQL Server on Ubuntu Pro: https://azuremarketplace.microsoft.com/en-us/marketplace/apps/microsoftsqlserver.sql2019-ubuntupro2004?tab=Overview
-.. _AMD-based Confidential VMs: https://techcommunity.microsoft.com/t5/azure-confidential-computing/expanding-azure-confidential-computing-with-new-amd-based/ba-p/2993530
-
+.. _AMD-based Confidential VMs: https://techcommunity.microsoft.com/t5/azure-confidential-computing/azure-confidential-vms-dcasv5-ecasv5-using-amd-sev-snp/ba-p/2993530

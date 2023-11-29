@@ -44,6 +44,7 @@ suggestions, fixes and constructive feedback.
 * `Get support`_
 * `Join our online chat`_
 * `Talk to us about Ubuntu on IBM`_
+* :doc:`ibm-how-to/contribute-to-these-docs`
 
 
 .. toctree::
@@ -51,6 +52,7 @@ suggestions, fixes and constructive feedback.
    :maxdepth: 2
    
    ibm-how-to/upgrade-from-focal-to-jammy
+   ibm-how-to/contribute-to-these-docs
    
 .. _Code of conduct: https://ubuntu.com/community/ethos/code-of-conduct
 .. _Get support: https://ubuntu.com/cloud/public-cloud

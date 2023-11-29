@@ -45,7 +45,8 @@ Ubuntu public cloud is open source project that warmly welcomes community projec
 * `Code of conduct`_
 * `Get support`_
 * `Join our online chat`_
-* `Start using Ubuntu today`_ 
+* `Start using Ubuntu today`_
+* :doc:`all-clouds-how-to/contribute-to-these-docs`
 
 
 .. toctree::
@@ -53,6 +54,7 @@ Ubuntu public cloud is open source project that warmly welcomes community projec
    :maxdepth: 2
 
    all-clouds-explanation/release-types
+   all-clouds-how-to/contribute-to-these-docs
    
 
    

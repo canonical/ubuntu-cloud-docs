@@ -40,6 +40,7 @@ community projects, contributions, suggestions, fixes and constructive feedback.
 * `Code of conduct`_
 * `Get support`_
 * `Join our online chat`_
+* :doc:`oracle-how-to/contribute-to-these-docs`
 
 
 .. toctree::
@@ -47,6 +48,7 @@ community projects, contributions, suggestions, fixes and constructive feedback.
    :maxdepth: 2
 
    oracle-how-to/upgrade-from-focal-to-jammy
+   oracle-how-to/contribute-to-these-docs
 
    
 .. _Code of conduct: https://ubuntu.com/community/ethos/code-of-conduct
