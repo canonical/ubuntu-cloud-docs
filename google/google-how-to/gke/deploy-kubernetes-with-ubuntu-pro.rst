@@ -194,5 +194,5 @@ This will show you details about your cluster nodes. You can verify the Pro subs
 .. _`MicroK8s clustering doc`: https://microk8s.io/docs/clustering
 .. _`GCE VM Instances`: https://console.cloud.google.com/compute/instances
 .. _`VPC firewall rules`: https://console.cloud.google.com/networking/firewalls/list
-.. _`Google Cloud VPC docs`: https://cloud.google.com/vpc/docs/using-firewalls
+.. _`Google Cloud VPC docs`: https://cloud.google.com/firewall/docs/using-firewalls
 .. _`kubeconfig`: https://kubernetes.io/docs/concepts/configuration/organize-cluster-access-kubeconfig

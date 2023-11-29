@@ -4,7 +4,7 @@ project = 'Ubuntu on GCP'
 # Set up redirects (https://documatt.gitlab.io/sphinx-reredirects/usage.html)
 # For example: "explanation/old-name.html": "../how-to/prettify.html",
 redirects = {
-
+    
     "google-how-to/find-ubuntu-images":
         "../gce/find-ubuntu-images/",
     "google-how-to/create-different-instance-types":
@@ -24,5 +24,4 @@ redirects = {
 
     "google-how-to/deploy-kubernetes-with-ubuntu-pro":
         "../gke/deploy-kubernetes-with-ubuntu-pro/"
-
 }
