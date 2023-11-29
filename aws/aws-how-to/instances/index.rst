@@ -10,3 +10,4 @@ EC2 instances
    launch-ubuntu-desktop
    automatically-update-ubuntu-instances
    upgrade-from-focal-to-jammy
+   install-nvidia-drivers
