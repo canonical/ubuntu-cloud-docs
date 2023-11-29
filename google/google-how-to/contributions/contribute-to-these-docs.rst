@@ -7,9 +7,9 @@ Contribute to these docs
 
 .. code::
 
-	PROJECT=aws make run
+	PROJECT=google make run
 
-Setting the `PROJECT` parameter to ``aws`` ensures that the documentation set for `Ubuntu on AWS` gets built. This parameter is needed to distinguish between the different documentation sets present in the repository.
+Setting the `PROJECT` parameter to ``google`` ensures that the documentation set for `Ubuntu on GCP` gets built. This parameter is needed to distinguish between the different documentation sets present in the repository.
 
 
 Perform checks and submit PR
@@ -19,9 +19,9 @@ Before opening a PR, run the following checks and also ensure that the documenta
 
 .. code::
 
-	PROJECT=aws make spelling
-	PROJECT=aws make linkcheck
-	PROJECT=aws make woke
+	PROJECT=google make spelling
+	PROJECT=google make linkcheck
+	PROJECT=google make woke
 
 If you need to add new words to the allowed list of words, include them in ``.wordlist.txt``.
 

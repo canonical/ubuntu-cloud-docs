@@ -1,38 +1,31 @@
 How-to guides
 =============
 
-If you want to find Ubuntu images on GCP, create different types of instances based on those images, upgrade from Ubuntu 20.04 to 22.04 or just launch an Ubuntu desktop on your VM, refer to these guides:
+Launching and using GCE instances:
 
-* :doc:`./find-ubuntu-images`
-* :doc:`./create-different-instance-types`
-* :doc:`./upgrade-from-focal-to-jammy`
-* :doc:`./launch-ubuntu-desktop`
+* :doc:`gce/find-ubuntu-images`
+* :doc:`gce/create-different-instance-types`
+* :doc:`gce/launch-ubuntu-desktop`
+* :doc:`gce/upgrade-in-place-from-lts-to-pro`
+* :doc:`gce/enable-pro-features`
+* :doc:`gce/build-ubuntu-pro-golden-image`
+* :doc:`gce/create-customised-docker-container`
+* :doc:`gce/upgrade-from-focal-to-jammy`
 
-Ubuntu Pro related user guides: 
+Using Kubernetes: 
 
-* :doc:`./upgrade-in-place-from-lts-to-pro`
-* :doc:`./enable-pro-features`
-* :doc:`./build-ubuntu-pro-golden-image`
-* :doc:`./deploy-kubernetes-with-ubuntu-pro`
+* :doc:`gke/deploy-kubernetes-with-ubuntu-pro`
 
-Finally, if you are creating a customised docker container use:
+Contributions
 
-* :doc:`./create-customised-docker-container`
-
-
+* :doc:`contributions/contribute-to-these-docs`
+  
+   
 .. toctree::
    :hidden:
    :maxdepth: 1
    
-   find-ubuntu-images
-   create-different-instance-types
-   upgrade-from-focal-to-jammy
-   launch-ubuntu-desktop
-
-   upgrade-in-place-from-lts-to-pro
-   enable-pro-features
-   build-ubuntu-pro-golden-image
-   deploy-kubernetes-with-ubuntu-pro
-   
-   create-customised-docker-container
-   
+   gce/index    
+   gke/index
+   contributions/index
+  
