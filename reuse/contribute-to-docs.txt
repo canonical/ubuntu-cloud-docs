@@ -37,7 +37,7 @@ If you are working with these docs for the first time, you'll need to fork and c
 
 	make install
 
-This creates a virtual environment and installs all the dependencies specified in ``.sphinx/requirements.txt``. You only have to do this once (unless you run a ``make clean`` sometime), and can skip this step the next time you want to contribute.
+This creates a virtual environment and installs all the dependencies specified in ``.sphinx/requirements.txt``. You only have to do this step once, and can skip it the next time you want to contribute.
 
 
 Build and serve the docs

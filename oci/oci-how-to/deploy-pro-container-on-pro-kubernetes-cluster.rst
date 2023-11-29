@@ -28,7 +28,7 @@ Deploying Pro Kubernetes clusters in various clouds
 
 	.. tab:: GCE
 
-		Check out :doc:`google:google-how-to/deploy-kubernetes-with-ubuntu-pro` to learn
+		Check out :doc:`google:google-how-to/gke/deploy-kubernetes-with-ubuntu-pro` to learn
 		how to deploy an Ubuntu Pro Kubernetes cluster on Google Compute Engine (GCE).
 
 	.. tab:: OpenShift
