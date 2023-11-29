@@ -152,7 +152,7 @@ Assuming you have configured your virtual network’s firewall to allow you to c
 
 
 .. _`Kubeflow`: https://ubuntu.com/ai/what-is-kubeflow
-.. _`download the Windows installer`: https://launchpad.net/juju/2.8/2.8.5/+download/juju-setup-2.8.5-signed.exe
+.. _`download the Windows installer`: https://launchpadlibrarian.net/501103597/juju-setup-2.8.5-signed.exe
 .. _`Charmed Kubeflow`: https://charmed-kubeflow.io/docs
-.. _`Kubeflow bundles`: https://charmed-kubeflow.io/docs/operators-and-bundles
+.. _`Kubeflow bundles`: https://charmed-kubeflow.io/docs/kubeflow-bundle
 .. _`docs on customisation`: https://charmed-kubeflow.io/docs/customise
