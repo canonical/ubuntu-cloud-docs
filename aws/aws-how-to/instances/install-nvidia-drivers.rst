@@ -1,8 +1,10 @@
-Install NVIDIA drivers on a GPU-enabled  EC2 instance 
+Install NVIDIA drivers on a GPU-enabled EC2 instance 
 =====================================================
 
     
 AWS provides GPU-enabled instance types for workloads that require GPU compute power. G4DN instances are powered by an NVIDIA Tesla T4 GPU. This guide will walk you through the driver installation process, including CUDA for machine learning workloads.
+
+For more comprehensive instructions on checking the available drivers and installing the correct one based on different use-cases, refer to the `Ubuntu server documentation for installing NVIDIA drivers`_.
 
 Launch your instance
 --------------------
@@ -53,12 +55,12 @@ If you are using the correct instance type (G4DN in this case), you should see t
 
 The NVIDIA Tesla T4 GPU should be listed as unclaimed. Now, install the NVIDIA driver:
 
-.. code::
+.. code-block:: none
 
     sudo apt install nvidia-headless-535-server nvidia-utils-535-server -y
 
 .. note::
-    NOTE: Since we are using a headless server (no desktop), the headless driver is sufficient. If you are running this in a desktop environment (AWS Workspaces or your own EC2 Desktop), use `nvidia-driver-535`.
+    Since we are using a headless server (no desktop), the headless driver is sufficient. If you are running this in a desktop environment (AWS Workspaces or your own EC2 Desktop), use ``nvidia-driver-535``.
 
 After the installation, reboot the instance:
 
@@ -113,5 +115,5 @@ This should display the NVIDIA GPU information, including the CUDA version in th
 
 .. _`AWS CLI or the web console`: https://discourse.ubuntu.com/t/how-to-deploy-ubuntu-pro-in-aws-in-2023/23367
 .. _`NVIDIA website`: https://developer.nvidia.com/cuda-downloads
-
+.. _`Ubuntu server documentation for installing NVIDIA drivers`: https://ubuntu.com/server/docs/nvidia-drivers-installation
 
