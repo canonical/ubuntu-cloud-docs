@@ -110,7 +110,33 @@ You can also perform an additional test to check if CUDA was installed:
 
     nvidia-smi
 
-This should display the NVIDIA GPU information, including the CUDA version in the top-right corner. If CUDA was not installed, you can visit the `NVIDIA website`_ to download the CUDA version that matches the driver you just installed.
+This should display the NVIDIA GPU information, including the CUDA version in the top-right corner. 
+
+.. code-block:: none
+
+    +---------------------------------------------------------------------------------------+
+    | NVIDIA-SMI 535.104.05             Driver Version: 535.104.05   CUDA Version: 12.2     |
+    |-----------------------------------------+----------------------+----------------------+
+    | GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+    | Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+    |                                         |                      |               MIG M. |
+    |=========================================+======================+======================|
+    |   0  Tesla T4                       On  | 00000000:00:1E.0 Off |                    0 |
+    | N/A   26C    P8               9W /  70W |      2MiB / 15360MiB |      0%      Default |
+    |                                         |                      |                  N/A |
+    +-----------------------------------------+----------------------+----------------------+
+                                                                                             
+    +---------------------------------------------------------------------------------------+
+    | Processes:                                                                            |
+    |  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+    |        ID   ID                                                             Usage      |
+    |=======================================================================================|
+    |  No running processes found                                                           |
+    +---------------------------------------------------------------------------------------+
+
+
+If CUDA was not installed, you can visit the `NVIDIA website`_ to download the CUDA version that matches the driver you just installed.
+
 
 
 .. _`AWS CLI or the web console`: https://discourse.ubuntu.com/t/how-to-deploy-ubuntu-pro-in-aws-in-2023/23367
