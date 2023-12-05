@@ -9,6 +9,7 @@ Launching and using Ubuntu instances:
 * :doc:`instances/launch-ubuntu-desktop`
 * :doc:`instances/automatically-update-ubuntu-instances` 
 * :doc:`instances/upgrade-from-focal-to-jammy`
+* :doc:`instances/install-nvidia-drivers`
 
 Using Kubernetes: 
 

@@ -209,3 +209,6 @@ Diátaxis
 reStructuredText
 localhost
 HTML
+CUDA
+G4DN
+DN
