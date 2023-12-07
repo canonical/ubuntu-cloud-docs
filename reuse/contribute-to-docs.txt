@@ -2,12 +2,14 @@
 
 Start: How to contribute
 
-These docs are on located on a GitHub repository at: `ubuntu-cloud-docs`_ and you'll need a GitHub account to make contributions. The docs are:
+These docs are on located on a GitHub repository at: `ubuntu-cloud-docs`_ and you'll need a GitHub account to make contributions. It is a good idea to fork this repository into your own account before you start, otherwise GitHub will anyway prompt you to do so when you attempt your first change.
 
-	* structured using the `Diátaxis`_ approach,
-	* written in `reStructuredText`_ as per the `Canonical style guide`_,
-	* built with `Sphinx`_ and
-	* hosted on `Read the Docs`_.
+The docs are:
+
+* structured using the `Diátaxis`_ approach,
+* written in `reStructuredText`_ as per the `Canonical style guide`_,
+* built with `Sphinx`_ and
+* hosted on `Read the Docs`_.
 
 We are always looking for ways to improve our docs, so we appreciate your contributions! 
 
@@ -31,7 +33,7 @@ While contributing new content, it is easier to work with the docs on your local
 Download and install the docs
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-If you are working with these docs for the first time, you'll need to fork and clone the `ubuntu-cloud-docs`_ repository to your local machine. Once cloned, go into the ubuntu-cloud-docs directory and run:
+If you are working with these docs for the first time, you'll need to create a fork of the `ubuntu-cloud-docs`_ repository on your GitHub account and then clone that fork to your local machine. Once cloned, go into the ubuntu-cloud-docs directory and run:
 
 .. code::
 
@@ -50,3 +52,18 @@ End: How to contribute
 
 ==============================================================
 
+
+Start: How to contribute links
+
+.. _`ubuntu-cloud-docs`: https://github.com/canonical/ubuntu-cloud-docs
+.. _`Diátaxis`: https://diataxis.fr/
+.. _`reStructuredText`: https://canonical-documentation-with-sphinx-and-readthedocscom.readthedocs-hosted.com/style-guide/
+.. _`Canonical style guide`: https://docs.ubuntu.com/styleguide/en
+.. _`Sphinx`: https://www.sphinx-doc.org/en/master/
+.. _`Read the Docs`: https://readthedocs.com
+
+
+
+End: How to contribute links
+
+==============================================================

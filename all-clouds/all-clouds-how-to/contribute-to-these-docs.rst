@@ -15,7 +15,7 @@ Setting the `PROJECT` parameter to ``all-clouds`` ensures that the documentation
 Perform checks and submit PR
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Before opening a PR, run the following checks and also ensure that the documentation builds without any warnings (warnings are treated as errors):
+Before opening a PR, run the following checks and also ensure that the documentation builds without any warnings (warnings are treated as errors in the publishing process):
 
 .. code::
 
@@ -27,11 +27,7 @@ If you need to add new words to the allowed list of words, include them in ``.wo
 
 Once all the edits are done, commit the changes and push it to your fork. From the GitHub GUI of your fork, select the commit and open a PR for it.
 
-.. _`ubuntu-cloud-docs`: https://github.com/canonical/ubuntu-cloud-docs
-.. _`Diátaxis`: https://diataxis.fr/
-.. _`reStructuredText`: https://docutils.sourceforge.io/rst.html
-.. _`Canonical style guide`: https://docs.ubuntu.com/styleguide/en
-.. _`Sphinx`: https://www.sphinx-doc.org/en/master/
-.. _`Read the Docs`: https://readthedocs.com
-
+.. include:: ../../reuse/contribute-to-docs.txt
+   :start-after: Start: How to contribute links
+   :end-before: End: How to contribute links
 
