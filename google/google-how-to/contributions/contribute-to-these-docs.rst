@@ -27,6 +27,6 @@ If you need to add new words to the allowed list of words, include them in ``.wo
 
 Once all the edits are done, commit the changes and push it to your fork. From the GitHub GUI of your fork, select the commit and open a PR for it.
 
-.. include:: ../../reuse/contribute-to-docs.txt
+.. include:: ../../../reuse/contribute-to-docs.txt
    :start-after: Start: How to contribute links
    :end-before: End: How to contribute links
