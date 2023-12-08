@@ -22,13 +22,6 @@ Apart from these,
 * **Ubuntu Pro** images are created for 16.04, 18.04, 20.04, 22.04 and 
 * **Ubuntu Pro FIPS** images are created for 18.04 and 20.04
 
-Finally, there's a special sub-family of Google images:
-
-* **Guest** images that are built with the Google guest agent and
-* **Kernel** images that are built with the Google kernel
-
-These are used by Google to do automated testing of new kernels and/or guests.
-
 
 GKE images
 ~~~~~~~~~~
@@ -44,6 +37,5 @@ For the various Anthos versions available for different clouds, Canonical provid
 
 * **Anthos on AWS** - Consultation support
 * **Anthos on Azure** - Consultation support
-* **Anthos on bare metal** - Ubuntu images based on a DISA STIG hardened 20.04 FIPS compliant version.
 * **Anthos on VMware** - A series of CIS hardened and unhardened Ubuntu images in the form of OVAs to be used with VMware
 
