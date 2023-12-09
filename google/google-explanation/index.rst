@@ -9,4 +9,4 @@ Discussion and clarification of some key topics:
    canonical-offerings
    how-gcp-pricing-works
    confidential-computing
-   
+   gce-image-retention-policy
