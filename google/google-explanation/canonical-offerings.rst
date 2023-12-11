@@ -26,16 +26,20 @@ In addition, the following images are also available:
 GKE images
 ~~~~~~~~~~
 
-GKE is Google Cloud's Kubernetes offering. Canonical produces node images for GKE that act as a base for running end user pods. These node images include a kernel that is optimised for use in the GKE environment ``linux-gke``, as well as custom NVIDIA drivers for workloads that wish to leverage GPU acceleration. Further details of the node images available for GKE can be found in Google's `GKE Node Images <https://cloud.google.com/kubernetes-engine/docs/concepts/node-images>`_ documentation.
+GKE is Google Cloud's Kubernetes offering. Canonical produces node images for GKE that act as a base for running end user pods. These node images include a kernel that is optimised for use in the GKE environment ``linux-gke``, as well as custom NVIDIA drivers for workloads that wish to leverage GPU acceleration. Further details of the node images available for GKE can be found in Google's documentation about `GKE node images`_.
 
 
 
 Anthos - Google's multi-cloud GKE strategy
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Google provides a multi-cloud GKE strategy through a variety of Anthos product offering, with an Ubuntu foundation providing the cross-platform support:
+Google provides a multi-cloud GKE strategy through a variety of Anthos product offerings, with an Ubuntu foundation providing the cross-platform support:
 
-* **Anthos on AWS** - as described in the `GKE Anthos on AWS Reference documentation <https://cloud.google.com/anthos/clusters/docs/multi-cloud/aws/reference/os-details>`_ 
-* **Anthos on Azure** - as described in the `GKE Anthos on Azure Reference documentation <https://cloud.google.com/anthos/clusters/docs/multi-cloud/azure/reference/os-details>`_ 
-* **Anthos on VMware** - as described in the `GKE Anthos clusters on VMware guides <https://cloud.google.com/anthos/clusters/docs/on-prem/latest/concepts/node-image>`_ 
+* `GKE Anthos on AWS`_ 
+* `GKE Anthos on Azure`_ 
+* `GKE Anthos on VMware`_ 
 
+.. _`GKE node images`: https://cloud.google.com/kubernetes-engine/docs/concepts/node-images
+.. _`GKE Anthos on AWS`: https://cloud.google.com/anthos/clusters/docs/multi-cloud/aws/reference/os-details
+.. _`GKE Anthos on Azure`: https://cloud.google.com/anthos/clusters/docs/multi-cloud/azure/reference/os-details
+.. _`GKE Anthos on VMware`: https://cloud.google.com/anthos/clusters/docs/on-prem/latest/concepts/node-image
