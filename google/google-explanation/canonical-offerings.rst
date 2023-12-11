@@ -5,7 +5,7 @@ With an optimised Ubuntu GCP kernel built in collaboration between Google and Ca
 best performance on the Google Cloud hypervisor, Ubuntu is a popular Linux OS on GCP for both virtual machines 
 and container workloads - i.e. for both Google Cloud Engine (GCE) and Google Kubernetes Engine (GKE).
 
-The ``linux-gcp`` kernel enables accelerated networking with the Compute Engine Virtual Ethernet device and supports the Google latest Tau VM, enabling scale-out optimised workloads. These advantages contribute to Ubuntu being the default host images for Anthos Multi-cloud.
+The ``linux-gcp`` kernel enables accelerated networking with the Compute Engine Virtual Ethernet device and supports the latest Google ARM Tau VM, enabling scale-out optimised workloads. These advantages contribute to Ubuntu being the default host images for Anthos Multi-cloud.
 
 Another useful feature is the native integration of Ubuntu images with the Administrator console. This enables things like patch management and in-place upgrade of Ubuntu LTS images to Ubuntu Pro without the need for workload redeployment.
 
@@ -17,7 +17,7 @@ For each active Ubuntu release, at least two image variants are created for GCE:
 * **Base** images that contain a full Ubuntu development environment
 * **Minimal** images that have a smaller footprint than base images, and are designed for production instances that will never be accessed by a human
 
-Apart from these, 
+In addition, the following images are also available: 
 
 * **Ubuntu Pro** images are created for 16.04, 18.04, 20.04, 22.04 and 
 * **Ubuntu Pro FIPS** images are created for 18.04 and 20.04
@@ -26,16 +26,16 @@ Apart from these,
 GKE images
 ~~~~~~~~~~
 
-GKE is Google Cloud's Kubernetes offering. Canonical produces host images for GKE that act as a base for running end user containers. These images include GKE's own custom cloud ``gke`` kernel and custom NVIDIA drivers for use with the custom kernel.
+GKE is Google Cloud's Kubernetes offering. Canonical produces node images for GKE that act as a base for running end user pods. These node images include a kernel that is optimised for use in the GKE environment ``linux-gke``, as well as custom NVIDIA drivers for workloads that wish to leverage GPU acceleration. Further details of the node images available for GKE can be found in Google's `GKE Node Images <https://cloud.google.com/kubernetes-engine/docs/concepts/node-images>`_ documentation.
 
 
 
 Anthos - Google's multi-cloud GKE strategy
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-For the various Anthos versions available for different clouds, Canonical provides the following:
+Google provides a multi-cloud GKE strategy through a variety of Anthos product offering, with an Ubuntu foundation providing the cross-platform support:
 
-* **Anthos on AWS** - Consultation support
-* **Anthos on Azure** - Consultation support
-* **Anthos on VMware** - A series of CIS hardened and unhardened Ubuntu images in the form of OVAs to be used with VMware
+* **Anthos on AWS** - as described in the `GKE Anthos on AWS Reference documentation <https://cloud.google.com/anthos/clusters/docs/multi-cloud/aws/reference/os-details>`_ 
+* **Anthos on Azure** - as described in the `GKE Anthos on Azure Reference documentation <https://cloud.google.com/anthos/clusters/docs/multi-cloud/azure/reference/os-details>`_ 
+* **Anthos on VMware** - as described in the `GKE Anthos clusters on VMware guides <https://cloud.google.com/anthos/clusters/docs/on-prem/latest/concepts/node-image>`_ 
 
