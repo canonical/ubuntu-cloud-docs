@@ -36,6 +36,7 @@ Instructions for some of the basic operations that you would perform on an Oracl
 
 * :doc:`./oracle-how-to/find-ubuntu-images`
 * :doc:`./oracle-how-to/upgrade-from-focal-to-jammy`
+* :doc:`./oracle-how-to/use-fde`
 
 
 ----------
@@ -58,6 +59,7 @@ community projects, contributions, suggestions, fixes and constructive feedback.
 
    oracle-how-to/find-ubuntu-images
    oracle-how-to/upgrade-from-focal-to-jammy
+   oracle-how-to/use-fde
    oracle-how-to/contribute-to-these-docs
 
 .. _Ubuntu Release Cycle: https://ubuntu.com/about/release-cycle
