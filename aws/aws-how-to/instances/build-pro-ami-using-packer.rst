@@ -41,7 +41,7 @@ If you skip this step and proceed with the build, you can still subscribe later 
 Create AWS Credentials
 ~~~~~~~~~~~~~~~~~~~~~~
 
-Follow the instructions in the *Programmatic access* section of the `IAM page for creating credentials`_ 
+Follow the instructions in the *Programmatic access* section of the `IAM page for creating credentials`_. For a list of the minimal permissions the policy the IAM User or Role will be need, refer to `IAM Required Permissions`_.
 
 Save your credentials, they should be similar to:
 
@@ -238,6 +238,7 @@ The results should show that the machine is attached to a Pro subscription and h
 .. _`AWS Marketplace`: https://aws.amazon.com/marketplace
 .. _`Ubuntu Pro FIPS 20.04 LTS`: https://aws.amazon.com/marketplace/pp/prodview-l2hkkatnodedk
 .. _`IAM page for creating credentials`: https://docs.aws.amazon.com/IAM/latest/UserGuide/security-creds.html
+.. _`IAM Required Permissions`: https://developer.hashicorp.com/packer/integrations/hashicorp/amazon?page=builders&page=amazon#iam-task-or-instance-role
 .. _`Packer website`: https://developer.hashicorp.com/packer/tutorials/aws-get-started
 
 
