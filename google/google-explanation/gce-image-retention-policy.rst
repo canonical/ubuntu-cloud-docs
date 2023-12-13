@@ -5,7 +5,7 @@ GCE Ubuntu image deletion
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Ubuntu cloud images have a concept of "daily" and "release" images. In a nutshell, daily images are untested builds with cutting edge features and package versions.
-Release images are tested and therefore benefit from Canonical's in-life support. See how to list both "daily" and "release" images here: :doc:`find-ubuntu-images`.
+Release images are tested and therefore benefit from Canonical's in-life support. See how to list both "daily" and "release" images here: :doc:`../google-how-to/gce/find-ubuntu-images`.
 
 Older daily and release images are subject to a retention policy. The policy can be summarised as follows:
 
