@@ -11,3 +11,4 @@ EC2 instances
    automatically-update-ubuntu-instances
    upgrade-from-focal-to-jammy
    install-nvidia-drivers
+   create-ec2-using-ubuntu-image

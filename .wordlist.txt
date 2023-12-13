@@ -215,3 +215,10 @@ DN
 OCID
 AArch
 VCN
+firewalling
+ec
+pem
+https
+Signon
+authorized
+eg
