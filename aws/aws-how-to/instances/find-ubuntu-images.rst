@@ -47,17 +47,20 @@ Images for EC2 and EKS
 
    .. tab:: For EKS
       
-      The latest EKS AMI ID can be found in the SSM parameter store using:
+      The latest EKS AMI ID for each supported EKS version can be found in the SSM parameter store using:
 
       .. code-block::
 
-         aws ssm get-parameters --names /aws/service/canonical/ubuntu/eks/20.04/1.26/stable/current/amd64/hvm/ebs-gp2/ami-id
+         aws ssm get-parameters --names /aws/service/canonical/ubuntu/eks/20.04/1.28/stable/current/amd64/hvm/ebs-gp2/ami-id
 
       The format for the path is:
 
       .. code-block::
 
-         ubuntu/eks/$RELEASE/$K8S_VERSION/stable/current/$ARCH/$VIRT_TYPE/$VOL_TYPE/ami-id
+         ubuntu/eks/20.04/$K8S_VERSION/stable/current/$ARCH/hvm/ebs-gp2/ami-id
+
+      * K8S_VERSION: one of the supported EKS versions (eg. `1.28`)
+      * ARCH: `amd64` or `arm64`
 
 
 Ownership verification
