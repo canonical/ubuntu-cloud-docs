@@ -20,7 +20,7 @@ Canonical's offerings on Oracle Cloud
 
 Canonical builds optimised and certified server images for Oracle Cloud. The images are shared with Oracle privately, who publishes them into the cloud platform once per month. The set of images include:
 
-* All LTS releases still covered by standard security maintenance (see the `Ubuntu Release Cycle`_)
+* All LTS releases still covered by standard security maintenance (see the `Ubuntu release cycle`_)
 * Full and minimal versions of the images
 * Versions for x86_64 and AArch64 (ARM64) platforms
 
@@ -60,7 +60,7 @@ community projects, contributions, suggestions, fixes and constructive feedback.
    oracle-how-to/upgrade-from-focal-to-jammy
    oracle-how-to/contribute-to-these-docs
 
-.. _Ubuntu Release Cycle: https://ubuntu.com/about/release-cycle
+.. _Ubuntu release cycle: https://ubuntu.com/about/release-cycle
 .. _Code of conduct: https://ubuntu.com/community/ethos/code-of-conduct
 .. _Get support: https://ubuntu.com/cloud/public-cloud
 .. _Join our online chat: https://discourse.ubuntu.com
