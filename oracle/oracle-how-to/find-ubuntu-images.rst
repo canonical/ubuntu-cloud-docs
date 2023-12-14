@@ -18,9 +18,9 @@ You can find the latest three image builds using either the web console or the C
 
     .. group-tab:: Web console
 
-      While creating an instance select :guilabel:`Change Image` > :guilabel:`Ubuntu`, and from the displayed list, select your desired LTS release and variant (full or minimal). Then use the drop-down to select one of the three builds available for it.
+      While creating an instance using :guilabel:`Compute` > :guilabel:`Instances` > :guilabel:`Create instance`, under *Image and shape* select :guilabel:`Change image` > :guilabel:`Ubuntu`. From the displayed list, select your desired LTS release and variant (full or minimal). Then use the drop-down to select one of the three builds available for it.
 
-      .. image:: find-ubuntu-images-images/1_latest_image.png
+      .. image:: find-ubuntu-images-images/1_latest_ubuntu_image.png
     
       The latest build is always recommended as it'll have the most recent package updates and security vulnerability fixes. However, if you need a specific build, you can either choose one of the remaining two builds or refer to the :ref:`Find older Ubuntu images` section ahead.
 
@@ -37,7 +37,7 @@ You can find the latest three image builds using either the web console or the C
       
       It will return a JSON output with details for all available image builds. You can use ``jq`` to filter the fields that you need. You can also optionally include --region <region_name> to search in a region different from the one configured in your ~/.oci/config file. Note that the id of the images will be different for different regions. 
 
-      Other options can also be added to the command. For instance, to list all Ubuntu 22.04 images, use:
+      Other options can also be added to the command. For instance, to list all Ubuntu 22.04 base images (non-minimal versions), use:
 
       .. code::
 
@@ -142,9 +142,9 @@ With the region / image specific OCID, you can create an instance either through
 
     .. group-tab:: Web console
 
-      While creating an instance select :guilabel:`Change Image` > :guilabel:`My images`. Then choose :guilabel:`Image OCID` as the image source and enter the OCID (obtained above) before launching the instance.
+      While creating an instance using :guilabel:`Compute` > :guilabel:`Instances` > :guilabel:`Create instance`, under *Image and shape* select :guilabel:`Change image` > :guilabel:`My images`. Then choose :guilabel:`Image OCID` as the image source and enter the OCID (obtained above) before launching the instance.
 
-      .. image:: find-ubuntu-images-images/2_older_image.png
+      .. image:: find-ubuntu-images-images/2_older_ubuntu_image.png
 
     .. group-tab:: CLI
 
