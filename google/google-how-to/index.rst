@@ -11,6 +11,7 @@ Launching and using GCE instances:
 * :doc:`gce/build-ubuntu-pro-golden-image`
 * :doc:`gce/create-customised-docker-container`
 * :doc:`gce/upgrade-from-focal-to-jammy`
+* :doc:`gce/check-cve-on-instance`
 
 Using Kubernetes: 
 

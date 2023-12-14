@@ -21,6 +21,8 @@ redirects = {
         "../gce/create-customised-docker-container/",
     "google-how-to/upgrade-from-focal-to-jammy":
         "../gce/upgrade-from-focal-to-jammy/",
+    "google-how-to/check-cve-on-instance":
+        "../gce/check-cve-on-instance/",
 
     "google-how-to/deploy-kubernetes-with-ubuntu-pro":
         "../gke/deploy-kubernetes-with-ubuntu-pro/"
