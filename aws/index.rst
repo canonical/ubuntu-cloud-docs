@@ -52,6 +52,7 @@ suggestions, fixes and constructive feedback.
 
    aws-how-to/index
    aws-explanation/index
+   aws-reference/index
 
 .. _Code of conduct: https://ubuntu.com/community/ethos/code-of-conduct
 .. _Get support: https://ubuntu.com/cloud/public-cloud
