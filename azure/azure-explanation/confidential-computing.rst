@@ -1,15 +1,10 @@
-Confidential computing
-======================
+Security features on Azure
+==========================
 
-.. include:: ../../reuse/common-intro.txt
-   :start-after: Start: Confidential computing
-   :end-before: End: Confidential computing
-
-Azure provides two types of *security*:
+Azure provides two types of security features:
 
 * `Trusted launch <https://learn.microsoft.com/en-us/azure/virtual-machines/trusted-launch>`_ which is a set of features including virtual Trusted Platform Module (vTPM) and `secure boot <https://wiki.ubuntu.com/UEFI/SecureBoot>`_
 * `Confidential virtual machine <https://learn.microsoft.com/en-us/azure/confidential-computing/confidential-vm-overview>`_ with support for `AMD Secure Encrypted Virtualisation-Secure Nested Paging (SEV-SNP) <https://www.amd.com/system/files/TechDocs/SEV-SNP-strengthening-vm-isolation-with-integrity-protection-and-more.pdf>`_, along with `measured boot <https://learn.microsoft.com/en-us/azure/security/fundamentals/measured-boot-host-attestation>`_ using a vTPM
-
 
 Trusted launch
 --------------

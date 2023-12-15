@@ -1,13 +1,23 @@
 GCE image retention policies
 =============================
 
-GCE Ubuntu image deletion
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+All Ubuntu images on GCE go through a life-cycle of: *release* > *deprecation* > *deletion*. 
 
-Ubuntu cloud images have a concept of "daily" and "release" images. In a nutshell, daily images are untested builds with cutting edge features and package versions.
-Release images are tested and therefore benefit from Canonical's in-life support. See how to list both "daily" and "release" images here: :doc:`../google-how-to/gce/find-ubuntu-images`.
+Whenever a new image is built and released to GCE, the previous serial of the corresponding image is deprecated. A deprecated image is not visible on the google console, but it can still be listed, launched in GCP, etc. Our image retention policy determines when an image will be deleted. Once deleted, the images are no longer accessible for use.
 
-Older daily and release images are subject to a retention policy. The policy can be summarised as follows:
+At any give time, there will be only **one** active image per Ubuntu variant, with all the other images of that variant being either deprecated or deleted.
+
+
+Image retention policy
+----------------------
+
+.. include:: ../../reuse/common-intro.txt
+   :start-after: Start: Daily vs release images
+   :end-before: End: Daily vs release images
+
+For more details about these image types, check out our documentation of :doc:`image release types <all-clouds:all-clouds-explanation/release-types>`, and to get a list of these images on GCP, refer to: :doc:`../google-how-to/gce/find-ubuntu-images`.
+
+The retention policy can be summarised as follows:
 
 .. code::
 
@@ -23,13 +33,7 @@ Older daily and release images are subject to a retention policy. The policy can
   │                 │ EOSS** │ Delete all *but* the latest serial  │ No images are deleted              │
   └─────────────────┴────────┴─────────────────────────────────────┴────────────────────────────────────┘
 
+
 where:
   - **EOL** refers to when an interim Ubuntu release (for example, Lunar Lobster 23.04) has reached end-of-life, `and will no longer enjoy support <https://ubuntu.com/about/release-cycle/>`_
   - **EOSS** refers to when an LTS Ubuntu release (for example, Jammy Jellyfish 22.04) has reached "End of Standard Support" but will remain supported under Ubuntu Pro
-
-GCE Ubuntu image deprecation
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Images are also subject to "deprecation". Image deletion and deprecation are not the same; a deprecated image can still be listed, launched in GCP, etc. unlike "deleted" images.
-At any give time, there will only ever be **one** active image per suite and type (i.e. minimal, base, etc.) with all the other images subject to either deprecation or deletion.
-When a new daily image is built and released to GCE, the previous daily serial is deprecated, with the same being true for release images.
