@@ -7,7 +7,7 @@ and container workloads.
 
 The optimised ``linux-gcp`` kernel enables accelerated networking with the Compute Engine Virtual Ethernet device and support for the latest Google ARM Tau VM. These advantages contribute to Ubuntu being the default host images for Anthos Multi-cloud.
 
-The Ubuntu images support secure boot, with signed Nvidia drivers available for workloads requiring access to vGPU compute acceleration. For instances that require confidential compute, Ubuntu images have been `SEV-capable <https://www.amd.com/en/developer/sev.html>`_ since 18.04 with `SEV-SNP <https://www.amd.com/en/developer/sev.html>`_ and `Intel TDX <https://www.intel.com/content/www/us/en/developer/tools/trust-domain-extensions/overview.html>`_ support currently in private preview.
+The Ubuntu images support secure boot, with signed NVIDIA drivers available for workloads requiring access to vGPU compute acceleration. For instances that require confidential compute, Ubuntu images have been SEV-capable since 18.04 with `SEV-SNP`_ and `Intel TDX`_ support currently in private preview.
 
 Ubuntu images are updated regularly with fixes that address the latest CVEs to ensure applications remain free from vulnerabilities.
 
@@ -45,6 +45,8 @@ Google provides a multi-cloud GKE strategy through a variety of Anthos product o
 * `GKE Anthos on Azure`_ 
 * `GKE Anthos on VMware`_ 
 
+.. _`SEV-SNP`: https://www.amd.com/en/developer/sev.html
+.. _`Intel TDX`: https://www.intel.com/content/www/us/en/developer/tools/trust-domain-extensions/overview.html
 .. _`GKE node images`: https://cloud.google.com/kubernetes-engine/docs/concepts/node-images
 .. _`GKE Anthos on AWS`: https://cloud.google.com/anthos/clusters/docs/multi-cloud/aws/reference/os-details
 .. _`GKE Anthos on Azure`: https://cloud.google.com/anthos/clusters/docs/multi-cloud/azure/reference/os-details

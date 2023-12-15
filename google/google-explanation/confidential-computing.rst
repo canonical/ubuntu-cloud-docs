@@ -49,5 +49,6 @@ To create and launch confidential compute enabled instances on GCE, refer to:
 * AMD SEV - :ref:`create-amd-sev-conf-compute-on-gcp`
 
 
-.. _`Intel® Trust Domain Extensions`: https://www.intel.com/content/dam/develop/external/us/en/documents/tdx-whitepaper-v4.pdf
+.. _`Intel® Trust Domain Extensions`: https://cdrdv2.intel.com/v1/dl/getContent/690419
+
 .. _`AMD SEV-SNP - Strengthening VM Isolation with Integrity Protection and More`: https://www.amd.com/content/dam/amd/en/documents/epyc-business-docs/white-papers/SEV-SNP-strengthening-vm-isolation-with-integrity-protection-and-more.pdf
