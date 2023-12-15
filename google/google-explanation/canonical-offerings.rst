@@ -1,13 +1,19 @@
 Canonical's offerings on GCP
 ============================
 
-With an optimised Ubuntu GCP kernel built in collaboration between Google and Canonical to deliver the very
-best performance on the Google Cloud hypervisor, Ubuntu is a popular Linux OS on GCP for both virtual machines 
-and container workloads - i.e. for both Google Cloud Engine (GCE) and Google Kubernetes Engine (GKE).
+Canonical works closely with Google to ensure Ubuntu images support the latest GCP features. An optimised Ubuntu GCP kernel, built in collaboration with Google, delivers the very
+best performance for scale-out, optimised workloads on the Google Cloud hypervisor. This makes Ubuntu a popular choice for both virtual machines 
+and container workloads.
 
-The ``linux-gcp`` kernel enables accelerated networking with the Compute Engine Virtual Ethernet device and supports the latest Google ARM Tau VM, enabling scale-out optimised workloads. These advantages contribute to Ubuntu being the default host images for Anthos Multi-cloud.
+The optimised ``linux-gcp`` kernel enables accelerated networking with the Compute Engine Virtual Ethernet device and support for the latest Google ARM Tau VM. These advantages contribute to Ubuntu being the default host images for Anthos Multi-cloud.
 
-Another useful feature is the native integration of Ubuntu images with the Administrator console. This enables things like patch management and in-place upgrade of Ubuntu LTS images to Ubuntu Pro without the need for workload redeployment.
+The Ubuntu images support secure boot, with signed Nvidia drivers available for workloads requiring access to vGPU compute acceleration. For instances that require confidential compute, Ubuntu images have been `SEV-capable <https://www.amd.com/en/developer/sev.html>`_ since 18.04 with `SEV-SNP <https://www.amd.com/en/developer/sev.html>`_ and `Intel TDX <https://www.intel.com/content/www/us/en/developer/tools/trust-domain-extensions/overview.html>`_ support currently in private preview.
+
+Ubuntu images are updated regularly with fixes that address the latest CVEs to ensure applications remain free from vulnerabilities.
+
+Another useful feature is the native integration of Ubuntu images with the Administrator console, enabling patch management and in-place upgrade of Ubuntu LTS images to Ubuntu Pro without the need for workload redeployment.
+
+
 
 GCE Images
 ~~~~~~~~~~
