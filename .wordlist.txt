@@ -219,10 +219,4 @@ EOL
 EOSS
 vGPU
 firewalling
-ec
-pem
-https
-Signon
-authorized
-eg
 

@@ -8,7 +8,7 @@ Prerequisites
 
 You need:
 
-- ``eksctl``: Check the instructions to `install eksctl <https://docs.aws.amazon.com/eks/latest/userguide/eksctl.html>`_
+- ``eksctl``: Check the instructions to `install eksctl`_
 - ``packer``: only needed if you want to enable FIPS for the cluster nodes. Install it with ``sudo snap install packer``
 - your AWS access key ID and secret access key
 - an Ubuntu Pro token
@@ -29,9 +29,9 @@ The steps needed for deploying the cluster depend on whether you need to enable 
     .. group-tab:: Without FIPS
         
         When FIPS is not enabled, you can use one of the existing Ubuntu EKS AMIs and
-        customise it using cloud-init's `ubuntu-advantage module <https://cloudinit.readthedocs.io/en/latest/reference/modules.html#ubuntu-advantage>`_ during deployment.
+        customise it using cloud-init's `ubuntu-advantage module`_ during deployment.
 
-        For this deployment, you'll also need to have an existing `launch template <https://docs.aws.amazon.com/autoscaling/ec2/userguide/launch-templates.html>`_ on AWS.
+        For this deployment, you'll also need to have an existing `launch template`_ on AWS.
 
         **Update user-data in launch template**        
         
@@ -63,7 +63,7 @@ The steps needed for deploying the cluster depend on whether you need to enable 
     
     .. group-tab:: With FIPS
     
-        When enabling FIPS, a reboot of the underlying node is required. If this reboot is done after the cluster is created, in rare cases, it might result in the node being flagged as defective (`troubleshooting options <https://docs.aws.amazon.com/eks/latest/userguide/troubleshooting.html>`_). For this reason, the most reliable way to deploy an Ubuntu Pro EKS cluster is to build a custom Ubuntu Pro AMI (with `Packer <https://www.packer.io/>`_) and use it during cluster creation until this `issue <https://bugs.launchpad.net/cloud-images/+bug/2017782>`_ is resolved.
+        When enabling FIPS, a reboot of the underlying node is required. If this reboot is done after the cluster is created, in rare cases, it might result in the node being flagged as defective (`troubleshooting options`_). For this reason, the most reliable way to deploy an Ubuntu Pro EKS cluster is to build a custom Ubuntu Pro AMI (with `Packer`_) and use it during cluster creation until this `issue`_ is resolved.
 
 
         **Caveats:**
@@ -224,7 +224,7 @@ Add the following content to your file
          to initialise the nodes.
 
 
-For further cluster customisation check out `eksctl details <https://eksctl.io/>`_.
+For further cluster customisation check out `eksctl details`_.
 
 
 Create the EKS cluster
@@ -272,3 +272,12 @@ You now have an Ubuntu Pro Kubernetes cluster on EKS. Your Ubuntu Pro subscripti
 ..  code-block:: bash
 
     $ pro status
+
+
+.. _`install eksctl`: https://eksctl.io/installation/
+.. _`ubuntu-advantage module`: https://cloudinit.readthedocs.io/en/latest/reference/modules.html#ubuntu-advantage
+.. _`launch template`: https://docs.aws.amazon.com/autoscaling/ec2/userguide/launch-templates.html
+.. _`troubleshooting options`: https://docs.aws.amazon.com/eks/latest/userguide/troubleshooting.html
+.. _`Packer`: https://www.packer.io/
+.. _`issue`: https://bugs.launchpad.net/cloud-images/+bug/2017782
+.. _`eksctl details`: https://eksctl.io/

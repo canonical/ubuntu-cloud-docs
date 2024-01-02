@@ -293,7 +293,7 @@ Create a VM - using the Portal
 To create a VM based on the golden image, in the portal:
 
 #. Go to *Azure services* > *Virtual Machines* > *Create* > *Virtual machine*
-#. Open the *See all images* link located below the *Image* field drop down 
+#. Open the *See all images* link located below the *Image* field drop-down 
 #. Select *Shared Images* from the column on the left
 #. Choose your golden image and it should now be the selected image in the *Image* field 
 #. Complete the remaining fields as per your requirements and select *Review + Create*
