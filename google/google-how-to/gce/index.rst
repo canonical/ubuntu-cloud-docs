@@ -12,3 +12,4 @@ GCE instances
    build-ubuntu-pro-golden-image
    create-customised-docker-container
    upgrade-from-focal-to-jammy
+   set-hostname-cloudinit
