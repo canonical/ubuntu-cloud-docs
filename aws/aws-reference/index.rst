@@ -1,7 +1,7 @@
 Reference
 =========
 
-Information about topic to help certain concept:
+Technical information about some specific topics:
 
 .. toctree::
    :maxdepth: 1

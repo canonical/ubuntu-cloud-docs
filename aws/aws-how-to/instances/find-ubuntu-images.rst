@@ -59,7 +59,7 @@ Images for EC2 and EKS
 
          ubuntu/eks/20.04/$K8S_VERSION/stable/current/$ARCH/hvm/ebs-gp2/ami-id
 
-      * K8S_VERSION: one of the supported EKS versions (eg. `1.28`)
+      * K8S_VERSION: one of the supported EKS versions (e.g. `1.28`)
       * ARCH: `amd64` or `arm64`
 
 

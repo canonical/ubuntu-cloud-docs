@@ -3,6 +3,7 @@ How-to guides
 
 Launching and using Ubuntu instances:
 
+* :doc:`instances/launch-ubuntu-ec2-instance`
 * :doc:`instances/find-ubuntu-images`
 * :doc:`instances/build-pro-ami-using-packer`
 * :doc:`instances/build-cloudformation-templates`

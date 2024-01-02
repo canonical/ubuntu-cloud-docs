@@ -234,7 +234,7 @@ The results should show that the machine is attached to a Pro subscription and h
 
 
 
-.. _`install Packer`: https://developer.hashicorp.com/packer/downloads
+.. _`install Packer`: https://developer.hashicorp.com/packer/install
 .. _`AWS Marketplace`: https://aws.amazon.com/marketplace
 .. _`Ubuntu Pro FIPS 20.04 LTS`: https://aws.amazon.com/marketplace/pp/prodview-l2hkkatnodedk
 .. _`IAM page for creating credentials`: https://docs.aws.amazon.com/IAM/latest/UserGuide/security-creds.html
