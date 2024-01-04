@@ -11,7 +11,7 @@ The Ubuntu images support secure boot, with signed NVIDIA drivers available for 
 
 Ubuntu images are updated regularly with fixes that address the latest CVEs to ensure applications remain free from vulnerabilities.
 
-Another useful feature is the native integration of Ubuntu images with the Administrator console, enabling patch management and in-place upgrade of Ubuntu LTS images to Ubuntu Pro without the need for workload redeployment.
+Another useful feature is the native integration of Ubuntu images with the Administrator console, enabling patch management and :doc:`in-place upgrade of Ubuntu LTS images to Ubuntu Pro <../google-how-to/gce/upgrade-in-place-from-lts-to-pro>` without the need for workload redeployment.
 
 
 

@@ -3,7 +3,7 @@ GCE image retention policies
 
 All Ubuntu images on GCE go through a life-cycle of: *release* > *deprecation* > *deletion*. 
 
-Whenever a new image is built and released to GCE, the previous serial of the corresponding image is deprecated. A deprecated image is not visible on the google console, but it can still be listed, launched in GCP, etc. Our image retention policy determines when an image will be deleted. Once deleted, the images are no longer accessible for use.
+Whenever a new image is built and released to GCE, the previous serial of the corresponding image is deprecated. A deprecated image is not visible on the Google console, but it can still be listed, launched in GCP, etc. Our image retention policy determines when an image will be deleted. Once deleted, the images are no longer accessible for use.
 
 At any give time, there will be only **one** active image per Ubuntu variant, with all the other images of that variant being either deprecated or deleted.
 
