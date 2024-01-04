@@ -14,7 +14,7 @@ You'll need:
 
 - (optional) a Virtual Cloud Network (VCN) to create the instance in. If you don't have one already, you can create a new VCN when you create the instance.
 
-- (optional) a Vault with encryption keys to use for boot volume encryption. This is only necessary if you wish to use your own encryption key for FDE.
+- a vault with encryption keys to use for boot volume encryption. This is only necessary if you wish to use your own encryption key for FDE.
 
 
 Create an instance with personalised FDE
@@ -22,7 +22,7 @@ Create an instance with personalised FDE
 
 While creating a new instance using :guilabel:`Compute` > :guilabel:`Instances` > :guilabel:`Create instance`, under *Image and shape* select :guilabel:`Change image` > :guilabel:`Ubuntu`. Then choose the desired Ubuntu release and image build.
 
-An Oracle managed key is used by default to encrypt the boot volume. But if you want to use your own key, under the advanced options in *Boot volume* select :guilabel:`Encrypt this volume with a key that you manage` and follow the instructions described in Oracle's documentation about `using your own keys`_.
+An Oracle managed key is used by default to encrypt the boot volume. To use your own key, under the advanced options in *Boot volume* select :guilabel:`Encrypt this volume with a key that you manage` and follow the instructions described in Oracle's documentation about `using your own keys`_.
 
 .. image:: use-fde-images/1_own_key_encryption.png
 
