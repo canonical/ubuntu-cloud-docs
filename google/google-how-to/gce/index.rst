@@ -12,4 +12,5 @@ GCE instances
    build-ubuntu-pro-golden-image
    create-customised-docker-container
    upgrade-from-focal-to-jammy
+   check-cve-on-instance
    set-hostname-cloudinit

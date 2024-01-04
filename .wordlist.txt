@@ -177,7 +177,7 @@ UI
 backoff
 URI
 NIST
-CVEs
+CVE
 SLiM
 Authorize
 TCO
@@ -219,4 +219,7 @@ EOL
 EOSS
 vGPU
 firewalling
+OpenSCAP
+bzip
+uncompress
 
