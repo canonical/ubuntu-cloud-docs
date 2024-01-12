@@ -16,7 +16,7 @@ For technical reasons related to the publication process, Canonical publishes di
 How often are Ubuntu images refreshed?
 --------------------------------------
 
-Canonical publishes a new version of an image every time the kernel for this image is updated. On an average, this happens once every three weeks. Important security or bug fixes might also trigger an image refresh. However, running virtual machines (VMs) are not affected by these changes. Use ``apt`` to keep your VM up to date and reboot your VM regularly to update the running kernel.
+Canonical publishes a new version of an image every time the kernel for this image is updated. On an average, this happens once every three weeks. Important security or bug fixes might also trigger an image refresh. However, running virtual machines (VMs) are not affected by these changes. Use ``apt`` to keep your VM up to date and reboot your VM regularly to update the running kernel. If you are using Ubuntu Pro, Canonical's livepatch service will automatically apply kernel updates without the immediate need for a reboot, thereby allowing you to stick to your own restart schedule.
 
 When using the CLI or any automated process, use the keyword `latest` in place of the image version. This ensures that you will always launch the latest image available for the given offer/SKU.
 
