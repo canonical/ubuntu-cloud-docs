@@ -17,4 +17,14 @@ For new instances or instances that are easy to redeploy (e.g. launched programm
 Running instances
 ~~~~~~~~~~~~~~~~~
 
-It is possible to upgrade an Ubuntu Server LTS instance to receive Ubuntu Pro entitlements by buying a token and attaching this with ``sudo pro attach [YOUR_TOKEN]`` on the relevant instance. The best way to purchase tokens for Azure instances is to `contact Canonical <https://ubuntu.com/azure/pro#get-in-touch>`_.
+You can perform an in-place upgrade from Ubuntu Server to Ubuntu Pro to achieve the upgrade without any downtime. Here are the steps:
+
+Run the following command with the Azure CLI to enable Ubuntu Pro on an Ubuntu Server VM:
+``az vm update -g myResourceGroup -n myVmName --license-type UBUNTU_PRO``
+
+Run these commands in the instance that you have converted:
+``sudo apt install ubuntu-advantage-tools
+sudo pro auto-attach``
+
+Verify that Ubuntu Pro is enabled on your instance by running
+``pro status --all --wait`` 
