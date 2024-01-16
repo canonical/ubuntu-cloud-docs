@@ -17,14 +17,21 @@ For new instances or instances that are easy to redeploy (e.g. launched programm
 Running instances
 ~~~~~~~~~~~~~~~~~
 
-You can perform an in-place upgrade from Ubuntu Server to Ubuntu Pro to achieve the upgrade without any downtime. Here are the steps:
+For running instances, you can perform an in-place upgrade from Ubuntu Server to Ubuntu Pro without requiring any downtime. Using the Azure CLI, enable Ubuntu Pro on an instance by running:
 
-Run the following command with the Azure CLI to enable Ubuntu Pro on an Ubuntu Server VM:
-``az vm update -g myResourceGroup -n myVmName --license-type UBUNTU_PRO``
+.. code::
 
-Run these commands in the instance that you have converted:
-``sudo apt install ubuntu-advantage-tools
-sudo pro auto-attach``
+    az vm update -g myResourceGroup -n myVmName --license-type UBUNTU_PRO
 
-Verify that Ubuntu Pro is enabled on your instance by running
-``pro status --all --wait`` 
+SSH into the instance and run:
+
+.. code::
+    
+    sudo apt install ubuntu-advantage-tools
+    sudo pro auto-attach
+
+To verify that Ubuntu Pro is enabled on your instance run:
+
+.. code::
+    
+    pro status --all --wait
