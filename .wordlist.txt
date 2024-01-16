@@ -222,4 +222,9 @@ firewalling
 OpenSCAP
 bzip
 uncompress
+hostname
+DHCP
+DNS
+FQDN
+
 

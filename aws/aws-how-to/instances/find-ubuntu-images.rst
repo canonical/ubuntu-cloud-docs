@@ -44,6 +44,8 @@ Images for EC2 and EKS
          
          ubuntu/$PRODUCT/$RELEASE/stable/$SERIAL/$ARCH/$VIRT_TYPE/$VOL_TYPE/ami-id
       
+      In the generated output, the "Value" field will have the required AMI ID.
+      
 
    .. tab:: For EKS
       
