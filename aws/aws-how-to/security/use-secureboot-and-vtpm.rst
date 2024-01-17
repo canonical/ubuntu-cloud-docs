@@ -107,7 +107,7 @@ Verify secure boot mode
    * NitroTPM is only supported by certain instance types. Check the `AWS NitroTPM prerequisites documentation <https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/enable-nitrotpm-prerequisites.html>`_ for details.
 
 Let's start a new instance with the newly created image (``$AMI_NEW``) and verify two things - (1) Secure Boot is enabled and (2) A TPM device is present.
-To do this, first set the `KEY_NAME` variable to your keypair name. This allows you to login to the instance over ssh.
+To do this, first set the `KEY_NAME` variable to your keypair name. This allows you to log in to the instance over ssh.
 
 .. code-block::
 

@@ -226,5 +226,4 @@ hostname
 DHCP
 DNS
 FQDN
-
-
+subnet
