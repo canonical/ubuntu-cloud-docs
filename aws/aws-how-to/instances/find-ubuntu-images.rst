@@ -4,7 +4,7 @@ Find Ubuntu images on AWS
 On AWS, cloud images are referred to as Amazon Machine Images (AMIs). Canonical produces a wide variety of images to support numerous features found on AWS:
 
 * Generally, all images use Elastic Block Storage (EBS) and hardware virtual machine (HVM) virtualisation types. Older releases may also support paravirtual (PV) and instance-store, but users benefit from the newer storage and virtualisation technologies.
-* Standard server images are available for both `amd64` and `arm64`; and minimal images are available for `amd64`.
+* `Standard` and `minimal` server images are available for both `amd64` and `arm64`.
 * `Daily` (untested) and `release` versions of the images are published regularly.
 
 

@@ -227,3 +227,4 @@ DHCP
 DNS
 FQDN
 subnet
+workspaces

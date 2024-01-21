@@ -1,82 +1,112 @@
 Canonical's offerings on AWS
 ============================
 
-Standard Ubuntu images
-----------------------
+Ubuntu images
+-------------
 
-There are customised Amazon Machine Images (AMIs) based on an AWS-optimised kernel. They include improved device drivers
-and relevant agents (eg. for `EC2 Instance Connect` and `AWS Systems Manager`). Those images are available
-via the `AWS Marketplace`_ and the EC2 console.
+Canonical produces a wide variety of images to support numerous features found on AWS. Most of these images are customised Amazon Machine Images (AMIs) based on an AWS-optimised kernel. They include improved device drivers and relevant agents such as `EC2 Instance Connect` and `AWS Systems Manager`. 
 
-`Ubuntu Pro images`_
---------------------
+Apart from the standard Ubuntu server images, the other variations include:
 
-These are premium images that include certified components, hardening options, comprehensive open source security coverage (for packages in main and universe) for 10 years, `kernel Livepatch service`_ and optional 24/7 enterprise-grade support. They are available on amd64 and arm64 (Graviton) architectures, both with an optimised kernel to provide better performance while supporting nearly all instance types available. Those premium images are available via the `AWS Marketplace`_ and
-also via the `EC2 console <https://ubuntu.com/blog/ubuntu-pro-is-now-part-of-the-aws-ec2-console>`__.
+* `Minimal server images`_ - These have a reduced default package set with things like interactive usage tools omitted. They are designed for automated deployment at scale. They are much smaller, boot faster, and require fewer security updates over time due to the fewer installed packages.
 
-`Ubuntu Pro FIPS images`_
--------------------------
+* `Ubuntu Pro images`_ - These are premium images that include certified components, hardening options, comprehensive open source security coverage for 10 years, kernel Livepatch service and optional 24/7 enterprise-grade support.
 
-These are FIPS certified images used to meet compliance requirements in production environments. These are available only through the `AWS Marketplace`_ or through private offers.
+* `Ubuntu Pro FIPS images`_ - These are FIPS certified Ubuntu Pro images used to meet compliance requirements in production environments.
 
-Ubuntu Pro with Real-time Kernel
---------------------------------
+* Ubuntu Pro with `real-time kernel`_ - These are Ubuntu Pro images with a real-time kernel in them.
 
-Theses are images with an `real-time kernel <https://ubuntu.com/real-time>`_. Those images are available
-via the `AWS Marketplace`_.
+* `Ubuntu EKS images`_ - These are optimised AMIs that run as worker nodes in Amazon's Elastic Kubernetes Service (EKS). They include the AWS-optimised kernel, a slimmed-down minimal version of Ubuntu, and are optimised for performance and security on EKS clusters. They also the Kubernetes worker node related softwares such as ``kubelet`` and ``kubectl``.
 
-EKS images
-----------
+Each of these variations have multiple versions that are released at regular intervals. For instance, untested dailies maybe published everyday, while the fully tested release versions include interim versions published every six months and long-term support (LTS) versions published every 2 years. 
 
-These are optimised AMIs for running as worker nodes with the Amazon Elastic Kubernetes Service (EKS).
-They uses a slimmed-down minimal image, the AWS-optimized kernel and are optimised for performance
-and security on EKS clusters. Those images do contain the required software (eg `kubelet` and `kubectl`)
-to run as a Kubernetes worker node. The images are availalbe via the `AWS Marketplace`_ or the `EC2 console <https://cloud-images.ubuntu.com/docs/aws/eks/>`__.
+The different variations and the means to find them in AWS are summarised below: 
 
-`Ubuntu Workspaces`_
---------------------
+.. list-table::
 
-Those are virtual Ubuntu desktops powered by AWS. Workspaces is a paid offering supported
-through `Amazon Workspaces`_ and the image provided for Workspaces is basically an Ubuntu Desktop running
-on EC2, with Ubuntu Pro services (ESM, livepatch) enabled by default.
+   * - **Ubuntu Image Options**
+     - **AMD64**
+     - **ARM64 (Graviton)** 
 
-`Anbox Cloud Appliance`_
-------------------------
+   * - Server 
+     - EC2 console, :doc:`CLI<../aws-how-to/instances/find-ubuntu-images>`, `Marketplace <https://aws.amazon.com/marketplace/search/results?searchTerms=Ubuntu&CREATOR=565feec9-3d43-413e-9760-c651546613f2&AMI_ARCHITECTURE=x86_64&filters=CREATOR%2CAMI_ARCHITECTURE>`__
+     - EC2 console, :doc:`CLI<../aws-how-to/instances/find-ubuntu-images>`, `Marketplace <https://aws.amazon.com/marketplace/search/results?searchTerms=Ubuntu&CREATOR=565feec9-3d43-413e-9760-c651546613f2&AMI_ARCHITECTURE=arm64&filters=CREATOR%2CAMI_ARCHITECTURE>`__
+   
+   * - Server minimal
+     - :doc:`CLI<../aws-how-to/instances/find-ubuntu-images>`, `Marketplace <https://aws.amazon.com/marketplace/search/results?searchTerms=Ubuntu+minimal&CREATOR=565feec9-3d43-413e-9760-c651546613f2&AMI_ARCHITECTURE=x86_64&filters=CREATOR%2CAMI_ARCHITECTURE>`__
+     - :doc:`CLI<../aws-how-to/instances/find-ubuntu-images>`, `Marketplace <https://aws.amazon.com/marketplace/search/results?searchTerms=Ubuntu+minimal&CREATOR=565feec9-3d43-413e-9760-c651546613f2&AMI_ARCHITECTURE=arm64&filters=CREATOR%2CAMI_ARCHITECTURE>`__
+   
+   * - Pro
+     - :doc:`CLI<../aws-how-to/instances/find-ubuntu-images>`, `Marketplace <https://aws.amazon.com/marketplace/search/results?searchTerms=Ubuntu+pro&CREATOR=565feec9-3d43-413e-9760-c651546613f2&AMI_ARCHITECTURE=x86_64&filters=CREATOR%2CAMI_ARCHITECTURE>`__
+     - EC2 console, :doc:`CLI<../aws-how-to/instances/find-ubuntu-images>`, `Marketplace <https://aws.amazon.com/marketplace/search/results?searchTerms=Ubuntu+pro&CREATOR=565feec9-3d43-413e-9760-c651546613f2&AMI_ARCHITECTURE=arm64&filters=CREATOR%2CAMI_ARCHITECTURE>`__
 
-`Anbox Cloud <https://anbox-cloud.io/>`_ appliance runs Android containers in the cloud. Those images are available via the `AWS Marketplace <https://aws.amazon.com/marketplace/search/results?searchTerms=Anbox&CREATOR=565feec9-3d43-413e-9760-c651546613f2&filters=CREATOR>`__ .
+   * - Pro FIPS 
+     - `Marketplace <https://aws.amazon.com/marketplace/search/results?searchTerms=Ubuntu+pro+fips&CREATOR=565feec9-3d43-413e-9760-c651546613f2&AMI_ARCHITECTURE=x86_64&filters=CREATOR%2CAMI_ARCHITECTURE>`__, Private offers
+     - Not available
+
+   * - Pro with Real-time kernel
+     - Not available
+     - `Marketplace <https://aws.amazon.com/marketplace/search/results?searchTerms=Ubuntu+pro+real&CREATOR=565feec9-3d43-413e-9760-c651546613f2&AMI_ARCHITECTURE=arm64&filters=CREATOR%2CAMI_ARCHITECTURE>`__
+
+   * - EKS images
+     - :doc:`CLI<../aws-how-to/instances/find-ubuntu-images>`, `Marketplace <https://aws.amazon.com/marketplace/search/results?searchTerms=Ubuntu+eks&CREATOR=565feec9-3d43-413e-9760-c651546613f2&AMI_ARCHITECTURE=x86_64&filters=CREATOR%2CAMI_ARCHITECTURE>`__
+     - :doc:`CLI<../aws-how-to/instances/find-ubuntu-images>`, `Marketplace <https://aws.amazon.com/marketplace/search/results?searchTerms=Ubuntu+eks&CREATOR=565feec9-3d43-413e-9760-c651546613f2&AMI_ARCHITECTURE=arm64&filters=CREATOR%2CAMI_ARCHITECTURE>`__
 
 
-`MicroK8s AWS Appliance`_
--------------------------
+Optimisations for AWS
+---------------------
 
-`MicroK8s <https://microk8s.io/>`_ is a minimal, CNCF-certified Kubernetes distribution from Canonical.
-The appliance is available via the `AWS Marketplace <https://aws.amazon.com/marketplace/search/results?searchTerms=MicroK8s&CREATOR=565feec9-3d43-413e-9760-c651546613f2&filters=CREATOR>`__.
+Generally, all images use Elastic Block Storage (EBS) and hardware virtual machine (HVM) virtualisation types. For Ubuntu versions 23.10 and newer, the images use `ebs-gp3 volumes`_. 
 
-`Charmed Kubeflow on AWS`_
---------------------------
+The optimised ``linux-aws`` kernel used in most of the available offerings enables specific AWS features:
 
-Kubeflow is an open source MLOps platform for efficient AI and ML from research through development to production.
-The appliance is available via the `AWS Marketplace <https://aws.amazon.com/marketplace/search/results?searchTerms=Charmed+Kubeflow&CREATOR=565feec9-3d43-413e-9760-c651546613f2&filters=CREATOR>`__.
-
-Optimised kernel
-----------------
-
-The ``linux-aws`` kernel used in most of the available offerings enables the following AWS specific features:
-
-* `Elastic Fabric Adapter`_ - This allows high-performance applications to directly access the network adapter and get reliable transport with low-latency. 
-* `Nitro enclaves driver`_ - This gives data processing applications a secure enclave with CPU and memory isolation to prevent data leaks.
+* `Elastic Fabric Adapter`_ - which allows high-performance applications to directly access the network adapter and get reliable transport with low-latency. 
+* `Nitro enclaves driver`_ - which gives data processing applications a secure enclave with CPU and memory isolation to prevent data leaks.
 * `AWS Graviton`_ - The arm64 version of the kernel includes several patches to take advantage of the unique features of AWS Graviton native CPUs.
 
-.. _Elastic Fabric Adapter: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/efa.html
-.. _Nitro enclaves driver: https://docs.aws.amazon.com/enclaves/latest/user/nitro-enclave.html
-.. _AWS Graviton: https://docs.aws.amazon.com/whitepapers/latest/aws-graviton-performance-testing/what-is-aws-graviton.html
-.. _Ubuntu Pro FIPS images: https://ubuntu.com/aws/fips
-.. _Ubuntu Pro images: https://ubuntu.com/aws/pro
-.. _Amazon Workspaces: https://aws.amazon.com/workspaces
-.. _Ubuntu Workspaces: https://ubuntu.com/aws/workspaces
-.. _kernel Livepatch service: https://ubuntu.com/security/livepatch
-.. _AWS Marketplace: https://aws.amazon.com/marketplace/search/results?searchTerms=Ubuntu&CREATOR=565feec9-3d43-413e-9760-c651546613f2%2Ce6a5002c-6dd0-4d1e-8196-0a1d1857229b&filters=CREATOR
 
-.. _Anbox Cloud Appliance: https://aws.amazon.com/marketplace/search/results?searchTerms=Anbox+Cloud+Appliance
-.. _Charmed Kubeflow on AWS: https://aws.amazon.com/marketplace/pp/prodview-ssgryrrrydtds
-.. _MicroK8s AWS Appliance: https://aws.amazon.com/marketplace/pp/prodview-iwqx66ka26u3w
+Appliances and paid offers
+--------------------------
+
+Ubuntu workspaces
+~~~~~~~~~~~~~~~~~
+
+`Ubuntu workspaces`_ are virtual Ubuntu desktops powered by AWS. Workspaces is a paid offering supported through `Amazon workspaces`_ and the image provided for Workspaces is basically an Ubuntu Desktop running on EC2, with Ubuntu Pro services (ESM, livepatch) enabled by default.
+
+Anbox cloud appliance
+~~~~~~~~~~~~~~~~~~~~~
+
+The `Anbox cloud`_ appliance runs Android containers in the cloud and is available at the `AWS marketplace (Anbox cloud)`_.
+
+
+MicroK8s AWS appliance
+~~~~~~~~~~~~~~~~~~~~~~
+
+`MicroK8s`_ is a minimal, CNCF-certified Kubernetes distribution from Canonical. It is available as an appliance at the `AWS marketplace (MicroK8s)`_.
+
+
+Charmed Kubeflow on AWS
+~~~~~~~~~~~~~~~~~~~~~~~
+
+`Charmed Kubeflow`_ is an open-source, end-to-end, production-ready MLOps platform on top of cloud native technologies. It is available as an appliance at the `AWS marketplace (Charmed Kubeflow)`_.
+
+
+.. _`Minimal server images`: https://wiki.ubuntu.com/Minimal
+.. _`Ubuntu Pro images`: https://ubuntu.com/aws/pro
+.. _`Ubuntu Pro FIPS images`: https://ubuntu.com/aws/fips
+.. _`real-time kernel`: https://ubuntu.com/real-time
+.. _`Ubuntu EKS images`: https://cloud-images.ubuntu.com/docs/aws/eks/
+.. _`ebs-gp3 volumes`: https://aws.amazon.com/ebs/general-purpose/
+.. _`Elastic Fabric Adapter`: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/efa.html
+.. _`Nitro enclaves driver`: https://docs.aws.amazon.com/enclaves/latest/user/nitro-enclave.html
+.. _`AWS Graviton`: https://docs.aws.amazon.com/whitepapers/latest/aws-graviton-performance-testing/what-is-aws-graviton.html
+.. _`Ubuntu Workspaces`: https://ubuntu.com/aws/workspaces
+.. _`Amazon Workspaces`: https://aws.amazon.com/workspaces
+.. _`Anbox cloud`: https://anbox-cloud.io/ 
+.. _`AWS marketplace (Anbox cloud)`: https://aws.amazon.com/marketplace/search/results?searchTerms=Anbox&CREATOR=565feec9-3d43-413e-9760-c651546613f2&filters=CREATOR
+.. _`MicroK8s`: https://microk8s.io/
+.. _`AWS marketplace (MicroK8s)`: https://aws.amazon.com/marketplace/pp/prodview-iwqx66ka26u3w
+.. _`Charmed Kubeflow`: https://charmed-kubeflow.io/
+.. _`AWS marketplace (Charmed Kubeflow)`: https://aws.amazon.com/marketplace/search/results?searchTerms=Charmed+Kubeflow&CREATOR=565feec9-3d43-413e-9760-c651546613f2&filters=CREATOR
+
+
