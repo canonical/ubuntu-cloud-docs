@@ -1,5 +1,5 @@
-Launch an EC2 instance using CLI
-================================
+Launch an Ubuntu EC2 instance using AWS CLI
+===========================================
 
 Assuming you have an existing AWS account and some means for terminal based command-line access, you can launch an EC2 instance using CLI (command-line interface). You'll need to:
 

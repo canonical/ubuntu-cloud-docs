@@ -22,7 +22,7 @@ ogp_image = "https://assets.ubuntu.com/v1/6c10be67-UbuntuCloud.jpg"
 # Update with the favicon for your product
 html_favicon = ".sphinx/_static/favicon.png"
 
-# Access to custom environment variable to detect project being built
+# Access custom environment variable to detect project being built
 subproject = os.environ.get("PROJECT")
 subproject_path = "/"
 if subproject:
