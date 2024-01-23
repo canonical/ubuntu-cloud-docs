@@ -8,4 +8,4 @@ Discussion and clarification of some key topics:
    
    canonical-offerings
    eks-image-retention-policy
-   
+   eks-kubelet-snap
