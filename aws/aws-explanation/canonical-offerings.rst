@@ -4,19 +4,19 @@ Canonical's offerings on AWS
 Ubuntu images
 -------------
 
-Canonical produces a wide variety of images to support numerous features found on AWS. Most of these images are customised Amazon Machine Images (AMIs) based on an AWS-optimised kernel. They include improved device drivers and relevant agents such as `EC2 Instance Connect` and `AWS Systems Manager`. 
+Canonical produces a wide variety of images to support numerous features found on AWS.
 
-Apart from the standard Ubuntu server images, the other variations include:
+* `Ubuntu server images`_ - These are customised Amazon Machine Images (AMIs) based on an AWS-optimised kernel. They include improved device drivers and relevant agents such as `EC2 Instance Connect` and `AWS Systems Manager`. The other images listed below are variations of this basic server image. 
 
 * `Minimal server images`_ - These have a reduced default package set with things like interactive usage tools omitted. They are designed for automated deployment at scale. They are much smaller, boot faster, and require fewer security updates over time due to the fewer installed packages.
 
 * `Ubuntu Pro images`_ - These are premium images that include certified components, hardening options, comprehensive open source security coverage for 10 years, kernel Livepatch service and optional 24/7 enterprise-grade support.
 
-* `Ubuntu Pro FIPS images`_ - These are FIPS certified Ubuntu Pro images used to meet compliance requirements in production environments.
+* `Ubuntu Pro FIPS images`_ - These are images built on Ubuntu Pro, but with the FIPS-certified modules pre-enabled so that they are used from the first boot of the image.
 
 * Ubuntu Pro with `real-time kernel`_ - These are Ubuntu Pro images with a real-time kernel in them.
 
-* `Ubuntu EKS images`_ - These are optimised AMIs that run as worker nodes in Amazon's Elastic Kubernetes Service (EKS). They include the AWS-optimised kernel, a slimmed-down minimal version of Ubuntu, and are optimised for performance and security on EKS clusters. They also the Kubernetes worker node related softwares such as ``kubelet`` and ``kubectl``.
+* `Ubuntu server EKS images`_ - These are optimised AMIs that run as worker nodes in Amazon's Elastic Kubernetes Service (EKS). They include the AWS-optimised kernel, a slimmed-down minimal version of Ubuntu, and are optimised for performance and security on EKS clusters. They also the Kubernetes worker node related softwares such as ``kubelet`` and ``kubectl``.
 
 Each of these variations have multiple versions that are released at regular intervals. For instance, untested dailies maybe published everyday, while the fully tested release versions include interim versions published every six months and long-term support (LTS) versions published every 2 years. 
 
@@ -90,12 +90,12 @@ Charmed Kubeflow on AWS
 
 `Charmed Kubeflow`_ is an open-source, end-to-end, production-ready MLOps platform on top of cloud native technologies. It is available as an appliance at the `AWS marketplace (Charmed Kubeflow)`_.
 
-
+.. _`Ubuntu server images`: https://ubuntu.com/aws
 .. _`Minimal server images`: https://wiki.ubuntu.com/Minimal
 .. _`Ubuntu Pro images`: https://ubuntu.com/aws/pro
 .. _`Ubuntu Pro FIPS images`: https://ubuntu.com/aws/fips
 .. _`real-time kernel`: https://ubuntu.com/real-time
-.. _`Ubuntu EKS images`: https://cloud-images.ubuntu.com/docs/aws/eks/
+.. _`Ubuntu server EKS images`: https://cloud-images.ubuntu.com/docs/aws/eks/
 .. _`ebs-gp3 volumes`: https://aws.amazon.com/ebs/general-purpose/
 .. _`Elastic Fabric Adapter`: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/efa.html
 .. _`Nitro enclaves driver`: https://docs.aws.amazon.com/enclaves/latest/user/nitro-enclave.html
