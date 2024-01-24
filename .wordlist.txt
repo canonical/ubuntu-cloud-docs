@@ -228,3 +228,5 @@ DNS
 FQDN
 subnet
 workspaces
+eks
+kubelet

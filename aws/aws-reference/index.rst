@@ -7,3 +7,4 @@ Technical information about some specific topics:
    :maxdepth: 1
    
    ec2-credentials
+   eks-kubelet-snap
