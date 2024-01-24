@@ -6,7 +6,7 @@ Ubuntu images
 
 Canonical produces a wide variety of images to support numerous features found on AWS.
 
-* `Ubuntu server images`_ - These are customised Amazon Machine Images (AMIs) based on an AWS-optimised kernel. They include improved device drivers and relevant agents such as `EC2 Instance Connect` and `AWS Systems Manager`. The other images listed below are variations of this basic server image. 
+* `Ubuntu server images`_ - These are customised Amazon Machine Images (AMIs) based on an AWS-optimised kernel. They include improved device drivers and relevant agents such as `EC2 Instance Connect` and `AWS Systems Manager`.
 
 * `Minimal server images`_ - These have a reduced default package set with things like interactive usage tools omitted. They are designed for automated deployment at scale. They are much smaller, boot faster, and require fewer security updates over time due to the fewer installed packages.
 
