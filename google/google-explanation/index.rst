@@ -7,6 +7,6 @@ Discussion and clarification of some key topics:
    :maxdepth: 1
    
    canonical-offerings
-   how-gcp-pricing-works
    confidential-computing
    gce-image-retention-policy
+   how-gcp-pricing-works

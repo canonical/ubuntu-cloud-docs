@@ -23,7 +23,7 @@ Customised Ubuntu images
 For each Ubuntu release, we deliver multiple customised images to AWS. These images are based on the - AWS service being used, underlying architectures, required features, storage types and virtualisation types:
 
 * **AWS services** - EC2, EKS
-* **architectures** - AMD64, ARM64, Graviton
+* **architectures** - AMD64, ARM64 (Graviton)
 * **Ubuntu image types** - server, minimal
 * **storage types** - instance store, Elastic Block Store (EBS)
 * **virtualisation types** - Paravirtual (PV), Hardware Virtual Machine (HVM)
