@@ -10,7 +10,7 @@ Canonical produces a wide variety of images to support numerous features found o
 
 * `Minimal server images`_ - These have a reduced default package set with things like interactive usage tools omitted. They are designed for automated deployment at scale. They are much smaller, boot faster, and require fewer security updates over time due to the fewer installed packages.
 
-* `Ubuntu Pro images`_ - These are premium images that include certified components, hardening options, comprehensive open source security coverage for 10 years, kernel Livepatch service and optional `24/7 enterprise-grade support`_.
+* `Ubuntu Pro images`_ - These are premium images that include certified components, hardening options, comprehensive open source security coverage for 10 years, `kernel Livepatch service`_ and optional `24/7 enterprise-grade support`_.
 
 * `Ubuntu Pro FIPS images`_ - These are images built on Ubuntu Pro, but with the FIPS-certified modules pre-enabled so that they are used from the first boot of the image.
 
@@ -93,6 +93,8 @@ Charmed Kubeflow on AWS
 .. _`Ubuntu server images`: https://ubuntu.com/aws
 .. _`Minimal server images`: https://wiki.ubuntu.com/Minimal
 .. _`Ubuntu Pro images`: https://ubuntu.com/aws/pro
+.. _`kernel Livepatch service`: https://ubuntu.com/security/livepatch
+.. _`24/7 enterprise-grade support`: https://ubuntu.com/aws/support
 .. _`Ubuntu Pro FIPS images`: https://ubuntu.com/aws/fips
 .. _`real-time kernel`: https://ubuntu.com/real-time
 .. _`Ubuntu server EKS images`: https://cloud-images.ubuntu.com/docs/aws/eks/
@@ -108,5 +110,5 @@ Charmed Kubeflow on AWS
 .. _`AWS marketplace (MicroK8s)`: https://aws.amazon.com/marketplace/pp/prodview-iwqx66ka26u3w
 .. _`Charmed Kubeflow`: https://charmed-kubeflow.io/
 .. _`AWS marketplace (Charmed Kubeflow)`: https://aws.amazon.com/marketplace/search/results?searchTerms=Charmed+Kubeflow&CREATOR=565feec9-3d43-413e-9760-c651546613f2&filters=CREATOR
-.. _`24/7 enterprise-grade support`: https://ubuntu.com/aws/support
+
 
