@@ -53,14 +53,15 @@ Images for EC2 and EKS
 
       .. code-block::
 
-         aws ssm get-parameters --names /aws/service/canonical/ubuntu/eks/20.04/1.28/stable/current/amd64/hvm/ebs-gp2/ami-id
+         aws ssm get-parameters --names /aws/service/canonical/ubuntu/eks/22.04/1.29/stable/current/amd64/hvm/ebs-gp2/ami-id
 
       The format for the path is:
 
       .. code-block::
 
-         ubuntu/eks/20.04/$K8S_VERSION/stable/current/$ARCH/hvm/ebs-gp2/ami-id
+         ubuntu/eks/$RELEASE/$K8S_VERSION/stable/current/$ARCH/hvm/ebs-gp2/ami-id
 
+      * RELEASE: `jammy`, `22.04` (for EKS 1.29 or greater); `focal`, `20.04` (for EKS <1.29)
       * K8S_VERSION: one of the supported EKS versions (e.g. `1.28`)
       * ARCH: `amd64` or `arm64`
 
