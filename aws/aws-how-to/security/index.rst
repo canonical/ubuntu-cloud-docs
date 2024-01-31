@@ -4,4 +4,4 @@ Security features
 .. toctree::
    :maxdepth: 1
 
-   use-secureboot-and-vtpm
+   Use Secure Boot and TPM <use-secureboot-and-vtpm>

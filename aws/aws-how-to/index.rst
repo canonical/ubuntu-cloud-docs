@@ -3,24 +3,24 @@ How-to guides
 
 Launching and using Ubuntu instances:
 
-* :doc:`instances/launch-ubuntu-ec2-instance`
-* :doc:`instances/find-ubuntu-images`
-* :doc:`instances/build-pro-ami-using-packer`
-* :doc:`instances/build-cloudformation-templates`
-* :doc:`instances/launch-ubuntu-desktop`
-* :doc:`instances/automatically-update-ubuntu-instances` 
-* :doc:`instances/upgrade-from-focal-to-jammy`
-* :doc:`instances/install-nvidia-drivers`
+* :doc:`Launch instance using CLI <instances/launch-ubuntu-ec2-instance>`
+* :doc:`Find images <instances/find-ubuntu-images>`
+* :doc:`Build a Pro AMI <instances/build-pro-ami-using-packer>`
+* :doc:`Create CloudFormation templates <instances/build-cloudformation-templates>`
+* :doc:`Launch a desktop <instances/launch-ubuntu-desktop>`
+* :doc:`Configure automated updates <instances/automatically-update-ubuntu-instances>`
+* :doc:`Upgrade from Focal to Jammy <instances/upgrade-from-focal-to-jammy>`
+* :doc:`Install NVIDIA drivers <instances/install-nvidia-drivers>`
 
 Using Kubernetes: 
 
-* :doc:`kubernetes/deploy-ubuntu-pro-cluster`
-* :doc:`kubernetes/enable-gpus-on-eks`
-* :doc:`kubernetes/deploy-charmed-kubernetes-on-ubuntu-pro`
+* :doc:`Deploy a Pro cluster <kubernetes/deploy-ubuntu-pro-cluster>`
+* :doc:`Enable GPUs <kubernetes/enable-gpus-on-eks>`
+* :doc:`Deploy Charmed K8s on Pro <kubernetes/deploy-charmed-kubernetes-on-ubuntu-pro>`
 
 Security:
 
-* :doc:`security/use-secureboot-and-vtpm` 
+* :doc:`Use Secure Boot and TPM <security/use-secureboot-and-vtpm>`
 
 Contributions:
 

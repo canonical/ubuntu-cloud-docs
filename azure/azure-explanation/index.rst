@@ -6,10 +6,10 @@ Discussion and clarification of some key topics:
 .. toctree::
    :maxdepth: 1
    
-   understanding-ubuntu-on-azure
-   image-rentention-policy
-   ubuntu-on-aks-worker-nodes
-   confidential-computing
+   Ubuntu on Azure<understanding-ubuntu-on-azure>
+   Image retention policy<image-rentention-policy>
+   Ubuntu on AKS<ubuntu-on-aks-worker-nodes>
+   Security features<confidential-computing>
 
    
    

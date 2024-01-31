@@ -6,7 +6,7 @@ Discussion and clarification of some key topics:
 .. toctree::
    :maxdepth: 1
    
-   canonical-offerings
-   confidential-computing
-   gce-image-retention-policy
-   how-gcp-pricing-works
+   Canonical's offerings <canonical-offerings>
+   Confidential computing <confidential-computing>
+   Image retention policy <gce-image-retention-policy>
+   GCP pricing <how-gcp-pricing-works>

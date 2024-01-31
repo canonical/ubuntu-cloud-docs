@@ -14,7 +14,7 @@ Canonical produces a wide variety of images to support numerous features found o
 
 * `Ubuntu Pro FIPS images`_ - These are images built on Ubuntu Pro, but with the FIPS-certified modules pre-enabled so that they are used from the first boot of the image.
 
-* Ubuntu Pro with `real-time kernel`_ - These are Ubuntu Pro images with a real-time kernel in them.
+* Ubuntu Pro with `real-time kernel`_ - These are Ubuntu Pro images with a real-time kernel in them. They are used by enterprises in the automotive, industrial, and telecommunication sectors to unlock real-time compute and reduce development time by validating their code in a cloud environment.
 
 * `Ubuntu server EKS images`_ - These are optimised AMIs that run as worker nodes in Amazon's Elastic Kubernetes Service (EKS). They include the AWS-optimised kernel, a slimmed-down minimal version of Ubuntu, and are optimised for performance and security on EKS clusters. They also the Kubernetes worker node related softwares such as ``kubelet`` and ``kubectl``.
 
@@ -71,12 +71,12 @@ Appliances and paid offers
 Ubuntu workspaces
 ~~~~~~~~~~~~~~~~~
 
-`Ubuntu workspaces`_ are virtual Ubuntu desktops powered by AWS. Workspaces is a paid offering supported through `Amazon workspaces`_ and the image provided for Workspaces is basically an Ubuntu Desktop running on EC2, with Ubuntu Pro services (ESM, livepatch) enabled by default.
+`Ubuntu Workspaces`_ are virtual Ubuntu desktops powered by AWS. Workspaces is a paid offering supported through `Amazon Workspaces`_ and the image provided for workspaces is basically an Ubuntu Desktop running on EC2, with Ubuntu Pro services (ESM, livepatch) enabled by default.
 
 Anbox cloud appliance
 ~~~~~~~~~~~~~~~~~~~~~
 
-The `Anbox cloud`_ appliance runs Android containers in the cloud and is available at the `AWS marketplace (Anbox cloud)`_.
+The `Anbox cloud`_ appliance runs Android containers in the cloud, providing mobile development capabilities. It is available at the `AWS marketplace (Anbox cloud)`_.
 
 
 MicroK8s AWS appliance

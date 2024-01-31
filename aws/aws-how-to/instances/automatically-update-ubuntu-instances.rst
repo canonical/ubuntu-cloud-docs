@@ -1,5 +1,5 @@
-Automatically update Ubuntu instances using AWS SSM
-===================================================
+Set up automated updates of Ubuntu instances using AWS SSM
+==========================================================
 
 AWS Systems Manager (SSM) can be used to set up automated updates of your Ubuntu and Ubuntu Pro instances. This can be done by creating an automated maintenance window and registering an appropriate run command task for that window.
 
