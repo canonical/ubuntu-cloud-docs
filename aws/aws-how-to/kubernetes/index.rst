@@ -4,6 +4,6 @@ EKS and Charmed Kubernetes
 .. toctree::
    :maxdepth: 1
    
-   deploy-ubuntu-pro-cluster  
-   enable-gpus-on-eks
-   deploy-charmed-kubernetes-on-ubuntu-pro
+   Deploy a Pro cluster <deploy-ubuntu-pro-cluster>
+   Enable GPUs <enable-gpus-on-eks>
+   Deploy Charmed K8s on Pro <deploy-charmed-kubernetes-on-ubuntu-pro>

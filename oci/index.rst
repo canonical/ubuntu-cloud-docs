@@ -48,8 +48,8 @@ How-to guides
 
 Instructions for deploying Ubuntu Pro containers on Kubernetes and for creating a 'chiselled' Ubuntu base image are linked below:
 
-* :doc:`./oci-how-to/deploy-pro-container-on-pro-kubernetes-cluster`
-* :doc:`./oci-how-to/create-chiselled-ubuntu-image`
+* :doc:`Deploy Pro containers on K8s <./oci-how-to/deploy-pro-container-on-pro-kubernetes-cluster>`
+* :doc:`Create a chiselled image <./oci-how-to/create-chiselled-ubuntu-image>`
 
 
 ---------
@@ -69,8 +69,8 @@ community projects, contributions, suggestions, fixes and constructive feedback.
    :hidden:
    :maxdepth: 2
 
-   oci-how-to/deploy-pro-container-on-pro-kubernetes-cluster
-   oci-how-to/create-chiselled-ubuntu-image
+   Deploy Pro containers on K8s <oci-how-to/deploy-pro-container-on-pro-kubernetes-cluster>
+   Create a chiselled image <oci-how-to/create-chiselled-ubuntu-image>
    oci-how-to/contribute-to-these-docs
 
   

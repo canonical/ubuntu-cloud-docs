@@ -34,8 +34,8 @@ How-to guides
 -------------
 Instructions for some of the basic operations that you would perform on an Oracle Cloud virtual machine:
 
-* :doc:`./oracle-how-to/find-ubuntu-images`
-* :doc:`./oracle-how-to/use-bastion-to-access-VM`
+* :doc:`Find images <./oracle-how-to/find-ubuntu-images>`
+* :doc:`Use a bastion for access <./oracle-how-to/use-bastion-to-access-VM>`
 * :doc:`./oracle-how-to/upgrade-from-focal-to-jammy`
 * :doc:`./oracle-how-to/use-fde`
 
@@ -58,8 +58,8 @@ community projects, contributions, suggestions, fixes and constructive feedback.
    :hidden:
    :maxdepth: 2
 
-   oracle-how-to/find-ubuntu-images
-   oracle-how-to/use-bastion-to-access-VM
+   Find images <oracle-how-to/find-ubuntu-images>
+   Use a bastion for access <oracle-how-to/use-bastion-to-access-VM>
    oracle-how-to/upgrade-from-focal-to-jammy
    oracle-how-to/use-fde
    oracle-how-to/contribute-to-these-docs

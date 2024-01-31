@@ -28,7 +28,7 @@ Canonical provides optimised Ubuntu LTS images with a custom kernel, minimal siz
 
 How-to guide
 -------------
-Instructions for upgrading from Ubuntu 20.04 to 22.04 on virtual machines within IBM's Virtual Private Cloud (VPC): :doc:`./ibm-how-to/upgrade-from-focal-to-jammy`
+Instructions for upgrading from Ubuntu 20.04 to 22.04 on virtual machines within IBM's Virtual Private Cloud (VPC): :doc:`Upgrade from Focal to Jammy<./ibm-how-to/upgrade-from-focal-to-jammy>`
 
 
 ---------
@@ -36,22 +36,21 @@ Instructions for upgrading from Ubuntu 20.04 to 22.04 on virtual machines within
 Project and community
 ---------------------
 
-Ubuntu on IBM is a member of the Ubuntu family and the project warmly welcomes community projects, contributions, 
-suggestions, fixes and constructive feedback.
+Ubuntu on IBM is a member of the Ubuntu family and the project warmly welcomes community projects, contributions, suggestions, fixes and constructive feedback.
 
 	
 * `Code of conduct`_
 * `Get support`_
 * `Join our online chat`_
 * `Talk to us about Ubuntu on IBM`_
-* :doc:`ibm-how-to/contribute-to-these-docs`
+* :doc:`Upgrade from Focal to Jammy<ibm-how-to/contribute-to-these-docs>`
 
 
 .. toctree::
    :hidden:
    :maxdepth: 2
    
-   ibm-how-to/upgrade-from-focal-to-jammy
+   Upgrade from Focal to Jammy<ibm-how-to/upgrade-from-focal-to-jammy>
    ibm-how-to/contribute-to-these-docs
    
 .. _Code of conduct: https://ubuntu.com/community/ethos/code-of-conduct
