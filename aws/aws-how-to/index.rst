@@ -11,6 +11,7 @@ Launching and using Ubuntu instances:
 * :doc:`Configure automated updates <instances/automatically-update-ubuntu-instances>`
 * :doc:`Upgrade from Focal to Jammy <instances/upgrade-from-focal-to-jammy>`
 * :doc:`Install NVIDIA drivers <instances/install-nvidia-drivers>`
+* :doc:`Upgrade Ubuntu instances to Ubuntu Pro with AWS License Manager <instances/upgrade-to-ubuntupro-with-license-manager>`
 
 Using Kubernetes: 
 
