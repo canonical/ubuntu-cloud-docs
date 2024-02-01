@@ -39,12 +39,11 @@ Project and community
 Ubuntu on IBM is a member of the Ubuntu family and the project warmly welcomes community projects, contributions, suggestions, fixes and constructive feedback.
 
 	
-* `Code of conduct`_
 * `Get support`_
 * `Join our online chat`_
 * `Talk to us about Ubuntu on IBM`_
 * :doc:`Upgrade from Focal to Jammy<ibm-how-to/contribute-to-these-docs>`
-
+* `Code of conduct`_
 
 .. toctree::
    :hidden:
@@ -53,7 +52,7 @@ Ubuntu on IBM is a member of the Ubuntu family and the project warmly welcomes c
    Upgrade from Focal to Jammy<ibm-how-to/upgrade-from-focal-to-jammy>
    ibm-how-to/contribute-to-these-docs
    
-.. _Code of conduct: https://ubuntu.com/community/ethos/code-of-conduct
 .. _Get support: https://ubuntu.com/cloud/public-cloud
 .. _Join our online chat: https://discourse.ubuntu.com
 .. _Talk to us about Ubuntu on IBM: https://ubuntu.com/ibm#get-in-touch
+.. _Code of conduct: https://ubuntu.com/community/ethos/code-of-conduct

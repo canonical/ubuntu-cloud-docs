@@ -48,11 +48,10 @@ Project and community
 Ubuntu on Oracle is a member of the Ubuntu family and the project warmly welcomes 
 community projects, contributions, suggestions, fixes and constructive feedback.
 
-* `Code of conduct`_
 * `Get support`_
 * `Join our online chat`_
 * :doc:`oracle-how-to/contribute-to-these-docs`
-
+* `Code of conduct`_
 
 .. toctree::
    :hidden:
@@ -65,6 +64,6 @@ community projects, contributions, suggestions, fixes and constructive feedback.
    oracle-how-to/contribute-to-these-docs
 
 .. _Ubuntu release cycle: https://ubuntu.com/about/release-cycle
-.. _Code of conduct: https://ubuntu.com/community/ethos/code-of-conduct
 .. _Get support: https://ubuntu.com/cloud/public-cloud
 .. _Join our online chat: https://discourse.ubuntu.com
+.. _Code of conduct: https://ubuntu.com/community/ethos/code-of-conduct

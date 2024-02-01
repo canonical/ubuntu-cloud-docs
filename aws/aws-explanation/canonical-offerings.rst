@@ -4,11 +4,11 @@ Canonical's offerings on AWS
 Ubuntu images
 -------------
 
-Canonical produces a wide variety of images to support numerous features found on AWS.
+Canonical produces a wide variety of Ubuntu images to support numerous features found on AWS.
 
-* `Ubuntu server images`_ - These are customised Amazon Machine Images (AMIs) based on an AWS-optimised kernel. They include improved device drivers and relevant agents such as `EC2 Instance Connect` and `AWS Systems Manager`.
+* `Server images`_ - These are general-purpose customised Amazon Machine Images (AMIs) based on an AWS-optimised kernel. They include improved device drivers and relevant agents such as `EC2 Instance Connect` and `AWS Systems Manager`.
 
-* `Minimal server images`_ - These have a reduced default package set with things like interactive usage tools omitted. They are designed for automated deployment at scale. They are much smaller, boot faster, and require fewer security updates over time due to the fewer installed packages.
+* `Minimal server images`_ - These are designed for automated deployment at scale and have a reduced default package set. Things like interactive usage tools are omitted. They are much smaller, boot faster, and require fewer security updates over time due to the fewer installed packages.
 
 * `Ubuntu Pro images`_ - These are premium images that include certified components, hardening options, comprehensive open source security coverage for 10 years, `kernel Livepatch service`_ and optional `24/7 enterprise-grade support`_.
 
@@ -65,8 +65,8 @@ The optimised ``linux-aws`` kernel used in most of the available offerings enabl
 * `AWS Graviton`_ - The arm64 version of the kernel includes several patches to take advantage of the unique features of AWS Graviton native CPUs.
 
 
-Appliances and paid offers
---------------------------
+Appliances and paid-for offerings
+---------------------------------
 
 Ubuntu workspaces
 ~~~~~~~~~~~~~~~~~
@@ -90,7 +90,7 @@ Charmed Kubeflow on AWS
 
 `Charmed Kubeflow`_ is an open-source, end-to-end, production-ready MLOps platform on top of cloud native technologies. It is available as an appliance at the `AWS marketplace (Charmed Kubeflow)`_.
 
-.. _`Ubuntu server images`: https://ubuntu.com/aws
+.. _`Server images`: https://ubuntu.com/aws
 .. _`Minimal server images`: https://wiki.ubuntu.com/Minimal
 .. _`Ubuntu Pro images`: https://ubuntu.com/aws/pro
 .. _`kernel Livepatch service`: https://ubuntu.com/security/livepatch

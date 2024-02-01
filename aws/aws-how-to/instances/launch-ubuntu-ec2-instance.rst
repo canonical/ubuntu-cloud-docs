@@ -22,7 +22,7 @@ SSH key pairs are needed to log in to an EC2 instance from your local machine. T
 Create access keys
 ~~~~~~~~~~~~~~~~~~
 
-Access keys have to be created and set up to access the various AWS services and resources. Create an access key using the :guilabel:`Access keys` tab on the *Security credentials* page of a logged in user. This page is accessible from the drop-down menu under the user's name.
+Access keys have to be created and set up to access the various AWS services and resources. Create an access key using the :guilabel:`Access keys` tab on the *Security credentials* page (account details menu > *Security credentials*) of a logged in user.
 
 #. Select :guilabel:`Create access key`
 #. Choose :guilabel:`Command Line Interface (CLI)` as the *Use case*, provide the required confirmation by ticking the check-box and select :guilabel:`Next`

@@ -44,11 +44,11 @@ Project and community
 Ubuntu on Azure is a member of the Ubuntu family and the project warmly welcomes community projects, 
 contributions, suggestions, fixes and constructive feedback.
 
-* `Code of conduct`_
 * `Get support`_
 * `Join our online chat`_
 * `Talk to us about Ubuntu on Azure`_
 * :doc:`azure-how-to/contributions/contribute-to-these-docs`
+* `Code of conduct`_
 
 
 .. toctree::
@@ -58,10 +58,12 @@ contributions, suggestions, fixes and constructive feedback.
    azure-how-to/index
    azure-explanation/index
 
-.. _Code of conduct: https://ubuntu.com/community/ethos/code-of-conduct
+
+.. _SQL Server on Ubuntu Pro: https://azuremarketplace.microsoft.com/en-us/marketplace/apps/microsoftsqlserver.sql2019-ubuntupro2004?tab=Overview
+.. _AMD-based Confidential VMs: https://techcommunity.microsoft.com/t5/azure-confidential-computing/azure-confidential-vms-dcasv5-ecasv5-using-amd-sev-snp/ba-p/2993530
+.. _Chiselled .Net images: https://devblogs.microsoft.com/dotnet/dotnet-6-is-now-in-ubuntu-2204
 .. _Get support: https://ubuntu.com/cloud/public-cloud
 .. _Join our online chat: https://discourse.ubuntu.com
 .. _Talk to us about Ubuntu on Azure: https://ubuntu.com/azure#get-in-touch
-.. _Chiselled .Net images: https://devblogs.microsoft.com/dotnet/dotnet-6-is-now-in-ubuntu-2204
-.. _SQL Server on Ubuntu Pro: https://azuremarketplace.microsoft.com/en-us/marketplace/apps/microsoftsqlserver.sql2019-ubuntupro2004?tab=Overview
-.. _AMD-based Confidential VMs: https://techcommunity.microsoft.com/t5/azure-confidential-computing/azure-confidential-vms-dcasv5-ecasv5-using-amd-sev-snp/ba-p/2993530
+.. _Code of conduct: https://ubuntu.com/community/ethos/code-of-conduct
+
