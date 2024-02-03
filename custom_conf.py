@@ -130,7 +130,12 @@ slug = ""
 # (see https://docs.readthedocs.io/en/stable/guides/redirects.html).
 # NOTE: If this variable is not defined, set to None, or the dictionary is empty,
 # the sphinx_reredirects extension will be disabled.
-redirects = {}
+redirects = {
+    "oci/oci-how-to/create-chiselled-ubuntu-image.html":
+        "https://canonical-oci.readthedocs-hosted.com/en/latest/oci-how-to/create-chiselled-ubuntu-image/",
+    "oci/oci-how-to/deploy-pro-container-on-pro-kubernetes-cluster.html":
+        "https://canonical-oci.readthedocs-hosted.com/en/latest/oci-how-to/deploy-pro-container-on-pro-kubernetes-cluster/"
+}
 
 ############################################################
 ### Link checker exceptions
