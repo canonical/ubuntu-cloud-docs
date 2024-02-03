@@ -41,8 +41,9 @@ Ubuntu on IBM is a member of the Ubuntu family and the project warmly welcomes c
 	
 * `Get support`_
 * `Join our online chat`_
+* `Discuss on IRC`_
 * `Talk to us about Ubuntu on IBM`_
-* :doc:`Upgrade from Focal to Jammy<ibm-how-to/contribute-to-these-docs>`
+* :doc:`ibm-how-to/contribute-to-these-docs`
 * `Code of conduct`_
 
 .. toctree::
@@ -53,6 +54,8 @@ Ubuntu on IBM is a member of the Ubuntu family and the project warmly welcomes c
    ibm-how-to/contribute-to-these-docs
    
 .. _Get support: https://ubuntu.com/cloud/public-cloud
-.. _Join our online chat: https://discourse.ubuntu.com
+.. _Join our online chat: https://discourse.ubuntu.com/c/public-cloud/176
+.. _`Discuss on IRC`: https://web.libera.chat/#ubuntu-cloud
 .. _Talk to us about Ubuntu on IBM: https://ubuntu.com/ibm#get-in-touch
 .. _Code of conduct: https://ubuntu.com/community/ethos/code-of-conduct
+

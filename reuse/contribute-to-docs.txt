@@ -16,7 +16,7 @@ We are always looking for ways to improve our docs, so we appreciate your contri
 Minor changes
 -------------
 
-If you've found a problem that can be fixed with a small change, you can use the pencil icon at the top of the relevant page to edit it on GitHub. When you are done with your edits, select :guilabel:`Commit changes...` on the top right. This will help you create a new branch and start a pull request (PR). Use :guilabel:`Propose changes` to submit the PR. We will review it and merge the changes.
+If you've found a problem that can be fixed with a small change, you can use the *Edit this page on GitHub* link at the bottom of the relevant page to edit it directly on GitHub. When you are done with your edits, select :guilabel:`Commit changes...` on the top right. This will help you create a new branch and start a pull request (PR). Use :guilabel:`Propose changes` to submit the PR. We will review it and merge the changes.
 
 
 Suggestions and questions
@@ -28,7 +28,7 @@ Use the :guilabel:`Give feedback` button at the top of any page to create a GitH
 New content
 -----------
 
-While contributing new content, it is easier to work with the docs on your local machine. You can submit a PR after all the checks have passed and things looks satisfactory.
+While contributing new content, it is easier to work with the docs on your local machine. You can submit a PR after all the checks have passed and things looks satisfactory. You'll need ``make`` and ``python3`` installed on your system.
 
 Download and install the docs
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -39,13 +39,13 @@ If you are working with these docs for the first time, you'll need to create a f
 
 	make install
 
-This creates a virtual environment and installs all the dependencies specified in ``.sphinx/requirements.txt``. You only have to do this step once, and can skip it the next time you want to contribute.
+This creates a virtual environment and installs all the required dependencies. You only have to do this step once, and can skip it the next time you want to contribute.
 
 
 Build and serve the docs
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-Use the ``make run`` command to build and serve the docs at `127.0.0.1:8000 <http://127.0.0.1:8000>`_ or equivalently at `localhost:8000 <http://localhost:8000>`_. This gives you a live preview of the changes that you make (and save), without the need for a rebuild:
+Use the ``make run`` command to build and serve the docs at ``http://127.0.0.1:8000`` or equivalently at ``http://localhost:8000``. This gives you a live preview of the changes that you make (and save), without the need for a rebuild:
 
 
 End: How to contribute
@@ -60,8 +60,7 @@ Start: How to contribute links
 .. _`reStructuredText`: https://canonical-documentation-with-sphinx-and-readthedocscom.readthedocs-hosted.com/style-guide/
 .. _`Canonical style guide`: https://docs.ubuntu.com/styleguide/en
 .. _`Sphinx`: https://www.sphinx-doc.org/en/master/
-.. _`Read the Docs`: https://readthedocs.com
-
+.. _`Read the Docs`: https://about.readthedocs.com/?ref=readthedocs.com
 
 
 End: How to contribute links

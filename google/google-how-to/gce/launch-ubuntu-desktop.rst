@@ -81,7 +81,7 @@ Connect to your Ubuntu desktop
 
 On your local machine, go to the `Chrome Remote Desktop access`_ page, and you'll see your VM under `Remote devices` on the `Remote Access` tab. Select the VM and you will be prompted to input the 6-digit pin that you created in the previous step.
 
-You might see a window with messages similar to "This session logs you into Ubuntu". Select :guilabel:`OK` to close the window. If you see a page that says "Authentication is required to create a color managed device", select :guilabel:`Cancel` to ignore it.
+You might see a window with messages similar to "This session logs you into Ubuntu". Select :guilabel:`OK` to close the window. If you see a page that says "Authentication is required to create a colour managed device", select :guilabel:`Cancel` to ignore it.
 
 You might also see a setup screen that you can follow through by selecting :guilabel:`Start Setup` > :guilabel:`Next` > :guilabel:`Next` > :guilabel:`Start Using Ubuntu`
 

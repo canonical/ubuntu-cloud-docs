@@ -22,7 +22,7 @@ You can find the latest three image builds using either the web console or the C
 
       .. image:: find-ubuntu-images-images/1_latest_ubuntu_image.png
     
-      The latest build is always recommended as it'll have the most recent package updates and security vulnerability fixes. However, if you need a specific build, you can either choose one of the remaining two builds or refer to the :ref:`Find older Ubuntu images` section ahead.
+      The latest build is always recommended as it'll have the most recent package updates and security vulnerability fixes. However, if you need a specific build, you can either choose one of the remaining two builds or refer to the :ref:`Find older Ubuntu images<old_images>` section ahead.
 
 
     .. group-tab:: CLI
@@ -128,6 +128,7 @@ You can find the latest three image builds using either the web console or the C
 
       These are the minimal parameters that you'll need to provide with the ``instance launch`` command. For further details about this command and all of its options, refer to the `Oracle CLI documentation`_ for launching a Linux instance.
 
+.. _old_images:
 
 Find older Ubuntu images
 ------------------------
