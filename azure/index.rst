@@ -46,6 +46,7 @@ contributions, suggestions, fixes and constructive feedback.
 
 * `Get support`_
 * `Join our online chat`_
+* `Discuss on IRC`_
 * `Talk to us about Ubuntu on Azure`_
 * :doc:`azure-how-to/contributions/contribute-to-these-docs`
 * `Code of conduct`_
@@ -63,7 +64,7 @@ contributions, suggestions, fixes and constructive feedback.
 .. _AMD-based Confidential VMs: https://techcommunity.microsoft.com/t5/azure-confidential-computing/azure-confidential-vms-dcasv5-ecasv5-using-amd-sev-snp/ba-p/2993530
 .. _Chiselled .Net images: https://devblogs.microsoft.com/dotnet/dotnet-6-is-now-in-ubuntu-2204
 .. _Get support: https://ubuntu.com/cloud/public-cloud
-.. _Join our online chat: https://discourse.ubuntu.com
+.. _Join our online chat: https://discourse.ubuntu.com/c/public-cloud/azure/178
+.. _`Discuss on IRC`: https://web.libera.chat/#ubuntu-cloud
 .. _Talk to us about Ubuntu on Azure: https://ubuntu.com/azure#get-in-touch
 .. _Code of conduct: https://ubuntu.com/community/ethos/code-of-conduct
-

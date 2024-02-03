@@ -152,7 +152,7 @@ A very basic CloudFormation template for Ubuntu LTS could look like:
 Further references
 ------------------
 
-* :ref:`Find Ubuntu images on AWS`
+* :doc:`find-ubuntu-images`
 * `AWS reference for SSM based querying of latest AMI IDs`_
 * `AWS reference for integrating CloudFormation with SSM parameter store`_
 

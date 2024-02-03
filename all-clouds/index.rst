@@ -42,11 +42,13 @@ Project and community
 
 Ubuntu public cloud is open source project that warmly welcomes community projects, contributions, suggestions, fixes and constructive feedback.
 
-* `Code of conduct`_
+
 * `Get support`_
 * `Join our online chat`_
+* `Discuss on IRC`_
 * `Start using Ubuntu today`_
 * :doc:`all-clouds-how-to/contribute-to-these-docs`
+* `Code of conduct`_
 
 
 .. toctree::
@@ -56,10 +58,10 @@ Ubuntu public cloud is open source project that warmly welcomes community projec
    all-clouds-explanation/release-types
    all-clouds-explanation/confidential-computing
    all-clouds-how-to/contribute-to-these-docs
-   
+      
 
-   
-.. _Code of conduct: https://ubuntu.com/community/ethos/code-of-conduct
 .. _Get support: https://ubuntu.com/cloud/public-cloud
-.. _Join our online chat: https://discourse.ubuntu.com
+.. _Join our online chat: https://discourse.ubuntu.com/c/public-cloud/176
+.. _`Discuss on IRC`: https://web.libera.chat/#ubuntu-cloud
 .. _Start using Ubuntu today: https://ubuntu.com/download/cloud
+.. _Code of conduct: https://ubuntu.com/community/ethos/code-of-conduct
