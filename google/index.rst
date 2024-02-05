@@ -15,6 +15,22 @@ and features needed to run specific workloads.
 
 ---------
 
+In this documentation
+---------------------
+
+..  grid:: 1 1 2 2
+
+   ..  grid-item:: :doc:`How-to guides <google-how-to/index>`
+
+      **Step-by-step guides** covering key operations and common tasks
+
+   .. grid-item:: :doc:`Explanation <google-explanation/index>`
+
+      **Discussion and clarification** of key topics, such as confidential computing and our image retention policy.
+
+
+---------
+
 Project and community
 ---------------------
 

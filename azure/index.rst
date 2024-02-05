@@ -13,6 +13,22 @@ and features needed to run specific workloads.
    :start-after: Start: Product need and user
    :end-before: End: Product need and user
 
+
+---------
+
+In this documentation
+---------------------
+
+..  grid:: 1 1 2 2
+
+   ..  grid-item:: :doc:`How-to guides <azure-how-to/index>`
+
+      **Step-by-step guides** covering key operations and common tasks
+
+   .. grid-item:: :doc:`Explanation <azure-explanation/index>`
+
+      **Discussion and clarification** of key topics, such as security features and our image retention policy.
+
 ---------
 
 Canonical's offerings

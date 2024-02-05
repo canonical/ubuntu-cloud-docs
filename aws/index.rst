@@ -15,6 +15,29 @@ and features needed to run specific workloads.
    :end-before: End: Product need and user
 
 
+---------
+
+In this documentation
+---------------------
+
+..  grid:: 1 1 1 1
+
+   ..  grid-item:: :doc:`How-to guides <aws-how-to/index>`
+
+      **Step-by-step guides** covering key operations and common tasks
+
+.. grid:: 1 1 2 2
+   :reverse:
+
+   .. grid-item:: :doc:`Reference <aws-reference/index>`
+
+      **Technical information** - specifications such as EC2 credentials, and EKS snaps.
+
+   .. grid-item:: :doc:`Explanation <aws-explanation/index>`
+
+      **Discussion and clarification** of key topics, such as our image retention policy.
+
+
 ----------
 
 Customised Ubuntu images
