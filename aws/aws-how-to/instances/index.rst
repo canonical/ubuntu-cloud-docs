@@ -12,3 +12,4 @@ EC2 instances
    Configure automated updates <automatically-update-ubuntu-instances>
    Upgrade from Focal to Jammy <upgrade-from-focal-to-jammy>
    Install NVIDIA drivers <install-nvidia-drivers>
+   Upgrade Ubuntu instances to Ubuntu Pro with AWS License Manager <upgrade-to-ubuntupro-with-license-manager>
