@@ -72,8 +72,6 @@ redirects = {
         "../instances/launch-ubuntu-desktop/",
     "aws-how-to/upgrade-from-focal-to-jammy":
         "../instances/upgrade-from-focal-to-jammy/",
-    "aws-how-to/upgrade-to-ubuntupro-with-license-manager":
-        "../instances/upgrade-to-ubuntupro-with-license-manager/",
 
     "aws-how-to/deploy-charmed-kubernetes-on-ubuntu-pro":
         "../kubernetes/deploy-charmed-kubernetes-on-ubuntu-pro/",

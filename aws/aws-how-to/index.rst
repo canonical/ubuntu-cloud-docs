@@ -5,13 +5,14 @@ Launching and using Ubuntu instances:
 
 * :doc:`Launch instance using CLI <instances/launch-ubuntu-ec2-instance>`
 * :doc:`Find images <instances/find-ubuntu-images>`
+* :doc:`In-place upgrade to Ubuntu Pro <instances/upgrade-to-ubuntupro-with-license-manager>`
 * :doc:`Build a Pro AMI <instances/build-pro-ami-using-packer>`
 * :doc:`Create CloudFormation templates <instances/build-cloudformation-templates>`
 * :doc:`Launch a desktop <instances/launch-ubuntu-desktop>`
 * :doc:`Configure automated updates <instances/automatically-update-ubuntu-instances>`
 * :doc:`Upgrade from Focal to Jammy <instances/upgrade-from-focal-to-jammy>`
 * :doc:`Install NVIDIA drivers <instances/install-nvidia-drivers>`
-* :doc:`Upgrade Ubuntu instances to Ubuntu Pro with AWS License Manager <instances/upgrade-to-ubuntupro-with-license-manager>`
+
 
 Using Kubernetes: 
 
