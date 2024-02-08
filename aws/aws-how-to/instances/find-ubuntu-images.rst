@@ -7,6 +7,8 @@ On AWS, cloud images are referred to as Amazon Machine Images (AMIs). Canonical 
 * `Standard` and `minimal` server images are available for both `amd64` and `arm64`.
 * `Daily` (untested) and `release` versions of the images are published regularly.
 
+All images mentioned below are also available in `AWS Outposts <https://aws.amazon.com/outposts/>`_.
+
 
 Finding images with SSM
 -----------------------
