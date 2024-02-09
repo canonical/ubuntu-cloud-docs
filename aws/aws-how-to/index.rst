@@ -5,7 +5,7 @@ Launching and using Ubuntu instances:
 
 * :doc:`Launch instance using CLI <instances/launch-ubuntu-ec2-instance>`
 * :doc:`Find images <instances/find-ubuntu-images>`
-* :doc:`In-place upgrade to Ubuntu Pro <instances/upgrade-to-ubuntupro-with-license-manager>`
+* :doc:`In-place upgrade to Ubuntu Pro <instances/upgrade-in-place-from-lts-to-pro>`
 * :doc:`Build a Pro AMI <instances/build-pro-ami-using-packer>`
 * :doc:`Create CloudFormation templates <instances/build-cloudformation-templates>`
 * :doc:`Launch a desktop <instances/launch-ubuntu-desktop>`

@@ -24,7 +24,10 @@ Requirements
     
     sudo apt install ubuntu-advantage-tools
 
+* If you have removed ``cloud-init`` from your instance for any reason, you'll need to reinstall it for the Pro commands to work correctly.
+
 * To give the required network access to your instances, refer to the Ubuntu Pro related `network requirements`_ and `proxy configuration`_
+
 
 
 Upgrade to Ubuntu Pro
