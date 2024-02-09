@@ -63,7 +63,7 @@ The steps needed for deploying the cluster depend on whether you need to enable 
     
     .. group-tab:: With FIPS
     
-        When enabling FIPS, a reboot of the underlying node is required. If this reboot is done after the cluster is created, in rare cases, it might result in the node being flagged as defective (`troubleshooting options`_). For this reason, the most reliable way to deploy an Ubuntu Pro EKS cluster is to build a custom Ubuntu Pro AMI (with `Packer`_) and use it during cluster creation until this `issue`_ is resolved.
+        When enabling FIPS, the most reliable way to deploy an Ubuntu Pro EKS cluster is to build a custom Ubuntu Pro AMI (with `Packer`_) and use it during cluster creation.
 
 
         **Caveats:**
