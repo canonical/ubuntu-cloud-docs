@@ -1,13 +1,32 @@
 Ubuntu on AKS worker nodes
 ==========================
 
-Azure Kubernetes Service (AKS) worker nodes use Ubuntu 22.04 LTS as their default operating system. The use of 22.04 LTS is recent. The earlier default was Ubuntu 18.04 LTS which is now out of standard support. So if you still run old AKS worker nodes with old versions of Kubernetes, you need to upgrade as Ubuntu 18.04 LTS no longer receives security fixes.
+Overview
+--------
 
-The Ubuntu images used by the AKS worker nodes are not directly published by Canonical. They are published by the AKS team at Azure, after applying a configuration layer on a base image provided by Canonical. `AgentBaker`_ is the open source customisation tool used for doing this. Canonical works closely with the AKS team on this.
+Ubuntu 22.04 LTS is the default operating system for worker nodes in the Azure Kubernetes Service (AKS), encompassing both system node pools and user node pools. With the `end of standard support for Ubuntu 18.04 LTS`_, which no longer receives security fixes, AKS deployments on older Kubernetes versions must upgrade node pools to maintain security compliance.
 
-.. important::
+Image customisation
+-------------------
 
-    Unattended upgrades are disabled on AKS worker nodes. The service 'unattended-upgrades', that is used to automatically upgrade Ubuntu for security-related fixes, is disabled on AKS worker nodes.
+* AKS worker nodes use Ubuntu images provided by Canonical and customised by the Azure AKS team.
+* Customisation is performed using the open-source tool `AgentBaker`_.
+* Canonical closely collaborates with the AKS team to ensure that the images are appropriately configured for optimal performance on the Azure platform and all updates are tested by AKS to reduce the risks of regressions.
+
+Auto-upgrade channels
+---------------------
+
+AKS has instituted several auto-upgrade channels to provide timely OS-level security updates to worker nodes. It is important to note that these updates operate independently of `Kubernetes cluster version upgrades`_.
+
+Users can select from the following auto-upgrade channel options: ``None``, ``Unmanaged``, ``SecurityPatch``, ``NodeImage``. For detailed descriptions and implications of each auto-upgrade channel, please consult the `official AKS documentation for auto-upgrade`_.
 
 
+.. note::
+
+     Clusters without a specified auto-upgrade channel automatically fall under the ``None`` category, disabling 'unattended-upgrades'. Administrators are encouraged to modify this setting to an option that aligns with their security needs and maintenance preferences.
+
+
+.. _`end of standard support for Ubuntu 18.04 LTS`: https://ubuntu.com/blog/18-04-end-of-standard-support
 .. _`AgentBaker`: https://github.com/Azure/AgentBaker
+.. _`Kubernetes cluster version upgrades`: https://learn.microsoft.com/en-us/azure/aks/auto-upgrade-cluster
+.. _`official AKS documentation for auto-upgrade`: https://learn.microsoft.com/en-us/azure/aks/auto-upgrade-node-os-image  
