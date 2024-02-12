@@ -9,7 +9,7 @@ These how-to guides relate to launching and using Ubuntu-based EC2 instances. Th
    Launch instance using CLI <launch-ubuntu-ec2-instance>
    Find images <find-ubuntu-images>
    In-place upgrade to Ubuntu Pro <upgrade-in-place-from-lts-to-pro>
-   Build a Pro AMI <build-pro-ami-using-packer>
+   Build an Ubuntu Pro AMI <build-pro-ami-using-packer>
    Create CloudFormation templates <build-cloudformation-templates>
    Launch a desktop <launch-ubuntu-desktop>
    Configure automated updates <automatically-update-ubuntu-instances>

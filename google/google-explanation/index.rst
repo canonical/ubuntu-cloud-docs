@@ -9,4 +9,3 @@ Discussion and clarification of some key topics:
    Canonical's offerings <canonical-offerings>
    Confidential computing <confidential-computing>
    Image retention policy <gce-image-retention-policy>
-   GCP pricing <how-gcp-pricing-works>
