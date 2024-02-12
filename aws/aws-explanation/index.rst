@@ -8,4 +8,3 @@ Discussion and clarification of some key topics:
    
    Canonical's offerings<canonical-offerings>
    EKS image retention policy<eks-image-retention-policy>
-   AWS pricing<how-aws-pricing-works>
