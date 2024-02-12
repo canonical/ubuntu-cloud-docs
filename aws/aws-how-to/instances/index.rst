@@ -1,5 +1,7 @@
-EC2 instances
-=============
+Using EC2
+=========
+
+These how-to guides relate to launching and using Ubuntu-based EC2 instances. They include instructions for performing tasks such as launching an instance, finding the right image to use, creating an AMI, installing custom drivers, doing upgrades and setting up automated updates.
 
 .. toctree::
    :maxdepth: 1

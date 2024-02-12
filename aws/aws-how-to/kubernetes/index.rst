@@ -1,5 +1,7 @@
-EKS and Charmed Kubernetes
-==========================
+Using EKS
+=========
+
+These how-to guides relate to using some of our products such as Ubuntu Pro and Charmed Kubernetes on Amazon's EKS service. 
 
 .. toctree::
    :maxdepth: 1

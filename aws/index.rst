@@ -67,9 +67,10 @@ suggestions, fixes and constructive feedback.
 * `Join our online chat`_
 * `Discuss on IRC`_
 * `Talk to us about Ubuntu on AWS`_
-* :doc:`aws-how-to/contributions/contribute-to-these-docs`
+* :doc:`aws-how-to/contribute-to-these-docs`
 * `Code of conduct`_
 
+If none of the above options are suitable for you, and you still want to get in touch, send us an email: aws@canonical.com.
 
 .. toctree::
    :hidden:
