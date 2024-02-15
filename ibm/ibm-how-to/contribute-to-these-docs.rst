@@ -23,7 +23,7 @@ Before opening a PR, run the following checks and also ensure that the documenta
 	PROJECT=ibm make linkcheck
 	PROJECT=ibm make woke
 
-If you need to add new words to the allowed list of words, include them in ``.wordlist.txt``.
+If you need to add new words to the allowed list of words, include them in ``.custom_wordlist.txt``.
 
 Once all the edits are done, commit the changes and push it to your fork. From the GitHub GUI of your fork, select the commit and open a PR for it.
 
