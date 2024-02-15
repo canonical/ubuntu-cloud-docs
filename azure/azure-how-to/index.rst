@@ -5,6 +5,7 @@ Launching and using Ubuntu instances:
 
 * :doc:`Install Azure CLI <instances/install-azure-cli>`
 * :doc:`Find images <instances/find-ubuntu-images>`
+* :doc:`Launch images <instances/launch-ubuntu-images>`
 * :doc:`Get Ubuntu Pro <instances/get-ubuntu-pro>`
 * :doc:`Create a Pro golden image <instances/create-pro-fips-golden-image>`
 * :doc:`Upgrade from Focal to Jammy <instances/upgrade-from-focal-to-jammy>`

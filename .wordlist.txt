@@ -46,3 +46,9 @@ UI
 UUID
 VM
 YAML
+az
+vm
+URN
+URNs
+sku
+skus
