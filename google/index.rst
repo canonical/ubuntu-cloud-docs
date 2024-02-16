@@ -42,7 +42,7 @@ suggestions, fixes and constructive feedback.
 * `Join our online chat`_
 * `Discuss on IRC`_
 * `Talk to us about Ubuntu on Google cloud`_
-* :doc:`google-how-to/contributions/contribute-to-these-docs`
+* :doc:`google-how-to/contribute-to-these-docs`
 * `Code of conduct`_
 
 .. toctree::

@@ -1,7 +1,12 @@
 How-to guides
 =============
 
-Launching and using GCE instances:
+These guides provide instructions for performing different operations related to our products on Google Cloud.
+
+GCE - Launching and using Ubuntu instances
+------------------------------------------
+
+While using Ubuntu on GCP, you'll need to perform tasks such as finding the right image to use, launching different instance types, working with Ubuntu Pro and doing upgrades.
 
 * :doc:`Find images <gce/find-ubuntu-images>`
 * :doc:`Create instances <gce/create-different-instance-types>`
@@ -14,15 +19,19 @@ Launching and using GCE instances:
 * :doc:`Check CVE status <gce/check-cve-on-instance>`
 * :doc:`Set hostname <gce/set-hostname-using-cloudinit>`
 
+Using Kubernetes
+----------------
 
-Using Kubernetes: 
+If you want to use Ubuntu Pro on your Kubernetes cluster, you can deploy it on GCE using these instructions.
 
 * :doc:`Deploy Kubernetes on GCE <gke/deploy-kubernetes-with-ubuntu-pro>`
 
-Contributions
+Contributing to the docs
+------------------------
 
-* :doc:`contributions/contribute-to-these-docs`
-  
+If you come across any problems with this documentation and you want to help with corrections, suggestions or new content, here's how you can do that:
+
+* :doc:`contribute-to-these-docs`
    
 .. toctree::
    :hidden:
@@ -30,5 +39,6 @@ Contributions
    
    gce/index    
    gke/index
-   contributions/index
+   contribute-to-these-docs
+ 
   

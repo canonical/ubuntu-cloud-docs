@@ -1,6 +1,8 @@
 AKS and Kubeflow
 ================
 
+These how-to guides relate to using Kubeflow on AKS. They provide instructions for installing Kubeflow on AKS and for deploying Kubeflow pipelines with spot instances.
+
 .. toctree::
    :maxdepth: 1
    

@@ -64,7 +64,7 @@ contributions, suggestions, fixes and constructive feedback.
 * `Join our online chat`_
 * `Discuss on IRC`_
 * `Talk to us about Ubuntu on Azure`_
-* :doc:`azure-how-to/contributions/contribute-to-these-docs`
+* :doc:`azure-how-to/contribute-to-these-docs`
 * `Code of conduct`_
 
 
