@@ -1,5 +1,7 @@
-GKE and Kubernetes
-==================
+Using Kubernetes
+================
+
+This how-to guide gives you instructions for using Ubuntu Pro on your Kubernetes cluster.
 
 .. toctree::
    :maxdepth: 1
