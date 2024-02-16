@@ -19,8 +19,8 @@ While using Ubuntu on GCP, you'll need to perform tasks such as finding the righ
 * :doc:`Check CVE status <gce/check-cve-on-instance>`
 * :doc:`Set hostname <gce/set-hostname-using-cloudinit>`
 
-Using Kubernetes
-----------------
+GKE and Kubernetes
+------------------
 
 If you want to use Ubuntu Pro on your Kubernetes cluster, you can deploy it on GCE using these instructions.
 
