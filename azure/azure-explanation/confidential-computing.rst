@@ -3,16 +3,16 @@ Security features on Azure
 
 Azure provides two types of security features:
 
-* `Trusted launch <https://learn.microsoft.com/en-us/azure/virtual-machines/trusted-launch>`_ which is a set of features including virtual Trusted Platform Module (vTPM) and `secure boot <https://wiki.ubuntu.com/UEFI/SecureBoot>`_
+* `Trusted Launch <https://learn.microsoft.com/en-us/azure/virtual-machines/trusted-launch>`_ which is a set of features including virtual Trusted Platform Module (vTPM) and `secure boot <https://wiki.ubuntu.com/UEFI/SecureBoot>`_
 * `Confidential virtual machine <https://learn.microsoft.com/en-us/azure/confidential-computing/confidential-vm-overview>`_ with support for `AMD Secure Encrypted Virtualisation-Secure Nested Paging (SEV-SNP) <https://www.amd.com/system/files/TechDocs/SEV-SNP-strengthening-vm-isolation-with-integrity-protection-and-more.pdf>`_, along with `measured boot <https://learn.microsoft.com/en-us/azure/security/fundamentals/measured-boot-host-attestation>`_ using a vTPM
+
+See :ref:`Launch Ubuntu Images on Azure` on how to launch Ubuntu images with Trusted Launch and
+Confidential Virtual Machine on Azure.
 
 Trusted launch
 --------------
 
 All Ubuntu images from 20.04 (Focal Fossa) support trusted launch and secure boot on Hyper-V Gen2 instances. 
-To start an Ubuntu instance with vTPM and secure boot enabled, use the following flags from the Azure CLI::
-        
-   --security-type TrustedLaunch --enable-secure-boot true --enable-vtpm
 
 Confidential VM
 ---------------
@@ -29,14 +29,10 @@ In short, a confidential VM is a combination of two features:
 
 It's important to note that memory encryption is always enabled with a confidential VM, but FDE is optional and requires explicit activation after the VM is provisioned.
 
-
 Using Ubuntu on confidential VMs
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Confidential VMs require the use of special instance sizes and a special version of Ubuntu.
+Currently there are two Ubuntu images which support Confidential VMs:
 
-* A list of instance sizes that can be used for confidential VMs is given in `Azure's documentation <https://learn.microsoft.com/en-us/azure/confidential-computing/confidential-vm-overview>`_ 
-* Only `this specific offer of Ubuntu <https://azuremarketplace.microsoft.com/en-gb/marketplace/apps/canonical.0001-com-ubuntu-confidential-vm-focal>`_ supports confidential VMs.
-
-
-   
+* Ubuntu CVM 20.04 LTS, which supports SEV-SNP
+* Ubuntu CVM 22.04 LTS, which supports SEV-SNP - as well as Intel TDX which is still in Public Preview and has yet to reach General Availability.
