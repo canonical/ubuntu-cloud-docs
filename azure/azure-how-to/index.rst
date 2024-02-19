@@ -14,6 +14,7 @@ While using Ubuntu on Azure, you'll need to perform tasks such as installing the
 * :doc:`Get Ubuntu Pro <instances/get-ubuntu-pro>`
 * :doc:`Create a Pro golden image <instances/create-pro-fips-golden-image>`
 * :doc:`Upgrade from Focal to Jammy <instances/upgrade-from-focal-to-jammy>`
+* :doc:`Create a golden image pipeline <instances/create-a-golden-image-pipeline>`
 
 Using AKS
 ---------
@@ -34,8 +35,8 @@ If you come across any problems with this documentation and you want to help wit
 .. toctree::
    :hidden:
    :maxdepth: 1
-   
-   instances/index    
+
+   instances/index
    kubernetes/index
    contribute-to-these-docs
-  
+

@@ -13,3 +13,4 @@ These how-to guides relate to launching and using Ubuntu-based instances. They i
    Get Ubuntu Pro <get-ubuntu-pro>
    Create Pro golden image <create-pro-fips-golden-image>
    Upgrade from Focal to Jammy <upgrade-from-focal-to-jammy>
+   Create a golden image pipeline <create-a-golden-image-pipeline>
