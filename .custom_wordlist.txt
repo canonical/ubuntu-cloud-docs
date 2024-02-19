@@ -44,7 +44,6 @@ lts
 ubuntu
 ESM
 readthedocs
-SKU
 linux
 untrusted
 programmatically
@@ -192,7 +191,8 @@ EPYC
 virtualised
 CNCF
 AgentBaker
-sku
+SKU
+SKUs
 Diátaxis
 reStructuredText
 localhost
@@ -219,3 +219,5 @@ workspaces
 eks
 kubelet
 balancers
+vm
+URNs

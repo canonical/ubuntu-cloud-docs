@@ -60,7 +60,7 @@ Create a variable for your subscription ID:
 
     subscriptionID=$(az account show --query id --output tsv)
 
-Set up variables for the Ubuntu Pro plan to be used. If you have an Ubuntu Pro private offer with Canonical that includes 24x7 technical support with SLAs, you'll have a custom offer and ``sku``, which can be used here. If not, as seen in the example below, you can use the details from the Ubuntu Pro 20.04 FIPS image that is publicly available at the Azure Marketplace.
+Set up variables for the Ubuntu Pro plan to be used. If you have an Ubuntu Pro private offer with Canonical that includes 24x7 technical support with SLAs, you'll have a custom offer and SKU, which can be used here. If not, as seen in the example below, you can use the details from the Ubuntu Pro 20.04 FIPS image that is publicly available at the Azure Marketplace.
 
 .. code::
 

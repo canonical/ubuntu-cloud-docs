@@ -3,11 +3,10 @@ Security features on Azure
 
 Azure provides two types of security features:
 
-* `Trusted Launch <https://learn.microsoft.com/en-us/azure/virtual-machines/trusted-launch>`_ which is a set of features including virtual Trusted Platform Module (vTPM) and `secure boot <https://wiki.ubuntu.com/UEFI/SecureBoot>`_
-* `Confidential virtual machine <https://learn.microsoft.com/en-us/azure/confidential-computing/confidential-vm-overview>`_ with support for `AMD Secure Encrypted Virtualisation-Secure Nested Paging (SEV-SNP) <https://www.amd.com/system/files/TechDocs/SEV-SNP-strengthening-vm-isolation-with-integrity-protection-and-more.pdf>`_, along with `measured boot <https://learn.microsoft.com/en-us/azure/security/fundamentals/measured-boot-host-attestation>`_ using a vTPM
+* `Trusted Launch`_ which is a set of features including virtual Trusted Platform Module (vTPM) and `secure boot`_
+* `Confidential Virtual Machine`_ with support for `AMD Secure Encrypted Virtualisation-Secure Nested Paging (SEV-SNP)`_, along with `measured boot`_ using a vTPM
 
-See :ref:`Launch Ubuntu Images on Azure` on how to launch Ubuntu images with Trusted Launch and
-Confidential Virtual Machine on Azure.
+To launch Ubuntu images with Trusted Launch and Confidential VM, refer to :doc:`../azure-how-to/instances/launch-ubuntu-images`.
 
 Trusted launch
 --------------
@@ -20,7 +19,7 @@ Confidential VM
 What are confidential VMs?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Check out our `technical blog post about Confidential VMs on Azure <https://canonical.com/blog/lets-get-confidential-canonical-ubuntu-confidential-vms-are-now-generally-available-on-microsoft-azure>`_.
+Check out our `technical blog post about Confidential VMs on Azure`_.
 
 In short, a confidential VM is a combination of two features:
 
@@ -36,3 +35,11 @@ Currently there are two Ubuntu images which support Confidential VMs:
 
 * Ubuntu CVM 20.04 LTS, which supports SEV-SNP
 * Ubuntu CVM 22.04 LTS, which supports SEV-SNP - as well as Intel TDX which is still in Public Preview and has yet to reach General Availability.
+
+
+.. _`Trusted Launch`: https://learn.microsoft.com/en-us/azure/virtual-machines/trusted-launch
+.. _`secure boot`: https://wiki.ubuntu.com/UEFI/SecureBoot
+.. _`Confidential Virtual Machine`: https://learn.microsoft.com/en-us/azure/confidential-computing/confidential-vm-overview
+.. _`AMD Secure Encrypted Virtualisation-Secure Nested Paging (SEV-SNP)`: https://www.amd.com/system/files/TechDocs/SEV-SNP-strengthening-vm-isolation-with-integrity-protection-and-more.pdf
+.. _`measured boot`: https://learn.microsoft.com/en-us/azure/security/fundamentals/measured-boot-host-attestation
+.. _`technical blog post about Confidential VMs on Azure`: https://canonical.com/blog/lets-get-confidential-canonical-ubuntu-confidential-vms-are-now-generally-available-on-microsoft-azure
