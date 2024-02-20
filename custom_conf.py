@@ -173,8 +173,7 @@ custom_extensions = [
     'canonical.youtube-links',
     'canonical.related-links',
     'canonical.custom-rst-roles',
-    'canonical.terminal-output',
-    'sphinx.ext.autosectionlabel',
+    'canonical.terminal-output'
     ]
 
 # Add custom required Python modules that must be added to the
