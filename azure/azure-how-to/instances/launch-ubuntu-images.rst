@@ -54,10 +54,11 @@ the image. However, most Ubuntu images can be launched with the default argument
         --image $UBUNTU_IMAGE_URN \
         --generate-ssh-keys
 
-If you want to launch images with Azure's security features (Trusted Launch and Confidential VM) enabled, refer to the following sections.
+If you want to launch images with security features enabled, refer to the following sections.
 
-Security Type - Trusted Launch
-++++++++++++++++++++++++++++++
+
+With Trusted Launch
++++++++++++++++++++
 
 All Ubuntu images from Ubuntu 20.04 LTS (Focal Fossa) forward support Trusted Launch on Hyper-V Gen2 SKUs. Example
 definitions of Ubuntu image URNs for Hyper-V Gen2 include:
@@ -85,8 +86,9 @@ Create the virtual machine:
         --security-type $SECURITY_TYPE \
         --generate-ssh-keys
 
-Security Type - Confidential VM
-+++++++++++++++++++++++++++++++
+
+With Confidential VM
+++++++++++++++++++++
 
 Select one of the two URNs for Ubuntu images which support CVM on Azure:
 
@@ -127,6 +129,28 @@ Create the virtual machine:
         --size $VM_SIZE \
         --location $LOCATION \
         --generate-ssh-keys
+
+
+
+With Ubuntu Pro
++++++++++++++++
+
+For each of the two Azure related security features (Trusted Launch and Confidential VM) mentioned above, you can also add UBUNTU_PRO as the license-type of the OS to tackle vulnerabilities related to the internal software stack and the guest OS. For instance, create a Confidential VM with Ubuntu Pro using:
+
+.. code::
+
+   az vm create \
+        --name $VIRTUAL_MACHINE_NAME \
+        --resource-group $RESOURCE_GROUP_NAME \
+        --image $UBUNTU_IMAGE_URN \
+        --security-type $SECURITY_TYPE \
+        --os-disk-security-encryption-type $OS_ENCRYPTION_TYPE \
+        --size $VM_SIZE \
+        --location $LOCATION \
+        --generate-ssh-keys \
+        --license-type UBUNTU_PRO
+
+
 
 .. _`official Azure documentation`: https://learn.microsoft.com/en-us/azure/virtual-machines/linux/quick-create-cli
 .. _`Azure Command-Line Interface`: https://learn.microsoft.com/en-us/cli/azure/
