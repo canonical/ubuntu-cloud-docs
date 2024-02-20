@@ -135,7 +135,7 @@ Create the virtual machine:
 With Ubuntu Pro
 +++++++++++++++
 
-For each of the two Azure related security features (Trusted Launch and Confidential VM) mentioned above, you can also add UBUNTU_PRO as the license-type of the OS to tackle vulnerabilities related to the internal software stack and the guest OS. For instance, create a Confidential VM with Ubuntu Pro using:
+To tackle vulnerabilities related to the guest OS and the internal software stack, you can use Ubuntu Pro by adding UBUNTU_PRO as the license-type of the OS. For instance, create a Confidential VM with Ubuntu Pro using:
 
 .. code::
 
@@ -149,6 +149,8 @@ For each of the two Azure related security features (Trusted Launch and Confiden
         --location $LOCATION \
         --generate-ssh-keys \
         --license-type UBUNTU_PRO
+
+For more information on Ubuntu Pro and how to get it, refer to :doc:`get-ubuntu-pro`.
 
 
 
