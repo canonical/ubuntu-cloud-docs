@@ -63,7 +63,7 @@ Images for EC2 and EKS
 
          ubuntu/eks/$RELEASE/$K8S_VERSION/stable/current/$ARCH/hvm/ebs-gp2/ami-id
 
-      * RELEASE: `jammy`, `22.04` (for EKS 1.29 or greater); `focal`, `20.04` (for EKS <1.29)
+      * RELEASE: `jammy`, `22.04` (for EKS 1.29 or greater); `focal`, `20.04`
       * K8S_VERSION: one of the supported EKS versions (e.g. `1.28`)
       * ARCH: `amd64` or `arm64`
 
