@@ -15,3 +15,4 @@ These how-to guides relate to launching and using Ubuntu-based EC2 instances. Th
    Configure automated updates <automatically-update-ubuntu-instances>
    Upgrade from Focal to Jammy <upgrade-from-focal-to-jammy>
    Install NVIDIA drivers <install-nvidia-drivers>
+   Configure multiple NICs <automatically-setup-multiple-nics>

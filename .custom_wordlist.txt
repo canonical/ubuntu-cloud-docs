@@ -226,3 +226,7 @@ cron
 executables
 Golang
 SDK
+hotplug
+Hotplug
+NIC
+NICs

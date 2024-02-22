@@ -17,6 +17,7 @@ While using Ubuntu on AWS, you'll need to perform tasks such as launching an ins
 * :doc:`Configure automated updates <instances/automatically-update-ubuntu-instances>`
 * :doc:`Upgrade from Focal to Jammy <instances/upgrade-from-focal-to-jammy>`
 * :doc:`Install NVIDIA drivers <instances/install-nvidia-drivers>`
+* :doc:`Configure multiple NICs <instances/automatically-setup-multiple-nics>`
 
 
 EKS - Using Kubernetes
