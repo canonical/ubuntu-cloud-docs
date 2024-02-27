@@ -38,7 +38,7 @@ Images for EC2 and EKS
       * RELEASE: `jammy`, `22.04`, `focal`, `20.04`, `bionic`, `18.04`, `xenial`, or `16.04`
       * ARCH: `amd64` or `arm64`
       * VIRT_TYPE: `pv` or `hvm`
-      * VOL_TYPE: `ebs-gp2`, `ebs-io1`, `ebs-standard`, or `instance-store`
+      * VOL_TYPE: `ebs-gp3` (for >=23.10), `ebs-gp2` (for <=23.04), `ebs-io1`, `ebs-standard`, or `instance-store`
 
       In place of `current`, the serial number given to an image can also be used (e.g., `20210222`):
 
