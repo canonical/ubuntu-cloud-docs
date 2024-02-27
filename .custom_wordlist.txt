@@ -230,3 +230,5 @@ hotplug
 Hotplug
 NIC
 NICs
+datasource
+datasources
