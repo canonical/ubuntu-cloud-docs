@@ -10,14 +10,14 @@ While using Ubuntu on AWS, you'll need to perform tasks such as launching an ins
 
 * :doc:`Launch instance using CLI <instances/launch-ubuntu-ec2-instance>`
 * :doc:`Find images <instances/find-ubuntu-images>`
-* :doc:`In-place upgrade to Ubuntu Pro <instances/upgrade-in-place-from-lts-to-pro>`
+* :doc:`Launch a desktop <instances/launch-ubuntu-desktop>`
 * :doc:`Build an Ubuntu Pro AMI <instances/build-pro-ami-using-packer>`
 * :doc:`Create CloudFormation templates <instances/build-cloudformation-templates>`
-* :doc:`Launch a desktop <instances/launch-ubuntu-desktop>`
-* :doc:`Configure automated updates <instances/automatically-update-ubuntu-instances>`
-* :doc:`Upgrade from Focal to Jammy <instances/upgrade-from-focal-to-jammy>`
 * :doc:`Install NVIDIA drivers <instances/install-nvidia-drivers>`
 * :doc:`Configure multiple NICs <instances/automatically-setup-multiple-nics>`
+* :doc:`In-place upgrade to Ubuntu Pro <instances/upgrade-in-place-from-lts-to-pro>`
+* :doc:`Upgrade from Focal to Jammy <instances/upgrade-from-focal-to-jammy>`
+* :doc:`Configure automated updates <instances/automatically-update-ubuntu-instances>`
 
 
 EKS - Using Kubernetes
