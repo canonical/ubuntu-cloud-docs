@@ -6,15 +6,15 @@ These guides provide instructions for performing different operations related to
 Launching and using Ubuntu instances
 ------------------------------------
 
-While using Ubuntu on Azure, you'll need to perform tasks such as installing the Azure CLI, finding the right image to use, launching different images, upgrading Ubuntu versions and working with Ubuntu Pro. 
+While using Ubuntu on Azure, you'll need to perform tasks such as installing the Azure CLI, finding the right image to use, launching different images and upgrading Ubuntu versions. 
 
 * :doc:`Install Azure CLI <instances/install-azure-cli>`
 * :doc:`Find images <instances/find-ubuntu-images>`
 * :doc:`Launch images <instances/launch-ubuntu-images>`
 * :doc:`Get Ubuntu Pro <instances/get-ubuntu-pro>`
 * :doc:`Create a Pro golden image <instances/create-pro-fips-golden-image>`
-* :doc:`Upgrade from Focal to Jammy <instances/upgrade-from-focal-to-jammy>`
 * :doc:`Create a golden image pipeline <instances/create-a-golden-image-pipeline>`
+* :doc:`Upgrade from Focal to Jammy <instances/upgrade-from-focal-to-jammy>`
 
 Using AKS
 ---------
