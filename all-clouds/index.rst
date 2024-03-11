@@ -57,6 +57,7 @@ Ubuntu public cloud is open source project that warmly welcomes community projec
 
    all-clouds-explanation/release-types
    all-clouds-explanation/confidential-computing
+   all-clouds-how-to/check-cve-on-instance
    all-clouds-how-to/contribute-to-these-docs
       
 
