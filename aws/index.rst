@@ -21,12 +21,14 @@ In this documentation
 ---------------------
 
 ..  grid:: 1 1 1 1
+   :padding: 0
 
    ..  grid-item:: :doc:`How-to guides <aws-how-to/index>`
 
       **Step-by-step guides** covering key operations and common tasks
 
 .. grid:: 1 1 2 2
+   :padding: 0
    :reverse:
 
    .. grid-item:: :doc:`Reference <aws-reference/index>`
