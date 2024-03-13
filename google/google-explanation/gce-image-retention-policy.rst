@@ -19,20 +19,30 @@ For more details about these image types, check out our documentation of :doc:`i
 
 The retention policy can be summarised as follows:
 
-.. code::
+.. list-table:: 
+   :header-rows: 1
+   :widths: 50 20 40 40
 
-  ┌─────────────────┬────────┬─────────────────────────────────────┬────────────────────────────────────┐
-  │  Ubuntu suite   │        │ Daily Images                        │ Release Images                     │
-  ├─────────────────┼────────┼─────────────────────────────────────┼────────────────────────────────────┤
-  │ Interim Release │ Active │ Delete all *but* the last 5 serials │ No images are deleted              │
-  │                 │--------│-------------------------------------│------------------------------------│
-  │                 │ EOL*   │ Delete all *but* the latest serial  │ Delete all *but* the latest serial │
-  │=================│========│=====================================│====================================│
-  │ LTS Release     │ Active │ Delete all *but* the last 5 serials │ No images are deleted              │
-  │                 │--------│-------------------------------------│------------------------------------│
-  │                 │ EOSS** │ Delete all *but* the latest serial  │ No images are deleted              │
-  └─────────────────┴────────┴─────────────────────────────────────┴────────────────────────────────────┘
-
+   * - **Ubuntu suite**
+     - 
+     - **Daily Images**
+     - **Release Images**
+   * - Interim Release
+     - Active 
+     - Delete all *but* the last 5 serials
+     - No images are deleted  
+   * - 
+     - EOL*
+     - Delete all *but* the latest serial 
+     - Delete all *but* the latest serial 
+   * - LTS Release
+     - Active
+     - Delete all *but* the last 5 serials
+     - No images are deleted 
+   * - 
+     - EOSS**
+     - Delete all *but* the latest serial
+     - No images are deleted 
 
 where:
   - **EOL** refers to when an interim Ubuntu release (for example, Lunar Lobster 23.04) has reached end-of-life, `and will no longer enjoy support <https://ubuntu.com/about/release-cycle/>`_

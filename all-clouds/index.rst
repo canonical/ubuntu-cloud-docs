@@ -21,7 +21,8 @@ Canonical continuously tracks and delivers updates to these images, ensuring bui
 
 For further details, refer to the cloud-specific documentation:
 
-..  grid:: 1 1 2 2 
+..  grid:: 1 1 2 2
+   :padding: 0
 
    .. grid-item:: :doc:`Ubuntu on AWS <aws:index>`    
    .. grid-item:: :doc:`Ubuntu on GCP <google:index>` 
