@@ -15,5 +15,4 @@ These how-to guides relate to launching and using Ubuntu-based GCE instances. Th
    Build a Pro golden image <build-ubuntu-pro-golden-image>
    Create customised docker containers <create-customised-docker-container>
    Upgrade from Focal to Jammy <upgrade-from-focal-to-jammy>
-   Check CVE status <check-cve-on-instance>
    Set hostname <set-hostname-using-cloudinit>

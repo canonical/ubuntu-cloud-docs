@@ -55,10 +55,11 @@ Ubuntu public cloud is open source project that warmly welcomes community projec
 .. toctree::
    :hidden:
    :maxdepth: 2
-
-   all-clouds-explanation/release-types
-   all-clouds-explanation/confidential-computing
-   all-clouds-how-to/contribute-to-these-docs
+   
+   Cloud image release types <all-clouds-explanation/release-types>
+   Confidential computing <all-clouds-explanation/confidential-computing>
+   Check CVE status of an image <all-clouds-how-to/check-cve-on-instance>
+   Contribute to these docs <all-clouds-how-to/contribute-to-these-docs>
       
 
 .. _Get support: https://ubuntu.com/cloud/public-cloud
