@@ -211,6 +211,7 @@ OpenSCAP
 bzip
 uncompress
 hostname
+hostnames
 DHCP
 DNS
 FQDN

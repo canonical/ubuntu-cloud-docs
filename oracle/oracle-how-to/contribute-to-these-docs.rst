@@ -12,8 +12,8 @@ Contribute to these docs
 Setting the `PROJECT` parameter to ``oracle`` ensures that the documentation set for `Ubuntu on Oracle` gets built. This parameter is needed to distinguish between the different documentation sets present in the repository.
 
 
-Perform checks and submit PR
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Perform checks and submit a PR
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Before opening a PR, run the following checks and also ensure that the documentation builds without any warnings (warnings are treated as errors in the publishing process):
 
