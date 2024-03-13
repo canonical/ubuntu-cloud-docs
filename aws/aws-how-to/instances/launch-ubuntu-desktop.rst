@@ -1,12 +1,30 @@
-Launch and connect to an Ubuntu Mantis desktop instance on EC2
+Launch and connect to an Ubuntu Mantic desktop instance on EC2
 ==============================================================
 
+This how to uses Tightvnc and Remmina to connect to an AWS EC2 instance of Ubuntu Mantis.
 
-Open AWS Marketplace and search for Ubuntu Mantis, subscribe and agree to the Terms and Conditions.
+Select and configure Ubuntu Mantis 
+----------------------------------
+
+Open AWS Marketplace and search for Ubuntu Mantic. Subscribe and agree to the Terms and Conditions. Select Launch Instance to configure.
+
+Select a region closest to you. eg if you're in the UK EU-West-2 would be a good option. Cick Continue to Launch Through EC2 Instance.
+
+Name your instance Ubuntu Mantic. Mantic requires least two cores and at least 8gb RAM, which should be the default option. A minimum of 8gb volumes space is required, however in order to allow space to install more applications, more space will be needed.
+
+Create a security group
+-----------------------
+
+Select Create Security Group. Make sure ssh tick box is ticked to allow remote access.
+
+If you already have instances set up, you can select a key pair that you have previously set up. However, if this is your first EC2 instance you will need to create a key pair. Select Create Key Pair.
+
+Name the Key Pair, select RSA and Pem and create key pair. A Pem file will be downloaded automatically.
+
+Launch instance and connect either via ssh or the AWS Console.
 
 
-
-Install TightVNC on Ubuntu Mantis instance
+Install TightVNC on Ubuntu Mantic instance
 ------------------------------------------
 
 To install Ubuntu desktop and TightVNC server on your EC2 instance, SSH into it and run:
@@ -64,7 +82,7 @@ Kill and restart the VNC server:
 Allow traffic on the VNC port
 -----------------------------
 
-To allow an external connection to the VNC server, you'll need to ensure that the relevant port of your VM is open. On your EC2 console, modify the inbound rules for your instance by adding an entry for TCP port 5901: ``Custom TCP Rule | TCP | 5901 | Custom | 0.0.0.0/0 | VNC Connect`` 
+Ensure that the relevant port of your Mantic EC2 Instance is open. On the EC2 console, modify the inbound rules for your instance by adding an entry for TCP port 5901: ``Custom TCP Rule | TCP | 5901 | Custom | 0.0.0.0/0 | VNC Connect`` 
 
 
 Install Remmina on your local machine
