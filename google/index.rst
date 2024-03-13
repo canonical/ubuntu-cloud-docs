@@ -19,6 +19,8 @@ In this documentation
 ---------------------
 
 ..  grid:: 1 1 2 2
+   :padding: 0
+
 
    ..  grid-item:: :doc:`How-to guides <google-how-to/index>`
 
