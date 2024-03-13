@@ -21,7 +21,6 @@ The retention policy can be summarised as follows:
 
 .. list-table:: 
    :header-rows: 1
-   :widths: 50 20 40 40
 
    * - **Ubuntu suite**
      - 
