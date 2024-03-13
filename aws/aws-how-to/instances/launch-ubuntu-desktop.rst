@@ -1,15 +1,13 @@
-Launch an Ubuntu desktop on EC2
-===============================
-
-To create an Ubuntu desktop environment on your EC2 VM, you can use TightVNC as your remote desktop server and Remmina as your local desktop client.
-
-.. Note::
-
-    Both the remote EC2 instance and your local machine are assumed to be running Ubuntu 16.04 or greater.
+Launch and connect to an Ubuntu Mantis desktop instance on EC2
+==============================================================
 
 
-Install Ubuntu desktop and TightVNC on your VM
-----------------------------------------------
+Open AWS Marketplace and search for Ubuntu Mantis, subscribe and agree to the Terms and Conditions.
+
+
+
+Install TightVNC on Ubuntu Mantis instance
+------------------------------------------
 
 To install Ubuntu desktop and TightVNC server on your EC2 instance, SSH into it and run:
 
