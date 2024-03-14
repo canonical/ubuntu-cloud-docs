@@ -51,13 +51,49 @@ Set up a password for the Ubuntu user:
 
     passwd
 
-Finally, restart the xrdp service
+Finally, restart the xrdp service:
+
+.. code::
 
     systemctl restart xrdp
 
 Configure the Ubuntu Session
 ----------------------------
 
+Connect to your instance using RDP to check the previous steps were succseful. Create a configuration script called ubuntu-session in /usr/local/bin/ to run on RDP connections.
+
+.. code:
+
+    sudo nano /usr/local/bin/ubuntu-session
+
+Add the following to the ubuntnu-session file:
+
+.. code:
+
+    #!/bin/sh
+
+    export GNOME_SHELL_SESSION_MODE=ubuntu
+    export DESKTOP_SESSION=ubuntu-xorg
+    export XDG_SESSION_DESKTOP=ubuntu-xorg
+    export XDG_CURRENT_DESKTOP=ubuntu:GNOME
+    
+    exec /usr/bin/gnome-session --session=ubuntu
+
+Make the script executable:
+
+.. code:
+
+    sudo chmod +x /usr/local/bin/ubuntu-session
+
+Update the session manager to use the new session configuration:
+
+.. code:
+
+    update-alternatives --install /usr/bin/x-session-manager x-session-manager /usr/local/bin/ubuntu-session 60
+
+
+
+In a text editor, create the following file:
 
 Allow traffic on the VNC port
 -----------------------------
