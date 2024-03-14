@@ -22,6 +22,9 @@ extensions = [
     'sphinxcontrib.jquery',
 ]
 
+# Disable Sphinx tab closing
+sphinx_tabs_disable_tab_closing = True
+
 # Only add redirects extension if any redirects are specified.
 if AreRedirectsDefined():
     extensions.append('sphinx_reredirects')
