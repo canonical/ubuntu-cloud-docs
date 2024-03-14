@@ -73,25 +73,6 @@ Ubuntu 23.04 - Lunar Lobster
    * - Architecture: **Arm64** Hyper-V Generation: **Gen2**
      - ``Canonical:0001-com-ubuntu-server-lunar:23_04-arm64:latest``
 
-Ubuntu 22.10 - Kinetic Kudu
-+++++++++++++++++++++++++++
-
-| Quick start: `22.10 on Azure <https://portal.azure.com/#create/canonical.0001-com-ubuntu-server-kinetic22_10-ARM>`_
-| Quick start (China): `22.10 on Azure China <https://portal.azure.cn/#create/canonical.0001-com-ubuntu-server-kinetic22_10-ARM>`_
-
-.. list-table::
-   :widths: 19 50
-   :header-rows: 1
-
-   * - **Kind**
-     - **URN**
-   * - Architecture: **AMD64** Hyper-V Generation: **Gen1**
-     - ``Canonical:0001-com-ubuntu-server-kinetic:22_10:latest``
-   * - Architecture: **AMD64** Hyper-V Generation: **Gen2**
-     - ``Canonical:0001-com-ubuntu-server-kinetic:22_10-gen2:latest``
-   * - Architecture: **Arm64** Hyper-V Generation: **Gen2**
-     - ``Canonical:0001-com-ubuntu-server-kinetic:22_10-arm64:latest``
-
 .. _find-ubuntu-pro-on-azure:
 
 Ubuntu Pro Offers
