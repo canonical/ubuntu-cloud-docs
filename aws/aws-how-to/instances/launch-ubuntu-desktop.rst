@@ -8,75 +8,19 @@ Select and configure Ubuntu Mantis
 
 Open AWS Marketplace and search for Ubuntu Mantic. Subscribe and agree to the Terms and Conditions. Select Launch Instance to configure.
 
-Select a region closest to you. eg if you're in the UK EU-West-2 would be a good option. Cick Continue to Launch Through EC2 Instance.
+Select a region closest to you. For exapmple, if you're in the UK EU-West-2 would be a good option. Cick Continue to Launch Through EC2 Instance.
 
-Name your instance Ubuntu Mantic. Mantic requires least two cores and at least 8gb RAM, which should be the default option. A minimum of 8gb volumes space is required, however in order to allow space to install more applications, more space will be needed.
+Give your instance a name. Mantic requires least two cores and at least 8gb RAM, which should be the default option. The default volume space of 8gb is the minimum required, however, more space will be required to install applications.
 
 Create a security group
 -----------------------
 
-Select Create Security Group. Make sure ssh tick box is ticked to allow remote access.
+Select Create Security Group. Make sure the ssh tick box is selected to allow remote access.
 
-If you already have instances set up, you can select a key pair that you have previously set up. However, if this is your first EC2 instance you will need to create a key pair. Select Create Key Pair.
+You can select a key pair if you already have one set up or create a new key pair. To create a key pair give it a name and Select RSA and PEM. A Pem file will be automatically downloaded.
 
-Name the Key Pair, select RSA and Pem and create key pair. A Pem file will be downloaded automatically.
+Launch the instance and connect to it either via ssh or the AWS Console.
 
-Launch instance and connect either via ssh or the AWS Console.
-
-
-Install TightVNC on Ubuntu Mantic instance
-------------------------------------------
-
-To install Ubuntu desktop and TightVNC server on your EC2 instance, SSH into it and run:
-
-.. code::
-
-    sudo apt update
-    sudo apt install ubuntu-desktop
-    sudo apt install tightvncserver
-    sudo apt install gnome-panel gnome-settings-daemon metacity nautilus gnome-terminal
-
-Save the password created during the installation of the VNC server.
-
-
-Configure the VNC server
-------------------------
-
-On your VM, launch the VNC server to create an initial configuration file:
-
-.. code::
-
-    vncserver :1
-
-Edit the configuration file ``~/.vnc/xstartup`` to include:
-
-.. code::
-
-    #!/bin/sh
-
-    export XKL_XMODMAP_DISABLE=1
-    unset SESSION_MANAGER
-    unset DBUS_SESSION_BUS_ADDRESS
-
-    [ -x /etc/vnc/xstartup ] && exec /etc/vnc/xstartup
-    [ -r $HOME/.Xresources ] && xrdb $HOME/.Xresources
-    xsetroot -solid grey
-
-    vncconfig -iconic &
-    gnome-panel &
-    gnome-settings-daemon &
-    metacity &
-    nautilus &
-    gnome-terminal &
-
-
-Kill and restart the VNC server:
-
-.. code::
-
-    vncserver -kill :1
-
-    vncserver :1
 
 
 Allow traffic on the VNC port
