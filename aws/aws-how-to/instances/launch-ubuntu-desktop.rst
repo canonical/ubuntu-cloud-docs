@@ -21,6 +21,42 @@ You can select a key pair if you already have one set up or create a new key pai
 
 Launch the instance and connect to it either via ssh or the AWS Console.
 
+Install Ubuntu Desktop Packages
+-------------------------------
+
+.. code::
+
+    sudo apt-get update && apt-get upgrade -y
+    sudo apt-get install -y ubuntu-desktop
+    sudo snap install snap-store --edge
+
+Install and Configure RDP
+-------------------------
+
+Install the xrdp server:
+
+.. code::
+
+    sudo apt-get install -y xrdp
+
+Configure xrdp to use SSL to get an encrypted connection:
+
+.. code::
+
+    sudo usermod -a -G ssl-cert xrdp
+
+Set up a password for the Ubuntu user:
+
+.. code::
+
+    passwd
+
+Finally, restart the xrdp service
+
+    systemctl restart xrdp
+
+Configure the Ubuntu Session
+----------------------------
 
 
 Allow traffic on the VNC port
