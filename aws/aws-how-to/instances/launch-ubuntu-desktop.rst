@@ -3,7 +3,7 @@ Launch and connect to an Ubuntu Mantic desktop EC2 instance
 
 This how to uses xrdp server and Remmina to connect to an AWS EC2 instance of Ubuntu Mantis.
 
-Select and configure Ubuntu Mantis 
+Select and configure Ubuntu Mantic 
 ----------------------------------
 
 Open AWS Marketplace and search for Ubuntu Mantic. Subscribe and agree to the Terms and Conditions. Select Launch Instance to configure.
