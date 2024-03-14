@@ -62,13 +62,13 @@ Configure the Ubuntu Session
 
 Connect to your instance using RDP to check the previous steps were succseful. Create a configuration script called ubuntu-session in /usr/local/bin/ to run on RDP connections.
 
-.. code:
+.. code::
 
     sudo nano /usr/local/bin/ubuntu-session
 
 Add the following to the ubuntnu-session file.
 
-.. code:
+.. code::
 
     #!/bin/sh
 
@@ -81,13 +81,13 @@ Add the following to the ubuntnu-session file.
 
 Make the script executable.
 
-.. code:
+.. code::
 
     sudo chmod +x /usr/local/bin/ubuntu-session
 
 Update the session manager to use the new session configuration.
 
-.. code:
+.. code::
 
     update-alternatives --install /usr/bin/x-session-manager x-session-manager /usr/local/bin/ubuntu-session 60
 
