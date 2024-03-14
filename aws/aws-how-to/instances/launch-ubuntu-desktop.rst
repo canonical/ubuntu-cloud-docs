@@ -26,8 +26,8 @@ Install Ubuntu Desktop Packages
 
 .. code::
 
-    sudo apt-get update && apt-get upgrade -y
-    sudo apt-get install -y ubuntu-desktop
+    sudo apt update && apt upgrade -y
+    sudo apt install -y ubuntu-desktop
     sudo snap install snap-store --edge
 
 Install and Configure RDP
@@ -37,7 +37,7 @@ Install the xrdp server.
 
 .. code::
 
-    sudo apt-get install -y xrdp
+    sudo apt install -y xrdp
 
 Configure xrdp to use SSL to get an encrypted connection.
 
@@ -91,18 +91,15 @@ Update the session manager to use the new session configuration.
 
     update-alternatives --install /usr/bin/x-session-manager x-session-manager /usr/local/bin/ubuntu-session 60
 
-
-
 Allow traffic on the VNC port
 -----------------------------
 
 Ensure that the relevant port of your Mantic EC2 Instance is open. On the EC2 console, modify the inbound rules for your instance by adding an entry for TCP port 5901: ``Custom TCP Rule | TCP | 5901 | Custom | 0.0.0.0/0 | VNC Connect`` 
 
-
 Install Remmina on your local machine
 --------------------------------------
 
-To access the Ubuntu desktop installed on your VM, use a remote desktop client like Remmina on your local machine. Install Remmina using:
+Use a remote desktop client like Remmina on your local machine to connect to the Ubuntu Mantic Desktop. Install Remmina using:
 
 .. code::
 
@@ -112,10 +109,6 @@ To access the Ubuntu desktop installed on your VM, use a remote desktop client l
 Connect to your remote Ubuntu desktop
 -------------------------------------
 
-Launch Remmina, and choose the connection type as 'VNC'. For the connection string, enter your EC2 instance URL along with 1 as the port number, something similar to:
+Launch Remmina, and choose the connection type as 'VNC'. Enter the instance ip address, which can be found on the EC2 console and port number 3389.
 
-.. code::
-
-    ec2-54-172-197-171.compute-1.amazonaws.com:1
-
-Select :guilabel:`Connect!` and enter the VNC server password saved earlier. This should give you access to the remote Ubuntu desktop.
+Select :guilabel:`Connect!` and enter the VNC server password created earlier.
