@@ -8,7 +8,7 @@ Select and configure Ubuntu Mantic
 
 Open AWS Marketplace and search for Ubuntu Mantic. Subscribe and agree to the Terms and Conditions. Select Launch Instance to configure.
 
-Select a region closest to you. For exapmple, if you're in the UK EU-West-2 would be a good option. Cick Continue to Launch Through EC2 Instance.
+Select a region closest to you. For exapmple, if you're in the ``UK EU-West-2`` would be a good option. Cick Continue to Launch Through EC2 Instance.
 
 Give your instance a name. Mantic requires least two cores and at least 8gb RAM, which should be the default option. The default volume space of 8gb is the minimum required, however, more space will be required to install applications.
 
