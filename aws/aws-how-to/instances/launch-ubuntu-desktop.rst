@@ -33,25 +33,25 @@ Install Ubuntu Desktop Packages
 Install and Configure RDP
 -------------------------
 
-Install the xrdp server:
+Install the xrdp server.
 
 .. code::
 
     sudo apt-get install -y xrdp
 
-Configure xrdp to use SSL to get an encrypted connection:
+Configure xrdp to use SSL to get an encrypted connection.
 
 .. code::
 
     sudo usermod -a -G ssl-cert xrdp
 
-Set up a password for the Ubuntu user:
+Set up a password for the Ubuntu user.
 
 .. code::
 
     passwd
 
-Finally, restart the xrdp service:
+Finally, restart the xrdp service.
 
 .. code::
 
@@ -66,7 +66,7 @@ Connect to your instance using RDP to check the previous steps were succseful. C
 
     sudo nano /usr/local/bin/ubuntu-session
 
-Add the following to the ubuntnu-session file:
+Add the following to the ubuntnu-session file.
 
 .. code:
 
@@ -79,19 +79,17 @@ Add the following to the ubuntnu-session file:
     
     exec /usr/bin/gnome-session --session=ubuntu
 
-Make the script executable:
+Make the script executable.
 
 .. code:
 
     sudo chmod +x /usr/local/bin/ubuntu-session
 
-Update the session manager to use the new session configuration:
+Update the session manager to use the new session configuration.
 
 .. code:
 
     update-alternatives --install /usr/bin/x-session-manager x-session-manager /usr/local/bin/ubuntu-session 60
-
-
 
 In a text editor, create the following file:
 
