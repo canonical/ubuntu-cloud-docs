@@ -186,6 +186,9 @@ custom_required_modules = [
     'sphinx-multiproject'
 ]
 
+# Disable Sphinx tab closing
+sphinx_tabs_disable_tab_closing = True
+
 # Add files or directories that should be excluded from processing.
 custom_excludes = [
     'doc-cheat-sheet*',
