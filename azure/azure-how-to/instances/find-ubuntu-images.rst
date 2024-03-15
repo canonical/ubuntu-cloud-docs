@@ -54,6 +54,25 @@ Interim releases
 
 To learn more about the difference between LTS releases and interim releases, see `this page <https://ubuntu.com/about/release-cycle#ubuntu>`_.
 
+Ubuntu 23.10 - Mantic Minotaur
+++++++++++++++++++++++++++++++
+
+| Quick start: `23.10 on Azure <https://portal.azure.com/#create/canonical.0001-com-ubuntu-server-mantic23_10-gen2>`_
+| Quick start (China): `23.10 on Azure China <https://portal.azure.cn/#create/canonical.0001-com-ubuntu-server-mantic23_10-gen2>`_
+
+.. list-table::
+   :widths: 19 50
+   :header-rows: 1
+
+   * - **Kind**
+     - **URN**
+   * - Architecture: **AMD64** Hyper-V Generation: **Gen1**
+     - ``Canonical:0001-com-ubuntu-server-mantic:23_10:latest``
+   * - Architecture: **AMD64** Hyper-V Generation: **Gen2**
+     - ``Canonical:0001-com-ubuntu-server-mantic:23_10-gen2:latest``
+   * - Architecture: **Arm64** Hyper-V Generation: **Gen2**
+     - ``Canonical:0001-com-ubuntu-server-mantic:23_10-arm64:latest``
+
 .. _find-ubuntu-pro-on-azure:
 
 Ubuntu Pro Offers
