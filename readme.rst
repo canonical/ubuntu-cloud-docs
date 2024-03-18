@@ -55,6 +55,16 @@ The command:
 the more standard ``make html``. For instance, ``PROJECT=azure make html`` will create the 
 azure related html pages in _build/azure.)
 
+Check compliance with contribution guides for each project 
+~~~~~~~~~~~
+Each project's documentation has its own contribution guide: 
+* `All-clouds <http://127.0.0.1:8000/all-clouds-how-to/contribute-to-these-docs/>`_
+* `AWS <https://canonical-aws.readthedocs-hosted.com/en/latest/aws-how-to/contribute-to-these-docs/>`_
+* `Azure <https://canonical-azure.readthedocs-hosted.com/en/latest/>`_
+* `Google <https://canonical-gcp.readthedocs-hosted.com/en/latest/>`_
+* `IBM <https://canonical-ibm.readthedocs-hosted.com/en/latest/ibm-how-to/contribute-to-these-docs/>`_
+* `OCI <https://canonical-oci.readthedocs-hosted.com/en/latest/>`_
+* `Oracle <https://canonical-oracle.readthedocs-hosted.com/en/latest/>`_
 
 Check spelling
 ~~~~~~~~~~~~~~
