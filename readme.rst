@@ -58,6 +58,7 @@ azure related html pages in _build/azure.)
 Check compliance with contribution guides for each project 
 ~~~~~~~~~~~
 Each project's documentation has its own contribution guide: 
+
 * `All-clouds <http://127.0.0.1:8000/all-clouds-how-to/contribute-to-these-docs/>`_
 * `AWS <https://canonical-aws.readthedocs-hosted.com/en/latest/aws-how-to/contribute-to-these-docs/>`_
 * `Azure <https://canonical-azure.readthedocs-hosted.com/en/latest/>`_
