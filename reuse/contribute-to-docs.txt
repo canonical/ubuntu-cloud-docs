@@ -84,7 +84,7 @@ Create new subcategories
 To add a subcategory within an existing category in your documentation, follow these steps:
 
 1. Go to the parent category and create a new folder for your subcategory within it.
-2. Create an "index.rst" file within the subcategory folder.
+2. Create an ``index.rst`` file within the subcategory folder.
 3. Enter the title of your new subcategory on the first line of the ``index.rst`` file. Underline it using equal signs (=) that match the length of your title. For more information on titles and headings, read the `reStructuredText`_ style guide.
 4. In the ``index.rst`` file, add content introducing the subcategory, its purpose, and other relevant links.
 5. In your ``index.rst`` file, add a toctree that includes the file names or titles of pages within your new subcategory. The toctree should resemble the following structure:
