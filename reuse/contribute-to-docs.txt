@@ -30,40 +30,88 @@ New content
 
 When adding new content, it's easier to work with the documentation on your local machine. Once you've made your changes, ensure all checks have passed and everything looks satisfactory before submitting a pull request (PR). To run the checks, you must have ``make`` and ``python3`` installed on your system.
 
-To create new categories for the documentation, follow the `Diátaxis`_ approach. Also, you can create new pages within existing categories.
+Use the `Diátaxis`_ approach to create new categories for this documentation. These categories can have subcategories within them as well. The documentation has a base ``index.rst`` file, which is usually the landing page. The ``index.rst`` file contains the documentation title, content introducing the documentation and its purpose, relevant links, and a toctree. The toctree lists the categories contained in the documentation in the order they appear in the navigation. Each category and subcategory also contains an ``index.rst`` file similar to the documentation's base ``index.rst`` file.
 
-Creating new categories
+The documentation structure should look like this:
+
+.. code-block:: none
+
+   documentation/
+   ├── tutorial/
+   │   ├── subcategory-one/
+   │   │   ├── index.rst
+   │   │   ├── page-one.rst
+   │   │   ├── page-two.rst
+   │   │   └── page-three.rst
+   │   └── subcategory-two/
+   │   |   ├── index.rst
+   │   |   ├── page-one.rst
+   │   |   ├── page-two.rst
+   │   |   └── page-three.rst
+   |   └── index.rst
+   ├── how-to-guides
+   ├── explanation
+   ├── reference
+   └── index.rst
+
+Create new categories
 ~~~~~~~~~~~~~~~~~~~~~~~
 
 You can create new categories to the documentation by following these steps:
 
-1. Create a new folder in your project directory.
-2. Add new files representing pages within your category to your new folder.
-3. Create a new ``index.rst`` file within your new folder.
-4. Add the title of your new category to the first line of the ``index.rst`` file. Underline it using equal signs (=) that match the length of your title. For more information on titles and headings, read the `reStructuredText`_ style guide.
-5. Add a toctree that includes the file names or titles of pages within your new category. The toctree should resemble the following structure:
+1. Create a new folder in your documentation directory.
+2. Create a new ``index.rst`` file within your new folder.
+3. Add the title of your new category to the first line of the ``index.rst`` file. Underline it using equal signs (=) that match the length of your title. For more information on titles and headings, read the `reStructuredText`_ style guide.
+4. In the ``index.rst`` file, add content introducing the category, its purpose, and other relevant links.
+5. In your ``index.rst`` file, add a toctree that specifies the file names of pages and the index files of the subcategories within your newly created category. The toctree should resemble the following structure:
+
+.. code:: rst
+
+   .. toctree::
+      :maxdepth: 2
+
+      subcategory-one/index
+      Subcategory two <subcategory-two/index>
+      page-one-file-name
+
+For more information, read the `Sphinx documentation on toctree`_.
+
+5. Update the documentation base ``index.rst`` file by adding your new category to the toctree.
+
+Create new subcategories
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+To add a subcategory within an existing category in your documentation, follow these steps:
+
+1. Go to the parent category and create a new folder for your subcategory within it.
+2. Create an "index.rst" file within the subcategory folder.
+3. Enter the title of your new subcategory on the first line of the ``index.rst`` file. Underline it using equal signs (=) that match the length of your title. For more information on titles and headings, read the `reStructuredText`_ style guide.
+4. In the ``index.rst`` file, add content introducing the subcategory, its purpose, and other relevant links.
+5. In your ``index.rst`` file, add a toctree that includes the file names or titles of pages within your new subcategory. The toctree should resemble the following structure:
 
 .. code:: rst
 
    .. toctree::
       :maxdepth: 1
 
-      Page-one-file-name
-      Page two title <page-two-file-name>
+      page-one-file-name
+      Page Two Title <page-two-file-name>
 
-For more information, read the `Sphinx documentation on toctree`_.
+.. note::
 
-6. Update the project's ``index.rst`` file by adding your new category to the toctree.
+   Ensure to replace `page-one-file-name` and `page-two-file-name` with the actual file names of your pages and `Page Two Title` with the actual file title. For more information, read the `Sphinx documentation on toctree`_.
 
-Creating new pages
+6. Update the ``index.rst`` file of the parent category by adding a reference to the newly created subcategory in its toctree.
+
+Create new pages
 ~~~~~~~~~~~~~~~~~~
 
 You can create new pages for existing documentation by following these steps:
 
-1. Create a new file within an existing or newly created category.
+1. Create a new file within a category or subcategory.
 #. Add a title to the first line of the file. Underline it using equal signs (=) that match the length of your title. For more information on titles and headings, read the `reStructuredText`_ style guide.
 #. Add content to the new file using `reStructuredText`_ and following the `Canonical style guide`_.
-#. Update the category's ``index.rst`` file by adding the file name or your preferred title to the toctree. For more information, read the `Sphinx documentation on toctree`_.
+#. Update the category or subcategory's ``index.rst`` file by adding the file name or your preferred title to the toctree. For more information, read the `Sphinx documentation on toctree`_.
 
 Download and install the docs
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
