@@ -2,21 +2,21 @@
 
 Start: How to contribute
 
-These docs are on located on a GitHub repository at: `ubuntu-cloud-docs`_ and you'll need a GitHub account to make contributions. It is a good idea to fork this repository into your own account before you start, otherwise GitHub will anyway prompt you to do so when you attempt your first change.
+These docs are located on the GitHub repository named `ubuntu-cloud-docs`_, and you'll need a GitHub account to make contributions. It is a good idea to fork this repository into your account before you start, otherwise, GitHub will prompt you to do so when you attempt your first change. 
 
-The docs are:
+The documentations are:
 
-* structured using the `Diátaxis`_ approach,
-* written in `reStructuredText`_ as per the `Canonical style guide`_,
-* built with `Sphinx`_ and
-* hosted on `Read the Docs`_.
+* structured using the `Diátaxis`_ approach
+* written in `reStructuredText`_ as per the `Canonical style guide`_
+* built with `Sphinx`_
+* hosted on `Read the Docs`_
 
 We are always looking for ways to improve our docs, so we appreciate your contributions! 
 
 Minor changes
 -------------
 
-If you've found a problem that can be fixed with a small change, you can use the *Edit this page on GitHub* link at the bottom of the relevant page to edit it directly on GitHub. When you are done with your edits, select :guilabel:`Commit changes...` on the top right. This will help you create a new branch and start a pull request (PR). Use :guilabel:`Propose changes` to submit the PR. We will review it and merge the changes.
+If you find a problem that you can fix and it's a small change, you can use the *Edit this page on GitHub* link at the bottom of the relevant page to edit it directly on GitHub. When you are done with your edits, select :guilabel:`Commit changes...` on the top right. This will help you create a new branch and start a pull request (PR). Use :guilabel:`Propose changes` to submit the PR. We will review it and merge the changes.
 
 
 Suggestions and questions
@@ -28,18 +28,101 @@ Use the :guilabel:`Give feedback` button at the top of any page to create a GitH
 New content
 -----------
 
-While contributing new content, it is easier to work with the docs on your local machine. You can submit a PR after all the checks have passed and things looks satisfactory. You'll need ``make`` and ``python3`` installed on your system.
+When adding new content, it's easier to work with the documentation on your local machine. Once you've made your changes, ensure all checks have passed and everything looks satisfactory before submitting a pull request (PR). To run the checks, you must have ``make`` and ``python3`` installed on your system.
+
+Use the `Diátaxis`_ approach to create new categories for this documentation. These categories can have subcategories within them as well. The documentation has a base ``index.rst`` file, which is usually the landing page. The ``index.rst`` file contains the documentation title, content introducing the documentation and its purpose, relevant links, and a toctree. The toctree lists the categories contained in the documentation in the order they appear in the navigation. Each category and subcategory also contains an ``index.rst`` file similar to the documentation's base ``index.rst`` file.
+
+The documentation structure should look like this:
+
+.. code-block:: none
+
+   documentation/
+   ├── tutorial/
+   │   ├── subcategory-one/
+   │   │   ├── index.rst
+   │   │   ├── page-one.rst
+   │   │   ├── page-two.rst
+   │   │   └── page-three.rst
+   │   └── subcategory-two/
+   │   |   ├── index.rst
+   │   |   ├── page-one.rst
+   │   |   ├── page-two.rst
+   │   |   └── page-three.rst
+   |   └── index.rst
+   ├── how-to-guides
+   ├── explanation
+   ├── reference
+   └── index.rst
+
+Create new categories
+~~~~~~~~~~~~~~~~~~~~~~~
+
+You can create new categories to the documentation by following these steps:
+
+1. Create a new folder in your documentation directory.
+2. Create a new ``index.rst`` file within your new folder.
+3. Add the title of your new category to the first line of the ``index.rst`` file. Underline it using equal signs (=) that match the length of your title. For more information on titles and headings, read the `reStructuredText`_ style guide.
+4. In the ``index.rst`` file, add content introducing the category, its purpose, and other relevant links.
+5. In your ``index.rst`` file, add a toctree that specifies the file names of pages and the index files of the subcategories within your newly created category. The toctree should resemble the following structure:
+
+.. code:: rst
+
+   .. toctree::
+      :maxdepth: 2
+
+      subcategory-one/index
+      Subcategory two <subcategory-two/index>
+      page-one-file-name
+
+For more information, read the `Sphinx documentation on toctree`_.
+
+5. Update the documentation base ``index.rst`` file by adding your new category to the toctree.
+
+Create new subcategories
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+To add a subcategory within an existing category in your documentation, follow these steps:
+
+1. Go to the parent category and create a new folder for your subcategory within it.
+2. Create an ``index.rst`` file within the subcategory folder.
+3. Enter the title of your new subcategory on the first line of the ``index.rst`` file. Underline it using equal signs (=) that match the length of your title. For more information on titles and headings, read the `reStructuredText`_ style guide.
+4. In the ``index.rst`` file, add content introducing the subcategory, its purpose, and other relevant links.
+5. In your ``index.rst`` file, add a toctree that includes the file names or titles of pages within your new subcategory. The toctree should resemble the following structure:
+
+.. code:: rst
+
+   .. toctree::
+      :maxdepth: 1
+
+      page-one-file-name
+      Page Two Title <page-two-file-name>
+
+.. note::
+
+   Ensure to replace `page-one-file-name` and `page-two-file-name` with the actual file names of your pages and `Page Two Title` with the actual file title. For more information, read the `Sphinx documentation on toctree`_.
+
+6. Update the ``index.rst`` file of the parent category by adding a reference to the newly created subcategory in its toctree.
+
+Create new pages
+~~~~~~~~~~~~~~~~~~
+
+You can create new pages for existing documentation by following these steps:
+
+1. Create a new file within a category or subcategory.
+#. Add a title to the first line of the file. Underline it using equal signs (=) that match the length of your title. For more information on titles and headings, read the `reStructuredText`_ style guide.
+#. Add content to the new file using `reStructuredText`_ and following the `Canonical style guide`_.
+#. Update the category or subcategory's ``index.rst`` file by adding the file name or your preferred title to the toctree. For more information, read the `Sphinx documentation on toctree`_.
 
 Download and install the docs
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-If you are working with these docs for the first time, you'll need to create a fork of the `ubuntu-cloud-docs`_ repository on your GitHub account and then clone that fork to your local machine. Once cloned, go into the ubuntu-cloud-docs directory and run:
+If you are working with these documentations for the first time, you have to create a fork of the `ubuntu-cloud-docs`_ repository on your GitHub account and then clone that fork to your local machine. Once cloned, go into the ubuntu-cloud-docs directory and run:
 
 .. code::
 
 	make install
 
-This creates a virtual environment and installs all the required dependencies. You only have to do this step once, and can skip it the next time you want to contribute.
+This creates a virtual environment and installs all the required dependencies. You only have to do this step once and can skip it the next time you want to contribute.
 
 
 Build and serve the docs
@@ -60,6 +143,7 @@ Start: How to contribute links
 .. _`reStructuredText`: https://canonical-documentation-with-sphinx-and-readthedocscom.readthedocs-hosted.com/style-guide/
 .. _`Canonical style guide`: https://docs.ubuntu.com/styleguide/en
 .. _`Sphinx`: https://www.sphinx-doc.org/en/master/
+.. _`Sphinx documentation on toctree`: https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html#directive-toctree
 .. _`Read the Docs`: https://about.readthedocs.com/?ref=readthedocs.com
 
 
