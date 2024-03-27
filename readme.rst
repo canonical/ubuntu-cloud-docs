@@ -63,7 +63,7 @@ Run a spell check::
 
 	PROJECT=azure make spelling
 
-If new words are to be added to the allowed list, update ``.wordlist.txt`` accordingly.
+If new words are to be added to the allowed list, update ``.custom_wordlist.txt`` accordingly.
 
 
 Check links
