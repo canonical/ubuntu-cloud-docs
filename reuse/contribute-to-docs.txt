@@ -4,7 +4,7 @@ Start: How to contribute
 
 These docs are located on the GitHub repository named `ubuntu-cloud-docs`_, and you'll need a GitHub account to make contributions. It is a good idea to fork this repository into your account before you start, otherwise, GitHub will prompt you to do so when you attempt your first change. 
 
-The documentations are:
+This documentation set is:
 
 * structured using the `Diátaxis`_ approach
 * written in `reStructuredText`_ as per the `Canonical style guide`_
@@ -28,16 +28,35 @@ Use the :guilabel:`Give feedback` button at the top of any page to create a GitH
 New content
 -----------
 
-When adding new content, it's easier to work with the documentation on your local machine. Once you've made your changes, ensure all checks have passed and everything looks satisfactory before submitting a pull request (PR). To run the checks, you must have ``make`` and ``python3`` installed on your system.
+When adding new content, it's easier to work with the documentation on your local machine. For this, you'll need ``make`` and ``python3`` installed on your system. Once you've made your changes, ensure all checks have passed and everything looks satisfactory before submitting a pull request (PR).
 
-Use the `Diátaxis`_ approach to create new categories for this documentation. These categories can have subcategories within them as well. The documentation has a base ``index.rst`` file, which is usually the landing page. The ``index.rst`` file contains the documentation title, content introducing the documentation and its purpose, relevant links, and a toctree. The toctree lists the categories contained in the documentation in the order they appear in the navigation. Each category and subcategory also contains an ``index.rst`` file similar to the documentation's base ``index.rst`` file.
+Download and install the docs
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The documentation structure should look like this:
+If you are working with these docs for the first time, you'll need to create a fork of the `ubuntu-cloud-docs`_ repository on your GitHub account and then clone that fork to your local machine. Once cloned, go into the ubuntu-cloud-docs directory and run:
+
+.. code::
+
+	make install
+
+This creates a virtual environment and installs all the required dependencies. You only have to do this step once and can skip it the next time you want to contribute.
+
+
+Build and serve the docs
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+Use the ``make run`` command to build and serve the docs at ``http://127.0.0.1:8000`` or equivalently at ``http://localhost:8000``. This gives you a live preview of the changes that you make (and save), without the need for a rebuild:
+
+Create content
+~~~~~~~~~~~~~~
+
+Choose the appropriate folder for your content. The folders within each project are mapped to the `Diátaxis`_ categories of tutorial, how-to guides, explanation and reference. If required, the categories can have subcategories as well, as shown in the tree structure below. Also, each folder includes an ``index.rst`` file, which acts as a landing page for the folder.
 
 .. code-block:: none
 
-   documentation/
-   ├── tutorial/
+   project/
+   ├── tutorial
+   ├── how-to-guides/
    │   ├── subcategory-one/
    │   │   ├── index.rst
    │   │   ├── page-one.rst
@@ -48,16 +67,17 @@ The documentation structure should look like this:
    │   |   ├── page-one.rst
    │   |   ├── page-two.rst
    │   |   └── page-three.rst
-   |   └── index.rst
-   ├── how-to-guides
+   |   └── index.rst 
    ├── explanation
    ├── reference
    └── index.rst
 
-Create new categories
-~~~~~~~~~~~~~~~~~~~~~~~
+If your required category or subcategory is absent, create them using the instructions given below. Then add your content by creating a new page.
 
-You can create new categories to the documentation by following these steps:
+Create new categories (optional)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+You can create new categories by following these steps:
 
 1. Create a new folder in your documentation directory.
 2. Create a new ``index.rst`` file within your new folder.
@@ -76,12 +96,12 @@ You can create new categories to the documentation by following these steps:
 
 For more information, read the `Sphinx documentation on toctree`_.
 
-5. Update the documentation base ``index.rst`` file by adding your new category to the toctree.
+6. Update the project's main ``index.rst`` file by adding your new category to its toctree.
 
-Create new subcategories
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+Create new subcategories (optional)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-To add a subcategory within an existing category in your documentation, follow these steps:
+You can create new subcategories by following these steps:
 
 1. Go to the parent category and create a new folder for your subcategory within it.
 2. Create an ``index.rst`` file within the subcategory folder.
@@ -97,38 +117,17 @@ To add a subcategory within an existing category in your documentation, follow t
       page-one-file-name
       Page Two Title <page-two-file-name>
 
-.. note::
-
-   Ensure to replace `page-one-file-name` and `page-two-file-name` with the actual file names of your pages and `Page Two Title` with the actual file title. For more information, read the `Sphinx documentation on toctree`_.
-
 6. Update the ``index.rst`` file of the parent category by adding a reference to the newly created subcategory in its toctree.
 
 Create new pages
-~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^
 
-You can create new pages for existing documentation by following these steps:
+You can create new pages by following these steps:
 
 1. Create a new file within a category or subcategory.
 #. Add a title to the first line of the file. Underline it using equal signs (=) that match the length of your title. For more information on titles and headings, read the `reStructuredText`_ style guide.
 #. Add content to the new file using `reStructuredText`_ and following the `Canonical style guide`_.
 #. Update the category or subcategory's ``index.rst`` file by adding the file name or your preferred title to the toctree. For more information, read the `Sphinx documentation on toctree`_.
-
-Download and install the docs
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-If you are working with these documentations for the first time, you have to create a fork of the `ubuntu-cloud-docs`_ repository on your GitHub account and then clone that fork to your local machine. Once cloned, go into the ubuntu-cloud-docs directory and run:
-
-.. code::
-
-	make install
-
-This creates a virtual environment and installs all the required dependencies. You only have to do this step once and can skip it the next time you want to contribute.
-
-
-Build and serve the docs
-~~~~~~~~~~~~~~~~~~~~~~~~
-
-Use the ``make run`` command to build and serve the docs at ``http://127.0.0.1:8000`` or equivalently at ``http://localhost:8000``. This gives you a live preview of the changes that you make (and save), without the need for a rebuild:
 
 
 End: How to contribute
