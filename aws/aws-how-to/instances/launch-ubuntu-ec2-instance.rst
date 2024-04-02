@@ -74,6 +74,7 @@ Create a security group (optional)
 
 Security groups allow you to specify firewalling rules for your instances. To understand security groups better, refer to Amazon's documentation for `EC2 security groups`_ and to create your own security group, follow the instructions for `creating a security group`_. If you don't specify any security groups when you instantiate an instance, it will be added to the default security group.
 
+.. _instantiate-image-on-ec2:
 
 Instantiate the image
 ---------------------
