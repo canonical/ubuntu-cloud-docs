@@ -28,7 +28,7 @@ Images for EC2 and EKS
          aws ssm get-parameters --names \
             /aws/service/canonical/ubuntu/server/20.04/stable/current/amd64/hvm/ebs-gp2/ami-id
 
-      The format for the path is:
+      The format for the parameter is:
 
       .. code-block::
 
@@ -45,9 +45,7 @@ Images for EC2 and EKS
       .. code-block::
          
          ubuntu/$PRODUCT/$RELEASE/stable/$SERIAL/$ARCH/$VIRT_TYPE/$VOL_TYPE/ami-id
-      
-      In the generated output, the "Value" field will have the required AMI ID.
-      
+         
 
    .. tab:: For EKS
       
@@ -57,7 +55,7 @@ Images for EC2 and EKS
 
          aws ssm get-parameters --names /aws/service/canonical/ubuntu/eks/22.04/1.29/stable/current/amd64/hvm/ebs-gp2/ami-id
 
-      The format for the path is:
+      The format for the parameter is:
 
       .. code-block::
 
@@ -67,6 +65,16 @@ Images for EC2 and EKS
       * K8S_VERSION: one of the supported EKS versions (e.g. `1.28`)
       * ARCH: `amd64` or `arm64`
 
+In the generated output, the "Value" field will have the required AMI ID. It can be used to instantiate the corresponding image using the ``ec2 run-instances`` command as explained :ref:`here <instantiate-image-on-ec2>`. 
+
+If you don't want to save the AMI ID before instantiating the image, you can use the ``resolve:ssm`` option and directly pass the required parameter to it in your ``ec2 run-instances`` call:
+
+.. code::
+
+   aws ec2 run-instances \
+      --image-id resolve:ssm:/aws/service/canonical/ubuntu/server/20.04/stable/current/amd64/hvm/ebs-gp2/ami-id \
+      --key-name TestKeyPair \
+      --instance-type t3.medium
 
 Ownership verification
 ~~~~~~~~~~~~~~~~~~~~~~
