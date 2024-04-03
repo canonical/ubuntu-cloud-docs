@@ -42,10 +42,27 @@ If you are working with these docs for the first time, you'll need to create a f
 This creates a virtual environment and installs all the required dependencies. You only have to do this step once and can skip it the next time you want to contribute.
 
 
+End: How to contribute
+
+==============================================================
+
+
+Start: Build and serve the docs (part)
+
+
 Build and serve the docs
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
 Use the ``make run`` command to build and serve the docs at ``http://127.0.0.1:8000`` or equivalently at ``http://localhost:8000``. This gives you a live preview of the changes that you make (and save), without the need for a rebuild:
+
+
+End: Build and serve the docs (part)
+
+==============================================================
+
+
+Start: How to contribute (continued)
+
 
 Create content
 ~~~~~~~~~~~~~~
@@ -130,7 +147,7 @@ You can create new pages by following these steps:
 #. Update the category or subcategory's ``index.rst`` file by adding the file name or your preferred title to the toctree. For more information, read the `Sphinx documentation on toctree`_.
 
 
-End: How to contribute
+End: How to contribute (continued)
 
 ==============================================================
 
