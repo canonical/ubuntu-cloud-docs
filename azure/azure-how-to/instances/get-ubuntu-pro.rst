@@ -30,6 +30,9 @@ SSH into the instance and run:
     sudo apt install ubuntu-advantage-tools
     sudo pro auto-attach
 
+.. note::
+    The change of the "licenseType" property may take some time to propagate through the system. If the auto-attach process fails, please wait for a few minutes and try again. If the auto-attach process continues to fail, please open a support ticket with Microsoft.
+
 To verify that Ubuntu Pro is enabled on your instance run:
 
 .. code::
