@@ -79,23 +79,17 @@ If you don't want to save the AMI ID before instantiating the image, you can use
 Ownership verification
 ~~~~~~~~~~~~~~~~~~~~~~
 
-By checking the `OwnerId` field of an image, users can verify that an AMI was published by Canonical. The expected value for Canonical is one of the following:
+By checking the `OwnerId` field of an image, you can verify that an AMI was published by Canonical. To do this, use the `describe-images` command against an AMI ID and check the returned `OwnerId` field:
+
+.. code::
+
+   aws ec2 describe-images --image-ids $AMI_ID
+
+The expected value of `OwnerId` for Canonical is one of the following:
 
 * `099720109477` (in the default partition)
 * `513442679011` (in the GovCloud partition)
 * `837727238323` (in the China partition)
-
-This value/ID is stored in SSM as the publisher-id and can be found by running:
-
-.. code-block::
-
-   aws ssm get-parameters --names /aws/service/canonical/meta/publisher-id
-
-Users can then run the `describe-images` command against an AMI ID and verify that the `OwnerId` field matches the ID returned from the above command.
-
-.. code-block::
-
-   aws ec2 describe-images --image-ids $AMI_ID
 
 Note that listings on the AWS Marketplace will always show the `OwnerId` as Amazon (e.g. `679593333241`). In these cases, users can verify the Amazon ID and look for `aws-marketplace/ubuntu` in the `ImageLocation` field.
 
