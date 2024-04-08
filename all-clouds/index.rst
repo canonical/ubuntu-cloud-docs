@@ -24,12 +24,11 @@ For further details, refer to the cloud-specific documentation:
 ..  grid:: 1 1 2 2
    :padding: 0
 
-   .. grid-item:: :doc:`Ubuntu on AWS <aws:index>`    
-   .. grid-item:: :doc:`Ubuntu on GCP <google:index>` 
-   .. grid-item:: :doc:`Ubuntu on IBM <ibm:index>`
-   .. grid-item:: :doc:`Ubuntu on Azure <azure:index>`
-   .. grid-item:: :doc:`Ubuntu on Oracle <oracle:index>`
-   .. grid-item:: :doc:`Ubuntu on OCI registries<oci:index>` 
+   .. grid-item-card:: :doc:`Ubuntu on AWS <aws:index>`   
+   .. grid-item-card:: :doc:`Ubuntu on Azure <azure:index>`  
+   .. grid-item-card:: :doc:`Ubuntu on GCP <google:index>` 
+   .. grid-item-card:: :doc:`Ubuntu on IBM <ibm:index>` 
+   .. grid-item-card:: :doc:`Ubuntu on Oracle <oracle:index>`
 
 
 
