@@ -12,11 +12,11 @@ Prerequisites
 
 
 Launch an Ubuntu VM with SQL Server installed
--------------
+---------------------------------------------
 
 
 Find the correct image to launch on the Azure portal
-~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 - Sign in to the Azure portal. https://portal.azure.com/
 
@@ -30,7 +30,7 @@ Find the correct image to launch on the Azure portal
 
 
 Launch the VM
-~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~
 
 - Select your Subscription and Resource Group.
 
@@ -59,12 +59,12 @@ Launch the VM
 
 
 Config and connect
--------------
+------------------
 
 
 
 Connect to the VM
-~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~
 
 - Find the IP address of your VM in the portal, Overview section.
 
@@ -93,7 +93,7 @@ The new virtual machine installs SQL Server with a random SA password. Reset thi
 
 
 Add the tools to your path (optional)
-~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Several SQL Server packages are installed by default, including the SQL Server command-line Tools package. The tools package contains the sqlcmd and bcp tools. For convenience, you can add the tools path, /opt/mssql-tools/bin/, to your PATH environment variable.
 
@@ -105,7 +105,7 @@ Several SQL Server packages are installed by default, including the SQL Server c
 
 
 Configure for remote connections
-~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 In order to remotely connect to SQL Server on the Azure VM, you must configure an inbound rule on the network security group. The rule allows traffic on the port on which SQL Server listens (default of 1433)
 
@@ -121,7 +121,7 @@ In order to remotely connect to SQL Server on the Azure VM, you must configure a
 
 
 Open the firewall
-~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~
 
 If you want to connect remotely to VMs, you also have to open up port 1433 on the Linux firewall.
 
@@ -132,6 +132,6 @@ If you want to connect remotely to VMs, you also have to open up port 1433 on th
 
 
 Connect
-~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~
 
 You can now connect to your server from your favorite client
