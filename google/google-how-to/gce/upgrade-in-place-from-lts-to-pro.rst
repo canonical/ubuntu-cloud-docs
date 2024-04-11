@@ -33,7 +33,8 @@ where,
      - ``https://www.googleapis.com/compute/v1/projects/ubuntu-os-pro-cloud/global/licenses/ubuntu-pro-1804-lts``
    * - Ubuntu Pro 20.04 LTS
      - ``https://www.googleapis.com/compute/v1/projects/ubuntu-os-pro-cloud/global/licenses/ubuntu-pro-2004-lts``
-    
+   * - Ubuntu Pro 22.04 LTS
+     - ``https://www.googleapis.com/compute/v1/projects/ubuntu-os-pro-cloud/global/licenses/ubuntu-pro-2204-lts``
 
 
 3. Start the machine
