@@ -2,7 +2,7 @@ import pathlib
 import urllib.request
 
 # Configuration file for the Sphinx documentation builder.
-project = "Ubuntu on OCI Container Registries"
+project = "Ubuntu on OCI container registries"
 
 # The title you want to display for the documentation in the sidebar.
 # You might want to include a version number here.
