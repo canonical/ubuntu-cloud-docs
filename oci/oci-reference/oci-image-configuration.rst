@@ -38,7 +38,7 @@ Image configuration
 The Ubuntu container images are built and published with the following
 configurations:
 
-- no default OCI entrypoint,
+- no default `OCI entrypoint <https://github.com/opencontainers/image-spec/blob/b30f6ed04f94cd13f95b103f3533612a53cb3062/config.md?plain=1#L157>`_,
 - ``bash`` is the default OCI command,
 - OCI labels to identify the image name (i.e. ``ubuntu``) and its release.
 

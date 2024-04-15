@@ -27,7 +27,7 @@ This is where to find the Ubuntu container images:
 	.. tab:: IronBank
 
          .. note::
-            Please note that these Ubuntu container images may have special terms of use and fall under Ubuntu Pro. Please reach out if you would like to use the Ubuntu container images from IronBank.
+            Please note that these Ubuntu container images may have special terms of use and fall under Ubuntu Pro. Please `reach out <rocks@canonical.com>`_ if you would like to use the Ubuntu container images from IronBank.
             
 
 
