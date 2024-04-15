@@ -1,4 +1,4 @@
-Getting Started
+Getting started
 ***************
 
 This is where to find the Ubuntu container images:
@@ -40,5 +40,5 @@ day, depending on whether there have been upstream changes in the Ubuntu archive
 affecting the packages that constitute the container image.
 
 **Exception**: the only exception is the official Ubuntu image in Docker Hub which,
-due to the Docker's policies, cannot be submitted too regularly, and thus are
+due to Docker's policies, cannot be submitted too regularly, and so are
 only updated every two weeks.

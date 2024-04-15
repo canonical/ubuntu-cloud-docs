@@ -4,8 +4,8 @@ How-to guides
 *************
 
 If you have a specific goal but are already familiar with the Ubuntu container
-images, our How-to guides have more in-depth detail than our tutorials, and dig
-a bit further into more advanced usages of the Ubuntu container images.
+images, our how-to guides have more in-depth detail than our tutorials, and dig
+a bit further into the more advanced uses of Ubuntu container images.
 
 They'll help you achieve an end result but may require you to understand and
 adapt the steps to fit your specific requirements.
@@ -54,8 +54,7 @@ Documentation
 -------------
 
 If you have found something missing in this documentation, or have useful
-information to add whether it is a tutorial, a guide, or something else, we
-compiled a couple of guides for you to facilitate your contribution.
+information to add (whether it is a tutorial, a guide, or something else), this guide will help you to make your contribution.
 
 .. toctree::
    :maxdepth: 1
