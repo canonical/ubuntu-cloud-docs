@@ -7,7 +7,7 @@ Ubuntu on OCI container registries
 
 **A base container for trusted application images.** Container image provenance is a key aspect of any supply chain. The Ubuntu container image offers the ideal starting point for your application images, both in utility and trustworthiness.
 
-**Compatible with multiple platforms and available in different flavours.** The Ubuntu container image is published as a multi-arch OCI (Open Container Initiative) image that is available for ``amd64``, ``arm``, ``arm64``, ``ppc64le`` and ``s390x``. Moreover, Ubuntu Pro is also available for containers, which means hardened and security-enhanced versions of the public Ubuntu container image are also available.
+**Compatible with multiple platforms and available in different flavours.** The Ubuntu container image is published as a multi-arch Open Container Initiative (OCI) image, available for ``amd64``, ``arm``, ``arm64``, ``ppc64le`` and ``s390x``. Ubuntu Pro is also available for containers, which means hardened and security-enhanced versions of the public Ubuntu container image are also available.
 
 
 .. toctree::

@@ -4,8 +4,8 @@ Ubuntu OCI image configuration
 The definition of the Ubuntu container image follows the `OCI image format
 specification <https://github.com/opencontainers/image-spec/blob/main/spec.md>`_.
 
-Thus, as with any other container image, the Ubuntu image contains enough metadata
-such that one can inspect the image without actually running the container.
+So, as with any other container image, the Ubuntu image includes enough metadata
+that one can inspect the image without actually running the container.
 
 Layers
 ------
