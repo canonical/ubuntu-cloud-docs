@@ -1,0 +1,2 @@
+.. _Pro: https://ubuntu.com/pro
+.. _Ubuntu One: https://login.ubuntu.com/

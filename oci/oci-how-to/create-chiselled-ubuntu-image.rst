@@ -1,7 +1,7 @@
 Create a chiselled Ubuntu base image for C/C++, Go and Rust applications
-========================================================================
+************************************************************************
 
-This guide will provide step-by-step instructions on how  to create your own chiselled Ubuntu container image to run a compiled application.
+This guide will provide step-by-step instructions on how to create your own chiselled Ubuntu container image to run a compiled application.
 
 - Chiselled Ubuntu are appliance-type container images combining both the advantages of distroless and Ubuntu to create smaller, more secure containers, without loosing the value add of a stable Linux distribution.
 - The reduced size of the containers reduces the overall attack surface. Combined with the support and content quality from the Ubuntu distribution, chiselled Ubuntu is a significant security improvement.
