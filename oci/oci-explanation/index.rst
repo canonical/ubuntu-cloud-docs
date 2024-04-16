@@ -4,7 +4,7 @@
 Explanation
 ***********
 
-This section of the documentation covers the definitions of the Ubuntu and
+Here you'll find the definitions of the Ubuntu and
 Ubuntu Pro container images.
 
 .. toctree::

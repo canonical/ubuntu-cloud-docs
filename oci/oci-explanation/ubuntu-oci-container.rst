@@ -11,9 +11,9 @@ provides OCI-compliant images that receive stable security updates and predictab
 software updates, ensuring consistency in both maintenance schedule and operational 
 interfaces for the underlying foundation your software builds on.
 
-Moreover, `Ubuntu-based containers <https://ubuntu.com/containers>`_ (like
+Moreover, all `Ubuntu-based containers <https://ubuntu.com/containers>`_ (like
 `chiselled container images <https://canonical-rockcraft.readthedocs-hosted.com/en/latest/explanation/chisel/>`_)
-all leverage the Ubuntu container image as their
+leverage the Ubuntu container image as their
 starting point, and so also benefit from its
 `support and security commitments <https://ubuntu.com/security/docker-images>`_.
 

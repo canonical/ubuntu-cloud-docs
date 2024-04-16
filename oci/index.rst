@@ -1,7 +1,7 @@
 Ubuntu on OCI container registries
 ==================================
 
-**Ubuntu is one of the world's most popular container images.** A minimalistic Ubuntu image that offers the same security, versatility, and update cadence as other Ubuntu offerings. A developer favourite in container registries such as Docker Hub, with up to 30,000 pulls per week.
+**Ubuntu is one of the world's most popular container images,** a minimalistic Ubuntu image that offers the same security, versatility, and update cadence as other Ubuntu offerings. It is a developer favourite in container registries such as Docker Hub, with up to 30,000 pulls per week.
 
 **Available in all major OCI container registries,** such as Microsoft's ACR, Amazon's ECR, and of course, Docker Hub, as an official image from a verified publisher - Canonical. 
 
@@ -30,7 +30,7 @@ Ubuntu on OCI container registries
    .. grid-item-card:: :ref:`How-to guides <oci-how-to>`
 
       **Step-by-step guides** - learn how to use the Ubuntu container image to
-      achieve a goal, like :ref:`deploying a Pro container
+      achieve specific goals, like :ref:`deploying a Pro container
       image to a Pro Kubernetes cluster
       <how-to-deploy-pro-container-on-pro-cluster>`.
 
@@ -40,8 +40,8 @@ Ubuntu on OCI container registries
 
    .. grid-item-card:: :ref:`Reference <oci-reference>`
 
-      **Technical information** - understand the Ubuntu container images'
-      design and where you can get them from.
+      **Technical information** - understand the design of Ubuntu container images
+      and where you can get them from.
 
    .. grid-item-card:: :ref:`Explanation <oci-explanation>`
 

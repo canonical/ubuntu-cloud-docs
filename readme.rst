@@ -83,7 +83,7 @@ Each project has its own contribution guide:
 * `Azure <https://canonical-azure.readthedocs-hosted.com/en/latest/azure-how-to/contribute-to-these-docs/>`_
 * `Google <https://canonical-gcp.readthedocs-hosted.com/en/latest/google-how-to/contribute-to-these-docs/>`_
 * `IBM <https://canonical-ibm.readthedocs-hosted.com/en/latest/ibm-how-to/contribute-to-these-docs/>`_
-* `OCI Container registries <https://canonical-oci.readthedocs-hosted.com/en/latest/oci-how-to/contribute-to-these-docs/>`_
+* `OCI container registries <https://canonical-oci.readthedocs-hosted.com/en/latest/oci-how-to/contribute-to-these-docs/>`_
 * `Oracle <https://canonical-oracle.readthedocs-hosted.com/en/latest/oracle-how-to/contribute-to-these-docs/>`_
 
 

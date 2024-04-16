@@ -24,7 +24,7 @@ Learn how to build your own Ubuntu Pro container image from a regular Ubuntu con
 .. toctree::
    :maxdepth: 1
 
-   enable-pro-services
+   Enable Ubuntu Pro services in a Dockerfile <enable-pro-services>
 
 
 Deployments
@@ -47,7 +47,7 @@ You can create even smaller Ubuntu container images with Chisel.
 .. toctree::
    :maxdepth: 1
 
-   create-chiselled-ubuntu-image
+   Create a chiselled Ubuntu image <create-chiselled-ubuntu-image>
 
 
 Documentation

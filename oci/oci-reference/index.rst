@@ -3,7 +3,7 @@
 Reference
 *********
 
-This section of the documentation contains an in-depth description the Ubuntu
+Here you'll find an in-depth description of the Ubuntu
 image's OCI configuration.
 
 .. toctree::
