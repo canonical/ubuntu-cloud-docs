@@ -1,82 +1,64 @@
-Ubuntu on OCI Registries
-========================
+Ubuntu on OCI container registries
+==================================
 
-The Open Container Initiative (OCI) establishes standards for constructing container 
-images that can be reliably installed across a variety of compliant host environments.
+**Ubuntu is one of the world's most popular container images,** a minimalistic Ubuntu image that offers the same security, versatility, and update cadence as other Ubuntu offerings. It is a developer favourite in container registries such as Docker Hub, with up to 30,000 pulls per week.
 
-Ubuntu’s `LTS Docker Image Portfolio <https://ubuntu.com/security/docker-images>`_ 
-provides OCI-compliant images that receive stable security updates and predictable 
-software updates, thus ensuring consistency in both maintenance schedule and operational 
-interfaces for the underlying software your software builds on.
+**Available in all major OCI container registries,** such as Microsoft's ACR, Amazon's ECR, and of course, Docker Hub, as an official image from a verified publisher - Canonical. 
 
-Ubuntu OCI tarball is a minimal rootfs tarball ready for use to build OCI/Docker 
-container base images. It is similar to `Ubuntu Base <https://wiki.ubuntu.com/Base>`_ 
-but already contains the modifications needed to make the rootfs suitable for 
-building OCI/Docker container images. It is available for the amd64, armhf, arm64, 
-powerpc and ppc64el architectures. The rootfs tarballs are published under 
-`OCI partner images <https://partner-images.canonical.com/oci/>`_. 
+**A base container for trusted application images.** Container image provenance is a key aspect of any supply chain. The Ubuntu container image offers the ideal starting point for your application images, both in utility and trustworthiness.
 
-Canonical publishes official Docker images to Docker Hub based on OCI images that are 
-built from the Ubuntu OCI rootfs tarballs. Images are also published to AWS ECR 
-(Elastic Container Registry) gallery (in `ubuntu <https://gallery.ecr.aws/ubuntu/ubuntu>`_
-and `lts <https://gallery.ecr.aws/lts/ubuntu>`_ namespaces), ACR (Azure Container Registry),
-OCIR (Oracle Container Infrastructure Registry), and there are plans to publish to more
-registries in the future.
+**Compatible with multiple platforms and available in different flavours.** The Ubuntu container image is published as a multi-arch Open Container Initiative (OCI) image, available for ``amd64``, ``arm``, ``arm64``, ``ppc64le`` and ``s390x``. Ubuntu Pro is also available for containers, which means hardened and security-enhanced versions of the public Ubuntu container image are also available.
 
-
-----------
-
-.. _building_ubuntu_pro_oci_images:
-
-Building Ubuntu Pro OCI images
-------------------------------
-
-Similar to the `Ubuntu Pro images in public clouds <https://canonical-ubuntu-pro-client.readthedocs-hosted.com/en/latest/explanations/what_are_ubuntu_pro_cloud_instances/>`_, one can build an Ubuntu Pro OCI image to leverage services like ESM (Extended Security Maintenance) and FIPS.
-
-The easiest way to build an Ubuntu Pro container image is to make use of existing container management tools (like Docker) and enable the Pro services on top of an existing Ubuntu container image (e.g. `ubuntu:focal <https://hub.docker.com/layers/library/ubuntu/focal/images/sha256-b39db7fc56971aac21dee02187e898db759c4f26b9b27b1d80b6ad32ff330c76?context=explore>`_).
-
-.. note::
-   It is highly recommended that Ubuntu Pro container images should be built on hosts that are already covered by an Ubuntu Pro subscription.
-
-This process is described in detail in the `pro client documentation <https://canonical-ubuntu-pro-client.readthedocs-hosted.com/en/latest/howtoguides/enable_in_dockerfile/>`_. The resulting Ubuntu Pro container image can then be loaded into your local Docker daemon (by using ``--load`` when running ``docker build``) and can be deployed/published normally as any other container image.
-
-
-----------
-
-How-to guides
--------------
-
-Instructions for deploying Ubuntu Pro containers on Kubernetes and for creating a 'chiselled' Ubuntu base image are linked below:
-
-* :doc:`Deploy Pro containers on K8s <./oci-how-to/deploy-pro-container-on-pro-kubernetes-cluster>`
-* :doc:`Create a chiselled image <./oci-how-to/create-chiselled-ubuntu-image>`
-
-
----------
-
-Project and community
----------------------
-
-Ubuntu on OCI registries is a member of the Ubuntu family and the project warmly welcomes 
-community projects, contributions, suggestions, fixes and constructive feedback.
-
-* `Get support`_
-* `Join our online chat`_
-* `Discuss on IRC`_
-* :doc:`oci-how-to/contribute-to-these-docs`
-* `Code of conduct`_
 
 .. toctree::
+   :maxdepth: 1
    :hidden:
-   :maxdepth: 2
 
-   Deploy Pro containers on K8s <oci-how-to/deploy-pro-container-on-pro-kubernetes-cluster>
-   Create a chiselled image <oci-how-to/create-chiselled-ubuntu-image>
-   oci-how-to/contribute-to-these-docs
+   oci-tutorials/index
+   oci-how-to/index
+   oci-reference/index
+   oci-explanation/index
 
-  
-.. _Get support: https://ubuntu.com/cloud/public-cloud
-.. _Join our online chat: https://discourse.ubuntu.com/c/public-cloud/176
-.. _`Discuss on IRC`: https://web.libera.chat/#ubuntu-cloud
-.. _Code of conduct: https://ubuntu.com/community/ethos/code-of-conduct
 
+.. grid:: 1 1 2 2
+
+   .. grid-item-card:: :ref:`Tutorials <oci-tutorials>`
+
+      **Get started** - become familiar with the Ubuntu container image and its
+      common usage.
+
+   .. grid-item-card:: :ref:`How-to guides <oci-how-to>`
+
+      **Step-by-step guides** - learn how to use the Ubuntu container image to
+      achieve specific goals, like :ref:`deploying a Pro container
+      image to a Pro Kubernetes cluster
+      <how-to-deploy-pro-container-on-pro-cluster>`.
+
+.. grid:: 1 1 2 2
+   :padding: 0
+   :reverse:
+
+   .. grid-item-card:: :ref:`Reference <oci-reference>`
+
+      **Technical information** - understand the design of Ubuntu container images
+      and where you can get them from.
+
+   .. grid-item-card:: :ref:`Explanation <oci-explanation>`
+
+      **Discussion and clarification** - dive a bit deeper into what Ubuntu and
+      Ubuntu Pro container images are.
+
+
+Project and community
+=====================
+
+This project is a member of the Ubuntu family and it warmly welcomes community
+projects, contributions, suggestions, fixes, and constructive feedback.
+
+* `Get support <https://ubuntu.com/cloud/public-cloud>`_
+* `Join our online chat <https://discourse.ubuntu.com/c/public-cloud/176>`_
+* `Discuss on IRC <https://web.libera.chat/#ubuntu-cloud>`_
+* `Ubuntu Docker Images on Launchpad <https://launchpad.net/ubuntu-docker-images>`_
+* `Ubuntu Code of Conduct <https://ubuntu.com/community/code-of-conduct>`_
+* `Canonical contributor license agreement
+  <https://ubuntu.com/legal/contributors>`_

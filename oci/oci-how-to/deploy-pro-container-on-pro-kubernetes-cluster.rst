@@ -1,5 +1,7 @@
+.. _how-to-deploy-pro-container-on-pro-cluster:
+
 Deploy Ubuntu Pro containers on Kubernetes
-==========================================
+******************************************
 
 You can easily deploy your Ubuntu Pro container images on Kubernetes clusters, provided
 that said clusters are composed of Ubuntu Pro nodes. Read more on the

@@ -1,19 +1,19 @@
-Create a chiselled Ubuntu base image for C/C++, Go and Rust applications
-========================================================================
+Create a chiselled Ubuntu image for C/C++, Go and Rust applications
+*******************************************************************
 
-This guide will provide step-by-step instructions on how  to create your own chiselled Ubuntu container image to run a compiled application.
+This guide will provide step-by-step instructions on how to create your own chiselled Ubuntu container image to run a compiled application.
 
 - Chiselled Ubuntu are appliance-type container images combining both the advantages of distroless and Ubuntu to create smaller, more secure containers, without loosing the value add of a stable Linux distribution.
 - The reduced size of the containers reduces the overall attack surface. Combined with the support and content quality from the Ubuntu distribution, chiselled Ubuntu is a significant security improvement.
 - Chisel provides a developer-friendly CLI to install slices of packages from the upstream Ubuntu distribution onto the container filesystem.
 
 
-Build the chiselled Ubuntu base image
--------------------------------------
+Build the chiselled Ubuntu image
+--------------------------------
 
 This image must contain all the essential slices that are required for the execution of common compiled applications. As a base, the must-have list of slices is:
 
-- **base-files_base** and **base-files_release-info**: will give you the overall base structure of the container image's filesystem, together with the underlying Ubuntu base's release information,
+- **base-files_base** and **base-files_release-info**: will give you the overall base structure of the container image's filesystem, together with the underlying Ubuntu release information,
 - **ca-certificates_data**: for cryptographic certificate verifications,
 - **libgcc-s1_libs** and **libc6_libs**: for the libgcc-s1 and libc6 libraries.
 
@@ -56,18 +56,18 @@ Start by creating a Dockerfile with the following content:
    FROM scratch
    COPY --from=builder /rootfs /
 
-Build the chiselled Ubuntu base image by running:
+Build the chiselled Ubuntu image by running:
 
 ..  code-block:: bash
    
-   docker build -t chiselled-ubuntu-base:latest . --build-arg ARCH=<your_arch> # example ARCH=amd64
+   docker build -t chiselled-ubuntu:latest . --build-arg ARCH=<your_arch> # example ARCH=amd64
 
 You'll then find yourself with a new container image with approximately 5MB (or 2.5MB when compressed). 
 
 Build the application image
 ---------------------------
 
-Now that you have the ``chiselled-ubuntu-base:latest`` image, you can simply add your compiled application to the image and run it from there. For the sake of simplicity, this guide will give your three very simple “Hello World” application examples for C, Go and Rust.
+Now that you have the ``chiselled-ubuntu:latest`` image, you can simply add your compiled application to the image and run it from there. For the sake of simplicity, this guide will give you three very simple “Hello World” application examples for C, Go and Rust.
 
 
 .. tabs::
@@ -118,11 +118,11 @@ Now that you have the ``chiselled-ubuntu-base:latest`` image, you can simply add
    
 
 
-To build the final application image, you simply need to add your compiled executable to the ``chiselled-ubuntu-base:latest`` container image. So your new Dockerfile should be similar to:
+To build the final application image, you simply need to add your compiled executable to the ``chiselled-ubuntu:latest`` container image. So your new Dockerfile should be similar to:
 
 .. code-block:: dockerfile
 
-   FROM chiselled-ubuntu-base:latest
+   FROM chiselled-ubuntu:latest
    COPY app /
    ENTRYPOINT [ "./app" ]
 

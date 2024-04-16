@@ -161,9 +161,9 @@ custom_linkcheck_anchors_ignore_for_url = []
 # NOTE: Remove this variable to disable the MyST parser extensions.
 custom_myst_extensions = []
 
-# Add custom Sphinx extensions as needed. 
+# Add custom Sphinx extensions as needed.
 # This array contains recommended extensions that should be used.
-# NOTE: The following extensions are handled automatically and do 
+# NOTE: The following extensions are handled automatically and do
 # not need to be added here: myst_parser, sphinx_copybutton, sphinx_design,
 # sphinx_reredirects, sphinxcontrib.jquery, sphinxext.opengraph
 custom_extensions = [
@@ -202,7 +202,7 @@ multiproject_projects = {
     "google": {},
     "ibm": {},
     "oracle": {},
-    "oci": {}
+    "oci": {},
 }
 
 intersphinx_mapping = {
