@@ -59,6 +59,7 @@ Ubuntu public cloud is open source project that warmly welcomes community projec
    Confidential computing <all-clouds-explanation/confidential-computing>
    Check CVE status of an image <all-clouds-how-to/check-cve-on-instance>
    Contribute to these docs <all-clouds-how-to/contribute-to-these-docs>
+   Public images<public-images/index>
       
 
 .. _Get support: https://ubuntu.com/cloud/public-cloud
