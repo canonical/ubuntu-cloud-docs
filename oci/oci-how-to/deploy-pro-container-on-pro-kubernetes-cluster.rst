@@ -14,7 +14,7 @@ Prerequisites
 You will need
 
 - an Ubuntu Pro container image on a private registry. This can be built using the procedure given at 
-  :ref:`Building Ubuntu Pro OCI images <building_ubuntu_pro_oci_images>`. Since the image is attached to your Ubuntu Pro subscription, it should be kept private to avoid the sharing of your Ubuntu Pro subscription with unwanted users. 
+  :ref:`Building Ubuntu Pro OCI images <ubuntu-pro-oci-container-images>`. Since the image is attached to your Ubuntu Pro subscription, it should be kept private to avoid the sharing of your Ubuntu Pro subscription with unwanted users. 
 
 - a Kubernetes cluster with an Ubuntu Pro subscription. To learn to deploy it for different clouds, refer to the options shown below: 
 
