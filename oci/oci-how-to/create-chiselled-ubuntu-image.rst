@@ -30,19 +30,17 @@ Start by creating a Dockerfile with the following content:
 ..  code-block:: dockerfile
 
    ARG UBUNTU_RELEASE=22.04
-   ARG ARCH
 
    # Build the chiselled filesystem based on the desired slices.
    FROM ubuntu:$UBUNTU_RELEASE AS builder
    ARG UBUNTU_RELEASE
-   ARG ARCH
+   ARG TARGETARCH
 
    # Get chisel binary
-   ADD "https://github.com/canonical/chisel/releases/download/v0.8.0/chisel_v0.8.0_linux_$ARCH.tar.gz" chisel.tar.gz
+   ADD https://github.com/canonical/chisel/releases/download/v0.9.1/chisel_v0.9.1_linux_$TARGETARCH.tar.gz chisel.tar.gz
    RUN tar -xvf chisel.tar.gz -C /usr/bin/
    RUN apt-get update \
       && DEBIAN_FRONTEND=noninteractive apt-get install -y ca-certificates
-   COPY --from=chisel /opt/chisel/chisel /usr/bin/
    WORKDIR /rootfs
    RUN chisel cut --release ubuntu-$UBUNTU_RELEASE --root /rootfs \
       base-files_base \
@@ -60,7 +58,7 @@ Build the chiselled Ubuntu image by running:
 
 ..  code-block:: bash
    
-   docker build -t chiselled-ubuntu:latest . --build-arg ARCH=<your_arch> # example ARCH=amd64
+   docker build -t chiselled-ubuntu:latest .
 
 You'll then find yourself with a new container image with approximately 5MB (or 2.5MB when compressed). 
 
