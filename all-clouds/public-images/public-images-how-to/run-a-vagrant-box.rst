@@ -6,7 +6,7 @@ The quickest way to get a vagrant environment up and running is ``vagrant init <
 
 Custom boxes
 ------------
-For working on development boxes built by Bartender or live-build, you'll need to import the box: ``vagrant box add <path/to/box> --name <name-for-box>``. You can then use the newly added box by name. Once a box is added, it is unpacked in ``~/.vagrant.d/boxes/``. The structure then follows the pattern ``<BOX_NAME>/<VERSION>/<PROVIDER>/`` with the unpacked tar .box files. This is useful if you're making changes to the Vagrantfile in ``livecd-rootfs`` and want to check the Vagrantfile was written properly.
+For working on development boxes built by Bartender you'll need to import the box: ``vagrant box add <path/to/box> --name <name-for-box>``. You can then use the newly added box by name. Once a box is added, it is unpacked in ``~/.vagrant.d/boxes/``. The structure then follows the pattern ``<BOX_NAME>/<VERSION>/<PROVIDER>/`` with the unpacked tar .box files.
 
 To ssh into a server, run ``vagrant ssh``. This will use the default generated ssh key for the vagrant user.
 
@@ -31,7 +31,7 @@ Vagrantfiles are written in Ruby. This is handy to know, as you do have access t
    # -*- mode: ruby -*-
    # vi: set ft=ruby :
    Vagrant.configure("2") do |config|
-     config.vm.box = "ubuntu/groovy64"
+     config.vm.box = "ubuntu/jammy64"
    end
 
 The default Vagrantfile created for our images is in the `livecd-rootfs hook <https://git.launchpad.net/livecd-rootfs/tree/live-build/ubuntu-cpc/hooks.d/base/vagrant.binary#n141>`_. It includes creating a serial connection to a NULL file as well as front-loaded imports required for base box Vagrantfiles.

@@ -5,6 +5,10 @@ Build a Vagrant box with Bartender
 
 `Ubuntu Bartender <https://github.com/ubuntu-bartenders/ubuntu-old-fashioned/tree/master/scripts/ubuntu-bartender>`_ (Bartender) is a script based on `Ubuntu Old Fashioned <https://github.com/ubuntu-bartenders/ubuntu-old-fashioned/tree/master>`_ to let you build Ubuntu cloud images locally using `livecd-rootfs <https://launchpad.net/livecd-rootfs>`_.
 
+Disclaimer
+----------
+The use of Bartender to build custom Vagrant images is intended for development use only. It is **not** for building production images. Support of the Bartender tool is *only* for bugs within the tool itself, not community help with building images.
+
 Basic setup
 -----------
 To run Bartender, you will need a copy of the Ubuntu Old Fashioned repository, ``git`` (version control), ``petname`` (for project naming), and availability of one of the build providers (Google Cloud Engine, AWS EC2, Microsoft Azure, or Multipass). In a suitable directory, run:

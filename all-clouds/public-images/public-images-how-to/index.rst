@@ -8,7 +8,6 @@ Vagrant
 -------
 
 - :ref:`vagrant-bartender`
-- :ref:`vagrant-live-build`
 - :ref:`run-a-vagrant-box`
 
 Contributing to the docs
@@ -23,5 +22,4 @@ If you come across any problems with this documentation and you want to help wit
    :hidden:
 
    Build a Vagrant box with Bartender<build-vagrant-with-bartender>
-   Build a Vagrant box with live-build<build-vagrant-with-live-build>
    Run a Vagrant box<run-a-vagrant-box>
