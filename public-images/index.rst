@@ -1,4 +1,4 @@
-Ubuntu public images
+Ubuntu Public Images
 ====================
 
 **Canonical produce generic (generic kernel) cloud images, LXD images (rootfs tarballs) and KVM optimised cloud images (KVM kernel)**. These images are public (unlike other cloud-specific images) and are available on `cloud-images.ubuntu.com <http://cloud-images.ubuntu.com>`_.
@@ -36,7 +36,7 @@ suggestions, fixes and constructive feedback.
 
 * `Get support`_
 * `Discuss on IRC`_
-* :doc:`all-clouds:all-clouds-how-to/contribute-to-these-docs`
+* :ref:`public-images-contribute`
 * `Code of conduct`_
 
 .. If none of the above options are suitable for you, and you still want to get in touch, send us an email: aws@canonical.com.
