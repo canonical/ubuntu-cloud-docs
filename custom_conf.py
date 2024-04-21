@@ -213,8 +213,7 @@ intersphinx_mapping = {
     'google': ('https://canonical-gcp.readthedocs-hosted.com/en/latest/', None),
     'ibm': ('https://canonical-ibm.readthedocs-hosted.com/en/latest/', None),
     'oracle': ('https://canonical-oracle.readthedocs-hosted.com/en/latest/', None),
-    'oci': ('https://canonical-oci.readthedocs-hosted.com/en/latest/', None),
-    'public-images': ('https://canonical-public-images.readthedocs-hosted.com/en/latest/', None)
+    'oci': ('https://canonical-oci.readthedocs-hosted.com/en/latest/', None)
 }
 
 # Add CSS files (located in .sphinx/_static/)
