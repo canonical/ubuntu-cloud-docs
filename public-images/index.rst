@@ -3,7 +3,7 @@ Ubuntu Public Images
 
 **Canonical produce generic (generic kernel) cloud images, LXD images (rootfs tarballs) and KVM optimised cloud images (KVM kernel)**. These images are public (unlike other cloud-specific images) and are available on `cloud-images.ubuntu.com <http://cloud-images.ubuntu.com>`_.
 
-.. include:: ../../reuse/common-intro.txt
+.. include:: ../reuse/common-intro.txt
    :start-after: Start: Product need and user
    :end-before: End: Product need and user
 

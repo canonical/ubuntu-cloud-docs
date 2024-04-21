@@ -29,7 +29,7 @@ For further details, refer to the cloud-specific documentation:
    .. grid-item-card:: :doc:`Ubuntu on GCP <google:index>` 
    .. grid-item-card:: :doc:`Ubuntu on IBM <ibm:index>` 
    .. grid-item-card:: :doc:`Ubuntu on Oracle <oracle:index>`
-   .. grid-item-card:: :doc:`Ubuntu Public Images <public-images:index>`
+
 
 
 
