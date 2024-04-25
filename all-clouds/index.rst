@@ -10,9 +10,9 @@ Ubuntu on public cloud
 
 **Everyone from individual developers to large enterprises use these Ubuntu images** on the public cloud of their choice. Highly regulated industries from the government, medical and finance sectors, use specific security-certified versions of these images for their workloads.
 
----------
+-----------------------------------------------------------------
 
-Public Cloud Partners
+Public cloud partners
 ---------------------
 
 Canonical in collaboration with cloud partners such as Amazon, Google, IBM, Microsoft and Oracle, creates optimised Ubuntu images for each of those clouds. These images are available in the respective marketplaces, and work seamlessly across different platforms within each cloud. 
@@ -30,10 +30,25 @@ For further details, refer to the cloud-specific documentation:
    .. grid-item-card:: :doc:`Ubuntu on IBM <ibm:index>` 
    .. grid-item-card:: :doc:`Ubuntu on Oracle <oracle:index>`
 
+-----------------------------------------------------------------
+
+
+Other Ubuntu images
+-------------------
+
+Apart from the specific public clouds, Canonical also produces a variety of Ubuntu images for use in other platforms such as LXD, MAAS and OCI container registries.
+
+
+..  grid:: 1 1 2 2
+   :padding: 0
+
+   .. grid-item-card:: :doc:`Ubuntu on OCI container registries <oci:index>`
+   .. grid-item-card:: :doc:`Ubuntu Public Images <public-images:index>`
 
 
 
-------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------
 
 
 

@@ -3,7 +3,7 @@
 Build a Vagrant box with Bartender
 ==================================
 
-`Ubuntu Bartender <https://github.com/ubuntu-bartenders/ubuntu-old-fashioned/tree/master/scripts/ubuntu-bartender>`_ (Bartender) is a script based on `Ubuntu Old Fashioned <https://github.com/ubuntu-bartenders/ubuntu-old-fashioned/tree/master>`_ to let you build Ubuntu cloud images locally using `livecd-rootfs <https://launchpad.net/livecd-rootfs>`_.
+`Ubuntu Bartender <https://github.com/ubuntu-bartenders/ubuntu-old-fashioned/tree/master/scripts/ubuntu-bartender>`_ (Bartender) is a script based on `Ubuntu Old Fashioned <https://github.com/ubuntu-bartenders/ubuntu-old-fashioned/tree/master>`_ that lets you build Ubuntu cloud images locally using `livecd-rootfs <https://launchpad.net/livecd-rootfs>`_.
 
 Disclaimer
 ----------

@@ -2,7 +2,25 @@
 
 Run a Vagrant box
 =====================
-The quickest way to get a vagrant environment up and running is ``vagrant init <BOX>``. For upstream, use a call such as ``vagrant init ubuntu/focal64``. To bring up the image, ``vagrant up``. This will create a VM, create an ssh key and associate it with the vagrant user, and mount the default synced directory (``./`` to ``/vagrant``). The image should boot relatively quickly, dependent on hardware. The default Vagrant timeout is five minutes, and if it's even close to that, something has gone wrong.
+The quickest way to get a vagrant environment up and running is to run:
+
+.. code::
+
+   vagrant init <BOX>
+
+For upstream, use a call such as:
+
+.. code::
+
+   vagrant init ubuntu/jammy64
+
+To bring up the image, use
+
+.. code::
+
+   vagrant up
+
+This will create a VM, create an ssh key and associate it with the vagrant user, and mount the default synced directory (``./`` to ``/vagrant``). The image should boot relatively quickly, dependent on hardware. The default Vagrant timeout is five minutes, and if it's even close to that, something has gone wrong.
 
 Custom boxes
 ------------
@@ -40,7 +58,7 @@ Common errors
 -------------
 Below you can find some of the more common errors that occur when attempting to run your Vagrant box.
 
-Multiple Hypervisor Incompatibility
+Multiple hypervisor incompatibility
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 KVM/QEMU, Multipass, and VirtualBox are all hypervisors that may be used during the course of building or running Vagrant boxes. You may run into issues if you attempt to use multiple hypervisors at the same time.
 
@@ -52,11 +70,11 @@ When you try and start Vagrant after building your box, you may get a variation 
 
    VirtualBox can't enable the AMD-V extension. Please disable the KVM kernel extension, recompile your kernel and reboot (VERR_SVM_IN_USE)
 
-First check that the QEMU VM isn’t running. If it is then shut it down by pressing ``C-a x``. If this doesn’t resolve the error, use a process manager like ``htop`` to search for and end any ``kvm`` processes.
+First check that the QEMU VM isn't running. If it is then shut it down by pressing ``C-a x``. If this doesn't resolve the error, use a process manager like ``htop`` to search for and end any ``kvm`` processes.
 
 VirtualBox (Vagrant) running
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-If you have VirtualBox (Vagrant) running and you try and launch a QEMU VM, you may encounter the a variation on the following error:
+If you have VirtualBox (Vagrant) running and you try and launch a QEMU VM, you may encounter a variation of the following error:
 
 .. terminal::
 
