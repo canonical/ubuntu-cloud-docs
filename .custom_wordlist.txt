@@ -249,4 +249,13 @@ virtio
 unmount
 SeaBIOS
 customisations
+manpages
+minimized
+Mantic
+onwards
+Numbat
+MiB
+qcow
+DPKG
+unminimize
 MAAS
