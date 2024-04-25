@@ -12,7 +12,7 @@ For upstream, use a call such as:
 
 .. code::
 
-   vagrant init ubuntu/focal64
+   vagrant init ubuntu/jammy64
 
 To bring up the image, use
 

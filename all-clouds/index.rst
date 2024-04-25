@@ -42,8 +42,8 @@ Apart from the specific public clouds, Canonical also produces a variety of Ubun
 ..  grid:: 1 1 2 2
    :padding: 0
 
-   .. grid-item-card:: :doc:`Ubuntu on OCI container registries <oci:index>`   
-   .. grid-item-card:: :doc:`Ubuntu public images <public-images:index>` 
+   .. grid-item-card:: :doc:`Ubuntu on OCI container registries <oci:index>`
+   .. grid-item-card:: :doc:`Ubuntu Public Images <public-images:index>`
 
 
 
