@@ -250,7 +250,6 @@ unmount
 SeaBIOS
 customisations
 manpages
-minimized
 Mantic
 onwards
 Numbat
@@ -258,4 +257,5 @@ MiB
 qcow
 DPKG
 unminimize
+unminimise
 MAAS
