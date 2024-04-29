@@ -40,3 +40,5 @@ Ubuntu 20.04 LTS for EKS 1.29,amd64,``prod-lg73jq6vy35h2``,✓
 Ubuntu 20.04 LTS for EKS 1.29,arm64,``prod-htjgvopsb6wo2``,✓
 Ubuntu 22.04 LTS for EKS 1.29,amd64,``prod-lg73jq6vy35h2``,✓
 Ubuntu 22.04 LTS for EKS 1.29,arm64,``prod-htjgvopsb6wo2``,✓
+Ubuntu Pro 22.04 LTS for EKS 1.29,amd64,``prod-zhspprfykjuvy``,✓
+Ubuntu Pro 22.04 LTS for EKS 1.29,arm64,``prod-ixonrj2zphe7a``,✓

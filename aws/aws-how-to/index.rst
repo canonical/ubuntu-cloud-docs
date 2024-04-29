@@ -25,7 +25,8 @@ EKS - Using Kubernetes
 
 If you want to use some of our products such as Ubuntu Pro and Charmed Kubernetes on Amazon's EKS service, you can refer to these instructions.
 
-* :doc:`Deploy an Ubuntu Pro cluster <kubernetes/deploy-ubuntu-pro-cluster>`
+* :doc:`Deploy an Ubuntu Pro cluster with Pro AMI <kubernetes/deploy-ubuntu-pro-cluster-with-eks-pro-ami>`
+* :doc:`Deploy an Ubuntu Pro cluster with Pro tokens <kubernetes/deploy-ubuntu-pro-cluster>`
 * :doc:`Enable GPUs <kubernetes/enable-gpus-on-eks>`
 * :doc:`Deploy Charmed K8s on Ubuntu Pro <kubernetes/deploy-charmed-kubernetes-on-ubuntu-pro>`
 
