@@ -9,7 +9,7 @@ For more comprehensive instructions on checking the available drivers and instal
 Launch your instance
 --------------------
 
-Launch your Ubuntu 22.04 VM using either `AWS CLI or the web console`_. Ensure that you have enough disk space (at least 30GB) as driver installation requires a significant amount of space. You will need more space if you plan to train or run ML models later. 
+Launch your Ubuntu 24.04 VM using either `AWS CLI or the web console`_. Make sure you allocate enough disk space for your use case, as ML models tend to use a significant amount of disk. 
 
 SSH access is required, so make sure to either open port 22 or enable SSM to access the machine through Session Manager. 
 
@@ -39,7 +39,7 @@ If you are using the correct instance type (G4DN in this case), you should see t
            capabilities: vga_controller
            configuration: latency=0
            resources: memory:fe400000-fe7fffff memory:c0000-dffff
-      *-display:1 UNCLAIMED
+      *-display:1 
            description: 3D controller
            product: TU104GL [Tesla T4]
            vendor: NVIDIA Corporation
@@ -53,14 +53,19 @@ If you are using the correct instance type (G4DN in this case), you should see t
            resources: iomemory:40-3f iomemory:40-3f memory:fd000000-fdffffff memory:440000000-44fffffff memory:450000000-451ffffff
 
 
-The NVIDIA Tesla T4 GPU should be listed as unclaimed. Now, install the NVIDIA driver:
+The NVIDIA Tesla T4 GPU should be listed in the output. Now, install the NVIDIA driver, we need to install `ubuntu-drivers` utility:
 
 .. code-block:: none
 
-    sudo apt install nvidia-headless-535-server nvidia-utils-535-server -y
+    sudo apt install -y ubuntu-drivers-common
+
+Install the NVIDIA driver with the following command:
+
+.. code::
+    sudo ubuntu-drivers install
 
 .. note::
-    Since we are using a headless server (no desktop), the headless driver is sufficient. If you are running this in a desktop environment (AWS Workspaces or your own EC2 Desktop), use ``nvidia-driver-535``.
+    If you need a specific NVIDIA driver version, use ``sudo ubuntu-drivers install nvidia:535``.
 
 After the installation, reboot the instance:
 
@@ -70,41 +75,6 @@ After the installation, reboot the instance:
 
 
 Test if everything got properly installed
-
-.. code::
-
-    sudo lshw -c video
-
-.. code-block:: none
-
-      *-display:0 UNCLAIMED     
-           description: VGA compatible controller
-           product: Amazon.com, Inc.
-           vendor: Amazon.com, Inc.
-           physical id: 3
-           bus info: pci@0000:00:03.0
-           version: 00
-           width: 32 bits
-           clock: 33MHz
-           capabilities: vga_controller
-           configuration: latency=0
-           resources: memory:fe400000-fe7fffff memory:c0000-dffff
-      *-display:1
-           description: 3D controller
-           product: TU104GL [Tesla T4]
-           vendor: NVIDIA Corporation
-           physical id: 1e
-           bus info: pci@0000:00:1e.0
-           version: a1
-           width: 64 bits
-           clock: 33MHz
-           capabilities: pm pciexpress msix bus_master cap_list
-           configuration: driver=nvidia latency=0
-       resources: iomemory:40-3f iomemory:40-3f irq:10 memory:fd000000-fdffffff memory:440000000-44fffffff memory:450000000-451ffffff
-
-The Tesla T4 should no longer be "UNCLAIMED".
-
-You can also perform an additional test to check if CUDA was installed:
 
 .. code::
 
