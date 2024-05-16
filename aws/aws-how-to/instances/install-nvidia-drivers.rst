@@ -9,7 +9,7 @@ For more comprehensive instructions on checking the available drivers and instal
 Launch your instance
 --------------------
 
-Launch your Ubuntu 24.04 VM using either `AWS CLI or the web console`_. Make sure you allocate enough disk space for your use case, as ML models tend to use a significant amount of disk. 
+Launch your Ubuntu 24.04 VM using either `AWS CLI or the web console`_. Make sure you allocate enough disk space for your use case, as ML models tend to need a significant amount. 
 
 SSH access is required, so make sure to either open port 22 or enable SSM to access the machine through Session Manager. 
 
@@ -53,19 +53,15 @@ If you are using the correct instance type (G4DN in this case), you should see t
            resources: iomemory:40-3f iomemory:40-3f memory:fd000000-fdffffff memory:440000000-44fffffff memory:450000000-451ffffff
 
 
-The NVIDIA Tesla T4 GPU should be listed in the output. Now, install the NVIDIA driver, we need to install `ubuntu-drivers` utility:
-
-.. code-block:: none
-
-    sudo apt install -y ubuntu-drivers-common
-
-Install the NVIDIA driver with the following command:
+The NVIDIA Tesla T4 GPU should be listed in the output. Now, install the NVIDIA driver using the `ubuntu-drivers` utility:
 
 .. code::
+
+    sudo apt install -y ubuntu-drivers-common
     sudo ubuntu-drivers install
 
 .. note::
-    If you need a specific NVIDIA driver version, use ``sudo ubuntu-drivers install nvidia:535``.
+    If you need a specific NVIDIA driver version, use e.g. ``sudo ubuntu-drivers install nvidia:535``.
 
 After the installation, reboot the instance:
 
@@ -74,7 +70,7 @@ After the installation, reboot the instance:
     sudo reboot
 
 
-Test if everything got properly installed
+Test if everything got properly installed:
 
 .. code::
 
