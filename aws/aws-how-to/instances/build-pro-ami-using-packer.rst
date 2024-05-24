@@ -9,7 +9,7 @@ We'll be using Ubuntu Pro 20.04 for this guide, but the method is equally applic
 
    * For **Ubuntu Pro FIPS**, it is better to use a pre-enabled FIPS image from the Marketplace to avoid unnecessary additional steps. 
    * For **Ubuntu LTS**, you can use this method with a small change as explained at the end of the :ref:`define-provisioners` section below. 
-
+   * For **Ubuntu 22.04 LTS and above** you need packer version 1.8.1 or newer.
 
 Basic setup
 -------------
@@ -25,6 +25,13 @@ If you have an Ubuntu workstation, run:
 .. code::
 
    sudo apt install packer
+
+.. note::
+
+   * For building images based on Ubuntu 22.04 and later, you need packer v1.7.1.
+   * The version of Packer present in the Ubuntu archives on Ubuntu 22.04 LTS is v1.6.6. 
+   * Packer is no longer available in the Ubuntu repositories on Ubuntu 24.04 LTS.
+   * If you need a newer version, please use the appropriate `install Packer`_ instructions.
 
 For other platforms, use the appropriate `install Packer`_ instructions.
 
