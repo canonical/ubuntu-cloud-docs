@@ -33,9 +33,6 @@ If you have an Ubuntu workstation, run:
    * Packer is no longer available in the Ubuntu repositories on Ubuntu 24.04 LTS.
    * If you need a newer version, please use the appropriate `install Packer`_ instructions.
 
-For other platforms, use the appropriate `install Packer`_ instructions.
-
-
 Subscribe to Ubuntu Pro (Only needed for FIPS AMI)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
