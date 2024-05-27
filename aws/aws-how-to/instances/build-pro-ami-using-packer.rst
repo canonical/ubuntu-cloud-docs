@@ -28,7 +28,7 @@ If you have an Ubuntu workstation, run:
 
 .. note::
 
-   * For building images based on Ubuntu 22.04 and later, you need packer v1.7.1.
+   * For building images based on Ubuntu 22.04 and later, you need packer v1.8.1 or newer.
    * The version of Packer present in the Ubuntu archives on Ubuntu 22.04 LTS is v1.6.6. 
    * Packer is no longer available in the Ubuntu repositories on Ubuntu 24.04 LTS.
    * If you need a newer version, please use the appropriate `install Packer`_ instructions.
