@@ -24,7 +24,7 @@ Canonical builds optimised and certified server images for Oracle Cloud. The ima
 * Full and minimal versions of the images
 * Versions for x86_64 and AArch64 (ARM64) platforms
 
-The customised images include the ``linux-oracle`` flavor of our kernel. This kernel enables fast networking and boot by taking advantage of the native hardware, while supporting the live migration of Ubuntu guests. The arm64 version of the kernel also takes advantage of the unique features of Ampere native CPUs.
+The customised images include the ``linux-oracle`` flavour of our kernel. This kernel enables fast networking and boot by taking advantage of the native hardware, while supporting the live migration of Ubuntu guests. The arm64 version of the kernel also takes advantage of the unique features of Ampere native CPUs.
 
 The Ubuntu LTS instances can also be attached to Ubuntu Pro subscriptions. This enables access to enterprise lifecycle, kernel livepatching, CIS compliance automation tooling, and FIPS 140 certified cryptography.
 
