@@ -9,6 +9,30 @@ Free long term support offers
 
 To learn more about LTS versions of Ubuntu read `this article <https://ubuntu.com/blog/what-is-an-ubuntu-lts-release>`_.
 
+Ubuntu 24.04 LTS - Noble Numbat
+++++++++++++++++++++++++++++++++++
+
+| Quick start: `24.04 LTS on Azure <https://portal.azure.com/#create/canonical.ubuntu-24_04-ltsserver>`_
+| Quick start (China): `24.04 LTS on Azure China <https://portal.azure.cn/#create/canonical.canonical.ubuntu-24_04-ltsserver>`_
+
+.. list-table::
+   :widths: 10 9 50
+   :header-rows: 1
+
+   * - **Architecture**
+     - **Hyper-V Generation**
+     - **URN**
+   * - AMD64
+     - Gen2
+     - ``Canonical:ubuntu-24_04-lts:server:latest``
+   * - AMD64
+     - Gen1
+     - ``Canonical:ubuntu-24_04-lts:server-gen1:latest``
+   * - Arm64
+     - Gen2
+     - ``Canonical:ubuntu-24_04-lts:server-arm64:latest``
+
+
 Ubuntu 22.04 LTS - Jammy Jellyfish
 ++++++++++++++++++++++++++++++++++
 
@@ -28,7 +52,7 @@ Ubuntu 22.04 LTS - Jammy Jellyfish
    * - AMD64
      - Gen2
      - ``Canonical:0001-com-ubuntu-server-jammy:22_04-lts-gen2:latest``
-   * - Arm64 
+   * - Arm64
      - Gen2
      - ``Canonical:0001-com-ubuntu-server-jammy:22_04-lts-arm64:latest``
 
@@ -91,6 +115,25 @@ Ubuntu Pro Offers
 ~~~~~~~~~~~~~~~~~
 
 To learn more about Ubuntu Pro on Azure: `Ubuntu Pro for Azure <https://ubuntu.com/azure/pro>`_
+
+Ubuntu Pro 24.04 LTS - Noble Numbat
+++++++++++++++++++++++++++++++++++++++
+
+| Quick start: `Ubuntu Pro 24.04 LTS on Azure <https://portal.azure.com/#create/canonical.ubuntu-24_04-ltsubuntu-pro>`_
+
+.. list-table::
+   :widths: 10 9 50
+   :header-rows: 1
+
+   * - **Architecture**
+     - **Hyper-V Generation**
+     - **URN**
+   * - AMD64
+     - Gen2
+     - ``Canonical:ubuntu-24_04-lts:ubuntu-pro:latest``
+   * - AMD64
+     - Gen1
+     - ``Canonical:ubuntu-24_04-lts:ubuntu-pro-gen1:latest``
 
 Ubuntu Pro 22.04 LTS - Jammy Jellyfish
 ++++++++++++++++++++++++++++++++++++++
@@ -157,6 +200,23 @@ Confidential compute capable offer
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 To learn more about Confidential Compute: `Azure confidential computing <https://azure.microsoft.com/en-us/solutions/confidential-compute/#overview>`_
+
+Ubuntu CVM 24.04 LTS - Noble Numbat
+++++++++++++++++++++++++++++++++++++++
+
+| Quick start: `Ubuntu CVM 24.04 LTS on Azure <https://portal.azure.com/#create/canonical.ubuntu-24_04-ltscvm>`_
+| Quick start (China): `Ubuntu CVM 24.04 LTS on Azure China <https://portal.azure.cn/#create/canonical.canonical.ubuntu-24_04-ltscvm>`_
+
+.. list-table::
+   :widths: 10 9 50
+   :header-rows: 1
+
+   * - **Architecture**
+     - **Hyper-V Generation**
+     - **URN**
+   * - AMD64
+     - Gen2
+     - ``Canonical:ubuntu-24_04-lts:cvm:latest``
 
 Ubuntu CVM 22.04 LTS - Jammy Jellyfish
 ++++++++++++++++++++++++++++++++++++++

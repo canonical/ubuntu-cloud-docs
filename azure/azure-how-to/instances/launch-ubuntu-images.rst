@@ -65,9 +65,9 @@ definitions of Ubuntu image URNs for Hyper-V Gen2 include:
 
 .. code::
 
-    UBUNTU_IMAGE_URN="Canonical:0001-com-ubuntu-server-jammy:22_04-lts-gen2:latest"
+    UBUNTU_IMAGE_URN="Canonical:ubuntu-24_04-lts:server:latest"
     # or
-    UBUNTU_IMAGE_URN="Canonical:0001-com-ubuntu-server-focal:20_04-lts-gen2:latest"
+    UBUNTU_IMAGE_URN="Canonical:0001-com-ubuntu-server-jammy:22_04-lts-gen2:latest"
 
 Define the variables to set the security type:
 
@@ -94,9 +94,9 @@ Select one of the two URNs for Ubuntu images which support CVM on Azure:
 
 .. code::
 
-    UBUNTU_IMAGE_URN="Canonical:0001-com-ubuntu-confidential-vm-jammy:22_04-lts-cvm:latest"
+    UBUNTU_IMAGE_URN="Canonical:ubuntu-24_04-lts:cvm:latest"
     # or
-    UBUNTU_IMAGE_URN="Canonical:0001-com-ubuntu-confidential-vm-focal:20_04-lts-cvm:latest"
+    UBUNTU_IMAGE_URN="Canonical:0001-com-ubuntu-confidential-vm-jammy:22_04-lts-cvm:latest"
 
 Define variables to set the security type and encryption type:
 

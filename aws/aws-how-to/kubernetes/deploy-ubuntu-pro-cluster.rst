@@ -1,7 +1,7 @@
-Deploy an Ubuntu Pro EKS cluster
-================================
+Deploy an Ubuntu Pro EKS cluster with Pro tokens
+================================================
 
-This guide shows how to deploy an EKS Cluster with Ubuntu Pro nodes using Ubuntu Pro tokens and EC2 launch templates.
+This guide shows how to deploy an EKS cluster with Ubuntu Pro nodes using Ubuntu Pro tokens and EC2 launch templates.
 
 Prerequisites
 ~~~~~~~~~~~~~
@@ -17,9 +17,8 @@ You need:
 Prepare the cluster for deployment
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Although Ubuntu Pro AMIs are available in AWS, at the time of writing this guide, 
-there is no such offer for the EKS service. So you'll need to provision the EKS cluster 
-with customised Ubuntu nodes.
+Although Ubuntu Pro for EKS is available as an AMI for Ubuntu 22.04, (see :doc:`deploy-ubuntu-pro-cluster-with-eks-pro-ami`), there is no such EKS related offer available for Ubuntu 20.04.
+So to use Pro, you need to provision the EKS cluster with customised Ubuntu nodes.
 
 The steps needed for deploying the cluster depend on whether you need to enable FIPS or not.
 

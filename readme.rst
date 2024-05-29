@@ -1,7 +1,7 @@
 Ubuntu cloud documentation
 ==========================
 
-Documentation for Ubuntu on public clouds. This documentation is composed of seven related documentation sets. The first one is for content related to public clouds in general and includes links to the remaining six. Five of the remaining six pertain to different cloud partners (AWS, Azure, IBM, Google cloud and Oracle cloud), while the last one is for OCI registries.
+Documentation for Ubuntu on public clouds. This documentation is composed of seven related documentation sets. The first one is for content related to public clouds in general and includes links to the remaining six. Five of the remaining six pertain to different cloud partners (AWS, Azure, IBM, Google cloud and Oracle cloud), while the last one is for container (OCI) registries.
 
 Each documentation set is currently published to a different location:
 
@@ -12,6 +12,7 @@ Each documentation set is currently published to a different location:
 * https://canonical-ibm.readthedocs-hosted.com/
 * https://canonical-oci.readthedocs-hosted.com/
 * https://canonical-oracle.readthedocs-hosted.com/
+* https://canonical-public-images.readthedocs-hosted.com/
 
 
 How to work with this documentation
@@ -41,7 +42,7 @@ Since each cloud has it's own separate documentation set, you have to specify th
 
 	PROJECT=aws make run
 
-The different projects that can be specfied are 'all-clouds', 'aws', 'azure', 'google', 'ibm', 'oracle' and 'oci'.
+The different projects that can be specfied are 'all-clouds', 'aws', 'azure', 'google', 'ibm', 'oracle', 'oci' and 'public-images'.
 
 The documentation will be available at `127.0.0.1:8000 <http://127.0.0.1:8000>`_ or equivalently at `localhost:8000 <http://localhost:8000>`_.
 
@@ -83,7 +84,6 @@ Each project has its own contribution guide:
 * `Azure <https://canonical-azure.readthedocs-hosted.com/en/latest/azure-how-to/contribute-to-these-docs/>`_
 * `Google <https://canonical-gcp.readthedocs-hosted.com/en/latest/google-how-to/contribute-to-these-docs/>`_
 * `IBM <https://canonical-ibm.readthedocs-hosted.com/en/latest/ibm-how-to/contribute-to-these-docs/>`_
-* `OCI <https://canonical-oci.readthedocs-hosted.com/en/latest/oci-how-to/contribute-to-these-docs/>`_
+* `OCI container registries <https://canonical-oci.readthedocs-hosted.com/en/latest/oci-how-to/contribute-to-these-docs/>`_
 * `Oracle <https://canonical-oracle.readthedocs-hosted.com/en/latest/oracle-how-to/contribute-to-these-docs/>`_
-
-
+* `Public Images <https://canonical-public-images.readthedocs-hosted.com/en/latest/public-images-how-to/contribute-to-these-docs/>`_

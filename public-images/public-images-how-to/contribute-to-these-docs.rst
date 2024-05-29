@@ -1,5 +1,7 @@
+.. _public-images-contribute:
+
 Contribute to these docs
-************************
+========================
 
 .. include:: ../../reuse/contribute-to-docs.txt
    :start-after: Start: How to contribute
@@ -11,9 +13,9 @@ Contribute to these docs
 
 .. code::
 
-	PROJECT=oci make run
+	PROJECT=public-images make run
 
-Setting the `PROJECT` parameter to ``oci`` ensures that the documentation set for `Ubuntu on OCI container registries` gets built. This parameter is needed to distinguish between the different documentation sets present in the repository.
+Setting the `PROJECT` parameter to ``public-images`` ensures that the documentation set for `Ubuntu Public Images` gets built. This parameter is needed to distinguish between the different documentation sets present in the repository.
 
 .. include:: ../../reuse/contribute-to-docs.txt
    :start-after: Start: How to contribute (continued)
@@ -26,9 +28,9 @@ Before opening a PR, run the following checks and also ensure that the documenta
 
 .. code::
 
-	PROJECT=oci make spelling
-	PROJECT=oci make linkcheck
-	PROJECT=oci make woke
+	PROJECT=public-images make spelling
+	PROJECT=public-images make linkcheck
+	PROJECT=public-images make woke
 
 If you need to add new words to the allowed list of words, include them in ``.custom_wordlist.txt``.
 

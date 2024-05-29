@@ -7,4 +7,4 @@ Discussion and clarification of some key topics:
    :maxdepth: 1
    
    Canonical's offerings<canonical-offerings>
-   EKS image retention policy<eks-image-retention-policy>
+   AWS image retention policy<ec2-image-retention-policy>

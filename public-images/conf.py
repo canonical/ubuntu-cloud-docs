@@ -1,5 +1,5 @@
 # Configuration file for the Sphinx documentation builder.
-project = 'Ubuntu on AWS'
+project = 'Ubuntu Public Images'
 
 # The title you want to display for the documentation in the sidebar.
 # You might want to include a version number here.
@@ -14,7 +14,7 @@ html_context = {
     # For example: "ubuntu.com/lxd" or "microcloud.is"
     # If there is no product website, edit the header template to remove the
     # link (see the readme for instructions).
-    'product_page': 'ubuntu.com/aws',
+    'product_page': 'cloud-images.ubuntu.com',
 
     # Add your product tag (the orange part of your logo, will be used in the
     # header) to ".sphinx/_static" and change the path here (start with "_static")
@@ -24,7 +24,7 @@ html_context = {
     # Change to the discourse instance you want to be able to link to
     # using the :discourse: metadata at the top of a file
     # (use an empty value if you don't want to link)
-    'discourse': 'https://discourse.ubuntu.com/c/public-cloud/aws/',
+    'discourse': 'https://discourse.ubuntu.com/c/public-cloud/',
 
     # Change to the Mattermost channel you want to link to
     # (use an empty value if you don't want to link)
@@ -38,7 +38,7 @@ html_context = {
 
     # Change to the folder that contains the documentation
     # (usually "/" or "/docs/")
-    'github_folder': '/aws/',
+    'github_folder': '/public-images/',
 
     # Change to an empty value if your GitHub repo doesn't have issues enabled.
     # This will disable the feedback button and the issue link in the footer.
@@ -46,7 +46,7 @@ html_context = {
 
     # Change to the folder that contains the documentation 
     # (usually "/" or "/docs/")
-    "conf_py_path": '/aws/',
+    "conf_py_path": '/public-images/',
 
     # Controls the existence of Previous / Next buttons at the bottom of pages
     # Valid options: none, prev, next, both
@@ -58,28 +58,4 @@ html_context = {
 
 # Set up redirects (https://documatt.gitlab.io/sphinx-reredirects/usage.html)
 # For example: "explanation/old-name.html": "../how-to/prettify.html",
-redirects = {
-    
-    "aws-how-to/automatically-update-ubuntu-instances":
-        "../instances/automatically-update-ubuntu-instances/",
-    "aws-how-to/build-cloudformation-templates":
-        "../instances/build-cloudformation-templates/",
-    "aws-how-to/build-pro-ami-using-packer":
-        "../instances/build-pro-ami-using-packer/",
-    "aws-how-to/find-ubuntu-images":
-        "../instances/find-ubuntu-images/",
-    "aws-how-to/launch-ubuntu-desktop":
-        "../instances/launch-ubuntu-desktop/",
-    "aws-how-to/upgrade-from-focal-to-jammy":
-        "../instances/upgrade-from-focal-to-jammy/",
-
-    "aws-how-to/deploy-charmed-kubernetes-on-ubuntu-pro":
-        "../kubernetes/deploy-charmed-kubernetes-on-ubuntu-pro/",
-    "aws-how-to/deploy-ubuntu-pro-cluster":
-        "../kubernetes/deploy-ubuntu-pro-cluster/",
-    "aws-how-to/enable-gpus-on-eks":
-        "../kubernetes/enable-gpus-on-eks/",
-
-    "aws-how-to/use-secureboot-and-vtpm":
-        "../security/use-secureboot-and-vtpm/"
-}
+redirects = {}

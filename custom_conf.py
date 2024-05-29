@@ -88,7 +88,7 @@ html_context = {
 
     # Change to the Mattermost channel you want to link to
     # (use an empty value if you don't want to link)
-    'mattermost': 'https://chat.canonical.com/canonical/channels/public-cloud-eng',
+    'mattermost': 'https://chat.canonical.com/canonical/channels/public-cloud',
 
     # Change to the GitHub URL for your project
     'github_url': 'https://github.com/canonical/ubuntu-cloud-docs',
@@ -161,9 +161,9 @@ custom_linkcheck_anchors_ignore_for_url = []
 # NOTE: Remove this variable to disable the MyST parser extensions.
 custom_myst_extensions = []
 
-# Add custom Sphinx extensions as needed. 
+# Add custom Sphinx extensions as needed.
 # This array contains recommended extensions that should be used.
-# NOTE: The following extensions are handled automatically and do 
+# NOTE: The following extensions are handled automatically and do
 # not need to be added here: myst_parser, sphinx_copybutton, sphinx_design,
 # sphinx_reredirects, sphinxcontrib.jquery, sphinxext.opengraph
 custom_extensions = [
@@ -202,7 +202,8 @@ multiproject_projects = {
     "google": {},
     "ibm": {},
     "oracle": {},
-    "oci": {}
+    "oci": {},
+    "public-images": {},
 }
 
 intersphinx_mapping = {
@@ -212,7 +213,8 @@ intersphinx_mapping = {
     'google': ('https://canonical-gcp.readthedocs-hosted.com/en/latest/', None),
     'ibm': ('https://canonical-ibm.readthedocs-hosted.com/en/latest/', None),
     'oracle': ('https://canonical-oracle.readthedocs-hosted.com/en/latest/', None),
-    'oci': ('https://canonical-oci.readthedocs-hosted.com/en/latest/', None)
+    'oci': ('https://canonical-oci.readthedocs-hosted.com/en/latest/', None),
+    'public-images': ('https://canonical-public-images.readthedocs-hosted.com/en/latest/', None)
 }
 
 # Add CSS files (located in .sphinx/_static/)
