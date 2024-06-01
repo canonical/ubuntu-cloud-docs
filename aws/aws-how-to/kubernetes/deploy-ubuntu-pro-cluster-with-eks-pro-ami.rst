@@ -70,7 +70,6 @@ To check deployed nodes have Ubuntu Pro, run:
 ..  code-block:: bash
 
     $ aws --region <region_name> ec2 describe-instances --filters Name=instance-state-name,Values=running --query 'Reservations[*].Instances[*].[InstanceType, LaunchTime, PlatformDetails]' --output table
-    $ pro status
 
     ----------------------------------------------------------------
     |                       DescribeInstances                      |
