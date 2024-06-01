@@ -23,9 +23,11 @@ artifacts
 ASIC
 Authorize
 aws
+backend
 backoff
 balancers
 BSL
+BuildKit
 bzip
 Center
 CentOS
@@ -60,6 +62,7 @@ discoverable
 distroless
 DN
 DNS
+Docker's
 Dockerfile
 DPKG
 EAL
@@ -70,6 +73,7 @@ EKS
 eksctl
 el
 ENA
+entrypoint
 EOL
 EOSS
 EPYC
@@ -77,6 +81,7 @@ ESM
 executables
 FDE
 filesystem
+fips
 FIPS
 firewalling
 FPGA
@@ -98,10 +103,10 @@ HIPAA
 hostname
 hostnames
 hotplug
-Hotplug
 HTML
 https
 hvm
+HWE
 hyperparameter
 IAM
 ideation
@@ -118,12 +123,15 @@ IOV
 iptables
 ipv
 IPv
+IronBank
+iSCSI
 Istio
 JSON
 Juju
 Karbon
 keypair
 kubeconfig
+kubectl
 Kubeflow
 kubelet
 Kubernetes
@@ -133,6 +141,7 @@ launchTemplate
 libc
 libgcc
 libs
+licenseType
 lifecycle
 linux
 LinuxONE
@@ -150,6 +159,7 @@ MiB
 microk
 MicroK
 microservices
+minimalistic
 MLOps
 Multipass
 natively
@@ -161,6 +171,7 @@ nsswitch
 Numbat
 Nutanix
 NVIDIA
+NVMe
 oci
 OCI
 OCID
@@ -172,6 +183,7 @@ openssl
 OVAs
 OwnerId
 paravirtual
+PARAVIRTUALIZED
 PAYG
 png
 powerpc
@@ -209,6 +221,7 @@ sshd
 SSHD
 SSL
 SSM
+SSO
 STIG
 subnet
 Tanzu
@@ -219,11 +232,14 @@ TDX
 TDX
 th
 TightVNC
+TLS
 toctree
 TPM
+tunings
 tzdata
 UA
 ubuntu
+udev
 UEFI
 uncompress
 unminimise
@@ -239,6 +255,7 @@ vagrantfiles
 VCN
 vCPUs
 verifications
+VFIO
 vGPU
 VIRT
 virtio

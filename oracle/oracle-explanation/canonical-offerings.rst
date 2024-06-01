@@ -43,6 +43,8 @@ By default Ubuntu images use a **rolling kernel model**, which provides the late
 
 As an example, users running Ubuntu 22.04 instances that were launched back in 2022, would run the 5.15 kernel by default. But as new Ubuntu versions got released, the linux-oracle kernel rolled on to the next release's kernel version. So an Ubuntu 22.04 instance launched at a later point in time, would include different kernel versions depending on when it was launched - it could be version 6.5 or and more recently 6.8.
 
+For more details about the rolling kernel model, refer to the `Ubuntu kernel release cycle`_ and the relevant `installation options`_.
+
 If you do not want to roll to a new kernel, and want to stay on the base kernel provided by the LTS release (which continues to get support and receive updates for the length of the LTS), you need to install a specific corresponding kernel variant: `linux-oracle-lts-<release>`. (Refer to the next section for an example.)
 
 
@@ -55,3 +57,6 @@ Canonical provides different kernel variants, all optimised for Oracle Cloud:
 * linux-oracle-edge: The -edge kernel provides early access to the next HWE kernel. It is fully supported, but is less exposed to real world use cases since it is relatively new. It eventually transitions to the linux-oracle kernel.
 * linux-oracle-lts-<release>: This kernel does not roll and sticks to the original kernel present in the Ubuntu release, for the life of the release (e.g.: linux-oracle-lts-22.04 will always point to a 5.15 kernel for the life of Ubuntu 22.04).
 * linux-oracle-64k: This is a kernel specific to ARM64 instances, and uses 64k pages by default (as opposed to 4k pages in other kernels). It is known to improve performance in large ARM64 based instances, but is not meant for general use cases, as it can cause issues with low memory instance types.
+
+.. _Ubuntu kernel release cycle: https://ubuntu.com/about/release-cycle#ubuntu-kernel-release-cycle
+.. _`installation options`: https://ubuntu.com/kernel/lifecycle
