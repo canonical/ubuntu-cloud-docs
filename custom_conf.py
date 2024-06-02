@@ -21,7 +21,7 @@ import os
 
 # Product name
 project = 'Public Cloud'
-author = 'Canonical Group Ltd'
+author = 'Canonical Ltd.'
 
 # The title you want to display for the documentation in the sidebar.
 # You might want to include a version number here.
@@ -42,7 +42,7 @@ html_title = project + ' documentation'
 #   -H 'Accept: application/vnd.github.v3.raw' \
 #   https://api.github.com/repos/canonical/<REPO> | jq '.created_at'
 
-copyright = '%s, %s' % (datetime.date.today().year, author)
+copyright = '%s CC-BY-SA, %s' % (datetime.date.today().year, author)
 
 ## Open Graph configuration - defines what is displayed as a link preview
 ## when linking to the documentation from another website (see https://ogp.me/)
