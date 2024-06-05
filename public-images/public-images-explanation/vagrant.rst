@@ -14,7 +14,7 @@ When are they published
 ~~~~~~~~~~~~~~~~~~~~~~~
 Boxes are published daily.
 
-Boxes published to Vagrant Cloud all point to the latest published version hosted on cloud-images.ubuntu.com, despite their publication date.
+Despite their publication date, all boxes published to Vagrant Cloud point to the latest published version hosted on cloud-images.ubuntu.com.
 
 How are they built
 ~~~~~~~~~~~~~~~~~~
