@@ -14,6 +14,8 @@ When are they published
 ~~~~~~~~~~~~~~~~~~~~~~~
 Boxes are published daily.
 
+Despite their publication date, all boxes published to Vagrant Cloud point to the latest published version hosted on cloud-images.ubuntu.com.
+
 How are they built
 ~~~~~~~~~~~~~~~~~~
 The VirtualBox Vagrant box is produced as part of a "Base" build with the code living in `livecd-roofs <https://git.launchpad.net/livecd-rootfs/tree/live-build/ubuntu-cpc/hooks.d/base/vagrant.binary>`_. The build generates a ``box.ovf`` config file, a config drive ``vmdk``, the base server ``vmdk``, Vagrantfile, and Vagrant metadata. These build components are then combined in the ``.box`` tarball.
