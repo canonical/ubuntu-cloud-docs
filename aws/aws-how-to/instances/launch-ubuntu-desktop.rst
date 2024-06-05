@@ -1,78 +1,105 @@
-Launch an Ubuntu desktop on EC2
-===============================
+Launch and connect to an Ubuntu Mantic desktop EC2 instance
+===========================================================
 
-To create an Ubuntu desktop environment on your EC2 VM, you can use TightVNC as your remote desktop server and Remmina as your local desktop client.
+Use the xrdp server and Remmina to connect to an AWS EC2 instance of Ubuntu Mantis.
 
-.. Note::
+Select and configure Ubuntu Mantic 
+----------------------------------
 
-    Both the remote EC2 instance and your local machine are assumed to be running Ubuntu 16.04 or greater.
+Open AWS Marketplace and search for Ubuntu Mantic. Subscribe and agree to the Terms and Conditions. Select Launch Instance to configure.
 
+Select a region closest to you. For exapmple, if you're in the ``UK EU-West-2`` would be a good option. Click :guilabel:`Continue to Launch Through EC2 Instance`.
 
-Install Ubuntu desktop and TightVNC on your VM
-----------------------------------------------
+Give your instance a name. Mantic requires least two cores and at least 8gb RAM, which should be the default option. The default volume space of 8gb is the minimum required, however, more space will be required to install applications.
 
-To install Ubuntu desktop and TightVNC server on your EC2 instance, SSH into it and run:
+Create a security group
+-----------------------
 
-.. code::
+Select :guilabel:`Create Security Group`. Make sure the ssh tick box is selected to allow remote access.
 
-    sudo apt update
-    sudo apt install ubuntu-desktop
-    sudo apt install tightvncserver
-    sudo apt install gnome-panel gnome-settings-daemon metacity nautilus gnome-terminal
+You can select an existing key pair if you already have one set up or create a new key pair. To create a key pair give it a name and Select ``RSA`` and ``PEM``. A Pem file will be automatically downloaded.
 
-Save the password created during the installation of the VNC server.
+Launch the instance and connect to it either via ssh or the AWS Console.
 
-
-Configure the VNC server
-------------------------
-
-On your VM, launch the VNC server to create an initial configuration file:
+Install Ubuntu Desktop Packages
+-------------------------------
 
 .. code::
 
-    vncserver :1
+    sudo apt update && apt upgrade -y
+    sudo apt install -y ubuntu-desktop
+    sudo snap install snap-store --edge
 
-Edit the configuration file ``~/.vnc/xstartup`` to include:
+Install and Configure RDP
+-------------------------
+
+Install the xrdp server.
+
+.. code::
+
+    sudo apt install -y xrdp
+
+Configure xrdp to use SSL to get an encrypted connection.
+
+.. code::
+
+    sudo usermod -a -G ssl-cert xrdp
+
+Set up a password for the Ubuntu user.
+
+.. code::
+
+    passwd
+
+Finally, restart the xrdp service.
+
+.. code::
+
+    systemctl restart xrdp
+
+Configure the Ubuntu Session
+----------------------------
+
+Connect to your instance using RDP to check the previous steps were succseful. Create a configuration script called ``ubuntu-session`` in ``/usr/local/bin/`` to run on RDP connections.
+
+.. code::
+
+    sudo nano /usr/local/bin/ubuntu-session
+
+Add the following to the ubuntnu-session script.
 
 .. code::
 
     #!/bin/sh
 
-    export XKL_XMODMAP_DISABLE=1
-    unset SESSION_MANAGER
-    unset DBUS_SESSION_BUS_ADDRESS
+    export GNOME_SHELL_SESSION_MODE=ubuntu
+    export DESKTOP_SESSION=ubuntu-xorg
+    export XDG_SESSION_DESKTOP=ubuntu-xorg
+    export XDG_CURRENT_DESKTOP=ubuntu:GNOME
+    
+    exec /usr/bin/gnome-session --session=ubuntu
 
-    [ -x /etc/vnc/xstartup ] && exec /etc/vnc/xstartup
-    [ -r $HOME/.Xresources ] && xrdb $HOME/.Xresources
-    xsetroot -solid grey
-
-    vncconfig -iconic &
-    gnome-panel &
-    gnome-settings-daemon &
-    metacity &
-    nautilus &
-    gnome-terminal &
-
-
-Kill and restart the VNC server:
+Make the script executable.
 
 .. code::
 
-    vncserver -kill :1
+    sudo chmod +x /usr/local/bin/ubuntu-session
 
-    vncserver :1
+Update the session manager to use the new session configuration.
 
+.. code::
+
+    update-alternatives --install /usr/bin/x-session-manager x-session-manager /usr/local/bin/ubuntu-session 60
 
 Allow traffic on the VNC port
 -----------------------------
 
-To allow an external connection to the VNC server, you'll need to ensure that the relevant port of your VM is open. On your EC2 console, modify the inbound rules for your instance by adding an entry for TCP port 5901: ``Custom TCP Rule | TCP | 5901 | Custom | 0.0.0.0/0 | VNC Connect`` 
-
+Ensure that the relevant port of your Mantic EC2 Instance is open. On the EC2 console, modify the inbound rules for your instance by adding an entry for TCP port 5901: ``Custom TCP Rule | TCP | 5901 | Custom | 0.0.0.0/0 | VNC Connect`` 
 
 Install Remmina on your local machine
 --------------------------------------
 
-To access the Ubuntu desktop installed on your VM, use a remote desktop client like Remmina on your local machine. Install Remmina using:
+Use a remote desktop client like Remmina on your local machine to connect to the Ubuntu Mantic Desktop. Install Remmina using:
 
 .. code::
 
@@ -82,10 +109,6 @@ To access the Ubuntu desktop installed on your VM, use a remote desktop client l
 Connect to your remote Ubuntu desktop
 -------------------------------------
 
-Launch Remmina, and choose the connection type as 'VNC'. For the connection string, enter your EC2 instance URL along with 1 as the port number, something similar to:
+Launch Remmina, and choose the connection type as 'VNC'. Enter the instance ip address, which can be found on the EC2 console and port number 3389.
 
-.. code::
-
-    ec2-54-172-197-171.compute-1.amazonaws.com:1
-
-Select :guilabel:`Connect!` and enter the VNC server password saved earlier. This should give you access to the remote Ubuntu desktop.
+Select :guilabel:`Connect!` and enter the VNC server password created earlier.
