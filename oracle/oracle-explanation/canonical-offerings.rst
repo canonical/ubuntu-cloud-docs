@@ -16,15 +16,13 @@ The images are built regularly and follow a thorough test framework that helps d
 
 With a single image type that is validated to work on both virtual machines and bare metal instances, the images aim to provide a consistent experience for users.
 
-Although only Ubuntu LTS (Long-Term Support) images are publicly available on Oracle Cloud, Canonical also builds Oracle-optimised images for non-LTS releases. This allows for continuous internal testing and ensures that future LTS releases work well on Oracle Cloud.
-
 For instructions on how to find the images, refer to :doc:`../oracle-how-to/find-ubuntu-images`.
 
 
 Optimisations for Oracle Cloud
 ------------------------------
 
-Generally the images are built in a qcow2 format and support the following options:
+The images support the following options:
 
 * Boot firmware - boot with BIOS or UEFI (preferred). ARM64 images only support UEFI boot.
 * Launch modes - support for both PARAVIRTUALIZED and NATIVE launch modes.  
@@ -56,7 +54,7 @@ Canonical provides different kernel variants, all optimised for Oracle Cloud. Th
 For x86_64 instances, the variants available are:
 
 * ``linux-oracle-lts-<release>``: Where <release> is replaced by an LTS Ubuntu version, such as 18.04, 20.04, 22.04 or 24.04. This kernel does not roll and sticks to the original kernel present in the Ubuntu release, for the life of the release (e.g.: linux-oracle-lts-22.04 will always point to a 5.15 kernel for the life of Ubuntu 22.04 LTS).
-* ``linux-oracle-edge``: The -edge kernel provides early access to the next HWE kernel. It is fully supported, but is less exposed to real world use cases since it is relatively new. It eventually transitions to the linux-oracle kernel.
+* ``linux-oracle-edge``: The -edge kernel provides early access to the next HWE kernel. It is fully supported, but is less exposed to real world use cases since it is relatively new. It eventually transitions to the linux-oracle kernel. It can for instance be used for testing the upcoming kernels in your specific environment.
 
 For ARM64 instances, we have four variants - the two mentioned above for x86_64 instances and two more:
 
