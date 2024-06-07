@@ -9,7 +9,7 @@ For more comprehensive instructions on checking the available drivers and instal
 Launch your instance
 --------------------
 
-Launch your Ubuntu 24.04 VM using either `AWS CLI or the web console`_. Make sure you allocate enough disk space for your use case, as ML models tend to need a significant amount. 
+Launch your Ubuntu 24.04 LTS VM using either `AWS CLI or the web console`_. Make sure you allocate enough disk space for your use case, as ML models tend to need a significant amount. 
 
 SSH access is required, so make sure to either open port 22 or enable SSM to access the machine through Session Manager. 
 

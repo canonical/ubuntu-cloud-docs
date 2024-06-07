@@ -20,7 +20,7 @@ Use the appropriate section below to enable the service that you need.
 ESM
 ---
 
-Extended Security Maintenance (ESM) guarantees a security coverage of 10 years for your Pro VM. So e.g. Ubuntu 22.04 will get security updates till 2032. This feature is automatically enabled with Pro and on running ``pro status``, you should see something like:
+Extended Security Maintenance (ESM) guarantees a security coverage of 10 years for your Pro VM. So e.g. Ubuntu 22.04 LTS will get security updates till 2032. This feature is automatically enabled with Pro and on running ``pro status``, you should see something like:
 
 .. code::
 
@@ -45,7 +45,7 @@ CIS hardening
 
     sudo ua enable cis
 
-With the tooling packages now installed, you can for instance, harden your Ubuntu 20.04 Pro system with CIS level 1 server profile, by running:
+With the tooling packages now installed, you can for instance, harden your Ubuntu Pro 20.04 LTS system with CIS level 1 server profile, by running:
 
 .. code::
 

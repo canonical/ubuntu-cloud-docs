@@ -9,7 +9,7 @@ Ubuntu instances running on AWS can be set up to automatically configure source 
 
 .. note::
 
-   On Ubuntu 24.04 and newer, hot-plugged NICs are configured by default.
+   On Ubuntu 24.04 LTS and newer, hot-plugged NICs are configured by default.
 
 
 Enable configuration during instance creation

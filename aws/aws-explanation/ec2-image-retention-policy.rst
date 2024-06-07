@@ -52,7 +52,7 @@ The retention policy can be summarised as follows:
 
 where:
   - **EOL** refers to when an interim Ubuntu release (for example, Lunar Lobster 23.04) has reached end-of-life `and will no longer enjoy support <https://ubuntu.com/about/release-cycle/>`_, or when EKS is `no longer supported by AWS`_.
-  - **EOSS** refers to when an LTS Ubuntu release (for example, Bionic Beaver 18.04) has reached "End of Standard Support" but will remain supported under Ubuntu Pro
+  - **EOSS** refers to when an LTS Ubuntu release (for example, Bionic Beaver 18.04 LTS) has reached "End of Standard Support" but will remain supported under Ubuntu Pro
 
 .. _`AWS CLI`: https://docs.aws.amazon.com/cli/
 .. _`describe-images`: https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-images.html

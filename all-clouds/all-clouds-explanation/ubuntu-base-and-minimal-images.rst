@@ -28,7 +28,7 @@ the listed packages in the seed. Combined, we get the `image manifest`_, i.e. th
 list of package names and their respective versions you’d expect to see in a
 given minimal cloud image.
 
-With this effort, minimal cloud images now are smaller than the Ubuntu 22.04
+With this effort, minimal cloud images now are smaller than the Ubuntu 22.04 LTS
 minimal images. The package count has dropped from 426 to 288 (difference: 138),
 resulting in a much smaller image size. For example, download qcow2 images have
 reduced from 337.19MiB to 226.75MiB (difference: 110.44MiB). This was achieved,

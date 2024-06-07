@@ -1,10 +1,10 @@
 Create Ubuntu Pro FIPS golden image with Azure Image Builder
 ============================================================
 
-This guide will provide instructions for using the Azure Image Builder (AIB) to create an Ubuntu Pro 20.04 FIPS “golden” image in an Azure Compute Gallery, (formerly Shared Image Gallery). In the process, you'll:
+This guide will provide instructions for using the Azure Image Builder (AIB) to create an Ubuntu Pro 20.04 LTS FIPS “golden” image in an Azure Compute Gallery, (formerly Shared Image Gallery). In the process, you'll:
 
 - Set up an environment with an Azure Compute Gallery (ACG) and the necessary resources to distribute an image from it
-- Create an image definition for Ubuntu Pro 20.04 FIPS
+- Create an image definition for Ubuntu Pro 20.04 LTS FIPS
 - Create a build configuration template to add optional applications
 - Create the golden image using the AIB service
 - Create a VM from the golden image in the ACG
@@ -60,7 +60,7 @@ Create a variable for your subscription ID:
 
     subscriptionID=$(az account show --query id --output tsv)
 
-Set up variables for the Ubuntu Pro plan to be used. If you have an Ubuntu Pro private offer with Canonical that includes 24x7 technical support with SLAs, you'll have a custom offer and SKU, which can be used here. If not, as seen in the example below, you can use the details from the Ubuntu Pro 20.04 FIPS image that is publicly available at the Azure Marketplace.
+Set up variables for the Ubuntu Pro plan to be used. If you have an Ubuntu Pro private offer with Canonical that includes 24x7 technical support with SLAs, you'll have a custom offer and SKU, which can be used here. If not, as seen in the example below, you can use the details from the Ubuntu Pro 20.04 LTS FIPS image that is publicly available at the Azure Marketplace.
 
 .. code::
 
@@ -373,7 +373,7 @@ You can use the ``publicIpAddress`` (``51.143.126.x`` in this case) to ssh into 
 Post creation cleanup
 ---------------------
 
-You now have an Azure Compute Gallery with an Ubuntu Pro 20.04 FIPS image inside. You have also launched and tested a VM based on this golden image. So you can go ahead with the deletion of the resource groups that were created. You should be able to see the created resource groups with:
+You now have an Azure Compute Gallery with an Ubuntu Pro 20.04 LTS FIPS image inside. You have also launched and tested a VM based on this golden image. So you can go ahead with the deletion of the resource groups that were created. You should be able to see the created resource groups with:
 
 .. code::
 
