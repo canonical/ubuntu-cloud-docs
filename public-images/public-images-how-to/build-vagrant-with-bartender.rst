@@ -53,7 +53,7 @@ To build a Vagrant box for a given Ubuntu series name, run the following from th
             --image-target vagrant \
             --project ubuntu-cpc
 
-   .. group-tab:: Local Ubuntu 22.04 Jammy
+   .. group-tab:: Local Ubuntu 22.04 LTS Jammy
 
       .. code:: bash
 

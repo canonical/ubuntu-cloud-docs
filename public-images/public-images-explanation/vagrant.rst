@@ -24,7 +24,7 @@ See :ref:`public-images-how-to` for more on building and running Vagrant boxes.
 
 Support
 -------
-Vagrant has been dropped by Ubuntu due to the adoption of the  `Business Source License (BSL) <https://www.hashicorp.com/bsl>`_.  Following this change, **Canonical will no longer publish Vagrant images** directly starting with Ubuntu 24.04 (Noble).
+Vagrant has been dropped by Ubuntu due to the adoption of the  `Business Source License (BSL) <https://www.hashicorp.com/bsl>`_.  Following this change, **Canonical will no longer publish Vagrant images** directly starting with Ubuntu 24.04 LTS (Noble Numbat).
 
 Support Matrix
 ~~~~~~~~~~~~~~
@@ -32,5 +32,5 @@ Support Matrix
 - Best support will be given for matching guest and host Ubuntu. 
 - Best efforts will be made when the guest and host differ. 
 - There is no support for extra plugins.
-- There is no support for images starting with Ubuntu 24.04 and beyond.
+- There is no support for images starting with Ubuntu 24.04 LTS and beyond.
 - Support for matching `Guest Additions <https://help.ubuntu.com/community/VirtualBox/GuestAdditions>`_.

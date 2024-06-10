@@ -3,7 +3,7 @@ Set hostname of GCE instances
 
 The hostname of GCE instances can be set using multiple methods. Google's preferred method is to use its DHCP service, which requires you to choose a fully qualified DNS name (FQDN), e.g. something like test123.test.com. If you don't want an FQDN or if you want to use a consistent method for assigning hostnames across clouds, you can use a set-up tool like cloud-init to set your hostname.
 
-Both these methods are described here. Also, due to a recent hostname-related update on GCP, you might have to make some additional changes for GCE images that use Ubuntu 24.04 and later. These are explained at the end.
+Both these methods are described here. Also, due to a recent hostname-related update on GCP, you might have to make some additional changes for GCE images that use Ubuntu 24.04 LTS and later. These are explained at the end.
 
 
 Using DHCP (Google's preferred method)
@@ -37,7 +37,7 @@ For more details about this, see `Set Hostname`_ in the cloud-init documentation
 Changes based on new defaults (Ubuntu 24.04+)
 ---------------------------------------------
 
-In GCE images that use Ubuntu 24.04 or later, the ``/etc/hostname`` file is no longer present by default, and the cloud-init key ``create_hostname_file`` is set to false. 
+In GCE images that use Ubuntu 24.04 LTS or later, the ``/etc/hostname`` file is no longer present by default, and the cloud-init key ``create_hostname_file`` is set to false. 
 
 Implications for using cloud-init
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -60,7 +60,7 @@ Creating consistent multi-VM environments across releases
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-Another scenario where this new default can create inconsistencies is in the case of a server farm with images spanning the Ubuntu 24.04 boundary (i.e. both 24.04+ and 23.10-). In this case, if you want a consistent file system layout and hostname style across all images, then you'll have to either remove the ``/etc/hostname`` file from the earlier versions or add it to the later versions.
+Another scenario where this new default can create inconsistencies is in the case of a server farm with images spanning the Ubuntu 24.04 LTS boundary (i.e. both 24.04+ and 23.10-). In this case, if you want a consistent file system layout and hostname style across all images, then you'll have to either remove the ``/etc/hostname`` file from the earlier versions or add it to the later versions.
 
 
 Remove ``/etc/hostname`` from Ubuntu 23.10 and earlier
@@ -75,8 +75,8 @@ Set the cloud-init key ``create_hostname_file`` to false and ensure that ``/etc/
     create_hostname_file: false
 
 
-Add ``/etc/hostname`` to Ubuntu 24.04 and later
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Add ``/etc/hostname`` to Ubuntu 24.04 LTS and later
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Set the cloud-init key ``create_hostname_file`` to true in the user-data file:  
 

@@ -39,7 +39,7 @@ and read the relevant `AWS documentation <https://docs.aws.amazon.com/AWSEC2/lat
 Get an Ubuntu AMI ID
 --------------------
 
-The SSM parameter store can be used to get e.g. the latest 22.04 LTS AMI ID:
+The SSM parameter store can be used to get e.g. the latest Ubuntu 22.04 LTS AMI ID:
 
 .. code-block::
 

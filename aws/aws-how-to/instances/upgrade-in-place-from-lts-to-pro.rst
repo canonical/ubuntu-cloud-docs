@@ -8,7 +8,7 @@ AWS allows users to upgrade Ubuntu LTS instances to `Ubuntu Pro`_ using the `AWS
 Requirements
 ------------
 
-* The EC2 instances to be upgraded have to be Ubuntu LTS 16.04 or later
+* The EC2 instances to be upgraded have to be Ubuntu 16.04 LTS or later
 * The instances should be managed by `AWS Systems Manager`_ (SSM)
     *  To check if your instances are managed by SSM, in the `SSM console`_, check if they appear as managed nodes under :guilabel:`Systems Manager` > :guilabel:`Node Management` > :guilabel:`Fleet Manager` > :guilabel:`Managed nodes`
     * If they don't, follow the `AWS instructions for configuring your instance permissions`_ or refer to this tutorial on `enabling AWS SSM`_ to create an IAM role and access your instances with SSM

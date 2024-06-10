@@ -5,7 +5,7 @@ This guide shows how to deploy an Ubuntu Pro EKS cluster using an EKS Pro AMI. Y
 
 An EKS Pro AMI is an Ubuntu EKS AMI with the `Pro service`_ included, which provides services such as Livepatch for LTS-based nodes and Expanded Security Maintenance (ESM).
 
-*Currently, only Ubuntu Pro 22.04 is available as an EKS AMI, and it does not include the FIPS components. If you need FIPS or Ubuntu Pro 20.04, you'll have to use Pro tokens and follow the instructions from the other how-to guide mentioned above.*
+*Currently, only Ubuntu Pro 22.04 LTS is available as an EKS AMI, and it does not include the FIPS components. If you need FIPS or Ubuntu Pro 20.04 LTS, you'll have to use Pro tokens and follow the instructions from the other how-to guide mentioned above.*
 
 Prerequisites
 -------------

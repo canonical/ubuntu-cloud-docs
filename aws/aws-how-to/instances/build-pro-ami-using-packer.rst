@@ -3,13 +3,13 @@ Build an Ubuntu Pro AMI using Packer
 
 This guide will provide instructions for using Packer to create your own golden image of Ubuntu Pro. You'll be able to customise your Packer template file, while keeping the the Ubuntu Pro activation mechanism intact.
 
-We'll be using Ubuntu Pro 20.04 for this guide, but the method is equally applicable to other Pro versions.
+We'll be using Ubuntu Pro 20.04 LTS for this guide, but the method is equally applicable to other Pro versions.
 
 .. note::
 
    * For **Ubuntu Pro FIPS**, it is better to use a pre-enabled FIPS image from the Marketplace to avoid unnecessary additional steps. 
    * For **Ubuntu LTS**, you can use this method with a small change as explained at the end of the :ref:`define-provisioners` section below. 
-   * For **Ubuntu 22.04 and above** you need Packer version 1.8.1 or newer.
+   * For **Ubuntu 22.04 LTS and above** you need Packer version 1.8.1 or newer.
 
 Basic setup
 -------------
@@ -28,9 +28,9 @@ If you have an Ubuntu workstation, run:
 
 .. note::
 
-   * For building images based on Ubuntu 22.04 and later, you need Packer version 1.8.1 or newer.
+   * For building images based on Ubuntu 22.04 LTS and later, you need Packer version 1.8.1 or newer.
    * The version of Packer present in the Ubuntu archives on Ubuntu 22.04 LTS is v1.6.6. 
-   * Packer is no longer available in the Ubuntu repositories from Ubuntu 24.04 onwards.
+   * Packer is no longer available in the Ubuntu repositories from Ubuntu 24.04 LTS onwards.
    * If you need a newer version, please use the appropriate `install Packer`_ instructions.
 
 Subscribe to Ubuntu Pro (Only needed for FIPS AMI)

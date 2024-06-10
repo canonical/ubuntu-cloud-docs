@@ -3,7 +3,7 @@ Build Ubuntu Pro golden image
 
 A golden image is a base image that is used as a template for your virtual machines. You can create it from your Google Cloud console's `Cloud Shell` (as explained below) or using other tools like Packer. 
 
-We'll be using Ubuntu Pro 22.04 as the base image, although the steps should work fine for all Pro images available in your console.
+We'll be using Ubuntu Pro 22.04 LTS as the base image, although the steps should work fine for all Pro images available in your console.
 
 
 Create a golden image
@@ -36,7 +36,7 @@ In your Google Cloud console, search for the 'Cloud Shell' product and open it b
     NAME: ubuntu-pro-fips-2004-focal-v20230920
     FAMILY: ubuntu-pro-fips-2004-lts
 
-From the options seen, choose Ubuntu Pro 22.04 and use its family name in the golden image creation command below:
+From the options seen, choose Ubuntu Pro 22.04 LTS and use its family name in the golden image creation command below:
 
 .. code::
 
