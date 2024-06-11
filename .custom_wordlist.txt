@@ -168,7 +168,6 @@ NICs
 NIST
 NitroTPM
 nsswitch
-Numbat
 Nutanix
 NVIDIA
 NVMe

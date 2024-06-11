@@ -11,4 +11,6 @@ _build
 __pycache__
 .idea/
 oci/_external/*.rst
-.vscode
+.vscode/
+.sphinx/styles/*
+.sphinx/vale.ini
