@@ -4,6 +4,7 @@
 # Add custom requirements to the custom_required_modules
 # array in the custom_conf.py file and run:
 # make clean && make install
+GitPython
 canonical-sphinx-extensions
 furo
 linkify-it-py
@@ -14,7 +15,9 @@ sphinx-autobuild
 sphinx-copybutton
 sphinx-design
 sphinx-multiproject
+sphinx-notfound-page
 sphinx-reredirects
 sphinx-tabs
 sphinxcontrib-jquery
 sphinxext-opengraph
+watchfiles

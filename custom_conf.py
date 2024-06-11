@@ -28,7 +28,14 @@ author = 'Canonical Ltd.'
 # To not display any title, set this option to an empty string.
 html_title = project + ' documentation'
 
-# The default value uses the current year as the copyright year.
+# The default value uses CC-BY-SA as the license and the current year
+# as the copyright year.
+#
+# If your documentation needs a different copyright license, use that
+# instead of 'CC-BY-SA'. Also, if your documentation is included as
+# part of the code repository of your project, it'll inherit the license
+# of the code. So you'll need to specify that license here (instead of
+# 'CC-BY-SA').
 #
 # For static works, it is common to provide the year of first publication.
 # Another option is to give the first year and the current year
@@ -90,7 +97,12 @@ html_context = {
     # (use an empty value if you don't want to link)
     'mattermost': 'https://chat.canonical.com/canonical/channels/public-cloud',
 
+    # Change to the Matrix channel you want to link to
+    # (use an empty value if you don't want to link)
+    #'matrix': 'https://matrix.to/#/#documentation:ubuntu.com',
+
     # Change to the GitHub URL for your project
+    # This is used, for example, to link to the source files and allow creating GitHub issues directly from the documentation.
     'github_url': 'https://github.com/canonical/ubuntu-cloud-docs',
 
     # Change to the branch for this version of the documentation
@@ -110,10 +122,13 @@ html_context = {
 
     # Controls the existence of Previous / Next buttons at the bottom of pages
     # Valid options: none, prev, next, both
-    # You can override the default setting on a page-by-page basis by specifying
-    # it as file-wide metadata at the top of the file, see
-    # https://www.sphinx-doc.org/en/master/usage/restructuredtext/field-lists.html
-    'sequential_nav': "both"
+    'sequential_nav': "both",
+
+    # Controls if to display the contributors of a file or not
+    "display_contributors": True,
+
+    # Controls time frame for showing the contributors
+    "display_contributors_since": ""
 }
 
 # If your project is on documentation.ubuntu.com, specify the project
@@ -158,7 +173,8 @@ custom_linkcheck_anchors_ignore_for_url = []
 
 ## The following settings are appended to the default configuration.
 ## Use them to extend the default functionality.
-# NOTE: Remove this variable to disable the MyST parser extensions.
+
+# Remove this variable to disable the MyST parser extensions.
 custom_myst_extensions = []
 
 # Add custom Sphinx extensions as needed.
@@ -173,7 +189,8 @@ custom_extensions = [
     'canonical.youtube-links',
     'canonical.related-links',
     'canonical.custom-rst-roles',
-    'canonical.terminal-output'
+    'canonical.terminal-output',
+    'notfound.extension'
     ]
 
 # Add custom required Python modules that must be added to the
@@ -181,7 +198,8 @@ custom_extensions = [
 # NOTE: The following modules are handled automatically and do not need to be
 # added here: canonical-sphinx-extensions, furo, linkify-it-py, myst-parser,
 # pyspelling, sphinx, sphinx-autobuild, sphinx-copybutton, sphinx-design,
-# sphinx-reredirects, sphinx-tabs, sphinxcontrib-jquery, sphinxext-opengraph
+# sphinx-notfound-page, sphinx-reredirects, sphinx-tabs, sphinxcontrib-jquery,
+# sphinxext-opengraph
 custom_required_modules = [
     'sphinx-multiproject'
 ]
@@ -237,6 +255,10 @@ disable_feedback_button = False
 # Add tags that you want to use for conditional inclusion of text
 # (https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html#tags)
 custom_tags = []
+
+# If you are using the :manpage: role, set this variable to the URL for the version
+# that you want to link to:
+# manpages_url = "https://manpages.ubuntu.com/manpages/noble/en/man{section}/{page}.{section}.html"
 
 ############################################################
 ### Additional configuration
