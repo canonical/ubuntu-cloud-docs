@@ -76,7 +76,7 @@ Security groups allow you to specify firewalling rules for your instances. To un
 
 .. _instantiate-image-on-ec2:
 
-Instantiate the image
+Launch the instance
 ---------------------
 
 Using the AMI ID and key pair obtained above, launch an instance by running:
