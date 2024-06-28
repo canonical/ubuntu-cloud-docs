@@ -16,20 +16,37 @@ and features needed to run specific workloads.
 
 ---------
 
-IBM services
-------------
+Canonical's offerings on IBM
+----------------------------
 
 Canonical and the Ubuntu community work together with IBM to ensure that Ubuntu works seamlessly across IBM platforms, including IBM Z and LinuxONE, IBM Power Systems and the IBM Cloud.
 
 Canonical provides optimised Ubuntu LTS images with a custom kernel, minimal size, livepatch and support.
 
+These images are available on IBM Cloud for both IBM VPC Infrastructure and IBM Classic Infrastructure.
 
-----------
 
-How-to guide
+---------
+
+IBM VPC vs Classic Infrastructure
+---------------------------------
+
+IBM Cloud offers two types of infrastructure: IBM VPC Infrastructure and IBM Classic Infrastructure (Legacy).
+For new users, IBM will only offer IBM VPC Infrastructure. Some long term users may still have access to the legacy IBM
+Classic Infrastructure. 
+
+IBM VPC offers numerous advantages over the legacy infrastructure, namely better performance, scalability, and ease of use.
+
+---------
+
+How-to guides
 -------------
-Instructions for upgrading from Ubuntu 20.04 LTS to 22.04 LTS on virtual machines within IBM's Virtual Private Cloud (VPC): :doc:`Upgrade from Focal to Jammy<./ibm-how-to/upgrade-from-focal-to-jammy>`
 
+:doc:`Find Ubuntu images on IBM Cloud<./ibm-how-to/find-ubuntu-images>`
+
+:doc:`Launch Ubuntu instances on IBM Cloud<./ibm-how-to/launch-ubuntu-instances>`
+
+:doc:`Upgrade from Focal to Jammy<./ibm-how-to/upgrade-from-focal-to-jammy>`
 
 ---------
 
@@ -50,6 +67,8 @@ Ubuntu on IBM is a member of the Ubuntu family and the project warmly welcomes c
    :hidden:
    :maxdepth: 2
    
+   Find Ubuntu Images<ibm-how-to/find-ubuntu-images>
+   Launch Ubuntu Instances<ibm-how-to/launch-ubuntu-instances>
    Upgrade from Focal to Jammy<ibm-how-to/upgrade-from-focal-to-jammy>
    ibm-how-to/contribute-to-these-docs
    
