@@ -1,7 +1,7 @@
 Ubuntu Public Images
 ====================
 
-**Canonical produces generic (generic kernel) cloud images, LXD images (rootfs tarballs) and KVM optimised cloud images (KVM kernel)**. These images are public (unlike other cloud-specific images) and are available on `cloud-images.ubuntu.com <http://cloud-images.ubuntu.com>`_.
+**Canonical produces generic (generic kernel) cloud images, LXD images (rootfs tarballs) and KVM optimised cloud images (KVM kernel)**. These images are public (unlike other cloud-specific images) and are available on `cloud-images.ubuntu.com`_.
 
 .. include:: ../reuse/common-intro.txt
    :start-after: Start: Product need and user
@@ -23,6 +23,10 @@ In this documentation
    .. grid-item:: :doc:`Vagrant - An explanation <public-images-explanation/vagrant>`
 
       **What are Vagrant boxes** and our support status for them.
+
+   .. grid-item:: :doc:`Ubuntu cloud image artifacts <public-images-reference/artifacts>`
+
+      **Reference guide** for the artifacts found on `cloud-images.ubuntu.com`_.
 
 
 ----------
@@ -46,10 +50,11 @@ suggestions, fixes and constructive feedback.
    :maxdepth: 1
 
    public-images-how-to/index
+   public-images-reference/artifacts
    Vagrant - An explanation<public-images-explanation/vagrant>
    public-images-how-to/contribute-to-these-docs
 
 .. _Get support: https://ubuntu.com/cloud/public-cloud
 .. _`Discuss on IRC`: https://web.libera.chat/#ubuntu-cloud
 .. _Code of conduct: https://ubuntu.com/community/ethos/code-of-conduct
-
+.. _cloud-images.ubuntu.com: https://cloud-images.ubuntu.com
