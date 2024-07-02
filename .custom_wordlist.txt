@@ -87,6 +87,7 @@ firewalling
 FPGA
 FQDN
 G4DN
+gapped
 gcc
 GCE
 gcloud

@@ -26,7 +26,19 @@ extensions = [
     'sphinx_design',
     'sphinx_copybutton',
     'sphinxcontrib.jquery',
+    'sphinx.ext.intersphinx',
 ]
+
+intersphinx_mapping = {
+    'all-clouds': ('https://documentation.ubuntu.com/public-cloud/en/latest/', None),
+    'aws': ('https://documentation.ubuntu.com/aws/en/latest/', None),
+    'azure': ('https://documentation.ubuntu.com/azure/en/latest/', None),
+    'google': ('https://documentation.ubuntu.com/gcp/en/latest/', None),
+    'ibm': ('https://canonical-ibm.readthedocs-hosted.com/en/latest/', None),
+    'oracle': ('https://canonical-oracle.readthedocs-hosted.com/en/latest/', None),
+    'oci': ('https://documentation.ubuntu.com/oci-registries/en/latest/', None),
+    'public-images': ('https://documentation.ubuntu.com/public-images/en/latest/', None)
+}
 
 # Only add redirects extension if any redirects are specified.
 if AreRedirectsDefined():
