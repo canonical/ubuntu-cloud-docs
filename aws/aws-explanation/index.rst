@@ -8,3 +8,4 @@ Discussion and clarification of some key topics:
    
    Canonical's offerings<canonical-offerings>
    AWS image retention policy<ec2-image-retention-policy>
+   Snap usage in EKS worker images<eks-snaps.rst>
