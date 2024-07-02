@@ -184,7 +184,6 @@ custom_myst_extensions = []
 # sphinx_reredirects, sphinxcontrib.jquery, sphinxext.opengraph
 custom_extensions = [
     'multiproject',
-    'sphinx.ext.intersphinx',
     'sphinx_tabs.tabs',
     'canonical.youtube-links',
     'canonical.related-links',
@@ -192,6 +191,7 @@ custom_extensions = [
     'canonical.terminal-output',
     'notfound.extension'
     ]
+
 
 # Add custom required Python modules that must be added to the
 # .sphinx/requirements.txt file.
@@ -222,17 +222,6 @@ multiproject_projects = {
     "oracle": {},
     "oci": {},
     "public-images": {},
-}
-
-intersphinx_mapping = {
-    'all-clouds': ('https://canonical-public-cloud.readthedocs-hosted.com/en/latest/', None),
-    'aws': ('https://canonical-aws.readthedocs-hosted.com/en/latest/', None),
-    'azure': ('https://canonical-azure.readthedocs-hosted.com/en/latest/', None),
-    'google': ('https://canonical-gcp.readthedocs-hosted.com/en/latest/', None),
-    'ibm': ('https://canonical-ibm.readthedocs-hosted.com/en/latest/', None),
-    'oracle': ('https://canonical-oracle.readthedocs-hosted.com/en/latest/', None),
-    'oci': ('https://canonical-oci.readthedocs-hosted.com/en/latest/', None),
-    'public-images': ('https://canonical-public-images.readthedocs-hosted.com/en/latest/', None)
 }
 
 # Add CSS files (located in .sphinx/_static/)
