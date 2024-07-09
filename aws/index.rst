@@ -25,7 +25,7 @@ In this documentation
 
    ..  grid-item:: :doc:`How-to guides <aws-how-to/index>`
 
-      **Step-by-step guides** covering key operations and common tasks
+      **Step-by-step guides** covering key operations and common tasks involving the use of Ubuntu on EC2 and EKS.
 
 .. grid:: 1 1 2 2
    :padding: 0
@@ -37,7 +37,7 @@ In this documentation
 
    .. grid-item:: :doc:`Explanation <aws-explanation/index>`
 
-      **Discussion and clarification** of key topics, such as our image retention policy.
+      **Discussion and clarification** of key topics, such as our offerings, our image retention policy and the usage of snaps in our EKS images.
 
 
 ----------

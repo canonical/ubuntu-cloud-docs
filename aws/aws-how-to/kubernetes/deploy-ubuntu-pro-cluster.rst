@@ -1,5 +1,5 @@
-Deploy an Ubuntu Pro EKS cluster with Pro tokens
-================================================
+Deploy an Ubuntu Pro EKS cluster - using Pro tokens
+===================================================
 
 This guide shows how to deploy an EKS cluster with Ubuntu Pro nodes using Ubuntu Pro tokens and EC2 launch templates.
 
@@ -18,7 +18,7 @@ Prepare the cluster for deployment
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Although Ubuntu Pro for EKS is available as an AMI for Ubuntu 22.04 LTS (see :doc:`deploy-ubuntu-pro-cluster-with-eks-pro-ami`), there is no such EKS related offer available for Ubuntu 20.04 LTS.
-So to use Pro, you need to provision the EKS cluster with customised Ubuntu nodes.
+So to use Pro in 20.04 LTS, you need to provision the EKS cluster with customised Ubuntu nodes.
 
 The steps needed for deploying the cluster depend on whether you need to enable FIPS or not.
 
@@ -217,8 +217,6 @@ Add the following content to your file
          This config file allows you to create a cluster using the AMI from the previous step,
          with two nodes and SSH access.
 
-         Also, we use AmazonLinux2 as the amiFamily because currently it's the only native option supported by ``eksctl``.
-
          The ``overrideBootstrapCommand`` lets you launch the bootstrap script from AWS EKS
          to initialise the nodes.
 
@@ -243,34 +241,26 @@ profiles). When this command finishes, see the nodes with
 
 
 
-To ensure your nodes have an Ubuntu Pro subscription, SSH into one of the cluster nodes
-(get the external IP of your node with ``kubectl get nodes -o wide``):
+(Optional) Verify Pro subscription
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+To check that the deployed nodes have Ubuntu Pro, run:
 
 ..  code-block:: bash
 
-    # Replace the private SSH key and node IP according to your setup
-    $ ssh -i yoursshkeyname.pem ubuntu@<external_ip_of_node>
-    $ pro status
+    $ aws --region <region_name> ec2 describe-instances \
+          --filters Name=instance-state-name,Values=running \
+          --query 'Reservations[*].Instances[*].[InstanceType, LaunchTime, PlatformDetails]' 
+          --output table
 
-    SERVICE          ENTITLED  STATUS    DESCRIPTION
-    esm-apps         yes       enabled   Expanded Security Maintenance for Applications
-    esm-infra        yes       enabled   Expanded Security Maintenance for Infrastructure
-    fips             yes       enabled   NIST-certified core packages
-    fips-updates     yes       disabled  NIST-certified core packages with priority security updates
-    usg              yes       disabled  Security compliance and audit tools
-
-Please note that your services' statuses might differ from this snippet based
-on the Pro services that you've chosen to enable in the above configurations.
+    ----------------------------------------------------------------
+    |                       DescribeInstances                      |
+    +-----------+-----------------------------+--------------------+
+    |  t3.medium|  2024-05-07T19:57:33+00:00  |  Ubuntu Pro Linux  |
+    |  t3.medium|  2024-05-07T19:57:33+00:00  |  Ubuntu Pro Linux  |
+    +-----------+-----------------------------+--------------------+
 
 
-Verify Pro subscription
-~~~~~~~~~~~~~~~~~~~~~~~
-
-You now have an Ubuntu Pro Kubernetes cluster on EKS. Your Ubuntu Pro subscription can be verified on each of the provisioned nodes with
-
-..  code-block:: bash
-
-    $ pro status
 
 
 .. _`install eksctl`: https://eksctl.io/installation/

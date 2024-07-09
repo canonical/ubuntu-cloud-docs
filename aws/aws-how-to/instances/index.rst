@@ -25,6 +25,10 @@ Performing upgrades and automating them:
 * :doc:`Upgrade from Focal to Jammy <upgrade-from-focal-to-jammy>`
 * :doc:`Configure automated updates <automatically-update-ubuntu-instances>`
 
+Deploying Charmed Kubernetes:
+
+* :doc:`Deploy Charmed Kubernetes <deploy-charmed-kubernetes-on-ubuntu-pro>`
+
 
 .. toctree::
    :hidden:
@@ -40,3 +44,4 @@ Performing upgrades and automating them:
    In-place upgrade to Ubuntu Pro <upgrade-in-place-from-lts-to-pro>
    Upgrade from Focal to Jammy <upgrade-from-focal-to-jammy>
    Configure automated updates <automatically-update-ubuntu-instances>
+   Deploy Charmed Kubernetes <deploy-charmed-kubernetes-on-ubuntu-pro>

@@ -147,9 +147,9 @@ slug = ""
 # the sphinx_reredirects extension will be disabled.
 redirects = {
     "oci/oci-how-to/create-chiselled-ubuntu-image.html":
-        "https://canonical-oci.readthedocs-hosted.com/en/latest/oci-how-to/create-chiselled-ubuntu-image/",
+        "https://documentation.ubuntu.com/oci-registries/en/latest/oci-how-to/create-chiselled-ubuntu-image/",
     "oci/oci-how-to/deploy-pro-container-on-pro-kubernetes-cluster.html":
-        "https://canonical-oci.readthedocs-hosted.com/en/latest/oci-how-to/deploy-pro-container-on-pro-kubernetes-cluster/"
+        "https://documentation.ubuntu.com/oci-registries/en/latest/oci-how-to/deploy-pro-container-on-pro-kubernetes-cluster/"
 }
 
 ############################################################

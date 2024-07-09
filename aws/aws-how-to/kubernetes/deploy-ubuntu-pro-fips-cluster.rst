@@ -1,24 +1,26 @@
-Deploy an EKS FIPS cluster with Ubuntu Pro
-==========================================
+Deploy an Ubuntu Pro FIPS EKS cluster - using a Pro AMI
+=======================================================
 
-This guide will walk you through the steps needed to get an EKS cluster running Ubuntu on FIPS mode to achieve FedRamp compliance. 
+This guide will walk you through the steps needed to get an EKS cluster of FIPS-certified Ubuntu nodes.
 
-The process requires you to create your custom EKS FIPS AMI based on `recently released Ubuntu Pro for EKS`_ AMI using Packer, to then deploy it using eksctl. We will also show how to deploy a demo container that can be used to test and peek inside the cluster.
+The process involves creating your custom EKS FIPS AMI using Packer, and then deploying it using ``eksctl``. To test and take a peek inside the cluster, ``kubectl`` can be used.
+
 
 Prerequisites
-~~~~~~~~~~~~~
+-------------
 
 - An AWS account
 - AWS CLI installed and configured
 - An access and secret key from IAM
-- ``Packer`` version 1.8.1 or newer installed. Check the instructions to `install packer`_
-- ``eksctl`` version 1.7.7 or newer installed. Check the instructions to `install eksctl`_
-- ``Kubectl`` installed. Install it with ``sudo snap install kubectl --classic``
+- ``Packer`` version 1.8.1 or newer installed. (`Packer installation instructions`_)
+- ``eksctl`` version 1.7.7 or newer installed. (`eksctl installation instructions`_)
+- ``kubectl`` installed. Install it with ``sudo snap install kubectl --classic``
 
-Step 1. Build your custom EKS AMI using ‘Ubuntu-Pro for EKS’
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Create a json file (say eks-fips.json) for use with Packer: 
+Build a custom EKS AMI using 'Ubuntu-Pro for EKS'
+-------------------------------------------------
+
+Create a JSON file (say ``eks-fips.json``) for use with `Packer`_: 
 
 
 ..  code-block:: json
@@ -77,12 +79,16 @@ Build your image with:
     packer build eks-fips.json
 
 
-Once the build is complete, create your EKS FIPS cluster using eksctl as explained in 'Step 2 – alternative A'.
+Once the build is complete, either:
 
-If you already have an EKS cluster running, create a node group and attach it to the existing cluster, as explained in 'Step 2 – alternative B'.
+* :ref:`Create a new cluster (option 1) <create_new_cluster>` or 
+* :ref:`Create a new node group and attach it to a running cluster (option 2) <create_new_nodegroup>`. 
 
-Step 2 – alternative A: Create a cluster with a node group with eksctl
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. _create_new_cluster:
+
+(Option 1) Create a new cluster using eksctl 
+---------------------------------------------
 
 Define a cluster and its worker nodes (``my-fips-cluster.yaml``):
 
@@ -117,28 +123,31 @@ Define a cluster and its worker nodes (``my-fips-cluster.yaml``):
           sudo /etc/eks/bootstrap.sh my-cluster-fips
 
 
-Launch the cluster using eksctl:
+Create the cluster using eksctl:
 
 ..  code-block:: bash
 
     eksctl create cluster -f my-fips-cluster.yaml
 
 
-If you are using a profile, you can include it in the command:
+If you are using a profile, you can include it in the create command:
 
 ..  code-block:: bash
 
     AWS_PROFILE=eks eksctl create cluster -f my-fips-cluster.yaml
 
 
-The deployment may take several minutes to get ready.
+The deployment may take several minutes to complete. For further details regarding cluster customisation, refer to `eksctl documentation`_.
 
-For further cluster customisation check out `eksctl details`_.
 
-Step 2 – alternative B: Create a FIPS node group and attach it to a running cluster using eksctl
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. _create_new_nodegroup:
 
-Define the node group to be deployed in a yaml file (say ``my-fips-nodegroup.yaml``):
+(Option 2) Create a FIPS node group using eksctl
+------------------------------------------------
+
+If you already have a running EKS cluster, you can create a new FIPS node group and attach it to the cluster.
+
+Define the node group to be deployed in a YAML file (say ``my-fips-nodegroup.yaml``):
 
 ..  code-block:: yaml
 
@@ -172,7 +181,7 @@ Create the node group:
     eksctl create nodegroup -f my-fips-nodegroup.yaml
 
 
-If you are using a profile, you can include it in the command as shown below:
+If you are using a profile, you can include it in the create command:
 
 ..  code-block:: bash
 
@@ -182,12 +191,12 @@ If you are using a profile, you can include it in the command as shown below:
 The deployment may take several minutes to finish.
 
 
-Step 3: Check if the cluster is functional
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Check if the cluster is functional
+----------------------------------
 
 When eksctl is used to create an EKS cluster, it automatically configures a kubectl config file. So kubectl can be directly used to manage the cluster.
 
-Check if the new nodes are attached to the cluster:
+Using kubectl, check if the new FIPS nodes are attached to the cluster:
 
 ..  code-block:: bash
 
@@ -211,14 +220,18 @@ If kubectl doesn't show any information about your cluster or just shows an erro
     aws eks update-kubeconfig --region us-east-1 --name my-cluster-fips --profile eks
 
 
-(Optional) Check if the machines are running a valid Pro license
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+(Optional) Check if the machines have a valid Pro license
+---------------------------------------------------------
 
 Run:
 
 ..  code-block:: bash
 
-    aws ec2 describe-instances --region <<YOUR_REGION>> --filters "Name=instance-state-name,Values=running" "Name=tag:eksctl.io/v1alpha2/nodegroup-name,Values=ng-ubuntu-fips" --query 'Reservations[].Instances[].[InstanceType, LaunchTime, PlatformDetails]' --output table
+    aws ec2 describe-instances \
+        --region <<YOUR_REGION>> \
+        --filters "Name=instance-state-name,Values=running" "Name=tag:eksctl.io/v1alpha2/nodegroup-name,Values=ng-ubuntu-fips" \
+        --query 'Reservations[].Instances[].[InstanceType, LaunchTime, PlatformDetails]' \
+        --output table
 
 You should see an output similar to:
 
@@ -231,9 +244,7 @@ You should see an output similar to:
     |  m5.large|  2024-05-31T16:41:38+00:00  |  Ubuntu Pro Linux  |
     +----------+-----------------------------+--------------------+
 
-
-.. _`install eksctl`: https://eksctl.io/installation/
-.. _`recently released Ubuntu Pro for EKS`: https://ubuntu.com/blog/ubuntu-pro-for-eks-is-now-generally-available
-.. _`install packer`: https://developer.hashicorp.com/packer/tutorials/docker-get-started/get-started-install-cli
+.. _`Packer installation instructions`: https://developer.hashicorp.com/packer/tutorials/docker-get-started/get-started-install-cli
+.. _`eksctl installation instructions`: https://eksctl.io/installation/
 .. _`Packer`: https://www.packer.io/
-.. _`eksctl details`: https://eksctl.io/
+.. _`eksctl documentation`: https://eksctl.io/
