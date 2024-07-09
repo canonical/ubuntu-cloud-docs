@@ -68,6 +68,7 @@ DPKG
 EAL
 ebs
 ECR
+ecr
 eks
 EKS
 eksctl

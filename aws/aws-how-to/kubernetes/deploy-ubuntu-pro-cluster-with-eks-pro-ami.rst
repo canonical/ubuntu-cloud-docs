@@ -1,11 +1,11 @@
-Deploy an Ubuntu Pro cluster with EKS Pro AMI
-=============================================
+Deploy an Ubuntu Pro EKS cluster - using a Pro AMI
+==================================================
 
 This guide shows how to deploy an Ubuntu Pro EKS cluster using an EKS Pro AMI. You can also use Pro tokens and an EC2 launch template to deploy such a cluster. For instructions on how to do that, refer to :doc:`./deploy-ubuntu-pro-cluster`.
 
 An EKS Pro AMI is an Ubuntu EKS AMI with the `Pro service`_ included, which provides services such as Livepatch for LTS-based nodes and Expanded Security Maintenance (ESM).
 
-*Currently, only Ubuntu Pro 22.04 LTS is available as an EKS AMI, and it does not include the FIPS components. If you need FIPS or Ubuntu Pro 20.04 LTS, you'll have to use Pro tokens and follow the instructions from the other how-to guide mentioned above.*
+Currently, only Ubuntu Pro 22.04 LTS is available as an EKS AMI, and it does not include the FIPS components. For an earlier version, such as Ubuntu Pro 20.04 LTS, use Pro tokens as mentioned above. For including FIPS, refer to :doc:`./deploy-ubuntu-pro-fips-cluster`.
 
 Prerequisites
 -------------
@@ -65,11 +65,14 @@ You can confirm the status of the nodes on your cluster using:
 (Optional) Verify Pro subscription
 ----------------------------------
 
-To check deployed nodes have Ubuntu Pro, run:
+To check that the deployed nodes have Ubuntu Pro, run:
 
 ..  code-block:: bash
 
-    $ aws --region <region_name> ec2 describe-instances --filters Name=instance-state-name,Values=running --query 'Reservations[*].Instances[*].[InstanceType, LaunchTime, PlatformDetails]' --output table
+    $ aws --region <region_name> ec2 describe-instances \
+          --filters Name=instance-state-name,Values=running \
+          --query 'Reservations[*].Instances[*].[InstanceType, LaunchTime, PlatformDetails]' 
+          --output table
 
     ----------------------------------------------------------------
     |                       DescribeInstances                      |

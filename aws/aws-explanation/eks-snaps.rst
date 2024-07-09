@@ -2,7 +2,7 @@ Snap usage in EKS worker images
 ===============================
 
 The EKS worker images bundle several snaps that provide
-kubernetes components. This page will provide a brief
+Kubernetes components. This page will provide a brief
 explanation on what snaps are bundled and why.
 
 Snaps
