@@ -3,7 +3,7 @@ Use a bastion to access your VM
 
 To increase security and avoid Internet based attacks, it might make sense to run your VMs without a public IP address and just use a private IP instead. The only way to access such a VM will be through your private network in the Oracle Cloud VCN (Virtual Cloud Network).
 
-`Oracle's bastion feature`_ provides time-limited access to VMs that do not have a public endpoint. It enables you to create a bastion - that controls authorised users and allows them to SSH into a VM from specific IP addresses. The feature also negates the need to maintain an instance with a public and private address to act as a bastion (which in turn runs the risk of Internet exposure).
+`Oracle's bastion feature`_ provides time-limited access to VMs that do not have a public endpoint. It enables you to create a bastion - that controls authorised users and allows them to SSH into a VM from specific IP addresses. Using this feature means that you do not need to deploy and maintain your own security-hardened bastion exposed to both your internal network and the public internet. It also provides a more managed method to inject your SSH key into the target instance and the bastion.
 
 Prerequisites
 -------------
@@ -11,8 +11,8 @@ Prerequisites
 To use a bastion, you'll need a gateway in your VCN and a route rule for the gateway in your VM. The gateway could be a service gateway, an internet gateway, or a NAT gateway. The setup will work in any of the following combinations:
 
 * VM in a public subnet with a public IP address and a route to an internet gateway
-* VM in a private subnet (with no public IP address) and a route to a NAT gateway - This option will allow the VM to have an outgoing internet connection through the NAT Gateway.
-* VM in a private subnet (with no public IP address) and a route to a service gateway - This option will result in a completely air-gapped VM with no internet connectivity at all. But you'll still be able to access it through your Bastion.
+* VM in a private subnet (with no public IP address) and a route to a NAT gateway - this option will allow the VM to have an outgoing internet connection through the NAT Gateway.
+* VM in a private subnet (with no public IP address) and a route to a service gateway - this option will result in a completely air-gapped VM with no internet connectivity at all. But you'll still be able to access it through your Bastion.
  
 Note that having a VM in a public subnet, but without a public IP won't work. For more details about these gateways and how to handle their services, refer to the Oracle Cloud documentation for - `Service gateway`_, `Internet gateway`_, or `NAT gateway`_. 
 
