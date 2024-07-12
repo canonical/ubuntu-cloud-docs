@@ -209,6 +209,7 @@ rollout
 rootfs
 runtime
 rustc
+scalability
 SDK
 SeaBIOS
 SEV
@@ -271,6 +272,8 @@ VMs
 VMware
 VNC
 VPC
+VPCs
+VSI
 vTPM
 workspaces
 Workspaces
