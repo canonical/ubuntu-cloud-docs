@@ -23,19 +23,17 @@ Canonical and the Ubuntu community work together with IBM to ensure that Ubuntu 
 
 Canonical provides optimised Ubuntu LTS images with a custom kernel, minimal size, livepatch and support.
 
-These images are available on IBM Cloud for both IBM VPC Infrastructure and IBM Classic Infrastructure.
+These images are available on IBM Cloud for both the IBM VPC infrastructure and the IBM Classic infrastructure.
 
 
 ---------
 
-IBM VPC vs Classic Infrastructure
----------------------------------
+IBM VPC vs IBM Classic infrastructures
+--------------------------------------
 
-IBM Cloud offers two types of infrastructure: IBM VPC Infrastructure and IBM Classic Infrastructure (Legacy).
-For new users, IBM will only offer IBM VPC Infrastructure. Some long term users may still have access to the legacy IBM
-Classic Infrastructure. 
+IBM Cloud offers two types of infrastructures: IBM VPC infrastructure and IBM Classic infrastructure (Legacy). For new users, IBM only offers the VPC infrastructure. However, some long term users may still have access to the legacy Classic infrastructure. 
 
-IBM VPC offers numerous advantages over the legacy infrastructure, namely better performance, scalability, and ease of use.
+IBM VPC offers multiple advantages over the legacy infrastructure such as better performance, scalability, and ease of use.
 
 ---------
 
@@ -44,9 +42,9 @@ How-to guides
 
 :doc:`Find Ubuntu images on IBM Cloud<./ibm-how-to/find-ubuntu-images>`
 
-:doc:`Launch Ubuntu instances on IBM Cloud<./ibm-how-to/launch-ubuntu-instances>`
+:doc:`Launch an Ubuntu instance on IBM Cloud<./ibm-how-to/launch-ubuntu-instances>`
 
-:doc:`Upgrade from Focal to Jammy<./ibm-how-to/upgrade-from-focal-to-jammy>`
+:doc:`Upgrade from Ubuntu 20.04 LTS to Ubuntu 22.04 LTS<./ibm-how-to/upgrade-from-focal-to-jammy>`
 
 ---------
 
@@ -67,8 +65,8 @@ Ubuntu on IBM is a member of the Ubuntu family and the project warmly welcomes c
    :hidden:
    :maxdepth: 2
    
-   Find Ubuntu Images<ibm-how-to/find-ubuntu-images>
-   Launch Ubuntu Instances<ibm-how-to/launch-ubuntu-instances>
+   Find Ubuntu images<ibm-how-to/find-ubuntu-images>
+   Launch an Ubuntu instance<ibm-how-to/launch-ubuntu-instances>
    Upgrade from Focal to Jammy<ibm-how-to/upgrade-from-focal-to-jammy>
    ibm-how-to/contribute-to-these-docs
    

@@ -2,26 +2,25 @@ Find Ubuntu images on IBM Cloud
 ===============================
 
 
-Using the IBM Cloud web console
--------------------------------
+Using the web console
+---------------------
 
 
 .. tabs::
 
-    .. group-tab:: IBM VPC Infrastructure
+    .. group-tab:: IBM VPC infrastructure
 
 
-        On your IBM Cloud Console, you can find the latest Ubuntu images by navigating to 
+        On your IBM Cloud console, you can find the latest Ubuntu images by navigating to
         :guilabel:`VPC Infrastructure` >
         :guilabel:`Compute` >
         :guilabel:`Images` >
         :guilabel:`Stock Images` >
-        and then searching ``Ubuntu`` in the :guilabel:`Search Images` search bar. 
+        and then searching for ``Ubuntu`` in the :guilabel:`Search Images` search bar.
 
-    .. group-tab:: IBM Classic Infrastructure (Legacy)
+    .. group-tab:: IBM Classic infrastructure (legacy)
         
-        On your IBM Cloud Console, you can find the latest Ubuntu images by selecting ``Ubuntu`` as the Operating System
-        Vendor under 
+        On your IBM Cloud console, you can find the latest Ubuntu images by selecting ``Ubuntu`` as the operating system vendor under
         :guilabel:`Classic Infrastructure` > 
         :guilabel:`Devices` > 
         :guilabel:`Device List` > 
@@ -31,13 +30,13 @@ Using the IBM Cloud web console
         :guilabel:`Ubuntu`
 
 
-Using the IBM CLoud CLI
------------------------
+Using the CLI
+-------------
 
 
 .. tabs::
 
-    .. group-tab:: IBM VPC Infrastructure
+    .. group-tab:: IBM VPC infrastructure
 
         For a programmatic way to find the latest Ubuntu images, you can use the IBM Cloud CLI along with grep
         to filter the output.
@@ -46,9 +45,9 @@ Using the IBM CLoud CLI
 
             ibmcloud is images --visibility "public" --status available | grep "ubuntu"
 
-        For further information about this command, see the official IBM Cloud CLI documentation on `ibmcloud is images <https://cloud.ibm.com/docs/vpc?topic=vpc-vpc-reference#images-list>`_.
+        For further information about this command, refer to `IBM's CLI documentation on is_images`_.
 
-    .. group-tab:: IBM Classic Infrastructure (Legacy)
+    .. group-tab:: IBM Classic infrastructure (legacy)
 
         For a programmatic way to find the latest Ubuntu images, you can use the IBM Cloud CLI along with grep
         to filter the output.
@@ -57,4 +56,7 @@ Using the IBM CLoud CLI
 
             ibmcloud sl image list --public --name "Ubuntu"
 
-        For further information about this command, see the official IBM Cloud CLI documentation on `ibmcloud sl image list <https://cloud.ibm.com/docs/cli?topic=cli-sl-manage-compute-images#sl_image_list>`_.
+        For further information about this command, refer to `IBM's CLI documentation`_.
+
+.. _`IBM's CLI documentation on is_images`: https://cloud.ibm.com/docs/vpc?topic=vpc-vpc-reference#images-list
+.. _`IBM's CLI documentation`: https://cloud.ibm.com/docs/cli?topic=cli-sl-manage-compute-images#sl_image_list

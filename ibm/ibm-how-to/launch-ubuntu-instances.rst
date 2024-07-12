@@ -1,125 +1,110 @@
-Launch an Ubuntu Virtual Server Instance (VSI) on IBM Cloud
-===========================================================
+Launch an Ubuntu VSI on IBM Cloud
+=================================
 
-This how-to guide will give instructions for launching a Virtual Server Instance (VSI), 
-IBM's equivalent of a virtual machine, on IBM Cloud using Ubuntu.
-For more information on VSI's, see the official IBM Cloud documentation: `About virtual server instances for VPC <https://cloud.ibm.com/docs/vpc?topic=vpc-about-advanced-virtual-servers>`_.
+To launch a Virtual Server Instance (VSI) with Ubuntu on IBM Cloud, you can use either the IBM Cloud web console or the CLI. 
 
-Ensure you have an active IBM Cloud account before starting. If you do not have an account, you can sign up for one at
-https://cloud.ibm.com/registration
+.. note::
+   
+   A Virtual Server Instance (VSI) is IBM's equivalent of a virtual machine. For more information, refer to `IBM's documentation about VSI`_.
+
+Before starting, ensure that you have an active IBM Cloud account. If you don't, you can `sign up for one`_.
 
 
-Via Web Console
-----------------
+Using the web console
+---------------------
+On the IBM Cloud web console:
 
-#. First, on the IBM Cloud Web Console, navigate to the Virtual Server creation form. To do this, navigate to     
-   :guilabel:`VPC Infrastructure` > :guilabel:`Compute`> :guilabel:`Virtual server instances`>, 
-   and then click on the blue :guilabel:`Create +`.  
-#. Enter a unique name for your VSI in the `Name` field.
-#. Under the image section, press on :guilabel:`Change image` and under the :guilabel:`Stock Images` tab, search for
-   "Ubuntu" in the search bar and select the Ubuntu OS you'd like to use. For the most recent OS, select :code:`ibm-ubuntu-24-04-minimal-amd64-1`
-#. Choose the desired profile for your VSI under the `Profile` section.
-#. Select an existing ssh key or create a new one by pressing on :guilabel:`Add SSH key` and following the instructions.
-#. Customize any other settings as needed.
-#. Press on the blue :guilabel:`Create virtual server` button to launch your VSI.
+* Go to :guilabel:`VPC Infrastructure` > :guilabel:`Compute`> :guilabel:`Virtual server instances`>, and select :guilabel:`Create +` to open the virtual server creation form.  
+* Enter a unique name for your VSI in the `Name` field.
+* Under the image section, go to :guilabel:`Change image` > :guilabel:`Stock Images` and search for "Ubuntu" in the search bar to select the Ubuntu OS of your preference.
+* Choose the desired profile for your VSI under the `Profile` section.
+* Select an existing ssh key or create a new one using :guilabel:`Add SSH key`.
+* Customise any other settings as needed and select :guilabel:`Create virtual server` to launch your VSI.
 
-Via IBM Cloud CLI
------------------
+Using the CLI
+-------------
 
-Install IBM Cloud CLI
-~~~~~~~~~~~~~~~~~~~~~
-follow the official installation instructions from IBM: https://cloud.ibm.com/docs/cli?topic=cli-getting-started
-
-once installed, you'll need to authenticate with your IBM Cloud account before running any commands. To do this, run:
+Install and configure the CLI
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+To install the CLI, follow the `IBM instructions for installing CLI`_. Once installed, authenticate with your IBM Cloud account, by running:
 
 .. code-block:: bash
 
    ibmcloud login
-
-Then to use VPC Infrastructure, you will need to install the VPC Infrastructure plugin:
+ 
+Install the VPC infrastructure plugin:
 
 .. code-block:: bash
 
    ibmcloud plugin install vpc-infrastructure
 
-Then set VPC CLI to use generation 2:
+Set VPC CLI to use generation 2:
 
 .. code-block:: bash
 
    ibmcloud is target --gen 2
 
 
-Create ssh key
-~~~~~~~~~~~~~~
+Create an SSH key pair
+~~~~~~~~~~~~~~~~~~~~~~
 
-SSH key pairs are needed to log in to a VSI from your local machine. To create an SSH key pair,
-follow the IBM  instructions for creating key pairs:
-https://cloud.ibm.com/docs/vpc?topic=vpc-managing-ssh-keys&interface=cli
-
+SSH key pairs are needed to log in to a VSI from your local machine. To create one, follow the `IBM  instructions for creating key pairs`_.
 
 Find an Ubuntu image
 ~~~~~~~~~~~~~~~~~~~~
 
-To launch an instance that uses Ubuntu, you'll need to choose an appropriate Ubuntu image and get the image ID for it.
-Follow the instructions from the :doc:`Find images <find-ubuntu-images>`
+Use :doc:`Find Ubuntu images <find-ubuntu-images>` to find an appropriate Ubuntu image and its ID.
 
 
 Choose a zone and region
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-When creating a VSI, you'll need to specify a region and zone for the VSI to be created in.
-
-For the purposes of this how-to, we'll use the `us-south` region and the `us-south-1` zone. You can choose a different
-region and zone if you prefer.  
-Refer to the official IBM Cloud documentation for a list of available regions and zones: https://cloud.ibm.com/docs/vpc?topic=vpc-creating-a-vpc-in-a-different-region&interface=cli
+When creating a VSI, you'll need to specify a region and zone for the VSI to be created in. For a list of available regions and zones, refer to `IBM's documentation about regions`_.
 
 
-Set the region:
+Set the region (e.g. us-south):
 
 .. code-block:: bash
 
    ibmcloud is target --region us-south
 
 
-Create all other resources needed for the VSI
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Create other needed resources
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Refer to IBM Cloud's 'Creating VPC resources with CLI and API' documentation for instructions on creating a VPC, subnet,
-and security group, if you do not already have these resources set up:
-https://cloud.ibm.com/docs/vpc?topic=vpc-creating-vpc-resources-with-cli-and-api&interface=cli#creating-a-vpc-using-cli
+If you don't have an existing VPC, subnet and security group, set them up by following `IBM's instructions for creating VPC resources`_. Note the created VPC ID for later use.
 
-Be sure to note the ID of the VPC you wish to launch the VSI in. 
-
-For this how-to, we'll just use an existing VPC. To list existing VPCs, run:
+For existing VPCs, you can list them using:
 
 .. code-block:: bash
 
    ibmcloud is vpcs
 
 
-Launch the Virtual Server Instance
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Launch the VSI
+~~~~~~~~~~~~~~
 
-With all necessary information in hand, create your VSI:
-
-.. code-block:: bash
-
-   ibmcloud is instance-create MyInstance <vpc-id> <zone> <instance-type> <image-id> --keys <ssh-key-id>
-
-
-- Replace `<ssh-key-id>` with the ID of the SSH key you wish to login to the VSI with.
-- Replace `<vpc-id>` with the ID of the VPC you wish to launch the VSI in.
-- Replace `<zone>` with the zone you wish to launch the VSI in. We suggest using `us-south-1` for this how-to.
-
-See https://cloud.ibm.com/docs/vpc?topic=vpc-profiles&interface=ui for information on selecting a profile.
-
-A filled out example command would look like this:
+Create the VSI using:
 
 .. code-block:: bash
 
-   ibmcloud is instance-create TODO: fill in the rest of the command
+   ibmcloud is instance-create MyInstance \
+            <vpc-id> <zone> <instance-type> <image-id> \
+            --keys <ssh-key-id>
 
-This command initiates the creation of your Virtual Server Instance. The process may take a few minutes.
+
+Replace ``<vpc-id>``, ``<zone>``, ``<image-id>`` and ``<ssh-key-id>`` with the information gathered above. If you need help deciding on the instance-type refer to `IBM's documentation on instance profiles`_.
+
+An example command with the image ID for Ubuntu 24.04 LTS (and other IDs hidden) would look something like this:
+
+.. code-block:: bash
+
+   ibmcloud is instance-create MyUbuntuInstance \ 
+            xxxx-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx us-south-1 bx2-2x8 \
+            r006-3a44e4ee-9c9f-4693-98ae-fced7a46ffce \
+            --keys xxxx-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+
+The command initiates the creation of your VSI and may take a few minutes to complete.
 
 
 Access Your VSI
@@ -131,14 +116,23 @@ After the instance is provisioned, access it via SSH:
 
    ssh -i ~/.ssh/id_rsa ubuntu@<Instance-Public-IP>
 
-Replace `<Instance-Public-IP>` with the public IP address of your new VSI.
+where `<Instance-Public-IP>` is the public IP address of your new VSI.
 
 
 Terminate Your VSI
 ~~~~~~~~~~~~~~~~~~
 
-When you are finished with your VSI, you can terminate it to avoid incurring further charges:
+When you are finished with your VSI, you can terminate it using:
 
 .. code-block:: bash
 
    ibmcloud is instance-delete <instance-id>
+
+
+.. _`IBM's documentation about VSI`: https://cloud.ibm.com/docs/vpc?topic=vpc-about-advanced-virtual-servers
+.. _`sign up for one`: https://cloud.ibm.com/registration
+.. _`IBM instructions for installing CLI`: https://cloud.ibm.com/docs/cli?topic=cli-getting-started
+.. _`IBM  instructions for creating key pairs`: https://cloud.ibm.com/docs/vpc?topic=vpc-managing-ssh-keys&interface=cli
+.. _`IBM's documentation about regions`: https://cloud.ibm.com/docs/vpc?topic=vpc-creating-a-vpc-in-a-different-region&interface=cli
+.. _`IBM's instructions for creating VPC resources`: https://cloud.ibm.com/docs/vpc?topic=vpc-creating-vpc-resources-with-cli-and-api&interface=cli#creating-a-vpc-using-cli
+.. _`IBM's documentation on instance profiles`: https://cloud.ibm.com/docs/vpc?topic=vpc-profiles&interface=ui
