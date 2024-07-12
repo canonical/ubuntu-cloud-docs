@@ -4,6 +4,9 @@ AWS image retention policies
 Ubuntu images on AWS have three stage of life cycle : *release* > *deprecation* > *deletion*. 
 
 Whenever a new image is built and released to AWS, all the previous serials for that image are deprecated except for the last 3. A deprecated image is not visible on the AWS console, but it can still be launched from the `AWS CLI`_ using its AMI ID. You can also find and view details of deprecated images using the AWS CLI `describe-images`_ command by including the ``--include-deprecated`` flag.
+
+Apart from these three stages, some AMIs also become *private*. AMIs that go unused and have long since been replaced by newer images are marked as private. This is done so that we can reduce the overhead in searching for relevant AMIs in the console or with awscli. Unlike deprecated images, private images are not available for use and are invisible to the ``describe-images`` command. From a user's perspective, they are functionally equivalent to deleted images.
+
 This policy determines when an image will be deleted. Deleted images are no longer accessible for use, but instances already launched with those images will not be affected.
 
 
@@ -33,6 +36,10 @@ The retention policy can be summarised as follows:
      - EOL*
      - Delete all images
      - Deprecate all except latest serial
+   * - 
+     - Unlaunched***
+     - Privatize all images
+     - Privatize all except latest serial
    * - LTS Release
      - Active
      - Delete all *but* the last 3 serials
@@ -41,6 +48,10 @@ The retention policy can be summarised as follows:
      - EOSS**
      - Delete all images
      - Deprecate all except latest serial
+   * - 
+     - Unlaunched***
+     - Privatize all images
+     - Privatize all except latest serial
    * - EKS Release
      - Active
      - N/A
@@ -53,6 +64,7 @@ The retention policy can be summarised as follows:
 where:
   - **EOL** refers to when an interim Ubuntu release (for example, Lunar Lobster 23.04) has reached end-of-life `and will no longer enjoy support <https://ubuntu.com/about/release-cycle/>`_, or when EKS is `no longer supported by AWS`_.
   - **EOSS** refers to when an LTS Ubuntu release (for example, Bionic Beaver 18.04 LTS) has reached "End of Standard Support" but will remain supported under Ubuntu Pro
+  - **Unlaunched** refers to AMIs that are older than 6 months and have never been launched by any AWS user
 
 .. _`AWS CLI`: https://docs.aws.amazon.com/cli/
 .. _`describe-images`: https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-images.html
