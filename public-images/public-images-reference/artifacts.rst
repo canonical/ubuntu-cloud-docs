@@ -210,8 +210,8 @@ Changelogs
       |     - **to_version:** New version details, including the source package name and version.
       |     - **cves:** Common Vulnerabilities and Exposures fixed.
       |     - **launchpad_bugs_fixed:** IDs of fixed Launchpad bugs.
-      |     - **changes:** A list of changes with details like CVEs, change logs, package name, version,
-      |       urgency, distributions, author and date.
+      |     - **changes:** A list of changes with details like CVEs, change logs, 
+      |                    package name, version, urgency, distributions, author and date.
       |     - **notes:** Additional notes, if any.
       |   - **snap:** Detailed information on changed snap packages (same structure as deb).
       | - **added:** Lists newly added deb and snap packages.
@@ -231,158 +231,213 @@ Changelogs
             .. code-block:: json
                 
                 {
-                    "summary": {
-                        "snap": {
-                            "added": [],
-                            "removed": [],
-                            "diff": []
+                  "summary": {
+                    "snap": {
+                      "added": [],
+                      "removed": [],
+                      "diff": []
+                    },
+                    "deb": {
+                      "added": [
+                          "linux-headers-6.8.0-36",
+                      ],
+                      "removed": [
+                          "linux-headers-6.8.0-35",
+                      ],
+                      "diff": [
+                          "dracut-install",
+                      ]
+                    }
+                  },
+                  "diff": {
+                    "deb": [
+                      {
+                        "name": "dracut-install",
+                        "from_version": {
+                          "source_package_name": "dracut",
+                          "source_package_version": "060+5-1ubuntu3",
+                          "version": "060+5-1ubuntu3"
                         },
-                        "deb": {
-                            "added": [
-                                "linux-headers-6.8.0-36",
+                        "to_version": {
+                          "source_package_name": "dracut",
+                          "source_package_version": "060+5-1ubuntu3.1",
+                          "version": "060+5-1ubuntu3.1"
+                        },
+                        "cves": [],
+                        "launchpad_bugs_fixed": [
+                          2065180
+                        ],
+                        "changes": [
+                          {
+                            "cves": [],
+                            "log": [
+                              "",
+                              "  * perf(dracut-install): preload kmod resources 
+                                   for quicker module lookup",
+                              "    (LP: #2065180)",
+                              ""
                             ],
-                            "removed": [
-                                "linux-headers-6.8.0-35",
+                            "package": "dracut",
+                            "version": "060+5-1ubuntu3.1",
+                            "urgency": "medium",
+                            "distributions": "noble",
+                            "launchpad_bugs_fixed": [
+                              2065180
                             ],
-                            "diff": [
-                                "dracut-install",
-                            ]
-                        }
-                    },
-                    "diff": {
-                        "deb": [
-                            {
-                                "name": "dracut-install",
-                                "from_version": {
-                                    "source_package_name": "dracut",
-                                    "source_package_version": "060+5-1ubuntu3",
-                                    "version": "060+5-1ubuntu3"
-                                },
-                                "to_version": {
-                                    "source_package_name": "dracut",
-                                    "source_package_version": "060+5-1ubuntu3.1",
-                                    "version": "060+5-1ubuntu3.1"
-                                },
-                                "cves": [],
-                                "launchpad_bugs_fixed": [
-                                    2065180
-                                ],
-                                "changes": [
-                                    {
-                                        "cves": [],
-                                        "log": [
-                                            "",
-                                            "  * perf(dracut-install): preload kmod resources for quicker module lookup",
-                                            "    (LP: #2065180)",
-                                            ""
-                                        ],
-                                        "package": "dracut",
-                                        "version": "060+5-1ubuntu3.1",
-                                        "urgency": "medium",
-                                        "distributions": "noble",
-                                        "launchpad_bugs_fixed": [
-                                            2065180
-                                        ],
-                                        "author": "Benjamin Drung <bdrung@ubuntu.com>",
-                                        "date": "Tue, 04 Jun 2024 17:21:56 +0200"
-                                    }
-                                ],
-                                "notes": null
-                            }
+                            "author": "Benjamin Drung <bdrung@ubuntu.com>",
+                            "date": "Tue, 04 Jun 2024 17:21:56 +0200"
+                          }
                         ],
-                        "snap": []
-                    },
-                    "added": {
-                        "deb": [
-                            {
-                                "name": "linux-headers-6.8.0-36",
-                                "from_version": {
-                                    "source_package_name": "linux",
-                                    "source_package_version": "6.8.0-35.35",
-                                    "version": null
-                                },
-                                "to_version": {
-                                    "source_package_name": "linux",
-                                    "source_package_version": "6.8.0-36.36",
-                                    "version": "6.8.0-36.36"
-                                },
-                                "cves": [
-                                    {
-                                        "cve": "CVE-2024-26924",
-                                        "url": "https://ubuntu.com/security/CVE-2024-26924",
-                                        "cve_description": "In the Linux kernel, the following vulnerability has been resolved: netfilter: nft_set_pipapo: do not free live element Pablo reports a crash with large batches of elements with a back-to-back add/remove pattern. Quoting Pablo: add_elem(\"00000000\") timeout 100 ms ... add_elem(\"0000000X\") timeout 100 ms del_elem(\"0000000X\") <---------------- delete one that was just added ... add_elem(\"00005000\") timeout 100 ms 1) nft_pipapo_remove() removes element 0000000X Then, KASAN shows a splat. Looking at the remove function there is a chance that we will drop a rule that maps to a non-deactivated element. Removal happens in two steps, first we do a lookup for key k and return the to-be-removed element and mark it as inactive in the next generation. Then, in a second step, the element gets removed from the set/map. The _remove function does not work correctly if we have more than one element that share the same key. This can happen if we insert an element into a set when the set already holds an element with same key, but the element mapping to the existing key has timed out or is not active in the next generation. In such case its possible that removal will unmap the wrong element. If this happens, we will leak the non-deactivated element, it becomes unreachable. The element that got deactivated (and will be freed later) will remain reachable in the set data structure, this can result in a crash when such an element is retrieved during lookup (stale pointer). Add a check that the fully matching key does in fact map to the element that we have marked as inactive in the deactivation step. If not, we need to continue searching. Add a bug/warn trap at the end of the function as well, the remove function must not ever be called with an invisible/unreachable/non-existent element. v2: avoid uneeded temporary variable (Stefano)",
-                                        "cve_priority": "high",
-                                        "cve_public_date": "2024-04-25 06:15:00 UTC"
-                                    }
-                                ],
-                                "launchpad_bugs_fixed": [
-                                    2068150
-                                ],
-                                "changes": [
-                                    {
-                                        "cves": [
-                                            {
-                                                "cve": "CVE-2024-26924",
-                                                "url": "https://ubuntu.com/security/CVE-2024-26924",
-                                                "cve_description": "In the Linux kernel, the following vulnerability has been resolved: netfilter: nft_set_pipapo: do not free live element Pablo reports a crash with large batches of elements with a back-to-back add/remove pattern. Quoting Pablo: add_elem(\"00000000\") timeout 100 ms ... add_elem(\"0000000X\") timeout 100 ms del_elem(\"0000000X\") <---------------- delete one that was just added ... add_elem(\"00005000\") timeout 100 ms 1) nft_pipapo_remove() removes element 0000000X Then, KASAN shows a splat. Looking at the remove function there is a chance that we will drop a rule that maps to a non-deactivated element. Removal happens in two steps, first we do a lookup for key k and return the to-be-removed element and mark it as inactive in the next generation. Then, in a second step, the element gets removed from the set/map. The _remove function does not work correctly if we have more than one element that share the same key. This can happen if we insert an element into a set when the set already holds an element with same key, but the element mapping to the existing key has timed out or is not active in the next generation. In such case its possible that removal will unmap the wrong element. If this happens, we will leak the non-deactivated element, it becomes unreachable. The element that got deactivated (and will be freed later) will remain reachable in the set data structure, this can result in a crash when such an element is retrieved during lookup (stale pointer). Add a check that the fully matching key does in fact map to the element that we have marked as inactive in the deactivation step. If not, we need to continue searching. Add a bug/warn trap at the end of the function as well, the remove function must not ever be called with an invisible/unreachable/non-existent element. v2: avoid uneeded temporary variable (Stefano)",
-                                                "cve_priority": "high",
-                                                "cve_public_date": "2024-04-25 06:15:00 UTC"
-                                            }
-                                        ],
-                                        "log": [
-                                            "",
-                                            "  * noble/linux: 6.8.0-36.36 -proposed tracker (LP: #2068150)",
-                                            "",
-                                            "  * CVE-2024-26924",
-                                            "    - netfilter: nft_set_pipapo: do not free live element",
-                                            ""
-                                        ],
-                                        "package": "linux",
-                                        "version": "6.8.0-36.36",
-                                        "urgency": "medium",
-                                        "distributions": "noble",
-                                        "launchpad_bugs_fixed": [
-                                            2068150
-                                        ],
-                                        "author": "Roxana Nicolescu <roxana.nicolescu@canonical.com>",
-                                        "date": "Mon, 10 Jun 2024 11:26:41 +0200"
-                                    }
-                                ],
-                                "notes": "linux-headers-6.8.0-36 version '6.8.0-36.36' (source package linux version '6.8.0-36.36') was added. linux-headers-6.8.0-36 version '6.8.0-36.36' has the same source package name, linux, as removed package linux-headers-6.8.0-35. As such we can use the source package version of the removed package, '6.8.0-35.35', as the starting point in our changelog diff. Kernel packages are an example of where the binary package name changes for the same source package. Using the removed package source package version as our starting point means we can still get meaningful changelog diffs even for what appears to be a new package."
-                            },
+                        "notes": null
+                      }
+                    ],
+                    "snap": []
+                  },
+                  "added": {
+                    "deb": [
+                      {
+                        "name": "linux-headers-6.8.0-36",
+                        "from_version": {
+                          "source_package_name": "linux",
+                          "source_package_version": "6.8.0-35.35",
+                          "version": null
+                        },
+                        "to_version": {
+                          "source_package_name": "linux",
+                          "source_package_version": "6.8.0-36.36",
+                          "version": "6.8.0-36.36"
+                        },
+                        "cves": [
+                          {
+                            "cve": "CVE-2024-26924",
+                            "url": "https://ubuntu.com/security/CVE-2024-26924",
+                            "cve_description": "In the Linux kernel, the following vulnerability live element 
+                                Pablo reports a crash with large batches of elements with a back-to-back 
+                                add/remove pattern. Quoting Pablo: add_elem(\"00000000\") timeout 100 ms ... 
+                                add_elem(\"0000000X\") timeout 100 ms del_elem(\"0000000X\") <---------------- 
+                                delete one that was just added ... removes element 0000000X Then, KASAN shows 
+                                a splat. Looking at the remove function here is a chance that we will drop a 
+                                rule that maps to a non-deactivated element. Removal happens in two steps, 
+                                first we do a lookup for key k and return the generation. Then, in a second 
+                                step, the element gets removed from the set/map. The _remove function does 
+                                not work correctly if we have more than one element that share the same key. 
+                                This can happen if we insert an element into a set when the set already holds 
+                                an element with same key, but the element mapping to the existing key has timed
+                                out or is not active in the next generation. In such case its possible that 
+                                removal will unmap the wrong element. If this happens, we will leak the 
+                                non-deactivated element, it becomes unreachable. The element that got 
+                                deactivated (and will be freed later) will remain reachable in the set data 
+                                structure, this can result in a crash when such an element is retrieved during 
+                                lookup (stale pointer). Add a check that the fully matching key does in fact 
+                                map to the element that we have marked as inactive in the deactivation step. 
+                                If not, we need to continue searching. Add a bug/warn trap at the end of the 
+                                function as well, the remove function must not ever be called with an 
+                                invisible/unreachable/non-existent element. v2: avoid uneeded temporary variable (Stefano)",
+                              "cve_priority": "high",
+                              "cve_public_date": "2024-04-25 06:15:00 UTC"
+                          }
                         ],
-                        "snap": []
-                    },
-                    "removed": {
-                        "deb": [
-                            {
-                                "name": "linux-headers-6.8.0-35",
-                                "from_version": {
-                                    "source_package_name": "linux",
-                                    "source_package_version": "6.8.0-35.35",
-                                    "version": "6.8.0-35.35"
-                                },
-                                "to_version": {
-                                    "source_package_name": null,
-                                    "source_package_version": null,
-                                    "version": null
-                                },
-                                "cves": [],
-                                "launchpad_bugs_fixed": [],
-                                "changes": [],
-                                "notes": null
-                            }
+                        "launchpad_bugs_fixed": [
+                          2068150
                         ],
-                        "snap": []
-                    },
-                    "notes": "Changelog diff for Ubuntu 24.04 noble image from daily image serial 20240622 to 20240628",
-                    "from_series": "noble",
-                    "to_series": "noble",
-                    "from_serial": "20240622",
-                    "to_serial": "20240628",
-                    "from_manifest_filename": "daily_manifest.previous",
-                    "to_manifest_filename": "manifest.current"
-                }
+                        "changes": [
+                          {
+                            "cves": [
+                              {
+                                "cve": "CVE-2024-26924",
+                                "url": "https://ubuntu.com/security/CVE-2024-26924",
+                                "cve_description": "In the Linux kernel, the following vulnerability has been 
+                                resolved: netfilter: nft_set_pipapo: do not free live element Pablo reports 
+                                a crash with large batches of elements with a back-to-back add/remove pattern. 
+                                Quoting Pablo: add_elem(\"00000000\") timeout 100 ms ... add_elem(\"0000000X\") 
+                                timeout 100 ms del_elem(\"0000000X\") <---------------- delete one that was 
+                                just added ... add_elem(\"00005000\") timeout 100 ms 1) nft_pipapo_remove() 
+                                removes element 0000000X Then, KASAN shows a splat. Looking at the remove 
+                                function there is a chance that we will drop a rule that maps to a 
+                                non-deactivated element. Removal happens in two steps, first we do a lookup 
+                                for key k and return the to-be-removed element and mark it as inactive in 
+                                the next generation. Then, in a second step, the element gets removed from 
+                                the set/map. The _remove function does not work correctly if we have more than 
+                                one element that share the same key. This can happen if we insert an element 
+                                into a set when the set already holds an element with same key, but the element 
+                                mapping to the existing key has timed out or is not active in the next 
+                                generation. In such case its possible that removal will unmap the wrong element. 
+                                If this happens, we will leak the non-deactivated element, it becomes unreachable.
+                                The element that got deactivated (and will be freed later) will remain reachable 
+                                in the set data structure, this can result in a crash when such an element 
+                                is retrieved during lookup (stale pointer). Add a check that the fully matching 
+                                key does in fact map to the element that we have marked as inactive in the 
+                                deactivation step. If not, we need to continue searching. Add a bug/warn trap 
+                                at the end of the function as well, the remove function must not ever be called 
+                                with an invisible/unreachable/non-existent element. v2: avoid uneeded temporary 
+                                variable (Stefano)",
+                                "cve_priority": "high",
+                                "cve_public_date": "2024-04-25 06:15:00 UTC"
+                              }
+                            ],
+                            "log": [
+                              "",
+                              "  * noble/linux: 6.8.0-36.36 -proposed tracker (LP: #2068150)",
+                              "",
+                              "  * CVE-2024-26924",
+                              "    - netfilter: nft_set_pipapo: do not free live element",
+                              ""
+                            ],
+                            "package": "linux",
+                            "version": "6.8.0-36.36",
+                            "urgency": "medium",
+                            "distributions": "noble",
+                            "launchpad_bugs_fixed": [
+                              2068150
+                            ],
+                            "author": "Roxana Nicolescu <roxana.nicolescu@canonical.com>",
+                            "date": "Mon, 10 Jun 2024 11:26:41 +0200"
+                          }
+                        ],
+                        "notes": "linux-headers-6.8.0-36 version '6.8.0-36.36' (source package linux version 
+                                 '6.8.0-36.36') was added. linux-headers-6.8.0-36 version '6.8.0-36.36' has 
+                                 the same source package name, linux, as removed package linux-headers-6.8.0-35. 
+                                 As such we can use the source package version of the removed package, 
+                                 '6.8.0-35.35', as the starting point in our changelog diff. Kernel packages 
+                                 are an example of where the binary package name changes for the same source 
+                                 package. Using the removed package source package version as our starting 
+                                 point means we can still get meaningful changelog diffs even for what appears 
+                                 to be a new package."
+                      },
+                    ],
+                    "snap": []
+                  },
+                  "removed": {
+                    "deb": [
+                      {
+                        "name": "linux-headers-6.8.0-35",
+                        "from_version": {
+                          "source_package_name": "linux",
+                          "source_package_version": "6.8.0-35.35",
+                          "version": "6.8.0-35.35"
+                        },
+                        "to_version": {
+                          "source_package_name": null,
+                          "source_package_version": null,
+                          "version": null
+                        },
+                        "cves": [],
+                        "launchpad_bugs_fixed": [],
+                        "changes": [],
+                        "notes": null
+                      }
+                    ],
+                    "snap": []
+                  },
+                  "notes": "Changelog diff for Ubuntu 24.04 noble image from daily image serial 
+                            20240622 to 20240628",
+                  "from_series": "noble",
+                  "to_series": "noble",
+                  "from_serial": "20240622",
+                  "to_serial": "20240628",
+                  "from_manifest_filename": "daily_manifest.previous",
+                  "to_manifest_filename": "manifest.current"
+              }
 
 Checksums
 ~~~~~~~~~

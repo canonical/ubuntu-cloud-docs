@@ -11,7 +11,7 @@ Launching an instance and finding the right image to use:
 
 Creating AMIs and CloudFormation templates:
 
-* :doc:`Build an Ubuntu Pro AMI <build-pro-ami-using-packer>`
+* :doc:`Build an Ubuntu Pro AMI using Packer <build-pro-ami-using-packer>`
 * :doc:`Create CloudFormation templates <build-cloudformation-templates>`
 
 Installing custom drivers and configuring network cards:
@@ -37,7 +37,7 @@ Deploying Charmed Kubernetes:
    Launch instance using CLI <launch-ubuntu-ec2-instance>
    Find images <find-ubuntu-images>  
    Launch a desktop <launch-ubuntu-desktop>
-   Build an Ubuntu Pro AMI <build-pro-ami-using-packer>
+   Build an Ubuntu Pro AMI using Packer <build-pro-ami-using-packer>
    Create CloudFormation templates <build-cloudformation-templates>
    Install NVIDIA drivers <install-nvidia-drivers>
    Configure multiple NICs <automatically-setup-multiple-nics>

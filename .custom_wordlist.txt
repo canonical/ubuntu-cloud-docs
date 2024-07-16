@@ -140,10 +140,10 @@ IronBank
 iSCSI
 Istio
 JSON
-json
 Juju
 Karbon
 keypair
+keyring
 keyserver
 kubeconfig
 kubectl
