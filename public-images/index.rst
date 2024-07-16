@@ -13,20 +13,24 @@ Ubuntu Public Images
 In this documentation
 ---------------------
 
-..  grid:: 1 1 2 2
+..  grid:: 1 1 1 1
    :padding: 0
 
    ..  grid-item:: :doc:`How-to guides <public-images-how-to/index>`
 
       **Step-by-step guides** covering key operations related to Vagrant.
 
+.. grid:: 1 1 2 2
+   :padding: 0
+
    .. grid-item:: :doc:`Vagrant - An explanation <public-images-explanation/vagrant>`
 
       **What are Vagrant boxes** and our support status for them.
 
-   .. grid-item:: :doc:`Ubuntu cloud image artifacts <public-images-reference/artifacts>`
+   .. grid-item:: :doc:`Cloud image artifacts - A reference <public-images-reference/artifacts>`
 
       **Reference guide** for the artifacts found on `cloud-images.ubuntu.com`_.
+
 
 
 ----------
