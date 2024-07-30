@@ -11,7 +11,7 @@ To launch Ubuntu images with Trusted Launch and Confidential VM, refer to :doc:`
 Trusted launch
 --------------
 
-All Ubuntu images from 20.04 (Focal Fossa) support trusted launch and secure boot on Hyper-V Gen2 instances. 
+All Ubuntu images from 20.04 LTS (Focal Fossa) support trusted launch and secure boot on Hyper-V Gen2 instances. 
 
 Confidential VM
 ---------------

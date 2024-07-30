@@ -37,7 +37,7 @@ You can find the latest three image builds using either the web console or the C
       
       It will return a JSON output with details for all available image builds. You can use ``jq`` to filter the fields that you need. You can also optionally include --region <region_name> to search in a region different from the one configured in your ~/.oci/config file. Note that the id of the images will be different for different regions. 
 
-      Other options can also be added to the command. For instance, to list all Ubuntu 22.04 base images (non-minimal versions), use:
+      Other options can also be added to the command. For instance, to list all Ubuntu 22.04 LTS base images (non-minimal versions), use:
 
       .. code::
 

@@ -11,7 +11,7 @@ Launching an instance and finding the right image to use:
 
 Creating AMIs and CloudFormation templates:
 
-* :doc:`Build an Ubuntu Pro AMI <build-pro-ami-using-packer>`
+* :doc:`Build an Ubuntu Pro AMI using Packer <build-pro-ami-using-packer>`
 * :doc:`Create CloudFormation templates <build-cloudformation-templates>`
 
 Installing custom drivers and configuring network cards:
@@ -26,6 +26,10 @@ Performing upgrades and automating them:
 * :doc:`Upgrade to Ubuntu Pro at scale using tokens with SSM <upgrade-to-ubuntu-pro-at-scale-using-tokens-with-ssm>`
 * :doc:`Configure automated updates <automatically-update-ubuntu-instances>`
 
+Deploying Charmed Kubernetes:
+
+* :doc:`Deploy Charmed Kubernetes <deploy-charmed-kubernetes-on-ubuntu-pro>`
+
 
 .. toctree::
    :hidden:
@@ -34,11 +38,11 @@ Performing upgrades and automating them:
    Launch instance using CLI <launch-ubuntu-ec2-instance>
    Find images <find-ubuntu-images>  
    Launch a desktop <launch-ubuntu-desktop>
-   Build an Ubuntu Pro AMI <build-pro-ami-using-packer>
+   Build an Ubuntu Pro AMI using Packer <build-pro-ami-using-packer>
    Create CloudFormation templates <build-cloudformation-templates>
    Install NVIDIA drivers <install-nvidia-drivers>
    Configure multiple NICs <automatically-setup-multiple-nics>
    In-place upgrade to Ubuntu Pro <upgrade-in-place-from-lts-to-pro>
    Upgrade from Focal to Jammy <upgrade-from-focal-to-jammy>
-   Upgrade to Ubuntu Pro at scale using tokens with SSM <upgrade-to-ubuntu-pro-at-scale-using-tokens-with-ssm>
    Configure automated updates <automatically-update-ubuntu-instances>
+   Deploy Charmed Kubernetes <deploy-charmed-kubernetes-on-ubuntu-pro>

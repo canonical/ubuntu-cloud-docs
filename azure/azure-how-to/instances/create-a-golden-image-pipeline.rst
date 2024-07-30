@@ -124,7 +124,7 @@ Some of them have a default value and can be skipped. Two important ones to note
 Image properties
 ~~~~~~~~~~~~~~~~
 
-By default, ``--imageProperties`` points to ``./config/imageDefinitionProperties.json``, a file that defines the base image for your golden image. In the sample repository, Ubuntu Pro 22.04 is used as the base image:
+By default, ``--imageProperties`` points to ``./config/imageDefinitionProperties.json``, a file that defines the base image for your golden image. In the sample repository, Ubuntu Pro 22.04 LTS is used as the base image:
 
 .. code::
 

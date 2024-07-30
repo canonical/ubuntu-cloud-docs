@@ -11,23 +11,25 @@ While using Ubuntu on AWS, you'll need to perform tasks such as launching an ins
 * :doc:`Launch instance using CLI <instances/launch-ubuntu-ec2-instance>`
 * :doc:`Find images <instances/find-ubuntu-images>`
 * :doc:`Launch a desktop <instances/launch-ubuntu-desktop>`
-* :doc:`Build an Ubuntu Pro AMI <instances/build-pro-ami-using-packer>`
+* :doc:`Build an Ubuntu Pro AMI using Packer <instances/build-pro-ami-using-packer>`
 * :doc:`Create CloudFormation templates <instances/build-cloudformation-templates>`
 * :doc:`Install NVIDIA drivers <instances/install-nvidia-drivers>`
 * :doc:`Configure multiple NICs <instances/automatically-setup-multiple-nics>`
 * :doc:`In-place upgrade to Ubuntu Pro <instances/upgrade-in-place-from-lts-to-pro>`
 * :doc:`Upgrade from Focal to Jammy <instances/upgrade-from-focal-to-jammy>`
 * :doc:`Configure automated updates <instances/automatically-update-ubuntu-instances>`
+* :doc:`Deploy Charmed Kubernetes <instances/deploy-charmed-kubernetes-on-ubuntu-pro>`
 
 
-EKS - Using Kubernetes
-----------------------
+EKS - Using Ubuntu Pro and GPUs on EKS
+--------------------------------------
 
-If you want to use some of our products such as Ubuntu Pro and Charmed Kubernetes on Amazon's EKS service, you can refer to these instructions.
+If you want to use Ubuntu Pro and enable GPUs on Amazon's EKS service, you can refer to these instructions.
 
-* :doc:`Deploy an Ubuntu Pro cluster <kubernetes/deploy-ubuntu-pro-cluster>`
-* :doc:`Enable GPUs <kubernetes/enable-gpus-on-eks>`
-* :doc:`Deploy Charmed K8s on Ubuntu Pro <kubernetes/deploy-charmed-kubernetes-on-ubuntu-pro>`
+* :doc:`Deploy a Pro cluster using AMI <kubernetes/deploy-ubuntu-pro-cluster-with-eks-pro-ami>`
+* :doc:`Deploy a Pro FIPS cluster using AMI <kubernetes/deploy-ubuntu-pro-fips-cluster>`
+* :doc:`Deploy a Pro cluster (with / without FIPS) using tokens <kubernetes/deploy-ubuntu-pro-cluster>`
+* :doc:`Enable GPUs on EKS worker nodes <kubernetes/enable-gpus-on-eks>`
 
 
 Security features

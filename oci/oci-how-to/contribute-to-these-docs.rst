@@ -1,5 +1,5 @@
 Contribute to these docs
-========================
+************************
 
 .. include:: ../../reuse/contribute-to-docs.txt
    :start-after: Start: How to contribute
@@ -13,7 +13,7 @@ Contribute to these docs
 
 	PROJECT=oci make run
 
-Setting the `PROJECT` parameter to ``oci`` ensures that the documentation set for `Ubuntu on OCI Registries` gets built. This parameter is needed to distinguish between the different documentation sets present in the repository.
+Setting the `PROJECT` parameter to ``oci`` ensures that the documentation set for `Ubuntu on OCI container registries` gets built. This parameter is needed to distinguish between the different documentation sets present in the repository.
 
 .. include:: ../../reuse/contribute-to-docs.txt
    :start-after: Start: How to contribute (continued)

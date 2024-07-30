@@ -5,7 +5,7 @@ To create an Ubuntu desktop environment on your EC2 VM, you can use TightVNC as 
 
 .. Note::
 
-    Both the remote EC2 instance and your local machine are assumed to be running Ubuntu 16.04 or greater.
+    Both the remote EC2 instance and your local machine are assumed to be running Ubuntu 16.04 LTS or greater.
 
 
 Install Ubuntu desktop and TightVNC on your VM
