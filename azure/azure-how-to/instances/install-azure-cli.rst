@@ -6,7 +6,7 @@ This documentation is based on the `official Azure documentation <https://docs.m
 Install a few pre-requisites::
 
    sudo apt-get update
-   sudo apt-get install ca-certificates curl apt-transport-https lsb-release gnupg
+   sudo apt-get install apt-transport-https ca-certificates curl gnupg lsb-release
 
 
 Download the key for the Microsoft archive::
