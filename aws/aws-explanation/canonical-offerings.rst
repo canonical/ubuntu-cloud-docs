@@ -39,8 +39,8 @@ The different variations and the means to find them in AWS are summarised below:
      - :doc:`CLI<../aws-how-to/instances/find-ubuntu-images>`, `Marketplace <https://aws.amazon.com/marketplace/search/results?searchTerms=Ubuntu+minimal&CREATOR=565feec9-3d43-413e-9760-c651546613f2&AMI_ARCHITECTURE=arm64&filters=CREATOR%2CAMI_ARCHITECTURE>`__
    
    * - Pro
-     - :doc:`CLI<../aws-how-to/instances/find-ubuntu-images>`, `Marketplace <https://aws.amazon.com/marketplace/search/results?searchTerms=Ubuntu+pro&CREATOR=565feec9-3d43-413e-9760-c651546613f2&AMI_ARCHITECTURE=x86_64&filters=CREATOR%2CAMI_ARCHITECTURE>`__
-     - EC2 console, :doc:`CLI<../aws-how-to/instances/find-ubuntu-images>`, `Marketplace <https://aws.amazon.com/marketplace/search/results?searchTerms=Ubuntu+pro&CREATOR=565feec9-3d43-413e-9760-c651546613f2&AMI_ARCHITECTURE=arm64&filters=CREATOR%2CAMI_ARCHITECTURE>`__
+     - :doc:`CLI<../aws-how-to/instances/find-ubuntu-images>`, `Marketplace <https://aws.amazon.com/marketplace/search/results?searchTerms=Ubuntu+pro&AMI_ARCHITECTURE=x86_64&CREATOR=e6a5002c-6dd0-4d1e-8196-0a1d1857229b&filters=AMI_ARCHITECTURE%2CCREATOR>`__
+     - EC2 console, :doc:`CLI<../aws-how-to/instances/find-ubuntu-images>`, `Marketplace <https://aws.amazon.com/marketplace/search/results?searchTerms=Ubuntu+pro&AMI_ARCHITECTURE=arm64&CREATOR=e6a5002c-6dd0-4d1e-8196-0a1d1857229b&filters=AMI_ARCHITECTURE%2CCREATOR>`__
 
    * - Pro FIPS 
      - `Marketplace <https://aws.amazon.com/marketplace/search/results?searchTerms=Ubuntu+pro+fips&CREATOR=565feec9-3d43-413e-9760-c651546613f2&AMI_ARCHITECTURE=x86_64&filters=CREATOR%2CAMI_ARCHITECTURE>`__, Private offers
