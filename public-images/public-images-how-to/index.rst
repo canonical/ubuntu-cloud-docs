@@ -2,10 +2,11 @@
 
 How-to guides
 =============
-These guides provide instructions for performing basic operations related to Vagrant.
+These guides provide instructions for performing basic operations related to public Ubuntu cloud images.
 
 - :ref:`vagrant-bartender`
 - :ref:`run-a-vagrant-box`
+- :ref:`use-local-ds`
 
 .. toctree::
    :maxdepth: 1
