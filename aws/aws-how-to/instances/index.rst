@@ -46,3 +46,4 @@ Deploying Charmed Kubernetes:
    Upgrade from Focal to Jammy <upgrade-from-focal-to-jammy>
    Configure automated updates <automatically-update-ubuntu-instances>
    Deploy Charmed Kubernetes <deploy-charmed-kubernetes-on-ubuntu-pro>
+   Launch and attest an AMD SEV-SNP instance <launch-and-attest-amd-sev-snp-instances>
