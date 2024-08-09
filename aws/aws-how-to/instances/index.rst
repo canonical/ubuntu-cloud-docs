@@ -8,6 +8,7 @@ Launching an instance and finding the right image to use:
 * :doc:`Launch instance using CLI <launch-ubuntu-ec2-instance>`
 * :doc:`Find images <find-ubuntu-images>`
 * :doc:`Launch a desktop <launch-ubuntu-desktop>`
+* :doc:`Launch and attest an AMD SEV-SNP instance <launch-and-attest-amd-sev-snp-instances>`
 
 Creating AMIs and CloudFormation templates:
 
