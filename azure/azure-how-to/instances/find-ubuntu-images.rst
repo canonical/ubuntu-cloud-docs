@@ -112,6 +112,9 @@ Ubuntu Pro 24.04 LTS - Noble Numbat
    * - AMD64
      - Gen1
      - ``Canonical:ubuntu-24_04-lts:ubuntu-pro-gen1:latest``
+   * - AMD64
+     - Gen2
+     - ``Canonical:ubuntu-24_04-lts:ubuntu-pro-cvm:latest``
 
 Ubuntu Pro 22.04 LTS - Jammy Jellyfish
 ++++++++++++++++++++++++++++++++++++++
@@ -195,6 +198,9 @@ Ubuntu CVM 24.04 LTS - Noble Numbat
    * - AMD64
      - Gen2
      - ``Canonical:ubuntu-24_04-lts:cvm:latest``
+   * - AMD64
+     - Gen2
+     - ``Canonical:ubuntu-24_04-lts:ubuntu-pro-cvm:latest``
 
 Ubuntu CVM 22.04 LTS - Jammy Jellyfish
 ++++++++++++++++++++++++++++++++++++++
