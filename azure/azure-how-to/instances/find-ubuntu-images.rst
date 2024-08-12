@@ -219,6 +219,22 @@ Ubuntu CVM 22.04 LTS - Jammy Jellyfish
      - Gen2
      - ``Canonical:0001-com-ubuntu-confidential-vm-jammy:22_04-lts-cvm:latest``
 
+Ubuntu Pro CVM 22.04 LTS - Jammy Jellyfish
+++++++++++++++++++++++++++++++++++++++++++
+
+| Quick start: `Ubuntu Pro CVM 22.04 LTS on Azure <https://portal.azure.com/#create/canonical.0001-com-ubuntu-pro-confidential-vm-jammypro-22_04-lts-cvm>`_
+
+.. list-table::
+   :widths: 10 9 50
+   :header-rows: 1
+  
+   * - **Architecture**
+     - **Hyper-V Generation**
+     - **URN**
+   * - AMD64
+     - Gen2
+     - ``Canonical:0001-com-ubuntu-pro-confidential-vm-jammy:pro-22_04-lts-cvm:latest``
+
 Ubuntu CVM 20.04 LTS - Focal Fossa
 ++++++++++++++++++++++++++++++++++
 
