@@ -73,7 +73,7 @@ The following command launches a cloud image with:
 * the local machine's CPUs
 * 2GB of memory
 * no graphics, only serial output to the console
-* snapshot -- this option will make writes to a temporary file instead of the disk image itself. This ensures that the base disk is not touched. If at some point, you want to persist the changes you've made on the disk, press C-a s
+* snapshot -- this option will make writes to a temporary file instead of the disk image itself. This ensures that the base disk is not touched. If at some point, you want to persist the changes you've made on the disk, press ``ctrl-a`` (the default QEMU escape sequence) followed by ``s``
 * virtio network device that redirects the guest (cloud image) port 22 to host (desktop OS) port 2222
 * virtio cloud image
 * virtio seed image
