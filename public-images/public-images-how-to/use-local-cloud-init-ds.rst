@@ -1,4 +1,4 @@
-.. _use-local-ds:
+.. _use-local-cloud-init-ds:
 
 Create and use a local cloud-init datasource
 ============================================

@@ -6,7 +6,7 @@ These guides provide instructions for performing basic operations related to pub
 
 - :ref:`vagrant-bartender`
 - :ref:`run-a-vagrant-box`
-- :ref:`use-local-ds`
+- :ref:`use-local-cloud-init-ds`
 
 .. toctree::
    :maxdepth: 1
@@ -14,4 +14,4 @@ These guides provide instructions for performing basic operations related to pub
 
    Build a Vagrant box with Bartender<build-vagrant-with-bartender>
    Run a Vagrant box<run-a-vagrant-box>
-   Use a local cloud-init datasource<use-local-ds>
+   Use a local cloud-init datasource<use-local-cloud-init-ds>
