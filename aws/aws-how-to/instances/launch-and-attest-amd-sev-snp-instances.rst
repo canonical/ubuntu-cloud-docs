@@ -34,7 +34,7 @@ If using AWS EC2 Console, scroll down to the Advanced details section and within
 
 .. image:: launch-and-attest-amd-sev-snp-instances-images/enable-amd-sev-snp.png
 
-If using AWS CLI, add ``--cpu-options AmdSecSnp=Enabled`` to your command:
+If using AWS CLI, add ``--cpu-options AmdSevSnp=Enabled`` to your command:
 
 .. code::
 
