@@ -1,15 +1,15 @@
 .. _use-local-ds:
 
-Create and Use a Local Cloud-Init Datasource
+Create and use a local cloud-init datasource
 ============================================
 
 Purpose
 -------
 
-The steps in this How-To guide will allow you to create a seed image that defines a custom cloud-init datasource.
+The steps in this how-to guide will allow you to create an Ubuntu seed image that defines a custom cloud-init datasource.
 
 Using a custom local datasource is a great way to inject custom user data or metadata into cloud images launched
-locally, e.g. with `qemu`.
+locally, e.g. with `QEMU`. Launching images in this way is handy for anything from testing to running private workloads.
 
 Requirements
 ------------
@@ -22,8 +22,8 @@ with `QEMU`_, you will need `qemu-system-x86`. These can be installed via Apt wi
     sudo apt update
     sudo apt install --yes cloud-image-utils qemu-system-x86
 
-User data
----------
+Specify user data
+-----------------
 
 Create a YAML file with your desired user data. User data specifies user-defined configuration and content required at
 boot time, such as SSH keys or login preferences.
@@ -42,8 +42,8 @@ Example:
       - ssh-rsa AAAA...UlIsqdaO+w==
     EOF
 
-Datasource metadata (optional)
------------------------------
+Specify datasource metadata (optional)
+--------------------------------------
 
 If desired, create a YAML file with your desired datasource `metadata`_. Metadata describes typically cloud-defined
 configuration and content required at boot time, such as server name or instance id.
@@ -55,25 +55,26 @@ configuration and content required at boot time, such as server name or instance
 Create the seed image
 ---------------------
 
-Now that you've defined the relevant pieces of config and metadata, you can create the datasource seed image:
+Now that you've defined the relevant pieces of user data and metadata, you can create the datasource seed image, which
+is simply a disk image containing the user data and metadata cloud-init will need to do its job:
 
 .. code::
 
     cloud-localds my-seed.img user-data.yaml my-meta-data.yaml
 
-Download and launch Ubuntu cloud image with QEMU
-------------------------------------------------
+Download and launch an Ubuntu cloud image with QEMU
+---------------------------------------------------
 
-Download the latest Ubuntu server image, then pass that and your newly-created seed image to the qemu launch command.
+Download the latest Ubuntu server image, then pass that and your newly-created seed image to the QEMU launch command.
 
-The following launches a cloud image with:
+The following command launches a cloud image with:
 
 * KVM acceleration
 * the local machine's CPUs
 * 2GB of memory
-* no graphics and serial output to the console
-* snapshot will make writes to a temporary file instead of the disk image itself. This ensures the base disk is not touched. If at some point, you want to persist the changes you've made on the disk, press C-a s
-* virtio network device that redirects guest port 22 to host's port 2222
+* no graphics, only serial output to the console
+* snapshot -- this option will make writes to a temporary file instead of the disk image itself. This ensures that the base disk is not touched. If at some point, you want to persist the changes you've made on the disk, press C-a s
+* virtio network device that redirects the guest (cloud image) port 22 to host (desktop OS) port 2222
 * virtio cloud image
 * virtio seed image
 
