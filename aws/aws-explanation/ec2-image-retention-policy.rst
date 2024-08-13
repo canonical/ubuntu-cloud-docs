@@ -5,7 +5,7 @@ Ubuntu images on AWS have three stage of life cycle : *release* > *deprecation* 
 
 Whenever a new image is built and released to AWS, all the previous serials for that image are deprecated except for the last 3. A deprecated image is not visible on the AWS console, but it can still be launched from the `AWS CLI`_ using its AMI ID. You can also find and view details of deprecated images using the AWS CLI `describe-images`_ command by including the ``--include-deprecated`` flag.
 
-Apart from these three stages, some AMIs also become *private*. AMIs that go unused and have long since been replaced by newer images are marked as private. This is done so that we can reduce the overhead in searching for relevant AMIs in the console or with awscli. Unlike deprecated images, private images are not available for use and are invisible to the ``describe-images`` command. From a user's perspective, they are functionally equivalent to deleted images.
+Apart from these three stages, some AMIs also become *private*. AMIs that go unused and have long since been replaced by newer images are marked as private. This is done so that we can reduce the overhead in searching for relevant AMIs in the console or with AWS CLI. Unlike deprecated images, private images are not available for use and are invisible to the ``describe-images`` command. From a user's perspective, they are functionally equivalent to deleted images.
 
 This policy determines when an image will be deleted. Deleted images are no longer accessible for use, but instances already launched with those images will not be affected.
 
@@ -38,8 +38,8 @@ The retention policy can be summarised as follows:
      - Deprecate all except latest serial
    * - 
      - Unlaunched***
-     - Privatize all images
-     - Privatize all except latest serial
+     - Privatise all images
+     - Privatise all except latest serial
    * - LTS Release
      - Active
      - Delete all *but* the last 3 serials
@@ -50,8 +50,8 @@ The retention policy can be summarised as follows:
      - Deprecate all except latest serial
    * - 
      - Unlaunched***
-     - Privatize all images
-     - Privatize all except latest serial
+     - Privatise all images
+     - Privatise all except latest serial
    * - EKS Release
      - Active
      - N/A

@@ -2,7 +2,6 @@ AArch
 ACG
 ACR
 adapter
-Adapter
 AES
 AgentBaker
 AIB
@@ -264,6 +263,7 @@ ubuntu
 udev
 UEFI
 uncompress
+unlaunched
 unminimise
 unminimize
 unmount
@@ -285,6 +285,8 @@ virtio
 VirtualBox
 virtualised
 virtualiser
+Virtualization
+VLEK
 vm
 VM
 VM's

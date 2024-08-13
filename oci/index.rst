@@ -59,6 +59,6 @@ projects, contributions, suggestions, fixes, and constructive feedback.
 * `Join our online chat <https://discourse.ubuntu.com/c/public-cloud/176>`_
 * `Discuss on IRC <https://web.libera.chat/#ubuntu-cloud>`_
 * `Ubuntu Docker Images on Launchpad <https://launchpad.net/ubuntu-docker-images>`_
-* `Ubuntu Code of Conduct <https://ubuntu.com/community/code-of-conduct>`_
+* `Ubuntu Code of Conduct <https://ubuntu.com/community/ethos/code-of-conduct>`_
 * `Canonical contributor license agreement
   <https://ubuntu.com/legal/contributors>`_
