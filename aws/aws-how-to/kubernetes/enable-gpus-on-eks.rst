@@ -10,7 +10,6 @@ Before enabling GPUs on your worker nodes, you'll have to create a cluster and n
 Install a GPU driver on each node
 ---------------------------------
 For the GPU based instances to work, you'll need to install the appropriate `NVIDIA drivers <https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/install-nvidia-driver.html>`_ on them. For general purpose GPU usage, we recommend using a Tesla driver and the installation instructions from `Option 2: Public NVIDIA drivers <https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/install-nvidia-driver.html#nvidia-installation-options>`_.
-The installation instructions will lead you to `NVIDIA's installation guide <https://docs.nvidia.com/datacenter/tesla/tesla-installation-notes/index.html>`_ where you can choose to use either the .run file installers or the package managers.
 
 After installation, use ``sudo nvidia-smi`` to verify that the driver is successfully installed.
 

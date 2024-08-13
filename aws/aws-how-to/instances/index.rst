@@ -38,6 +38,7 @@ Deploying Charmed Kubernetes:
    Launch instance using CLI <launch-ubuntu-ec2-instance>
    Find images <find-ubuntu-images>  
    Launch a desktop <launch-ubuntu-desktop>
+   Launch and attest an AMD SEV-SNP instance <launch-and-attest-amd-sev-snp-instances>
    Build an Ubuntu Pro AMI using Packer <build-pro-ami-using-packer>
    Create CloudFormation templates <build-cloudformation-templates>
    Install NVIDIA drivers <install-nvidia-drivers>
@@ -46,4 +47,4 @@ Deploying Charmed Kubernetes:
    Upgrade from Focal to Jammy <upgrade-from-focal-to-jammy>
    Configure automated updates <automatically-update-ubuntu-instances>
    Deploy Charmed Kubernetes <deploy-charmed-kubernetes-on-ubuntu-pro>
-   Launch and attest an AMD SEV-SNP instance <launch-and-attest-amd-sev-snp-instances>
+   

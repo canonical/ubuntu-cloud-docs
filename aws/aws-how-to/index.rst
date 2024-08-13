@@ -11,6 +11,7 @@ While using Ubuntu on AWS, you'll need to perform tasks such as launching an ins
 * :doc:`Launch instance using CLI <instances/launch-ubuntu-ec2-instance>`
 * :doc:`Find images <instances/find-ubuntu-images>`
 * :doc:`Launch a desktop <instances/launch-ubuntu-desktop>`
+* :doc:`Launch and attest an AMD SEV-SNP instance <instances/launch-and-attest-amd-sev-snp-instances>`
 * :doc:`Build an Ubuntu Pro AMI using Packer <instances/build-pro-ami-using-packer>`
 * :doc:`Create CloudFormation templates <instances/build-cloudformation-templates>`
 * :doc:`Install NVIDIA drivers <instances/install-nvidia-drivers>`
@@ -19,7 +20,7 @@ While using Ubuntu on AWS, you'll need to perform tasks such as launching an ins
 * :doc:`Upgrade from Focal to Jammy <instances/upgrade-from-focal-to-jammy>`
 * :doc:`Configure automated updates <instances/automatically-update-ubuntu-instances>`
 * :doc:`Deploy Charmed Kubernetes <instances/deploy-charmed-kubernetes-on-ubuntu-pro>`
-* :doc:`Launch and attest AMD SEV-SNP instances with Ubuntu 24.04 on AWS <instances/launch-and-attest-amd-sev-snp-instances>`
+
 
 
 EKS - Using Ubuntu Pro and GPUs on EKS

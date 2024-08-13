@@ -48,6 +48,6 @@ Google provides a multi-cloud GKE strategy through a variety of Anthos product o
 .. _`SEV-SNP`: https://www.amd.com/en/developer/sev.html
 .. _`Intel TDX`: https://www.intel.com/content/www/us/en/developer/tools/trust-domain-extensions/overview.html
 .. _`GKE node images`: https://cloud.google.com/kubernetes-engine/docs/concepts/node-images
-.. _`GKE Anthos on AWS`: https://cloud.google.com/anthos/clusters/docs/multi-cloud/aws/reference/os-details
-.. _`GKE Anthos on Azure`: https://cloud.google.com/anthos/clusters/docs/multi-cloud/azure/reference/os-details
-.. _`GKE Anthos on VMware`: https://cloud.google.com/anthos/clusters/docs/on-prem/latest/concepts/node-image
+.. _`GKE Anthos on AWS`: https://cloud.google.com/kubernetes-engine/multi-cloud/docs/aws/reference/os-details
+.. _`GKE Anthos on Azure`: https://cloud.google.com/kubernetes-engine/multi-cloud/docs/azure/reference/os-details
+.. _`GKE Anthos on VMware`: https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/concepts/node-image
