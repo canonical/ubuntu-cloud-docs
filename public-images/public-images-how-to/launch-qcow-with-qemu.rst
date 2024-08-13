@@ -30,7 +30,7 @@ an escape key that will cycle between the console of the guest machine and the Q
 monitor a user can send keys to the guest via the sendkey option or even close the guest via quit.
 
 Creating a seed image
------------------------
+---------------------
 
 Since we are dealing with cloud images here, we will need a cloud-init datasource to use. Refer to
 :ref:`use-local-cloud-init-ds` for steps needed to create a seed image for a local cloud-init datasource.
@@ -38,7 +38,7 @@ Since we are dealing with cloud images here, we will need a cloud-init datasourc
 Option 1: Booting the cloud image with SeaBIOS
 ----------------------------------------------
 
-SeaBIOS booting an image is the default firmware used by QEMU.
+SeaBIOS is the default firmware used by QEMU.
 
 The following command launches a cloud image with:
 
@@ -84,7 +84,6 @@ the pflash option:
 
 .. code::
 
-    sudo apt-get install -y ovmf
     qemu-system-x86_64  \
       -cpu host -machine type=q35,accel=kvm -m 2048 \
       -nographic \
