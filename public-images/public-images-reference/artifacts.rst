@@ -93,7 +93,7 @@ QEMU Copy On Write (QCOW)
 
        One of the primary use cases of our published QCOW images is to use QEMU to create and manage virtual machines. Other providers, such as VirtualBox, can be used for this, or you can use a ``.img`` file to create a bootable USB drive or deploy in an embedded system.
 
-       See the How-To article :ref:`qcow-qemu` for instructions on using QCOW images with QEMU.
+       Refer to :ref:`qcow-qemu` for instructions on using QCOW images with QEMU.
 
 .. _root_tarball:
 
