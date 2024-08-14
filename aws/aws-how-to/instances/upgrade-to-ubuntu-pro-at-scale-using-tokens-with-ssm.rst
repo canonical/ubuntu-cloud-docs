@@ -9,7 +9,7 @@ Ubuntu Pro expands Ubuntu LTS’ 5 years of coverage up to ten-years of security
 
 There are three ways to get Ubuntu Pro on AWS:
 
-    1. Launching an Ubuntu Pro machine from the AWS Marketplace, which is ready to use through a PAYG charging model.
+    1. Launching an Ubuntu Pro machine from the AWS Marketplace, which is ready to use through a pay-as-you-go pricing model.
     2. Attaching an Ubuntu Pro token to any existing Ubuntu LTS server
     3. Upgrading to Ubuntu Pro using AWS License Manager
 
