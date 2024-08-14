@@ -24,7 +24,7 @@ Find the correct image to launch on the Azure portal
 
 - In the search box, type “SQL 2019 on Ubuntu Pro”, and submit the search.
 
-- Select thew image by the name “SQL 2019 on Ubuntu Pro 20.04 LTS with 24x7 Support”.
+- Select the image by the name “SQL 2019 on Ubuntu Pro 20.04 LTS with 24x7 Support”.
 
 - Select Create on the appropriate image from the list.
 
