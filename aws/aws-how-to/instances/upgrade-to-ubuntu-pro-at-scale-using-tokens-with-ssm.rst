@@ -27,10 +27,10 @@ Prerequisites
 - Basic understanding about writing and running SSM Documents (see the reference links for more information)
 
 
-Get a token
+1. Get a token
 ------------
 
-To get an Ubuntu Pro token, you need to create an account in `Ubuntu Pro | Ubuntu <https://ubuntu.com/pro>`_ to see your subscriptions and get your tokens. Anyone can use Ubuntu Pro for free on up to 5 machines, even for production workloads.
+To get an Ubuntu Pro token, you need to create an account in `Ubuntu Pro | Ubuntu <https://ubuntu.com/pro>` to see your subscriptions and get your tokens. Anyone can use Ubuntu Pro for free on up to 5 machines, even for production workloads.
 
 Log-in by clicking on *Your subscriptions*. You will be redirected to the following screen where the token is exposed as shown in the orange ellipse:
 
@@ -38,7 +38,7 @@ Log-in by clicking on *Your subscriptions*. You will be redirected to the follow
    :align: center
 
 
-Create a SSM Document to attach the token
+2. Create a SSM Document to attach the token
 ------------------------------------------
 
 The SSM Document is just a JSON or YAML file containing the script in steps or sections.
@@ -74,16 +74,16 @@ This is the full code:
         - "sudo apt-get update && sudo apt-get upgrade -y"
 
 
-The token will be requested to the user when running this document, then it will execute the rest of the code:
+The token will be requested from the user when running this document. The document will then do the following:
 
     1. Run an update (to make sure the pro agent is at the latest version)
-    2. Attach the token
+    2. Attach the token.
     3. Update again in case you have installed software that could get security updates from Pro repositories.
 
 No reboot is needed.
 
 
-Run the SSM script
+3. Run the SSM script
 ------------------
 
 The SSM script can be run either from the Fleet Manager or with the SSM Run Command. More information can be found in `this tutorial <https://ubuntu.com/tutorials/how-to-create-ssm-documents-and-use-them-to-install-packages-massively-with-run-command#1-overview>`
@@ -95,7 +95,7 @@ You don’t need to restart the machines after applying the token. If the SSM sc
    :align: center
 
 
-Check the Pro status of your machine
+4. Check the Pro status of your machine
 ----------------
 
 You can always check the status of the subscription by running: 
