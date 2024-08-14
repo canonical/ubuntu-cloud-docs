@@ -104,7 +104,7 @@ You can always check the status of the subscription by running:
     
     sudo pro status 
 
-and see entitlements and enabled services.
+This will display your entitlements and enabled services.
 
 
 Additional resources and links
