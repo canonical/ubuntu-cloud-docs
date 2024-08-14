@@ -73,19 +73,19 @@ Connect to the VM
     ssh azureuser@20.55.55.555
 
 
-Change the SA password
+Change the System Administrator password
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-The new virtual machine installs SQL Server with a random SA password. Reset this password before you connect to SQL Server with the SA login.
+The new virtual machine installs SQL Server with a random System Administrator password. Reset this password before you connect to SQL Server with the System Administrator login.
 
 
 
-- Change the SA password with the following commands:
+- Change the System Administrator password with the following commands:
 
     sudo systemctl stop mssql-server
     sudo /opt/mssql/bin/mssql-conf set-sa-password
 
-- Enter a new SA password and password confirmation when prompted.
+- Enter a new System Administrator password and password confirmation when prompted.
 
 - Restart the SQL Server service.
 
