@@ -95,7 +95,7 @@ The new virtual machine installs SQL Server with a random SA password. Reset thi
 Add the tools to your path (optional)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Several SQL Server packages are installed by default, including the SQL Server command-line Tools package. The tools package contains the sqlcmd and bcp tools. For convenience, you can add the tools path, /opt/mssql-tools/bin/, to your PATH environment variable.
+Several SQL Server packages are installed by default, including the SQL Server command-line tools package. The tools package contains the `sqlcmd` and `bcp` tools. For convenience, you can add the tools path, `/opt/mssql-tools/bin/`, to your PATH environment variable.
 
 - Run the following commands to modify the PATH for both login sessions and interactive/non-login sessions:
 
