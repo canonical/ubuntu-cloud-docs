@@ -8,6 +8,10 @@ Ubuntu cloud images are released in many formats to enable many launch configura
 Among the many formats for cloud images is the ``.img`` QCOW format. This article will cover the QCOW use case and provide
 instructions on how to use the images with QEMU.
 
+Note that the commands in this guide are for x86_64 (amd64) systems. QEMU does offer cross-archtecture emulation, so
+if you are using a computer with a different CPU architecture, some adjustments to the commands will be required. Check
+the `QEMU`_ docs for the correct commands to use for your desired architecture.
+
 For starting with an ISO server image, see the `server documentation`_ on downloading and converting an ISO for use
 with QEMU.
 
