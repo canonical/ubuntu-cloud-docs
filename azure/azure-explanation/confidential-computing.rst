@@ -4,7 +4,7 @@ Security features on Azure
 Azure provides two types of security features:
 
 * `Trusted Launch`_ which is a set of features including virtual Trusted Platform Module (vTPM) and `secure boot`_
-* `Confidential Virtual Machine`_ with support for `AMD Secure Encrypted Virtualisation-Secure Nested Paging (SEV-SNP)`_, along with `measured boot`_ using a vTPM
+* `Confidential Virtual Machine`_ with support for AMD Secure Encrypted Virtualisation-Secure Nested Paging (SEV-SNP), along with `measured boot`_ using a vTPM
 
 To launch Ubuntu images with Trusted Launch and Confidential VM, refer to :doc:`../azure-how-to/instances/launch-ubuntu-images`.
 
@@ -40,6 +40,5 @@ Currently there are two Ubuntu images which support Confidential VMs:
 .. _`Trusted Launch`: https://learn.microsoft.com/en-us/azure/virtual-machines/trusted-launch
 .. _`secure boot`: https://wiki.ubuntu.com/UEFI/SecureBoot
 .. _`Confidential Virtual Machine`: https://learn.microsoft.com/en-us/azure/confidential-computing/confidential-vm-overview
-.. _`AMD Secure Encrypted Virtualisation-Secure Nested Paging (SEV-SNP)`: https://www.amd.com/system/files/TechDocs/SEV-SNP-strengthening-vm-isolation-with-integrity-protection-and-more.pdf
 .. _`measured boot`: https://learn.microsoft.com/en-us/azure/security/fundamentals/measured-boot-host-attestation
 .. _`technical blog post about Confidential VMs on Azure`: https://canonical.com/blog/lets-get-confidential-canonical-ubuntu-confidential-vms-are-now-generally-available-on-microsoft-azure

@@ -201,7 +201,7 @@ custom_extensions = [
 # sphinx-notfound-page, sphinx-reredirects, sphinx-tabs, sphinxcontrib-jquery,
 # sphinxext-opengraph
 custom_required_modules = [
-    'sphinx-multiproject'
+    'git+https://github.com/k-dimple/sphinx-multiproject.git'
 ]
 
 # Disable Sphinx tab closing

@@ -112,6 +112,9 @@ Ubuntu Pro 24.04 LTS - Noble Numbat
    * - AMD64
      - Gen1
      - ``Canonical:ubuntu-24_04-lts:ubuntu-pro-gen1:latest``
+   * - AMD64
+     - Gen2
+     - ``Canonical:ubuntu-24_04-lts:ubuntu-pro-cvm:latest``
 
 Ubuntu Pro 22.04 LTS - Jammy Jellyfish
 ++++++++++++++++++++++++++++++++++++++
@@ -195,6 +198,9 @@ Ubuntu CVM 24.04 LTS - Noble Numbat
    * - AMD64
      - Gen2
      - ``Canonical:ubuntu-24_04-lts:cvm:latest``
+   * - AMD64
+     - Gen2
+     - ``Canonical:ubuntu-24_04-lts:ubuntu-pro-cvm:latest``
 
 Ubuntu CVM 22.04 LTS - Jammy Jellyfish
 ++++++++++++++++++++++++++++++++++++++
@@ -212,6 +218,22 @@ Ubuntu CVM 22.04 LTS - Jammy Jellyfish
    * - AMD64
      - Gen2
      - ``Canonical:0001-com-ubuntu-confidential-vm-jammy:22_04-lts-cvm:latest``
+
+Ubuntu Pro CVM 22.04 LTS - Jammy Jellyfish
+++++++++++++++++++++++++++++++++++++++++++
+
+| Quick start: `Ubuntu Pro CVM 22.04 LTS on Azure <https://portal.azure.com/#create/canonical.0001-com-ubuntu-pro-confidential-vm-jammypro-22_04-lts-cvm>`_
+
+.. list-table::
+   :widths: 10 9 50
+   :header-rows: 1
+  
+   * - **Architecture**
+     - **Hyper-V Generation**
+     - **URN**
+   * - AMD64
+     - Gen2
+     - ``Canonical:0001-com-ubuntu-pro-confidential-vm-jammy:pro-22_04-lts-cvm:latest``
 
 Ubuntu CVM 20.04 LTS - Focal Fossa
 ++++++++++++++++++++++++++++++++++

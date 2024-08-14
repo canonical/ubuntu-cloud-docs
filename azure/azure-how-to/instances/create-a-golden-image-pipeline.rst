@@ -303,7 +303,6 @@ Go to the Actions page on your repository and select your workflow. If you have 
 .. _`Azure Command-Line Interface`: https://learn.microsoft.com/en-us/cli/azure/
 .. _`creating an Azure service principal`: https://learn.microsoft.com/en-us/entra/identity-platform/howto-create-service-principal-portal
 .. _`azure-image-builder-pipeline-demo`: https://github.com/canonical/azure-image-builder-pipeline-demo
-.. _`Understanding GitHub Actions`: https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions
+.. _`Understanding GitHub Actions`: https://docs.github.com/en/actions/about-github-actions/understanding-github-actions
 .. _`Adding self-hosted runner`: https://docs.github.com/en/actions/hosting-your-own-runners/managing-self-hosted-runners/adding-self-hosted-runners
-.. _`Using secrets in GitHub Actions`: https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions
-
+.. _`Using secrets in GitHub Actions`: https://docs.github.com/en/actions/security-for-github-actions/security-guides/using-secrets-in-github-actions

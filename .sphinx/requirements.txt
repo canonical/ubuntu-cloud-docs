@@ -7,6 +7,7 @@
 GitPython
 canonical-sphinx-extensions
 furo
+git+https://github.com/k-dimple/sphinx-multiproject.git
 linkify-it-py
 myst-parser
 pyspelling
@@ -14,7 +15,6 @@ sphinx
 sphinx-autobuild
 sphinx-copybutton
 sphinx-design
-sphinx-multiproject
 sphinx-notfound-page
 sphinx-reredirects
 sphinx-tabs
