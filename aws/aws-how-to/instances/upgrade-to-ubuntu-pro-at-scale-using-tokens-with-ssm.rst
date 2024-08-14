@@ -95,7 +95,7 @@ You don’t need to restart the machines after applying the token. If the SSM sc
    :align: center
 
 
-Check the status
+Check the Pro status of your machine
 ----------------
 
 You can always check the status of the subscription by running: 
