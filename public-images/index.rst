@@ -18,7 +18,7 @@ In this documentation
 
    ..  grid-item:: :doc:`How-to guides <public-images-how-to/index>`
 
-      **Step-by-step guides** covering key operations related to Vagrant.
+      **Step-by-step guides** covering key operations related to our Public Images offerings.
 
 .. grid:: 1 1 2 2
    :padding: 0

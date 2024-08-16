@@ -60,6 +60,8 @@ LXD tarball
    * - Use cases
      - These files are specifically formatted for LXD, a system container manager. They contain LXD metadata and when combined with :ref:`root tarballs <root_tarball>` (``-root.tar.xz``) can be used to instantiate LXD containers. You can use ``.lxd.tar.xz`` files to help create isolated environments with specific configurations and applications, ensuring consistent container deployments across LXD hosts.
 
+.. _ova:
+
 Open Virtual Appliance (OVA)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .. list-table::
@@ -73,7 +75,7 @@ Open Virtual Appliance (OVA)
    * - Format description
      - An OVA is a single file distribution of an Open Virtualisation Format (OVF) package.
    * - Use cases
-     - OVA files encapsulate an entire virtual machine setup including configuration, disk images and other metadata. They are used for easy deployment of virtual appliances across different virtualisation providers such as VirtualBox or VMware. You can import an ``.ova`` file into VirtualBox to quickly deploy a pre-configured virtual machine.
+     - OVA files encapsulate an entire virtual machine setup including configuration, disk images and other metadata. They are used for easy deployment of virtual appliances across different virtualisation providers such as VirtualBox or VMware. You can import an ``.ova`` file into VirtualBox to quickly deploy a pre-configured virtual machine. See our how-to guide :ref:`run-an-ova-using-virtualbox` for more information.
 
 QEMU Copy On Write (QCOW)
 ~~~~~~~~~~~~~~~~~~~~~~~~~
