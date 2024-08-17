@@ -64,11 +64,11 @@ Install the compiler to build the tool:
             sudo apt install build-essential
 
 
-Install rust: 
+Install rust using the `rustup`_ snap: 
     .. code:: 
 
-        curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-        source "$HOME/.cargo/env"
+        sudo snap install rustup --classic
+        rustup default stable
 
 
 2. Clone the ``snpguest`` repository:
@@ -140,5 +140,6 @@ The last line shows that the certificate is valid.
 .. _`Check AMD SEV-SNP support on Amazon EC2 instances (AWS Site)`: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/snp-work.html
 .. _`Attest an Amazon EC2 instance with AMD SEV-SNP`: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/snp-attestation.html
 .. _`GitHub repository for snp guest tool`: https://github.com/virtee/snpguest/tree/main
+.. _`rustup`: https://snapcraft.io/rustup
 
 
