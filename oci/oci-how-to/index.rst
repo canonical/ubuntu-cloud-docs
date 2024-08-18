@@ -4,7 +4,7 @@ How-to guides
 *************
 
 If you have a specific goal but are already familiar with the Ubuntu container
-images, our how-to guides have more in-depth detail than our tutorials, and dig
+images, our how-to guides have more in-depth details than our tutorials, and dig
 a bit further into the more advanced uses of Ubuntu container images.
 
 They'll help you achieve an end result but may require you to understand and
