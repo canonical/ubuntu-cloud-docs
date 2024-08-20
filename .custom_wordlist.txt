@@ -87,6 +87,7 @@ EPYC
 ESM
 executables
 FDE
+FedRAMP
 filesystem
 fips
 FIPS
@@ -200,6 +201,7 @@ OwnerId
 paravirtual
 PARAVIRTUALIZED
 PAYG
+PCI
 png
 powerpc
 ppc
@@ -272,6 +274,7 @@ uptime
 URI
 URL
 URNs
+USG
 Vagrantfile
 vagrantfiles
 VCN
