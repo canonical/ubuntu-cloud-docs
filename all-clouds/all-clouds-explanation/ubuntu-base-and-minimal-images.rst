@@ -30,7 +30,7 @@ given minimal cloud image.
 
 With this effort, minimal cloud images now are smaller than the Ubuntu 22.04 LTS
 minimal images. The package count has dropped from 426 to 288 (difference: 138),
-resulting in a much smaller image size. For example, download qcow2 images have
+resulting in a much smaller image size. For example, download QCOW2 images have
 reduced from 337.19MiB to 226.75MiB (difference: 110.44MiB). This was achieved,
 in part, by reducing the packages installed to only those we feel are required
 for a functional Ubuntu cloud instance and by removing the installation of
