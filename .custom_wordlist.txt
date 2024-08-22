@@ -193,6 +193,8 @@ oci
 OCI
 OCID
 OCIR
+oke
+OKE
 onwards
 OpenSCAP
 OpenShift
