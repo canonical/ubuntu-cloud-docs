@@ -55,10 +55,10 @@ You'll need:
 - ``kubectl`` installed (Self-Managed only).
 
 
-Download an Ubuntu image
-------------------------
+Finding an Ubuntu image
+-----------------------
 
-To download an image, select a version from the `available releases <#available-releases>`_. The images are listed as JSON in ascending order, therefore the latest image will be at the bottom. After viewing the `available releases <#available-releases>`_, make note of the image path for the image you choose. The image path conforms to the following format:
+Select a version from the `available releases <#available-releases>`_. The images are listed as JSON in ascending order, therefore the latest image will be at the bottom. After viewing the `available releases <#available-releases>`_, make note of the image path for the image you choose. The image path conforms to the following format:
 
 .. code:: bash
   
@@ -68,30 +68,24 @@ If you wish to get the latest image path, use the following command:
 
 .. code:: bash
   
-  curl <available-releases-link> | jq ".[][-2] | .name"
+  curl <available-releases-location-link> | jq ".[][-2] | .name"
 
-Then, from your browser you can paste the image path after the link to begin downloading the image. 
+Register an Ubuntu image
+------------------------
 
-Alternatively, you can use ``curl`` to achieve the same result by using the following command.
-
-.. code:: bash
-   
-  curl -O <available-releases-link>/<image-path>
-
-Upload and register an Ubuntu image
-------------------------------------
-
-Images must be registered from an object in a bucket to be used with Oracle Cloud services. To learn more, refer to the Oracle Cloud documentation for `managing custom images`_.
+Images must be registered to be used with Oracle Cloud services. To learn more, refer to the Oracle Cloud documentation for `managing custom images`_.
 
 .. tabs::
 
     .. group-tab:: Using console
     
-        Start the upload process in Oracle Cloud by navigating to :guilabel:`Buckets` and choose your bucket then select :guilabel:`Upload`.
+        Start the registration process Oracle Cloud by navigating to :guilabel:`Compute` > :guilabel:`Custom Images` and select :guilabel:`Import Image`. Select :guilabel:`Import from an Object Storage URL`, then paste the `available releases <#available-releases>`_ location link with your concatenated image path into the :guilabel:`Object Storage URL` field. The URL format pasted should conform to the following:
 
-        Then, register an image in Oracle Cloud. To do this, navigate to :guilabel:`Compute` > :guilabel:`Custom Images` and select :guilabel:`Import Image`. 
+        .. code:: bash
+         
+          <available-releases-location-link>/<image-path>
     
-        In the form you must provide your :guilabel:`Compartment`, :guilabel:`Image name`, :guilabel:`Object name` and :guilabel:`Launch mode`. Additionally the fields :guilabel:`Operating System` and :guilabel:`Image type` must be provided and use ``Ubuntu`` and ``QCOW2``, respectively.
+        In the rest of the form, you must provide your :guilabel:`Compartment`, :guilabel:`Image name`, and :guilabel:`Launch mode`. Additionally the fields :guilabel:`Operating System` and :guilabel:`Image type` must be provided and use ``Ubuntu`` and ``QCOW2``, respectively.
 
         Lastly, select :guilabel:`Import image` and wait for the registration to complete. This process is expected to take a while.
 
@@ -103,7 +97,7 @@ Images must be registered from an object in a bucket to be used with Oracle Clou
     
             oci compute image import from-object-uri \
                 --compartment-id <compartment-id> \
-                --uri <available-release>/<image-path> \
+                --uri <available-release-location-link>/<image-path> \
                 --display-name <image-name> \
                 --launch-mode <launch-mode> \
                 --image-source-object-name <object-name> \
