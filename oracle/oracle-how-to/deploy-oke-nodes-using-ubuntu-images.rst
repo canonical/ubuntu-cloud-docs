@@ -1,9 +1,9 @@
-Deploy OKE Nodes using Ubuntu Images
+Deploy OKE nodes using Ubuntu images
 ====================================
 
 Ubuntu images are available for worker nodes on Oracle Kubernetes Engine (OKE) in Oracle Cloud. Currently there are only a select number of suites and Kubernetes versions supported due to this being a Limited Availability release. 
 
-Available Releases
+Available releases
 ------------------
 
 .. list-table::
@@ -14,11 +14,12 @@ Available Releases
      - Location
    * - 22.04 (Jammy Jellyfish)
      - 1.29
-     - `Link <https://intcanonical.objectstorage.us-phoenix-1.oci.customer-oci.com/p/vpqQtYASl8IooEZ_sxfKDnzUkF1b-3lQmXPC_rXf4zARQYoW7ncE8BGGxNqdUuGa/n/intcanonical/b/oke-shared/o/>`_
+     - `List of Images <https://intcanonical.objectstorage.us-phoenix-1.oci.customer-oci.com/p/vpqQtYASl8IooEZ_sxfKDnzUkF1b-3lQmXPC_rXf4zARQYoW7ncE8BGGxNqdUuGa/n/intcanonical/b/oke-shared/o/>`_
 
-
-Networking Plugin Availability
+Networking plugin availability
 ------------------------------
+
+The availability of networking plugins (Flannel / VCN Native) depends on the type of OKE node being used:
 
 .. list-table::
    :header-rows: 1
@@ -57,15 +58,19 @@ You'll need:
 Download an Ubuntu image
 ------------------------
 
-
-To download an image, select a version from the `available releases <#available-releases>`_ and make note of the image path for the image you choose. The image path conforms to the following format:
+To download an image, select a version from the `available releases <#available-releases>`_. The images are listed as JSON in ascending order, therefore the latest image will be at the bottom. After viewing the `available releases <#available-releases>`_, make note of the image path for the image you choose. The image path conforms to the following format:
 
 .. code:: bash
   
   <suite>/oke-<version>/<serial>/<image-name>.img
 
+If you wish to get the latest image path, use the following command:
 
-Then, from the browser you can paste the image path after the link to begin downloading the image. 
+.. code:: bash
+  
+  curl <available-releases-link> | jq ".[][-2] | .name"
+
+Then, from your browser you can paste the image path after the link to begin downloading the image. 
 
 Alternatively, you can use ``curl`` to achieve the same result by using the following command.
 
@@ -73,88 +78,97 @@ Alternatively, you can use ``curl`` to achieve the same result by using the foll
    
   curl -O <available-releases-link>/<image-path>
 
-Upload the Ubuntu image to a bucket
------------------------------------
+Upload and register an Ubuntu image
+------------------------------------
 
-The image must be uploaded to a bucket for image registration later on. Do this in Oracle Cloud by navigating to :guilabel:`Buckets` and selecting your bucket then click :guilabel:`Upload`.
+Images must be registered from an object in a bucket to be used with Oracle Cloud services. To learn more, refer to the Oracle Cloud documentation for `managing custom images`_.
 
-Alternately, the following oci command will upload the object too.
+.. tabs::
 
-.. code:: bash
-  
-  oci os object put --bucket-name <bucket-name> --file <file-path>
+    .. group-tab:: Using console
+    
+        Start the upload process in Oracle Cloud by navigating to :guilabel:`Buckets` and choose your bucket then select :guilabel:`Upload`.
 
+        Then, register an image in Oracle Cloud. To do this, navigate to :guilabel:`Compute` > :guilabel:`Custom Images` and select :guilabel:`Import Image`. 
+    
+        In the form you must provide your :guilabel:`Compartment`, :guilabel:`Image name`, :guilabel:`Object name` and :guilabel:`Launch mode`. Additionally the fields :guilabel:`Operating System` and :guilabel:`Image type` must be provided and use ``Ubuntu`` and ``QCOW2``, respectively.
 
-Register the Ubuntu image
--------------------------
+        Lastly, select :guilabel:`Import image` and wait for the registration to complete. This process is expected to take a while.
 
-Images must be registered to be used by Oracle Cloud services. To register an image in Oracle Cloud, navigate to :guilabel:`Compute` > :guilabel:`Custom Images` and select :guilabel:`Import Image`. 
+    .. group-tab:: Using CLI
+    
+        The ``oci`` CLI offers the convenience of registering an image without having to upload it directly. For more information refer to the ``oci`` docs for `import from-object-uri`_. If you wish to separate these steps refer to the ``oci`` docs for `object upload`_ and `image import from object`_.
 
-In the form you must provide your :guilabel:`Compartment`, :guilabel:`Image name`, :guilabel:`Object name` and :guilabel:`Launch mode`. Additionally the fields :guilabel:`Operating System` and :guilabel:`Image type` must be provided and use ``Ubuntu`` and ``QCOW2``, respectively. 
-
-Optionally, this process can be done with the following command:
-
-.. code:: bash
-
-  oci compute image import from-object \
-    --compartment-id <compartment-id> \
-    --display-name <image-name> \
-    --launch-mode <launch-mode> \
-    --image-source-object-name <object-name> \
-    --bucket-name <bucket-name> \
-    --operating-system "Ubuntu" \
-    --operating-system-version <ubuntu-version-number> \
-    --source-image-type QCOW2 \
-    --wait-for-state AVAILABLE
-
+        .. code:: bash
+    
+            oci compute image import from-object-uri \
+                --compartment-id <compartment-id> \
+                --uri <available-release>/<image-path> \
+                --display-name <image-name> \
+                --launch-mode <launch-mode> \
+                --image-source-object-name <object-name> \
+                --operating-system "Ubuntu" \
+                --operating-system-version <ubuntu-version-number> \
+                --source-image-type QCOW2
 
 Create OKE nodes with Ubuntu Images
 -------------------------------------
 
 The following steps on creating nodes assumes you have an existing OKE cluster on Oracle Cloud, but it is not required to have existing nodes. If you don't have an OKE cluster prepared then Oracle's documentation for `creating a cluster`_ is a good place to start.
 
+When creating nodes, the :guilabel:`Launch mode` is an option to configure. The suggested configurations are :guilabel:`PARAVIRTUALIZED` for virtual nodes and :guilabel:`NATIVE` for bare-metal nodes.
+
 Create managed OKE nodes with Ubuntu
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Managed nodes are node instances whose lifecycle is managed by the OKE service. Since this is a Limited Availability release of Ubuntu images for OKE, you can only create managed nodes through the Oracle Cloud API (``oci`` CLI or SDK). The ability to create managed nodes from the Oracle Cloud UI will be added later.
+Managed nodes are node instances whose lifecycle is managed by the OKE service. 
 
-To create a managed node, start by copying the following cloud-init script into a file called ``user-data.yaml``.
+.. tabs::
 
-.. code:: yaml
+  .. group-tab:: Using console
 
-   #cloud-config
-   
-   runcmd:
-     - oke bootstrap
+      Since this is a Limited Availability release of Ubuntu images for OKE, you can only create managed nodes through the Oracle Cloud API (``oci`` CLI or SDK). The ability to create managed nodes from the Oracle Cloud UI will be added later.
 
-Then, create a placement configuration file to specify where in Oracle Cloud the Managed node pool should be created and save the file as ``placement-config.json``.
+  
+  .. group-tab:: Using CLI
+      
+      To create a managed node, start by copying the following cloud-init script into a file called ``user-data.yaml``.
+      
+      .. code:: yaml
+      
+         #cloud-config
+         
+         runcmd:
+           - oke bootstrap
+      
+      Then, create a placement configuration file to specify where in Oracle Cloud the Managed node pool should be created and save the file as ``placement-config.json``.
+      
+      .. code:: json 
+      
+         [{
+           "compartmentId":"<compartment-id>",
+           "availabilityDomain":"<availability-domain>",
+           "subnetId":"<subnet-id>"
+         }]
+      
+      
+      Lastly, replace the values and run the following command to create the Managed node pool:
+      
+      .. code:: bash
+         
+        oci ce node-pool create \
+          --cluster-id=<cluster-id> \
+          --compartment-id=<compartment-id> \
+          --name=<pool-name> \
+          --node-shape=<node-shape> \
+          --size=<pool-count> \
+          --kubernetes-version="1.29.1" \
+          --node-image-id=<ubuntu-image-id> \
+          --placement-configs="$(cat placement-config.json)" \
+          --node-metadata='{"user_data": "'"$(base64 user-data.yaml)"'"}'
 
-.. code:: json 
 
-   [{
-     "compartmentId":"<compartment-id>",
-     "availabilityDomain":"<availability-domain>",
-     "subnetId":"<subnet-id>"
-   }]
-
-
-Lastly, replace the values and run the following command to create the Managed node pool:
-
-.. code:: bash
-   
-  oci ce node-pool create \
-    --cluster-id=<cluster-id> \
-    --compartment-id=<compartment-id> \
-    --name=<pool-name> \
-    --node-shape=<node-shape> \
-    --size=<pool-count> \
-    --kubernetes-version="1.29.1" \
-    --node-image-id=<ubuntu-image-id> \
-    --placement-configs="$(cat placement-config.json)" \
-    --node-metadata='{"user_data": "'"$(base64 user-data.yaml)"'"}'
-
-
-View the node pool status in Oracle Cloud by navigating to :guilabel:`Kubernetes Clusters (OKE)` and click on your cluster, then select :guilabel:`Resources` > :guilabel:`Node pools` and click on the latest node pool.
+View the node pool status in Oracle Cloud by navigating to :guilabel:`Kubernetes Clusters (OKE)` and choose on your cluster, then select :guilabel:`Resources` > :guilabel:`Node pools` and select the latest node pool.
 
 Everything will be running as expected when the :guilabel:`Kubernetes node condition` and :guilabel:`Node state` of all the nodes are labelled :guilabel:`Ready`.
 
@@ -163,7 +177,7 @@ Create self-managed OKE nodes with Ubuntu
 
 The following instructions assume that you have configured your OKE cluster to work with self-managed nodes. If you have not done this, refer to the Oracle documentation for `working with self-managed nodes`_
 
-Before adding a self-managed node, ensure you have configured ``kubectl`` to your OKE cluster with the following command. This process will be easier if ``kubectl`` is configured for a single OKE cluster.
+Before adding a self-managed node, ensure you have configured ``kubectl`` for your OKE cluster with the following command. This process will be easier if ``kubectl`` is configured for a single OKE cluster.
 
 .. code:: bash
   
@@ -202,25 +216,30 @@ Use these obtained values (certificate-data and private-endpoint) in the followi
      permissions: '0644'
      content: <certificate-data>
 
+.. tabs::
 
-Now, create the self-managed node in Oracle Cloud by navigating to :guilabel:`Compute` > :guilabel:`Instance` and click :guilabel:`Create Instance`. Next, click :guilabel:`Change Image` and select :guilabel:`My Images` then click the Ubuntu image recently registered. 
+   .. group-tab:: Using console
+  
+    Now, create the self-managed node in Oracle Cloud by navigating to :guilabel:`Compute` > :guilabel:`Instance` and select :guilabel:`Create Instance`. Next, select :guilabel:`Change Image` and select :guilabel:`My Images`, then select the Ubuntu image you recently registered. 
+    
+    Setup the cloud-init for the instance by selecting :guilabel:`Show advanced options`, then select :guilabel:`Paste cloud-init script`, and then paste your completed cloud-init script (the one saved in ``user-data.yaml``).
+    
+    Lastly, select :guilabel:`Create` and wait for your instance to be provisioned.
 
-Setup the cloud-init for the instance by clicking :guilabel:`Show advanced options` then select :guilabel:`Paste cloud-init script`, where you should be able to paste your completed cloud-init script (the one saved in ``user-data.yaml``).
+   .. group-tab:: Using CLI
 
-Lastly, click :guilabel:`Create` and wait for your instance to be provisioned.
-
-Optionally, you can this ``oci`` command to create the self-managed node:
-
-.. code:: bash
-
-  oci compute instance launch \
-    --compartment-id <compartment-ocid> \
-    --availability-domain <availability-domain> \
-    --shape <instance-shape> \
-    --image-id <ubuntu-image-ocid> \
-    --subnet-id <subnet-ocid> \
-    --user-data-file user-data.yaml \
-    --display-name <instance-name>
+    Optionally, you can this ``oci`` command to create the self-managed node:
+    
+    .. code:: bash
+    
+      oci compute instance launch \
+        --compartment-id <compartment-ocid> \
+        --availability-domain <availability-domain> \
+        --shape <instance-shape> \
+        --image-id <ubuntu-image-ocid> \
+        --subnet-id <subnet-ocid> \
+        --user-data-file user-data.yaml \
+        --display-name <instance-name>
 
 
 Self-managed nodes cannot be viewed from Oracle Cloud so you can poll their status with the following command. The process for nodes joining the cluster will take several minutes.
@@ -229,22 +248,26 @@ Self-managed nodes cannot be viewed from Oracle Cloud so you can poll their stat
 
    watch 'kubectl get nodes'
 
-Once your nodes are in :guilabel:`Ready` state, then everything is running as expected and you're self-managed node is ready to accept pods. 
+Once your node is in :guilabel:`Ready` state, then everything is running as expected and your self-managed node is ready to accept pods. 
 
 Further references
 ------------------
 
 For more information about oci CLI and managing self-managed nodes on your cluster, refer to the Oracle Documentation:
 
-* `oci CLI Documentation`_
-* `Creating and Managing Kubernetes Clusters`_
-* `Creating a Dynamic Group and a Policy for Self-Managed Nodes`_
-* `Creating Cloud-init scripts for Self-Managed Nodes`_
+* `oci CLI documentation`_
+* `Creating and managing kubernetes clusters`_
+* `Creating a dynamic group and a policy for self-managed nodes`_
+* `Creating cloud-init scripts for self-managed nodes`_
 
 .. _`working with self-managed nodes`: https://docs.oracle.com/en-us/iaas/Content/ContEng/Tasks/contengworkingwithselfmanagednodes.htm
 .. _`creating a cluster`: https://docs.oracle.com/en-us/iaas/Content/ContEng/Tasks/create-cluster.htm
-.. _`OCI CLI Documentation`: https://docs.oracle.com/en-us/iaas/tools/oci-cli/3.46.0/oci_cli_docs/
-.. _`Creating and Managing Kubernetes CLusters`: https://docs.public.oneportal.content.oci.oraclecloud.com/en-us/iaas/compute-cloud-at-customer/topics/oke/creating-and-managing-kubernetes-clusters.htm
-.. _`Creating a Dynamic Group and a Policy for Self-Managed Nodes`: https://docs.oracle.com/en-us/iaas/Content/ContEng/Tasks/contengdynamicgrouppolicyforselfmanagednodes.htm
-.. _`Creating Cloud-init scripts for Self-Managed Nodes`: https://docs.oracle.com/en-us/iaas/Content/ContEng/Tasks/contengcloudinitforselfmanagednodes.htm
+.. _`import from-object-uri`: https://docs.oracle.com/en-us/iaas/tools/oci-cli/3.45.2/oci_cli_docs/cmdref/compute/image/import/from-object-uri.html
+.. _`object upload`: https://docs.oracle.com/en-us/iaas/tools/oci-cli/3.45.2/oci_cli_docs/cmdref/os/object/put.html
+.. _`image import from object`: https://docs.oracle.com/en-us/iaas/tools/oci-cli/3.45.2/oci_cli_docs/cmdref/compute/image/import/from-object.html
+.. _`managing custom images`: https://docs.oracle.com/en-us/iaas/Content/Compute/Tasks/managingcustomimages.htm
+.. _`OCI CLI documentation`: https://docs.oracle.com/en-us/iaas/tools/oci-cli/3.46.0/oci_cli_docs/
+.. _`Creating and managing kubernetes clusters`: https://docs.public.oneportal.content.oci.oraclecloud.com/en-us/iaas/compute-cloud-at-customer/topics/oke/creating-and-managing-kubernetes-clusters.htm
+.. _`Creating a dynamic group and a policy for self-managed nodes`: https://docs.oracle.com/en-us/iaas/Content/ContEng/Tasks/contengdynamicgrouppolicyforselfmanagednodes.htm
+.. _`Creating cloud-init scripts for self-managed nodes`: https://docs.oracle.com/en-us/iaas/Content/ContEng/Tasks/contengcloudinitforselfmanagednodes.htm
 
