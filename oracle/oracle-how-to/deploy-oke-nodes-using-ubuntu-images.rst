@@ -108,15 +108,15 @@ Optionally, this process can be done with the following command:
     --wait-for-state AVAILABLE
 
 
-Creating OKE Nodes with Ubuntu Images
+Create OKE nodes with Ubuntu Images
 -------------------------------------
 
 The following steps on creating nodes assumes you have an existing OKE cluster on Oracle Cloud, but it is not required to have existing nodes. If you don't have an OKE cluster prepared then Oracle's documentation for `creating a cluster`_ is a good place to start.
 
-Creating Managed OKE nodes with Ubuntu
+Create managed OKE nodes with Ubuntu
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Managed nodes are node instances whose lifecycle is managed by the OKE service. Since this is a Limited Availability release of Ubuntu images for OKE, you can only create managed nodes through the Oracle Cloud API (``oci`` CLI or SDK). The ability to create managed from nodes from the Oracle Cloud UI will be added at a later.
+Managed nodes are node instances whose lifecycle is managed by the OKE service. Since this is a Limited Availability release of Ubuntu images for OKE, you can only create managed nodes through the Oracle Cloud API (``oci`` CLI or SDK). The ability to create managed nodes from the Oracle Cloud UI will be added later.
 
 To create a managed node, start by copying the following cloud-init script into a file called ``user-data.yaml``.
 
@@ -158,10 +158,10 @@ View the node pool status in Oracle Cloud by navigating to :guilabel:`Kubernetes
 
 Everything will be running as expected when the :guilabel:`Kubernetes node condition` and :guilabel:`Node state` of all the nodes are labelled :guilabel:`Ready`.
 
-Creating Self-Managed OKE nodes with Ubuntu
+Create self-managed OKE nodes with Ubuntu
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The following instructions assumes that you have configured your OKE cluster to work with self-managed nodes. If you have not done this, refer to the Oracle documentation for `working with self-managed nodes`_
+The following instructions assume that you have configured your OKE cluster to work with self-managed nodes. If you have not done this, refer to the Oracle documentation for `working with self-managed nodes`_
 
 Before adding a self-managed node, ensure you have configured ``kubectl`` to your OKE cluster with the following command. This process will be easier if ``kubectl`` is configured for a single OKE cluster.
 
@@ -177,7 +177,7 @@ Obtain the Kubernetes certificate using ``kubectl`` with the following command a
 
    kubectl config view --raw -o json | jq -r '.clusters[0].cluster.certificate-authority-data'
 
-Then obtain the ``Kubernetes API private endpoint`` from Oracle Cloud by navigating to :guilabel:`Kubernetes Cluster (OKE)` then select your cluster. Be sure to copy only the IP, not the port.
+Then obtain the ``Kubernetes API private endpoint`` from Oracle Cloud by navigating to :guilabel:`Kubernetes Cluster (OKE)` and selecting your cluster. Be sure to copy only the IP, not the port.
 
 Alternately, use the following ``oci`` command to obtain the ``Kubernetes API private endpoint``:
 
@@ -185,7 +185,7 @@ Alternately, use the following ``oci`` command to obtain the ``Kubernetes API pr
 
    oci ce cluster get --cluster-id <cluster-id> | jq -r '.data.endpoints.private-endpoint' | cut -d ":" -f1
 
-Using your previously obtained values, insert them in the following example and save it with the name ``user-data.yaml``.
+Use these obtained values (certificate-data and private-endpoint) in the following example and save it as ``user-data.yaml``.
 
 .. code:: yaml
 
@@ -203,7 +203,7 @@ Using your previously obtained values, insert them in the following example and 
      content: <certificate-data>
 
 
-Now, create the instance behind the self-managed node in Oracle Cloud by navigating to :guilabel:`Compute` > :guilabel:`Instance` and click :guilabel:`Create Instance`. Next, click :guilabel:`Change Image` and select :guilabel:`My Images` then click the Ubuntu image recently registered. 
+Now, create the self-managed node in Oracle Cloud by navigating to :guilabel:`Compute` > :guilabel:`Instance` and click :guilabel:`Create Instance`. Next, click :guilabel:`Change Image` and select :guilabel:`My Images` then click the Ubuntu image recently registered. 
 
 Setup the cloud-init for the instance by clicking :guilabel:`Show advanced options` then select :guilabel:`Paste cloud-init script`, where you should be able to paste your completed cloud-init script (the one saved in ``user-data.yaml``).
 
