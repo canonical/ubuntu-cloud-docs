@@ -3,6 +3,8 @@ Deploy OKE nodes using Ubuntu images
 
 Ubuntu images are available for worker nodes on Oracle Kubernetes Engine (OKE) in Oracle Cloud. Currently there are only a select number of suites and Kubernetes versions supported due to this being a Limited Availability release. 
 
+For node stability, the ``unattended-upgrades`` package has been removed from the Ubuntu image for OKE. Should your nodes need updates or security patches then refer to the Oracle documentation on `node cycling for managed nodes`_ and `node cycling for self-managed nodes`_.
+
 Available releases
 ------------------
 
@@ -75,6 +77,8 @@ Register an Ubuntu image
 
 Images must be registered to be used with Oracle Cloud services. To learn more, refer to the Oracle Cloud documentation for `managing custom images`_.
 
+When registering images, the :guilabel:`Launch mode` is an option to configure. The suggested configurations are :guilabel:`PARAVIRTUALIZED` for virtual nodes and :guilabel:`NATIVE` for bare-metal nodes.
+
 .. tabs::
 
     .. group-tab:: Using console
@@ -91,7 +95,9 @@ Images must be registered to be used with Oracle Cloud services. To learn more, 
 
     .. group-tab:: Using CLI
     
-        The ``oci`` CLI offers the convenience of registering an image without having to upload it directly. For more information refer to the ``oci`` docs for `import from-object-uri`_. If you wish to separate these steps refer to the ``oci`` docs for `object upload`_ and `image import from object`_.
+        The following command will directly import your image from a provided URI. You'll have the provide the values below with the exception of ``operating-system`` and ``source-image-type`` which are already provided.
+        
+        For more information on this command, refer to the ``oci`` docs for `import from-object-uri`_.
 
         .. code:: bash
     
@@ -109,8 +115,6 @@ Create OKE nodes with Ubuntu Images
 -------------------------------------
 
 The following steps on creating nodes assumes you have an existing OKE cluster on Oracle Cloud, but it is not required to have existing nodes. If you don't have an OKE cluster prepared then Oracle's documentation for `creating a cluster`_ is a good place to start.
-
-When creating nodes, the :guilabel:`Launch mode` is an option to configure. The suggested configurations are :guilabel:`PARAVIRTUALIZED` for virtual nodes and :guilabel:`NATIVE` for bare-metal nodes.
 
 Create managed OKE nodes with Ubuntu
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -135,7 +139,7 @@ Managed nodes are node instances whose lifecycle is managed by the OKE service.
          runcmd:
            - oke bootstrap
       
-      Then, create a placement configuration file to specify where in Oracle Cloud the Managed node pool should be created and save the file as ``placement-config.json``.
+      Then, create a placement configuration file to specify where in Oracle Cloud the managed node pool should be created and save the file as ``placement-config.json``.
       
       .. code:: json 
       
@@ -146,7 +150,7 @@ Managed nodes are node instances whose lifecycle is managed by the OKE service.
          }]
       
       
-      Lastly, replace the values and run the following command to create the Managed node pool:
+      Lastly, replace the values and run the following command to create the managed node pool:
       
       .. code:: bash
          
@@ -222,15 +226,15 @@ Use these obtained values (certificate-data and private-endpoint) in the followi
 
    .. group-tab:: Using CLI
 
-    Optionally, you can this ``oci`` command to create the self-managed node:
+    The following command will create an instance with your previously created ``user-data.yaml``. The value for ``subnet-id`` should correspond with the subnet used for the nodes in your OKE cluster.
     
     .. code:: bash
     
       oci compute instance launch \
-        --compartment-id <compartment-ocid> \
+        --compartment-id <compartment-id> \
         --availability-domain <availability-domain> \
         --shape <instance-shape> \
-        --image-id <ubuntu-image-ocid> \
+        --image-id <ubuntu-image-id> \
         --subnet-id <subnet-ocid> \
         --user-data-file user-data.yaml \
         --display-name <instance-name>
@@ -254,6 +258,8 @@ For more information about oci CLI and managing self-managed nodes on your clust
 * `Creating a dynamic group and a policy for self-managed nodes`_
 * `Creating cloud-init scripts for self-managed nodes`_
 
+.. _`node cycling for managed nodes`: https://docs.oracle.com/en-us/iaas/Content/ContEng/Tasks/contengupgradingk8sworkernode.htm
+.. _`node cycling for self-managed nodes`: https://docs.oracle.com/en-us/iaas/Content/ContEng/Tasks/contengupgradingselfmanagednodes.htm#contengupgradingselfmanagednodes
 .. _`working with self-managed nodes`: https://docs.oracle.com/en-us/iaas/Content/ContEng/Tasks/contengworkingwithselfmanagednodes.htm
 .. _`creating a cluster`: https://docs.oracle.com/en-us/iaas/Content/ContEng/Tasks/create-cluster.htm
 .. _`import from-object-uri`: https://docs.oracle.com/en-us/iaas/tools/oci-cli/3.45.2/oci_cli_docs/cmdref/compute/image/import/from-object-uri.html
