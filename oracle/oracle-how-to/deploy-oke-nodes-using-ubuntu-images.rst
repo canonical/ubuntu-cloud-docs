@@ -183,11 +183,11 @@ Before adding a self-managed node, ensure you have configured ``kubectl`` for yo
 
 Next, the self-managed node will need a custom cloud-init script which needs some specific values, namely a Kubernetes certificate from the OKE cluster and the Kubernetes API private endpoint.
 
-Obtain the Kubernetes certificate using ``kubectl`` with the following command and note that ``[0]`` is the index of the cluster if only one is configured:
+Obtain the Kubernetes certificate for the current context with the following command:
 
 .. code:: bash
 
-   kubectl config view --raw -o json | jq -r '.clusters[0].cluster.certificate-authority-data'
+   kubectl config view --minify --raw -o json | jq -r '.clusters[].cluster."certificate-authority-data"'
 
 Then obtain the ``Kubernetes API private endpoint`` from Oracle Cloud by navigating to :guilabel:`Kubernetes Cluster (OKE)` and selecting your cluster. Be sure to copy only the IP, not the port.
 
