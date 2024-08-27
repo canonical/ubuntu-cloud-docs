@@ -5,6 +5,7 @@ These guides provide instructions for performing different operations related to
 
 
 * :doc:`Find images <find-ubuntu-images>`
+* :doc:`deploy-oke-nodes-using-ubuntu-images`
 * :doc:`Use a bastion for access <use-bastion-to-access-VM>`
 * :doc:`upgrade-from-focal-to-jammy`
 * :doc:`use-fde`
@@ -15,6 +16,7 @@ These guides provide instructions for performing different operations related to
    :maxdepth: 1
    
    Find images <find-ubuntu-images>
+   deploy-oke-nodes-using-ubuntu-images
    Use a bastion for access <use-bastion-to-access-VM>
    upgrade-from-focal-to-jammy
    use-fde

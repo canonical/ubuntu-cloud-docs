@@ -150,6 +150,7 @@ kubeconfig
 kubectl
 Kubeflow
 kubelet
+kubernetes
 Kubernetes
 Kudu
 KVM
@@ -193,6 +194,7 @@ oci
 OCI
 OCID
 OCIR
+OKE
 onwards
 OpenSCAP
 OpenShift
@@ -274,6 +276,7 @@ unminimize
 unmount
 untrusted
 uptime
+uri
 URI
 URL
 URNs
