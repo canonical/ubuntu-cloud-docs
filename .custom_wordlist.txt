@@ -158,6 +158,7 @@ launchTemplate
 libc
 libgcc
 libs
+libvirt
 licenseType
 lifecycle
 linux
@@ -238,6 +239,7 @@ SDK
 SeaBIOS
 SEV
 SHA
+simplestreams
 SKU
 SKUs
 SLAs
@@ -277,6 +279,7 @@ unmount
 untrusted
 uptime
 uri
+uvtool
 URI
 URL
 URNs
@@ -289,12 +292,13 @@ verifications
 VFIO
 vGPU
 VHD
+virsh
 VIRT
 virtio
 VirtualBox
 virtualised
 virtualiser
-Virtualization
+virtualization
 VLEK
 vm
 VM
