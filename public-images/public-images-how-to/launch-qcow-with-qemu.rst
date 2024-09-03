@@ -8,14 +8,14 @@ Ubuntu cloud images are released in many formats to enable many launch configura
 Among the many formats for cloud images is the ``.img`` QCOW format. This article will cover the QCOW use case and provide
 instructions on how to use the images with QEMU.
 
-Note that the commands in this guide are for x86_64 (amd64) systems. QEMU does offer cross-archtecture emulation, so
+Note that the commands in this guide are for x86_64 (amd64) systems. QEMU does offer cross-architecture emulation, so
 if you are using a computer with a different CPU architecture, some adjustments to the commands will be required. Check
 the `QEMU`_ docs for the correct commands to use for your desired architecture.
 
 For starting with an ISO server image, see the `server documentation`_ on downloading and converting an ISO for use
 with QEMU.
 
-QEMU and QCOWs
+QEMU and QCOW
 --------------
 
 `QEMU`_ is a system emulator and "type 2" virtual machine hypervisor. Type 2 hypervisors run on top of the host operating
@@ -31,7 +31,7 @@ QEMU shell
 
 When launching a system it is handy to know that ``ctrl-a c`` (the default QEMU escape sequence followed by ``c``), is
 an escape key that will cycle between the console of the guest machine and the QEMU monitor on the host. From the QEMU
-monitor a user can send keys to the guest via the sendkey option or even close the guest via quit.
+monitor a user can send keys to the guest via the ``sendkey`` option or even close the guest via quit.
 
 Creating a seed image
 ---------------------
@@ -81,10 +81,10 @@ Option 2: Booting the cloud image with UEFI
 If you'd prefer using UEFI over BIOS, then a different firmware
 is required. Ubuntu ships the ``ovmf`` package to provide UEFI firmware.
 Install that package, and you can use a different flash image with
-the -pflash option.
+the ``-pflash`` option.
 
 The following command is identical to the one from Option 1, except the last line which specifies
-the pflash option:
+the ``pflash`` option:
 
 .. code::
 
@@ -99,14 +99,14 @@ the pflash option:
       -drive if=pflash,format=raw,file=/usr/share/OVMF/OVMF_CODE.fd,readonly
 
 You can confirm that UEFI was used by checking for the existence of the
-/sys/firmware/efi directory:
+``/sys/firmware/efi directory``:
 
 .. code::
 
     $ test -d /sys/firmware/efi && echo efi || echo bios
     efi
 
-Additionally, the dmesg and efibootmgr commands will also have EFI related
+Additionally, the ``dmesg`` and ``efibootmgr`` commands will also have EFI related
 output:
 
 .. code::

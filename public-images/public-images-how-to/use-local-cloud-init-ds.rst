@@ -15,7 +15,7 @@ Requirements
 ------------
 
 We'll be using the `cloud-localds`_ command, which comes from the `cloud-image-utils`_ package. For launching an image
-with `QEMU`_, you will need `qemu-system-x86`. These can be installed via Apt with:
+with `QEMU`_, you will need ``qemu-system-x86``. These can be installed via Apt with:
 
 .. code::
 
