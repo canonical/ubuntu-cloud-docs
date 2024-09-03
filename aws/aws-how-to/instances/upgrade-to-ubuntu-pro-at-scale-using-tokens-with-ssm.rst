@@ -21,7 +21,7 @@ There are many ways to automate actions on AWS Systems Manager but for this how-
 Prerequisites
 -------------
 
-- An AWS account
+- An AWS account with write access to SSM and the ability to connect to VMs
 - An Ubuntu One account (you can create one on `Ubuntu Pro | Ubuntu <https://ubuntu.com/pro>`_)
 - Machines with SSM agent installed (available by default on Ubuntu 16.04 onwards). If the agent is properly configured, the servers will appear as Managed Nodes on AWS SSM Fleet Manager (see the reference links for more information)
 - Basic understanding about writing and running SSM Documents (see the reference links for more information)
