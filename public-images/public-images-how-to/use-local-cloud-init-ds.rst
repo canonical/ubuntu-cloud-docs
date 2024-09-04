@@ -22,6 +22,8 @@ with `QEMU`_, you will need ``qemu-system-x86``. These can be installed via Apt 
     sudo apt update
     sudo apt install --yes cloud-image-utils qemu-system-x86
 
+.. _specify-cloud-init-user-data:
+
 Specify user data
 -----------------
 
