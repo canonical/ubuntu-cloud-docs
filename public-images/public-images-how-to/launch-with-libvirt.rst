@@ -100,7 +100,7 @@ Some common options for ``STREAM_URL`` are:
 * minimal releases: https://cloud-images.ubuntu.com/minimal/releases/
 * minimal daily: https://cloud-images.ubuntu.com/minimal/daily/
 
-``FILTERS`` are a combination of image attributes. Some common attributes (fields of cloud images simplestreams) are:
+``FILTERS`` are combinations of image attributes. Some common attributes (fields of cloud images simplestreams) are:
 
 * arch: the architecture (e.g. ``amd64``, ``arm64``)
 * version: the Ubuntu release version (e.g. ``24.04``)
