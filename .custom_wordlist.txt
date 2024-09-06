@@ -124,6 +124,7 @@ IAM
 ideation
 ImageLocation
 InfiniBand
+infographic
 init
 init's
 initrd

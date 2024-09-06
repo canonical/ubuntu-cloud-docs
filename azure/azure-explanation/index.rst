@@ -10,6 +10,7 @@ Discussion and clarification of some key topics:
    Image retention policy<image-rentention-policy>
    Ubuntu on AKS<ubuntu-on-aks-worker-nodes>
    Security features<confidential-computing>
+   Pricing of managed services <pricing-of-managed-services>
 
    
    
