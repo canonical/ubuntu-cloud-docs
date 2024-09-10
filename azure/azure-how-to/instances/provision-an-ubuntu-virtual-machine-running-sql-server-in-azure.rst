@@ -44,7 +44,7 @@ Launch the VM
     c. Change size: Select this option to pick a machine size and when done, choose Select.
     d. Authentication type: Select "SSH public key".
     e. SSH public key: Enter your RSA public key.
-    f. Public inbound ports: Choose Allow selected ports and pick the SSH (22) port in the Select public inbound ports list. In this tutorial, this step is necessary to connect and complete the SQL Server configuration. If you want to remotely connect to SQL Server, you will need to manually allow traffic to the default port (1433) used by Microsoft SQL Server for connections over the Internet after the virtual machine is created.
+    f. Public inbound ports: Choose "Allow selected ports" and pick the SSH (22) port in the "Select public inbound ports" list. In this tutorial, this step is necessary to connect and complete the SQL Server configuration. If you want to remotely connect to SQL Server, you will need to manually allow traffic to the default port (1433) used by Microsoft SQL Server for connections over the Internet after the virtual machine is created.
 
 - Make any changes you want to the settings in the following additional steps or keep the default settings.
 
@@ -99,9 +99,9 @@ The new virtual machine installs SQL Server with a random System Administrator p
 Add the tools to your path (optional)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Several SQL Server packages are installed by default, including the SQL Server command-line tools package. The tools package contains the `sqlcmd` and `bcp` tools. For convenience, you can add the tools path, `/opt/mssql-tools/bin/`, to your PATH environment variable.
+Several SQL Server packages are installed by default, including the SQL Server command-line tools package. The tools package contains the `sqlcmd` and `bcp` tools. For convenience, you can add the tools path, `/opt/mssql-tools/bin/`, to your `PATH` environment variable.
 
-- Run the following commands to modify the PATH for both login sessions and interactive/non-login sessions:
+- Run the following commands to modify the `PATH` for both login sessions and interactive/non-login sessions:
 
 .. code-block::
     echo 'export PATH="$PATH:/opt/mssql-tools/bin"' >> ~/.bash_profile
