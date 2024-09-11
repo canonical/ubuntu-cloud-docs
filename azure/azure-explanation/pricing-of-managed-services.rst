@@ -1,5 +1,5 @@
 Pricing of managed services
-===========================
+============================
 
 Pricing model
 -------------
