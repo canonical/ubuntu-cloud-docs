@@ -76,7 +76,7 @@ Connect to the VM
 
 
 Change the System Administrator password
-~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The new virtual machine installs SQL Server with a random System Administrator password. Reset this password before you connect to SQL Server with the System Administrator login.
 
