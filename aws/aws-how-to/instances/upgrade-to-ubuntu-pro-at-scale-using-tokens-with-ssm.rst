@@ -28,7 +28,7 @@ Prerequisites
 
 
 1. Get a token
-------------
+--------------
 
 To get an Ubuntu Pro token, you need to create an account in `Ubuntu Pro | Ubuntu <https://ubuntu.com/pro>` to see your subscriptions and get your tokens. Anyone can use Ubuntu Pro for free on up to 5 machines, even for production workloads.
 
