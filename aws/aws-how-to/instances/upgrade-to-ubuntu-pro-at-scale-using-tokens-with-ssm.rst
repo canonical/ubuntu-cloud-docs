@@ -39,7 +39,7 @@ Log-in by clicking on *Your subscriptions*. You will be redirected to the follow
 
 
 2. Create a SSM Document to attach the token
-------------------------------------------
+--------------------------------------------
 
 The SSM Document is just a JSON or YAML file containing the script in steps or sections.
 
