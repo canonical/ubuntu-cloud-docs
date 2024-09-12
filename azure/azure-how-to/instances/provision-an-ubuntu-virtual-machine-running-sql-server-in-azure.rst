@@ -31,7 +31,7 @@ Find the correct image to launch on the Azure portal
 
 
 Launch the VM
-~~~~~~~~~~~~~~
+~~~~~~~~~~~~~
 
 - Select your Subscription and Resource Group.
 
