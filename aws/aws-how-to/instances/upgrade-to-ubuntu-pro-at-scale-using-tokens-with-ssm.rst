@@ -3,7 +3,7 @@ Upgrade to Ubuntu Pro at scale using tokens with SSM
 
 
 Overview
----------
+--------
 
 Ubuntu Pro expands Ubuntu LTS’ 5 years of coverage up to ten-years of security coverage with an additional support of 23,000 packages beyond the main operating system and it is free for use on up to 5 machines!
 
