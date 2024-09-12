@@ -84,7 +84,7 @@ No reboot is needed.
 
 
 3. Run the SSM script
-------------------
+---------------------
 
 The SSM script can be run either from the Fleet Manager or with the SSM Run Command. More information can be found in `this tutorial <https://ubuntu.com/tutorials/how-to-create-ssm-documents-and-use-them-to-install-packages-massively-with-run-command#1-overview>`
 
