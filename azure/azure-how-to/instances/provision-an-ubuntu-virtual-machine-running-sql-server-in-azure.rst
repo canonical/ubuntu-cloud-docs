@@ -65,7 +65,7 @@ Config and connect
 
 
 Connect to the VM
-~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~
 
 - Find the IP address of your VM in the portal, Overview section.
 
