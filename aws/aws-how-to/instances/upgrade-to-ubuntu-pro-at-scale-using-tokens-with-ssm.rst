@@ -3,7 +3,7 @@ Upgrade to Ubuntu Pro at scale using tokens with SSM
 
 
 Overview
----------
+--------
 
 Ubuntu Pro expands Ubuntu LTS’ 5 years of coverage up to ten-years of security coverage with an additional support of 23,000 packages beyond the main operating system and it is free for use on up to 5 machines!
 
@@ -28,7 +28,7 @@ Prerequisites
 
 
 1. Get a token
-------------
+--------------
 
 To get an Ubuntu Pro token, you need to create an account in `Ubuntu Pro | Ubuntu <https://ubuntu.com/pro>` to see your subscriptions and get your tokens. Anyone can use Ubuntu Pro for free on up to 5 machines, even for production workloads.
 
@@ -39,7 +39,7 @@ Log-in by clicking on *Your subscriptions*. You will be redirected to the follow
 
 
 2. Create a SSM Document to attach the token
-------------------------------------------
+--------------------------------------------
 
 The SSM Document is just a JSON or YAML file containing the script in steps or sections.
 
@@ -84,7 +84,7 @@ No reboot is needed.
 
 
 3. Run the SSM script
-------------------
+---------------------
 
 The SSM script can be run either from the Fleet Manager or with the SSM Run Command. More information can be found in `this tutorial <https://ubuntu.com/tutorials/how-to-create-ssm-documents-and-use-them-to-install-packages-massively-with-run-command#1-overview>`
 
@@ -96,7 +96,7 @@ You don’t need to restart the machines after applying the token. If the SSM sc
 
 
 4. Check the Pro status of your machine
-----------------
+---------------------------------------
 
 You can always check the status of the subscription by running: 
 

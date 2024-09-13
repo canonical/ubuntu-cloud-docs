@@ -31,7 +31,7 @@ Find the correct image to launch on the Azure portal
 
 
 Launch the VM
-~~~~~~~~~~~~~~
+~~~~~~~~~~~~~
 
 - Select your Subscription and Resource Group.
 
@@ -65,7 +65,7 @@ Config and connect
 
 
 Connect to the VM
-~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~
 
 - Find the IP address of your VM in the portal, Overview section.
 
@@ -76,7 +76,7 @@ Connect to the VM
 
 
 Change the System Administrator password
-~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The new virtual machine installs SQL Server with a random System Administrator password. Reset this password before you connect to SQL Server with the System Administrator login.
 
