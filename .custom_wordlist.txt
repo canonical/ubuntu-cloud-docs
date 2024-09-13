@@ -251,6 +251,7 @@ sshd
 SSHD
 SSL
 SSM
+ssm
 SSO
 STIG
 subnet
