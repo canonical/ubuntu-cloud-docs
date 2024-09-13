@@ -112,6 +112,9 @@ Ubuntu Pro 24.04 LTS - Noble Numbat
    * - AMD64
      - Gen1
      - ``Canonical:ubuntu-24_04-lts:ubuntu-pro-gen1:latest``
+   * - Arm64
+     - Gen2
+     - ``Canonical:ubuntu-24_04-lts:ubuntu-pro-arm64:latest``
    * - AMD64
      - Gen2
      - ``Canonical:ubuntu-24_04-lts:ubuntu-pro-cvm:latest``
@@ -135,6 +138,9 @@ Quick start: `Ubuntu Pro 22.04 LTS on Azure <https://portal.azure.com/#create/ca
    * - AMD64
      - Gen2
      - ``Canonical:0001-com-ubuntu-pro-jammy:pro-22_04-lts-gen2:latest``
+   * - Arm64
+     - Gen2
+     - ``Canonical:0001-com-ubuntu-pro-jammy:pro-22_04-lts-arm64:latest``
 
 
 Ubuntu Pro 20.04 LTS - Focal Fossa
@@ -155,6 +161,9 @@ Quick start: `Ubuntu Pro 20.04 LTS on Azure <https://portal.azure.com/#create/ca
    * - AMD64
      - Gen2
      - ``Canonical:0001-com-ubuntu-pro-focal:pro-20_04-lts-gen2:latest``
+   * - Arm64
+     - Gen2
+     - ``Canonical:0001-com-ubuntu-pro-focal:pro-20_04-lts-arm64:latest``
 
 
 Ubuntu Pro 18.04 LTS - Bionic Beaver
@@ -175,6 +184,9 @@ Quick start: `Ubuntu Pro 18.04 LTS on Azure <https://portal.azure.com/#create/ca
    * - AMD64
      - Gen2
      - ``Canonical:0001-com-ubuntu-pro-bionic:pro-18_04-lts-gen2:latest``
+   * - Arm64
+     - Gen2
+     - ``Canonical:0001-com-ubuntu-pro-bionic:pro-18_04-lts-arm64:latest``
 
 
 Confidential compute capable offer
