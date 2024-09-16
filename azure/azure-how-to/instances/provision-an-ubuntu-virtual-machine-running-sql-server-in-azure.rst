@@ -71,7 +71,8 @@ Connect to the VM
 
 - Connect to the Azure VM using the ssh command. In the following command, replace the VM user name and IP address to connect to your Linux VM.
 
-.. code-block::
+.. code:: bash
+
     ssh ubuntu@20.55.55.555
 
 
@@ -84,7 +85,8 @@ The new virtual machine installs SQL Server with a random System Administrator p
 
 - Change the System Administrator password with the following commands:
 
-.. code-block::
+.. code:: bash
+
     sudo systemctl stop mssql-server
     sudo /opt/mssql/bin/mssql-conf set-sa-password
 
@@ -92,7 +94,8 @@ The new virtual machine installs SQL Server with a random System Administrator p
 
 - Restart the SQL Server service.
 
-.. code-block::
+.. code:: bash
+
     sudo systemctl start mssql-server
 
 
@@ -103,7 +106,8 @@ Several SQL Server packages are installed by default, including the SQL Server c
 
 - Run the following commands to modify the `PATH` for both login sessions and interactive/non-login sessions:
 
-.. code-block::
+.. code:: bash
+
     echo 'export PATH="$PATH:/opt/mssql-tools/bin"' >> ~/.bash_profile
     echo 'export PATH="$PATH:/opt/mssql-tools/bin"' >> ~/.bashrc
     source ~/.bashrc
@@ -133,11 +137,12 @@ If you want to connect remotely to VMs, you also have to open up port 1433 on th
 - Connect to your VM.
 - In a terminal, run the following command:
 
-.. code-block::
+.. code:: bash
+
     sudo ufw allow 1433/tcp
 
 
 Connect
 ~~~~~~~
 
-You can now connect to your server from your favorite client.
+You can now connect to your server from your favourite client.
