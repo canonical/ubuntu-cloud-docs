@@ -25,6 +25,7 @@ aws
 backend
 backoff
 balancers
+bcp
 bootable
 BSL
 BuildKit
@@ -181,6 +182,7 @@ MicroK
 microservices
 minimalistic
 MLOps
+mssql
 Multipass
 natively
 NIC
@@ -234,6 +236,7 @@ runtime
 runtimes
 rustc
 rustup
+RSA
 scalability
 SDK
 SeaBIOS
@@ -246,11 +249,13 @@ SLAs
 SLiM
 SNP
 softwares
+sqlcmd
 SquashFS
 sshd
 SSHD
 SSL
 SSM
+ssm
 SSO
 STIG
 subnet

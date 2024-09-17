@@ -10,6 +10,7 @@ These how-to guides relate to launching and using Ubuntu-based instances. They i
    Install Azure CLI <install-azure-cli>
    Find images <find-ubuntu-images>
    Launch images <launch-ubuntu-images>
+   Provision an Ubuntu virtual machine running SQL Server in Azure <provision-an-ubuntu-virtual-machine-running-sql-server-in-azure>
    Get Ubuntu Pro <get-ubuntu-pro>
    Create Pro golden image <create-pro-fips-golden-image>
    Create a golden image pipeline <create-a-golden-image-pipeline>

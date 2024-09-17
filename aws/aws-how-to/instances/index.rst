@@ -24,6 +24,7 @@ Performing upgrades and automating them:
 
 * :doc:`In-place upgrade to Ubuntu Pro <upgrade-in-place-from-lts-to-pro>`
 * :doc:`Upgrade from Focal to Jammy <upgrade-from-focal-to-jammy>`
+* :doc:`Upgrade to Ubuntu Pro at scale using tokens with SSM <upgrade-to-ubuntu-pro-at-scale-using-tokens-with-ssm>`
 * :doc:`Configure automated updates <automatically-update-ubuntu-instances>`
 
 Deploying Charmed Kubernetes:
@@ -45,6 +46,7 @@ Deploying Charmed Kubernetes:
    Configure multiple NICs <automatically-setup-multiple-nics>
    In-place upgrade to Ubuntu Pro <upgrade-in-place-from-lts-to-pro>
    Upgrade from Focal to Jammy <upgrade-from-focal-to-jammy>
+   Upgrade to Ubuntu Pro at scale using tokens with SSM <upgrade-to-ubuntu-pro-at-scale-using-tokens-with-ssm>
    Configure automated updates <automatically-update-ubuntu-instances>
    Deploy Charmed Kubernetes <deploy-charmed-kubernetes-on-ubuntu-pro>
-   
+
