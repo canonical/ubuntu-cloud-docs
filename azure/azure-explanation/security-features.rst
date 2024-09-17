@@ -1,5 +1,14 @@
-Security features on Azure
-==========================
+Ubuntu Security on Azure
+########################
+
+Ubuntu security features
+************************
+
+Ubuntu on Azure inherits and benefits from all of the security features available to Ubuntu Server. Learn more about
+Ubuntu Server security features and security-related topics with `Introduction to Security <https://documentation.ubuntu.com/server/explanation/intro-to/security/>`_.
+
+Azure security features
+***********************
 
 Azure provides two types of security features:
 
@@ -9,15 +18,15 @@ Azure provides two types of security features:
 To launch Ubuntu images with Trusted Launch and Confidential VM, refer to :doc:`../azure-how-to/instances/launch-ubuntu-images`.
 
 Trusted launch
---------------
+==============
 
 All Ubuntu images from 20.04 LTS (Focal Fossa) support trusted launch and secure boot on Hyper-V Gen2 instances. 
 
 Confidential VM
----------------
+===============
 
 What are confidential VMs?
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+--------------------------
 
 Check out our `technical blog post about Confidential VMs on Azure`_.
 
@@ -29,7 +38,7 @@ In short, a confidential VM is a combination of two features:
 It's important to note that memory encryption is always enabled with a confidential VM, but FDE is optional and requires explicit activation after the VM is provisioned.
 
 Using Ubuntu on confidential VMs
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+--------------------------------
 
 Currently there are two Ubuntu images which support Confidential VMs:
 
