@@ -75,6 +75,7 @@ Ubuntu public cloud is open source project that warmly welcomes community projec
    Ubuntu base and minimal images <all-clouds-explanation/ubuntu-base-and-minimal-images>
    Check CVE status of an image <all-clouds-how-to/check-cve-on-instance>
    Contribute to these docs <all-clouds-how-to/contribute-to-these-docs>
+   Cloud-init metapackages <all-clouds-explanation/cloud-init-metapackages>
       
 
 .. _Get support: https://ubuntu.com/cloud/public-cloud

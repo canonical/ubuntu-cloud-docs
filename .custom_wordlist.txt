@@ -41,6 +41,7 @@ CIS
 CLI
 CloudFormation
 cloudimg
+CloudSigma
 CNCF
 config
 CPUs
@@ -175,6 +176,8 @@ MAAS
 macOS
 manpages
 Mantic
+metapackage
+metapackages
 MiB
 microk
 MicroK
@@ -244,6 +247,7 @@ SKU
 SKUs
 SLAs
 SLiM
+SmartOS
 SNP
 softwares
 SquashFS
