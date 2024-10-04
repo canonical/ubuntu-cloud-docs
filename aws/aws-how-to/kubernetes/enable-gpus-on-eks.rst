@@ -76,7 +76,7 @@ Create the ``DaemonSet`` using:
 
 .. note::
 
-  These are 'quick-start' instructions that enble the basic features of the plugin. For production settings use the `instructions for deployment via helm`_.
+  These are 'quick-start' instructions that enable the basic features of the plugin. For production settings use the `instructions for deployment via helm`_.
 
 
 To apply the plugin to your cluster, run the following command from your local machine:
