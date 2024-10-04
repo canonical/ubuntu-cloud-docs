@@ -3,63 +3,44 @@ Enable GPUs on EKS worker nodes
 
 GPU-based EKS worker nodes are needed for many applications, such as for the training of deep learning models.
 
-Before enabling GPUs on your worker nodes, you'll have to create a cluster and node groups with `GPU based instances <https://docs.aws.amazon.com/dlami/latest/devguide/gpu.html>`_. You'll also need SSH access to the nodes.
+Before enabling GPUs on your worker nodes, you'll have to create a cluster and node groups with `GPU based instances`_. You'll also need SSH access to the nodes.
 
 
 
 Install a GPU driver on each node
 ---------------------------------
-For the GPU based instances to work, you'll need to install the appropriate `NVIDIA drivers <https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/install-nvidia-driver.html>`_ on them. For general purpose GPU usage, we recommend using a Tesla driver and the installation instructions from `Option 2: Public NVIDIA drivers <https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/install-nvidia-driver.html#nvidia-installation-options>`_.
+For the GPU based instances to work, you'll need to install the appropriate `NVIDIA drivers`_ on them. For general purpose GPU usage, we recommend using a Tesla driver and the installation instructions from `Option 2 - Public NVIDIA drivers`_.
 
 After installation, use ``sudo nvidia-smi`` to verify that the driver is successfully installed.
 
 
-Install and set up the 'NVIDIA Container Runtime' on each node
+Install and set up the 'NVIDIA Container Toolkit' on each node
 --------------------------------------------------------------
-To support containerised GPU-accelerated applications, the default runtime should be set to 'NVIDIA Container Runtime' on all the nodes.
+To support containerised GPU-accelerated applications, the default runtime should be set to 'NVIDIA Container Toolkit' on all the nodes.
 
 For this, first configure the source repository:
 
 .. code-block:: bash
 
-   $ curl -s -L https://nvidia.github.io/nvidia-container-runtime/gpgkey | \
-     sudo apt-key add -
-   $ distribution=$(. /etc/os-release;echo $ID$VERSION_ID)
-   $ curl -s -L https://nvidia.github.io/nvidia-container-runtime/$distribution/nvidia-container-runtime.list | \
-     sudo tee /etc/apt/sources.list.d/nvidia-container-runtime.list
-   $ sudo apt-get update
+  curl -fsSL https://nvidia.github.io/libnvidia-container/gpgkey | \
+  sudo gpg --dearmor -o /usr/share/keyrings/nvidia-container-toolkit-keyring.gpg \
+  && curl -s -L https://nvidia.github.io/libnvidia-container/stable/deb/nvidia-container-toolkit.list | \
+  sed 's#deb https://#deb [signed-by=/usr/share/keyrings/nvidia-container-toolkit-keyring.gpg] https://#g' | \
+  sudo tee /etc/apt/sources.list.d/nvidia-container-toolkit.list
+  sudo apt-get update
 
-Next, install the NVIDIA Container Runtime:
+Next, install the NVIDIA Container Toolkit:
 
 .. code-block:: bash
 
-   $ sudo apt-get install nvidia-container-runtime
-
-Update the ``/etc/containerd/config.toml`` file to include:
-
-..  code-block:: yaml
-
-    version = 2
-    [plugins]
-    [plugins."io.containerd.grpc.v1.cri"]
-      [plugins."io.containerd.grpc.v1.cri".containerd]
-        default_runtime_name = "nvidia"
-
-        [plugins."io.containerd.grpc.v1.cri".containerd.runtimes]
-          [plugins."io.containerd.grpc.v1.cri".containerd.runtimes.nvidia]
-            privileged_without_host_devices = false
-            runtime_engine = ""
-            runtime_root = ""
-            runtime_type = "io.containerd.runc.v2"
-            [plugins."io.containerd.grpc.v1.cri".containerd.runtimes.nvidia.options]
-              BinaryName = "/usr/bin/nvidia-container-runtime"
+   sudo apt-get install -y nvidia-container-toolkit
 
 Restart ``containerd`` and check whether the runtime has been set correctly:
 
 .. code-block:: bash
 
-   $ sudo systemctl restart containerd
-   $ sudo /etc/eks/bootstrap.sh ${YOUR_CLUSTER_NAME} --container-runtime nvidia-container-runtime
+   sudo systemctl restart containerd
+   sudo /etc/eks/bootstrap.sh ${YOUR_CLUSTER_NAME} --container-runtime nvidia-container-runtime
 
 The output should be similar to:
 
@@ -91,19 +72,24 @@ Create the ``DaemonSet`` using:
 
 .. code-block:: bash
 
-    $ kubectl create -f https://raw.githubusercontent.com/NVIDIA/k8s-device-plugin/v0.14.0/nvidia-device-plugin.yml
+    kubectl create -f https://raw.githubusercontent.com/NVIDIA/k8s-device-plugin/v0.16.1/deployments/static/nvidia-device-plugin.yml
+
+.. note::
+
+  These are 'quick-start' instructions that enble the basic features of the plugin. For production settings use the `instructions for deployment via helm`_.
+
 
 To apply the plugin to your cluster, run the following command from your local machine:
 
 .. code-block:: bash
 
-   $ kubectl apply -f https://raw.githubusercontent.com/NVIDIA/k8s-device-plugin/v0.14.0/nvidia-device-plugin.yml
+   kubectl apply -f https://raw.githubusercontent.com/NVIDIA/k8s-device-plugin/v0.16.1/deployments/static/nvidia-device-plugin.yml
 
 Verify that there are allocatable GPUs:
 
 .. code-block:: bash
 
-   $ kubectl get nodes "-o=custom-columns=NAME:.metadata.name,GPU:.status.allocatable.nvidia\.com/gpu"
+   kubectl get nodes "-o=custom-columns=NAME:.metadata.name,GPU:.status.allocatable.nvidia\.com/gpu"
 
 Test the GPU nodes by deploying a pod
 -------------------------------------
@@ -130,10 +116,18 @@ Apply the manifest to create a pod:
 
 .. code-block:: bash
 
-   $ kubectl apply -f nvidia-smi.yaml
+   kubectl apply -f nvidia-smi.yaml
 
 Once the pod is up and running, check its log using:
 
 .. code-block:: bash
 
-   $ kubectl logs nvidia-smi.yaml
+   kubectl logs nvidia-smi.yaml
+
+.. _`GPU based instances`: https://docs.aws.amazon.com/dlami/latest/devguide/gpu.html
+.. _`NVIDIA drivers`: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/install-nvidia-driver.html
+.. _`Option 2 - Public NVIDIA drivers`: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/install-nvidia-driver.html#nvidia-installation-options
+.. _`instructions for deployment via helm`: https://github.com/NVIDIA/k8s-device-plugin?tab=readme-ov-file#deployment-via-helm
+
+
+
