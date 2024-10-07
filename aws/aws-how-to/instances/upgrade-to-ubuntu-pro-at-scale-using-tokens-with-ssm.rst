@@ -116,5 +116,5 @@ Additional resources and links
 - `AWS Systems Manager documentation (AWS) <https://docs.aws.amazon.com/systems-manager/index.html>`_
 - `Creating SSM Documents (AWS) <https://docs.aws.amazon.com/systems-manager/latest/userguide/create-ssm-doc.html>`_
 - `Ubuntu Pro on AWS <https://ubuntu.com/aws/pro>`_
-- `Network requirements for Pro ESM repositories <https://github.com/canonical/ubuntu-advantage-client/blob/main/docs/references/network_requirements.md>`_
+- `Network requirements for Pro ESM repositories <https://canonical-ubuntu-pro-client.readthedocs-hosted.com/en/latest/references/network_requirements/>`_
 
