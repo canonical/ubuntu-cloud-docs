@@ -13,7 +13,7 @@ Ubuntu 24.04 LTS - Noble Numbat
 ++++++++++++++++++++++++++++++++++
 
 | Quick start: `24.04 LTS on Azure <https://portal.azure.com/#create/canonical.ubuntu-24_04-ltsserver>`_
-| Quick start (China): `24.04 LTS on Azure China <https://portal.azure.cn/#create/canonical.canonical.ubuntu-24_04-ltsserver>`_
+| Quick start (China): `24.04 LTS on Azure China <https://portal.azure.cn/#create/canonical.ubuntu-24_04-ltsserver>`_
 
 .. list-table::
    :widths: 10 9 50
@@ -85,6 +85,45 @@ Interim releases
 ~~~~~~~~~~~~~~~~
 
 To learn more about the difference between LTS releases and interim releases, see `this page <https://ubuntu.com/about/release-cycle#ubuntu>`_.
+
+Ubuntu 24.10 - Oracular Oriole
+++++++++++++++++++++++++++++++++++
+
+| Quick start: `24.10 on Azure <https://portal.azure.com/#create/canonical.ubuntu-24_10server>`_
+| Quick start (China): `24.10 on Azure China <https://portal.azure.cn/#create/canonical.ubuntu-24_10server>`_
+
+.. list-table::
+   :widths: 10 10 10 70
+   :header-rows: 1
+
+   * - **Flavor**
+     - **Architecture**
+     - **Hyper-V Generation**
+     - **URN**
+   * - Server
+     - AMD64
+     - Gen2
+     - ``Canonical:ubuntu-24_10:server:latest``
+   * - Server
+     - AMD64
+     - Gen1
+     - ``Canonical:ubuntu-24_10:server-gen1:latest``
+   * - Server
+     - Arm64
+     - Gen2
+     - ``Canonical:ubuntu-24_10:server-arm64:latest``
+   * - Minimal
+     - AMD64
+     - Gen2
+     - ``Canonical:ubuntu-24_10:minimal:latest``
+   * - Minimal
+     - AMD64
+     - Gen1
+     - ``Canonical:ubuntu-24_10:minimal-gen1:latest``
+   * - Minimal
+     - Arm64
+     - Gen2
+     - ``Canonical:ubuntu-24_10:minimal-arm64:latest``
 
 
 .. _find-ubuntu-pro-on-azure:
@@ -198,7 +237,7 @@ Ubuntu CVM 24.04 LTS - Noble Numbat
 ++++++++++++++++++++++++++++++++++++++
 
 | Quick start: `Ubuntu CVM 24.04 LTS on Azure <https://portal.azure.com/#create/canonical.ubuntu-24_04-ltscvm>`_
-| Quick start (China): `Ubuntu CVM 24.04 LTS on Azure China <https://portal.azure.cn/#create/canonical.canonical.ubuntu-24_04-ltscvm>`_
+| Quick start (China): `Ubuntu CVM 24.04 LTS on Azure China <https://portal.azure.cn/#create/canonical.ubuntu-24_04-ltscvm>`_
 
 .. list-table::
    :widths: 10 9 50
