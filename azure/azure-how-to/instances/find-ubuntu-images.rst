@@ -13,7 +13,7 @@ Ubuntu 24.04 LTS - Noble Numbat
 ++++++++++++++++++++++++++++++++++
 
 | Quick start: `24.04 LTS on Azure <https://portal.azure.com/#create/canonical.ubuntu-24_04-ltsserver>`_
-| Quick start (China): `24.04 LTS on Azure China <https://portal.azure.cn/#create/canonical.canonical.ubuntu-24_04-ltsserver>`_
+| Quick start (China): `24.04 LTS on Azure China <https://portal.azure.cn/#create/canonical.ubuntu-24_04-ltsserver>`_
 
 .. list-table::
    :widths: 10 9 50
@@ -237,7 +237,7 @@ Ubuntu CVM 24.04 LTS - Noble Numbat
 ++++++++++++++++++++++++++++++++++++++
 
 | Quick start: `Ubuntu CVM 24.04 LTS on Azure <https://portal.azure.com/#create/canonical.ubuntu-24_04-ltscvm>`_
-| Quick start (China): `Ubuntu CVM 24.04 LTS on Azure China <https://portal.azure.cn/#create/canonical.canonical.ubuntu-24_04-ltscvm>`_
+| Quick start (China): `Ubuntu CVM 24.04 LTS on Azure China <https://portal.azure.cn/#create/canonical.ubuntu-24_04-ltscvm>`_
 
 .. list-table::
    :widths: 10 9 50
