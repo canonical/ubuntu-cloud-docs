@@ -34,7 +34,7 @@ The availability of networking plugins (Flannel / VCN Native) depends on the typ
      - Yes
    * - 
      - VCN Native
-     - Yes
+     - No
    * - Self-Managed
      - Flannel
      - Yes
