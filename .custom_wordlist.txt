@@ -205,6 +205,7 @@ OpenSCAP
 OpenShift
 OpenSSH
 openssl
+OpenStack
 OVAs
 OVF
 OwnerId

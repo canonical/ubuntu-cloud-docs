@@ -23,9 +23,9 @@ In this documentation
 .. grid:: 1 1 2 2
    :padding: 0
 
-   .. grid-item:: :doc:`Vagrant - An explanation <public-images-explanation/vagrant>`
+   .. grid-item:: :doc:`Explanation <public-images-explanation/index>`
 
-      **What are Vagrant boxes** and our support status for them.
+      **Discussion and clarification** of key topics related to our Public Images offerings.
 
    .. grid-item:: :doc:`Cloud image artefacts - A reference <public-images-reference/artefacts>`
 
@@ -54,8 +54,8 @@ suggestions, fixes and constructive feedback.
    :maxdepth: 1
 
    public-images-how-to/index
+   public-images-explanation/index
    public-images-reference/artefacts
-   Vagrant - An explanation<public-images-explanation/vagrant>
    public-images-how-to/contribute-to-these-docs
 
 .. _Get support: https://ubuntu.com/cloud/public-cloud
