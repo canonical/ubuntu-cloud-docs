@@ -1,6 +1,8 @@
-Ubuntu cloud image artifacts
+.. _uci-artefacts:
+
+Ubuntu cloud image artefacts
 ============================
-This document provides detailed information on various Ubuntu cloud image artifacts available on `cloud-images.ubuntu.com <https://cloud-images.ubuntu.com/>`_.
+This document provides detailed information on various Ubuntu cloud image artefacts available on `cloud-images.ubuntu.com <https://cloud-images.ubuntu.com/>`_.
 
 Images
 ------
@@ -15,6 +17,8 @@ Architectures supported
 -  **riscv64:** 64-bit RISC-V architecture.
 -  **s390x:** IBM System z (s390x) architecture.
 
+.. _initrd-ref:
+
 Initial ramdisk (initrd)
 ~~~~~~~~~~~~~~~~~~~~~~~~
 .. list-table::
@@ -22,13 +26,15 @@ Initial ramdisk (initrd)
    :header-rows: 0
 
    * - Extension
-     - ``<artifact>-initrd-generic``
+     - ``<artefact>-initrd-generic``
    * - Example filename
      - ``unpacked/noble-server-cloudimg-amd70-initrd-generic``
    * - Format description
      - An initial ramdisk is a temporary root file system loaded into memory during the boot process to initialise the system before the real root file system is mounted.
    * - Use cases
      - Initrds are used to ensure the kernel can boot by loading necessary drivers and modules before the root filesystem is mounted. This allows the support of diverse hardware and virtual environments, making them useful for cloud instance startup. In addition to extra driver support, early boot features such as labels for partition names and root encryption rely on features provided by the initrd.
+
+.. _kernel-image-ref:
 
 Linux kernel image
 ~~~~~~~~~~~~~~~~~~
@@ -37,13 +43,15 @@ Linux kernel image
    :header-rows: 0
 
    * - Extension
-     - ``<artifact>-vmlinuz-generic``
+     - ``<artefact>-vmlinuz-generic``
    * - Example filename
      - ``unpacked/noble-server-cloudimg-amd64-vmlinuz-generic``
    * - Format description
      - The vmlinuz image contains a compressed image of the Linux kernel.
    * - Use cases
      - The Linux kernel is the core component of the operating system. It handles essential functions such as process management, memory management and system calls. Kernel images may be customised for specific hardware configurations, leading to offerings for each supported architecture.
+
+.. _lxd-tarball-ref:
 
 LXD tarball
 ~~~~~~~~~~~
@@ -52,15 +60,15 @@ LXD tarball
    :header-rows: 0
 
    * - Extension
-     - ``<artifact>.lxd.tar.xz``
+     - ``<artefact>.lxd.tar.xz``
    * - Example filename
      - ``noble-server-cloudimg-amd64-lxd.tar.xz``
    * - Format description
      - Tar archive compressed with XZ (LZMA2), containing an image suitable for LXD container deployment.
    * - Use cases
-     - These files are specifically formatted for LXD, a system container manager. They contain LXD metadata and when combined with :ref:`root tarballs <root_tarball>` (``-root.tar.xz``) can be used to instantiate LXD containers. You can use ``.lxd.tar.xz`` files to help create isolated environments with specific configurations and applications, ensuring consistent container deployments across LXD hosts.
+     - These files are specifically formatted for LXD, a system container manager. They contain LXD metadata and when combined with :ref:`root tarballs <root-tarball-ref>` (``-root.tar.xz``) can be used to instantiate LXD containers. You can use ``.lxd.tar.xz`` files to help create isolated environments with specific configurations and applications, ensuring consistent container deployments across LXD hosts.
 
-.. _ova:
+.. _ova-ref:
 
 Open Virtual Appliance (OVA)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -76,6 +84,8 @@ Open Virtual Appliance (OVA)
      - An OVA is a single file distribution of an Open Virtualisation Format (OVF) package.
    * - Use cases
      - OVA files encapsulate an entire virtual machine setup including configuration, disk images and other metadata. They are used for easy deployment of virtual appliances across different virtualisation providers such as VirtualBox or VMware. You can import an ``.ova`` file into VirtualBox to quickly deploy a pre-configured virtual machine. See our how-to guide :ref:`run-an-ova-using-virtualbox` for more information.
+
+.. _qcow-ref:
 
 QEMU Copy On Write (QCOW)
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -97,7 +107,7 @@ QEMU Copy On Write (QCOW)
 
        Refer to :ref:`qcow-qemu` for instructions on using QCOW images with QEMU.
 
-.. _root_tarball:
+.. _root-tarball-ref:
 
 Root tarball
 ~~~~~~~~~~~~
@@ -106,13 +116,15 @@ Root tarball
    :header-rows: 0
 
    * - Extension
-     - ``<artifact>-root.tar.xz``
+     - ``<artefact>-root.tar.xz``
    * - Example filename
      - ``noble-server-cloudimg-amd64-root.tar.xz``
    * - Format description
      - Tar archive compressed with XZ (LZMA2), containing a root file system for various architectures.
    * - Use cases
      - These files are used for deploying base system images in virtual machines and containers. You can use ``.root.tar.xz`` files to distribute pre-configured root file systems that can be deployed directly into virtual machines or container runtimes like Docker or Kubernetes.
+
+.. _squashfs-ref:
 
 SquashFS
 ~~~~~~~~
@@ -129,6 +141,8 @@ SquashFS
    * - Use cases
      - SquashFS files are used for embedding file systems in read-only environments, often in embedded systems or live CDs. In cloud environments, they are used for distributing lightweight operating system images that are ready to use. You can use a ``.squashfs`` file containing a minimal Linux distribution to create container images that boot quickly and require minimal storage space.
 
+.. _tarball-ref:
+
 Tarball (gzip)
 ~~~~~~~~~~~~~~
 .. list-table::
@@ -136,13 +150,15 @@ Tarball (gzip)
    :header-rows: 0
 
    * - Extension
-     - ``<artifact>.tar.gz``
+     - ``<artefact>.tar.gz``
    * - Example filename
      - ``noble-server-cloudimg-amd64.tar.gz``
    * - Format description
      - ``.tar.gz`` is an archive format, often called a tarball, that combines files into a single file and compresses it using ``gzip`` compression.
    * - Use cases
      - Our ``.tar.gz`` archives are used to distribute complete file system images along with the kernel for various operating systems and virtualisation platforms. They allow extraction and booting of the entire system on compatible hardware or virtual machines.
+
+.. _vagrant-box-ref:
 
 Vagrant box
 ~~~~~~~~~~~
@@ -158,6 +174,8 @@ Vagrant box
      - The Vagrant box format is used to package and distribute virtual machine environments managed by Vagrant.
    * - Use cases
      - These files contain a virtual machine image along with metadata required for Vagrant. Vagrant simplifies the creation and provisioning of virtual environments, making it easier to manage and share development environments across different systems. You can use a ``.box`` file along with a supported provider to quickly set up environments with specific configurations, tools and dependencies. All Vagrant boxes are provider specific, with our boxes having been built for VirtualBox.
+
+.. _vhd-ref:
 
 Virtual Hard Disk (VHD)
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -182,7 +200,7 @@ Other files
 This section includes information on checksums, GPG signatures, changelogs and manifest files. These files help verify the integrity and authenticity of the images, provide details on changes between versions and list all included packages.
 
 .. note::
-  On Ubuntu systems, the public keys for Ubuntu cloud images are present in ``/usr/share/keyrings/ubuntu-cloudimage-keyring.gpg``. You can use this keyring to verify GPG signatures and checksums of downloaded artifacts with a command such as ``gpg --verify --keyring /usr/share/keyrings/ubuntu-cloudimage-keyring.gpg SHA256SUMS.gpg SHA256SUMS && sha256sum -c SHA256SUMS``.
+  On Ubuntu systems, the public keys for Ubuntu cloud images are present in ``/usr/share/keyrings/ubuntu-cloudimage-keyring.gpg``. You can use this keyring to verify GPG signatures and checksums of downloaded artefacts with a command such as ``gpg --verify --keyring /usr/share/keyrings/ubuntu-cloudimage-keyring.gpg SHA256SUMS.gpg SHA256SUMS && sha256sum -c SHA256SUMS``.
 
 Changelogs
 ~~~~~~~~~~
@@ -450,7 +468,7 @@ Checksums
    :header-rows: 0
 
    * - Extension
-     - ``<artifact>SUMS``
+     - ``<artefact>SUMS``
    * - Example filename
      - ``MD5SUMS``, ``SHA256SUMS``
    * - Format description
