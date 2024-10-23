@@ -1,6 +1,6 @@
-Ubuntu cloud image artifacts
+Ubuntu cloud image artefacts
 ============================
-This document provides detailed information on various Ubuntu cloud image artifacts available on `cloud-images.ubuntu.com <https://cloud-images.ubuntu.com/>`_.
+This document provides detailed information on various Ubuntu cloud image artefacts available on `cloud-images.ubuntu.com <https://cloud-images.ubuntu.com/>`_.
 
 Images
 ------
@@ -22,7 +22,7 @@ Initial ramdisk (initrd)
    :header-rows: 0
 
    * - Extension
-     - ``<artifact>-initrd-generic``
+     - ``<artefact>-initrd-generic``
    * - Example filename
      - ``unpacked/noble-server-cloudimg-amd70-initrd-generic``
    * - Format description
@@ -37,7 +37,7 @@ Linux kernel image
    :header-rows: 0
 
    * - Extension
-     - ``<artifact>-vmlinuz-generic``
+     - ``<artefact>-vmlinuz-generic``
    * - Example filename
      - ``unpacked/noble-server-cloudimg-amd64-vmlinuz-generic``
    * - Format description
@@ -52,7 +52,7 @@ LXD tarball
    :header-rows: 0
 
    * - Extension
-     - ``<artifact>.lxd.tar.xz``
+     - ``<artefact>.lxd.tar.xz``
    * - Example filename
      - ``noble-server-cloudimg-amd64-lxd.tar.xz``
    * - Format description
@@ -106,7 +106,7 @@ Root tarball
    :header-rows: 0
 
    * - Extension
-     - ``<artifact>-root.tar.xz``
+     - ``<artefact>-root.tar.xz``
    * - Example filename
      - ``noble-server-cloudimg-amd64-root.tar.xz``
    * - Format description
@@ -136,7 +136,7 @@ Tarball (gzip)
    :header-rows: 0
 
    * - Extension
-     - ``<artifact>.tar.gz``
+     - ``<artefact>.tar.gz``
    * - Example filename
      - ``noble-server-cloudimg-amd64.tar.gz``
    * - Format description
@@ -182,7 +182,7 @@ Other files
 This section includes information on checksums, GPG signatures, changelogs and manifest files. These files help verify the integrity and authenticity of the images, provide details on changes between versions and list all included packages.
 
 .. note::
-  On Ubuntu systems, the public keys for Ubuntu cloud images are present in ``/usr/share/keyrings/ubuntu-cloudimage-keyring.gpg``. You can use this keyring to verify GPG signatures and checksums of downloaded artifacts with a command such as ``gpg --verify --keyring /usr/share/keyrings/ubuntu-cloudimage-keyring.gpg SHA256SUMS.gpg SHA256SUMS && sha256sum -c SHA256SUMS``.
+  On Ubuntu systems, the public keys for Ubuntu cloud images are present in ``/usr/share/keyrings/ubuntu-cloudimage-keyring.gpg``. You can use this keyring to verify GPG signatures and checksums of downloaded artefacts with a command such as ``gpg --verify --keyring /usr/share/keyrings/ubuntu-cloudimage-keyring.gpg SHA256SUMS.gpg SHA256SUMS && sha256sum -c SHA256SUMS``.
 
 Changelogs
 ~~~~~~~~~~
@@ -450,7 +450,7 @@ Checksums
    :header-rows: 0
 
    * - Extension
-     - ``<artifact>SUMS``
+     - ``<artefact>SUMS``
    * - Example filename
      - ``MD5SUMS``, ``SHA256SUMS``
    * - Format description

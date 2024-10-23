@@ -21,7 +21,7 @@ Since we are dealing with cloud images here, we'll need a cloud-init user-data f
 Find and download an image
 --------------------------
 
-Ubuntu cloud images are hosted on https://cloud-images.ubuntu.com/. Refer to :doc:`../public-images-reference/artifacts` for a description of the various image types found there.
+Ubuntu cloud images are hosted on https://cloud-images.ubuntu.com/. Refer to :doc:`../public-images-reference/artefacts` for a description of the various image types found there.
 
 QCOW images (``.img``) are suitable for use with libvirt and the QEMU driver. Once you have identified a suitable image, download it. For example, the following would download the current daily Ubuntu 24.04 (noble) image for amd64 machines:
 

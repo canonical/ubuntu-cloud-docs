@@ -153,7 +153,7 @@ The steps needed for deploying the cluster depend on whether you need to enable 
 
             ==> Wait completed after 9 minutes 35 seconds
 
-            ==> Builds finished. The artifacts of successful builds are:
+            ==> Builds finished. The artefacts of successful builds are:
             --> amazon-ebs: amis were created:
             us-east-1: ami-xxxxxxxx
 

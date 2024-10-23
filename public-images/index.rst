@@ -27,9 +27,9 @@ In this documentation
 
       **What are Vagrant boxes** and our support status for them.
 
-   .. grid-item:: :doc:`Cloud image artifacts - A reference <public-images-reference/artifacts>`
+   .. grid-item:: :doc:`Cloud image artefacts - A reference <public-images-reference/artefacts>`
 
-      **Reference guide** for the artifacts found on `cloud-images.ubuntu.com`_.
+      **Reference guide** for the artefacts found on `cloud-images.ubuntu.com`_.
 
 
 
@@ -54,7 +54,7 @@ suggestions, fixes and constructive feedback.
    :maxdepth: 1
 
    public-images-how-to/index
-   public-images-reference/artifacts
+   public-images-reference/artefacts
    Vagrant - An explanation<public-images-explanation/vagrant>
    public-images-how-to/contribute-to-these-docs
 

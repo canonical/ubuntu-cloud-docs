@@ -18,7 +18,6 @@ Anbox
 Ansible
 Anthos
 armhf
-artifacts
 ASIC
 Authorize
 aws
