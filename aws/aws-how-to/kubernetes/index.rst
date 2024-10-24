@@ -2,13 +2,14 @@ Using EKS
 =========
 
 
-**How-to guides for using Ubuntu Pro on EKS** - If you want Ubuntu Pro on your EKS worker nodes, you have two options:
+**How-to guides for using Ubuntu on EKS** - If you want to use Ubuntu on your EKS worker nodes, choose from one of the following deployment options:
 
-* Use Pro AMI - The Ubuntu Pro 22.04 LTS AMI is available through :doc:`AWS CLI<../../aws-how-to/instances/find-ubuntu-images>` or from the `AWS marketplace`_. Use that and follow the instructions from:
-   * :doc:`Deploy a Pro cluster using AMI <deploy-ubuntu-pro-cluster-with-eks-pro-ami>` or
-   * :doc:`Deploy a Pro FIPS cluster using AMI <deploy-ubuntu-pro-fips-cluster>`
+* Use an Ubuntu AMI - Ubuntu EKS AMIs are available through :doc:`AWS CLI<../../aws-how-to/instances/find-ubuntu-images>` or from the `AWS marketplace`_. They can be used to:
+   * :doc:`Deploy an Ubuntu EKS cluster <deploy-ubuntu-cluster-with-eks-ami>`
+   * :doc:`Deploy an Ubuntu Pro cluster <deploy-ubuntu-pro-cluster-with-eks-pro-ami>`
+   * :doc:`Deploy an Ubuntu Pro FIPS cluster <deploy-ubuntu-pro-fips-cluster>`
 
-* Use Pro token - For Ubuntu Pro 20.04 LTS, use your Pro token obtained from Canonical, and follow the instructions given in:
+* Use a Pro token - If you want to create an EKS cluster using your Pro token obtained from Canonical, follow the instructions given in:
    * :doc:`Deploy a Pro cluster (with / without FIPS) using tokens  <deploy-ubuntu-pro-cluster>`
 
 **Other EKS related how-to guides**
@@ -21,7 +22,8 @@ Using EKS
    :hidden:
    :maxdepth: 1
    
-   Deploy Pro cluster using AMI <deploy-ubuntu-pro-cluster-with-eks-pro-ami>
-   Deploy Pro FIPS cluster using AMI <deploy-ubuntu-pro-fips-cluster>
-   Deploy Pro cluster using tokens <deploy-ubuntu-pro-cluster>
+   Deploy an Ubuntu cluster <deploy-ubuntu-cluster-with-eks-ami>
+   Deploy an Ubuntu Pro cluster <deploy-ubuntu-pro-cluster-with-eks-pro-ami>
+   Deploy an Ubuntu Pro FIPS cluster <deploy-ubuntu-pro-fips-cluster>
+   Deploy an Ubuntu Pro cluster using tokens <deploy-ubuntu-pro-cluster>
    Enable GPUs on EKS <enable-gpus-on-eks>
