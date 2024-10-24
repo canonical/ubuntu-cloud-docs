@@ -2,10 +2,11 @@ Using EKS
 =========
 
 
-**How-to guides for using Ubuntu Pro on EKS** - If you want Ubuntu Pro on your EKS worker nodes, you have two options:
+**How-to guides for using Ubuntu on EKS** - If you want Ubuntu on your EKS worker nodes, choose one of options below depending on your requirements:
 
-* Use Pro AMI - The Ubuntu Pro 22.04 LTS AMI is available through :doc:`AWS CLI<../../aws-how-to/instances/find-ubuntu-images>` or from the `AWS marketplace`_. Use that and follow the instructions from:
-   * :doc:`Deploy a Pro cluster using AMI <deploy-ubuntu-pro-cluster-with-eks-pro-ami>` or
+* Use Ubuntu AMI - Ubuntu EKS AMI is available through :doc:`AWS CLI<../../aws-how-to/instances/find-ubuntu-images>` or from the `AWS marketplace`_. Use that and follow the instructions from:
+   * :doc:`Deploy an Ubuntu EKS cluster <deploy-ubuntu-cluster-with-eks-ami>`
+   * :doc:`Deploy a Pro cluster using AMI <deploy-ubuntu-pro-cluster-with-eks-pro-ami>`
    * :doc:`Deploy a Pro FIPS cluster using AMI <deploy-ubuntu-pro-fips-cluster>`
 
 * Use Pro token - For Ubuntu Pro 20.04 LTS, use your Pro token obtained from Canonical, and follow the instructions given in:
@@ -21,6 +22,7 @@ Using EKS
    :hidden:
    :maxdepth: 1
    
+   Deploy an Ubuntu EKS cluster <deploy-ubuntu-cluster-with-eks-ami>
    Deploy Pro cluster using AMI <deploy-ubuntu-pro-cluster-with-eks-pro-ami>
    Deploy Pro FIPS cluster using AMI <deploy-ubuntu-pro-fips-cluster>
    Deploy Pro cluster using tokens <deploy-ubuntu-pro-cluster>

@@ -28,6 +28,7 @@ EKS - Using Ubuntu Pro and GPUs on EKS
 
 If you want to use Ubuntu Pro and enable GPUs on Amazon's EKS service, you can refer to these instructions.
 
+* :doc:`Deploy an Ubuntu EKS cluster <kubernetes/deploy-ubuntu-cluster-with-eks-ami>`
 * :doc:`Deploy a Pro cluster using AMI <kubernetes/deploy-ubuntu-pro-cluster-with-eks-pro-ami>`
 * :doc:`Deploy a Pro FIPS cluster using AMI <kubernetes/deploy-ubuntu-pro-fips-cluster>`
 * :doc:`Deploy a Pro cluster (with / without FIPS) using tokens <kubernetes/deploy-ubuntu-pro-cluster>`
