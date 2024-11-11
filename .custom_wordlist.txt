@@ -44,6 +44,7 @@ cloudimg
 CloudSigma
 CNCF
 config
+CPC
 CPUs
 cron
 cryptographic
@@ -240,6 +241,7 @@ runtimes
 rustc
 rustup
 RSA
+SaaS
 scalability
 SDK
 SeaBIOS
