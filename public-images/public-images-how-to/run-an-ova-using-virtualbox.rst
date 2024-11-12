@@ -3,7 +3,7 @@
 Run an OVA using VirtualBox
 ===========================
 
-An :ref:`ova` is a single file package that allows for easy distribution and
+An :ref:`ova-ref` is a single file package that allows for easy distribution and
 setup of virtual machines (VMs). `VirtualBox <https://www.virtualbox.org/>`__ is an open source
 virtualisation platform that allows you to use OVA files to create and
 manage VMs. This guide will cover how to acquire an OVA file,
