@@ -27,7 +27,7 @@ Ubuntu Pro offers compliance options for users that need to apply
 CIS (level 1 and 2) or FIPS hardening. FIPS is currently supported
 on Ubuntu 18.04 and 20.04. For 22.04, it is currently available through the
 `fips-preview` and `fips-updates` repositories provided through the 
-FIPS pro entitlement, but these modules are not yet certified.
+FIPS pro entitlement, but these modules are not yet approved by NIST.
 
 Ubuntu Landscape
 ~~~~~~~~~~~~~~~~
