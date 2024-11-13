@@ -8,7 +8,7 @@ Amazon receive the following features through Pro.
 Expanded Security Maintenance (ESM)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 `ESM`_ extends the security patching of
-the main archive to 10 years through the `esm-infra` entitlement. In addition
+the main archive to 10 years through the ``esm-infra`` entitlement. In addition
 to patching the core of Ubuntu (i.e. the `Ubuntu main` repository), Pro also offers security maintenance of the 
 `Ubuntu universe` repository. This security coverage is considered best effort
 without Ubuntu Pro.
@@ -32,7 +32,7 @@ FIPS pro entitlement, but these modules are not yet certified.
 Ubuntu Landscape
 ~~~~~~~~~~~~~~~~
 All Ubuntu Pro customers are entitled to the usage of 
-`Landscape <https://ubuntu.com/landscape>_` self-hosted and SaaS solutions.
+`Landscape`_ self-hosted and SaaS solutions.
 Landscape is an endpoint management solution for monitoring your Ubuntu
 estate. This includes alerting for security vulnerabilities, patching status,
 managing repository mirrors, and more. To sign up for Landscape SaaS see
