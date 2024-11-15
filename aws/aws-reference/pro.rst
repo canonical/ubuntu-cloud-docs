@@ -5,6 +5,20 @@ provides expanded security coverage, enhanced kernel patching, and
 hardening options for compliance frameworks. All Ubuntu Pro images on 
 Amazon receive the following features through Pro.
 
+Pro product availability on AWS
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Pro is available for the following products.
+
+* Base server products
+* EKS worker images 
+* `Amazon WorkSpaces`_
+
+For launching server and EKS pro products, refer to 
+:doc:`../aws-how-to/instances/launch-ubuntu-ec2-instance`
+
+Feature overview
+================
+
 Expanded Security Maintenance (ESM)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 `ESM`_ extends the security patching of
@@ -43,3 +57,4 @@ the `sign up page`_.
 .. _`Livepatch`: https://ubuntu.com/security/livepatch
 .. _`Landscape`: https://ubuntu.com/landscape
 .. _`sign up page`: https://landscape.canonical.com/signup
+.. _`Amazon WorkSpaces`: https://ubuntu.com/aws/workspaces

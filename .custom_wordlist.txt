@@ -324,7 +324,7 @@ VPCs
 VSI
 vTPM
 workspaces
-Workspaces
+WorkSpaces
 xenial
 Xeon
 XZ
