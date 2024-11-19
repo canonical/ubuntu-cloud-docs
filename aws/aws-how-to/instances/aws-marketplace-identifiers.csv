@@ -13,8 +13,8 @@ Minimal Ubuntu 22.10,amd64,``prod-k62pbab6qb6ws``,✓
 Minimal Ubuntu 22.10,arm64,``prod-haniqpk5itina``,✓
 Ubuntu 24.04 LTS,amd64,``prod-ib2w5aw4ynhey``,✓
 Ubuntu 24.04 LTS,arm64,``prod-uovi4c667gqya``,✓
-Minimal Ubuntu 24.04,amd64,``prod-u7oazfncxktmo``,✓
-Minimal Ubuntu 24.04,arm64,``prod-umggziwlkgulc``,✓
+Minimal Ubuntu 24.04 LTS,amd64,``prod-u7oazfncxktmo``,✓
+Minimal Ubuntu 24.04 LTS,arm64,``prod-umggziwlkgulc``,✓
 Ubuntu Pro FIPS 16.04 LTS,amd64,``prod-hykkbajyverq4``,✓
 Ubuntu Pro FIPS 18.04 LTS,amd64,``prod-7izp2xqnddwdc``,✓
 Ubuntu Pro FIPS 20.04 LTS,amd64,``prod-k6fgbnayirmrc``,✓
