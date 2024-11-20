@@ -34,7 +34,7 @@ Images for EC2 and EKS
 
          ubuntu/$PRODUCT/$RELEASE/stable/current/$ARCH/$VIRT_TYPE/$VOL_TYPE/ami-id
 
-      * PRODUCT: `server`, `server-minimal` or `pro-server`
+      * PRODUCT: `server`, `server-minimal`, `pro-server` or `pro-minimal`
       * RELEASE: `jammy`, `22.04`, `focal`, `20.04`, `bionic`, `18.04`, `xenial`, or `16.04`
       * ARCH: `amd64` or `arm64`
       * VIRT_TYPE: `pv` or `hvm`
