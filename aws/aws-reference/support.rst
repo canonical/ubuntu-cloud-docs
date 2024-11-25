@@ -9,17 +9,17 @@ more details.
 
 Canonical support
 -----------------
-Purchasing Pro through the AWS provides a convenient mechanism for getting access to the above features
+Purchasing Pro through AWS provides a convenient mechanism for getting access to the above features
 using a unified billing portal. However, Ubuntu pro images published under the
 `Canonical Group Limited marketplace`_
-account or launched through to the EC2 console does not include phone support. 
+account or launched through the EC2 console does not include phone support. 
 If you would like to receive 24/5 or 24/7 phone support you can do so with the following options.
 
 * Private offers for marketplace listings
 * Ubuntu Pro tokens
 
-Ubuntu Pro tokens can not be purchased through unified billing, but it offers flexibility in where
-you deploy Pro. For instance, it can be used to provide Pro entitlements on on premise or hybrid
+Ubuntu Pro tokens cannot be purchased through unified billing, but it offers flexibility in where
+you deploy Pro. For instance, it can be used to provide Pro entitlements on on-premise or hybrid
 cloud deployments.
 
 To purchase phone support please reach out to aws@canonical.com.
