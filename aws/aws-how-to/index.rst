@@ -20,7 +20,7 @@ While using Ubuntu on AWS, you'll need to perform tasks such as launching an ins
 * :doc:`Upgrade from Focal to Jammy <instances/upgrade-from-focal-to-jammy>`
 * :doc:`Configure automated updates <instances/automatically-update-ubuntu-instances>`
 * :doc:`Deploy Charmed Kubernetes <instances/deploy-charmed-kubernetes-on-ubuntu-pro>`
-
+* :doc:`Canonical Data Science Stack on EC2 <instances/data-science-stack-on-ec2>`
 
 
 EKS - Using Ubuntu Pro and GPUs on EKS
