@@ -30,7 +30,7 @@ Performing upgrades and automating them:
 Deploying Canonical Products:
 
 * :doc:`Deploy Charmed Kubernetes <deploy-charmed-kubernetes-on-ubuntu-pro>`
-* :doc:`Canonical Data Science Stack on EC2 <data-science-stack-on-ec2>`
+* :doc:`Deploy Canonical Data Science Stack <data-science-stack-on-ec2>`
 
 
 .. toctree::
@@ -50,5 +50,5 @@ Deploying Canonical Products:
    Upgrade to Ubuntu Pro at scale using tokens with SSM <upgrade-to-ubuntu-pro-at-scale-using-tokens-with-ssm>
    Configure automated updates <automatically-update-ubuntu-instances>
    Deploy Charmed Kubernetes <deploy-charmed-kubernetes-on-ubuntu-pro>
-   Canonical Data Science Stack on EC2 <data-science-stack-on-ec2>
+   Deploy Data Science Stack <data-science-stack-on-ec2>
 

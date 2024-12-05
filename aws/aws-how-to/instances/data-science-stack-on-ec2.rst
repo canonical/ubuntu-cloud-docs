@@ -1,8 +1,8 @@
-Canonical Data Science Stack on EC2 using a GPU-enabled instance type
+Deploy Canonical Data Science Stack on EC2 using a GPU-enabled instance type
 =======================================================================
 
 
-Canonical Data Science Stack is a command line interface-based tool that bundles Jupyter Notebooks, MLflow and frameworks like PyTorch and TensorFlow on top of an orchestration layer, making this product excellent for rapid testing, prototyping and doing ML at a small scale. 
+Canonical Data Science Stack (DSS) is a command line interface-based tool that bundles Jupyter Notebooks, MLflow and frameworks like PyTorch and TensorFlow on top of an orchestration layer, making this product excellent for rapid testing, prototyping and doing ML at a small scale. 
 
 While this is a product intended for desktop machine learning users, you can also deploy it on EC2 following these instructions.
 
@@ -14,9 +14,9 @@ Launch a GPU-EC2 instance (G4DN instance family)
 ------------------------------------------------
 
 
-Navigate to the EC2 Web console, select Launch Instance and make sure you select either Ubuntu 22.04 or 24.04 LTS (free or Pro), and any G4DN instance type family.
+Navigate to the EC2 Web console, select :guilabel:`Launch instance` and make sure you select either Ubuntu 22.04 or 24.04 LTS (free or Pro), and any G4DN instance type family.
 
-For this example, we are using 22.04 on ``g4dn.xlarge``, which has 4 vCPUs and 16 GiB of RAM. It is powered with an NVIDIA T4 GPU.
+For this example, we are using 22.04 on ``g4dn.xlarge``, which has 4 vCPUs and 16 GB of RAM. It is powered with an NVIDIA T4 GPU.
 
 Make a note of the machine IP and the Key-Pair used. You’ll need it for connecting to the machine.
 
@@ -109,9 +109,9 @@ Create your first Jupyter Notebook:
     dss create my-tensorflow-notebook --image=kubeflownotebookswg/jupyter-tensorflow-cuda:v1.8.0
 
 
-DSS will deploy Jupyter Notebooks with Tensorflow and with CUDA enabled. It’ll use a ``clusterIP`` from the MicroK8s cluster, which will only be accessible from inside the machine for the moment.
+DSS will deploy Jupyter Notebooks with TensorFlow and with CUDA enabled. It’ll use a ``clusterIP`` from the MicroK8s cluster, which will only be accessible from inside the machine for the moment.
 
-To allow outside access, change the deployment to use a ``Nodeport`` instead of a ``clusterIP`` and reconnect using a SSH tunnel:
+To allow outside access, change the deployment to use a ``Nodeport`` instead of a ``clusterIP`` and reconnect using an SSH tunnel:
 
 
 .. code::
@@ -136,7 +136,7 @@ Open a new connection to create the tunnel to the deployment port. You can close
 Open your browser with the address ``localhost:30633`` and start using your freshly deployed Jupyter Notebook with CUDA enabled.
 
 .. note::
-    Note: If you want to create more Jupyter Notebook deployments, you will need to create additional tunnels for the new ports too.
+    If you want to create more Jupyter Notebook deployments, you'll have to create additional tunnels on new ports.
 
 
 
