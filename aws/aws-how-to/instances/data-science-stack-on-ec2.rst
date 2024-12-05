@@ -8,7 +8,7 @@ While this is a product intended for desktop machine learning users, you can als
 
 We are using a G4DN instance type to leverage the GPU, required for machine learning training and inference.
 
-Learn more about Canonical Data Science Stack in our `press release post`_.
+Learn more about Canonical Data Science Stack in our `press release post`_ and our `official documentation`_.
 
 Launch a GPU-EC2 instance (G4DN instance family)
 ------------------------------------------------
@@ -141,4 +141,5 @@ Open your browser with the address ``localhost:30633`` and start using your fres
 
 
 .. _`press release post`: https://canonical.com/blog/data-science-stack-release
+.. _`official documentation`: https://documentation.ubuntu.com/data-science-stack/en/latest/
 
