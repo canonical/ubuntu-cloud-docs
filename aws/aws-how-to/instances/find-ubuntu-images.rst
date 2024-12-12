@@ -26,7 +26,7 @@ Images for EC2 and EKS
       .. code-block::
 
          aws ssm get-parameters --names \
-            /aws/service/canonical/ubuntu/server/20.04/stable/current/amd64/hvm/ebs-gp2/ami-id
+            /aws/service/canonical/ubuntu/server/24.04/stable/current/amd64/hvm/ebs-gp3/ami-id
 
       The format for the parameter is:
 
@@ -35,7 +35,7 @@ Images for EC2 and EKS
          ubuntu/$PRODUCT/$RELEASE/stable/current/$ARCH/$VIRT_TYPE/$VOL_TYPE/ami-id
 
       * PRODUCT: `server`, `server-minimal`, `pro-server` or `pro-minimal`
-      * RELEASE: `jammy`, `22.04`, `focal`, `20.04`, `bionic`, `18.04`, `xenial`, or `16.04`
+      * RELEASE: `noble`, 24.04, `jammy`, `22.04`, `focal`, `20.04`
       * ARCH: `amd64` or `arm64`
       * VIRT_TYPE: `pv` or `hvm`
       * VOL_TYPE: `ebs-gp3` (for >=23.10), `ebs-gp2` (for <=23.04), `ebs-io1`, `ebs-standard`, or `instance-store`
@@ -53,7 +53,7 @@ Images for EC2 and EKS
 
       .. code-block::
 
-         aws ssm get-parameters --names /aws/service/canonical/ubuntu/eks/22.04/1.29/stable/current/amd64/hvm/ebs-gp2/ami-id
+         aws ssm get-parameters --names /aws/service/canonical/ubuntu/eks/22.04/1.31/stable/current/amd64/hvm/ebs-gp2/ami-id
 
       The format for the parameter is:
 
@@ -63,7 +63,7 @@ Images for EC2 and EKS
 
       * EKS_PRODUCT: `eks` or `eks-pro`
       * RELEASE: `jammy`, `22.04` (for EKS 1.29 or greater, or EKS Pro); `focal`, `20.04` (for EKS <= 1.29)
-      * K8S_VERSION: one of the supported EKS versions (e.g. `1.28`)
+      * K8S_VERSION: one of the supported EKS versions (e.g. `1.31`)
       * ARCH: `amd64` or `arm64`
 
 In the generated output, the "Value" field will have the required AMI ID. It can be used to instantiate the corresponding image using the ``ec2 run-instances`` command as explained :ref:`here <instantiate-image-on-ec2>`. 
@@ -73,7 +73,7 @@ If you don't want to save the AMI ID before instantiating the image, you can use
 .. code::
 
    aws ec2 run-instances \
-      --image-id resolve:ssm:/aws/service/canonical/ubuntu/server/20.04/stable/current/amd64/hvm/ebs-gp2/ami-id \
+      --image-id resolve:ssm:/aws/service/canonical/ubuntu/server/24.04/stable/current/amd64/hvm/ebs-gp3/ami-id \
       --key-name TestKeyPair \
       --instance-type t3.medium
 
