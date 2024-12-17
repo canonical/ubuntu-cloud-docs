@@ -1,8 +1,8 @@
-Importing a local Ubuntu VM to AWS
+Import a local Ubuntu VM into AWS
 ==================================
 
-This document will guide you to import local virtual machines to AWS.
-Please refer to the official `AWS Documentation`_ for more details. 
+This document will guide you to import local virtual machines (VMs) to AWS.
+Please refer to the official `AWS Documentation: Import your VM as an image`_ for more details. 
 
 Requirements
 ------------
@@ -60,7 +60,7 @@ Import the VM
         aws ec2 import-image --description "My imported ubuntu server VM" --disk-containers "file://containers.json" --profile default --region us-east-1
 
 
-This command will return a task ID (``ImportTaskId``), which can be used to check its status. The task itself will take some time since it will import, convert, launch, and create an ami.
+This command will return a task ID (``ImportTaskId``), which can be used to check its status. The task itself will take some time since it will import, convert, launch, and create an AMI.
 
 You can check the status with: 
 
@@ -105,7 +105,7 @@ Install the aws kernel:
 Restart the machine.
 
 
-(Optional) Install ssm agent and other tools
+(Optional) Install SSM agent and other tools
 --------------------------------------------
 
 .. code::
@@ -131,7 +131,7 @@ Your machine is now ready. You can either continue using this VM as a normal EC2
 
 
 
-.. _`AWS documentation`: https://docs.aws.amazon.com/vm-import/latest/userguide/import-vm-image.html
+.. _`AWS documentation: Import your VM as an image`: https://docs.aws.amazon.com/vm-import/latest/userguide/import-vm-image.html
 .. _`official documentation`: https://documentation.ubuntu.com/aws/en/latest/aws-how-to/instances/launch-ubuntu-ec2-instance/#launch-the-instance
 
 

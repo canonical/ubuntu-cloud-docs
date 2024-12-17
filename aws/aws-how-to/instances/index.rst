@@ -14,7 +14,7 @@ Creating AMIs and CloudFormation templates:
 
 * :doc:`Build an Ubuntu Pro AMI using Packer <build-pro-ami-using-packer>`
 * :doc:`Create CloudFormation templates <build-cloudformation-templates>`
-* :doc:`Importing a local Ubuntu VM to AWS <import-local-vm-to-aws>`
+* :doc:`Import a local Ubuntu VM into AWS <import-local-vm-to-aws>`
 
 Installing custom drivers and configuring network cards:
 
@@ -52,5 +52,5 @@ Deploying Canonical Products:
    Configure automated updates <automatically-update-ubuntu-instances>
    Deploy Charmed Kubernetes <deploy-charmed-kubernetes-on-ubuntu-pro>
    Deploy Data Science Stack <data-science-stack-on-ec2>
-   Importing a local Ubuntu VM to AWS <import-local-vm-to-aws>
+   Import a local Ubuntu VM <import-local-vm-to-aws>
 
