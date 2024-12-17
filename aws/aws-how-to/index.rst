@@ -21,6 +21,7 @@ While using Ubuntu on AWS, you'll need to perform tasks such as launching an ins
 * :doc:`Configure automated updates <instances/automatically-update-ubuntu-instances>`
 * :doc:`Deploy Charmed Kubernetes <instances/deploy-charmed-kubernetes-on-ubuntu-pro>`
 * :doc:`Deploy Canonical Data Science Stack <instances/data-science-stack-on-ec2>`
+* :doc:`Import a local Ubuntu VM into AWS <instances/import-local-vm-to-aws>`
 
 
 EKS - Using Ubuntu Pro and GPUs on EKS
