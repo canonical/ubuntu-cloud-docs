@@ -57,4 +57,4 @@ Jupyter
 MLflow
 PuTTy
 WSL
-OVM
+OVA
