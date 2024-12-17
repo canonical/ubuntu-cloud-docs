@@ -44,10 +44,10 @@ Create an IAM role for the VM import process
 --------------------------------------------
 
 
-Go to IAM, create a role called ``vmimport`` and get the access key, as decribed in the official `AWS documentation: Required IAM roles`_
+Go to IAM, create a role called ``vmimport`` and get the access key, as described in the official `AWS documentation: Required IAM roles`_
 
 
-In the process of creating the IAM role, you will create two files: ``role-policy.json`` and ``trust-policy.json``, as described in the AWS documentation. While ``trust-policy.json`` is used in the role creation process, ``role-policy.json`` will be used to create a policy allowing this role to read objects from the source S3 bucket and upload to the export S3 bucket.
+In the process of creating the IAM role, you will create two files: ``role-policy.json`` and ``trust-policy.json``. While ``trust-policy.json`` is used in the role creation process, ``role-policy.json`` will be used to create a policy allowing this role to read objects from the source S3 bucket and upload to the export S3 bucket.
 
 
 
