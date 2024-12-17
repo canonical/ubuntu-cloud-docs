@@ -18,7 +18,7 @@ Requirements
     
 
 
-Upload your OVM machine image to S3
+Upload your OVA machine image to S3
 -----------------------------------
 
 
