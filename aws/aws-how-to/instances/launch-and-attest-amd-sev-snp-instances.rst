@@ -18,9 +18,9 @@ Requirements
 - Machine type has to be one of the following: ``c6a.\*, m6a.\*, r6a.\*``
     - General purpose: ``m6a.large | m6a.xlarge | m6a.2xlarge | m6a.4xlarge | m6a.8xlarge``
 
-    - Compute optimised: ``c6a.large | c6a.xlarge | c6a.2xlarge | c6a.4xlarge | c6a.8xlarge | c6a.12xlarge | c6a.16xlarge``
+    - Compute optimized: ``c6a.large | c6a.xlarge | c6a.2xlarge | c6a.4xlarge | c6a.8xlarge | c6a.12xlarge | c6a.16xlarge``
 
-    - Memory optimised: ``r6a.large | r6a.xlarge | r6a.2xlarge | r6a.4xlarge``
+    - Memory optimized: ``r6a.large | r6a.xlarge | r6a.2xlarge | r6a.4xlarge``
 
 Launch the instance
 -------------------

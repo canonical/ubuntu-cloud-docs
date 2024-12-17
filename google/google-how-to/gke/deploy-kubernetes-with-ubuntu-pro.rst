@@ -5,7 +5,7 @@ Deploy Kubernetes with Ubuntu Pro on GCE
 Limitations - Why not use Pro on GKE?
 -------------------------------------
 
-Google does not have Ubuntu Pro image offerings for GKE (`Google Kubernetes Engine`_) nodes as yet, i.e. you cannot choose Ubuntu Pro images for GKE nodes. GKE does not support custom images for the nodes and neither does it allow post-deployment customisation of node VMs.
+Google does not have Ubuntu Pro image offerings for GKE (`Google Kubernetes Engine`_) nodes as yet, i.e. you cannot choose Ubuntu Pro images for GKE nodes. GKE does not support custom images for the nodes and neither does it allow post-deployment customization of node VMs.
 
 	"Modifications on the boot disk of a node VM do not persist across node re-creations. Nodes are re-created during manual upgrade, auto-upgrade, auto-repair, and auto-scaling. In addition, nodes are re-created when you enable a feature that requires node re-creation, such as GKE Sandbox, intranode visibility, and shielded nodes."
 

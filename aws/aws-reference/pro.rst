@@ -31,7 +31,7 @@ Livepatch
 ~~~~~~~~~
 `Livepatch`_ applies security updates
 to the kernel for critical and high security vulnerabilities in a live system.
-This allows system administrators to minimise downtime between
+This allows system administrators to minimize downtime between
 scheduled maintenance windows. This is particularly helpful for workloads
 that are expensive to migrate, such as kubernetes workers for EKS.
 

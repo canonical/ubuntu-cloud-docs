@@ -13,7 +13,7 @@ Azure security features
 Azure provides two types of security features:
 
 * `Trusted Launch`_ which is a set of features including virtual Trusted Platform Module (vTPM) and `secure boot`_
-* `Confidential Virtual Machine`_ with support for AMD Secure Encrypted Virtualisation-Secure Nested Paging (SEV-SNP), along with `measured boot`_ using a vTPM
+* `Confidential Virtual Machine`_ with support for AMD Secure Encrypted Virtualization-Secure Nested Paging (SEV-SNP), along with `measured boot`_ using a vTPM
 
 To launch Ubuntu images with Trusted Launch and Confidential VM, refer to :doc:`../azure-how-to/instances/launch-ubuntu-images`.
 

@@ -2,9 +2,9 @@ Ubuntu on AWS
 =============
 
 
-**Ubuntu on AWS is a set of customised Ubuntu images** that allow easy access to a wide range 
+**Ubuntu on AWS is a set of customized Ubuntu images** that allow easy access to a wide range 
 of products and services - offered by both Amazon Web Services (AWS) and Canonical. These images 
-have an optimised kernel that boots faster, has a smaller footprint and includes AWS-specific drivers.
+have an optimized kernel that boots faster, has a smaller footprint and includes AWS-specific drivers.
 
 **These images provide a foundation for deploying cloud-based software solutions,** specifically
 for software built on Ubuntu and running on AWS. They focus on providing the optimal tools 
@@ -42,16 +42,16 @@ In this documentation
 
 ----------
 
-Customised Ubuntu images
+Customized Ubuntu images
 ------------------------
 
-For each Ubuntu release, we deliver multiple customised images to AWS. These images are based on the - AWS service being used, underlying architectures, required features, storage types and virtualisation types:
+For each Ubuntu release, we deliver multiple customized images to AWS. These images are based on the - AWS service being used, underlying architectures, required features, storage types and virtualization types:
 
 * **AWS services** - EC2, EKS
 * **architectures** - AMD64, ARM64 (Graviton)
 * **Ubuntu image types** - server, minimal
 * **storage types** - instance store, Elastic Block Store (EBS)
-* **virtualisation types** - Paravirtual (PV), Hardware Virtual Machine (HVM)
+* **virtualization types** - Paravirtual (PV), Hardware Virtual Machine (HVM)
 * **support/security compliance levels** - standard, Ubuntu Pro, Ubuntu Pro FIPS
 
 For more details read about :doc:`aws-explanation/canonical-offerings`

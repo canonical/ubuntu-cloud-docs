@@ -168,7 +168,7 @@ Managed nodes are node instances whose lifecycle is managed by the OKE service.
 
 View the node pool status in Oracle Cloud by navigating to :guilabel:`Kubernetes Clusters (OKE)` and choosing your cluster, then select :guilabel:`Resources` > :guilabel:`Node pools` and select the latest node pool.
 
-Everything will be running as expected when the :guilabel:`Kubernetes node condition` and :guilabel:`Node state` of all the nodes are labelled :guilabel:`Ready`.
+Everything will be running as expected when the :guilabel:`Kubernetes node condition` and :guilabel:`Node state` of all the nodes are labeled :guilabel:`Ready`.
 
 Create self-managed OKE nodes with Ubuntu
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -262,11 +262,11 @@ For more information about ``oci`` CLI and managing self-managed nodes on your c
 .. _`node cycling for self-managed nodes`: https://docs.oracle.com/en-us/iaas/Content/ContEng/Tasks/contengupgradingselfmanagednodes.htm#contengupgradingselfmanagednodes
 .. _`working with self-managed nodes`: https://docs.oracle.com/en-us/iaas/Content/ContEng/Tasks/contengworkingwithselfmanagednodes.htm
 .. _`creating a cluster`: https://docs.oracle.com/en-us/iaas/Content/ContEng/Tasks/create-cluster.htm
-.. _`import from-object-uri`: https://docs.oracle.com/en-us/iaas/tools/oci-cli/3.45.2/oci_cli_docs/cmdref/compute/image/import/from-object-uri.html
+.. _`import from-object-uri`: https://docs.oracle.com/en-us/iaas/tools/oci-cli/3.50.3/oci_cli_docs/cmdref/compute/image/import/from-object-uri.html
 .. _`object upload`: https://docs.oracle.com/en-us/iaas/tools/oci-cli/3.45.2/oci_cli_docs/cmdref/os/object/put.html
 .. _`image import from object`: https://docs.oracle.com/en-us/iaas/tools/oci-cli/3.45.2/oci_cli_docs/cmdref/compute/image/import/from-object.html
 .. _`managing custom images`: https://docs.oracle.com/en-us/iaas/Content/Compute/Tasks/managingcustomimages.htm
-.. _`OCI CLI documentation`: https://docs.oracle.com/en-us/iaas/tools/oci-cli/3.46.0/oci_cli_docs/
+.. _`OCI CLI documentation`: https://docs.oracle.com/en-us/iaas/tools/oci-cli/3.50.3/oci_cli_docs/
 .. _`Creating and managing kubernetes clusters`: https://docs.public.oneportal.content.oci.oraclecloud.com/en-us/iaas/compute-cloud-at-customer/topics/oke/creating-and-managing-kubernetes-clusters.htm
 .. _`Creating a dynamic group and a policy for self-managed nodes`: https://docs.oracle.com/en-us/iaas/Content/ContEng/Tasks/contengdynamicgrouppolicyforselfmanagednodes.htm
 .. _`Creating cloud-init scripts for self-managed nodes`: https://docs.oracle.com/en-us/iaas/Content/ContEng/Tasks/contengcloudinitforselfmanagednodes.htm

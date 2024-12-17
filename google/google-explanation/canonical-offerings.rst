@@ -1,11 +1,11 @@
 Canonical's offerings on GCP
 ============================
 
-Canonical works closely with Google to ensure Ubuntu images support the latest GCP features. An optimised Ubuntu GCP kernel, built in collaboration with Google, delivers the very
-best performance for scale-out, optimised workloads on the Google Cloud hypervisor. This makes Ubuntu a popular choice for both virtual machines 
+Canonical works closely with Google to ensure Ubuntu images support the latest GCP features. An optimized Ubuntu GCP kernel, built in collaboration with Google, delivers the very
+best performance for scale-out, optimized workloads on the Google Cloud hypervisor. This makes Ubuntu a popular choice for both virtual machines 
 and container workloads.
 
-The optimised ``linux-gcp`` kernel enables accelerated networking with the Compute Engine Virtual Ethernet device and support for the latest Google ARM Tau VM. These advantages contribute to Ubuntu being the default host images for Anthos Multi-cloud.
+The optimized ``linux-gcp`` kernel enables accelerated networking with the Compute Engine Virtual Ethernet device and support for the latest Google ARM Tau VM. These advantages contribute to Ubuntu being the default host images for Anthos Multi-cloud.
 
 The Ubuntu images support secure boot, with signed NVIDIA drivers available for workloads requiring access to vGPU compute acceleration. For instances that require confidential compute, Ubuntu images have been SEV-capable since 18.04 with `SEV-SNP`_ and `Intel TDX`_ support currently in private preview.
 
@@ -32,7 +32,7 @@ In addition, the following images are also available:
 GKE images
 ~~~~~~~~~~
 
-GKE is Google Cloud's Kubernetes offering. Canonical produces node images for GKE that act as a base for running end user pods. These node images include a kernel that is optimised for use in the GKE environment ``linux-gke``, as well as custom NVIDIA drivers for workloads that wish to leverage GPU acceleration. Further details of the node images available for GKE can be found in Google's documentation about `GKE node images`_.
+GKE is Google Cloud's Kubernetes offering. Canonical produces node images for GKE that act as a base for running end user pods. These node images include a kernel that is optimized for use in the GKE environment ``linux-gke``, as well as custom NVIDIA drivers for workloads that wish to leverage GPU acceleration. Further details of the node images available for GKE can be found in Google's documentation about `GKE node images`_.
 
 
 

@@ -145,4 +145,4 @@ If you want to connect remotely to VMs, you also have to open up port 1433 on th
 Connect
 ~~~~~~~
 
-You can now connect to your server from your favourite client.
+You can now connect to your server from your favorite client.

@@ -35,7 +35,7 @@ Microsoft Azure Partner Center has a hard limit of 100 images. To comply with th
 Is Ubuntu on Azure different from Ubuntu on other clouds?
 ---------------------------------------------------------
 
-Yes, Ubuntu on Azure is customised to make it better for Azure. This customisation includes:
+Yes, Ubuntu on Azure is customized to make it better for Azure. This customization includes:
  * A custom kernel ``linux-azure`` developed by Canonical for Azure
  * Extra configuration files that allow packages to work better with the platform
  * A few extra pre-installed packages that ensure built-in support for all features of Azure

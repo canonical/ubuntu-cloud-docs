@@ -1,7 +1,7 @@
 Ubuntu Public Images
 ====================
 
-**Canonical produces generic (generic kernel) cloud images, LXD images (rootfs tarballs) and KVM optimised cloud images (KVM kernel)**. These images are public (unlike other cloud-specific images) and are available on `cloud-images.ubuntu.com`_.
+**Canonical produces generic (generic kernel) cloud images, LXD images (rootfs tarballs) and KVM optimized cloud images (KVM kernel)**. These images are public (unlike other cloud-specific images) and are available on `cloud-images.ubuntu.com`_.
 
 .. include:: ../reuse/common-intro.txt
    :start-after: Start: Product need and user
@@ -27,9 +27,9 @@ In this documentation
 
       **Discussion and clarification** of key topics related to our Public Images offerings.
 
-   .. grid-item:: :doc:`Cloud image artefacts - A reference <public-images-reference/artefacts>`
+   .. grid-item:: :doc:`Cloud image artifacts - A reference <public-images-reference/artifacts>`
 
-      **Reference guide** for the artefacts found on `cloud-images.ubuntu.com`_.
+      **Reference guide** for the artifacts found on `cloud-images.ubuntu.com`_.
 
 
 
@@ -55,7 +55,7 @@ suggestions, fixes and constructive feedback.
 
    public-images-how-to/index
    public-images-explanation/index
-   public-images-reference/artefacts
+   public-images-reference/artifacts
    public-images-how-to/contribute-to-these-docs
 
 .. _Get support: https://ubuntu.com/cloud/public-cloud

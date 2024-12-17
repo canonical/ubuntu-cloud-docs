@@ -13,18 +13,18 @@ open-source cloud platform designed to create and manage cloud
 resources. By aggregating physical resources such as distributed
 compute, network, and storage into a pool, OpenStack then allocates
 virtual resources on-demand to users out of this pool. It does not
-handle virtualisation itself, but acts as a wrapper that leverages
-existing virtualisation technologies.
+handle virtualization itself, but acts as a wrapper that leverages
+existing virtualization technologies.
 
 
 What are these images?
 ----------------------
 
-Canonical provides cloud image artefacts on
+Canonical provides cloud image artifacts on
 `cloud-images.ubuntu.com`_ that have
-been customised to run on public clouds, including LXD and OpenStack. To
-learn more about these artefacts and supported architectures, visit our
-Ubuntu :doc:`cloud image artefacts <../public-images-reference/artefacts>`
+been customized to run on public clouds, including LXD and OpenStack. To
+learn more about these artifacts and supported architectures, visit our
+Ubuntu :doc:`cloud image artifacts <../public-images-reference/artifacts>`
 documentation.
 
 
@@ -33,12 +33,12 @@ How do you access them?
 
 Go to `cloud-images.ubuntu.com`_ and select a release. 
 For the latest LTS release, Ubuntu 24.04 LTS Noble
-Numbat, you would navigate to ``noble > current``. Note that all artefacts are
+Numbat, you would navigate to ``noble > current``. Note that all artifacts are
 architecture specific, in the format
-``<release>-<type>-cloudimg-<architecture>-<artefact>``.
+``<release>-<type>-cloudimg-<architecture>-<artifact>``.
 
 LXD and OpenStack also have `minimal cloud images`_: 
-Ubuntu images that have a reduced runtime footprint, optimised kernel
+Ubuntu images that have a reduced runtime footprint, optimized kernel
 and boot process. They are smaller and boot faster, but are not designed
 for environments requiring human interaction or debugging.
 
@@ -46,11 +46,11 @@ for environments requiring human interaction or debugging.
 LXD images
 ~~~~~~~~~~
 
-To import an image into LXD, you will need two artefacts:
+To import an image into LXD, you will need two artifacts:
 
 1. A LXD tarball:
 
-   - The :ref:`lxd-tarball-ref` artefact has the extension ``*.lxd.tar.xz``
+   - The :ref:`lxd-tarball-ref` artifact has the extension ``*.lxd.tar.xz``
    - It contains the metadata needed by LXD to instantiate a container or virtual machine as well as a folder for any custom templates
 
 2. A file system for a container or a bootable disk image for a virtual
@@ -64,7 +64,7 @@ To import an image into LXD, you will need two artefacts:
 
    - The bootable disk image for a virtual machine is a :ref:`qcow-ref` image (``*.img``)
 
-The following are example commands to import an image for creating LXD containers and virtual machines based on downloaded Ubuntu 24.04 artefacts:
+The following are example commands to import an image for creating LXD containers and virtual machines based on downloaded Ubuntu 24.04 artifacts:
 
 .. code :: bash
 
@@ -80,7 +80,7 @@ The following are example commands to import an image for creating LXD container
 OpenStack images
 ~~~~~~~~~~~~~~~~
 
-OpenStack uses QCOW images. Download the artefact for your chosen
+OpenStack uses QCOW images. Download the artifact for your chosen
 architecture with the ``*.img`` extension.
 
 Use the `OpenStack command-line client`_ to interact with OpenStack. 
@@ -131,7 +131,7 @@ the information needed to run an image in LXD. To make changes to this file, you
    modify.
 3. Compress the metadata and templates.
 
-This snippet from the `How to customise LXD image metadata for cloud-init`_
+This snippet from the `How to customize LXD image metadata for cloud-init`_
 guide referenced below demonstrates a typical workflow:
 
 .. code :: bash
@@ -158,9 +158,9 @@ guide referenced below demonstrates a typical workflow:
 Configuring cloud-init
 ^^^^^^^^^^^^^^^^^^^^^^
 
-`Cloud-init`_ is used to initialise cloud instances on first boot.
-Refer to `How to customise LXD image metadata for cloud-init`_ for a guide on configuring cloud-init for LXD
-before initialisation. If you want to configure ``cloud-init`` once an instance has been
+`Cloud-init`_ is used to initialize cloud instances on first boot.
+Refer to `How to customize LXD image metadata for cloud-init`_ for a guide on configuring cloud-init for LXD
+before initialization. If you want to configure ``cloud-init`` once an instance has been
 created (but not booted), refer to the `LXD docs on cloud-init`_.
 
 
@@ -203,7 +203,7 @@ rely on the ``virt-*`` tools from ``libguestfs`` to perform specific tasks. For 
 .. _Manage images: https://docs.openstack.org/ocata/admin-guide/common/cli-manage-images.html#create-or-update-an-image-glance
 .. _LXD containers: https://documentation.ubuntu.com/server/how-to/containers/lxd-containers/
 .. _LXD image format: https://documentation.ubuntu.com/lxd/en/latest/reference/image_format/
-.. _How to customise LXD image metadata for cloud-init: https://discourse.ubuntu.com/t/how-to-customize-lxd-image-metadata-for-cloud-init/25157
+.. _How to customize LXD image metadata for cloud-init: https://discourse.ubuntu.com/t/how-to-customize-lxd-image-metadata-for-cloud-init/25157
 .. _Cloud-init: https://cloudinit.readthedocs.io/en/latest/index.html
 .. _LXD docs on cloud-init: https://documentation.ubuntu.com/lxd/en/latest/cloud-init/
 .. _LXD documentation on images: https://documentation.ubuntu.com/lxd/en/latest/howto/images_manage/

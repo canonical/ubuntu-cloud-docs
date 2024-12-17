@@ -2,10 +2,10 @@ Use UEFI Secure Boot and TPM on Ubuntu-based EC2 instances
 ==========================================================
 
 UEFI Secure Boot is a security feature specified in UEFI, which verifies the state of the boot chain.
-With UEFI Secure Boot enabled, after firmware self-initialisation only cryptographically verified UEFI 
-binaries are allowed to be executed. This prevents any unauthorised modification of the instance boot flow.
+With UEFI Secure Boot enabled, after firmware self-initialization only cryptographically verified UEFI 
+binaries are allowed to be executed. This prevents any unauthorized modification of the instance boot flow.
 
-Trusted Platform Module (TPM) is a virtual device provided by the AWS Nitro System. It securely stores artefacts 
+Trusted Platform Module (TPM) is a virtual device provided by the AWS Nitro System. It securely stores artifacts 
 (such as passwords, certificates, or encryption keys) that are used to authenticate the instance. Check the `AWS NitroTPM documentation <https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/nitrotpm.html>`_ for more details.
 
 Although UEFI Secure Boot is supported by both Ubuntu images and `EC2 <https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/uefi-secure-boot.html>`_,

@@ -4,9 +4,9 @@ Canonical's offerings on Oracle Cloud
 Ubuntu images
 -------------
 
-Canonical produces fully optimised Oracle Cloud images that provide a stable base image for running workloads. The two main types of images are:
+Canonical produces fully optimized Oracle Cloud images that provide a stable base image for running workloads. The two main types of images are:
 
-* **Server images:** General-purpose customised images that include the necessary drivers and kernel modifications to run smoothly in the Oracle Cloud environment. These images launch with the oracle-cloud-agent pre-installed, featuring plugins that collect performance metrics, install OS updates, and perform other instance management tasks.
+* **Server images:** General-purpose customized images that include the necessary drivers and kernel modifications to run smoothly in the Oracle Cloud environment. These images launch with the oracle-cloud-agent pre-installed, featuring plugins that collect performance metrics, install OS updates, and perform other instance management tasks.
 
 * **Minimal server images:** These are images designed for automated deployment at scale and have a reduced default package set. They are much smaller, boot faster, and require fewer security updates over time due to the fewer installed packages.
 
@@ -19,7 +19,7 @@ With a single image type that is validated to work on both virtual machines and 
 For instructions on how to find the images, refer to :doc:`../oracle-how-to/find-ubuntu-images`.
 
 
-Optimisations for Oracle Cloud
+Optimizations for Oracle Cloud
 ------------------------------
 
 The images support the following options:
@@ -29,10 +29,10 @@ The images support the following options:
 * Network interfaces - support for VFIO and PARAVIRTUALIZED modes.
 * Boot volume -  allows booting through iSCSI or PARAVIRTUALIZED storage.
 
-The customisations include NVMe tunings, iSCSI configurations to allow instances to boot from iSCSI backend when appropriate, logging improvements, iptables and udev configurations specific to Oracle Cloud platform, among others.
+The customizations include NVMe tunings, iSCSI configurations to allow instances to boot from iSCSI backend when appropriate, logging improvements, iptables and udev configurations specific to Oracle Cloud platform, among others.
 
 
-Kernel optimisations
+Kernel optimizations
 --------------------
 
 Ubuntu images available on Oracle Cloud run the ``linux-oracle`` kernel by default. Additional kernel variants are also offered by Canonical, as described in the next section.
@@ -49,7 +49,7 @@ If you do not want to roll to a new kernel, and want to stay on the base kernel 
 Kernel variants
 ~~~~~~~~~~~~~~~
 
-Canonical provides different kernel variants, all optimised for Oracle Cloud. They are available in the APT archives, and can be installed with the ``apt install`` command.
+Canonical provides different kernel variants, all optimized for Oracle Cloud. They are available in the APT archives, and can be installed with the ``apt install`` command.
 
 For x86_64 instances, the variants available are:
 

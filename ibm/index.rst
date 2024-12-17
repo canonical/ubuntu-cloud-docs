@@ -2,8 +2,8 @@ Ubuntu on IBM
 =============
 
 
-**Ubuntu on IBM is a set of customised Ubuntu images** that allow easy access to a wide range 
-of products and services - offered by both IBM cloud and Canonical. These images have an optimised
+**Ubuntu on IBM is a set of customized Ubuntu images** that allow easy access to a wide range 
+of products and services - offered by both IBM cloud and Canonical. These images have an optimized
 kernel that boots faster, has a smaller footprint and includes IBM-specific drivers.
 
 **These images provide a foundation for deploying cloud-based software solutions,** specifically
@@ -21,7 +21,7 @@ Canonical's offerings on IBM
 
 Canonical and the Ubuntu community work together with IBM to ensure that Ubuntu works seamlessly across IBM platforms, including IBM Z and LinuxONE, IBM Power Systems and the IBM Cloud.
 
-Canonical provides optimised Ubuntu LTS images with a custom kernel, minimal size, livepatch and support.
+Canonical provides optimized Ubuntu LTS images with a custom kernel, minimal size, livepatch and support.
 
 These images are available on IBM Cloud for both the IBM VPC infrastructure and the IBM Classic infrastructure.
 

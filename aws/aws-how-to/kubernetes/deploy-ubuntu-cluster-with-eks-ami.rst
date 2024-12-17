@@ -35,7 +35,7 @@ Create a ``config.yaml`` with the following content:
 
 To use an Ubuntu specific AMI, set ``amiFamily`` to ``Ubuntu2004`` (for EKS version <= 1.29) or to ``Ubuntu2204`` (for EKS version >= 1.29). For Ubuntu nodes, the ``overrideBootstrapCommand`` is required for both managed and self-managed groups.
 
-For further cluster customisation, check out the `config file schema for eksctl`_ 
+For further cluster customization, check out the `config file schema for eksctl`_ 
 
 
 Deploy the EKS cluster

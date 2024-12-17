@@ -1,9 +1,9 @@
-Create customised docker containers on Ubuntu Pro
+Create customized docker containers on Ubuntu Pro
 =================================================
 
 Docker containers are extremely useful for running applications reliably on different computing environments. This is because they package the application along with all its dependencies into a single image that can be easily deployed.
 
-Docker is the underlying technology used to run these containers / images. Docker also allows you to modify the container and create new customised versions easily. As an example, on your Ubuntu Pro VM, we'll run a container based on the latest Ubuntu image and then customise it by including Python.  
+Docker is the underlying technology used to run these containers / images. Docker also allows you to modify the container and create new customized versions easily. As an example, on your Ubuntu Pro VM, we'll run a container based on the latest Ubuntu image and then customize it by including Python.  
 
 
 .. Note::
@@ -99,10 +99,10 @@ In this container, you can check if it is the latest version of Ubuntu:
     DISTRIB_DESCRIPTION="Ubuntu 22.04.3 LTS"
 
 
-Customise the image
+Customize the image
 -------------------
 
-To customise the image, you can for instance install Python within the container:
+To customize the image, you can for instance install Python within the container:
 
 .. code::
 

@@ -101,7 +101,7 @@ Configure your golden image
 
 Once you have your clone of the sample repository, you can configure it to build your golden image. If you want to use an image template that you've already created, then you can skip ahead to :ref:`configure-github-action`.
 
-``create_all_resources`` provides the following flags to configure its behaviour:
+``create_all_resources`` provides the following flags to configure its behavior:
 
 .. code::
 
@@ -140,7 +140,7 @@ By default, ``--imageProperties`` points to ``./config/imageDefinitionProperties
         "hyperVGeneration": "V2"
     }
 
-Customisation
+Customization
 ~~~~~~~~~~~~~
 
 ``--customizations`` points to ``.config/customizations.json`` by default. This is where you define the commands to modify your base image into your golden image:

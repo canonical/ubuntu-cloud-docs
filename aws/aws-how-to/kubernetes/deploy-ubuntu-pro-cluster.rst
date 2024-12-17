@@ -18,7 +18,7 @@ Prepare the cluster for deployment
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Although Ubuntu Pro for EKS is available as an AMI for Ubuntu 22.04 LTS (see :doc:`deploy-ubuntu-pro-cluster-with-eks-pro-ami`), there is no such EKS related offer available for Ubuntu 20.04 LTS.
-So to use Pro in 20.04 LTS, you need to provision the EKS cluster with customised Ubuntu nodes.
+So to use Pro in 20.04 LTS, you need to provision the EKS cluster with customized Ubuntu nodes.
 
 The steps needed for deploying the cluster depend on whether you need to enable FIPS or not.
 
@@ -28,7 +28,7 @@ The steps needed for deploying the cluster depend on whether you need to enable 
     .. group-tab:: Without FIPS
         
         When FIPS is not enabled, you can use one of the existing Ubuntu EKS AMIs and
-        customise it using cloud-init's `ubuntu-advantage module`_ during deployment.
+        customize it using cloud-init's `ubuntu-advantage module`_ during deployment.
 
         For this deployment, you'll also need to have an existing `launch template`_ on AWS.
 
@@ -153,7 +153,7 @@ The steps needed for deploying the cluster depend on whether you need to enable 
 
             ==> Wait completed after 9 minutes 35 seconds
 
-            ==> Builds finished. The artefacts of successful builds are:
+            ==> Builds finished. The artifacts of successful builds are:
             --> amazon-ebs: amis were created:
             us-east-1: ami-xxxxxxxx
 
@@ -218,10 +218,10 @@ Add the following content to your file
          with two nodes and SSH access.
 
          The ``overrideBootstrapCommand`` lets you launch the bootstrap script from AWS EKS
-         to initialise the nodes.
+         to initialize the nodes.
 
 
-For further cluster customisation check out `eksctl details`_.
+For further cluster customization check out `eksctl details`_.
 
 
 Create the EKS cluster

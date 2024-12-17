@@ -1,9 +1,9 @@
 Ubuntu on GCP
 =============
 
-**Ubuntu on Google Cloud Platform (GCP) is a set of customised Ubuntu images** that allow easy access 
+**Ubuntu on Google Cloud Platform (GCP) is a set of customized Ubuntu images** that allow easy access 
 to a wide range of products and services - offered by both Google Cloud and Canonical. These images 
-have an optimised kernel that boots faster, has a smaller footprint and includes GCP-specific drivers.
+have an optimized kernel that boots faster, has a smaller footprint and includes GCP-specific drivers.
 
 **These images provide a foundation for deploying cloud-based software solutions,** specifically
 for software built on Ubuntu and running on Google cloud. They focus on providing the optimal tools 

@@ -50,7 +50,7 @@ cron
 cryptographic
 cryptographically
 CUDA
-customisations
+customizations
 CVE
 CVEs
 cves
@@ -284,7 +284,7 @@ udev
 UEFI
 uncompress
 unlaunched
-unminimise
+unminimize
 unminimize
 unmount
 untrusted

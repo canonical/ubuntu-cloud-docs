@@ -39,7 +39,7 @@ Learn about different deployment scenarios for Ubuntu container images.
 
 
 
-Chiselled Ubuntu
+Chiseled Ubuntu
 ----------------
 
 You can create even smaller Ubuntu container images with Chisel.
@@ -47,7 +47,7 @@ You can create even smaller Ubuntu container images with Chisel.
 .. toctree::
    :maxdepth: 1
 
-   Create a chiselled Ubuntu image <create-chiselled-ubuntu-image>
+   Create a chiseled Ubuntu image <create-chiseled-ubuntu-image>
 
 
 Documentation

@@ -10,7 +10,7 @@ What are base and minimal images?
 ---------------------------------
 
 Base images are those that are directly derived from Ubuntu Server-like images
-and are meant for general consumption. On the other hand, minimal or minimised
+and are meant for general consumption. On the other hand, minimal or minimized
 images are those that are meant for machine-to-machine interactions, and have
 some niceties meant for humans stripped out (such as manpages, translations,
 editors, etc.). A great example would be our k8s images.
@@ -42,7 +42,7 @@ What is ``unminimize``? What does it do?
 ----------------------------------------
 
 ``unminimize`` is essentially a script that’s shipped in ``/usr/bin`` by a package
-called "unminimize". The goal of this ``unminimize`` script is to unminimise the
+called "unminimize". The goal of this ``unminimize`` script is to unminimize the
 minimal image and make it as close as possible to a base image. It does this by
 re-enabling installation of all documentation in DPKG, restoring system
 documentation and man pages, restoring system translations, and then finally

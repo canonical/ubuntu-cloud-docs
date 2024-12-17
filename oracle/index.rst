@@ -1,8 +1,8 @@
 Ubuntu on Oracle
 ================
 
-**Ubuntu on Oracle is a set of customised Ubuntu images** that allow easy access to a wide range 
-of products and services - offered by both Oracle Cloud and Canonical. These images have an optimised
+**Ubuntu on Oracle is a set of customized Ubuntu images** that allow easy access to a wide range 
+of products and services - offered by both Oracle Cloud and Canonical. These images have an optimized
 kernel that boots faster, has a smaller footprint and includes Oracle-specific drivers.
 
 **These images provide a foundation for deploying cloud-based software solutions,** specifically

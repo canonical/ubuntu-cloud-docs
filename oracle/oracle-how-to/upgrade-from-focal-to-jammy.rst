@@ -40,7 +40,7 @@ If you are using a firewall there is a chance that the port used by the backup S
 
 Start upgrade
 ~~~~~~~~~~~~~
-A final prompt is provided before starting the upgrade. It gives information about the number of changes and the estimated time to complete because once started, the upgrade process cannot be cancelled. At this stage you can continue, cancel or see additional details.
+A final prompt is provided before starting the upgrade. It gives information about the number of changes and the estimated time to complete because once started, the upgrade process cannot be canceled. At this stage you can continue, cancel or see additional details.
 
 .. image:: upgrade-from-focal-to-jammy-images/2_start_upgrade.png
    :align: center

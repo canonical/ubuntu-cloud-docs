@@ -9,10 +9,10 @@ Launching different types of instances:
 * :doc:`Create instances <create-different-instance-types>`
 * :doc:`Launch a desktop <launch-ubuntu-desktop>`
 
-Creating golden images and customised containers:
+Creating golden images and customized containers:
 
 * :doc:`Build a Pro golden image <build-ubuntu-pro-golden-image>`
-* :doc:`Create customised docker containers <create-customised-docker-container>`
+* :doc:`Create customized docker containers <create-customized-docker-container>`
 
 Performing upgrades:
 
@@ -32,7 +32,7 @@ Administrative operations:
    Create instances <create-different-instance-types>
    Launch a desktop <launch-ubuntu-desktop>
    Build a Pro golden image <build-ubuntu-pro-golden-image>
-   Create customised docker containers <create-customised-docker-container>
+   Create customized docker containers <create-customized-docker-container>
    Upgrade to Pro <upgrade-in-place-from-lts-to-pro>
    Enable Pro features <enable-pro-features>   
    Upgrade from Focal to Jammy <upgrade-from-focal-to-jammy>

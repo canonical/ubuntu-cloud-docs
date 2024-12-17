@@ -137,7 +137,7 @@ If you are using a profile, you can include it in the create command:
     AWS_PROFILE=eks eksctl create cluster -f my-fips-cluster.yaml
 
 
-The deployment may take several minutes to complete. For further details regarding cluster customisation, refer to `eksctl documentation`_.
+The deployment may take several minutes to complete. For further details regarding cluster customization, refer to `eksctl documentation`_.
 
 
 .. _create_new_nodegroup:

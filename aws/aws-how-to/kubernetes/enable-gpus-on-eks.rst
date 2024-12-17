@@ -16,7 +16,7 @@ After installation, use ``sudo nvidia-smi`` to verify that the driver is success
 
 Install and set up the 'NVIDIA Container Toolkit' on each node
 --------------------------------------------------------------
-To support containerised GPU-accelerated applications, the default runtime should be set to 'NVIDIA Container Toolkit' on all the nodes.
+To support containerized GPU-accelerated applications, the default runtime should be set to 'NVIDIA Container Toolkit' on all the nodes.
 
 For this, first configure the source repository:
 

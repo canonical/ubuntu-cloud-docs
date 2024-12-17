@@ -17,7 +17,7 @@ Image retention policy
 
 For more details about these image types, check out our documentation of :doc:`image release types <all-clouds:all-clouds-explanation/release-types>`, and to get a list of these images on GCP, refer to: :doc:`../google-how-to/gce/find-ubuntu-images`.
 
-The retention policy can be summarised as follows:
+The retention policy can be summarized as follows:
 
 .. list-table:: 
    :header-rows: 1
