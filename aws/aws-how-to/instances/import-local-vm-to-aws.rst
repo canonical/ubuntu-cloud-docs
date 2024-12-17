@@ -44,7 +44,7 @@ Create an IAM role for the VM import process
 --------------------------------------------
 
 
-Go to IAM, create a role called ``vmimport`` and get the access key. 
+Go to IAM, create a role called ``vmimport`` and get the access key, as decribed in the official `AWS documentation: Required IAM roles`_
 
 
 In the process of creating the IAM role, you will create two files: ``role-policy.json`` and ``trust-policy.json``, as described in the AWS documentation. While ``trust-policy.json`` is used in the role creation process, ``role-policy.json`` will be used to create a policy allowing this role to read objects from the source S3 bucket and upload to the export S3 bucket.
@@ -132,6 +132,7 @@ Your machine is now ready. You can either continue using this VM as a normal EC2
 
 
 .. _`AWS documentation: Import your VM as an image`: https://docs.aws.amazon.com/vm-import/latest/userguide/import-vm-image.html
+.. _`AWS documentation: Required IAM roles`: https://docs.aws.amazon.com/vm-import/latest/userguide/required-permissions.html#vmimport-role
 .. _`official documentation`: https://documentation.ubuntu.com/aws/en/latest/aws-how-to/instances/launch-ubuntu-ec2-instance/#launch-the-instance
 
 
