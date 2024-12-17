@@ -152,13 +152,13 @@ Then, create an image definition. Ensure that the “hyper-v-generation” flag 
 Create a configuration template
 -------------------------------
 
-We'll be using a sample JSON template to configure the image. It can be customised to include build instructions that are specifically needed for your golden image. Download a template:
+We'll be using a sample JSON template to configure the image. It can be customized to include build instructions that are specifically needed for your golden image. Download a template:
 
 .. code::
 
     curl https://pastebin.com/raw/fCkQAgAc -o UbuntuProFips2004SIGTemplate.json
 
-Customise it to use the values set above:
+Customize it to use the values set above:
 
 .. code::
 

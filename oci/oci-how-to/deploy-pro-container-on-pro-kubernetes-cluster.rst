@@ -63,7 +63,7 @@ Deploying Pro Kubernetes clusters in various clouds
 
 	.. tab:: Tanzu
 
-		See the `Tanzu guide <https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-Grid/index.html>`_
+		See the `Tanzu guide <https://techdocs.broadcom.com/us/en/vmware-tanzu/standalone-components/tanzu-kubernetes-grid/2-5.html>`_
 		to learn how to create a cluster.
 
 		**Get an Ubuntu Pro subscription**

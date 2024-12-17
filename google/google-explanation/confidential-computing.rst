@@ -27,7 +27,7 @@ In essence, Intel® TDX empowers you to execute your workloads within a logicall
 AMD SEV-SNP
 -----------
 
-Secure Encrypted Virtualisation-Secure Nested Paging (SEV-SNP) is a security feature available on AMD's EPYC processors. It provides the following benefits for your VMs: 
+Secure Encrypted Virtualization-Secure Nested Paging (SEV-SNP) is a security feature available on AMD's EPYC processors. It provides the following benefits for your VMs: 
 
 * `Improved security` - it encrypts the memory pages that contain firmware code. This makes it much more difficult for attackers to gain access to the firmware and launch attacks.
 * `Increased isolation` - it allows each VM to have its own secure memory space. This means that a VM cannot access the memory of another VM, even if the hypervisor is compromised.
@@ -35,7 +35,7 @@ Secure Encrypted Virtualisation-Secure Nested Paging (SEV-SNP) is a security fea
 
 SEV-SNP provides an extra layer of safeguard against malicious hypervisor-based attacks, such as data reply and memory re-mapping, by establishing a secure and isolated execution environment.
 
-It also introduces several optional security enhancements, strengthens protection around interrupt behaviour and bolsters defences against side channel attacks.
+It also introduces several optional security enhancements, strengthens protection around interrupt behavior and bolsters defenses against side channel attacks.
 
 For further details, check out this white paper on `AMD SEV-SNP - Strengthening VM Isolation with Integrity Protection and More`_.
 

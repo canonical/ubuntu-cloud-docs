@@ -72,8 +72,8 @@ redirects = {
         "../gce/enable-pro-features/",
     "google-how-to/build-ubuntu-pro-golden-image":
         "../gce/build-ubuntu-pro-golden-image/",
-    "google-how-to/create-customised-docker-container":
-        "../gce/create-customised-docker-container/",
+    "google-how-to/create-customized-docker-container":
+        "../gce/create-customized-docker-container/",
     "google-how-to/upgrade-from-focal-to-jammy":
         "../gce/upgrade-from-focal-to-jammy/",
 

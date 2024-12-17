@@ -17,7 +17,7 @@ You'll need:
 - a vault with encryption keys to use for boot volume encryption. This is only necessary if you wish to use your own encryption key for FDE.
 
 
-Create an instance with personalised FDE
+Create an instance with personalized FDE
 ----------------------------------------
 
 While creating a new instance using :guilabel:`Compute` > :guilabel:`Instances` > :guilabel:`Create instance`, under *Image and shape* select :guilabel:`Change image` > :guilabel:`Ubuntu`. Then choose the desired Ubuntu release and image build.

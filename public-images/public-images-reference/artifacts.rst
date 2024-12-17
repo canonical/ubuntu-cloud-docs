@@ -1,8 +1,8 @@
-.. _uci-artefacts:
+.. _uci-artifacts:
 
-Ubuntu cloud image artefacts
+Ubuntu cloud image artifacts
 ============================
-This document provides detailed information on various Ubuntu cloud image artefacts available on `cloud-images.ubuntu.com <https://cloud-images.ubuntu.com/>`_.
+This document provides detailed information on various Ubuntu cloud image artifacts available on `cloud-images.ubuntu.com <https://cloud-images.ubuntu.com/>`_.
 
 Images
 ------
@@ -26,11 +26,11 @@ Initial ramdisk (initrd)
    :header-rows: 0
 
    * - Extension
-     - ``<artefact>-initrd-generic``
+     - ``<artifact>-initrd-generic``
    * - Example filename
      - ``unpacked/noble-server-cloudimg-amd70-initrd-generic``
    * - Format description
-     - An initial ramdisk is a temporary root file system loaded into memory during the boot process to initialise the system before the real root file system is mounted.
+     - An initial ramdisk is a temporary root file system loaded into memory during the boot process to initialize the system before the real root file system is mounted.
    * - Use cases
      - Initrds are used to ensure the kernel can boot by loading necessary drivers and modules before the root filesystem is mounted. This allows the support of diverse hardware and virtual environments, making them useful for cloud instance startup. In addition to extra driver support, early boot features such as labels for partition names and root encryption rely on features provided by the initrd.
 
@@ -43,13 +43,13 @@ Linux kernel image
    :header-rows: 0
 
    * - Extension
-     - ``<artefact>-vmlinuz-generic``
+     - ``<artifact>-vmlinuz-generic``
    * - Example filename
      - ``unpacked/noble-server-cloudimg-amd64-vmlinuz-generic``
    * - Format description
      - The vmlinuz image contains a compressed image of the Linux kernel.
    * - Use cases
-     - The Linux kernel is the core component of the operating system. It handles essential functions such as process management, memory management and system calls. Kernel images may be customised for specific hardware configurations, leading to offerings for each supported architecture.
+     - The Linux kernel is the core component of the operating system. It handles essential functions such as process management, memory management and system calls. Kernel images may be customized for specific hardware configurations, leading to offerings for each supported architecture.
 
 .. _lxd-tarball-ref:
 
@@ -60,7 +60,7 @@ LXD tarball
    :header-rows: 0
 
    * - Extension
-     - ``<artefact>.lxd.tar.xz``
+     - ``<artifact>.lxd.tar.xz``
    * - Example filename
      - ``noble-server-cloudimg-amd64-lxd.tar.xz``
    * - Format description
@@ -81,9 +81,9 @@ Open Virtual Appliance (OVA)
    * - Example filename
      - ``noble-server-cloudimg-amd64.ova``
    * - Format description
-     - An OVA is a single file distribution of an Open Virtualisation Format (OVF) package.
+     - An OVA is a single file distribution of an Open Virtualization Format (OVF) package.
    * - Use cases
-     - OVA files encapsulate an entire virtual machine setup including configuration, disk images and other metadata. They are used for easy deployment of virtual appliances across different virtualisation providers such as VirtualBox or VMware. You can import an ``.ova`` file into VirtualBox to quickly deploy a pre-configured virtual machine. See our how-to guide :ref:`run-an-ova-using-virtualbox` for more information.
+     - OVA files encapsulate an entire virtual machine setup including configuration, disk images and other metadata. They are used for easy deployment of virtual appliances across different virtualization providers such as VirtualBox or VMware. You can import an ``.ova`` file into VirtualBox to quickly deploy a pre-configured virtual machine. See our how-to guide :ref:`run-an-ova-using-virtualbox` for more information.
 
 .. _qcow-ref:
 
@@ -101,7 +101,7 @@ QEMU Copy On Write (QCOW)
      - QCOW image files are disk image files containing raw sector-by-sector copies of a storage device.
    * - Use cases
      - 
-       QCOW images are used for creating bootable disks and virtual machines in virtualisation environments. Some of the features that make QCOW images attractive are their support for dynamic disk sizing, snapshot support and copy-on-write. 
+       QCOW images are used for creating bootable disks and virtual machines in virtualization environments. Some of the features that make QCOW images attractive are their support for dynamic disk sizing, snapshot support and copy-on-write. 
 
        One of the primary use cases of our published QCOW images is to use QEMU to create and manage virtual machines. Other providers, such as VirtualBox, can be used for this, or you can use a ``.img`` file to create a bootable USB drive or deploy in an embedded system.
 
@@ -116,7 +116,7 @@ Root tarball
    :header-rows: 0
 
    * - Extension
-     - ``<artefact>-root.tar.xz``
+     - ``<artifact>-root.tar.xz``
    * - Example filename
      - ``noble-server-cloudimg-amd64-root.tar.xz``
    * - Format description
@@ -150,13 +150,13 @@ Tarball (gzip)
    :header-rows: 0
 
    * - Extension
-     - ``<artefact>.tar.gz``
+     - ``<artifact>.tar.gz``
    * - Example filename
      - ``noble-server-cloudimg-amd64.tar.gz``
    * - Format description
      - ``.tar.gz`` is an archive format, often called a tarball, that combines files into a single file and compresses it using ``gzip`` compression.
    * - Use cases
-     - Our ``.tar.gz`` archives are used to distribute complete file system images along with the kernel for various operating systems and virtualisation platforms. They allow extraction and booting of the entire system on compatible hardware or virtual machines.
+     - Our ``.tar.gz`` archives are used to distribute complete file system images along with the kernel for various operating systems and virtualization platforms. They allow extraction and booting of the entire system on compatible hardware or virtual machines.
 
 .. _vagrant-box-ref:
 
@@ -188,7 +188,7 @@ Virtual Hard Disk (VHD)
    * - Example filename
      - ``noble-server-cloudimg-amd64-azure.vhd.tar.gz``
    * - Format description
-     - A VHD is a file format used by virtualisation software to store virtual hard disk images.
+     - A VHD is a file format used by virtualization software to store virtual hard disk images.
    * - Use cases
      - 
        VHD files are used in cloud environments for storing VM disk images. They allow easy deployment and scaling of virtual machines. In general, you can use a ``.vhd`` file to create an instance based on a pre-configured image, ensuring consistency across multiple deployments.
@@ -200,7 +200,7 @@ Other files
 This section includes information on checksums, GPG signatures, changelogs and manifest files. These files help verify the integrity and authenticity of the images, provide details on changes between versions and list all included packages.
 
 .. note::
-  On Ubuntu systems, the public keys for Ubuntu cloud images are present in ``/usr/share/keyrings/ubuntu-cloudimage-keyring.gpg``. You can use this keyring to verify GPG signatures and checksums of downloaded artefacts with a command such as ``gpg --verify --keyring /usr/share/keyrings/ubuntu-cloudimage-keyring.gpg SHA256SUMS.gpg SHA256SUMS && sha256sum -c SHA256SUMS``.
+  On Ubuntu systems, the public keys for Ubuntu cloud images are present in ``/usr/share/keyrings/ubuntu-cloudimage-keyring.gpg``. You can use this keyring to verify GPG signatures and checksums of downloaded artifacts with a command such as ``gpg --verify --keyring /usr/share/keyrings/ubuntu-cloudimage-keyring.gpg SHA256SUMS.gpg SHA256SUMS && sha256sum -c SHA256SUMS``.
 
 Changelogs
 ~~~~~~~~~~
@@ -468,7 +468,7 @@ Checksums
    :header-rows: 0
 
    * - Extension
-     - ``<artefact>SUMS``
+     - ``<artifact>SUMS``
    * - Example filename
      - ``MD5SUMS``, ``SHA256SUMS``
    * - Format description

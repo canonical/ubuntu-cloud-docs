@@ -5,7 +5,7 @@ Run an OVA using VirtualBox
 
 An :ref:`ova-ref` is a single file package that allows for easy distribution and
 setup of virtual machines (VMs). `VirtualBox <https://www.virtualbox.org/>`__ is an open source
-virtualisation platform that allows you to use OVA files to create and
+virtualization platform that allows you to use OVA files to create and
 manage VMs. This guide will cover how to acquire an OVA file,
 install VirtualBox, and configure and launch an Ubuntu VM that you can connect
 to via the virtual console or over SSH.
@@ -79,7 +79,7 @@ VirtualBox home screen:
 
 Before attempting to run the appliance however, you'll need to generate
 and attach an ISO image containing configuration data for cloud-init.
-cloud-init uses that data to initialise the instance during initial boot.
+cloud-init uses that data to initialize the instance during initial boot.
 This step is needed since we are using a cloud image instead of a standard
 desktop image. To learn more about creating and using a local cloud-init
 datasource, refer to :ref:`use-local-cloud-init-ds`.
@@ -105,7 +105,7 @@ to `SSH/OpenSSH/Keys <https://help.ubuntu.com/community/SSH/OpenSSH/Keys>`_.
 Once these prerequisites are met, you can generate and attach the
 ISO seed image.
 
-1. Create a YAML file with password authorisation enabled:
+1. Create a YAML file with password authorization enabled:
 
 .. code:: bash
 

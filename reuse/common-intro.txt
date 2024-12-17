@@ -5,7 +5,7 @@
 Start: Product need and user
 
 **The images create a stable and secure cloud platform** that is ideal for scaling development work
-done on Ubuntu-based systems. Since Ubuntu is one of the most favoured operating systems amongst
+done on Ubuntu-based systems. Since Ubuntu is one of the most favored operating systems among
 developers, using an Ubuntu-based image for the corresponding cloud deployment becomes the simplest
 option.
 
@@ -30,7 +30,7 @@ Data can be thought of as being in one of three states:
   
 Both data in-transit and data at-rest can be encrypted using well-known techniques, but securing data in-use needs confidential computing.
 
-Confidential computing is the protection of data in-use by performing computation in a hardware-based trusted execution environment. These are secure and isolated environments that prevent unauthorised access or modification of applications and data while they are in use. In effect, they allow the encryption of data while it is in the system memory. This requires the support of both hardware and the OS. For example, your hardware could be based on Intel's TDX (Trust Domain Extensions) processors or AMD's SEV (Secure Encrypted Virtualisation) architecture and the OS could be Ubuntu. 
+Confidential computing is the protection of data in-use by performing computation in a hardware-based trusted execution environment. These are secure and isolated environments that prevent unauthorized access or modification of applications and data while they are in use. In effect, they allow the encryption of data while it is in the system memory. This requires the support of both hardware and the OS. For example, your hardware could be based on Intel's TDX (Trust Domain Extensions) processors or AMD's SEV (Secure Encrypted Virtualization) architecture and the OS could be Ubuntu. 
 
 
 End: Confidential computing

@@ -3,7 +3,7 @@ Find Ubuntu images on AWS
 
 On AWS, cloud images are referred to as Amazon Machine Images (AMIs). Canonical produces a wide variety of images to support numerous features found on AWS:
 
-* Generally, all images use Elastic Block Storage (EBS) and hardware virtual machine (HVM) virtualisation types. Older releases may also support paravirtual (PV) and instance-store, but users benefit from the newer storage and virtualisation technologies.
+* Generally, all images use Elastic Block Storage (EBS) and hardware virtual machine (HVM) virtualization types. Older releases may also support paravirtual (PV) and instance-store, but users benefit from the newer storage and virtualization technologies.
 * `Standard` and `minimal` server images are available for both `amd64` and `arm64`.
 * `Daily` (untested) and `release` versions of the images are published regularly.
 
@@ -98,8 +98,8 @@ Note that listings on the AWS Marketplace will always show the `OwnerId` as Amaz
 Images in the AWS Marketplace
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-AWS Marketplace is a digital catalogue with thousands of software listings from independent software vendors that make it easy to find, test, buy, and deploy software that runs on AWS.
-Canonical maintains `image listings <https://aws.amazon.com/marketplace/seller-profile?id=565feec9-3d43-413e-9760-c651546613f2>`_ for recent Ubuntu releases and special flavours (e.g. `Anbox`, `Pro`, `Pro FIPS`, `EKS`) on this marketplace.
+AWS Marketplace is a digital catalog with thousands of software listings from independent software vendors that make it easy to find, test, buy, and deploy software that runs on AWS.
+Canonical maintains `image listings <https://aws.amazon.com/marketplace/seller-profile?id=565feec9-3d43-413e-9760-c651546613f2>`_ for recent Ubuntu releases and special flavors (e.g. `Anbox`, `Pro`, `Pro FIPS`, `EKS`) on this marketplace.
 
 Customers can also use the AWS Marketplace to launch and subscribe to official Ubuntu Pro images that allow users to pay for additional support.
 

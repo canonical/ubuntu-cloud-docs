@@ -30,7 +30,7 @@ Vagrant has been dropped by Ubuntu due to the adoption of the  `Business Source 
 
 Support Matrix
 ~~~~~~~~~~~~~~
-- Support is provided for images utilising ``vagrant`` and ``virtualbox`` packages from the archive.
+- Support is provided for images utilizing ``vagrant`` and ``virtualbox`` packages from the archive.
 - Best support will be given for matching guest and host Ubuntu. 
 - Best efforts will be made when the guest and host differ. 
 - There is no support for extra plugins.

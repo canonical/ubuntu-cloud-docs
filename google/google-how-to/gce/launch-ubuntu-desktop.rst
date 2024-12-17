@@ -63,7 +63,7 @@ SSH back into the VM when the connection is restored, and start SLiM:
 Configure the remote desktop service
 ------------------------------------
 
-To start the remote desktop connection, you'll need an authorisation key. This can be created using Chrome on your local machine. Browse to the `Chrome Remote Desktop setup`_ page, where you'll see the option to `Set up another computer` on the `Set up via SSH` tab.
+To start the remote desktop connection, you'll need an authorization key. This can be created using Chrome on your local machine. Browse to the `Chrome Remote Desktop setup`_ page, where you'll see the option to `Set up another computer` on the `Set up via SSH` tab.
 
 * Select :guilabel:`Begin`
 * Select :guilabel:`Next`, since you have already installed Chrome Remote Desktop on the remote computer
@@ -81,7 +81,7 @@ Connect to your Ubuntu desktop
 
 On your local machine, go to the `Chrome Remote Desktop access`_ page, and you'll see your VM under `Remote devices` on the `Remote Access` tab. Select the VM and you will be prompted to input the 6-digit pin that you created in the previous step.
 
-You might see a window with messages similar to "This session logs you into Ubuntu". Select :guilabel:`OK` to close the window. If you see a page that says "Authentication is required to create a colour managed device", select :guilabel:`Cancel` to ignore it.
+You might see a window with messages similar to "This session logs you into Ubuntu". Select :guilabel:`OK` to close the window. If you see a page that says "Authentication is required to create a color managed device", select :guilabel:`Cancel` to ignore it.
 
 You might also see a setup screen that you can follow through by selecting :guilabel:`Start Setup` > :guilabel:`Next` > :guilabel:`Next` > :guilabel:`Start Using Ubuntu`
 

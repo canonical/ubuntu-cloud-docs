@@ -53,10 +53,10 @@ Finally, back on the workstation, use Juju to add these AWS credentials:
 Follow the wizard - give a name to the credential, select a region, enter the access key and enter the secret key (which remains invisible) - to complete the process.
 
 
-Initialise the Juju control plane
+Initialize the Juju control plane
 ---------------------------------
 
-Next, initialise the Juju control plane using Juju bootstrap and follow the wizard to configure region, names, etc.
+Next, initialize the Juju control plane using Juju bootstrap and follow the wizard to configure region, names, etc.
 
 .. code-block::
 

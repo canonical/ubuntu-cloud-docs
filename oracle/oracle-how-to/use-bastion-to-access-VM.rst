@@ -3,7 +3,7 @@ Use a bastion to access your VM
 
 To increase security and avoid Internet based attacks, it might make sense to run your VMs without a public IP address and just use a private IP instead. The only way to access such a VM will be through your private network in the Oracle Cloud VCN (Virtual Cloud Network).
 
-`Oracle's bastion feature`_ provides time-limited access to VMs that do not have a public endpoint. It enables you to create a bastion - that controls authorised users and allows them to SSH into a VM from specific IP addresses. Using this feature means that you do not need to deploy and maintain your own security-hardened bastion exposed to both your internal network and the public internet. It also provides a more managed method to inject your SSH key into the target instance and the bastion.
+`Oracle's bastion feature`_ provides time-limited access to VMs that do not have a public endpoint. It enables you to create a bastion - that controls authorized users and allows them to SSH into a VM from specific IP addresses. Using this feature means that you do not need to deploy and maintain your own security-hardened bastion exposed to both your internal network and the public internet. It also provides a more managed method to inject your SSH key into the target instance and the bastion.
 
 Prerequisites
 -------------

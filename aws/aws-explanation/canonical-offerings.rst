@@ -6,7 +6,7 @@ Ubuntu images
 
 Canonical produces a wide variety of Ubuntu images to support numerous features found on AWS.
 
-* `Server images`_ - These are general-purpose customised Amazon Machine Images (AMIs) based on an AWS-optimised kernel. They include improved device drivers and relevant agents such as `EC2 Instance Connect` and `AWS Systems Manager`.
+* `Server images`_ - These are general-purpose customized Amazon Machine Images (AMIs) based on an AWS-optimized kernel. They include improved device drivers and relevant agents such as `EC2 Instance Connect` and `AWS Systems Manager`.
 
 * `Minimal server images`_ - These are designed for automated deployment at scale and have a reduced default package set. Things like interactive usage tools are omitted. They are much smaller, boot faster, and require fewer security updates over time due to the fewer installed packages.
 
@@ -16,13 +16,13 @@ Canonical produces a wide variety of Ubuntu images to support numerous features 
 
 * Ubuntu Pro with `real-time kernel`_ - These are Ubuntu Pro images with a real-time kernel in them. They are used by enterprises in the automotive, industrial, and telecommunication sectors to unlock real-time compute and reduce development time by validating their code in a cloud environment.
 
-* `Ubuntu server EKS images`_ - These are optimised AMIs that run as worker nodes in Amazon's Elastic Kubernetes Service (EKS). They include the AWS-optimised kernel, a slimmed-down minimal version of Ubuntu, and are optimised for performance and security on EKS clusters. They also come with the Kubernetes worker node related softwares such as ``kubelet`` and ``kubectl``.
+* `Ubuntu server EKS images`_ - These are optimized AMIs that run as worker nodes in Amazon's Elastic Kubernetes Service (EKS). They include the AWS-optimized kernel, a slimmed-down minimal version of Ubuntu, and are optimized for performance and security on EKS clusters. They also come with the Kubernetes worker node related softwares such as ``kubelet`` and ``kubectl``.
 
-* Ubuntu Pro EKS images - These are Ubuntu Pro AMIs optimised to run as worker nodes on EKS. They are similar to the Ubuntu Server EKS images, but also include all the premium features of an Ubuntu Pro image such as certified components, hardening options, kernel livepatch and expanded security maintenance.
+* Ubuntu Pro EKS images - These are Ubuntu Pro AMIs optimized to run as worker nodes on EKS. They are similar to the Ubuntu Server EKS images, but also include all the premium features of an Ubuntu Pro image such as certified components, hardening options, kernel livepatch and expanded security maintenance.
 
 Each of these variations have multiple versions that are released at regular intervals. For instance, untested dailies maybe published everyday, while the fully tested release versions include interim versions published every six months and long-term support (LTS) versions published every 2 years. 
 
-The different variations and the means to find them in AWS are summarised below: 
+The different variations and the means to find them in AWS are summarized below: 
 
 .. list-table::
 
@@ -61,12 +61,12 @@ The different variations and the means to find them in AWS are summarised below:
   
 
 
-Optimisations for AWS
+Optimizations for AWS
 ---------------------
 
-Generally, all images use Elastic Block Storage (EBS) and hardware virtual machine (HVM) virtualisation types. For Ubuntu versions 23.10 and newer, the images use `ebs-gp3 volumes`_. 
+Generally, all images use Elastic Block Storage (EBS) and hardware virtual machine (HVM) virtualization types. For Ubuntu versions 23.10 and newer, the images use `ebs-gp3 volumes`_. 
 
-The optimised ``linux-aws`` kernel used in most of the available offerings enables specific AWS features:
+The optimized ``linux-aws`` kernel used in most of the available offerings enables specific AWS features:
 
 * `Elastic Fabric Adapter`_ - which allows high-performance applications to directly access the network adapter and get reliable transport with low-latency. 
 * `Nitro enclaves driver`_ - which gives data processing applications a secure enclave with CPU and memory isolation to prevent data leaks.

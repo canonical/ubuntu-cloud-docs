@@ -18,7 +18,7 @@ Basic requirements
 Install the Juju client
 -----------------------
 
-Juju provides a simple installation of Kubeflow across Kubernetes platforms, with a good level of customisation, as well as easy maintenance. For further details check out `Charmed Kubeflow`_. To use the Juju CLI, install the Juju client. On Linux, install it via snap using:
+Juju provides a simple installation of Kubeflow across Kubernetes platforms, with a good level of customization, as well as easy maintenance. For further details check out `Charmed Kubeflow`_. To use the Juju CLI, install the Juju client. On Linux, install it via snap using:
 
 .. code::
 

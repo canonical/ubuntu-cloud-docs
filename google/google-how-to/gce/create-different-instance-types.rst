@@ -122,7 +122,7 @@ In GCE, Intel® TDX is supported in the `C3 machine series`_ since they use the 
 where:
 
 * MACHINE_TYPE: is the C3 machine type to use and 
-* IMAGE_FAMILY_NAME: is the name of the confidential VM supported image family to use, such as Ubuntu 22.04 LTS or Ubuntu 22.04 LTS Pro Server
+* IMAGE_FAMILY_NAME: is the name of the confidential VM supported image family to use, such as Ubuntu 22.04 LTS, Ubuntu 24.04 LTS or Ubuntu 24.04 LTS Pro Server
 
 
 .. _`C3 machine series`: https://cloud.google.com/compute/docs/general-purpose-machines#c3_series

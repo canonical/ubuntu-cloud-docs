@@ -11,7 +11,7 @@ Using DHCP (Google's preferred method)
 
 By default, Google's DHCP service sets the hostname to an automatically generated internal DNS name. 
 
-To set your own custom name, follow the instructions given in `Create a VM instance with a custom hostname`_. In this case, the DHCP service will additionally provide the custom name and will prioritise it to be the default hostname. However, as mentioned earlier, the custom name needs to be an FQDN.
+To set your own custom name, follow the instructions given in `Create a VM instance with a custom hostname`_. In this case, the DHCP service will additionally provide the custom name and will prioritize it to be the default hostname. However, as mentioned earlier, the custom name needs to be an FQDN.
 
 
 Using cloud-init

@@ -19,7 +19,7 @@ Image retention policy
 
 For more details about these image types, check out our documentation of :doc:`image release types <all-clouds:all-clouds-explanation/release-types>`, and to get a list of these images on AWS, refer to: :doc:`../aws-how-to/instances/find-ubuntu-images`.
 
-The retention policy can be summarised as follows:
+The retention policy can be summarized as follows:
 
 .. list-table:: 
    :header-rows: 1
@@ -38,8 +38,8 @@ The retention policy can be summarised as follows:
      - Deprecate all except latest serial
    * - 
      - Unlaunched***
-     - Privatise all images
-     - Privatise all except latest serial
+     - Privatize all images
+     - Privatize all except latest serial
    * - LTS Release
      - Active
      - Delete all *but* the last 3 serials
@@ -50,8 +50,8 @@ The retention policy can be summarised as follows:
      - Deprecate all except latest serial
    * - 
      - Unlaunched***
-     - Privatise all images
-     - Privatise all except latest serial
+     - Privatize all images
+     - Privatize all except latest serial
    * - EKS Release
      - Active
      - N/A

@@ -19,7 +19,7 @@ On the IBM Cloud web console:
 * Under the image section, go to :guilabel:`Change image` > :guilabel:`Stock Images` and search for "Ubuntu" in the search bar to select the Ubuntu OS of your preference.
 * Choose the desired profile for your VSI under the `Profile` section.
 * Select an existing ssh key or create a new one using :guilabel:`Add SSH key`.
-* Customise any other settings as needed and select :guilabel:`Create virtual server` to launch your VSI.
+* Customize any other settings as needed and select :guilabel:`Create virtual server` to launch your VSI.
 
 Using the CLI
 -------------

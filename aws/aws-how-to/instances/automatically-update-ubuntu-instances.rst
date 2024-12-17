@@ -5,7 +5,7 @@ AWS Systems Manager (SSM) can be used to set up automated updates of your Ubuntu
 
 .. note::
 
-    For the process to work, your Ubuntu instances will need outbound access to port 443 and an SSM agent. All AWS-optimised versions of Ubuntu (16.04 LTS and later) come with the SSM agent pre-installed.
+    For the process to work, your Ubuntu instances will need outbound access to port 443 and an SSM agent. All AWS-optimized versions of Ubuntu (16.04 LTS and later) come with the SSM agent pre-installed.
 
 Create an appropriate IAM role
 ------------------------------
