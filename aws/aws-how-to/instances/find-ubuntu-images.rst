@@ -53,18 +53,19 @@ Images for EC2 and EKS
 
       .. code-block::
 
-         aws ssm get-parameters --names /aws/service/canonical/ubuntu/eks/22.04/1.31/stable/current/amd64/hvm/ebs-gp2/ami-id
+         aws ssm get-parameters --names /aws/service/canonical/ubuntu/eks/24.04/1.31/stable/current/amd64/hvm/ebs-gp3/ami-id
 
       The format for the parameter is:
 
       .. code-block::
 
-         ubuntu/$EKS_PRODUCT/$RELEASE/$K8S_VERSION/stable/current/$ARCH/hvm/ebs-gp2/ami-id
+         ubuntu/$EKS_PRODUCT/$RELEASE/$K8S_VERSION/stable/current/$ARCH/hvm/$VOL_TYPE/ami-id
 
       * EKS_PRODUCT: `eks` or `eks-pro`
-      * RELEASE: `jammy`, `22.04` (for EKS 1.29 or greater, or EKS Pro); `focal`, `20.04` (for EKS <= 1.29)
+      * RELEASE: `noble`, `24.04` (for EKS 1.31 or greater, or EKS Pro); `jammy`, `22.04` (for EKS 1.29 or greater, or EKS Pro); `focal`, `20.04` (for EKS <= 1.29)
       * K8S_VERSION: one of the supported EKS versions (e.g. `1.31`)
       * ARCH: `amd64` or `arm64`
+      * VOL_TYPE: `ebs-gp2` (for <= Jammy) and `ebs-gp3` (for >= Noble)
 
 In the generated output, the "Value" field will have the required AMI ID. It can be used to instantiate the corresponding image using the ``ec2 run-instances`` command as explained :ref:`here <instantiate-image-on-ec2>`. 
 
