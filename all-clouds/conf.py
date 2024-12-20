@@ -51,7 +51,7 @@ html_context = {
 # For example: "explanation/old-name.html": "../how-to/prettify.html",
 redirects = {
     "oci/oci-how-to/create-chiselled-ubuntu-image.html":
-        "https://canonical-oci.readthedocs-hosted.com/en/latest/oci-how-to/create-chiselled-ubuntu-image/",
+        "https://canonical-oci.readthedocs-hosted.com/en/latest/oci-how-to/create-chiseled-ubuntu-image/",
     "oci/oci-how-to/deploy-pro-container-on-pro-kubernetes-cluster.html":
         "https://canonical-oci.readthedocs-hosted.com/en/latest/oci-how-to/deploy-pro-container-on-pro-kubernetes-cluster/"
 }
