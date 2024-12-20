@@ -25,7 +25,7 @@ For each active Ubuntu release, at least two image variants are created for GCE:
 
 In addition, the following images are also available: 
 
-* **Ubuntu Pro** images are created for 16.04, 18.04, 20.04, 22.04 and 
+* **Ubuntu Pro** images are created for 16.04, 18.04, 20.04, 22.04, 24.04 and 
 * **Ubuntu Pro FIPS** images are created for 18.04 and 20.04
 
 
