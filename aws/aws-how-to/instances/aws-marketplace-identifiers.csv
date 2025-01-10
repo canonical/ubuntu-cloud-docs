@@ -16,12 +16,7 @@ Minimal Ubuntu 24.04 LTS,arm64,``prod-umggziwlkgulc``,✓
 Ubuntu Pro FIPS 16.04 LTS,amd64,``prod-hykkbajyverq4``,✓
 Ubuntu Pro FIPS 18.04 LTS,amd64,``prod-7izp2xqnddwdc``,✓
 Ubuntu Pro FIPS 20.04 LTS,amd64,``prod-k6fgbnayirmrc``,✓
-Ubuntu Pro 14.04 LTS,amd64,``prod-7u42cjnp5pcuo``,✓
 Ubuntu Pro 22.04 LTS with Real-time Kernel,arm64,``prod-ezodmjvranjew``,✓
-Ubuntu 20.04 LTS for EKS 1.23,amd64,``prod-d6nvbzhhqtsnc``,✓
-Ubuntu 20.04 LTS for EKS 1.23,arm64,``prod-w4kdatfulcfk2``,✓
-Ubuntu 20.04 LTS for EKS 1.24,amd64,``prod-q56ww7nfnmv72``,✓
-Ubuntu 20.04 LTS for EKS 1.24,arm64,``prod-pikds4f276lq6``,✓
 Ubuntu 20.04 LTS for EKS 1.25,amd64,``prod-h232pdamfnj5w``,✓
 Ubuntu 20.04 LTS for EKS 1.25,arm64,``prod-exeixbb2fbrog``,✓
 Ubuntu 20.04 LTS for EKS 1.26,amd64,``prod-paebp5ekgg6uu``,✓
