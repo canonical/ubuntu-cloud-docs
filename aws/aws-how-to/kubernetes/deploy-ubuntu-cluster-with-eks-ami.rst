@@ -19,6 +19,7 @@ Create a ``config.yaml`` with the following content:
 
 ..  code-block:: yaml
 
+    ---
     apiVersion: eksctl.io/v1alpha5
     kind: ClusterConfig
     
