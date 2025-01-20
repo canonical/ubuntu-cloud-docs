@@ -12,7 +12,7 @@ Prerequisites
 
 You need:
 
-- ``eksctl`` (version 0.177 or newer): Check the instructions to `install eksctl`_
+- ``eksctl`` (version v0.201.0 or newer): Check the instructions to `install eksctl`_
 - ``kubectl``: Check the instructions to `install kubectl`_
 
 
@@ -24,18 +24,39 @@ Create a ``config.yaml`` with the following content:
 
 ..  code-block:: yaml
 
+    ---
     apiVersion: eksctl.io/v1alpha5
     kind: ClusterConfig
+    
     metadata:
-        name: your-pro-cluster
-        region: us-east-1
-    NodeGroups:
-    - name: ng-procluster
-      instanceType: m5.large
-      amiFamily: UbuntuPro2204
-      desiredCapacity: 2
+      name: my-pro-cluster
+      region: us-east-1
+      version: '1.31'
+    
+    iam:
+      withOIDC: true
+    
+    nodeGroups:
+      - name: ng-ubuntu-pro-2404
+        instanceType: m5.large
+        desiredCapacity: 3
+        amiFamily: UbuntuPro2404
+        iam:
+           attachPolicyARNs:
+              - arn:aws:iam::aws:policy/AmazonEKSWorkerNodePolicy
+              - arn:aws:iam::aws:policy/AmazonEC2ContainerRegistryReadOnly
+              - arn:aws:iam::aws:policy/AmazonSSMManagedInstanceCore
+              - arn:aws:iam::aws:policy/AmazonEKS_CNI_Policy
+        ssh:
+            allow: true
+            publicKeyName: myKeyPair
 
-This config file will allow you to use ``eksctl`` to create an EKS cluster and node groups. By specifying ``amiFamily: UbuntuPro2204``, we ensure that the EKS Pro AMI will be used during creation and deployment.
+
+This config file will allow you to use ``eksctl`` to create an EKS cluster and node groups. By specifying ``amiFamily: UbuntuPro2404``, we ensure that the EKS Pro AMI will be used during creation and deployment.
+
+To use an Ubuntu specific Ubuntu Pro AMI version, set ``amiFamily`` to one of these choices:
+- ``UbuntuPro2204`` for EKS version >= 1.29 and <=1.31
+- ``UbuntuPro2404`` for EKS version >= 1.31
 
 For further cluster customization check out `eksctl details`_.
 
@@ -58,8 +79,8 @@ You can confirm the status of the nodes on your cluster using:
     $ kubectl get nodes
 
     NAME                                           STATUS   ROLES    AGE     VERSION
-    ip-xxx-xxx-xx-xxx.us-east-1.compute.internal   Ready    <none>   2m45s   v1.23.x
-    ip-xxx-xxx-x-xx.us-east-1.compute.internal     Ready    <none>   2m45s   v1.23.x
+    ip-xxx-xxx-xx-xxx.us-east-1.compute.internal   Ready    <none>   2m45s   v1.31.x
+    ip-xxx-xxx-x-xx.us-east-1.compute.internal     Ready    <none>   2m45s   v1.31.x
 
 
 (Optional) Verify Pro subscription
@@ -77,8 +98,8 @@ To check that the deployed nodes have Ubuntu Pro, run:
     ----------------------------------------------------------------
     |                       DescribeInstances                      |
     +-----------+-----------------------------+--------------------+
-    |  t3.medium|  2024-05-07T19:57:33+00:00  |  Ubuntu Pro Linux  |
-    |  t3.medium|  2024-05-07T19:57:33+00:00  |  Ubuntu Pro Linux  |
+    |  m5.large |  2024-05-07T19:57:33+00:00  |  Ubuntu Pro Linux  |
+    |  m5.large |  2024-05-07T19:57:33+00:00  |  Ubuntu Pro Linux  |
     +-----------+-----------------------------+--------------------+
 
 
