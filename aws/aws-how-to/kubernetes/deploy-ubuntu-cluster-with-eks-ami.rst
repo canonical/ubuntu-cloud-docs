@@ -48,7 +48,7 @@ Create a ``config.yaml`` with the following content:
 
 To use an Ubuntu specific AMI, set ``amiFamily`` to one of these choices:
 - ``Ubuntu2004`` for EKS version <= 1.29
-- ``Ubuntu2204`` for EKS version >= 1.29 and <=1.31
+- ``Ubuntu2204`` for EKS version >= 1.29 and <=1.32
 - ``Ubuntu2404`` for EKS version >= 1.31
 
 For further cluster customization, check out the `config file schema for eksctl`_ 
