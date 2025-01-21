@@ -1,12 +1,12 @@
 Google agents installed on Ubuntu
-============================
+=================================
 
 There are four different "guest agents" installed on Ubuntu images in GCP, each developed by Google and packaged for Ubuntu by Canonical:
 
-* ``google-guest-agent`` [`package <https://launchpad.net/ubuntu/+source/google-guest-agent>`_, `source code <https://github.com/GoogleCloudPlatform/guest-agent>`_]
-* ``gce-compute-image-packages`` [`package <https://launchpad.net/ubuntu/+source/gce-compute-image-packages>`_, `source code <https://github.com/GoogleCloudPlatform/guest-configs>`_]
-* ``google-compute-engine-oslogin`` [`package <https://launchpad.net/ubuntu/+source/google-compute-engine-oslogin>`_, `source code <https://github.com/GoogleCloudPlatform/guest-oslogin>`_]
-* ``google-osconfig-agent`` [`package <https://launchpad.net/ubuntu/+source/google-osconfig-agent>`_, `source code <https://github.com/GoogleCloudPlatform/osconfig>`_]
+* ``google-guest-agent`` [`package <https://launchpad.net/ubuntu/+source/google-guest-agent>`__, `source code <https://github.com/GoogleCloudPlatform/guest-agent>`__]
+* ``gce-compute-image-packages`` [`package <https://launchpad.net/ubuntu/+source/gce-compute-image-packages>`__, `source code <https://github.com/GoogleCloudPlatform/guest-configs>`__]
+* ``google-compute-engine-oslogin`` [`package <https://launchpad.net/ubuntu/+source/google-compute-engine-oslogin>`__, `source code <https://github.com/GoogleCloudPlatform/guest-oslogin>`__]
+* ``google-osconfig-agent`` [`package <https://launchpad.net/ubuntu/+source/google-osconfig-agent>`__, `source code <https://github.com/GoogleCloudPlatform/osconfig>`__]
 
 ``google-guest-agent``
 ----------------------
@@ -15,13 +15,14 @@ It's written in ``Go`` and can be described as having two main components:
 
 #. The ``google-metadata-script-runner`` binary, which enables users to run bespoke scripts on VM startup and VM shutdown
 #. The ``daemon``, which handles the following on the VM:
-  * SSH and account management
-  * OS Login (if used)
-  * Clock skew
-  * Networking and NICs
-  * Instance optimizations
-  * Telemetry
-  * Mutual TLS Metadata Service (mTLS MDS)
+
+* SSH and account management
+* OS Login (if used)
+* Clock skew
+* Networking and NICs
+* Instance optimizations
+* Telemetry
+* Mutual TLS Metadata Service (mTLS MDS)
 
 ``gce-compute-image-packages``
 ------------------------------
