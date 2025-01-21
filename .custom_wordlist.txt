@@ -103,6 +103,7 @@ gcc
 GCE
 gcloud
 GCP
+GCP's
 GKE
 GKE's
 Golang
@@ -177,6 +178,7 @@ MAAS
 macOS
 manpages
 Mantic
+MDS
 metapackage
 metapackages
 MiB
@@ -186,12 +188,14 @@ microservices
 minimalistic
 MLOps
 mssql
+mTLS
 Multipass
 natively
 NIC
 NICs
 NIST
 NitroTPM
+NSS
 nsswitch
 Nutanix
 NVIDIA
