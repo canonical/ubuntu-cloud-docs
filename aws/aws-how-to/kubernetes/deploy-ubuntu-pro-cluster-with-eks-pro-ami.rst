@@ -55,7 +55,7 @@ Create a ``config.yaml`` with the following content:
 This config file will allow you to use ``eksctl`` to create an EKS cluster and node groups. By specifying ``amiFamily: UbuntuPro2404``, we ensure that the EKS Pro AMI will be used during creation and deployment.
 
 To use an Ubuntu specific Ubuntu Pro AMI version, set ``amiFamily`` to one of these choices:
-- ``UbuntuPro2204`` for EKS version >= 1.29 and <=1.31
+- ``UbuntuPro2204`` for EKS version >= 1.29 and <=1.32
 - ``UbuntuPro2404`` for EKS version >= 1.31
 
 For further cluster customization check out `eksctl details`_.
