@@ -46,6 +46,8 @@ How-to guides
 
 :doc:`Upgrade from Ubuntu 20.04 LTS to Ubuntu 22.04 LTS<./ibm-how-to/upgrade-from-focal-to-jammy>`
 
+:doc:`Upgrade from Ubuntu 22.04 LTS to Ubuntu 24.04 LTS<./ibm-how-to/upgrade-from-jammy-to-noble>`
+
 ---------
 
 Project and community
@@ -67,6 +69,7 @@ Ubuntu on IBM is a member of the Ubuntu family and the project warmly welcomes c
    
    Find Ubuntu images<ibm-how-to/find-ubuntu-images>
    Launch an Ubuntu instance<ibm-how-to/launch-ubuntu-instances>
+   Upgrade from Jammy to Noble<ibm-how-to/upgrade-from-jammy-to-noble>
    Upgrade from Focal to Jammy<ibm-how-to/upgrade-from-focal-to-jammy>
    ibm-how-to/contribute-to-these-docs
    
