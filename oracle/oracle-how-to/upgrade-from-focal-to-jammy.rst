@@ -10,6 +10,16 @@ For fully automated system deployments it is recommended to redeploy with new Ja
 
 For systems that cannot be easily created or destroyed and require manual configuration, running `do-release-upgrade <https://manpages.ubuntu.com/manpages/focal/man8/do-release-upgrade.8.html>`_ is a good option. However this option requires some :ref:`manual intervention <manual intervention oracle>` as explained below. 
 
+.. warning:: Avoid apt lock conflicts
+
+   Oracle images run ``oracle-cloud-agent`` services that may conflict with the ``do-release-upgrade`` process. To avoid problems, disable the ``oracle-cloud-agent`` and ``unified-monitoring-agent`` services::
+
+      $ sudo snap stop oracle-cloud-agent
+
+      $ sudo systemctl stop unified-monitoring-agent
+
+   These services will automatically restart after you complete the system reboot at the end of the upgrade process.
+
 
 .. _manual intervention oracle:
 
