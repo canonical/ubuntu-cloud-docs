@@ -23,6 +23,9 @@ html_context = {
     # Change to the Mattermost channel you want to link to
     # (use an empty value if you don't want to link)
     "mattermost": "https://chat.canonical.com/canonical/channels/public-cloud",
+    # Change to the Matrix channel you want to link to
+    # (use an empty value if you don't want to link)
+    'matrix': 'https://matrix.to/#/#ubuntu-cloud:ubuntu.com',
     # Change to the GitHub URL for your project
     "github_url": "https://github.com/canonical/ubuntu-cloud-docs",
     # Change to the branch for this version of the documentation
