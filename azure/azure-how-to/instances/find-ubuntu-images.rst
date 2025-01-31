@@ -309,6 +309,26 @@ FIPS compliant offers
 
 To learn more about FIPS: `FIPS for Ubuntu <https://ubuntu.com/security/certifications/docs/fips>`_
 
+Ubuntu Pro FIPS 22.04 LTS - Jammy Jellyfish
++++++++++++++++++++++++++++++++++++++++++++
+
+Quick start: `Ubuntu Pro FIPS 22.04 LTS on Azure <https://portal.azure.com/#create/canonical.0001-com-ubuntu-pro-jammy-fipspro-fips-22_04>`_
+
+.. list-table::
+   :widths: 10 9 50
+   :header-rows: 1
+
+   * - **Architecture**
+     - **Hyper-V Generation**
+     - **URN**
+   * - AMD64
+     - Gen1
+     - ``Canonical:0001-com-ubuntu-pro-jammy-fips:pro-fips-22_04-gen1:latest``
+   * - AMD64
+     - Gen2
+     - ``Canonical:0001-com-ubuntu-pro-jammy-fips:pro-fips-22_04:latest``
+
+
 Ubuntu Pro FIPS 20.04 LTS - Focal Fossa
 +++++++++++++++++++++++++++++++++++++++
 
