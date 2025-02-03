@@ -67,7 +67,7 @@ Canonical makes changes to ``/etc/chrony/chrony.conf`` for Azure images. As a re
 SSHD configuration modified
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Canonical makes changes to ``/etc/ssh/sshd_config`` for AWS EC2 images. As a result, during upgrade you'll see a prompt notifying you about the availability of a newer version of the sshd_config file. You'll be asked if you want to keep the existing modified version, use the default one from the new upgrade or take some other action.
+Canonical makes changes to ``/etc/ssh/sshd_config`` for Azure images. As a result, during upgrade you'll see a prompt notifying you about the availability of a newer version of the sshd_config file. You'll be asked if you want to keep the existing modified version, use the default one from the new upgrade or take some other action.
 
 .. image:: upgrade-from-focal-to-jammy-images/5_sshd_modified_config.png
    :align: center
