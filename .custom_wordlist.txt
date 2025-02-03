@@ -177,6 +177,7 @@ LZMA
 MAAS
 macOS
 manpages
+maintainer's
 Mantic
 MDS
 metapackage
@@ -191,6 +192,7 @@ mssql
 mTLS
 Multipass
 natively
+netfilter
 NIC
 NICs
 NIST
