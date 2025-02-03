@@ -8,7 +8,7 @@ Once you have decided to upgrade your system, the next question is how? There ar
 
 For fully automated system deployments it is recommended to redeploy with new Noble instances instead of upgrading from Jammy.
 
-For systems that cannot be easily created or destroyed and require manual configuration, running `do-release-upgrade <https://manpages.ubuntu.com/manpages/jammy/man8/do-release-upgrade.8.html>`_ is a good option. However this option requires some :ref:`manual intervention <manual intervention oracle>` as explained below. 
+For systems that cannot be easily created or destroyed and require manual configuration, running `do-release-upgrade <https://manpages.ubuntu.com/manpages/jammy/man8/do-release-upgrade.8.html>`_ is a good option. However this option requires some :ref:`manual intervention <manual intervention oracle noble>` as explained below. 
 
 .. warning:: Avoid apt lock conflicts
 
@@ -21,7 +21,7 @@ For systems that cannot be easily created or destroyed and require manual config
    These services will automatically restart after you complete the system reboot at the end of the upgrade process.
 
 
-.. _manual intervention oracle:
+.. _manual intervention oracle noble:
 
 Manual intervention steps
 -------------------------
