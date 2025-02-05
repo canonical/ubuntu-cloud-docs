@@ -43,6 +43,7 @@ CloudFormation
 cloudimg
 CloudSigma
 CNCF
+codename
 config
 CPC
 CPUs
