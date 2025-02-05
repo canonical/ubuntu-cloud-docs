@@ -18,10 +18,10 @@ For fully automated system deployments it is recommended to redeploy with new No
 
 For systems that cannot be easily created or destroyed and require manual configuration, running `do-release-upgrade
 <https://manpages.ubuntu.com/manpages/jammy/man8/do-release-upgrade.8.html>`_ is a good option. However this option
-requires some :ref:`manual intervention <manual intervention ibm>` as explained below. 
+requires some :ref:`manual intervention <manual intervention ibm noble>` as explained below. 
 
 
-.. _manual intervention ibm:
+.. _manual intervention ibm noble:
 
 Getting started
 ---------------
@@ -100,7 +100,7 @@ A final prompt is provided before starting the upgrade. It gives information abo
 
 
 Auto-remove obsolete packages
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 After the upgrade is complete, you'll be asked if you want to remove obsolete packages. This is a good practice to keep
 your system clean and free of unnecessary packages. 
