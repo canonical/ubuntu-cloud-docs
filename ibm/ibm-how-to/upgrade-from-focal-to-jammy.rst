@@ -32,7 +32,7 @@ When upgrading in a session over SSH there is an inherent risk of losing access 
 
 The prompt notifies you that an additional SSH daemon will be started and you can either continue or cancel the upgrade.
 
-.. image:: upgrade-from-focal-to-jammy-images/0_additional_ssh_daemon.png
+.. image:: ibm-upgrade-from-focal-to-jammy-images/0_additional_ssh_daemon.png
    :align: center
 
 Update sources.list
@@ -40,7 +40,7 @@ Update sources.list
 
 Since the IBM VPC Focal image is configured to use internal mirrors by default, the ``sources.list`` entries will likely need to be updated from 'focal' to 'jammy'. Confirm 'Y' on the prompt to automatically update the ``sources.list`` entries.
 
-.. image:: upgrade-from-focal-to-jammy-images/1_sources_list.png
+.. image:: ibm-upgrade-from-focal-to-jammy-images/1_sources_list.png
    :align: center
 
 
@@ -48,7 +48,7 @@ Start upgrade
 ~~~~~~~~~~~~~
 A final prompt is provided before starting the upgrade. It gives information about the number of changes and the estimated time to complete because once started, the upgrade process cannot be canceled. At this stage you can continue, cancel or see additional details.
 
-.. image:: upgrade-from-focal-to-jammy-images/2_start_upgrade.png
+.. image:: ibm-upgrade-from-focal-to-jammy-images/2_start_upgrade.png
    :align: center
    
 
@@ -57,7 +57,7 @@ Restart services automatically
 
 During the upgrade of certain libraries, some services have to be restarted. You have the option of allowing the services to be restarted automatically during the upgrade. If you select 'no' here, you'll be asked about the services that you want to restart after each library upgrade. 
 
-.. image:: upgrade-from-focal-to-jammy-images/3_restart_services.png
+.. image:: ibm-upgrade-from-focal-to-jammy-images/3_restart_services.png
    :align: center
 
 
@@ -66,7 +66,7 @@ SSHD configuration modified
 
 Canonical makes changes to ``/etc/ssh/sshd_config`` for IBM VPC images. As a result, during upgrade you'll see a prompt notifying you about the availability of a newer version of the sshd_config file. You'll be asked if you want to keep the existing modified version, use the default one from the new upgrade or take some other action.
 
-.. image:: upgrade-from-focal-to-jammy-images/4_sshd_modified_config.png
+.. image:: ibm-upgrade-from-focal-to-jammy-images/4_sshd_modified_config.png
    :align: center
 
 
@@ -75,6 +75,6 @@ Restart to finish upgrade
 
 Finally, a restart will be necessary for some parts of the upgrade to be applied. If you select no, you can use ``/var/run/reboot-required.pkgs`` to check for the packages that need a reboot.
 
-.. image:: upgrade-from-focal-to-jammy-images/5_finish_upgrade.png
+.. image:: ibm-upgrade-from-focal-to-jammy-images/5_finish_upgrade.png
    :align: center
 
