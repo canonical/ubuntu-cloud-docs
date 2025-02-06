@@ -4,9 +4,9 @@ EKS kubelet snap
 EKS worker nodes run kubelet from the `kubelet-eks snap`_. The snap 
 channel is set based on the Kubernetes version corresponding to the EKS worker node image. For
 Kubernetes version `X.Y` the channel is set to `X.Y.P/stable` where `P` is the latest kubelet `X.Y`
-patch version supported by the image. For example, the latest supported version of kubelet is 1.28.2
-for Kubernetes 1.28, as of this writing (23 Jan 2024). Therefore, the channel of the ``kubelet-eks`` snap
-in the latest image corresponding to the Kubernetes version is set to `1.28.2/stable`.
+patch version supported by the image. For example, a supported version of kubelet is 1.32.0
+for Kubernetes 1.32. Therefore, the channel of the ``kubelet-eks`` snap
+in the image corresponding to the Kubernetes version is set to `1.32.0/stable`.
 
 Note that the `latest` channel track of the snap is unused.
 
