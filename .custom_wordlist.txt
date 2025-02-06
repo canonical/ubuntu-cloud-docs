@@ -77,6 +77,7 @@ EAL
 ebs
 ECR
 ecr
+EC2
 EFI
 eks
 EKS
@@ -229,11 +230,13 @@ preemptible
 programmatically
 provisioner
 provisioners
+PuTTY
 pv
 QCOW
 QEMU
 ramdisk
 RBAC
+RDP
 readthedocs
 Remmina
 reStructuredText
@@ -264,6 +267,7 @@ SNP
 softwares
 sqlcmd
 SquashFS
+SSH
 sshd
 SSHD
 SSL
@@ -334,5 +338,6 @@ workspaces
 WorkSpaces
 xenial
 Xeon
+xrdp
 XZ
 zoneinfo
