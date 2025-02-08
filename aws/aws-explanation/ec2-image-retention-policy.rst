@@ -62,7 +62,7 @@ The retention policy can be summarized as follows:
      - Delete all except last 3 serials
 
 where:
-  - **EOL** refers to when an interim Ubuntu release (for example, Lunar Lobster 23.04) has reached end-of-life `and will no longer enjoy support <https://ubuntu.com/about/release-cycle/>`_, or when EKS is `no longer supported by AWS`_.
+  - **EOL** refers to when an interim Ubuntu release (for example, Lunar Lobster 23.04) has reached end-of-life `and will no longer enjoy support <https://ubuntu.com/about/release-cycle/>`_, or when an EKS version has reached the end of its extended support period (26 months after release) and is `no longer supported by AWS`_.
   - **EOSS** refers to when an LTS Ubuntu release (for example, Bionic Beaver 18.04 LTS) has reached "End of Standard Support" but will remain supported under Ubuntu Pro
   - **Unlaunched** refers to AMIs that are older than 6 months and have never been launched by any AWS user
 
