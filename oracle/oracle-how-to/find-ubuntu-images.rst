@@ -120,11 +120,15 @@ You can find the latest three image builds using either the web console or the C
       .. code:: 
 
         oci compute instance launch 
-          --availability-domain <availability_domain>
-          --compartment-id <compartment_id> 
-          --shape <shape> 
-          --subnet-id <subnet_id>
-          --image-id <image_id_from_the_previous_command>
+          --compartment-id <compartment>
+          --availability-domain <availability-domain>
+          --subnet-id <public-subnet>
+          --image-id <image-id>
+          --display-name ubuntu-vm
+          --shape VM.Standard.E4.Flex
+          --shape-config '{"ocpus": 1, "memoryInGBs": 12}' 
+          --assign-public-ip true 
+          --ssh-authorized-keys-file ~/.ssh/id_rsa.pub
 
       These are the minimal parameters that you'll need to provide with the ``instance launch`` command. For further details about this command and all of its options, refer to the `Oracle CLI documentation`_ for launching a Linux instance.
 
@@ -154,14 +158,15 @@ With the region / image specific OCID, you can create an instance either through
       .. code::
 
         oci compute instance launch 
-          --shape VM.Standard.E4.Flex 
-          --display-name ubuntu-vm 
-          --availability-domain “qIZq:US-ASHBURN-AD-1” 
-          --compartment-id <compartment> 
+          --compartment-id <compartment>
+          --availability-domain <availability-domain>
+          --subnet-id <public-subnet>
+          --image-id <image-id>
+          --display-name ubuntu-vm
+          --shape VM.Standard.E4.Flex
+          --shape-config '{"ocpus": 1, "memoryInGBs": 12}' 
           --assign-public-ip true 
-          --subnet-id <subnet_id> 
-          --image-id ocid1.image.oc1.iad.aaaaaaaatmpx5yaawwe45me3uvajmqfwfs34iwgalmyzlrvfi6jsr4h5cgva 
-          --ssh-authorized-keys-file .ssh/id_rsa.pub
+          --ssh-authorized-keys-file ~/.ssh/id_rsa.pub
 
 
 .. _`Oracle CLI documentation`: https://docs.public.oneportal.content.oci.oraclecloud.com/en-us/iaas/Content/GSG/Tasks/gettingstartedwiththeCLI.htm#launchLinux
