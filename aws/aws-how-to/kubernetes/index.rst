@@ -26,4 +26,5 @@ Using EKS
    Deploy an Ubuntu Pro cluster <deploy-ubuntu-pro-cluster-with-eks-pro-ami>
    Deploy an Ubuntu Pro FIPS cluster <deploy-ubuntu-pro-fips-cluster>
    Deploy an Ubuntu Pro cluster using tokens <deploy-ubuntu-pro-cluster>
+   Deploy a self-managed Ubuntu node group <deploy-self-managed-node-group>
    Enable GPUs on EKS <enable-gpus-on-eks>
