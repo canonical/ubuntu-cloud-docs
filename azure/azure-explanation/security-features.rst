@@ -40,10 +40,7 @@ It's important to note that memory encryption is always enabled with a confident
 Using Ubuntu on confidential VMs
 --------------------------------
 
-Currently there are two Ubuntu images which support Confidential VMs:
-
-* Ubuntu CVM 20.04 LTS, which supports SEV-SNP
-* Ubuntu CVM 22.04 LTS, which supports SEV-SNP - as well as Intel TDX which is still in Public Preview and has yet to reach General Availability.
+Ubuntu LTS images starting from 20.04 support Confidential VMs. Currently, the underlying hardware used is AMD's SEV-SNP technology, while Intel TDX is still in Public Preview.
 
 
 .. _`Trusted Launch`: https://learn.microsoft.com/en-us/azure/virtual-machines/trusted-launch
