@@ -67,7 +67,7 @@ suggestions, fixes and constructive feedback.
 
 * `Get support`_
 * `Join our online chat`_
-* `Discuss on IRC`_
+* `Discuss on Matrix`_
 * `Talk to us about Ubuntu on AWS`_
 * :doc:`aws-how-to/contribute-to-these-docs`
 * `Code of conduct`_
@@ -85,7 +85,7 @@ If none of the above options are suitable for you, and you still want to get in 
 
 .. _Get support: https://ubuntu.com/cloud/public-cloud
 .. _Join our online chat: https://discourse.ubuntu.com/c/public-cloud/aws/177
-.. _`Discuss on IRC`: https://web.libera.chat/#ubuntu-cloud
+.. _`Discuss on Matrix`: https://matrix.to/#/#ubuntu-cloud:ubuntu.com
 .. _Talk to us about Ubuntu on AWS: https://ubuntu.com/aws#get-in-touch
 .. _Code of conduct: https://ubuntu.com/community/ethos/code-of-conduct
 

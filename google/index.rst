@@ -42,7 +42,7 @@ suggestions, fixes and constructive feedback.
 	
 * `Get support`_
 * `Join our online chat`_
-* `Discuss on IRC`_
+* `Discuss on Matrix`_
 * `Talk to us about Ubuntu on Google cloud`_
 * :doc:`google-how-to/contribute-to-these-docs`
 * `Code of conduct`_
@@ -57,7 +57,7 @@ suggestions, fixes and constructive feedback.
    
 .. _Get support: https://ubuntu.com/cloud/public-cloud
 .. _Join our online chat: https://discourse.ubuntu.com/c/public-cloud/gcp/179
-.. _`Discuss on IRC`: https://web.libera.chat/#ubuntu-cloud
+.. _`Discuss on Matrix`: https://matrix.to/#/#ubuntu-cloud:ubuntu.com
 .. _Talk to us about Ubuntu on Google cloud: https://ubuntu.com/gcp#get-in-touch
 .. _Code of conduct: https://ubuntu.com/community/ethos/code-of-conduct
 
