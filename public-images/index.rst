@@ -43,7 +43,7 @@ suggestions, fixes and constructive feedback.
 
 
 * `Get support`_
-* `Discuss on IRC`_
+* `Discuss on Matrix`_
 * :ref:`public-images-contribute`
 * `Code of conduct`_
 
@@ -59,6 +59,6 @@ suggestions, fixes and constructive feedback.
    public-images-how-to/contribute-to-these-docs
 
 .. _Get support: https://ubuntu.com/cloud/public-cloud
-.. _`Discuss on IRC`: https://web.libera.chat/#ubuntu-cloud
+.. _`Discuss on Matrix`: https://matrix.to/#/#ubuntu-cloud:ubuntu.com
 .. _Code of conduct: https://ubuntu.com/community/ethos/code-of-conduct
 .. _cloud-images.ubuntu.com: https://cloud-images.ubuntu.com

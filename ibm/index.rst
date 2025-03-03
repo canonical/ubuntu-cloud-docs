@@ -58,7 +58,7 @@ Ubuntu on IBM is a member of the Ubuntu family and the project warmly welcomes c
 	
 * `Get support`_
 * `Join our online chat`_
-* `Discuss on IRC`_
+* `Discuss on Matrix`_
 * `Talk to us about Ubuntu on IBM`_
 * :doc:`ibm-how-to/contribute-to-these-docs`
 * `Code of conduct`_
@@ -75,7 +75,7 @@ Ubuntu on IBM is a member of the Ubuntu family and the project warmly welcomes c
    
 .. _Get support: https://ubuntu.com/cloud/public-cloud
 .. _Join our online chat: https://discourse.ubuntu.com/c/public-cloud/176
-.. _`Discuss on IRC`: https://web.libera.chat/#ubuntu-cloud
+.. _`Discuss on Matrix`: https://matrix.to/#/#ubuntu-cloud:ubuntu.com
 .. _Talk to us about Ubuntu on IBM: https://ubuntu.com/ibm#get-in-touch
 .. _Code of conduct: https://ubuntu.com/community/ethos/code-of-conduct
 
