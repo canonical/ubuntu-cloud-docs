@@ -41,7 +41,7 @@ community projects, contributions, suggestions, fixes and constructive feedback.
 
 * `Get support`_
 * `Join our online chat`_
-* `Discuss on IRC`_
+* `Discuss on Matrix`_
 * :doc:`oracle-how-to/contribute-to-these-docs`
 * `Code of conduct`_
 
@@ -55,6 +55,6 @@ community projects, contributions, suggestions, fixes and constructive feedback.
 .. _Ubuntu release cycle: https://ubuntu.com/about/release-cycle
 .. _Get support: https://ubuntu.com/cloud/public-cloud
 .. _Join our online chat: https://discourse.ubuntu.com/c/public-cloud/176
-.. _`Discuss on IRC`: https://web.libera.chat/#ubuntu-cloud
+.. _`Discuss on Matrix`: https://matrix.to/#/#ubuntu-cloud:ubuntu.com
 .. _Code of conduct: https://ubuntu.com/community/ethos/code-of-conduct
 
