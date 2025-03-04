@@ -107,5 +107,5 @@ If CUDA was not installed, you can visit the `NVIDIA website`_ to download the C
 
 .. _`AWS CLI or the web console`: https://discourse.ubuntu.com/t/how-to-deploy-ubuntu-pro-in-aws-in-2023/23367
 .. _`NVIDIA website`: https://developer.nvidia.com/cuda-downloads
-.. _`Ubuntu server documentation for installing NVIDIA drivers`: https://ubuntu.com/server/docs/nvidia-drivers-installation
+.. _`Ubuntu server documentation for installing NVIDIA drivers`: https://documentation.ubuntu.com/server/nvidia-drivers-installation/
 

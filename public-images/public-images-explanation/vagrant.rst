@@ -6,7 +6,7 @@ Vagrant
 
 Boxes
 -----
-Vagrant boxes are ``tar`` files containing an image or container specific to the provider, Vagrant metadata, and a base `Vagrantfile <https://developer.hashicorp.com/vagrant/docs/vagrantfile>`_. They are essentially `OVA <https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.vm_admin.doc/GUID-AE61948B-C2EE-436E-BAFB-3C7209088552.html>`_ files with extra metadata and preinstalled packages.
+Vagrant boxes are ``tar`` files containing an image or container specific to the provider, Vagrant metadata, and a base `Vagrantfile <https://developer.hashicorp.com/vagrant/docs/vagrantfile>`_. They are essentially OVA files with extra metadata and preinstalled packages.
 
 What are they for
 ~~~~~~~~~~~~~~~~~

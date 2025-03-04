@@ -35,7 +35,7 @@ In this documentation
 Canonical's offerings
 ---------------------
 
-**Integration with Azure systems** - Ubuntu on Azure cloud integrates with the Systems Manager, ensuring that system management tools work natively for instances on the platform. This includes everything from Azure Update Manager and Security Center, to Azure Policy, to using Azure AD to manage your SSH logins. A number of Microsoft products are built on Ubuntu, such as Azure Kubernetes Service, Databricks, and `SQL Server on Ubuntu Pro`_, which includes end-to-end joint support. Furthermore Canonical is working with Microsoft to bring confidential VMs on the cloud on Ubuntu Advantage and Pro. You can find more information on the public preview of `AMD-based Confidential VMs`_.
+**Integration with Azure systems** - Ubuntu on Azure cloud integrates with the Systems Manager, ensuring that system management tools work natively for instances on the platform. This includes everything from Azure Update Manager and Security Center, to Azure Policy, to using Azure AD to manage your SSH logins. A number of Microsoft products are built on Ubuntu, such as Azure Kubernetes Service, Databricks, and `SQL Server on Ubuntu Pro`_, which includes end-to-end joint support. Furthermore Canonical is working with Microsoft to bring confidential VMs on the cloud on Ubuntu LTS and Pro. You can find more information on the public preview of `AMD-based Confidential VMs`_.
 
 **Customized kernel** - The ``linux-azure`` kernel enables accelerated networking for the InfiniBand capable instances, as well as consistent support for the Single Root I/O Virtualization (SR-IOV) on the present hardware, enabling network traffic to bypass the virtualization stack and achieve almost native performance. It comes with FPGA support out of the box, taking advantage of project catapult to provide performance without the cost and complexity of a custom ASIC.
 
@@ -81,7 +81,7 @@ contributions, suggestions, fixes and constructive feedback.
 .. _AMD-based Confidential VMs: https://techcommunity.microsoft.com/blog/azureconfidentialcomputingblog/azure-confidential-vms-dcasv5ecasv5-using-amd-sev-snp-processors-are-now-general/2993530
 .. _Chiseled .Net images: https://devblogs.microsoft.com/dotnet/dotnet-6-is-now-in-ubuntu-2204
 .. _Get support: https://ubuntu.com/cloud/public-cloud
-.. _Join our online chat: https://discourse.ubuntu.com/c/public-cloud/azure/178
+.. _Join our online chat: https://discourse.ubuntu.com/c/project/azure/178
 .. _`Discuss on Matrix`: https://matrix.to/#/#ubuntu-cloud:ubuntu.com
 .. _Talk to us about Ubuntu on Azure: https://ubuntu.com/azure#get-in-touch
 .. _Code of conduct: https://ubuntu.com/community/ethos/code-of-conduct

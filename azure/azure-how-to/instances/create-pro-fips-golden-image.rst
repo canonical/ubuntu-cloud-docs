@@ -1,5 +1,5 @@
-Create Ubuntu Pro FIPS golden image with Azure Image Builder
-============================================================
+Create an Ubuntu Pro FIPS golden image with Azure Image Builder
+===============================================================
 
 This guide will provide instructions for using the Azure Image Builder (AIB) to create an Ubuntu Pro 20.04 LTS FIPS “golden” image in an Azure Compute Gallery, (formerly Shared Image Gallery). In the process, you'll:
 
@@ -204,7 +204,7 @@ The ``customize`` section allows you to run commands as part of the image buildi
         "type": "Shell",
         "name": "WaitForUAtokenAutoAttach",
         "inline": [
-            "sudo ua status --wait"
+            "sudo pro status --wait"
         ]
     },
 
@@ -367,7 +367,7 @@ You can use the ``publicIpAddress`` (``51.143.126.x`` in this case) to ssh into 
 
 .. code::
 
-    sudo ua status --wait
+    sudo pro status --wait
 
 
 Post creation cleanup

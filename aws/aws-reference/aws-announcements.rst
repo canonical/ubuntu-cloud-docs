@@ -4,7 +4,7 @@ Ubuntu on AWS Announcements
 The official channel for Ubuntu on AWS announcements is 
 on the `Ubuntu discourse <https://discourse.ubuntu.com/>`_. 
 To monitor for release notes, new products, upcoming features, and community polls
-you can subscribe to the `Ubuntu on AWS <https://discourse.ubuntu.com/c/public-cloud/aws/177>`_
+you can subscribe to the `Ubuntu on AWS <https://discourse.ubuntu.com/c/project/aws/177>`_
 category.
 
 To sign up for notifications you will need to create an 

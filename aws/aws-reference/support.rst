@@ -44,6 +44,4 @@ best effort.
 .. _`Canonical Group Limited marketplace`: https://aws.amazon.com/marketplace/search/results?searchTerms=ubuntu+pro&CREATOR=565feec9-3d43-413e-9760-c651546613f2&filters=CREATOR
 .. _`Amazon Web Services marketplace`: https://aws.amazon.com/marketplace/search/results?searchTerms=ubuntu+pro&CREATOR=e6a5002c-6dd0-4d1e-8196-0a1d1857229b&filters=CREATOR
 .. _`AWS support portal`: https://console.aws.amazon.com/support/home#/case/create?issueType=technical
-.. _`file a bug`: https://bugs.launchpad.net/cloud-images/+filebug
-
- 
+.. _`file a bug`: https://bugs.launchpad.net/cloud-images/+filebug/+login
