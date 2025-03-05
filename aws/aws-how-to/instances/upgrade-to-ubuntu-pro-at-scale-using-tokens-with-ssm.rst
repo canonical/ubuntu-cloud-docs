@@ -114,7 +114,7 @@ Additional resources and links
 - `Running scripts at scale on SSM with Run Command and SSM Documents <https://ubuntu.com/tutorials/how-to-create-ssm-documents-and-use-them-to-install-packages-massively-with-run-command#1-overview>`_
 - `Enabling SSM and using SSM Session Manager on Ubuntu <https://ubuntu.com/tutorials/how-to-use-aws-ssm-session-manager-for-accessing-ubuntu-pro-instances#1-overview>`_
 - `AWS Systems Manager documentation (AWS) <https://docs.aws.amazon.com/systems-manager/index.html>`_
-- `Creating SSM Documents (AWS) <https://docs.aws.amazon.com/systems-manager/latest/userguide/create-ssm-doc.html>`_
+- `Creating SSM Documents (AWS) <https://docs.aws.amazon.com/systems-manager/latest/userguide/documents-creating-content.html>`_
 - `Ubuntu Pro on AWS <https://ubuntu.com/aws/pro>`_
 - `Network requirements for Pro ESM repositories <https://canonical-ubuntu-pro-client.readthedocs-hosted.com/en/latest/references/network_requirements/>`_
 

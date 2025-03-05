@@ -79,7 +79,7 @@ Ubuntu public cloud is open source project that warmly welcomes community projec
       
 
 .. _Get support: https://ubuntu.com/cloud/public-cloud
-.. _Join our online chat: https://discourse.ubuntu.com/c/public-cloud/176
+.. _Join our online chat: https://discourse.ubuntu.com/c/project/public-cloud/176
 .. _`Discuss on Matrix`: https://matrix.to/#/#ubuntu-cloud:ubuntu.com
 .. _Start using Ubuntu today: https://ubuntu.com/download/cloud
 .. _Code of conduct: https://ubuntu.com/community/ethos/code-of-conduct

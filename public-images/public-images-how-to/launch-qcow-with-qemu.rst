@@ -128,6 +128,6 @@ output:
     Boot0005* UEFI HTTPv4 (MAC:525400123456)
     Boot0006* EFI Internal Shell
 
-.. _`server documentation`: https://ubuntu.com/server/docs/virtualisation-with-qemu
+.. _`server documentation`: https://documentation.ubuntu.com/server/virtualisation-with-qemu/
 .. _`QEMU`: https://www.qemu.org/docs/master/index.html
 .. _`KVM`: https://ubuntu.com/blog/kvm-hyphervisor
