@@ -14,3 +14,4 @@ The explanatory guides provided are designed to provide a better understanding o
 
    LXD and OpenStack images<lxd-openstack-images>
    Vagrant<vagrant>
+   Image retention policy <public-image-retention-policy>
