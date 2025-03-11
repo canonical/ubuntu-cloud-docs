@@ -38,18 +38,6 @@ Learn about different deployment scenarios for Ubuntu container images.
    deploy-pro-container-on-pro-kubernetes-cluster
 
 
-
-Chiseled Ubuntu
-----------------
-
-You can create even smaller Ubuntu container images with Chisel.
-
-.. toctree::
-   :maxdepth: 1
-
-   Create a chiseled Ubuntu image <create-chiseled-ubuntu-image>
-
-
 Documentation
 -------------
 

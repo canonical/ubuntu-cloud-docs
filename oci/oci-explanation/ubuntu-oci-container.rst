@@ -12,7 +12,7 @@ software updates, ensuring consistency in both maintenance schedule and operatio
 interfaces for the underlying foundation your software builds on.
 
 Moreover, all `Ubuntu-based containers <https://ubuntu.com/containers>`_ (like
-`chiseled container images <https://documentation.ubuntu.com/rockcraft/en/latest/explanation/chisel/>`_)
+`chiseled container images <https://documentation.ubuntu.com/chisel/en/latest/>`_)
 
 
 leverage the Ubuntu container image as their
