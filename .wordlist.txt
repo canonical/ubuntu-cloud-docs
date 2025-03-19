@@ -44,6 +44,7 @@ ReadMe
 reST
 reStructuredText
 RTD
+SRU
 subdirectories
 subfolders
 subtree
