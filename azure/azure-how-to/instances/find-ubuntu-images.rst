@@ -374,6 +374,37 @@ CIS Hardened offer
 
 To learn more about CIS compliance: `CIS compliance with Ubuntu LTS <https://ubuntu.com/security/certifications/docs/usg/cis>`_
 
+Ubuntu Minimal Pro CIS 22.04 LTS - Jammy Jellyfish
+++++++++++++++++++++++++++++++++++++++++++++++++++
+
+| Quick start (CIS Profile Level 1 Server): `Ubuntu Pro CIS Level 1 22.04 LTS on Azure  <https://portal.azure.com/#create/canonical.0001-com-ubuntu-pro-minimal-cis-jammypro-cis-minimal-22_04-level-1>`_
+| Quick start (CIS Profile Level 2 Server): `Ubuntu Pro CIS Level 2 22.04 LTS on Azure  <https://portal.azure.com/#create/canonical.0001-com-ubuntu-pro-minimal-cis-jammypro-cis-minimal-22_04-level-2>`_
+
+.. list-table::
+   :widths: 10 10 9 50
+   :header-rows: 1
+
+   * - **Architecture**
+     - **CIS Profile**
+     - **Hyper-V Generation**
+     - **URN**
+   * - AMD64
+     - cis_level1_server
+     - Gen1
+     - ``Canonical:0001-com-ubuntu-pro-minimal-cis-jammy:pro-cis-minimal-22_04-level-1-gen1:latest``
+   * - AMD64
+     - cis_level1_server
+     - Gen2
+     - ``Canonical:0001-com-ubuntu-pro-minimal-cis-jammy:pro-cis-minimal-22_04-level-1:latest``
+   * - AMD64
+     - cis_level2_server
+     - Gen1
+     - ``Canonical:0001-com-ubuntu-pro-minimal-cis-jammy:pro-cis-minimal-22_04-level-2-gen1:latest``
+   * - AMD64
+     - cis_level2_server
+     - Gen2
+     - ``Canonical:0001-com-ubuntu-pro-minimal-cis-jammy:pro-cis-minimal-22_04-level-2:latest``
+
 Ubuntu Minimal Pro CIS 20.04 LTS - Focal Fossa
 ++++++++++++++++++++++++++++++++++++++++++++++
 
