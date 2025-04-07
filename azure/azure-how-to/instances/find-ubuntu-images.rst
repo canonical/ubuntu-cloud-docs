@@ -278,7 +278,7 @@ Ubuntu Pro CVM 22.04 LTS - Jammy Jellyfish
 .. list-table::
    :widths: 10 9 50
    :header-rows: 1
-  
+
    * - **Architecture**
      - **Hyper-V Generation**
      - **URN**
