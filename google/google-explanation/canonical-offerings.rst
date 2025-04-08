@@ -22,6 +22,7 @@ For each active Ubuntu release, at least two image variants are created for GCE:
 
 * **Base** images that contain a full Ubuntu development environment
 * **Minimal** images that have a smaller footprint than base images, and are designed for production instances that will never be accessed by a human
+* **Accelerator** images contain the packages needed to run accelerator workloads on advanced GPUs
 
 In addition, the following images are also available: 
 
