@@ -15,3 +15,4 @@ The explanatory guides provided are designed to provide a better understanding o
    LXD and OpenStack images<lxd-openstack-images>
    Vagrant<vagrant>
    Image retention policy <public-image-retention-policy>
+   Ubuntu Security on Public Images <ubuntu-security-on-public-images>
