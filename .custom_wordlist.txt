@@ -38,6 +38,7 @@ checksums
 chrony
 Chrony
 CIS
+cis
 CLI
 CloudFormation
 cloudimg
