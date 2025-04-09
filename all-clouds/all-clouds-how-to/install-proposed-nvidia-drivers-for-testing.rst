@@ -12,6 +12,7 @@ NVIDIA drivers in the proposed pocket are unsigned.
     Important considerations:
         1. Packages in the proposed pocket are intended for testing only. Please do not install NVIDIA drivers from proposed on production systems.
         2. If you have customized ``apt`` configurations, these instructions may introduce conflicts.
+        3. Once the proposed pocket is enabled, new drivers will be installed as available in from the proposed pocket.  To ensure new unsigned drivers are not installed, changes must be rolled back.
 
 For more details on installing proposed packages and Stable Release Update (SRU) testing see `Enable Proposed`_.
 
@@ -100,6 +101,10 @@ Make sure the expected NVIDIA driver is installed.
 .. code::
 
     nvidia-smi
+
+
+In order to ensure you update to the signed version of the driver as soon as it is available, it is recommended that you subscribe to the Launchpad bug associated with the SRU of the driver, e.g. https://bugs.launchpad.net/ubuntu/+source/nvidia-graphics-drivers-570-server/+bug/2095341.
+
 
 Rolling back
 ------------
