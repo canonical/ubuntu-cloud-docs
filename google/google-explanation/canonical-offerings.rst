@@ -22,10 +22,11 @@ For each active Ubuntu release, at least two image variants are created for GCE:
 
 * **Base** images that contain a full Ubuntu development environment
 * **Minimal** images that have a smaller footprint than base images, and are designed for production instances that will never be accessed by a human
+* **Accelerator** images contain the packages needed to run accelerator workloads on advanced GPUs
 
 In addition, the following images are also available: 
 
-* **Ubuntu Pro** images are created for 16.04, 18.04, 20.04, 22.04, 24.04 and 
+* **Ubuntu Pro** images are created for 16.04, 18.04, 20.04, 22.04, and 24.04 
 * **Ubuntu Pro FIPS** images are created for 18.04 and 20.04
 
 
