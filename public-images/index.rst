@@ -2,6 +2,7 @@ Ubuntu Public Images
 ====================
 
 **Canonical produces generic (generic kernel) cloud images, LXD images (rootfs tarballs) and KVM optimized cloud images (KVM kernel)**. These images are public (unlike other cloud-specific images) and are available on `cloud-images.ubuntu.com`_.
+Canonical also produces so-called Buildd images that are used primarily by `Launchpad <https://launchpad.net/builders>`_ to serve the purpose of building archive packages and Ubuntu images.
 
 .. include:: ../reuse/common-intro.txt
    :start-after: Start: Product need and user
