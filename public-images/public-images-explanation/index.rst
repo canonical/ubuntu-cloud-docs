@@ -7,6 +7,9 @@ The explanatory guides provided are designed to provide a better understanding o
 
 - :ref:`lxd-openstack-images`
 - :ref:`vagrant-explanation`
+- :ref:`buildd`
+- :ref:`public-image-retention-policy`
+- :ref:`ubuntu-security-on-public-images`
 
 .. toctree::
    :maxdepth: 1
@@ -14,6 +17,6 @@ The explanatory guides provided are designed to provide a better understanding o
 
    LXD and OpenStack images<lxd-openstack-images>
    Vagrant<vagrant>
-   Buildd<buildd>
+   Buildd images<buildd>
    Image retention policy <public-image-retention-policy>
-   Ubuntu Security on Public Images <ubuntu-security-on-public-images>
+   Ubuntu security on public images <ubuntu-security-on-public-images>

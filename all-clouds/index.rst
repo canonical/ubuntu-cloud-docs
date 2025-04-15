@@ -36,7 +36,7 @@ For further details, refer to the cloud-specific documentation:
 Other Ubuntu images
 -------------------
 
-Apart from the specific public clouds, Canonical also produces a variety of Ubuntu images for use in other platforms such as LXD, MAAS and OCI container registries.
+Apart from the specific public clouds, Canonical also produces a variety of Ubuntu images for use in other platforms such as LXD, MAAS, QEMU and OCI container registries.
 
 
 ..  grid:: 1 1 2 2
