@@ -2,7 +2,7 @@
 
 Vagrant
 =======
-`Vagrant <https://www.vagrantup.com/>`_ is a multi-provider tool for building and managing virtual machines by HashiCorp. For more information, you can check out the `Vagrant documentation <https://developer.hashicorp.com/vagrant/intro>`_.
+`Vagrant <https://developer.hashicorp.com/vagrant>`_ is a multi-provider tool for building and managing virtual machines by HashiCorp. For more information, you can check out the `Vagrant documentation <https://developer.hashicorp.com/vagrant/intro>`_.
 
 Boxes
 -----

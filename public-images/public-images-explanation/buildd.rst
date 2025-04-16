@@ -1,7 +1,9 @@
+.. _buildd:
+
 Ubuntu Buildd images
 ====================
 
-Buildd images are another offering of cloud images built by Canonical that are used primarily to serve the `Launchpad build farm <https://documentation.ubuntu.com/launchpad/en/latest/reference/services/build-farm/#>`_.
+Buildd images are another offering of cloud images built by Canonical that are primarily used to serve the `Launchpad build farm <https://documentation.ubuntu.com/launchpad/en/latest/reference/services/build-farm/#>`_.
 These images are publicly available to download and use and can be found under `cloud-images.ubuntu.com/buildd <https://cloud-images.ubuntu.com/buildd/>`_. 
 
 Ubuntu Buildd image use cases
@@ -21,7 +23,7 @@ Buildd images are meant to be light and very minimal compared to other cloud ima
 
 * They contain only a small set of packages that are required to build new packages (such as debs or snaps), charms, or images.
 * Direct access to the internet is not enabled for these images; it can be granted for a restricted set of URLs through token authentication.
-* The images published as combined lxd tarballs are not bootable and do not contain a kernel unlike the QCoW disk images.
+* The images published as combined LXD tarballs (containing both the image artifact and its metadata) are not bootable and do not contain a kernel unlike the QCOW disk images.
 
 Due to the lack of common user space tools and the additional configuration required to set up networking and internet access for Buildd images, Canonical does not recommend their use outside the use cases explained above. 
 

@@ -27,6 +27,7 @@ balancers
 bcp
 bootable
 BSL
+buildd
 BuildKit
 bzip
 Center
@@ -264,6 +265,7 @@ SKUs
 SLAs
 SLiM
 SmartOS
+Snapcraft
 SNP
 softwares
 sqlcmd

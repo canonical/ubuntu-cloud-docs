@@ -1,3 +1,5 @@
+.. _public-image-retention-policy:
+
 Public images retention policies
 ================================
 
