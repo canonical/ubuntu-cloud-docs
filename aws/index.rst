@@ -33,7 +33,7 @@ In this documentation
 
    .. grid-item:: :doc:`Reference <aws-reference/index>`
 
-      **Technical information** - specifications such as EC2 credentials, and EKS snaps.
+      **Technical information** about things like EC2 credentials, EKS snaps, Ubuntu Pro and the support options available on AWS.
 
    .. grid-item:: :doc:`Explanation <aws-explanation/index>`
 
@@ -54,7 +54,7 @@ For each Ubuntu release, we deliver multiple customized images to AWS. These ima
 * **virtualization types** - Paravirtual (PV), Hardware Virtual Machine (HVM)
 * **support/security compliance levels** - standard, Ubuntu Pro, Ubuntu Pro FIPS
 
-For more details read about :doc:`aws-explanation/canonical-offerings`
+More details are available in our explanation about :doc:`aws-explanation/canonical-offerings`
 
 ---------
 

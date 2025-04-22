@@ -6,23 +6,25 @@ These guides provide instructions for performing different operations related to
 Launching and using Ubuntu instances
 ------------------------------------
 
-While using Ubuntu on Azure, you'll need to perform tasks such as installing the Azure CLI, finding the right image to use, launching different images and upgrading Ubuntu versions. 
+Perform common tasks such as installing the Azure CLI, finding the right image to use and launching the image.
 
 * :doc:`Install Azure CLI <instances/install-azure-cli>`
 * :doc:`Find images <instances/find-ubuntu-images>`
 * :doc:`Launch images <instances/launch-ubuntu-images>`
+
+Upgrade Ubuntu and create golden images.
+
 * :doc:`Get Ubuntu Pro <instances/get-ubuntu-pro>`
 * :doc:`Create a Pro golden image <instances/create-pro-fips-golden-image>`
 * :doc:`Create a golden image pipeline <instances/create-a-golden-image-pipeline>`
 * :doc:`Upgrade from Focal to Jammy <instances/upgrade-from-focal-to-jammy>`
 
-Using AKS
----------
+Deploy specific solutions like SQL Server and Kubeflow on Azure. 
 
-If you want to use Kubeflow on Azure Kubernetes Service (AKS), you can refer to these instructions.
+* :doc:`Deploy an Ubuntu VM with SQL Server <instances/provision-an-ubuntu-virtual-machine-running-sql-server-in-azure>`
+* `Install Kubeflow on AKS (external link)`_
+* :doc:`Deploy Kubeflow with AKS spot instances <instances/deploy-kubeflow-pipelines-with-aks-spot-instances>`
 
-* :doc:`Install Kubeflow <kubernetes/install-kubeflow-on-aks>`
-* :doc:`Kubeflow with spot instances <kubernetes/deploy-kubeflow-pipelines-with-aks-spot-instances>`
 
 Contributing to the docs
 ------------------------
@@ -36,7 +38,16 @@ If you come across any problems with this documentation and you want to help wit
    :hidden:
    :maxdepth: 1
 
-   instances/index
-   kubernetes/index
+   Install Azure CLI <instances/install-azure-cli>
+   Find images <instances/find-ubuntu-images>
+   Launch images <instances/launch-ubuntu-images>
+   Get Ubuntu Pro <instances/get-ubuntu-pro>
+   Create a Pro golden image <instances/create-pro-fips-golden-image>
+   Create a golden image pipeline <instances/create-a-golden-image-pipeline>
+   Upgrade from Focal to Jammy <instances/upgrade-from-focal-to-jammy>
+   Deploy an Ubuntu VM running SQL Server <instances/provision-an-ubuntu-virtual-machine-running-sql-server-in-azure>
+   Deploy Kubeflow with AKS spot instances <instances/deploy-kubeflow-pipelines-with-aks-spot-instances>  
    contribute-to-these-docs
+
+.. _`Install Kubeflow on AKS (external link)`: https://charmed-kubeflow.io/docs/install-on-aks
 

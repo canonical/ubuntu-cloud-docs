@@ -1,5 +1,5 @@
-AWS image retention policies
-=============================
+AWS image retention policy
+==========================
 
 Ubuntu images on AWS have three stage of life cycle : *release* > *deprecation* > *deletion*. 
 

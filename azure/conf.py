@@ -76,8 +76,10 @@ redirects = {
     "azure-how-to/upgrade-from-focal-to-jammy":
         "../instances/upgrade-from-focal-to-jammy/",
 
-    "azure-how-to/install-kubeflow-on-aks":
-        "../kubernetes/install-kubeflow-on-aks/",
-    "azure-how-to/deploy-kubeflow-pipelines-with-aks-spot-instances":
-        "../kubernetes/deploy-kubeflow-pipelines-with-aks-spot-instances/"
+    "azure-how-to/kubernetes/index":
+        "https://charmed-kubeflow.io/docs/install-on-aks",
+    "azure-how-to/kubernetes/install-kubeflow-on-aks":
+        "https://charmed-kubeflow.io/docs/install-on-aks",
+    "azure-how-to/kubernetes/deploy-kubeflow-pipelines-with-aks-spot-instances":
+        "../instances/deploy-kubeflow-pipelines-with-aks-spot-instances/"
 }

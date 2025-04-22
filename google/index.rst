@@ -24,11 +24,11 @@ In this documentation
 
    ..  grid-item:: :doc:`How-to guides <google-how-to/index>`
 
-      **Step-by-step guides** covering key operations and common tasks
+      **Step-by-step guides** covering key operations and common tasks related to using Ubuntu images on GCE.
 
    .. grid-item:: :doc:`Explanation <google-explanation/index>`
 
-      **Discussion and clarification** of key topics, such as confidential computing and our image retention policy.
+      **Discussion and clarification** of key topics, such as security features, Google's 'guest agents' on Ubuntu and our image retention policy.
 
 
 ---------

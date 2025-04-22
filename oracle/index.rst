@@ -24,7 +24,7 @@ In this documentation
 
    ..  grid-item:: :doc:`How-to guides <oracle-how-to/index>`
 
-      **Step-by-step guides** covering key operations and common tasks
+      **Step-by-step guides** covering key operations and common tasks related to using Ubuntu images on Oracle Cloud.
 
    .. grid-item:: :doc:`Canonical's offerings <oracle-explanation/canonical-offerings>`
 
