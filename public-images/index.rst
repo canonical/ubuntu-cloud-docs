@@ -26,7 +26,7 @@ In this documentation
 
    .. grid-item:: :doc:`Explanation <public-images-explanation/index>`
 
-      **Discussion and clarification** of key topics related to our Public Images offerings, including our retention policy.
+      **Discussion and clarification** of key topics such as the different types of images available, security aspects and our retention policy.
 
    .. grid-item:: :doc:`Cloud image artifacts - A reference <public-images-reference/artifacts>`
 

@@ -1,7 +1,7 @@
 Cloud-init metapackages
 =======================
 
-Starting in Ubuntu 25.04, `cloud-init <https://docs.cloud-init.io>`_
+Starting in Ubuntu 25.04, `cloud-init <https://docs.cloud-init.io/en/latest/>`_
 added `cloud-specific metapackages <https://launchpad.net/ubuntu/+source/cloud-init>`_
 to better express cloud-specific dependencies and reduce image size.
 

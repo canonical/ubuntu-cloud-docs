@@ -262,11 +262,11 @@ For more information about ``oci`` CLI and managing self-managed nodes on your c
 .. _`node cycling for self-managed nodes`: https://docs.oracle.com/en-us/iaas/Content/ContEng/Tasks/contengupgradingselfmanagednodes.htm#contengupgradingselfmanagednodes
 .. _`working with self-managed nodes`: https://docs.oracle.com/en-us/iaas/Content/ContEng/Tasks/contengworkingwithselfmanagednodes.htm
 .. _`creating a cluster`: https://docs.oracle.com/en-us/iaas/Content/ContEng/Tasks/create-cluster.htm
-.. _`import from-object-uri`: https://docs.oracle.com/en-us/iaas/tools/oci-cli/3.51.9/oci_cli_docs/cmdref/compute/image/import/from-object-uri.html
+.. _`import from-object-uri`: https://docs.oracle.com/en-us/iaas/tools/oci-cli/3.54.3/oci_cli_docs/cmdref/compute/image/import/from-object-uri.html
 .. _`object upload`: https://docs.oracle.com/en-us/iaas/tools/oci-cli/3.45.2/oci_cli_docs/cmdref/os/object/put.html
 .. _`image import from object`: https://docs.oracle.com/en-us/iaas/tools/oci-cli/3.45.2/oci_cli_docs/cmdref/compute/image/import/from-object.html
 .. _`managing custom images`: https://docs.oracle.com/en-us/iaas/Content/Compute/Tasks/managingcustomimages.htm
-.. _`OCI CLI documentation`: https://docs.oracle.com/en-us/iaas/tools/oci-cli/3.51.9/oci_cli_docs/
+.. _`OCI CLI documentation`: https://docs.oracle.com/en-us/iaas/tools/oci-cli/3.54.3/oci_cli_docs/
 .. _`Creating and managing kubernetes clusters`: https://docs.public.oneportal.content.oci.oraclecloud.com/en-us/iaas/compute-cloud-at-customer/topics/oke/creating-and-managing-kubernetes-clusters.htm
 .. _`Creating a dynamic group and a policy for self-managed nodes`: https://docs.oracle.com/en-us/iaas/Content/ContEng/Tasks/contengdynamicgrouppolicyforselfmanagednodes.htm
 .. _`Creating cloud-init scripts for self-managed nodes`: https://docs.oracle.com/en-us/iaas/Content/ContEng/Tasks/contengcloudinitforselfmanagednodes.htm

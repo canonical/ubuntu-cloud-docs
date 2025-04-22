@@ -35,7 +35,7 @@ Deploying Pro Kubernetes clusters in various clouds
 
 	.. tab:: OpenShift
 
-		See the `OpenShift guide <https://docs.openshift.com/container-platform/4.8/installing/index.html>`_
+		See the `OpenShift guide <https://docs.redhat.com/en/documentation/openshift_container_platform/4.8/html/installing/ocp-installation-overview>`_
 		to learn how to create a cluster.
 
 

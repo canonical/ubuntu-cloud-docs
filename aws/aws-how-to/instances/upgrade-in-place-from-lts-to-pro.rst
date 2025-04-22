@@ -57,7 +57,7 @@ The conversion can take some time and once done the conversion status will show 
 .. _`SSM console`: https://console.aws.amazon.com/systems-manager/
 .. _`AWS instructions for configuring your instance permissions`: https://docs.aws.amazon.com/systems-manager/latest/userguide/setup-instance-permissions.html
 .. _`enabling AWS SSM`: https://ubuntu.com/tutorials/how-to-use-aws-ssm-session-manager-for-accessing-ubuntu-pro-instances
-.. _`network requirements`: https://canonical-ubuntu-pro-client.readthedocs-hosted.com/en/latest/references/network_requirements/
-.. _`proxy configuration`: https://canonical-ubuntu-pro-client.readthedocs-hosted.com/en/latest/howtoguides/configure_proxies/
+.. _`network requirements`: https://documentation.ubuntu.com/pro-client/en/latest/references/network_requirements/
+.. _`proxy configuration`: https://documentation.ubuntu.com/pro-client/en/latest/howtoguides/configure_proxies/
 .. _`EC2 dashboard`: https://console.aws.amazon.com/ec2/
 

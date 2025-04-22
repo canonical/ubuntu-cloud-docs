@@ -1,14 +1,14 @@
-Ubuntu Security on AWS
-######################
+Security features with Ubuntu on AWS
+====================================
 
 Ubuntu security features
-************************
+------------------------
 
 Ubuntu on AWS provides all the security features available on Ubuntu Server. For more detailed information about how Ubuntu offers security, refer to the following `Introduction to Security <https://documentation.ubuntu.com/server/explanation/intro-to/security/>`_.
 
 
 AWS security features
-*********************
+---------------------
 
 AWS offers comprehensive security and data protection in the cloud. `Security in Amazon EC2 <https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-security.html>`_ explains how users can benefit from AWS security features.
 
@@ -30,7 +30,7 @@ AMD SEV-SNP
 AMD Secure Encrypted Virtualization-Secure Nested Paging (AMD SEV-SNP) provides strong memory integrity protection to instances that use AMD EPYC processors. Details about launching AMD SEV-SNP instances are given in :doc:`../aws-how-to/instances/launch-and-attest-amd-sev-snp-instances`.
 
 Enhanced security using Ubuntu Pro
-**********************************
+----------------------------------
 
 Apart from the Ubuntu Server images, AWS also has images for `Ubuntu Pro <https://ubuntu.com/aws/pro>`_, which come with enhanced security features:
 

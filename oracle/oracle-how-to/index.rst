@@ -1,15 +1,15 @@
 How-to guides
 =============
 
-These guides provide instructions for performing different operations related to our products on Oracle Cloud.
+These guides provide instructions for using Ubuntu images on Oracle Cloud. They include operations such as finding images, deploying OKE nodes with Ubuntu images, using a bastion for access, using full-disk encryption and upgrading from one version of Ubuntu to another.
 
 
 * :doc:`Find images <find-ubuntu-images>`
 * :doc:`deploy-oke-nodes-using-ubuntu-images`
 * :doc:`Use a bastion for access <use-bastion-to-access-VM>`
+* :doc:`use-fde`
 * :doc:`upgrade-from-focal-to-jammy`
 * :doc:`upgrade-from-jammy-to-noble`
-* :doc:`use-fde`
 * :doc:`contribute-to-these-docs`
    
 .. toctree::
@@ -19,9 +19,9 @@ These guides provide instructions for performing different operations related to
    Find images <find-ubuntu-images>
    deploy-oke-nodes-using-ubuntu-images
    Use a bastion for access <use-bastion-to-access-VM>
-   upgrade-from-focal-to-jammy
-   upgrade-from-jammy-to-noble
    use-fde
+   upgrade-from-focal-to-jammy
+   upgrade-from-jammy-to-noble   
    contribute-to-these-docs
  
   

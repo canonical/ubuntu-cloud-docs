@@ -109,7 +109,7 @@ Charmed Kubeflow on AWS
 .. _`ebs-gp3 volumes`: https://aws.amazon.com/ebs/general-purpose/
 .. _`Elastic Fabric Adapter`: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/efa.html
 .. _`Nitro enclaves driver`: https://docs.aws.amazon.com/enclaves/latest/user/nitro-enclave.html
-.. _`AWS Graviton`: https://docs.aws.amazon.com/whitepapers/latest/aws-graviton-performance-testing/what-is-aws-graviton.html
+.. _`AWS Graviton`: https://aws.amazon.com/ec2/graviton/
 .. _`Ubuntu WorkSpaces`: https://ubuntu.com/aws/workspaces
 .. _`Amazon WorkSpaces`: https://aws.amazon.com/workspaces-family/
 .. _`Anbox cloud`: https://anbox-cloud.io/ 

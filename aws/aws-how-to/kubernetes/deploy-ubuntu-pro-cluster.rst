@@ -267,6 +267,6 @@ To check that the deployed nodes have Ubuntu Pro, run:
 .. _`ubuntu-advantage module`: https://cloudinit.readthedocs.io/en/latest/reference/modules.html#ubuntu-advantage
 .. _`launch template`: https://docs.aws.amazon.com/autoscaling/ec2/userguide/launch-templates.html
 .. _`troubleshooting options`: https://docs.aws.amazon.com/eks/latest/userguide/troubleshooting.html
-.. _`Packer`: https://www.packer.io/
+.. _`Packer`: https://developer.hashicorp.com/packer
 .. _`issue`: https://bugs.launchpad.net/cloud-images/+bug/2017782
 .. _`eksctl details`: https://eksctl.io/

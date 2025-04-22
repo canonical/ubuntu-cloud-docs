@@ -20,7 +20,7 @@ Kubeflow pipelines can be created using `Azure spot instances`_ on an AKS cluste
    * --- a model serving as an online inference
 
 
-To create Kubeflow pipelines with spot instances, start with an AKS cluster containing an existing deployment of Charmed Kubeflow. Refer to :doc:`install-kubeflow-on-aks` for  instructions.
+To create Kubeflow pipelines with spot instances, start with an AKS cluster containing an existing deployment of Charmed Kubeflow. Refer to `Install Kubeflow on AKS`_ for  instructions.
 
 Add spot instances
 ------------------
@@ -184,3 +184,6 @@ You can use the third notebook (03-spot-retries-workload) to try this out. Here 
 .. _`Charmed Kubeflow`: https://charmed-kubeflow.io
 .. _`Azure spot instances`: https://azure.microsoft.com/en-gb/products/virtual-machines/spot/
 .. _`Kubeflow-examples`: https://github.com/Barteus/kubeflow-examples
+.. _`Install Kubeflow on AKS`: https://charmed-kubeflow.io/docs/install-on-aks
+
+

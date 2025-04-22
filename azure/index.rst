@@ -24,11 +24,11 @@ In this documentation
 
    ..  grid-item:: :doc:`How-to guides <azure-how-to/index>`
 
-      **Step-by-step guides** covering key operations and common tasks
+      **Step-by-step guides** covering key operations and common tasks involving the use of Ubuntu images on Azure.
 
    .. grid-item:: :doc:`Explanation <azure-explanation/index>`
 
-      **Discussion and clarification** of key topics, such as security features and our image retention policy.
+      **Discussion and clarification** of key topics, such as security features, Ubuntu on AKS nodes and our image retention policy.
 
 ---------
 

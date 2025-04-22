@@ -1,7 +1,7 @@
 Deploy self-managed Ubuntu nodes
 ================================
 
-Amazon provides a good baseline for `launch self-managed node groups`_. 
+Amazon provides a good baseline for `launching self-managed node groups`_. 
 Minor modifications to eksctl can enable the same functionality for Ubuntu nodes.
 
 To specify Ubuntu nodes, in the ``eksctl create nodegroup`` command, supply the `--node-ami-family argument` with one of
@@ -20,5 +20,5 @@ the :doc:`find ubuntu images <../instances/find-ubuntu-images>` page.
 
 
 
-.. _`launch self-managed node groups`: https://docs.aws.amazon.com/eks/latest/userguide/launch-workers.html
+.. _`launching self-managed node groups`: https://docs.aws.amazon.com/eks/latest/userguide/launch-workers.html
 .. _`find ubuntu images`: "../instances/find-ubuntu-images.rst"

@@ -40,6 +40,8 @@ IBM VPC offers multiple advantages over the legacy infrastructure such as better
 How-to guides
 -------------
 
+These guides provide instructions for finding images, launching an instance and upgrading Ubuntu from one version to another.
+
 :doc:`Find Ubuntu images on IBM Cloud<./ibm-how-to/find-ubuntu-images>`
 
 :doc:`Launch an Ubuntu instance on IBM Cloud<./ibm-how-to/launch-ubuntu-instances>`

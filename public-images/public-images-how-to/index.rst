@@ -2,13 +2,21 @@
 
 How-to guides
 =============
-These guides provide instructions for performing basic operations related to public Ubuntu cloud images.
+These guides provide instructions for performing basic operations related to different types of public Ubuntu cloud images.
+
+Guides related to vagrant:
 
 - :ref:`vagrant-bartender`
-- :ref:`use-local-cloud-init-ds`
+- :ref:`run-a-vagrant-box`
+
+Guides related to QCOW images:
+
 - :ref:`launch-libvirt`
 - :ref:`qcow-qemu`
-- :ref:`run-a-vagrant-box`
+
+Other miscellaneous guides:
+
+- :ref:`use-local-cloud-init-ds`
 - :ref:`run-an-ova-using-virtualbox`
 
 .. toctree::
@@ -16,8 +24,8 @@ These guides provide instructions for performing basic operations related to pub
    :hidden:
 
    Build a Vagrant box with Bartender<build-vagrant-with-bartender>
-   Create and use a local cloud-init datasource<use-local-cloud-init-ds>
-   Launch images using libvirt<launch-with-libvirt>
-   Launch QCOW images using QEMU<launch-qcow-with-qemu>
    Run a Vagrant box<run-a-vagrant-box>
+   Launch QCOW images using libvirt<launch-with-libvirt>
+   Launch QCOW images using QEMU<launch-qcow-with-qemu>
+   Create a local cloud-init datasource<use-local-cloud-init-ds>
    Run an OVA using VirtualBox<run-an-ova-using-virtualbox>

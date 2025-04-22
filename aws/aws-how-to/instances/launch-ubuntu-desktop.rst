@@ -16,7 +16,7 @@ Launch the instance
 There are two popular ways to launch an instance: using the EC2 console or using the AWS CLI to interact with the AWS API. Select the one you are most comfortable with.
 
 Use the EC2 Console
-*********************
+~~~~~~~~~~~~~~~~~~~
 
 #. On the EC2 console, launch an instance by selecting an Ubuntu AMI.
 
@@ -29,7 +29,7 @@ Use the EC2 Console
     .. image:: ./launch-ubuntu-desktop-on-ec2/2b_Launch_instance.png
 
 Use the AWS CLI
-********************************************
+~~~~~~~~~~~~~~~
 
 #. Retrieve the latest AMI ID for the EC2 instance using one of the following CLI commands:
 
@@ -45,7 +45,7 @@ Use the AWS CLI
 
         aws ssm get-parameters --names /aws/service/canonical/ubuntu/pro-server/24.04/stable/current/arm64/hvm/ebs-gp3/ami-id
 
-#. Launch the instance using `AWS CLI <../launch-ubuntu-ec2-instance>`_.
+#. Launch the instance using the :doc:`AWS CLI<./launch-ubuntu-ec2-instance>`.
 
 Install Ubuntu desktop and the snap store
 -----------------------------------------
