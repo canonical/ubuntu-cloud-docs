@@ -17,6 +17,7 @@ AMIs
 Anbox
 Ansible
 Anthos
+AppArmor
 armhf
 ASIC
 Authorize
@@ -63,6 +64,7 @@ Databricks
 datasource
 datasources
 datastores
+decrypt
 decrypted
 deregister
 DHCP
@@ -191,6 +193,7 @@ microk
 MicroK
 microservices
 minimalistic
+misconfigurations
 MLOps
 mssql
 mTLS
@@ -223,6 +226,7 @@ OwnerId
 paravirtual
 PARAVIRTUALIZED
 PAYG
+PCI
 png
 powerpc
 ppc
@@ -278,6 +282,7 @@ SSM
 ssm
 SSO
 STIG
+STIGs
 subnet
 Tanzu
 TCO
@@ -309,6 +314,7 @@ uvtool
 URI
 URL
 URNs
+USG
 utils
 Vagrantfile
 vagrantfiles

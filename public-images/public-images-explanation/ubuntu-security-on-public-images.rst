@@ -6,8 +6,7 @@ Ubuntu security on cloud images
 Ubuntu security features
 ------------------------
 
-Download images available at `Cloud images <https://cloud-images.ubuntu.com/>`_ (including OCI and LXD images) inherit all the security features available on Ubuntu Server. Ubuntu Server security features are available to read about by following this 
-`Introduction to Security <https://documentation.ubuntu.com/server/explanation/intro-to/security/>`_. A more detailed discussion on Security of Ubuntu is available in the `Security <https://ubuntu.com/security>`_ section.
+Download images available at `Cloud images <https://cloud-images.ubuntu.com/>`_ (including OCI and LXD images) inherit all the security features available on Ubuntu Server. A detailed description of these features can be found on the `Ubuntu security page`_ and further guidance on usage is available from the `Ubuntu server's security overview page`_. 
 
 Enhanced security using Ubuntu Pro
 ----------------------------------
@@ -37,3 +36,6 @@ it has not been corrupted or tampered with.
 
 The Ubuntu tutorial `How to verify Ubuntu <https://ubuntu.com/tutorials/how-to-verify-ubuntu>`_ gives a detailed guide on how to
 verify and validate the integrity of an image.
+
+.. _`Ubuntu security page`: https://ubuntu.com/security
+.. _`Ubuntu server's security overview page`: https://documentation.ubuntu.com/server/explanation/intro-to/security/
