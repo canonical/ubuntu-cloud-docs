@@ -59,6 +59,7 @@ CVE
 CVEs
 cves
 CVM
+CVMs
 DaemonSet
 Databricks
 datasource
