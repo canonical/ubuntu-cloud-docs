@@ -329,9 +329,7 @@ virsh
 VIRT
 virtio
 VirtualBox
-virtualised
-virtualiser
-virtualization
+virtualized
 VLEK
 vm
 VM
