@@ -16,39 +16,21 @@ and features needed to run specific workloads.
 
 ---------
 
-Canonical's offerings on IBM
-----------------------------
+In this documentation
+---------------------
 
-Canonical and the Ubuntu community work together with IBM to ensure that Ubuntu works seamlessly across IBM platforms, including IBM Z and LinuxONE, IBM Power Systems and the IBM Cloud.
-
-Canonical provides optimized Ubuntu LTS images with a custom kernel, minimal size, livepatch and support.
-
-These images are available on IBM Cloud for both the IBM VPC infrastructure and the IBM Classic infrastructure.
+..  grid:: 1 1 2 2
+   :padding: 0
 
 
----------
+   ..  grid-item:: :doc:`How-to guides <ibm-how-to/index>`
 
-IBM VPC vs IBM Classic infrastructures
---------------------------------------
+      **Step-by-step guides** covering key operations and common tasks related to using Ubuntu images on IBM Cloud.
 
-IBM Cloud offers two types of infrastructures: IBM VPC infrastructure and IBM Classic infrastructure (Legacy). For new users, IBM only offers the VPC infrastructure. However, some long term users may still have access to the legacy Classic infrastructure. 
+   .. grid-item:: :doc:`Explanation <ibm-explanation/index>`
 
-IBM VPC offers multiple advantages over the legacy infrastructure such as better performance, scalability, and ease of use.
+       **Discussion and clarification** of key topics, such as our offerings on IBM Cloud and an overview of available security features.
 
----------
-
-How-to guides
--------------
-
-These guides provide instructions for finding images, launching an instance and upgrading Ubuntu from one version to another.
-
-:doc:`Find Ubuntu images on IBM Cloud<./ibm-how-to/find-ubuntu-images>`
-
-:doc:`Launch an Ubuntu instance on IBM Cloud<./ibm-how-to/launch-ubuntu-instances>`
-
-:doc:`Upgrade from Ubuntu 20.04 LTS to Ubuntu 22.04 LTS<./ibm-how-to/upgrade-from-focal-to-jammy>`
-
-:doc:`Upgrade from Ubuntu 22.04 LTS to Ubuntu 24.04 LTS<./ibm-how-to/upgrade-from-jammy-to-noble>`
 
 ---------
 
@@ -69,11 +51,8 @@ Ubuntu on IBM is a member of the Ubuntu family and the project warmly welcomes c
    :hidden:
    :maxdepth: 2
    
-   Find Ubuntu images<ibm-how-to/find-ubuntu-images>
-   Launch an Ubuntu instance<ibm-how-to/launch-ubuntu-instances>
-   Upgrade from Jammy to Noble<ibm-how-to/upgrade-from-jammy-to-noble>
-   Upgrade from Focal to Jammy<ibm-how-to/upgrade-from-focal-to-jammy>
-   ibm-how-to/contribute-to-these-docs
+   ibm-how-to/index
+   ibm-explanation/index
    
 .. _Get support: https://ubuntu.com/cloud/public-cloud
 .. _Join our online chat: https://discourse.ubuntu.com/c/project/public-cloud/176
