@@ -26,9 +26,9 @@ In this documentation
 
       **Step-by-step guides** covering key operations and common tasks related to using Ubuntu images on Oracle Cloud.
 
-   .. grid-item:: :doc:`Canonical's offerings <oracle-explanation/canonical-offerings>`
+   .. grid-item:: :doc:`Explanation <oracle-explanation/index>`
 
-      **An explanation** of our offerings available on Oracle Cloud.
+       **Discussion and clarification** of key topics, such as our offerings on Oracle Cloud and an overview of available security features. 
 
 
 ----------
@@ -50,7 +50,7 @@ community projects, contributions, suggestions, fixes and constructive feedback.
    :maxdepth: 2
 
    oracle-how-to/index
-   Canonical's offerings<oracle-explanation/canonical-offerings>
+   oracle-explanation/index
 
 .. _Ubuntu release cycle: https://ubuntu.com/about/release-cycle
 .. _Get support: https://ubuntu.com/cloud/public-cloud
