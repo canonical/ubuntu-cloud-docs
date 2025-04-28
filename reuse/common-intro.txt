@@ -17,27 +17,6 @@ End: Product need and user
 
 ==============================================================
 
-
-Start: Confidential computing
-
-Confidential computing addresses the question of trust between cloud providers and their users. The idea is to hide and protect sensitive workloads. Users should be allowed to run programs on untrusted systems with the technical assurance that the cloud provider cannot read nor modify the program's data and memory. While it might not be entirely possible to satisfy these requirements, the solutions at least ensure that modification of data is detected.
-
-Data can be thought of as being in one of three states:  
-
-* in-transit - being transmitted from one location to another
-* at-rest - stored somewhere and
-* in-use - being used by a CPU to perform some operation
-  
-Both data in-transit and data at-rest can be encrypted using well-known techniques, but securing data in-use needs confidential computing.
-
-Confidential computing is the protection of data in-use by performing computation in a hardware-based trusted execution environment. These are secure and isolated environments that prevent unauthorized access or modification of applications and data while they are in use. In effect, they allow the encryption of data while it is in the system memory. This requires the support of both hardware and the OS. For example, your hardware could be based on Intel's TDX (Trust Domain Extensions) processors or AMD's SEV (Secure Encrypted Virtualization) architecture and the OS could be Ubuntu. 
-
-
-End: Confidential computing
-
-==============================================================
-
-
 Start: Daily vs release images
 
 Our image retention policy depends on the type of Ubuntu image, we publish two types:
