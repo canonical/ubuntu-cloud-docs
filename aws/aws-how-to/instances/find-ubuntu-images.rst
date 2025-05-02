@@ -116,5 +116,5 @@ All the above mentioned Marketplace images can also be found in the SSM paramete
 
 .. csv-table::
    :file: aws-marketplace-identifiers.csv
-   :widths: auto
+   :widths: 135 5 60 5
    :header-rows: 1

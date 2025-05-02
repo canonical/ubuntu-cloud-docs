@@ -46,7 +46,7 @@ If using the AWS CLI, add ``--cpu-options AmdSevSnp=Enabled`` to your command:
 
 Once the machine is running, you can check if AMD SEV-SNP was enabled by looking at the instance details on the EC2 console or using the AWS CLI command ``ec2 describe-instances`` API. ``AmdSevSnp`` should be in the ``CpuOptions``.
 
-For further details, refer to: `Check AMD SEV-SNP support on Amazon EC2 instances (AWS Site)`_
+For further details, refer to: `Check if an EC2 instance is enabled for AMD SEV-SNP (AWS Site)`_
 
 Build the attestation tool (SNP guest tools)
 --------------------------------------------
@@ -137,7 +137,7 @@ The expected output should be:
 The last line shows that the certificate is valid.
 
 .. _`AMD SEV-SNP for Amazon EC2 instances`: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/sev-snp.html
-.. _`Check AMD SEV-SNP support on Amazon EC2 instances (AWS Site)`: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/snp-work.html
+.. _`Check if an EC2 instance is enabled for AMD SEV-SNP (AWS Site)`: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/snp-work-launch.html#snp-work-check
 .. _`Attest an Amazon EC2 instance with AMD SEV-SNP`: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/snp-attestation.html
 .. _`GitHub repository for snp guest tool`: https://github.com/virtee/snpguest/tree/main
 .. _`rustup`: https://snapcraft.io/rustup

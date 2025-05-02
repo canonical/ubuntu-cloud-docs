@@ -246,5 +246,5 @@ You should see an output similar to:
 
 .. _`Packer installation instructions`: https://developer.hashicorp.com/packer/tutorials/docker-get-started/get-started-install-cli
 .. _`eksctl installation instructions`: https://eksctl.io/installation/
-.. _`Packer`: https://www.packer.io/
+.. _`Packer`: https://developer.hashicorp.com/packer
 .. _`eksctl documentation`: https://eksctl.io/
