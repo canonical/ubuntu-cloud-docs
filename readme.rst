@@ -5,14 +5,14 @@ Documentation for Ubuntu on public clouds. This documentation is composed of sev
 
 Each documentation set is currently published to a different location:
 
-* https://canonical-public-cloud.readthedocs-hosted.com/
-* https://canonical-aws.readthedocs-hosted.com/
-* https://canonical-azure.readthedocs-hosted.com/
-* https://canonical-gcp.readthedocs-hosted.com/
+* https://documentation.ubuntu.com/public-cloud/
+* https://documentation.ubuntu.com/aws/
+* https://documentation.ubuntu.com/azure/
+* https://documentation.ubuntu.com/gcp/
 * https://canonical-ibm.readthedocs-hosted.com/
-* https://canonical-oci.readthedocs-hosted.com/
+* https://documentation.ubuntu.com/oci-registries/
 * https://canonical-oracle.readthedocs-hosted.com/
-* https://canonical-public-images.readthedocs-hosted.com/
+* https://documentation.ubuntu.com/public-images/
 
 
 How to work with this documentation
@@ -79,11 +79,11 @@ Per project contribution guidelines
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Each project has its own contribution guide: 
-* `All-clouds <https://canonical-public-cloud.readthedocs-hosted.com/en/latest/all-clouds-how-to/contribute-to-these-docs/>`_
-* `AWS <https://canonical-aws.readthedocs-hosted.com/en/latest/aws-how-to/contribute-to-these-docs/>`_
-* `Azure <https://canonical-azure.readthedocs-hosted.com/en/latest/azure-how-to/contribute-to-these-docs/>`_
-* `Google <https://canonical-gcp.readthedocs-hosted.com/en/latest/google-how-to/contribute-to-these-docs/>`_
-* `IBM <https://canonical-ibm.readthedocs-hosted.com/en/latest/ibm-how-to/contribute-to-these-docs/>`_
-* `OCI container registries <https://canonical-oci.readthedocs-hosted.com/en/latest/oci-how-to/contribute-to-these-docs/>`_
-* `Oracle <https://canonical-oracle.readthedocs-hosted.com/en/latest/oracle-how-to/contribute-to-these-docs/>`_
-* `Public Images <https://canonical-public-images.readthedocs-hosted.com/en/latest/public-images-how-to/contribute-to-these-docs/>`_
+* `All-clouds <https://documentation.ubuntu.com/public-cloud/all-clouds-how-to/contribute-to-these-docs/>`_
+* `AWS <https://documentation.ubuntu.com/aws/aws-how-to/contribute-to-these-docs/>`_
+* `Azure <https://documentation.ubuntu.com/azure/azure-how-to/contribute-to-these-docs/>`_
+* `Google <https://documentation.ubuntu.com/gcp/google-how-to/contribute-to-these-docs/>`_
+* `IBM <https://canonical-ibm.readthedocs-hosted.com/ibm-how-to/contribute-to-these-docs/>`_
+* `OCI container registries <https://documentation.ubuntu.com/oci-registries/oci-how-to/contribute-to-these-docs/>`_
+* `Oracle <https://canonical-oracle.readthedocs-hosted.com/oracle-how-to/contribute-to-these-docs/>`_
+* `Public Images <https://documentation.ubuntu.com/public-images/public-images-how-to/contribute-to-these-docs/>`_
