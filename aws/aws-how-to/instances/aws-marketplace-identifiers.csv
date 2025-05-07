@@ -30,8 +30,6 @@ Ubuntu Pro FIPS 20.04 LTS (FIPS with updates),amd64,``prod-ibsqi42w6rtey``,✓
 Ubuntu Pro FIPS 22.04 LTS (FIPS with updates),amd64,``prod-y5kejmnu3wodg``,✓
 Ubuntu Pro FIPS 22.04 LTS (FIPS with updates),arm64,``prod-rcuudwwonvpew``,✓
 Ubuntu Pro 22.04 LTS with Real-time Kernel,arm64,``prod-ezodmjvranjew``,✓
-Ubuntu 20.04 LTS for EKS 1.25,amd64,``prod-h232pdamfnj5w``,✓
-Ubuntu 20.04 LTS for EKS 1.25,arm64,``prod-exeixbb2fbrog``,✓
 Ubuntu 20.04 LTS for EKS 1.26,amd64,``prod-paebp5ekgg6uu``,✓
 Ubuntu 20.04 LTS for EKS 1.26,arm64,``prod-lrqczh7vqe7ve``,✓
 Ubuntu 20.04 LTS for EKS 1.27,amd64,``prod-ldmift6l2jtbk``,✓
