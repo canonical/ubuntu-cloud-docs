@@ -3,6 +3,8 @@ Ubuntu 20.04 LTS,amd64,``prod-x7h6cigkuiul6``,✓
 Ubuntu 20.04 LTS,arm64,``prod-gprrntd234sfc``,✓
 Minimal Ubuntu 20.04 LTS,amd64,``prod-df2jln3gjtwps``,✓
 Minimal Ubuntu 20.04 LTS,arm64,``prod-emtsb6upxf6us``,✓
+Minimal Ubuntu Pro 20.04 LTS,amd64,``prod-bhgby3sn457gk``,✓
+Minimal Ubuntu Pro 20.04 LTS,arm64,``prod-lokd3cuzefl64``,✓
 Ubuntu 22.04 LTS,amd64,``prod-lfutkwiaknxsk``,✓
 Ubuntu 22.04 LTS,arm64,``prod-amd2rg3s3i7tc``,✓
 Minimal Ubuntu 22.04 LTS,amd64,``prod-smq32swynllqw``,✓
@@ -28,8 +30,6 @@ Ubuntu Pro FIPS 20.04 LTS (FIPS with updates),amd64,``prod-ibsqi42w6rtey``,✓
 Ubuntu Pro FIPS 22.04 LTS (FIPS with updates),amd64,``prod-y5kejmnu3wodg``,✓
 Ubuntu Pro FIPS 22.04 LTS (FIPS with updates),arm64,``prod-rcuudwwonvpew``,✓
 Ubuntu Pro 22.04 LTS with Real-time Kernel,arm64,``prod-ezodmjvranjew``,✓
-Ubuntu 20.04 LTS for EKS 1.25,amd64,``prod-h232pdamfnj5w``,✓
-Ubuntu 20.04 LTS for EKS 1.25,arm64,``prod-exeixbb2fbrog``,✓
 Ubuntu 20.04 LTS for EKS 1.26,amd64,``prod-paebp5ekgg6uu``,✓
 Ubuntu 20.04 LTS for EKS 1.26,arm64,``prod-lrqczh7vqe7ve``,✓
 Ubuntu 20.04 LTS for EKS 1.27,amd64,``prod-ldmift6l2jtbk``,✓
