@@ -141,5 +141,5 @@ Open your browser with the address ``localhost:30633`` and start using your fres
 
 
 .. _`press release post`: https://canonical.com/blog/data-science-stack-release
-.. _`official documentation`: https://documentation.ubuntu.com/data-science-stack/en/latest/
+.. _`official documentation`: https://documentation.ubuntu.com/data-science-stack/
 
