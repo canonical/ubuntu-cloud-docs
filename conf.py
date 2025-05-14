@@ -30,14 +30,14 @@ extensions = [
 ]
 
 intersphinx_mapping = {
-    'all-clouds': ('https://documentation.ubuntu.com/public-cloud/en/latest/', None),
-    'aws': ('https://documentation.ubuntu.com/aws/en/latest/', None),
-    'azure': ('https://documentation.ubuntu.com/azure/en/latest/', None),
-    'google': ('https://documentation.ubuntu.com/gcp/en/latest/', None),
-    'ibm': ('https://canonical-ibm.readthedocs-hosted.com/en/latest/', None),
-    'oracle': ('https://canonical-oracle.readthedocs-hosted.com/en/latest/', None),
-    'oci': ('https://documentation.ubuntu.com/oci-registries/en/latest/', None),
-    'public-images': ('https://documentation.ubuntu.com/public-images/en/latest/', None)
+    'all-clouds': ('https://documentation.ubuntu.com/public-cloud/', None),
+    'aws': ('https://documentation.ubuntu.com/aws/', None),
+    'azure': ('https://documentation.ubuntu.com/azure/', None),
+    'google': ('https://documentation.ubuntu.com/gcp/', None),
+    'ibm': ('https://canonical-ibm.readthedocs-hosted.com/', None),
+    'oracle': ('https://canonical-oracle.readthedocs-hosted.com/', None),
+    'oci': ('https://documentation.ubuntu.com/oci-registries/', None),
+    'public-images': ('https://documentation.ubuntu.com/public-images/', None)
 }
 
 # Only add redirects extension if any redirects are specified.
