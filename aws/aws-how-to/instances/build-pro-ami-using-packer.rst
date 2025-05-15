@@ -3,7 +3,7 @@ Build an Ubuntu Pro AMI using Packer
 
 This guide will provide instructions for using Packer to create your own golden image of Ubuntu Pro. You'll be able to customize your Packer template file, while keeping the the Ubuntu Pro activation mechanism intact.
 
-We'll be using Ubuntu Pro 20.04 LTS for this guide, but the method is equally applicable to other Pro versions.
+We'll be using Ubuntu Pro 24.04 LTS for this guide, but the method is equally applicable to other Pro versions.
 
 .. note::
 
@@ -36,7 +36,7 @@ If you have an Ubuntu workstation, run:
 Subscribe to Ubuntu Pro (Only needed for FIPS AMI)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-In the `AWS Marketplace`_ search for 'Ubuntu Pro FIPS'. Select `Ubuntu Pro FIPS 20.04 LTS`_ > :guilabel:`Continue to Subscribe` > :guilabel:`Accept Terms` and wait for the activation to complete. You only get charged when you run an instance of Ubuntu Pro.
+In the `AWS Marketplace`_ search for 'Ubuntu Pro FIPS'. Select `Ubuntu Pro FIPS 22.04 LTS`_ > :guilabel:`Continue to Subscribe` > :guilabel:`Accept Terms` and wait for the activation to complete. You only get charged when you run an instance of Ubuntu Pro.
 
 If you skip this step and proceed with the build, you can still subscribe later when an error leads you to the Marketplace product page.
 
@@ -88,16 +88,16 @@ Add details such as image type, region, base image and owner ID in the *builders
         "secret_key": "{{user `aws_secret_key`}}",
         "region": "us-east-1",
         "instance_type": "t2.micro",
-        "ami_name": "My-Ubuntu-Pro-20.04-{{timestamp}}",
+        "ami_name": "My-Ubuntu-Pro-24.04-{{timestamp}}",
 
-To add the source image, we can use Packer's image search functionality - ``source_ami_filter``. To get the latest EC2 AMI with name = ubuntu-pro-server*20.04-amd64* and owner = Canonical (where * is a wildcard), use:
+To add the source image, we can use Packer's image search functionality - ``source_ami_filter``. To get the latest EC2 AMI with name = ubuntu-pro-server*24.04-amd64* and owner = Canonical (where * is a wildcard), use:
 
 .. code::
 
    "source_ami_filter": {
       "filters": {
             "virtualization-type": "hvm",
-            "name": "ubuntu-pro-server*20.04-amd64*",
+            "name": "ubuntu-pro-server*24.04-amd64*",
             "root-device-type": "ebs"
          },
       "owners": ["099720109477"],
@@ -183,7 +183,7 @@ The complete sample ``packer.json`` looks like:
             "source_ami_filter": {
                   "filters": {
                      "virtualization-type": "hvm",
-                     "name": "ubuntu-pro-server*20.04-amd64*",
+                     "name": "ubuntu-pro-server*24.04-amd64*",
                      "root-device-type": "ebs"
                   },
                "owners": ["099720109477"],
@@ -241,7 +241,7 @@ The results should show that the machine is attached to a Pro subscription and h
 
 .. _`install Packer`: https://developer.hashicorp.com/packer/install
 .. _`AWS Marketplace`: https://aws.amazon.com/marketplace
-.. _`Ubuntu Pro FIPS 20.04 LTS`: https://aws.amazon.com/marketplace/pp/prodview-l2hkkatnodedk
+.. _`Ubuntu Pro FIPS 22.04 LTS`: https://aws.amazon.com/marketplace/pp/prodview-o5noqh44k3uxm
 .. _`IAM page for creating credentials`: https://docs.aws.amazon.com/IAM/latest/UserGuide/security-creds.html
 .. _`IAM permissions needed for Packer`: https://developer.hashicorp.com/packer/integrations/hashicorp/amazon?page=builders&page=amazon#iam-task-or-instance-role
 .. _`Packer website`: https://developer.hashicorp.com/packer/tutorials/aws-get-started
