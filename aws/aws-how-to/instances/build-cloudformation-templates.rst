@@ -21,9 +21,9 @@ In the *Parameters* section of your CloudFormation template, add:
 
        LatestAmiId:
                 Type: 'AWS::SSM::Parameter::Value<AWS::EC2::Image::Id>'
-                Default: '/aws/service/canonical/ubuntu/server/jammy/stable/current/amd64/hvm/ebs-gp2/ami-id'
+                Default: '/aws/service/canonical/ubuntu/server/noble/stable/current/amd64/hvm/ebs-gp3/ami-id'
 
-The Ubuntu version (e.g. jammy, focal, bionic) and the architecture (ARM64 or AMD64) can be changed as required. In the *Resources* section, this parameter can be accessed as:
+The Ubuntu version (e.g. noble, jammy) and the architecture (ARM64 or AMD64) can be changed as required. In the *Resources* section, this parameter can be accessed as:
 
 .. code::
 
@@ -42,7 +42,19 @@ Change the query string to:
 
        LatestAmiId:
                 Type: 'AWS::SSM::Parameter::Value<AWS::EC2::Image::Id>'
-                Default: '/aws/service/canonical/ubuntu/pro-server/jammy/stable/current/amd64/hvm/ebs-gp2/ami-id'
+                Default: '/aws/service/canonical/ubuntu/pro-server/noble/stable/current/amd64/hvm/ebs-gp3/ami-id'
+
+The format for the parameter is:
+
+.. code-block::
+
+  ubuntu/$PRODUCT/$RELEASE/stable/current/$ARCH/$VIRT_TYPE/$VOL_TYPE/ami-id
+
+* PRODUCT: `server`, `server-minimal`, `pro-server` or `pro-minimal`
+* RELEASE: `noble`, 24.04, `jammy`, `22.04`, `focal`, `20.04`, `bionic`, `18.04`, `xenial`, or `16.04`
+* ARCH: `amd64` or `arm64`
+* VIRT_TYPE: `pv` or `hvm`
+* VOL_TYPE: `ebs-gp3` (for >=23.10), `ebs-gp2` (for <=23.04), `ebs-io1`, `ebs-standard`, or `instance-store`
 
 
 Ubuntu Pro FIPS
@@ -66,6 +78,12 @@ Since Ubuntu Pro FIPS is only available at the AWS Marketplace, the product ID n
    * - Ubuntu Pro FIPS 20.04 LTS
      - amd64
      - ``prod-k6fgbnayirmrc``
+   * - Ubuntu Pro FIPS 22.04 LTS
+     - amd64
+     - ``prod-y5kejmnu3wodg``
+   * - Ubuntu Pro FIPS 22.04 LTS
+     - arm64
+     - ``prod-rcuudwwonvpew``
 
 To create the parameter in your CloudFormation template, choose a product ID from above and use it in place of <product-id> in:
 
@@ -89,7 +107,7 @@ For Ubuntu-EKS AMI IDs, use the following query string with any required changes
 
        LatestAmiId:
                 Type: 'AWS::SSM::Parameter::Value<AWS::EC2::Image::Id>'
-                Default: '/aws/service/canonical/ubuntu/eks/20.04/1.23/stable/current/amd64/hvm/ebs-gp2/ami-id'
+                Default: '/aws/service/canonical/ubuntu/eks/24.04/1.32/stable/current/amd64/hvm/ebs-gp3/ami-id'
 
 
 Create template
@@ -107,7 +125,7 @@ A very basic CloudFormation template for Ubuntu LTS could look like:
          Type: AWS::EC2::AvailabilityZone::Name
       LatestAmiId:
                   Type: 'AWS::SSM::Parameter::Value<AWS::EC2::Image::Id>'
-                  Default: '/aws/service/canonical/ubuntu/server/jammy/stable/current/amd64/hvm/ebs-gp2/ami-id'
+                  Default: '/aws/service/canonical/ubuntu/server/noble/stable/current/amd64/hvm/ebs-gp3/ami-id'
       KeyPair:
          Description: Amazon EC2 Key Pair used to ssh to the cluster nodes
          Type: "AWS::EC2::KeyPair::KeyName"
