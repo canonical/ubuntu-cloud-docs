@@ -56,31 +56,6 @@ Ubuntu 22.04 LTS - Jammy Jellyfish
      - Gen2
      - ``Canonical:0001-com-ubuntu-server-jammy:22_04-lts-arm64:latest``
 
-
-Ubuntu 20.04 LTS - Focal Fossa
-++++++++++++++++++++++++++++++
-
-| Quick start: `20.04 LTS on Azure <https://portal.azure.com/#create/canonical.0001-com-ubuntu-server-focal20_04-lts-ARM>`_
-| Quick start (China): `20.04 LTS on Azure China <https://portal.azure.cn/#create/canonical.0001-com-ubuntu-server-focal20_04-lts-ARM>`_
-
-.. list-table::
-   :widths: 10 9 50
-   :header-rows: 1
-
-   * - **Architecture**
-     - **Hyper-V Generation**
-     - **URN**
-   * - AMD64
-     - Gen1
-     - ``Canonical:0001-com-ubuntu-server-focal:20_04-lts:latest``
-   * - AMD64
-     - Gen2
-     - ``Canonical:0001-com-ubuntu-server-focal:20_04-lts-gen2:latest``
-   * - Arm64
-     - Gen2
-     - ``Canonical:0001-com-ubuntu-server-focal:20_04-lts-arm64:latest``
-
-
 Interim releases
 ~~~~~~~~~~~~~~~~
 
@@ -285,23 +260,6 @@ Ubuntu Pro CVM 22.04 LTS - Jammy Jellyfish
    * - AMD64
      - Gen2
      - ``Canonical:0001-com-ubuntu-pro-confidential-vm-jammy:pro-22_04-lts-cvm:latest``
-
-Ubuntu CVM 20.04 LTS - Focal Fossa
-++++++++++++++++++++++++++++++++++
-
-| Quick start: `Ubuntu CVM 20.04 LTS on Azure <https://portal.azure.com/#create/canonical.0001-com-ubuntu-confidential-vm-focal20_04-lts-cvm>`_
-| Quick start (China): `Ubuntu CVM 20.04 LTS on Azure China <https://portal.azure.cn/#create/canonical.0001-com-ubuntu-confidential-vm-focal20_04-lts-cvm>`_
-
-.. list-table::
-   :widths: 10 9 50
-   :header-rows: 1
-
-   * - **Architecture**
-     - **Hyper-V Generation**
-     - **URN**
-   * - AMD64
-     - Gen2
-     - ``Canonical:0001-com-ubuntu-confidential-vm-focal:20_04-lts-cvm:latest``
 
 
 FIPS compliant offers
