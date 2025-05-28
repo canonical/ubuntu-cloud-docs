@@ -112,9 +112,9 @@ ISO seed image.
   cat <<EOF > my-cloud-config.yaml
   #cloud-config
   chpasswd:
-    list: |
-      ubuntu:ubuntu
-  expire: False
+    users:
+    - {name: ubuntu, password: ubuntu, type: text}
+    expire: False
   ssh_pwauth: True
   ssh_authorized_keys: <YOUR_PUB_KEY>
   EOF
