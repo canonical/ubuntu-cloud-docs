@@ -107,7 +107,7 @@ ISO seed image.
 
 1. Create a YAML file with password authorization enabled:
 
-Choose between two YAML configurations based on your cloud-init version
+Choose between two YAML configurations based on your cloud-init version:
 
 .. tabs::
 
