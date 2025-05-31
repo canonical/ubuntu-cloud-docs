@@ -107,17 +107,37 @@ ISO seed image.
 
 1. Create a YAML file with password authorization enabled:
 
-.. code:: bash
+Choose between two YAML configurations based on your cloud-init version:
 
-  cat <<EOF > my-cloud-config.yaml
-  #cloud-config
-  chpasswd:
-    list: |
-      ubuntu:ubuntu
-  expire: False
-  ssh_pwauth: True
-  ssh_authorized_keys: <YOUR_PUB_KEY>
-  EOF
+.. tabs::
+
+  .. group-tab:: cloud-init >= 22.3
+
+    .. code:: bash
+
+      cat <<EOF > my-cloud-config.yaml
+      #cloud-config
+      chpasswd:
+        users:
+        - {name: ubuntu, password: ubuntu, type: text}
+        expire: False
+      ssh_pwauth: True
+      ssh_authorized_keys: <YOUR_PUB_KEY>
+      EOF
+      
+  .. group-tab:: cloud-init < 22.3
+
+    .. code:: bash
+
+      cat <<EOF > my-cloud-config.yaml
+      #cloud-config
+      chpasswd:
+        list: |
+          ubuntu:ubuntu
+        expire: False
+      ssh_pwauth: True
+      ssh_authorized_keys: <YOUR_PUB_KEY>
+      EOF
 
 Replace ``<YOUR_PUB_KEY>`` with your public key.
 
