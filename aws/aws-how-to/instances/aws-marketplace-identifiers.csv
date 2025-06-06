@@ -1,8 +1,4 @@
 Name,Architecture,Identifier,GovCloud
-Ubuntu 20.04 LTS,amd64,``prod-x7h6cigkuiul6``,✓
-Ubuntu 20.04 LTS,arm64,``prod-gprrntd234sfc``,✓
-Minimal Ubuntu 20.04 LTS,amd64,``prod-df2jln3gjtwps``,✓
-Minimal Ubuntu 20.04 LTS,arm64,``prod-emtsb6upxf6us``,✓
 Minimal Ubuntu Pro 20.04 LTS,amd64,``prod-bhgby3sn457gk``,✓
 Minimal Ubuntu Pro 20.04 LTS,arm64,``prod-lokd3cuzefl64``,✓
 Ubuntu 22.04 LTS,amd64,``prod-lfutkwiaknxsk``,✓
@@ -30,12 +26,6 @@ Ubuntu Pro FIPS 20.04 LTS (FIPS with updates),amd64,``prod-ibsqi42w6rtey``,✓
 Ubuntu Pro FIPS 22.04 LTS (FIPS with updates),amd64,``prod-y5kejmnu3wodg``,✓
 Ubuntu Pro FIPS 22.04 LTS (FIPS with updates),arm64,``prod-rcuudwwonvpew``,✓
 Ubuntu Pro 22.04 LTS with Real-time Kernel,arm64,``prod-ezodmjvranjew``,✓
-Ubuntu 20.04 LTS for EKS 1.26,amd64,``prod-paebp5ekgg6uu``,✓
-Ubuntu 20.04 LTS for EKS 1.26,arm64,``prod-lrqczh7vqe7ve``,✓
-Ubuntu 20.04 LTS for EKS 1.27,amd64,``prod-ldmift6l2jtbk``,✓
-Ubuntu 20.04 LTS for EKS 1.27,arm64,``prod-rmbj4hjbxq3s4``,✓
-Ubuntu 20.04 LTS for EKS 1.28,amd64,``prod-liwkeak7e3q7e``,✓
-Ubuntu 20.04 LTS for EKS 1.28,arm64,``prod-lnp3hmtlqxkes``,✓
 Ubuntu 22.04 LTS for EKS 1.29,amd64,``prod-lg73jq6vy35h2``,✓
 Ubuntu 22.04 LTS for EKS 1.29,arm64,``prod-htjgvopsb6wo2``,✓
 Ubuntu 22.04 LTS for EKS 1.30,amd64,``prod-ju4oliv6acvmu``,✓
