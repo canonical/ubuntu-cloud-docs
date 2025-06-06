@@ -63,3 +63,10 @@ html_context = {
 # Set up redirects (https://documatt.gitlab.io/sphinx-reredirects/usage.html)
 # For example: "explanation/old-name.html": "../how-to/prettify.html",
 redirects = {}
+
+
+############################################################
+### Sitemap configuration
+############################################################
+
+html_baseurl = 'https://documentation.ubuntu.com/public-images/'

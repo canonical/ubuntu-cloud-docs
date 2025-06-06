@@ -27,6 +27,7 @@ extensions = [
     'sphinx_copybutton',
     'sphinxcontrib.jquery',
     'sphinx.ext.intersphinx',
+    'sphinx_sitemap'
 ]
 
 intersphinx_mapping = {
@@ -101,6 +102,7 @@ notfound_context = {
 # https://github.com/canonical/sphinx-docs-starter-pack/pull/54 )
 if not 'ogp_image' in locals():
     ogp_image = 'https://assets.ubuntu.com/v1/253da317-image-document-ubuntudocs.svg'
+
 
 ############################################################
 ### General configuration

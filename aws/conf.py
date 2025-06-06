@@ -87,3 +87,10 @@ redirects = {
     "aws-how-to/use-secureboot-and-vtpm":
         "../security/use-secureboot-and-vtpm/"
 }
+
+
+############################################################
+### Sitemap configuration
+############################################################
+
+html_baseurl = 'https://documentation.ubuntu.com/aws/'
