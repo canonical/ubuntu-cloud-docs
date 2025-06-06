@@ -190,7 +190,7 @@ custom_extensions = [
     'canonical.related-links',
     'canonical.custom-rst-roles',
     'canonical.terminal-output',
-    'notfound.extension'
+    'notfound.extension',
     ]
 
 
@@ -202,7 +202,8 @@ custom_extensions = [
 # sphinx-notfound-page, sphinx-reredirects, sphinx-tabs, sphinxcontrib-jquery,
 # sphinxext-opengraph
 custom_required_modules = [
-    'git+https://github.com/k-dimple/sphinx-multiproject.git'
+    'git+https://github.com/k-dimple/sphinx-multiproject.git',
+    'sphinx-sitemap'
 ]
 
 # Disable Sphinx tab closing

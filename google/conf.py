@@ -84,3 +84,10 @@ redirects = {
     "google-how-to/deploy-kubernetes-with-ubuntu-pro":
         "../gke/deploy-kubernetes-with-ubuntu-pro/"
 }
+
+
+############################################################
+### Sitemap configuration
+############################################################
+
+html_baseurl = 'https://documentation.ubuntu.com/gcp/'

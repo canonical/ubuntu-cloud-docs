@@ -54,3 +54,10 @@ html_context = {
     # https://www.sphinx-doc.org/en/master/usage/restructuredtext/field-lists.html
     'sequential_nav': "both"
 }
+
+
+############################################################
+### Sitemap configuration
+############################################################
+
+html_baseurl = 'https://canonical-oracle.readthedocs-hosted.com/'

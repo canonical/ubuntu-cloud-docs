@@ -60,3 +60,10 @@ for page in pro_client_docs:
         common_docs_path / page,
     )
     # exclude_patterns.append(str(common_docs_path / page))
+
+
+############################################################
+### Sitemap configuration
+############################################################
+
+html_baseurl = 'https://documentation.ubuntu.com/oci-registries/'

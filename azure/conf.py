@@ -83,3 +83,10 @@ redirects = {
     "azure-how-to/kubernetes/deploy-kubeflow-pipelines-with-aks-spot-instances":
         "../instances/deploy-kubeflow-pipelines-with-aks-spot-instances/"
 }
+
+
+############################################################
+### Sitemap configuration
+############################################################
+
+html_baseurl = 'https://documentation.ubuntu.com/azure/'

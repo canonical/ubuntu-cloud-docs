@@ -59,3 +59,10 @@ redirects = {
     "oci/oci-how-to/deploy-pro-container-on-pro-kubernetes-cluster.html":
         "https://documentation.ubuntu.com/oci-registries/oci-how-to/deploy-pro-container-on-pro-kubernetes-cluster/"
 }
+
+
+############################################################
+### Sitemap configuration
+############################################################
+
+html_baseurl = 'https://documentation.ubuntu.com/public-cloud/'
