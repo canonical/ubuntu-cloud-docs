@@ -47,23 +47,20 @@ Apart from the specific public clouds, Canonical also produces a variety of Ubun
 
 
 
+-----------------------------------------------------------------
 
 Tooling
 -------
 
-For publishing and maintaining the images, Canonical created some tools.
-
-
+For publishing and maintaining the images, Canonical has created some tools.
 
 ..  grid:: 1 1 2 2
    :padding: 0
 
    .. grid-item-card:: `awspub`_
 
-                       for publishing images on AWS and creating Marketplace versions
+      A tool for publishing images on AWS and for creating AWS Marketplace versions.
 
-
-.. _awspub: https://canonical-awspub.readthedocs-hosted.com/
 
 -----------------------------------------------------------------
 
@@ -91,6 +88,7 @@ Ubuntu public cloud is open source project that warmly welcomes community projec
    all-clouds-explanation/index
       
 
+.. _awspub: https://canonical-awspub.readthedocs-hosted.com/
 .. _Get support: https://ubuntu.com/cloud/public-cloud
 .. _Join our online chat: https://discourse.ubuntu.com/c/project/public-cloud/176
 .. _`Discuss on Matrix`: https://matrix.to/#/#ubuntu-cloud:ubuntu.com
