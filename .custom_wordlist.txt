@@ -22,6 +22,7 @@ armhf
 ASIC
 Authorize
 aws
+awspub
 backend
 backoff
 balancers

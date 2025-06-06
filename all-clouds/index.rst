@@ -48,6 +48,23 @@ Apart from the specific public clouds, Canonical also produces a variety of Ubun
 
 
 
+Tooling
+-------
+
+For publishing and maintaining the images, Canonical created some tools.
+
+
+
+..  grid:: 1 1 2 2
+   :padding: 0
+
+   .. grid-item-card:: `awspub`_
+
+                       for publishing images on AWS and creating Marketplace versions
+
+
+.. _awspub: https://canonical-awspub.readthedocs-hosted.com/
+
 -----------------------------------------------------------------
 
 
