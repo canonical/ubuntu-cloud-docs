@@ -30,6 +30,8 @@ extensions = [
     'sphinx_sitemap'
 ]
 
+sitemap_url_scheme = "{link}"
+
 intersphinx_mapping = {
     'all-clouds': ('https://documentation.ubuntu.com/public-cloud/', None),
     'aws': ('https://documentation.ubuntu.com/aws/', None),
