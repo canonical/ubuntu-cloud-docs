@@ -164,6 +164,8 @@ linkcheck_ignore = [
     r'.*#.*'
     ]
 
+linkcheck_timeout = 120
+
 # Pages on which to ignore anchors
 # (This list will be appended to linkcheck_anchors_ignore_for_url)
 custom_linkcheck_anchors_ignore_for_url = []
