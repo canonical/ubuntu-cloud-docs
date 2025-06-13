@@ -159,10 +159,12 @@ redirects = {
 
 # Links to ignore when checking links
 linkcheck_ignore = [
-    'http://127.0.0.1:8000'
+    'http://127.0.0.1:8000',
     'http://localhost:8000',
     r'.*#.*'
     ]
+
+linkcheck_timeout = 300
 
 # Pages on which to ignore anchors
 # (This list will be appended to linkcheck_anchors_ignore_for_url)
