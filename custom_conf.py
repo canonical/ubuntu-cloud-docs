@@ -162,7 +162,7 @@ linkcheck_ignore = [
     'http://127.0.0.1:8000',
     'http://localhost:8000',
     r'.*#.*',
-    https://www.amd.com/content/dam/amd/en/documents/epyc-business-docs/white-papers/SEV-SNP-strengthening-vm-isolation-with-integrity-protection-and-more.pdf
+    'https://www.amd.com/content/dam/amd/en/documents/epyc-business-docs/white-papers/SEV-SNP-strengthening-vm-isolation-with-integrity-protection-and-more.pdf'
     ]
 
 # Pages on which to ignore anchors
