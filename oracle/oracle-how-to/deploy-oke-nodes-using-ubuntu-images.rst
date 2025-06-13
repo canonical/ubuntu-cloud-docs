@@ -1,47 +1,9 @@
 Deploy OKE nodes using Ubuntu images
 ====================================
 
-Ubuntu images are available for worker nodes on Oracle Kubernetes Engine (OKE) in Oracle Cloud. Currently there are only a select number of suites and Kubernetes versions supported due to this being a Limited Availability release. 
+Ubuntu images are available for worker nodes on Oracle Kubernetes Engine (OKE) in Oracle Cloud. Currently there are only a select number of suites and Kubernetes versions supported due to this being a Limited Availability release. For a list of supported OKE configurations, see our :doc:`Ubuntu availability on OKE </oracle-reference/ubuntu-availability-on-oke>` page.
 
 For node stability, the ``unattended-upgrades`` package has been removed from the Ubuntu image for OKE. Should your nodes need updates or security patches then refer to the Oracle documentation on `node cycling for managed nodes`_ and `node cycling for self-managed nodes`_.
-
-Available releases
-------------------
-
-.. list-table::
-   :header-rows: 1
-
-   * - Ubuntu Release
-     - OKE Version
-     - Location
-   * - 22.04 (Jammy Jellyfish)
-     - 1.29
-     - `List of Images <https://intcanonical.objectstorage.us-phoenix-1.oci.customer-oci.com/p/vpqQtYASl8IooEZ_sxfKDnzUkF1b-3lQmXPC_rXf4zARQYoW7ncE8BGGxNqdUuGa/n/intcanonical/b/oke-shared/o/>`_
-
-Networking plugin availability
-------------------------------
-
-The availability of networking plugins (Flannel / VCN Native) depends on the type of OKE node being used:
-
-.. list-table::
-   :header-rows: 1
-
-   * - Node Type
-     - Plugin
-     - Supported
-   * - Managed
-     - Flannel
-     - Yes
-   * - 
-     - VCN Native
-     - Yes
-   * - Self-Managed
-     - Flannel
-     - Yes
-   * - 
-     - VCN Native
-     - Yes
-
 
 Prerequisites
 -------------
