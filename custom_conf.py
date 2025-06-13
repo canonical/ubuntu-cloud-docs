@@ -165,7 +165,7 @@ linkcheck_ignore = [
     'https://www.amd.com/content/dam/amd/en/documents/epyc-business-docs/white-papers/SEV-SNP-strengthening-vm-isolation-with-integrity-protection-and-more.pdf'
     ]
 
-linkcheck_timeout = 240
+linkcheck_timeout = 300
 
 # Pages on which to ignore anchors
 # (This list will be appended to linkcheck_anchors_ignore_for_url)
