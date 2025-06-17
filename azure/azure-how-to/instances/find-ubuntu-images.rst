@@ -383,6 +383,44 @@ Quick start: `Ubuntu Pro CIS 20.04 LTS on Azure  <https://portal.azure.com/#crea
      - ``Canonical:0001-com-ubuntu-pro-minimal-cis-focal:pro-cis-minimal-20_04-gen2:latest``
 
 
+Specialized-hardware-compatible offers
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+These images are optimized for use in `virtual machines running on NVIDIA GB200 hardware <https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/nd-gb200-v6-series>`_.
+
+Ubuntu 24.04 LTS (GB200-Compatible) - Noble Numbat
+++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Quick start: `Ubuntu 24.04 LTS (GB200-Compatible) on Azure <https://portal.azure.com/#create/canonical.ubuntu-24_04-ltsspecialized-hardware>`_
+
+.. list-table::
+   :widths: 10 9 50
+   :header-rows: 1
+
+   * - **Architecture**
+     - **Hyper-V Generation**
+     - **URN**
+   * - Arm64
+     - Gen2
+     - ``Canonical:ubuntu-24_04-lts:specialized-hardware:latest``
+
+Ubuntu Pro 24.04 LTS (GB200-Compatible) - Noble Numbat
+++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Quick start: `Ubuntu Pro 24.04 LTS (GB200-Compatible) on Azure <https://portal.azure.com/#create/canonical.ubuntu-24_04-ltsubuntu-pro-specialized-hardware>`_
+
+.. list-table::
+   :widths: 10 9 50
+   :header-rows: 1
+
+   * - **Architecture**
+     - **Hyper-V Generation**
+     - **URN**
+   * - Arm64
+     - Gen2
+     - ``Canonical:ubuntu-24_04-lts:ubuntu-pro-specialized-hardware:latest``
+
+
 List all images published by Canonical
 --------------------------------------
 
