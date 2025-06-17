@@ -386,7 +386,7 @@ Quick start: `Ubuntu Pro CIS 20.04 LTS on Azure  <https://portal.azure.com/#crea
 Specialized-hardware-compatible offers
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-These images are optimized for use in `virtual machines running on NVIDIA GB200 hardware <https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/nd-gb200-v6-series>`.
+These images are optimized for use in `virtual machines running on NVIDIA GB200 hardware <https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/nd-gb200-v6-series>`_.
 
 Ubuntu 24.04 LTS (GB200-Compatible) - Noble Numbat
 ++++++++++++++++++++++++++++++++++++++++++++++++++
