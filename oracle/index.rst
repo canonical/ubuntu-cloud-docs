@@ -30,6 +30,10 @@ In this documentation
 
        **Discussion and clarification** of key topics, such as our offerings on Oracle Cloud and an overview of available security features. 
 
+   ..  grid-item:: :doc:`Reference <oracle-reference/index>`
+
+      **References** of Ubuntu's offering on Oracle Cloud, such as a list of our available OKE images.
+
 
 ----------
 
@@ -51,6 +55,7 @@ community projects, contributions, suggestions, fixes and constructive feedback.
 
    oracle-how-to/index
    oracle-explanation/index
+   oracle-reference/index
 
 .. _Ubuntu release cycle: https://ubuntu.com/about/release-cycle
 .. _Get support: https://ubuntu.com/cloud/public-cloud
