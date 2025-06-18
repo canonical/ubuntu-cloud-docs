@@ -12,17 +12,17 @@ You'll need:
 
 - Oracle Cloud compartment to create the nodes.
 
-- Configured and running OKE cluster on Oracle Cloud.
-
 - Oracle's ``oci`` CLI installed.
 
-- ``kubectl`` installed (Self-Managed only).
+- ``kubectl`` installed.
+
+- `Domain <https://docs.oracle.com/en-us/iaas/Content/Identity/domains/to-create-new-identity-domain.htm>`_, `Dynamic Group and Policy <https://docs.oracle.com/en-us/iaas/Content/ContEng/Tasks/contengdynamicgrouppolicyforselfmanagednodes.htm#contengprereqsforselfmanagednodes-accessreqs>`_ configured (Self-Managed only). 
 
 
 Find an Ubuntu image
 -----------------------
 
-Select a version from the `available releases <#available-releases>`_. The images are listed as JSON in ascending order, therefore the latest image will be at the bottom. Make note of the image path for the image you choose. The image path conforms to the following format:
+Select a version from the `available releases </oracle-reference/ubuntu-availability-on-oke>`_. The images are listed as JSON in ascending order, therefore the latest image will be at the bottom. Make note of the image path for the image you choose. The image path conforms to the following format:
 
 .. code:: bash
   
@@ -73,14 +73,20 @@ When registering images, the :guilabel:`Launch mode` is an option to configure. 
                 --operating-system-version <ubuntu-version-number> \
                 --source-image-type QCOW2
 
-Create OKE nodes with Ubuntu Images
+Create OKE Cluster with Ubuntu Images
 -------------------------------------
 
-The following steps on creating nodes assume that you have an existing OKE cluster on Oracle Cloud, but it is not required to have existing nodes. If you don't have an OKE cluster prepared then Oracle's documentation for `creating a cluster`_ is a good place to start.
-
-Create managed OKE nodes with Ubuntu
+Create OKE Cluster using web console
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+Since this is a Limited Availability release of Ubuntu images for OKE, you can only create managed nodes through the Oracle Cloud API (``oci`` CLI or SDK). The ability to create managed nodes from the Oracle Cloud UI will be added later.
+
+
+Create OKE Cluster using OCI CLI
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Create managed OKE nodes with Ubuntu
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Managed nodes are node instances whose lifecycle is managed by the OKE service. 
 
 .. tabs::
@@ -133,7 +139,7 @@ View the node pool status in Oracle Cloud by navigating to :guilabel:`Kubernetes
 Everything will be running as expected when the :guilabel:`Kubernetes node condition` and :guilabel:`Node state` of all the nodes are labeled :guilabel:`Ready`.
 
 Create self-managed OKE nodes with Ubuntu
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The following instructions assume that you have configured your OKE cluster to work with self-managed nodes. If you have not done this, refer to the Oracle documentation for `working with self-managed nodes`_
 
@@ -209,6 +215,10 @@ Self-managed nodes cannot be viewed from Oracle Cloud so you can poll their stat
    watch 'kubectl get nodes'
 
 Once your node is in :guilabel:`Ready` state, then everything is running as expected and your self-managed node is ready to accept pods. 
+
+Create OKE Cluster using Terraform
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 
 Further references
 ------------------
