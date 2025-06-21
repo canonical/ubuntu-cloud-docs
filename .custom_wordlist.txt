@@ -40,6 +40,7 @@ checkpointing
 checksums
 chrony
 Chrony
+CIDR
 CIS
 cis
 CLI
@@ -286,6 +287,8 @@ SSO
 STIG
 STIGs
 subnet
+subnets
+Terraform
 Tanzu
 TCO
 TCP
