@@ -22,7 +22,7 @@ You'll need:
 Find an Ubuntu image
 -----------------------
 
-Select a version from the `available releases`_. The images are listed as JSON in ascending order, therefore the latest image will be at the bottom. Make note of the image path for the image you choose. The image path conforms to the following format:
+Select a version from the :doc:`available releases </oracle-reference/ubuntu-availability-on-oke>`. The images are listed as JSON in ascending order, therefore the latest image will be at the bottom. Make note of the image path for the image you choose. The image path conforms to the following format:
 
 .. code:: bash
   
@@ -45,7 +45,7 @@ When registering images, the :guilabel:`Launch mode` is an option to configure. 
 
     .. group-tab:: Using console
     
-        Start the registration process in Oracle Cloud by navigating to :guilabel:`Compute` > :guilabel:`Custom Images` and select :guilabel:`Import Image`. Select :guilabel:`Import from an Object Storage URL`, then paste the `available releases`_ location link with your concatenated image path into the :guilabel:`Object Storage URL` field. The URL format pasted should conform to the following:
+        Start the registration process in Oracle Cloud by navigating to :guilabel:`Compute` > :guilabel:`Custom Images` and select :guilabel:`Import Image`. Select :guilabel:`Import from an Object Storage URL`, then paste the :doc:`available releases </oracle-reference/ubuntu-availability-on-oke>` location link with your concatenated image path into the :guilabel:`Object Storage URL` field. The URL format pasted should conform to the following:
 
         .. code:: bash
          
@@ -327,4 +327,3 @@ For more information about ``oci`` CLI and managing self-managed nodes on your c
 .. _`cluster-networking`: https://docs.oracle.com/en-us/iaas/Content/ContEng/Concepts/contengnetworkconfig.htm
 .. _`cli-example-repo`: https://github.com/canonical/oracle-doc-examples/tree/main/deploy-oke-using-ubuntu/cli
 .. _`security lists`: https://docs.oracle.com/en-us/iaas/Content/Network/Tasks/managingsecuritylists.htm
-.. _`available releases`: /oracle-reference/ubuntu-availability-on-oke
