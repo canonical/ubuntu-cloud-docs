@@ -123,6 +123,7 @@ GPUs
 Graviton
 gzip
 HashiCorp
+HCL
 HIPAA
 hostname
 hostnames
