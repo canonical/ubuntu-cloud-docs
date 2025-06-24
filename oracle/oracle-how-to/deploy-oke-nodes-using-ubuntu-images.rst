@@ -81,11 +81,15 @@ Since this is a Limited Availability release of Ubuntu images for OKE, you can o
 Deploy OKE Cluster with Ubuntu using CLI
 -----------------------------------------
 
-Deploying an OKE cluster with Ubuntu using the ``oci`` CLI involves three main steps:
+Before getting started, confirm that you have all of the `Prerequisites <#prerequisites>`_ and ensure that you have an `Ubuntu OKE image registered <#register-an-ubuntu-image>`_. Make note of the architecture for the registered image, either ``amd64`` or ``arm64``, as you want to ensure that nodes are launched with the correct instance shapes.
+
+Deploying an OKE cluster with Ubuntu images using the ``oci`` CLI involves three main steps:
 
 * Create the required network resources for the cluster.
 * Create the OKE cluster.
 * Create a `managed node pool <cli-managed-nodes_>`_ or `self-managed nodes <cli-self-managed-nodes_>`_ with Ubuntu images.
+
+The following sections provide a general guide for each of the steps outlined above. For a full working example, please refer to our `GitHub example repository <cli-example-repo_>`_.
 
 If you already have a cluster, you can skip directly to `creating a managed node pool <cli-managed-nodes_>`_ or `self-managed nodes <cli-self-managed-nodes_>`_.
 
@@ -94,7 +98,7 @@ Create network resources for cluster deployment
 
 Before you can create and deploy an OKE cluster, you need to create the necessary network resources. This includes a Virtual Cloud Network (VCN), subnets, internet gateway, route table, and more. For a complete guide on how to set up the network resources, refer to the Oracle documentation on `cluster networking <cluster-networking_>`_.
 
-Setting up a VCN typically involves the following (this is not an exhaustive list):
+Setting up a VCN typically requires the following (this is not an exhaustive list):
 
 * A CIDR block (range of IP addresses) for the cluster nodes.
 * An internet gateway (if using public subnets).
@@ -102,8 +106,6 @@ Setting up a VCN typically involves the following (this is not an exhaustive lis
 * A route table (required if using gateways).
 * Subnets for worker nodes, control plane, and load balancers.
 * Security rules defined in security lists to control traffic between nodes and the control plane.
-
-For a full working example, please refer to our `GitHub example repository <cli-example-repo_>`_.
 
 The following command can be used to create a VCN using the ``oci`` CLI. Replace the placeholders with your own values.
 
@@ -114,7 +116,7 @@ The following command can be used to create a VCN using the ``oci`` CLI. Replace
   --display-name <vcn-name> \
   --cidr-block <vcn-cidr-block>
   
-The next step is to create an internet gateway, a NAT gateway and/or a service gateway. To determine which of them are needed for your cluster, refer to the Oracle documentation for `network configuration <cluster-networking_>`_.
+The next step is to create an internet gateway, a NAT gateway and/or a service gateway. To determine which of them are needed for your cluster, refer to the same Oracle documentation on `cluster networking <cluster-networking_>`_.
       
 .. code:: bash
   
@@ -135,7 +137,7 @@ Next up, refer to the Oracle documentation for `security lists`_ for information
   --egress-security-rules <rules> \
   --ingress-security-rules <rules>
                 
-Now that you have the VCN, gateways, and security lists, you can create the route table and the subnets. The subnets will be used for the worker nodes, control plane, and load balancers.
+Now that you have the VCN, gateways, and security lists, you can create the route table and the subnets. Typically, you will need a nodes subnet, a control plane subnet, and a service load balancer subnet.
 
 You can create a route table and a subnet using the following commands.
       
@@ -158,13 +160,12 @@ You can create a route table and a subnet using the following commands.
       --security-list-ids <nodes-seclist-ocid>
       ...
       
-  # Optionally, create a control plane subnet
-  # and a service load balancer subnet
+Similarly, create a control plane subnet and a service load balancer subnet.
 
 Create the OKE cluster
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-To create the OKE cluster, you will need to provide the compartment ID, the VCN OCID, and optionally, the subnets for the control plane and service load balancer. For more details on cluster creation, please refer to the Oracle documentation on `creating a cluster`_.
+To create the OKE cluster, you will need to provide the compartment ID, the VCN OCID, and the subnets for the control plane and service load balancer. For more details on cluster creation, please refer to the Oracle documentation on `creating a cluster`_.
 
 The following command will create the OKE cluster.
 
@@ -180,7 +181,7 @@ The following command will create the OKE cluster.
       --service-lb-subnet-ids "[<service-lb-subnet-ocid>]"
       ...
       
-Once the cluster is created, you can create a kubeconfig file to access the cluster through `kubectl`. The following command will generate the kubeconfig file:
+Once the cluster is created, you can create a kubeconfig file to access the cluster through ``kubectl``. The following command will generate the kubeconfig file:
 
 .. code:: bash
   
@@ -231,7 +232,7 @@ Lastly, replace the values and run the following command to create the managed n
     --placement-configs="$(cat placement-config.json)" \
     --node-metadata='{"user_data": "'"$(base64 user-data.yaml)"'"}'
 
-To view the node pool status, use ``kubectl`` with the previously created ``kubeconfig``.
+To view the node pool status, use ``kubectl`` with the previously created ``kubeconfig`` file.  
 
 .. code:: bash
 
@@ -290,6 +291,8 @@ The following command will create a self-managed instance with your previously c
     --user-data-file user-data.yaml \
     --display-name <instance-name>
 
+Since this command creates a single instance (node), you can rerun it multiple times to create the desired number of nodes.
+
 You can poll the status of the self-managed nodes with the following command:
 
 .. code:: bash
@@ -308,7 +311,7 @@ For this guide we'll use our `GitHub example repository <terraform-example-repo_
 Setting up the Terraform Project
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Get started by cloning the `GitHub example repository <terraform-example-repo_>`_ and change directory to the Terraform example.
+Get started by cloning the `GitHub example repository <gh-example-repo_>`_ and change directory to the Terraform example.
 
 .. code:: bash
 
@@ -538,19 +541,20 @@ For more information about ``oci`` CLI and managing self-managed nodes on your c
 .. _`node cycling for self-managed nodes`: https://docs.oracle.com/en-us/iaas/Content/ContEng/Tasks/contengupgradingselfmanagednodes.htm#contengupgradingselfmanagednodes
 .. _`working with self-managed nodes`: https://docs.oracle.com/en-us/iaas/Content/ContEng/Tasks/contengworkingwithselfmanagednodes.htm
 .. _`creating a cluster`: https://docs.oracle.com/en-us/iaas/Content/ContEng/Tasks/create-cluster.htm
-.. _`import from-object-uri`: https://docs.oracle.com/en-us/iaas/tools/oci-cli/3.54.3/oci_cli_docs/cmdref/compute/image/import/from-object-uri.html
+.. _`import from-object-uri`: https://docs.oracle.com/en-us/iaas/tools/oci-cli/3.59.0/oci_cli_docs/cmdref/compute/image/import/from-object-uri.html
 .. _`object upload`: https://docs.oracle.com/en-us/iaas/tools/oci-cli/3.45.2/oci_cli_docs/cmdref/os/object/put.html
 .. _`image import from object`: https://docs.oracle.com/en-us/iaas/tools/oci-cli/3.45.2/oci_cli_docs/cmdref/compute/image/import/from-object.html
 .. _`managing custom images`: https://docs.oracle.com/en-us/iaas/Content/Compute/Tasks/managingcustomimages.htm
-.. _`OCI CLI documentation`: https://docs.oracle.com/en-us/iaas/tools/oci-cli/3.54.3/oci_cli_docs/
+.. _`OCI CLI documentation`: https://docs.oracle.com/en-us/iaas/tools/oci-cli/3.59.0/oci_cli_docs/
 .. _`Creating and managing kubernetes clusters`: https://docs.public.oneportal.content.oci.oraclecloud.com/en-us/iaas/compute-cloud-at-customer/topics/oke/creating-and-managing-kubernetes-clusters.htm
 .. _`Dynamic Group and Policy`: https://docs.oracle.com/en-us/iaas/Content/ContEng/Tasks/contengdynamicgrouppolicyforselfmanagednodes.htm
 .. _`Creating cloud-init scripts for self-managed nodes`: https://docs.oracle.com/en-us/iaas/Content/ContEng/Tasks/contengcloudinitforselfmanagednodes.htm
 .. _`Domain`: https://docs.oracle.com/en-us/iaas/Content/Identity/domains/to-create-new-identity-domain.htm
 .. _`cluster-networking`: https://docs.oracle.com/en-us/iaas/Content/ContEng/Concepts/contengnetworkconfig.htm
+.. _`gh-example-repo`: https://github.com/canonical/oracle-doc-examples/tree/main/deploy-oke-using-ubuntu/terraform
 .. _`cli-example-repo`: https://github.com/canonical/oracle-doc-examples/tree/main/deploy-oke-using-ubuntu/cli
 .. _`terraform-example-repo`: https://github.com/canonical/oracle-doc-examples/tree/main/deploy-oke-using-ubuntu/terraform
-.. _`security lists`: https://docs.oracle.com/en-us/iaas/Content/Network/Tasks/managingsecuritylists.htm
+.. _`security lists`: https://docs.oracle.com/en-us/iaas/Content/Network/Concepts/securitylists.htm
 .. _`ubuntu-oke-availability`: https://canonical-oracle.readthedocs-hosted.com/oracle-reference/ubuntu-availability-on-oke/
 .. _`gh-oci-terraform-provider`: https://github.com/oracle/terraform-provider-oci
 .. _`gh-oke-terraform-module`: https://github.com/oracle-terraform-modules/terraform-oci-oke
