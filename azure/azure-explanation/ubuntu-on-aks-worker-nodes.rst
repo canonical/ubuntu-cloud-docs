@@ -4,7 +4,7 @@ Ubuntu on AKS worker nodes
 Overview
 --------
 
-Ubuntu 22.04 LTS is the default operating system for worker nodes in the Azure Kubernetes Service (AKS). It is used in both system node pools and user node pools. The Ubuntu images are provided by Canonical and customized by Microsoft to ensure enhanced compatibility within the AKS environment. Specific methods are available to ensure timely security updates for these images.
+Ubuntu is the default operating system for worker nodes in the Azure Kubernetes Service (AKS). It is used in both system node pools and user node pools. The Ubuntu images are provided by Canonical and customized by Microsoft to ensure enhanced compatibility within the AKS environment. Specific methods are available to ensure timely security updates for these images.
 
 
 Image customization
