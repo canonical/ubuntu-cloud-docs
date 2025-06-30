@@ -21,7 +21,6 @@ build:
       - PROJECT=google make spelling
       - PROJECT=ibm make spelling
       - PROJECT=oracle make spelling
-      - PROJECT=oci make spelling
       - PROJECT=public-images make spelling
 
 # Build documentation in the docs/ directory with Sphinx
