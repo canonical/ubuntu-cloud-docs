@@ -40,6 +40,7 @@ checkpointing
 checksums
 chrony
 Chrony
+CIDR
 CIS
 cis
 CLI
@@ -122,6 +123,7 @@ GPUs
 Graviton
 gzip
 HashiCorp
+HCL
 HIPAA
 hostname
 hostnames
@@ -286,6 +288,8 @@ SSO
 STIG
 STIGs
 subnet
+subnets
+Terraform
 Tanzu
 TCO
 TCP
