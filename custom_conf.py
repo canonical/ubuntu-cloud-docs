@@ -224,6 +224,7 @@ multiproject_projects = {
     "google": {},
     "ibm": {},
     "oracle": {},
+    "oci": {},
     "public-images": {},
 }
 
