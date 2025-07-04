@@ -10,6 +10,7 @@ These guides provide instructions for using Ubuntu images on Oracle Cloud. They 
 * :doc:`use-fde`
 * :doc:`upgrade-from-focal-to-jammy`
 * :doc:`upgrade-from-jammy-to-noble`
+* :doc:`enable-confidential-computing`
 * :doc:`contribute-to-these-docs`
    
 .. toctree::
@@ -20,6 +21,7 @@ These guides provide instructions for using Ubuntu images on Oracle Cloud. They 
    deploy-oke-nodes-using-ubuntu-images
    Use a bastion for access <use-bastion-to-access-VM>
    use-fde
+   enable-confidential-computing
    upgrade-from-focal-to-jammy
    upgrade-from-jammy-to-noble   
    contribute-to-these-docs
