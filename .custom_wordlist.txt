@@ -51,6 +51,7 @@ CNCF
 codename
 config
 CPC
+cpc
 CPUs
 cron
 cryptographic
@@ -348,6 +349,7 @@ VPC
 VPCs
 VSI
 vTPM
+walinuxagent
 workspaces
 WorkSpaces
 xenial

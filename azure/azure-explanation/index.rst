@@ -10,4 +10,4 @@ If you have questions about our offerings on Azure, about the use of Ubuntu on A
    Ubuntu on AKS<ubuntu-on-aks-worker-nodes>
    Security overview<security-overview>
    Image retention policy<image-rentention-policy>
-   
+   Packages maintained by Canonical for Azure<packages>
