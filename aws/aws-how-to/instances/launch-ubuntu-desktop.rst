@@ -62,7 +62,7 @@ After logging into your server, execute the commands below to install the Ubuntu
 
 .. code:: bash
 
-    sudo apt-get update && apt-get upgrade -y
+    sudo apt-get update && sudo apt-get upgrade -y
     sudo apt-get install -y ubuntu-desktop
     sudo snap install snap-store --edge
     sudo reboot
