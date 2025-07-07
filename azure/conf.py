@@ -90,3 +90,6 @@ redirects = {
 ############################################################
 
 html_baseurl = 'https://documentation.ubuntu.com/azure/'
+
+templates_path = ['.sphinx/_templates']
+notfound_template = '404.html'
