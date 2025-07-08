@@ -9,7 +9,8 @@ Using Ubuntu images on Oracle Cloud
 You can use Ubuntu images on Oracle Cloud to deploy virtual machines (VMs) or Oracle Kubernetes Engine (OKE) nodes.
 
 * :doc:`Find Ubuntu images <find-ubuntu-images>`
-* :doc:`Deploy Ubuntu OKE nodes <deploy-oke-nodes-using-ubuntu-images>`
+* :doc:`Deploy Ubuntu OKE nodes using CLI <deploy-ubuntu-oke-nodes-using-cli>`
+* :doc:`Deploy Ubuntu OKE nodes using Terraform <deploy-ubuntu-oke-nodes-using-terraform>`
 
 Enabling security features
 --------------------------
@@ -33,7 +34,8 @@ Upgrade from one LTS version of Ubuntu to another.
    :maxdepth: 1
    
    Find images <find-ubuntu-images>
-   Deploy Ubuntu OKE nodes <deploy-oke-nodes-using-ubuntu-images>
+   Deploy Ubuntu OKE nodes using CLI <deploy-ubuntu-oke-nodes-using-cli>
+   Deploy Ubuntu OKE nodes using Terraform <deploy-ubuntu-oke-nodes-using-terraform>
    Use full-disk encryption <use-fde>
    Enable confidential computing <enable-confidential-computing>
    Use a bastion for access <use-bastion-to-access-VM>
