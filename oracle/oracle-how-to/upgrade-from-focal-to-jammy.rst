@@ -1,5 +1,5 @@
-Upgrade from Focal to Jammy
-===========================
+Upgrade from Ubuntu 20.04 LTS (Focal) to 22.04 LTS (Jammy)
+==========================================================
 
 General Advice
 ---------------

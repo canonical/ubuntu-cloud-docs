@@ -53,6 +53,7 @@ suggestions, fixes and constructive feedback.
 
    google-how-to/index
    google-explanation/index
+   google-how-to/contribute-to-these-docs
 
    
 .. _Get support: https://ubuntu.com/cloud/public-cloud

@@ -1,5 +1,5 @@
-Upgrade from Jammy to Noble
-===========================
+Upgrade from Ubuntu 22.04 LTS (Jammy) to 24.04 LTS (Noble)
+==========================================================
 
 General Advice
 ---------------

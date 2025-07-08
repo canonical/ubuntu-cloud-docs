@@ -25,12 +25,6 @@ If you want to use Ubuntu Pro on your Kubernetes cluster, you can deploy it on G
 
 * :doc:`Deploy Kubernetes on GCE <gke/deploy-kubernetes-with-ubuntu-pro>`
 
-Contributing to the docs
-------------------------
-
-If you come across any problems with this documentation and you want to help with corrections, suggestions or new content, here's how you can do that:
-
-* :doc:`contribute-to-these-docs`
    
 .. toctree::
    :hidden:
@@ -38,6 +32,5 @@ If you come across any problems with this documentation and you want to help wit
    
    gce/index    
    gke/index
-   contribute-to-these-docs
  
   

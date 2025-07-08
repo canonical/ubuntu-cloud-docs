@@ -86,6 +86,7 @@ Ubuntu public cloud is open source project that warmly welcomes community projec
    
    all-clouds-how-to/index
    all-clouds-explanation/index
+   all-clouds-how-to/contribute-to-these-docs
       
 
 .. _awspub: https://canonical-awspub.readthedocs-hosted.com/
