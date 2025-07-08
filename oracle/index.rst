@@ -56,6 +56,7 @@ community projects, contributions, suggestions, fixes and constructive feedback.
    oracle-how-to/index
    oracle-explanation/index
    oracle-reference/index
+   oracle-how-to/contribute-to-these-docs
 
 .. _Ubuntu release cycle: https://ubuntu.com/about/release-cycle
 .. _Get support: https://ubuntu.com/cloud/public-cloud

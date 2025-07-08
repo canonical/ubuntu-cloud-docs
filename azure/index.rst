@@ -75,6 +75,7 @@ contributions, suggestions, fixes and constructive feedback.
 
    azure-how-to/index
    azure-explanation/index
+   azure-how-to/contribute-to-these-docs
 
 
 .. _SQL Server on Ubuntu Pro: https://azuremarketplace.microsoft.com/en-us/marketplace/apps/microsoftsqlserver.sql2019-ubuntupro2004?tab=Overview

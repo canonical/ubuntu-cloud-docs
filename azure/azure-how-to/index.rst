@@ -1,38 +1,27 @@
 How-to guides
 =============
 
-These guides provide instructions for performing different operations related to our products on Azure.
+These guides provide instructions related to launching and using Ubuntu instances on Azure.
 
-Launching and using Ubuntu instances
-------------------------------------
 
-Perform common tasks such as installing the Azure CLI, finding the right image to use and launching the image.
+Find and launch images:
 
 * :doc:`Install Azure CLI <instances/install-azure-cli>`
 * :doc:`Find images <instances/find-ubuntu-images>`
 * :doc:`Launch images <instances/launch-ubuntu-images>`
 
-Upgrade Ubuntu and create golden images.
+Upgrade Ubuntu and create golden images:
 
 * :doc:`Get Ubuntu Pro <instances/get-ubuntu-pro>`
 * :doc:`Create a Pro golden image <instances/create-pro-fips-golden-image>`
 * :doc:`Create a golden image pipeline <instances/create-a-golden-image-pipeline>`
 * :doc:`Upgrade from Focal to Jammy <instances/upgrade-from-focal-to-jammy>`
 
-Deploy specific solutions like SQL Server and Kubeflow on Azure. 
+Deploy specific solutions like SQL Server and Kubeflow on Azure:
 
 * :doc:`Deploy an Ubuntu VM with SQL Server <instances/provision-an-ubuntu-virtual-machine-running-sql-server-in-azure>`
 * `Install Kubeflow on AKS (external link)`_
 * :doc:`Deploy Kubeflow with AKS spot instances <instances/deploy-kubeflow-pipelines-with-aks-spot-instances>`
-
-
-Contributing to the docs
-------------------------
-
-If you come across any problems with this documentation and you want to help with corrections, suggestions or new content, here's how you can do that:
-
-
-* :doc:`contribute-to-these-docs`
 
 .. toctree::
    :hidden:
@@ -47,7 +36,6 @@ If you come across any problems with this documentation and you want to help wit
    Upgrade from Focal to Jammy <instances/upgrade-from-focal-to-jammy>
    Deploy an Ubuntu VM running SQL Server <instances/provision-an-ubuntu-virtual-machine-running-sql-server-in-azure>
    Deploy Kubeflow with AKS spot instances <instances/deploy-kubeflow-pipelines-with-aks-spot-instances>  
-   contribute-to-these-docs
-
+  
 .. _`Install Kubeflow on AKS (external link)`: https://charmed-kubeflow.io/docs/install-on-aks
 

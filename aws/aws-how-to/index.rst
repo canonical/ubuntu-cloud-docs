@@ -54,14 +54,6 @@ AWS provides multiple features for additional security, many of which are suppor
 * :doc:`Use Secure Boot and TPM <security/use-secureboot-and-vtpm>`
 
 
-Contributing to the docs
-------------------------
-
-If you come across any problems with this documentation and you want to help with corrections, suggestions or new content, here's how you can do that:
-
-
-* :doc:`contribute-to-these-docs`
-
 .. toctree::
    :hidden:
    :maxdepth: 1
@@ -69,5 +61,4 @@ If you come across any problems with this documentation and you want to help wit
    instances/index    
    kubernetes/index
    security/index   
-   contribute-to-these-docs
   

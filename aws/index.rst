@@ -81,6 +81,7 @@ If none of the above options are suitable for you, and you still want to get in 
    aws-how-to/index
    aws-explanation/index
    aws-reference/index
+   aws-how-to/contribute-to-these-docs
 
 
 .. _Get support: https://ubuntu.com/cloud/public-cloud

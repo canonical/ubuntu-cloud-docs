@@ -53,6 +53,7 @@ Ubuntu on IBM is a member of the Ubuntu family and the project warmly welcomes c
    
    ibm-how-to/index
    ibm-explanation/index
+   ibm-how-to/contribute-to-these-docs
    
 .. _Get support: https://ubuntu.com/cloud/public-cloud
 .. _Join our online chat: https://discourse.ubuntu.com/c/project/public-cloud/176
