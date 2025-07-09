@@ -10,7 +10,7 @@ Different versions of Ubuntu images are available on Oracle Cloud:
 For each of these versions, Oracle publishes a new image build every month. The latest three builds (for each version) are always listed on their cloud console, while the older ones are archived. 
 
 Find the latest Ubuntu images
------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 You can find the latest three image builds using either the web console or the CLI.
 
@@ -135,7 +135,7 @@ You can find the latest three image builds using either the web console or the C
 .. _old_images:
 
 Find older Ubuntu images
-------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 If you want to use an image that is older than the latest three builds, you need to know its Oracle Cloud Identifier (OCID) and use that while creating the instance. 
 
@@ -169,6 +169,19 @@ With the region / image specific OCID, you can create an instance either through
           --ssh-authorized-keys-file ~/.ssh/id_rsa.pub
 
 
+Find Ubuntu images for use on OKE nodes 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Ubuntu images are available for worker nodes on Oracle Kubernetes Engine (OKE) in Oracle Cloud. You need to find a suitable image and register it before you can use it to create OKE nodes. 
+
+.. include:: ../../reuse/OKE-nodes.txt
+   :start-after: Start: Find and register an image
+   :end-before: End: Find and register an image
+  
+
 .. _`Oracle CLI documentation`: https://docs.public.oneportal.content.oci.oraclecloud.com/en-us/iaas/Content/GSG/Tasks/gettingstartedwiththeCLI.htm#launchLinux
 .. _`Oracle's image documentation`: https://docs.oracle.com/en-us/iaas/images/
+.. _`managing custom images`: https://docs.oracle.com/en-us/iaas/Content/Compute/Tasks/managingcustomimages.htm
+.. _`import from-object-uri`: https://docs.oracle.com/en-us/iaas/tools/oci-cli/3.59.0/oci_cli_docs/cmdref/compute/image/import/from-object-uri.html
+
 
