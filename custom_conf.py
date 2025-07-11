@@ -65,7 +65,7 @@ ogp_image = 'https://assets.ubuntu.com/v1/6c10be67-UbuntuCloud.jpg'
 
 # Update with the local path to the favicon for your product
 # (default is the circle of friends)
-html_favicon = '.sphinx/_static/favicon.png'
+html_favicon = '_static/favicon.png'
 
 # Access custom environment variable to detect project being built
 subproject = os.environ.get("PROJECT")

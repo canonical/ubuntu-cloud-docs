@@ -157,7 +157,7 @@ if '-b' in sys.argv:
 
 # Setting templates_path for epub makes the build fail
 if builder == 'dirhtml' or builder == 'html':
-    templates_path = ['.sphinx/_templates']
+    templates_path = ['_templates']
     notfound_template = '404.html'
 
 # Theme configuration
@@ -174,18 +174,19 @@ if html_title == '':
 ### Additional files
 ############################################################
 
-html_static_path = ['.sphinx/_static']
+html_static_path = ['_static']
 
 html_css_files = [
     'custom.css',
     'header.css',
     'github_issue_links.css',
     'furo_colors.css',
-    'footer.css'
+    'footer.css',
+    'css/cookie-banner.css',
 ]
 html_css_files.extend(custom_html_css_files)
 
-html_js_files = ['header-nav.js', 'footer.js']
+html_js_files = ['header-nav.js', 'footer.js', 'js/bundle.js']
 if 'github_issues' in html_context and html_context['github_issues'] and not disable_feedback_button:
     html_js_files.append('github_issue_links.js')
 html_js_files.extend(custom_html_js_files)
