@@ -21,10 +21,7 @@ Ubuntu Pro
 
 Learn how to build your own Ubuntu Pro container image from a regular Ubuntu container image.
 
-.. toctree::
-   :maxdepth: 1
-
-   Enable Ubuntu Pro services in a Dockerfile <enable-pro-services>
+* `Enable Ubuntu Pro services in a Dockerfile`_
 
 
 Deployments
@@ -48,3 +45,5 @@ information to add (whether it is a tutorial, a guide, or something else), this 
    :maxdepth: 1
 
    contribute-to-these-docs
+
+.. _Enable Ubuntu Pro services in a Dockerfile: https://documentation.ubuntu.com/pro-client/en/latest/howtoguides/enable_in_dockerfile/
