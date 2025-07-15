@@ -6,7 +6,7 @@ Ubuntu OCI container images
 The `Open Container Initiative (OCI) <https://opencontainers.org/>`_ establishes standards for constructing container 
 images that can be reliably installed across a variety of compliant host environments.
 
-Ubuntu’s `LTS Docker Image Portfolio <https://ubuntu.com/security/docker-images>`_ 
+Ubuntu’s `LTS Docker Image Portfolio <https://ubuntu.com/containers>`_ 
 provides OCI-compliant images that receive stable security updates and predictable 
 software updates, ensuring consistency in both maintenance schedule and operational 
 interfaces for the underlying foundation your software builds on.
