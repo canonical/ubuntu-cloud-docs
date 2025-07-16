@@ -51,6 +51,13 @@ html_context = {
     # https://www.sphinx-doc.org/en/master/usage/restructuredtext/field-lists.html
     'sequential_nav': "both"
 }
+
+
+# If your documentation is hosted on https://docs.ubuntu.com/,
+#       uncomment and update as needed.
+
+slug = 'public-cloud'
+
 # Set up redirects (https://documatt.gitlab.io/sphinx-reredirects/usage.html)
 # For example: "explanation/old-name.html": "../how-to/prettify.html",
 redirects = {
