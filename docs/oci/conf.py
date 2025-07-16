@@ -47,6 +47,11 @@ html_context = {
     "sequential_nav": "both",
 }
 
+# If your documentation is hosted on https://docs.ubuntu.com/,
+#       uncomment and update as needed.
+
+slug = 'oci-registries'
+
 # These docs reuse some content from other docs
 pro_client_docs = {
     "enable-pro-services.rst": "https://raw.githubusercontent.com/canonical/ubuntu-pro-client/docs/docs/howtoguides/enable_in_dockerfile.rst",
