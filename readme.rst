@@ -1,7 +1,7 @@
 Ubuntu cloud documentation
 ==========================
 
-Documentation for Ubuntu on public clouds. This documentation is composed of seven related documentation sets. The first one is for content related to public clouds in general and includes links to the remaining six. Five of the remaining six pertain to different cloud partners (AWS, Azure, IBM, Google cloud and Oracle cloud), while the last one is for container (OCI) registries.
+Documentation for Ubuntu on public clouds. This documentation is composed of eight related documentation sets. The first one is for content related to public clouds in general and includes links to the remaining seven. Five of the remaining seven pertain to different cloud partners (AWS, Azure, IBM, Google cloud and Oracle cloud). The sixth one is about container (OCI) registries and the last one about the different types of publicly available Ubuntu images.
 
 Each documentation set is currently published to a different location:
 
@@ -24,14 +24,12 @@ Fork and clone this repository.
 
 Once cloned, run::
 
+	cd docs
 	make install
 
-This invokes the ``install`` command in the ``Makefile``, and creates a
-virtual environment (``.sphinx/venv``) and installs dependencies in
-``.sphinx/requirements.txt``.
-
-A complete set of pinned, known-working dependencies is included in
-``.sphinx/pinned-requirements.txt``.
+This invokes the ``install`` command from the ``Makefile``, which creates a
+virtual environment (``.sphinx/venv``) and installs all the dependencies specified in
+``docs/requirements.txt``.
 
 
 Build and serve the documentation

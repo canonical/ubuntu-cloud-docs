@@ -11,29 +11,38 @@ build:
   tools:
     python: "3.11"
   jobs:
-    pre_install:
-      - python3 .sphinx/build_requirements.py
-      - git fetch --unshallow || true
     pre_build:
-      - PROJECT=all-clouds make spelling
-      - PROJECT=aws make spelling
-      - PROJECT=azure make spelling
-      - PROJECT=google make spelling
-      - PROJECT=ibm make spelling
-      - PROJECT=oracle make spelling
-      - PROJECT=public-images make spelling
+      - PROJECT=all-clouds make -C docs spelling
+      - PROJECT=aws make -C docs spelling
+      - PROJECT=azure make -C docs spelling
+      - PROJECT=google make -C docs spelling
+      - PROJECT=ibm make -C docs spelling
+      - PROJECT=oci make -C docs spelling
+      - PROJECT=oracle make -C docs spelling
+      - PROJECT=public-images make -C docs spelling
+    post_checkout:
+    - git fetch --unshallow || true
+    # Cancel building pull requests when there aren't changed in the docs directory.
+    # If there are no changes (git diff exits with 0) we force the command to return with 183.
+    # This is a special exit code on Read the Docs that will cancel the build immediately.
+    # https://docs.readthedocs.io/en/stable/build-customization.html#cancel-build-based-on-a-condition
+    - |
+      if [ "$READTHEDOCS_VERSION_TYPE" = "external" ] && git diff --quiet origin/main -- 'docs/' '.readthedocs.yaml';
+      then
+        exit 183;
+      fi
 
 # Build documentation in the docs/ directory with Sphinx
 sphinx:
   builder: dirhtml
-  configuration: conf.py
+  configuration: docs/conf.py
   fail_on_warning: true
 
 # If using Sphinx, optionally build your docs in additional formats such as PDF
 formats:
-   - pdf
+- pdf
 
 # Optionally declare the Python requirements required to build your docs
 python:
-   install:
-   - requirements: .sphinx/requirements.txt
+  install:
+  - requirements: docs/requirements.txt
