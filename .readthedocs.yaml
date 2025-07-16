@@ -12,14 +12,14 @@ build:
     python: "3.11"
   jobs:
     pre_build:
-      - PROJECT=all-clouds make spelling
-      - PROJECT=aws make spelling
-      - PROJECT=azure make spelling
-      - PROJECT=google make spelling
-      - PROJECT=ibm make spelling
-      - PROJECT=oci make spelling
-      - PROJECT=oracle make spelling
-      - PROJECT=public-images make spelling
+      - PROJECT=all-clouds make -C docs spelling
+      - PROJECT=aws make -C docs spelling
+      - PROJECT=azure make -C docs spelling
+      - PROJECT=google make -C docs spelling
+      - PROJECT=ibm make -C docs spelling
+      - PROJECT=oci make -C docs spelling
+      - PROJECT=oracle make -C docs spelling
+      - PROJECT=public-images make -C docs spelling
     post_checkout:
     - git fetch --unshallow || true
     # Cancel building pull requests when there aren't changed in the docs directory.
