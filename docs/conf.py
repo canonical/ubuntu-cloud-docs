@@ -223,7 +223,9 @@ redirects = {
     "oci/oci-how-to/create-chiselled-ubuntu-image.html":
         "https://documentation.ubuntu.com/chisel/en/latest/tutorial/getting-started/",
     "oci/oci-how-to/deploy-pro-container-on-pro-kubernetes-cluster.html":
-        "https://documentation.ubuntu.com/oci-registries/oci-how-to/deploy-pro-container-on-pro-kubernetes-cluster/"
+        "https://documentation.ubuntu.com/oci-registries/oci-how-to/deploy-pro-container-on-pro-kubernetes-cluster/",
+    "oci/oci-how-to/enable-pro-services/":
+        "https://documentation.ubuntu.com/pro-client/en/latest/howtoguides/enable_in_dockerfile/"
 }
 
 
