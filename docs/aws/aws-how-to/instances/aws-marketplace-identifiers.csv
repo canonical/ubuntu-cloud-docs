@@ -11,10 +11,6 @@ Ubuntu 24.04 LTS,amd64,``prod-ib2w5aw4ynhey``,✓
 Ubuntu 24.04 LTS,arm64,``prod-uovi4c667gqya``,✓
 Minimal Ubuntu 24.04 LTS,amd64,``prod-u7oazfncxktmo``,✓
 Minimal Ubuntu 24.04 LTS,arm64,``prod-umggziwlkgulc``,✓
-Ubuntu 24.10,amd64,``prod-lumq7zoyb2r3i``,✓
-Ubuntu 24.10,arm64,``prod-sfigyzrb2xfj6``,✓
-Minimal Ubuntu 24.10,amd64,``prod-3qk5ebtq6jiee``,✓
-Minimal Ubuntu 24.10,arm64,``prod-manibuby3qjsq``,✓
 Ubuntu 25.04,amd64,``prod-gnnl6xcmpyhiy``,✓
 Ubuntu 25.04,arm64,``prod-xfujpzcumd672``,✓
 Minimal Ubuntu 25.04,amd64,``prod-bw2dyjqg7udoc``,✓
