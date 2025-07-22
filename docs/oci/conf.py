@@ -52,20 +52,6 @@ html_context = {
 
 slug = 'oci-registries'
 
-# These docs reuse some content from other docs
-pro_client_docs = {
-    "enable-pro-services.rst": "https://raw.githubusercontent.com/canonical/ubuntu-pro-client/docs/docs/howtoguides/enable_in_dockerfile.rst",
-    "create-fips-container-image.rst": "https://raw.githubusercontent.com/canonical/ubuntu-pro-client/docs/docs/howtoguides/create_a_fips_docker_image.rst",
-}
-common_docs_path = pathlib.Path(__file__).parent / "_external"
-exclude_patterns = ["_external"]
-for page in pro_client_docs:
-    urllib.request.urlretrieve(
-        pro_client_docs[page],
-        common_docs_path / page,
-    )
-    # exclude_patterns.append(str(common_docs_path / page))
-
 
 ############################################################
 ### Sitemap configuration
