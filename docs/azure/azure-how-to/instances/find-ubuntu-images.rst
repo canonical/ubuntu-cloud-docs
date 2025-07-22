@@ -61,11 +61,11 @@ Interim releases
 
 To learn more about the difference between LTS releases and interim releases, see `this page <https://ubuntu.com/about/release-cycle#ubuntu>`_.
 
-Ubuntu 24.10 - Oracular Oriole
+Ubuntu 25.04 - Plucky Puffin
 ++++++++++++++++++++++++++++++++++
 
-| Quick start: `24.10 on Azure <https://portal.azure.com/#create/canonical.ubuntu-24_10server>`_
-| Quick start (China): `24.10 on Azure China <https://portal.azure.cn/#create/canonical.ubuntu-24_10server>`_
+| Quick start: `25.04 on Azure <https://portal.azure.com/#create/canonical.ubuntu-25_04server>`_
+| Quick start (China): `25.04 on Azure China <https://portal.azure.cn/#create/canonical.ubuntu-25_04server>`_
 
 .. list-table::
    :widths: 10 10 10 70
@@ -78,27 +78,27 @@ Ubuntu 24.10 - Oracular Oriole
    * - Server
      - AMD64
      - Gen2
-     - ``Canonical:ubuntu-24_10:server:latest``
+     - ``Canonical:ubuntu-25_04:server:latest``
    * - Server
      - AMD64
      - Gen1
-     - ``Canonical:ubuntu-24_10:server-gen1:latest``
+     - ``Canonical:ubuntu-25_04:server-gen1:latest``
    * - Server
      - Arm64
      - Gen2
-     - ``Canonical:ubuntu-24_10:server-arm64:latest``
+     - ``Canonical:ubuntu-25_04:server-arm64:latest``
    * - Minimal
      - AMD64
      - Gen2
-     - ``Canonical:ubuntu-24_10:minimal:latest``
+     - ``Canonical:ubuntu-25_04:minimal:latest``
    * - Minimal
      - AMD64
      - Gen1
-     - ``Canonical:ubuntu-24_10:minimal-gen1:latest``
+     - ``Canonical:ubuntu-25_04:minimal-gen1:latest``
    * - Minimal
      - Arm64
      - Gen2
-     - ``Canonical:ubuntu-24_10:minimal-arm64:latest``
+     - ``Canonical:ubuntu-25_04:minimal-arm64:latest``
 
 
 .. _find-ubuntu-pro-on-azure:
