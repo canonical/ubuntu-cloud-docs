@@ -16,8 +16,9 @@ Creating AMIs and CloudFormation templates:
 * :doc:`Build an Ubuntu Pro AMI using Packer <build-pro-ami-using-packer>`
 * :doc:`Create CloudFormation templates <build-cloudformation-templates>`
 
-Installing custom drivers and configuring network cards:
+Installing kernels, custom drivers and configuring network cards:
 
+* :doc:`Install 64k page kernel <install-64k-kernel>`
 * :doc:`Install NVIDIA drivers <install-nvidia-drivers>`
 * :doc:`Configure multiple NICs <automatically-setup-multiple-nics>`
 
@@ -45,6 +46,7 @@ Deploying Canonical Products:
    Import a local Ubuntu VM <import-local-vm-to-aws>
    Build an Ubuntu Pro AMI using Packer <build-pro-ami-using-packer>
    Create CloudFormation templates <build-cloudformation-templates>
+   Install 64k page kernel <install-64k-kernel>
    Install NVIDIA drivers <install-nvidia-drivers>
    Configure multiple NICs <automatically-setup-multiple-nics>
    In-place upgrade to Ubuntu Pro <upgrade-in-place-from-lts-to-pro>
