@@ -9,7 +9,7 @@ If your production environment is based on Ubuntu LTS and you need the premium s
 
        gcloud compute instances stop $INSTANCE_NAME
 
-2. Append an Ubuntu Pro license to the disk:
+2. Update the license on the disk to Ubuntu Pro:
 
    .. code::
 
@@ -18,7 +18,7 @@ If your production environment is based on Ubuntu LTS and you need the premium s
 
    where
 
-   * ``$INSTANCE_NAME`` is the name of the instance (boot disk) to append the license to;
+   * ``$INSTANCE_NAME`` is the name of the instance (boot disk) to replace the license on;
    * ``$ZONE`` is the zone containing the instance;
    * ``$PREVIOUS_LICENSE_URI`` is the license URI for the non-Pro version on your VM; and
    * ``$NEW_LICENSE_URI`` is the license URI for the Pro version that you are upgrading to.

@@ -30,7 +30,7 @@ For the LTS releases from 22.04 onwards, we also have:
 For the Ubuntu Pro offering, we have: 
 
 * **Ubuntu Pro** images created for 16.04, 18.04, 20.04, 22.04, and 24.04 
-* **Ubuntu Pro FIPS** images created for 18.04 and 20.04
+* **Ubuntu Pro FIPS** images created for 18.04, 20.04, and 22.04
 
 
 GKE images
