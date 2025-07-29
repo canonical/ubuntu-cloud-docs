@@ -56,6 +56,6 @@ and reboot the instance, for the change to take effect:
 
     sudo reboot
 
-Future boots will automatically use the selected kernel flavor.
+Future boots will automatically use the latest version of the selected kernel flavor.
 
 .. _HWE kernel: https://canonical-kernel-docs.readthedocs-hosted.com/latest/reference/glossary/#term-HWE
