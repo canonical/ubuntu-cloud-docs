@@ -3,7 +3,7 @@ Install 64k page kernel on ARM64 instances
 
 When running ARM64 instances on AWS, you can choose between the 4k page and 64k page kernels. A 64k page kernel is optimized for workloads that benefit from larger memory pages, such as high-performance computing and machine learning applications.
 
-The 64k page kernel is available for all active LTS and extended support releases of Ubuntu, as well as all supported interim releases.
+From Ubuntu 22.04 LTS onwards, the 64k page kernel is available for all active LTS and extended support releases of Ubuntu, as well as all supported interim releases.
 
 Switching to the 64k page kernel
 --------------------------------
