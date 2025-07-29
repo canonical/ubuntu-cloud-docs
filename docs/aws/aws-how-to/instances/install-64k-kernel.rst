@@ -1,12 +1,14 @@
 Install 64k page kernel on ARM64 instances 
 ==========================================
 
-When running ARM64 instances on AWS, you can choose between the 4k and 64k kernel page sizes. The 64k page size kernel for AWS is available for certain Ubuntu releases - 22.04 LTS, 24.04 LTS, 25.04 and newer releases.
+When running ARM64 instances on AWS, you can choose between the 4k page and 64k page kernels. A 64k page kernel is optimized for workloads that benefit from larger memory pages, such as high-performance computing and machine learning applications.
 
-Switching to the 64k kernel
----------------------------
+The 64k page kernel is available for all active LTS and extended support releases of Ubuntu, as well as all supported interim releases.
 
-To switch to the 64k page size kernel, run:
+Switching to the 64k page kernel
+--------------------------------
+
+To switch to the 64k page kernel, run:
 
 .. code::
 
@@ -23,11 +25,9 @@ The General Availability (GA) kernel, the original kernel shipped with an Ubuntu
 
 replacing ``YY.MM`` with the release version number. For instance, on Ubuntu 22.04 LTS, that would result in the linux-aws-64k-lts-22.04 package.
 
-Reboot the instance for the changes to take effect:
+For the changes to take effect, you'll need to reboot the instance. However, when your instance has multiple versions of the linux kernel installed (as in this case), the latest version is chosen by default.
 
-.. code::
-
-    sudo reboot
+So if you install the current rolling 64k page kernel, that'll be chosen. But if you install the 64k GA kernel, it would most likely be an older version and won't be chosen automatically. In this case, as described in the next section, you'll have to update grub to ensure that the 64k GA kernel gets selected every time the instance boots.
 
 
 Selecting the kernel flavor permanently
