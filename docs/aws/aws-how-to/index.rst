@@ -14,10 +14,14 @@ Perform tasks such as finding the right image to use and launching different typ
 * :doc:`Launch and attest an AMD SEV-SNP instance <instances/launch-and-attest-amd-sev-snp-instances>`
 * :doc:`Import a local Ubuntu VM into AWS <instances/import-local-vm-to-aws>`
 
-Create a customized AMI, templates, and install custom drivers. 
+Create a customized AMI and templates. 
 
 * :doc:`Build an Ubuntu Pro AMI using Packer <instances/build-pro-ami-using-packer>`
 * :doc:`Create CloudFormation templates <instances/build-cloudformation-templates>`
+
+Install kernels and custom drivers.
+
+* :doc:`Install 64k page kernel <instances/install-64k-kernel>`
 * :doc:`Install NVIDIA drivers <instances/install-nvidia-drivers>`
 * :doc:`Configure multiple NICs <instances/automatically-setup-multiple-nics>`
 
