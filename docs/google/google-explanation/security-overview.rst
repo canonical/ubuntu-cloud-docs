@@ -34,11 +34,19 @@ Apart from the Ubuntu Server images, GCP also has images for `Ubuntu Pro`_, whic
 * Live kernel updates: These reduce downtime and unplanned reboots in case of kernel vulnerabilities.
 * FIPS compliance: Includes FIPS-certified modules to enable the use of Ubuntu in highly regulated environments.
 
-To find Ubuntu Pro images on GCE, refer to :ref:`create-pro-on-gcp` and :ref:`create-pro-fips-on-gcp` and to enable the different Pro features refer to :doc:`../google-how-to/gce/enable-pro-features`.
+To find Ubuntu Pro images on GCE, refer to:
+
+* :ref:`create-pro-on-gcp` and 
+* :ref:`create-pro-fips-on-gcp` 
+
+For other Pro related operations such as, enabling features and performing an in-place upgrade, refer to:
+
+* :doc:`../google-how-to/gce/enable-pro-features`
+* :doc:`../google-how-to/gce/upgrade-in-place-from-lts-to-pro`
 
 
 .. _`Ubuntu security page`: https://ubuntu.com/security
 .. _`Introductory page on security`: https://documentation.ubuntu.com/server/explanation/intro-to/security/
 .. _`Security in Google Cloud`: https://cloud.google.com/docs/security
-.. _`Ubuntu Pro`: https://ubuntu.com/aws/pro
+.. _`Ubuntu Pro`: https://ubuntu.com/gcp/pro
 

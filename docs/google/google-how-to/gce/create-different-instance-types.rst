@@ -74,32 +74,10 @@ Create an AMD SEV based confidential computing VM
 
 On your Google Cloud console, while creating a new instance from :guilabel:`Compute Engine` > :guilabel:`VM instances`> :guilabel:`CREATE INSTANCE`:
 
-* select :guilabel:`Confidential VM service` > :guilabel:`ENABLE`
+* In the :guilabel:`Security` section, select :guilabel:`Confidential VM service` > :guilabel:`ENABLE`
 
-It'll show you the available machine type - ``n2d-standard-2`` and boot disk image - ``Ubuntu 20.04 LTS``. Select :guilabel:`ENABLE` again and the changes will be reflected under the :guilabel:`Machine configuration` and :guilabel:`Boot disk` sections. However, we need to change the disk image to one with Pro FIPS:
+Choose one of ``AMD SEV`` or ``AMD SEV-SNP`` in the service type and confirm the selection. The latest compatible Ubuntu LTS image will be selected automatically.
 
-* Go to :guilabel:`Boot disk` > :guilabel:`CHANGE` > :guilabel:`Confidential Images` and filter using 'ubuntu' to select ``Ubuntu 20.04 LTS Pro FIPS Server``. Select that and create the instance.
-
-To check that confidential computing has been enabled correctly, once the instance is up, ssh into it and run
-
-.. code::
-   
-   dmesg | grep SEV
-
-A statement containing: ``AMD Secure Encryption Virtulization (SEV) active`` should be displayed. 
-
-Back on the google console, open the instance details and go to :guilabel:`Logs` > :guilabel:`Logging`. In the list of logs, look for one that mentions ``sevLaunchAttestationReportEvent`` and expand it. In the resulting JSON, check that the field ``integrityEvaluationPassed`` is set to ``true``, under ``sevLaunchAttestationReportEvent``, something like:
-
-.. code::
-
-   insertId: "0",
-   jsonPayload: {
-      @type: "type.googleapis.com/cloud_integrity.IntegrityEvent",
-      bootCounter: "0",
-      sevLaunchAttestationReportEvent: {
-         integrityEvaluationPassed: true
-         sevPolicy: {0}
-         [...]         
 
 
 .. _create-intel-tdx-conf-compute-on-gcp:
@@ -107,22 +85,27 @@ Back on the google console, open the instance details and go to :guilabel:`Logs`
 Create an Intel® TDX based confidential computing VM 
 -----------------------------------------------------
 
-In GCE, Intel® TDX is supported in the `C3 machine series`_ since they use the 4th Gen Intel® Xeon CPUs. To create the VM, in the Google Cloud CLI, use the ``instances create`` command with ``confidential-compute-type=TDX``:
+On your Google Cloud console, while creating a new instance from :guilabel:`Compute Engine` > :guilabel:`VM instances`> :guilabel:`CREATE INSTANCE`:
+
+* In the :guilabel:`Security` section, select :guilabel:`Confidential VM service` > :guilabel:`ENABLE`
+
+Choose one of ``Intel TDX`` in the service type and confirm the selection. The latest compatible Ubuntu LTS image will be selected automatically.
+
+Optionally, you can also use the Google Cloud CLI to create the VM. Use the ``instances create`` command with ``confidential-compute-type=TDX`` and a machine type chosen from the `C3 machine series`_ since they use the 4th Gen Intel® Xeon CPUs.
 
 .. code::
 
-   gcloud alpha compute instances create INSTANCE_NAME \
-      --machine-type MACHINE_TYPE --zone us-central1-a \
-      --confidential-compute-type=TDX \
-      --on-host-maintenance=TERMINATE \
-      --image-family=IMAGE_FAMILY_NAME \
-      --image-project=IMAGE_PROJECT \
-      --project PROJECT_NAME
+   gcloud compute instances create INSTANCE_NAME \
+    --machine-type=c3-standard-4 \
+    --zone=us-central1-a \
+    --confidential-compute-type=TDX \
+    --maintenance-policy=TERMINATE \
+    --image-family=ubuntu-2404-lts-amd64 \
+    --image-project=ubuntu-os-cloud
 
 where:
 
-* MACHINE_TYPE: is the C3 machine type to use and 
-* IMAGE_FAMILY_NAME: is the name of the confidential VM supported image family to use, such as Ubuntu 22.04 LTS, Ubuntu 24.04 LTS or Ubuntu 24.04 LTS Pro Server
-
+* INSTANCE_NAME: is the name of the instance to create and
+* ``image-family`` can be set to a supported image family, such as ``ubuntu-2204-lts`` or ``ubuntu-2404-lts-amd64``.
 
 .. _`C3 machine series`: https://cloud.google.com/compute/docs/general-purpose-machines#c3_series
