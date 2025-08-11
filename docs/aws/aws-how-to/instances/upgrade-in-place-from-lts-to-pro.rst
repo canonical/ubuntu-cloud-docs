@@ -9,8 +9,8 @@ Requirements
 ------------
 
 * The EC2 instances to be upgraded have to be Ubuntu 16.04 LTS or later
-* The instances should be managed by `AWS Systems Manager`_ (SSM)
-    *  To check if your instances are managed by SSM, in the `SSM console`_, check if they appear as managed nodes under :guilabel:`Systems Manager` > :guilabel:`Node Management` > :guilabel:`Fleet Manager` > :guilabel:`Managed nodes`
+* The instances must be managed by `AWS Systems Manager`_ (SSM)
+    * To check if your instances are managed by SSM, in the `SSM console`_, check if they appear as managed nodes under :guilabel:`Systems Manager` > :guilabel:`Node Management` > :guilabel:`Fleet Manager` > :guilabel:`Managed nodes`
     * If they don't, follow the `AWS instructions for configuring your instance permissions`_ or refer to this tutorial on `enabling AWS SSM`_ to create an IAM role and access your instances with SSM
     * You may need to either restart the instance or restart the SSM agent by running:
 
