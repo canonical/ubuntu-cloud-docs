@@ -5,7 +5,8 @@ If you want an Ubuntu desktop environment on your VM, you can set it up and use 
 
 .. Note::
 
-    If you don't have an Ubuntu VM already, you can create one based on :ref:`create-lts-on-gcp`
+    1. These instructions work for a VM running Ubuntu 22.04 LTS.
+    2. If you don't have an Ubuntu VM already, you can create one based on :ref:`create-lts-on-gcp`, but using ``Ubuntu 22.04 LTS`` as the OS version.
 
 
 Install Chrome Remote Desktop
