@@ -60,5 +60,5 @@ suggestions, fixes and constructive feedback.
 .. _Join our online chat: https://discourse.ubuntu.com/c/project/gcp/179
 .. _`Discuss on Matrix`: https://matrix.to/#/#ubuntu-cloud:ubuntu.com
 .. _Talk to us about Ubuntu on Google cloud: https://ubuntu.com/gcp#get-in-touch
-.. _Code of conduct: https://ubuntu.com/community/ethos/code-of-conduct
+.. _Code of conduct: https://ubuntu.com/community/docs/ethos/code-of-conduct
 

@@ -61,5 +61,5 @@ suggestions, fixes and constructive feedback.
 
 .. _Get support: https://ubuntu.com/cloud/public-cloud
 .. _`Discuss on Matrix`: https://matrix.to/#/#ubuntu-cloud:ubuntu.com
-.. _Code of conduct: https://ubuntu.com/community/ethos/code-of-conduct
+.. _Code of conduct: https://ubuntu.com/community/docs/ethos/code-of-conduct
 .. _cloud-images.ubuntu.com: https://cloud-images.ubuntu.com
