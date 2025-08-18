@@ -88,5 +88,4 @@ If none of the above options are suitable for you, and you still want to get in 
 .. _Join our online chat: https://discourse.ubuntu.com/c/project/aws/177
 .. _`Discuss on Matrix`: https://matrix.to/#/#ubuntu-cloud:ubuntu.com
 .. _Talk to us about Ubuntu on AWS: https://ubuntu.com/aws#get-in-touch
-.. _Code of conduct: https://ubuntu.com/community/ethos/code-of-conduct
-
+.. _Code of conduct: https://ubuntu.com/community/docs/ethos/code-of-conduct

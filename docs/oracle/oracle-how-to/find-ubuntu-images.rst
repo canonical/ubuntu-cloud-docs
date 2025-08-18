@@ -182,6 +182,4 @@ Ubuntu images are available for worker nodes on Oracle Kubernetes Engine (OKE) i
 .. _`Oracle CLI documentation`: https://docs.public.oneportal.content.oci.oraclecloud.com/en-us/iaas/Content/GSG/Tasks/gettingstartedwiththeCLI.htm#launchLinux
 .. _`Oracle's image documentation`: https://docs.oracle.com/en-us/iaas/images/
 .. _`managing custom images`: https://docs.oracle.com/en-us/iaas/Content/Compute/Tasks/managingcustomimages.htm
-.. _`import from-object-uri`: https://docs.oracle.com/en-us/iaas/tools/oci-cli/3.59.0/oci_cli_docs/cmdref/compute/image/import/from-object-uri.html
-
-
+.. _`import from-object-uri`: https://docs.oracle.com/en-us/iaas/tools/oci-cli/3.63.3/oci_cli_docs/cmdref/compute/image/import/from-object-uri.html

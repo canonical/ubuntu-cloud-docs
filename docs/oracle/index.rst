@@ -18,23 +18,17 @@ and features needed to run specific workloads.
 In this documentation
 ---------------------
 
-..  grid:: 1 1 1 1
-   :padding: 0
-
-   ..  grid-item:: :doc:`How-to guides <oracle-how-to/index>`
-
-      **Step-by-step guides** covering key operations and common tasks related to using Ubuntu images on Oracle Cloud.
-
 ..  grid:: 1 1 2 2
    :padding: 0
 
    .. grid-item:: :doc:`Explanation <oracle-explanation/index>`
 
-       **Discussion and clarification** of key topics, such as our offerings on Oracle Cloud and an overview of available security features. 
+       **Discussion and clarification** of key topics, such as our offerings on Oracle Cloud, Ubuntu on OKE nodes and an overview of available security features. 
 
-   ..  grid-item:: :doc:`Reference <oracle-reference/index>`
+   ..  grid-item:: :doc:`How-to guides <oracle-how-to/index>`
 
-      **References** of Ubuntu's offering on Oracle Cloud, such as a list of our available OKE images.
+      **Step-by-step guides** covering key operations and common tasks related to using Ubuntu images on Oracle Cloud.
+
 
 
 ----------
@@ -57,12 +51,12 @@ community projects, contributions, suggestions, fixes and constructive feedback.
 
    oracle-how-to/index
    oracle-explanation/index
-   oracle-reference/index
+   oracle-reference/ubuntu-availability-on-oke
    oracle-how-to/contribute-to-these-docs
 
 .. _Ubuntu release cycle: https://ubuntu.com/about/release-cycle
 .. _Get support: https://ubuntu.com/cloud/public-cloud
 .. _Join our online chat: https://discourse.ubuntu.com/c/project/public-cloud/176
 .. _`Discuss on Matrix`: https://matrix.to/#/#ubuntu-cloud:ubuntu.com
-.. _Code of conduct: https://ubuntu.com/community/ethos/code-of-conduct
+.. _Code of conduct: https://ubuntu.com/community/docs/ethos/code-of-conduct
 
