@@ -11,7 +11,7 @@ Each documentation set is currently published to a different location:
 * https://documentation.ubuntu.com/gcp/
 * https://canonical-ibm.readthedocs-hosted.com/
 * https://documentation.ubuntu.com/oci-registries/
-* https://canonical-oracle.readthedocs-hosted.com/
+* https://documentation.ubuntu.com/oracle/
 * https://documentation.ubuntu.com/public-images/
 
 
@@ -83,5 +83,5 @@ Each project has its own contribution guide:
 * `Google <https://documentation.ubuntu.com/gcp/google-how-to/contribute-to-these-docs/>`_
 * `IBM <https://canonical-ibm.readthedocs-hosted.com/ibm-how-to/contribute-to-these-docs/>`_
 * `OCI container registries <https://documentation.ubuntu.com/oci-registries/oci-how-to/contribute-to-these-docs/>`_
-* `Oracle <https://canonical-oracle.readthedocs-hosted.com/oracle-how-to/contribute-to-these-docs/>`_
+* `Oracle <https://documentation.ubuntu.com/oracle/oracle-how-to/contribute-to-these-docs/>`_
 * `Public Images <https://documentation.ubuntu.com/public-images/public-images-how-to/contribute-to-these-docs/>`_

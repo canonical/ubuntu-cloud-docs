@@ -383,7 +383,7 @@ intersphinx_mapping = {
     'azure': ('https://documentation.ubuntu.com/azure/', None),
     'google': ('https://documentation.ubuntu.com/gcp/', None),
     'ibm': ('https://canonical-ibm.readthedocs-hosted.com/', None),
-    'oracle': ('https://canonical-oracle.readthedocs-hosted.com/', None),
+    'oracle': ('https://documentation.ubuntu.com/oracle/', None),
     'oci': ('https://documentation.ubuntu.com/oci-registries/', None),
     'public-images': ('https://documentation.ubuntu.com/public-images/', None)
 }

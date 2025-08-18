@@ -121,7 +121,7 @@ For more information about ``oci`` CLI and managing self-managed nodes on your c
 .. _`cli-example-repo`: https://github.com/canonical/oracle-doc-examples/tree/main/deploy-oke-using-ubuntu/cli
 .. _`terraform-example-repo`: https://github.com/canonical/oracle-doc-examples/tree/main/deploy-oke-using-ubuntu/terraform
 .. _`security lists`: https://docs.oracle.com/en-us/iaas/Content/Network/Concepts/securitylists.htm
-.. _`ubuntu-oke-availability`: https://canonical-oracle.readthedocs-hosted.com/oracle-reference/ubuntu-availability-on-oke/
+.. _`ubuntu-oke-availability`: https://documentation.ubuntu.com/oracle/oracle-reference/ubuntu-availability-on-oke/
 .. _`gh-oci-terraform-provider`: https://github.com/oracle/terraform-provider-oci
 .. _`gh-oke-terraform-module`: https://github.com/oracle-terraform-modules/terraform-oci-oke
 .. _`managed-nodes-docs`: https://docs.oracle.com/en-us/iaas/Content/ContEng/Tasks/contengworkingwithmanagednodes.htm
