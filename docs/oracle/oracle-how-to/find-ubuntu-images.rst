@@ -172,7 +172,11 @@ With the region / image specific OCID, you can create an instance either through
 Find Ubuntu images for use on OKE nodes 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Ubuntu images are available for worker nodes on Oracle Kubernetes Engine (OKE) in Oracle Cloud. You need to find a suitable image and register it before you can use it to create OKE nodes. 
+Ubuntu images are available for worker nodes on Oracle Kubernetes Engine (OKE) in Oracle Cloud. 
+
+.. include:: ../../reuse/OKE-nodes.txt
+   :start-after: Start: Get Ubuntu image access
+   :end-before: End: Get Ubuntu image access
 
 .. include:: ../../reuse/OKE-nodes.txt
    :start-after: Start: Find an image
@@ -183,3 +187,5 @@ Ubuntu images are available for worker nodes on Oracle Kubernetes Engine (OKE) i
 .. _`Oracle's image documentation`: https://docs.oracle.com/en-us/iaas/images/
 .. _`managing custom images`: https://docs.oracle.com/en-us/iaas/Content/Compute/Tasks/managingcustomimages.htm
 .. _`import from-object-uri`: https://docs.oracle.com/en-us/iaas/tools/oci-cli/3.63.3/oci_cli_docs/cmdref/compute/image/import/from-object-uri.html
+
+.. _`Policy`: https://cloud.oracle.com/identity/domains/policies

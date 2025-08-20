@@ -31,7 +31,9 @@ Get Ubuntu image access
 .. attention::
     Ubuntu worker node images for OKE are currently in a Limited Availability (LA) release. To gain access to the images, reach out to your Oracle account or support teams to express interest in this LA. 
 
-Once access has been provided to your tenancy and region then you must add an additional `Policy`_ to your root compartment to permit the listing of these images. Below are the required contents of the `Policy`_.
+Once access has been provided to your tenancy and region then you must add an additional `Policy`_ to your root compartment to permit the listing of these images.
+
+Use the :guilabel:`Show manual editor` button while creating the policy and add:
 
 .. code:: console
 
@@ -40,7 +42,7 @@ Once access has been provided to your tenancy and region then you must add an ad
 
 .. note:: 
     
-    The tenancy OCID listed above for the `Policy`_ belongs to the OCI OKE Service, it is not owned by Canonical.
+    The tenancy OCID listed above for the policy belongs to the OCI OKE Service, it is not owned by Canonical.
 
 End: Get Ubuntu image access
 
@@ -49,15 +51,15 @@ Start: Find an image
 Find an Ubuntu image
 -----------------------
 
-Once your tenancy has been enabled for the LA, you will be able to list the images from API or view them through the OCI Console. 
+Once your tenancy has been enabled for the LA, you will be able to list the images from the CLI or view them through the OCI Console. 
 
 .. tabs::
 
-    .. group-tab:: API
+    .. group-tab:: CLI
 
         Prior to running any ``oci`` commands, be sure that your ``~/.oci/config`` is configured to use your region specified for the LA enablement.
 
-        Otherwise, start by listing all OKE compatible images and savings them to the ``node-pool-options.json`` file. The file will contain a list of all available OKE images including your newly added Ubuntu images.
+        Using the ``oci`` command, list all OKE compatible images and save them to the ``node-pool-options.json`` file. The file will contain a list of all available OKE images including your newly added Ubuntu images.
     
         .. code:: bash
             
@@ -69,7 +71,7 @@ Once your tenancy has been enabled for the LA, you will be able to list the imag
         
             jq -r '.data.sources[] | select(."source-name" | contains("ubuntu"))' node-pool-options.json
         
-        The results should be comprised of a list of objects that contain an ``image-id``, ``source-name`` and ``source-type``.
+        The result will contain objects of the form:
         
         .. code:: json
             
@@ -83,7 +85,7 @@ Once your tenancy has been enabled for the LA, you will be able to list the imag
 
     .. group-tab:: Console
         
-        Whether you decide to create nodes using :guilabel:`Create Cluster` > :guilabel:`Quick Create` or :guilabel:`Add node pool`, both will let you select your desired node image. That list will contain all available OKE images and including your newly added Ubuntu images. 
+        Whether you decide to create nodes using :guilabel:`Create Cluster` > :guilabel:`Quick Create` or :guilabel:`Add node pool`, both will let you select your desired node image. That list will contain all available OKE images, including your newly added Ubuntu images. 
 
         .. image:: deploy-ubuntu-oke-nodes/oke-browse.png
            :align: center
@@ -97,7 +99,7 @@ Once your tenancy has been enabled for the LA, you will be able to list the imag
             
             Pay attention to which image you select and ensure it's architecture corresponds to your selected pod shape.
 
-        When launching Ubuntu nodes from the Console during the LA, it's required to provide custom cloud-init ``user-data`` to the instances to ensure they join the cluster properly.
+        When launching Ubuntu nodes from the console during the LA, it's required to provide custom cloud-init ``user-data`` to the instances to ensure they join the cluster properly.
 
         Managed node ``user-data`` is quite simple:
         
@@ -108,7 +110,7 @@ Once your tenancy has been enabled for the LA, you will be able to list the imag
             runcmd:
             - oke bootstrap
         
-        While Self-Managed ``user-data`` requires variable substitution for the cluster certificate and private control plane IP:
+        For Self-Managed ``user-data``, use the following with appropriate variable substitutions for the cluster certificate (``cluster_ca_cert``) and private control plane IP (``api_server_endpoint``):
         
         .. code:: yaml
         
@@ -126,7 +128,7 @@ Once your tenancy has been enabled for the LA, you will be able to list the imag
                 permissions: '0644'
                 content: ${cluster_ca_cert}
 
-        Copy the ``user-data`` required for your node type and paste it into the Console.
+        Copy the ``user-data`` required for your node type and paste it into the console.
 
         .. image:: deploy-ubuntu-oke-nodes/oke-paste-user-data.png
            :align: center
