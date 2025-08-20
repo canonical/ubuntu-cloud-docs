@@ -6,14 +6,18 @@ Deploy Ubuntu OKE nodes using Terraform
    :end-before: End: Intro and prereqs
 
 .. include:: ../../reuse/OKE-nodes.txt
-   :start-after: Start: Find and register an image
-   :end-before: End: Find and register an image
+   :start-after: Start: Get Ubuntu image access
+   :end-before: End: Get Ubuntu image access
+
+.. include:: ../../reuse/OKE-nodes.txt
+   :start-after: Start: Find an image
+   :end-before: End: Find an image
   
 
 Deploy an OKE cluster using Terraform
 --------------------------------------
 
-Before getting started, from the image path, make a note of the architecture for the registered image, either ``amd64`` or ``arm64``, as you want ensure that nodes are launched with the correct instance shapes.
+Before getting started, note the architecture of the image you have selected from the CLI, either ``amd64`` or ``arm64``, as you want ensure that nodes are launched with the correct instance shapes.
 
 For this guide we'll use our `GitHub example repository <terraform-example-repo_>`_ as a base. It contains all of the HCL to launch the networking, cluster and nodes using the `OCI Terraform Provider <gh-oci-terraform-provider_>`_ and `OKE Terraform Module <gh-oke-terraform-module_>`_. 
 
@@ -86,7 +90,7 @@ Most of the values for the ``terraform.tfvars`` can be found in your ``~/.oci/co
 
 .. note:: 
     
-    To be clear, you `cannot use any` Ubuntu ``image_id``, but only Ubuntu OKE specific images that have been `downloaded <ubuntu-oke-availability_>`_ and `registered <#register-an-ubuntu-image>`_ or images that you can find through the ``oci_core_images`` Terraform API. If you do find them through the Terraform API, they must be specifically denoted as Ubuntu OKE.
+    To be clear, you `cannot use any` Ubuntu ``image_id``, but only Ubuntu OKE specific images that have been listed from the CLI or images that you can find through the ``oci_core_images`` Terraform API. If you do find them through the Terraform API, they must be specifically denoted as Ubuntu OKE.
 
 After configuring your ``terraform.tfvars``, deploy a cluster using:
 

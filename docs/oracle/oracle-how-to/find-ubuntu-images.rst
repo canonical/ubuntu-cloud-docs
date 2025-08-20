@@ -175,8 +175,8 @@ Find Ubuntu images for use on OKE nodes
 Ubuntu images are available for worker nodes on Oracle Kubernetes Engine (OKE) in Oracle Cloud. You need to find a suitable image and register it before you can use it to create OKE nodes. 
 
 .. include:: ../../reuse/OKE-nodes.txt
-   :start-after: Start: Find and register an image
-   :end-before: End: Find and register an image
+   :start-after: Start: Find an image
+   :end-before: End: Find an image
   
 
 .. _`Oracle CLI documentation`: https://docs.public.oneportal.content.oci.oraclecloud.com/en-us/iaas/Content/GSG/Tasks/gettingstartedwiththeCLI.htm#launchLinux

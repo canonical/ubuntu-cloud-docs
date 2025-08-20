@@ -23,67 +23,116 @@ End: Intro and prereqs
 
 ==============================================================
 
-Start: Find and register an image
+Start: Get Ubuntu image access
+
+Get Ubuntu image access
+---------------------------
+
+.. attention::
+    Ubuntu worker node images for OKE are currently in a Limited Availability (LA) release. To gain access to the images, reach out to your Oracle account or support teams to express interest in this LA. 
+
+Once access has been provided to your tenancy and region then you must add an additional `Policy`_ to your root compartment to permit the listing of these images. Below are the required contents of the `Policy`_.
+
+.. code:: console
+
+    Define tenancy oke as ocid1.tenancy.oc1..aaaaaaaa5vrtu4bjcqpjvbworiwffgccrgrbkum64mtn33yrccjrqpzuyara 
+    Endorse any-user to read instance-images in tenancy oke
+
+.. note:: 
+    
+    The tenancy OCID listed above for the `Policy`_ belongs to the OCI OKE Service, it is not owned by Canonical.
+
+End: Get Ubuntu image access
+
+Start: Find an image
 
 Find an Ubuntu image
 -----------------------
 
-Select a version from the :doc:`available releases </oracle-reference/ubuntu-availability-on-oke>`. The images are listed in a JSON file accessible through a link in the column titled *LOCATION*. They are listed in ascending order, therefore the latest image will be at the bottom. Make a note of the image path for the image you choose, it conforms to the following format:
-
-.. code:: bash
-  
-  <suite>/oke-<version>/<serial>/<image-name>.img
-
-If you wish to get the latest image path, use the following command:
-
-.. code:: bash
-  
-  curl <available-releases-location-link> | jq ".[][-2] | .name"
-
-where ``<available-releases-location-link>`` is the link specified in the *LOCATION* column for your chosen release.
-
-
-Register the Ubuntu image
--------------------------
-
-Images must be registered to be used with Oracle Cloud services. To learn more, refer to the Oracle Cloud documentation for `managing custom images`_.
-
-When registering images, the :guilabel:`Launch mode` is an option to configure. The suggested configurations are :guilabel:`PARAVIRTUALIZED` for virtual nodes and :guilabel:`NATIVE` for bare-metal nodes.
+Once your tenancy has been enabled for the LA, you will be able to list the images from API or view them through the OCI Console. 
 
 .. tabs::
 
-    .. group-tab:: Using cloud console
-    
-        Start the registration process in Oracle Cloud by navigating to :guilabel:`Compute` > :guilabel:`Custom Images` and select :guilabel:`Import Image`. Select :guilabel:`Import from an Object Storage URL`, then paste the :doc:`available releases </oracle-reference/ubuntu-availability-on-oke>` location link with your concatenated image path into the :guilabel:`Object Storage URL` field. The URL format pasted should conform to the following:
+    .. group-tab:: API
 
+        Prior to running any ``oci`` commands, be sure that your ``~/.oci/config`` is configured to use your region specified for the LA enablement.
+
+        Otherwise, start by listing all OKE compatible images and savings them to the ``node-pool-options.json`` file. The file will contain a list of all available OKE images including your newly added Ubuntu images.
+    
         .. code:: bash
-         
-          <available-releases-location-link>/<image-path>
-    
-        In the rest of the form, you must provide your :guilabel:`Compartment`, :guilabel:`Image name`, and :guilabel:`Launch mode`. Additionally the fields :guilabel:`Operating System` and :guilabel:`Image type` must be provided and use ``Ubuntu`` and ``QCOW2``, respectively.
-
-        Lastly, select :guilabel:`Import image` and wait for the registration to complete. This process is expected to take a while.
-
-    .. group-tab:: Using CLI
-    
-        The following command will directly import your image from a provided URI. You'll have to provide the values below with the exception of ``operating-system`` and ``source-image-type`` which are already provided.
+            
+            oci ce node-pool-options get --compartment-id <compartment-id> --node-pool-option-id all | tee node-pool-options.json
         
-        For more information on this command, refer to the ``oci`` docs for `import from-object-uri`_.
-
+        Use the following to filter it down to only the newly added Ubuntu images.
+        
         .. code:: bash
-    
-            oci compute image import from-object-uri \
-                --compartment-id <compartment-id> \
-                --uri <available-release-location-link>/<image-path> \
-                --display-name <image-name> \
-                --launch-mode <launch-mode> \
-                --image-source-object-name <object-name> \
-                --operating-system "Ubuntu" \
-                --operating-system-version <ubuntu-version-number> \
-                --source-image-type QCOW2
+        
+            jq -r '.data.sources[] | select(."source-name" | contains("ubuntu"))' node-pool-options.json
+        
+        The results should be comprised of a list of objects that contain an ``image-id``, ``source-name`` and ``source-type``.
+        
+        .. code:: json
+            
+            {
+              "image-id": "ocid1.image.oc1.phx.aaaaaaaajqzb5jcbcvh5obyg2l2hzzw5qewwhrknvlyb3zaglduivigvo4sq",
+              "source-name": "ubuntu-amd64-minimal-22.04-jammy-v20250604.1-OKE-1.31.1",
+              "source-type": "IMAGE"
+            }
+
+        Make note of the ``image-id`` for the image(s) that you wish to use since they will be required in later steps.
+
+    .. group-tab:: Console
+        
+        Whether you decide to create nodes using :guilabel:`Create Cluster` > :guilabel:`Quick Create` or :guilabel:`Add node pool`, both will let you select your desired node image. That list will contain all available OKE images and including your newly added Ubuntu images. 
+
+        .. image:: deploy-ubuntu-oke-nodes/oke-browse.png
+           :align: center
+        
+        After selecting your desired image based on the architecture, Ubuntu suite and Kubernetes version, your configuration should look similar to the image below.
+
+        .. image:: deploy-ubuntu-oke-nodes/oke-create-cluster.png
+           :align: center
+
+        .. warning::
+            
+            Pay attention to which image you select and ensure it's architecture corresponds to your selected pod shape.
+
+        When launching Ubuntu nodes from the Console during the LA, it's required to provide custom cloud-init ``user-data`` to the instances to ensure they join the cluster properly.
+
+        Managed node ``user-data`` is quite simple:
+        
+        .. code:: yaml
+           
+            #cloud-config
+        
+            runcmd:
+            - oke bootstrap
+        
+        While Self-Managed ``user-data`` requires variable substitution for the cluster certificate and private control plane IP:
+        
+        .. code:: yaml
+        
+           #cloud-config
+        
+            runcmd:
+              - oke bootstrap --ca ${cluster_ca_cert} --apiserver-host ${api_server_endpoint}
+            
+            write_files:
+              - path: /etc/oke/oke-apiserver
+                permissions: '0644'
+                content: ${api_server_endpoint}
+              - encoding: b64
+                path: /etc/kubernetes/ca.crt
+                permissions: '0644'
+                content: ${cluster_ca_cert}
+
+        Copy the ``user-data`` required for your node type and paste it into the Console.
+
+        .. image:: deploy-ubuntu-oke-nodes/oke-paste-user-data.png
+           :align: center
 
 
-End: Find and register an image
+End: Find an image
 
 ==============================================================
 
@@ -124,6 +173,7 @@ For more information about ``oci`` CLI and managing self-managed nodes on your c
 .. _`gh-oke-terraform-module`: https://github.com/oracle-terraform-modules/terraform-oci-oke
 .. _`managed-nodes-docs`: https://docs.oracle.com/en-us/iaas/Content/ContEng/Tasks/contengworkingwithmanagednodes.htm
 .. _`self-managed-nodes-docs`: https://docs.oracle.com/en-us/iaas/Content/ContEng/Tasks/contengworkingwithselfmanagednodes.htm
+.. _`Policy`: https://cloud.oracle.com/identity/domains/policies
 
 End: References and links
 
