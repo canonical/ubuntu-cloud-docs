@@ -32,7 +32,7 @@ html_context = {
     "repo_default_branch": "main",
     # Change to the folder that contains the documentation
     # (usually "/" or "/docs/")
-    "repo_folder": "/oci/",
+    "repo_folder": "/docs/oci/",
     # Change to an empty value if your GitHub repo doesn't have issues enabled.
     # This will disable the feedback button and the issue link in the footer.
     "github_issues": "enabled",
