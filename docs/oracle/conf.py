@@ -55,9 +55,13 @@ html_context = {
     'sequential_nav': "both"
 }
 
+# If your documentation is hosted on https://docs.ubuntu.com/,
+#       uncomment and update as needed.
+
+slug = 'oracle'
 
 ############################################################
 ### Sitemap configuration
 ############################################################
 
-html_baseurl = 'https://canonical-oracle.readthedocs-hosted.com/'
+html_baseurl = 'https://documentation.ubuntu.com/oracle/'
