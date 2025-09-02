@@ -1,6 +1,6 @@
 Name,Architecture,Identifier,GovCloud
 Ubuntu Pro Minimal 22.04 LTS with CIS hardening,amd64,``prod-zbdfwzjpx7kfq``,✓
-Ubuntu Pro Minimal 22.04 LTS with CIS hardening (ARM),arm64,``prod-xrjt5gpdpgtz4``,✓
+Ubuntu Pro Minimal 22.04 LTS with CIS hardening (Arm),arm64,``prod-xrjt5gpdpgtz4``,✓
 Minimal Ubuntu Pro 20.04 LTS,amd64,``prod-bhgby3sn457gk``,✓
 Minimal Ubuntu Pro 20.04 LTS,arm64,``prod-lokd3cuzefl64``,✓
 Ubuntu 22.04 LTS,amd64,``prod-lfutkwiaknxsk``,✓
