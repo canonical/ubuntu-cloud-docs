@@ -15,6 +15,7 @@ Deployment options
 
 To deploy an Ubuntu worker node on OKE, you can use the Oracle Cloud Console (CLI), or Terraform. For detailed instructions, refer to:
 
+- :doc:`Deploying Ubuntu worker nodes using the Console </oracle-how-to/deploy-ubuntu-oke-nodes-using-console>`
 - :doc:`Deploying Ubuntu worker nodes using the CLI </oracle-how-to/deploy-ubuntu-oke-nodes-using-cli>`
 - :doc:`Deploying Ubuntu worker nodes using Terraform </oracle-how-to/deploy-ubuntu-oke-nodes-using-terraform>`
 

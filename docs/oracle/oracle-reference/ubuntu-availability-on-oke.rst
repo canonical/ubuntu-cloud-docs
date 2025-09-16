@@ -55,4 +55,13 @@ The availability of networking plugins (Flannel / VCN Native) depends on the typ
      - VCN Native
      - Yes
 
+Related how-to guides
+---------------------
+
+For step-by-step instructions on deploying Ubuntu nodes on OKE, see:
+
+- :doc:`Deploy Ubuntu OKE nodes using Console <../oracle-how-to/deploy-ubuntu-oke-nodes-using-console>`
+- :doc:`Deploy Ubuntu OKE nodes using CLI <../oracle-how-to/deploy-ubuntu-oke-nodes-using-cli>`
+- :doc:`Deploy Ubuntu OKE nodes using Terraform <../oracle-how-to/deploy-ubuntu-oke-nodes-using-terraform>`
+
 .. _`Policy`: https://cloud.oracle.com/identity/domains/policies
