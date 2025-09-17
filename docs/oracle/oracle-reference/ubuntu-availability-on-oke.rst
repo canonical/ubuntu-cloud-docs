@@ -11,6 +11,8 @@ Available releases
 
 The following Ubuntu images are available for worker nodes on Oracle Kubernetes Engine (OKE) in Oracle Cloud.
 
+**Ubuntu images are available for both AMD64 and ARM64 architectures.**
+
 .. list-table::
    :header-rows: 1
 

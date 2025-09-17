@@ -405,3 +405,5 @@ xrdp
 XZ
 YAML
 zoneinfo
+VCNs
+OCPUs
