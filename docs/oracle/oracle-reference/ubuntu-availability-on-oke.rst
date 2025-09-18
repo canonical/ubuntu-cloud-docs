@@ -62,7 +62,7 @@ Related how-to guides
 
 For step-by-step instructions on deploying Ubuntu nodes on OKE, see:
 
-- :doc:`Deploy Ubuntu OKE nodes using Console <../oracle-how-to/deploy-ubuntu-oke-nodes-using-console>`
+- :doc:`Deploy Ubuntu OKE nodes using Oracle Cloud Console <../oracle-how-to/deploy-ubuntu-oke-nodes-using-console>`
 - :doc:`Deploy Ubuntu OKE nodes using CLI <../oracle-how-to/deploy-ubuntu-oke-nodes-using-cli>`
 - :doc:`Deploy Ubuntu OKE nodes using Terraform <../oracle-how-to/deploy-ubuntu-oke-nodes-using-terraform>`
 

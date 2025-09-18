@@ -1,5 +1,5 @@
-Deploy Ubuntu OKE nodes using Console
-=======================================
+Deploy Ubuntu OKE nodes using Oracle Cloud Console
+================================================================
 
 .. Introduction to Ubuntu OKE node
 
@@ -20,8 +20,8 @@ You’ll need:
 
 After access is enabled, Ubuntu OKE images will be available for selection when creating a cluster or adding a node pool. You can choose your preferred Ubuntu image during the setup process.
 
-Create an OKE cluster using the Console
----------------------------------------
+Create an OKE cluster using Oracle Cloud Console
+-------------------------------------------------
 
 To create an OKE cluster from the Oracle Cloud Console:
 
