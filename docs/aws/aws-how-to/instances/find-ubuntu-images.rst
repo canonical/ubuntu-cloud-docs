@@ -10,73 +10,169 @@ On AWS, cloud images are referred to as Amazon Machine Images (AMIs). Canonical 
 All images mentioned below are also available in `AWS Outposts <https://aws.amazon.com/outposts/>`_.
 
 
-Finding images with SSM
------------------------
-The SSM Parameter Store is a hierarchical data service provided by AWS for configuration management. It can be used to store passwords, license codes, configuration strings, Amazon Machine Image (AMI) IDs, and more. Canonical provides a set of publicly available parameters in the parameter store under the hierarchy ``/aws/service/canonical``. One useful set of parameters available under that hierarchy is the set of latest AMI IDs for Ubuntu images. These IDs can be found programmatically using the AWS CLI.
-
-Images for EC2 and EKS
-~~~~~~~~~~~~~~~~~~~~~~
-
+Finding images for EC2 and EKS
+------------------------------
 .. tabs::
-   
-   .. tab:: For EC2
+   .. tab:: Using SSM Parameter Store
 
-      Find the latest AMI ID using:
+      The SSM Parameter Store is a hierarchical data service provided by AWS for configuration management. It can be used to store passwords, license codes, configuration strings, Amazon Machine Image (AMI) IDs, and more. Canonical provides a set of publicly available parameters in the parameter store under the hierarchy ``/aws/service/canonical``. One useful set of parameters available under that hierarchy is the set of latest AMI IDs for Ubuntu images. These IDs can be found programmatically using the AWS CLI.
 
-      .. code-block::
-
-         aws ssm get-parameters --names \
-            /aws/service/canonical/ubuntu/server/24.04/stable/current/amd64/hvm/ebs-gp3/ami-id
-
-      The format for the parameter is:
-
-      .. code-block::
-
-         ubuntu/$PRODUCT/$RELEASE/stable/current/$ARCH/$VIRT_TYPE/$VOL_TYPE/ami-id
-
-      * PRODUCT: `server`, `server-minimal`, `pro-server` or `pro-minimal`
-      * RELEASE: `noble`, 24.04, `jammy`, `22.04`, `focal`, `20.04`, `bionic`, `18.04`, `xenial`, or `16.04`
-      * ARCH: `amd64` or `arm64`
-      * VIRT_TYPE: `pv` or `hvm`
-      * VOL_TYPE: `ebs-gp3` (for >=23.10), `ebs-gp2` (for <=23.04), `ebs-io1`, `ebs-standard`, or `instance-store`
-
-      In place of `current`, the serial number given to an image can also be used (e.g., `20210222`):
-
-      .. code-block::
+      .. tabs::
          
-         ubuntu/$PRODUCT/$RELEASE/stable/$SERIAL/$ARCH/$VIRT_TYPE/$VOL_TYPE/ami-id
-         
+         .. tab:: For EC2
 
-   .. tab:: For EKS
-      
-      The latest EKS AMI ID for each supported EKS version can be found in the SSM parameter store using:
+            Find the latest AMI ID using:
+
+            .. code-block::
+
+               aws ssm get-parameters --names \
+                  /aws/service/canonical/ubuntu/server/24.04/stable/current/amd64/hvm/ebs-gp3/ami-id
+
+            The format for the parameter is:
+
+            .. code-block::
+
+               ubuntu/$PRODUCT/$RELEASE/stable/current/$ARCH/$VIRT_TYPE/$VOL_TYPE/ami-id
+
+            * PRODUCT: `server`, `server-minimal`, `pro-server` or `pro-minimal`
+            * RELEASE: `noble`, 24.04, `jammy`, `22.04`, `focal`, `20.04`, `bionic`, `18.04`, `xenial`, or `16.04`
+            * ARCH: `amd64` or `arm64`
+            * VIRT_TYPE: `hvm` or `pv` (only for legacy releases ≤ 16.04)
+            * VOL_TYPE: `ebs-gp3` (for >=23.10), `ebs-gp2` (for <=23.04), `ebs-io1`, `ebs-standard`, or `instance-store`
+
+            In place of `current`, the serial number given to an image can also be used (e.g., `20250804`):
+
+            .. code-block::
+               
+               ubuntu/$PRODUCT/$RELEASE/stable/$SERIAL/$ARCH/$VIRT_TYPE/$VOL_TYPE/ami-id
+               
+
+         .. tab:: For EKS
+            
+            The latest EKS AMI ID for each supported EKS version can be found in the SSM parameter store using:
+
+            .. code-block::
+
+               aws ssm get-parameters --names /aws/service/canonical/ubuntu/eks/24.04/1.31/stable/current/amd64/hvm/ebs-gp3/ami-id
+
+            The format for the parameter is:
+
+            .. code-block::
+
+               ubuntu/$EKS_PRODUCT/$RELEASE/$K8S_VERSION/stable/current/$ARCH/hvm/$VOL_TYPE/ami-id
+
+            * EKS_PRODUCT: `eks` or `eks-pro`
+            * RELEASE: `noble`, `24.04` (for EKS 1.31 or greater, or EKS Pro); `jammy`, `22.04` (for EKS 1.29 or greater, or EKS Pro); `focal`, `20.04` (for EKS <= 1.29)
+            * K8S_VERSION: one of the supported EKS versions (e.g. `1.31`)
+            * ARCH: `amd64` or `arm64`
+            * VOL_TYPE: `ebs-gp2` (for <= 22.04) and `ebs-gp3` (for >= 24.04)
+
+      In the generated output, the "Value" field will have the required AMI ID. It can be used to instantiate the corresponding image using the ``ec2 run-instances`` command as explained :ref:`here <instantiate-image-on-ec2>`. 
+
+      If you don't want to save the AMI ID before instantiating the image, you can use the ``resolve:ssm`` option and directly pass the required parameter to it in your ``ec2 run-instances`` call:
+
+      .. code::
+
+         aws ec2 run-instances \
+            --image-id resolve:ssm:/aws/service/canonical/ubuntu/server/24.04/stable/current/amd64/hvm/ebs-gp3/ami-id \
+            --key-name TestKeyPair \
+            --instance-type t3.medium
+
+   .. tab:: Using describe-images
+
+      The EC2 describe-images API is the native AWS discovery mechanism for public Amazon Machine Images (AMIs). Instead of looking up a stored parameter, you query the EC2 catalog directly. By filtering on Canonical's owner ID and a name pattern you can programmatically locate the latest Ubuntu AMI with a single AWS CLI call:
+
+      .. tabs::
+         .. tab:: For EC2
+
+            Find the latest AMI ID using:
+
+            .. code-block::
+
+               aws ec2 describe-images \
+                  --owners 099720109477 \
+                  --filters \
+                     "Name=name,Values=ubuntu/images/hvm-ssd-gp3/ubuntu-noble-24.04-amd64-server-*" \
+                  --query "Images | sort_by(@, &CreationDate) | [-1].ImageId" \
+                  --output text
+
+            The filter pattern is:
+
+            .. code-block::
+
+               ubuntu/images/$VIRT_TYPE-$VOL_TYPE/ubuntu-$RELEASE-$ARCH-$PRODUCT-*
+
+            * VIRT_TYPE: `hvm` or `pv` (only for legacy releases ≤ 16.04)
+            * VOL_TYPE: `ssd-gp3` (for >=23.10), `ssd` (for <=23.04), or `instance-store`
+            * RELEASE: `noble-24.04`, `jammy-22.04`, `focal-20.04`, `bionic-18.04`, or `xenial-16.04`
+            * ARCH: `amd64` or `arm64`
+            * PRODUCT: `server`, `server-minimal`, `pro-server` or `pro-minimal`
+
+            In the filter expression, ``Name=name`` specifies that the filter should apply to the AMI's
+            **Name** attribute (the human-readable AMI name string) and the ``Values=...`` part provides
+            a pattern to match against this field.
+
+            (The query sorts by ``CreationDate`` and selects the most recent image.)
+            In place of a wildcard, the serial number given to an image can also be used (e.g., 20250804):
+            
+            .. code-block::
+
+               ubuntu/images/$VIRT_TYPE-$VOL_TYPE/ubuntu-$RELEASE-$ARCH-$PRODUCT-$SERIAL
+
+         .. tab:: For EKS
+
+            Find the latest EKS AMI ID using:
+
+            .. code-block::
+
+               aws ec2 describe-images \
+                  --owners 099720109477 \
+                  --filters \
+                     "Name=name,Values=ubuntu-eks/k8s_1.31/images/hvm-ssd-gp3/ubuntu-noble-24.04-amd64-server-*" \
+                  --query "Images | sort_by(@, &CreationDate) | [-1].ImageId" \
+                  --output text
+
+            The filter pattern is:
+
+            .. code-block::
+
+               ubuntu-$EKS_PRODUCT/k8s_$K8S_VERSION/images/hvm-$VOL_TYPE/ubuntu-$RELEASE-$ARCH-server-*
+
+            * EKS_PRODUCT: `eks` or `eks-pro`
+            * K8S_VERSION: one of the supported EKS versions (e.g. `1.31`)
+            * VOL_TYPE: `ssd` (for <= 22.04) and `ssd-gp3` (for >= 24.04)
+            * RELEASE: `noble-24.04` (for EKS 1.31 or greater, or EKS Pro); `jammy-22.04` (for EKS 1.29 or greater, or EKS Pro); `focal-20.04` (for EKS <= 1.29)
+            * ARCH: `amd64` or `arm64`
+
+            In the filter expression, ``Name=name`` specifies that the filter should apply to the AMI's
+            **Name** attribute (the human-readable AMI name string) and the ``Values=...`` part provides
+            a pattern to match against this field.
+
+            (The query sorts by ``CreationDate`` and selects the most recent image.)
+            In place of a wildcard, the serial number given to an image can also be used (e.g., 20250804):
+            
+            .. code-block::
+
+               ubuntu-eks/k8s_$K8S_VERSION/images/hvm-$VOL_TYPE/ubuntu-$RELEASE-$ARCH-server-$SERIAL
+
+         The generated output will be the required AMI ID if found. It can be used to instantiate the corresponding image using the ``ec2 run-instances`` command as explained :ref:`here <instantiate-image-on-ec2>`.
+
+      If you don’t want to save the AMI ID before instantiating the image, you can embed the
+      ``describe-images`` query directly in your ``ec2 run-instances`` call:
 
       .. code-block::
 
-         aws ssm get-parameters --names /aws/service/canonical/ubuntu/eks/24.04/1.31/stable/current/amd64/hvm/ebs-gp3/ami-id
+         aws ec2 run-instances \
+           --image-id "$(aws ec2 describe-images \
+                           --owners 099720109477 \
+                           --filters \
+                             'Name=name,Values=ubuntu/images/hvm-ssd-gp3/ubuntu-noble-24.04-amd64-server-*' \
+                           --query 'Images | sort_by(@, &CreationDate) | [-1].ImageId' \
+                           --output text)" \
+           --instance-type t3.medium \
+           --key-name TestKeyPair
 
-      The format for the parameter is:
 
-      .. code-block::
-
-         ubuntu/$EKS_PRODUCT/$RELEASE/$K8S_VERSION/stable/current/$ARCH/hvm/$VOL_TYPE/ami-id
-
-      * EKS_PRODUCT: `eks` or `eks-pro`
-      * RELEASE: `noble`, `24.04` (for EKS 1.31 or greater, or EKS Pro); `jammy`, `22.04` (for EKS 1.29 or greater, or EKS Pro); `focal`, `20.04` (for EKS <= 1.29)
-      * K8S_VERSION: one of the supported EKS versions (e.g. `1.31`)
-      * ARCH: `amd64` or `arm64`
-      * VOL_TYPE: `ebs-gp2` (for <= Jammy) and `ebs-gp3` (for >= Noble)
-
-In the generated output, the "Value" field will have the required AMI ID. It can be used to instantiate the corresponding image using the ``ec2 run-instances`` command as explained :ref:`here <instantiate-image-on-ec2>`. 
-
-If you don't want to save the AMI ID before instantiating the image, you can use the ``resolve:ssm`` option and directly pass the required parameter to it in your ``ec2 run-instances`` call:
-
-.. code::
-
-   aws ec2 run-instances \
-      --image-id resolve:ssm:/aws/service/canonical/ubuntu/server/24.04/stable/current/amd64/hvm/ebs-gp3/ami-id \
-      --key-name TestKeyPair \
-      --instance-type t3.medium
 
 Ownership verification
 ~~~~~~~~~~~~~~~~~~~~~~
