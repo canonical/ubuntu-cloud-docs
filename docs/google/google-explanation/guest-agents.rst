@@ -43,7 +43,7 @@ At a high level it can be described as providing the following:
 
 * **Authorized Keys Command**: provides SSH keys (from an OS Login profile) to ``sshd`` for authentication
 * **NSS Modules**: support for making OS Login user/group information available to the VM using NSS (Name Service Switch)
-* **PAM Modules**: provides authorization (and authentication if ``2FA`` is enabled) to allow the VM to grant ``ssh`` access/``sudo`` privileges based on the user's allotted `IAM permissions <https://cloud.google.com/security/products/iam>`_
+* **PAM Modules**: provides authorization (and authentication if ``2FA`` is enabled) to allow the VM to grant ``ssh`` access/``sudo`` privileges based on the user's allotted `IAM permissions <https://cloud.google.com/iam/docs>`_
 
 ``google-osconfig-agent``
 -------------------------
