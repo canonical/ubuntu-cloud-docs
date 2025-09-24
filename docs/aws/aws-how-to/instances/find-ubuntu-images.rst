@@ -88,7 +88,7 @@ To find images on AWS, you can use either the `SSM Parameter Store`_ or the `des
       .. tabs::
          .. tab:: EC2
 
-            For EC2, fnd the latest AMI ID using:
+            For EC2, find the latest AMI ID using:
 
             .. code-block::
 
