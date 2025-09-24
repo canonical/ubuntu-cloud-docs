@@ -12,6 +12,9 @@ All images mentioned below are also available in `AWS Outposts <https://aws.amaz
 
 Finding images for EC2 and EKS
 ------------------------------
+
+To find images on AWS, you can use either the `SSM Parameter Store`_ or the `describe-images`_ API. Both methods are explained below.
+
 .. tabs::
    .. tab:: Using SSM Parameter Store
 
@@ -19,9 +22,9 @@ Finding images for EC2 and EKS
 
       .. tabs::
          
-         .. tab:: For EC2
+         .. tab:: EC2
 
-            Find the latest AMI ID using:
+            For EC2, find the latest AMI ID using:
 
             .. code-block::
 
@@ -47,9 +50,9 @@ Finding images for EC2 and EKS
                ubuntu/$PRODUCT/$RELEASE/stable/$SERIAL/$ARCH/$VIRT_TYPE/$VOL_TYPE/ami-id
                
 
-         .. tab:: For EKS
+         .. tab:: EKS
             
-            The latest EKS AMI ID for each supported EKS version can be found in the SSM parameter store using:
+            For EKS, the latest EKS AMI ID for each supported EKS version can be found in the SSM parameter store using:
 
             .. code-block::
 
@@ -80,12 +83,12 @@ Finding images for EC2 and EKS
 
    .. tab:: Using describe-images
 
-      The EC2 ``describe-images`` API is the native AWS discovery mechanism for public Amazon Machine Images (AMIs). Instead of looking up a stored parameter, you query the EC2 catalog directly. By filtering on Canonical's owner ID and a name pattern, you can programmatically locate the latest Ubuntu AMI with a single AWS CLI call:
+      The EC2 ``describe-images`` API is the native AWS discovery mechanism for public AMIs. Instead of looking up a stored parameter, you query the EC2 catalog directly. By filtering on Canonical's owner ID and a name pattern, you can programmatically locate the latest Ubuntu AMI with a single AWS CLI call.
 
       .. tabs::
-         .. tab:: For EC2
+         .. tab:: EC2
 
-            Find the latest AMI ID using:
+            For EC2, fnd the latest AMI ID using:
 
             .. code-block::
 
@@ -118,9 +121,9 @@ Finding images for EC2 and EKS
 
                ubuntu/images/$VIRT_TYPE-$VOL_TYPE/ubuntu-$RELEASE-$ARCH-$PRODUCT-$SERIAL
 
-         .. tab:: For EKS
+         .. tab:: EKS
 
-            Find the latest EKS AMI ID using:
+            For EKS, find the latest EKS AMI ID using:
 
             .. code-block::
 
@@ -213,3 +216,6 @@ All the above mentioned Marketplace images can also be found in the SSM paramete
    :file: aws-marketplace-identifiers.csv
    :widths: 135 5 60 5
    :header-rows: 1
+
+.. _SSM Parameter Store: https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-parameter-store.html
+.. _describe-images: https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-images.html
