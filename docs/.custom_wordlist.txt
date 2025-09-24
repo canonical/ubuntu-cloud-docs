@@ -62,6 +62,7 @@ config
 CPC
 cpc
 CPUs
+CreationDate
 cron
 cryptographic
 cryptographically
@@ -321,6 +322,7 @@ softwares
 sqlcmd
 SquashFS
 SRU
+ssd
 SSH
 sshd
 SSHD
