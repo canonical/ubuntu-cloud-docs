@@ -80,7 +80,7 @@ Finding images for EC2 and EKS
 
    .. tab:: Using describe-images
 
-      The EC2 describe-images API is the native AWS discovery mechanism for public Amazon Machine Images (AMIs). Instead of looking up a stored parameter, you query the EC2 catalog directly. By filtering on Canonical's owner ID and a name pattern you can programmatically locate the latest Ubuntu AMI with a single AWS CLI call:
+      The EC2 ``describe-images`` API is the native AWS discovery mechanism for public Amazon Machine Images (AMIs). Instead of looking up a stored parameter, you query the EC2 catalog directly. By filtering on Canonical's owner ID and a name pattern, you can programmatically locate the latest Ubuntu AMI with a single AWS CLI call:
 
       .. tabs::
          .. tab:: For EC2
@@ -96,6 +96,10 @@ Finding images for EC2 and EKS
                   --query "Images | sort_by(@, &CreationDate) | [-1].ImageId" \
                   --output text
 
+            In the filter expression, ``Name=name`` specifies that the filter should apply to the AMI's
+            **Name** attribute (the human-readable AMI name string) and the ``Values=...`` part provides
+            a pattern to match against this field.
+
             The filter pattern is:
 
             .. code-block::
@@ -108,12 +112,7 @@ Finding images for EC2 and EKS
             * ARCH: `amd64` or `arm64`
             * PRODUCT: `server`, `server-minimal`, `pro-server` or `pro-minimal`
 
-            In the filter expression, ``Name=name`` specifies that the filter should apply to the AMI's
-            **Name** attribute (the human-readable AMI name string) and the ``Values=...`` part provides
-            a pattern to match against this field.
-
-            (The query sorts by ``CreationDate`` and selects the most recent image.)
-            In place of a wildcard, the serial number given to an image can also be used (e.g., 20250804):
+            The query sorts by ``CreationDate`` and selects the most recent image. In place of a wildcard(*), the serial number given to an image can also be used (e.g., 20250804):
             
             .. code-block::
 
@@ -132,6 +131,10 @@ Finding images for EC2 and EKS
                   --query "Images | sort_by(@, &CreationDate) | [-1].ImageId" \
                   --output text
 
+            In the filter expression, ``Name=name`` specifies that the filter should apply to the AMI's
+            **Name** attribute (the human-readable AMI name string) and the ``Values=...`` part provides
+            a pattern to match against this field.
+            
             The filter pattern is:
 
             .. code-block::
@@ -143,13 +146,9 @@ Finding images for EC2 and EKS
             * VOL_TYPE: `ssd` (for <= 22.04) and `ssd-gp3` (for >= 24.04)
             * RELEASE: `noble-24.04` (for EKS 1.31 or greater, or EKS Pro); `jammy-22.04` (for EKS 1.29 or greater, or EKS Pro); `focal-20.04` (for EKS <= 1.29)
             * ARCH: `amd64` or `arm64`
+            
 
-            In the filter expression, ``Name=name`` specifies that the filter should apply to the AMI's
-            **Name** attribute (the human-readable AMI name string) and the ``Values=...`` part provides
-            a pattern to match against this field.
-
-            (The query sorts by ``CreationDate`` and selects the most recent image.)
-            In place of a wildcard, the serial number given to an image can also be used (e.g., 20250804):
+            The query sorts by ``CreationDate`` and selects the most recent image. In place of a wildcard(*), the serial number given to an image can also be used (e.g., 20250804):
             
             .. code-block::
 

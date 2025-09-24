@@ -76,6 +76,6 @@ You can confirm the status of the nodes on your cluster using:
     ip-xxx-xxx-x-xx.us-east-1.compute.internal     Ready    <none>   2m45s   v1.31.x
 
 
-.. _`install eksctl`: https://eksctl.io/installation/
+.. _`install eksctl`: https://docs.aws.amazon.com/eks/latest/eksctl/installation.html
 .. _`install kubectl`: https://docs.aws.amazon.com/eks/latest/userguide/install-kubectl.html
-.. _`config file schema for eksctl`: https://eksctl.io/usage/schema
+.. _`config file schema for eksctl`: https://schema.eksctl.io/
