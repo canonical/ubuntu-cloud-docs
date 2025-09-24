@@ -269,4 +269,4 @@ To check that the deployed nodes have Ubuntu Pro, run:
 .. _`troubleshooting options`: https://docs.aws.amazon.com/eks/latest/userguide/troubleshooting.html
 .. _`Packer`: https://developer.hashicorp.com/packer
 .. _`issue`: https://bugs.launchpad.net/cloud-images/+bug/2017782
-.. _`eksctl details`: https://eksctl.io/
+.. _`eksctl details`: https://docs.aws.amazon.com/eks/latest/eksctl/what-is-eksctl.html
