@@ -1,7 +1,7 @@
 Upgrade in-place from LTS to Pro
 ================================
 
-If your production environment is based on Ubuntu LTS and you need the premium security, support or compliance features of Ubuntu Pro, then you don't have to migrate your applications to new Ubuntu Pro VMs. You can just perform an in-place upgrade of your existing machines in three simple steps:
+If your production environment is based on Ubuntu LTS and you need the premium security, support or compliance features of Ubuntu Pro, you don't have to migrate your applications to new Ubuntu Pro VMs. You can just perform an in-place upgrade of your existing machines in three simple steps:
 
 1. Stop your machine:
 
@@ -13,12 +13,12 @@ If your production environment is based on Ubuntu LTS and you need the premium s
 
    .. code::
 
-       gcloud beta compute disks update $INSTANCE_NAME --zone=$ZONE \
-           --replace-licenses=$PREVIOUS_LICENSE_URI,$NEW_LICENSE_URI
+       gcloud compute disks update $INSTANCE_NAME --zone=$ZONE \
+           --replace-license=$PREVIOUS_LICENSE_URI,$NEW_LICENSE_URI
 
    where
 
-   * ``$INSTANCE_NAME`` is the name of the instance (boot disk) to replace the license on;
+   * ``$INSTANCE_NAME`` is the name of the instance to replace the license on;
    * ``$ZONE`` is the zone containing the instance;
    * ``$PREVIOUS_LICENSE_URI`` is the license URI for the non-Pro version on your VM; and
    * ``$NEW_LICENSE_URI`` is the license URI for the Pro version that you are upgrading to.
@@ -80,10 +80,11 @@ If your production environment is based on Ubuntu LTS and you need the premium s
    .. code::
 
        SERVICE          ENTITLED  STATUS    DESCRIPTION
+       anbox-cloud      yes       disabled  Scalable Andriod in the cloud
        esm-apps         yes       enabled   Expanded Security Maintenance for Applications
        esm-infra        yes       enabled   Expanded Security Maintenance for Infrastructure
-       fips             yes       disabled  NIST-certified core packages
-       fips-updates     yes       disabled  NIST-certified core packages with priority security updates
+       fips-preview     yes       disabled  Preview of FIPS crypto packages undergoing certification with NIST
+       fips-updates     yes       disabled  FIPS compliant crypto packages with stable security updates
        livepatch        yes       enabled   Canonical Livepatch service
        usg              yes       disabled  Security compliance and audit tools
 
