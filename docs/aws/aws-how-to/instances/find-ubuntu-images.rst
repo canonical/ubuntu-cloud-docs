@@ -193,6 +193,16 @@ The expected value of `OwnerId` for Canonical is one of the following:
 
 Note that listings on the AWS Marketplace will always show the `OwnerId` as Amazon (e.g. `679593333241`). In these cases, users can verify the Amazon ID and look for `aws-marketplace/ubuntu` in the `ImageLocation` field.
 
+You can also add Canonical's OwnerId to allow list:
+
+.. code::
+
+   aws ec2 modify-allowed-images --image-owner $OWNER_ID
+
+By running the command above, you only allow Canonical ubuntu images and ensure that instances can only be launched with verified, official images.
+
+See the AWS announcement for more details on the `Allowed AMIs feature`_.
+
 
 Images in the AWS Marketplace
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -219,3 +229,4 @@ All the above mentioned Marketplace images can also be found in the SSM paramete
 
 .. _SSM Parameter Store: https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-parameter-store.html
 .. _describe-images: https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-images.html
+.. _Allowed AMIs feature: https://aws.amazon.com/about-aws/whats-new/2024/12/amazon-ec2-allowed-amis-enhance-ami-governance/
