@@ -17,7 +17,7 @@ Deploy Ubuntu OKE nodes using CLI
 Deploy an OKE cluster using CLI
 -------------------------------
 
-Before getting started, note the architecture of the image you have selected, either ``amd64`` or ``arm64``, as you want to ensure that nodes are launched with the correct instance shapes.
+Before getting started, note the architecture of the image you have selected, either ``AMD64`` or ``ARM64``, as you want to ensure that nodes are launched with the correct instance shapes.
 
 Deploying an OKE cluster with Ubuntu images using the ``oci`` CLI involves three main steps:
 

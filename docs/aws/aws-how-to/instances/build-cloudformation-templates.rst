@@ -70,19 +70,19 @@ Since Ubuntu Pro FIPS is only available at the AWS Marketplace, the product ID n
      - **ARCHITECTURE**
      - **IDENTIFIER**
    * - Ubuntu Pro FIPS 16.04 LTS
-     - amd64
+     - AMD64
      - ``prod-hykkbajyverq4``
    * - Ubuntu Pro FIPS 18.04 LTS
-     - amd64
+     - AMD64
      - ``prod-7izp2xqnddwdc``
    * - Ubuntu Pro FIPS 20.04 LTS
-     - amd64
+     - AMD64
      - ``prod-k6fgbnayirmrc``
    * - Ubuntu Pro FIPS 22.04 LTS
-     - amd64
+     - AMD64
      - ``prod-y5kejmnu3wodg``
    * - Ubuntu Pro FIPS 22.04 LTS
-     - arm64
+     - ARM64
      - ``prod-rcuudwwonvpew``
 
 To create the parameter in your CloudFormation template, choose a product ID from above and use it in place of <product-id> in:

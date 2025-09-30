@@ -17,7 +17,7 @@ Deploy Ubuntu OKE nodes using Terraform
 Deploy an OKE cluster using Terraform
 --------------------------------------
 
-Before getting started, note the architecture of the image you have selected, either ``amd64`` or ``arm64``, as you want to ensure that nodes are launched with the correct instance shapes.
+Before getting started, note the architecture of the image you have selected, either ``AMD64`` or ``ARM64``, as you want to ensure that nodes are launched with the correct instance shapes.
 
 For this guide we'll use our `GitHub example repository <terraform-example-repo_>`_ as a base. It contains all of the HCL to launch the networking, cluster and nodes using the `OCI Terraform Provider <gh-oci-terraform-provider_>`_ and `OKE Terraform Module <gh-oke-terraform-module_>`_. 
 

@@ -136,7 +136,7 @@ The steps needed for deploying the cluster depend on whether you need to enable 
         so make sure to adjust the "region" above accordingly.
         
         This Packer file takes as a source an existing AMI of an EKS-based Ubuntu Focal
-        Server for amd64. It will then launch shell commands to wait for cloud-init to
+        Server for AMD64. It will then launch shell commands to wait for cloud-init to
         finish and upgrade the system. Afterwards, it attaches the machine to a Pro subscription
         using your Pro token and enables FIPS. To conclude, it removes the machine-id
         from the custom image, to have a unique machine-id on every node instantiation.
