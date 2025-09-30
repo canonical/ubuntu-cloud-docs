@@ -13,7 +13,7 @@ All images mentioned below are also available in `AWS Outposts <https://aws.amaz
 Finding images for EC2 and EKS
 ------------------------------
 
-To find images on AWS, you can use the `SSM Parameter Store`_, the `describe-images`_ API or the Web console. The methods are explained below.
+To find images on AWS, you can use the `SSM Parameter Store`_, the `describe-images`_ API or the `AWS Web Console`_. All three methods are explained below.
 
 .. tabs::
    .. tab:: Using SSM Parameter Store
@@ -180,31 +180,37 @@ To find images on AWS, you can use the `SSM Parameter Store`_, the `describe-ima
 
       .. tabs:: 
          .. tab:: EC2
-               #. Sign in to the `EC2 console <https://console.aws.amazon.com/ec2/>`_.
-               #. In the left navigation pane, choose **Images** > **AMIs**.
-               #. From the drop‑down next to the search bar, choose **Public images**.
-               #. Apply the following two **search filters**:
+               Sign in to the `EC2 console`_.
 
-                  * .. code-block:: text
+               In the navigation pane on the left, choose :guilabel:`Images` > :guilabel:`AMIs`.
+               
+               From the drop-down next to the search bar, choose :guilabel:`Public images`.
+               
+               Apply the following two search filters:
 
-                       Owner = 099720109477
+               1. Restrict the results to Ubuntu images that Canonical publishes:
 
-                  This restricts the results to Ubuntu images that Canonical publishes.
+                  .. code-block:: text
 
-                  * .. code-block:: text
+                     Owner = 099720109477
+               
 
-                       AMI name = ubuntu/images/hvm-ssd-gp3/ubuntu-noble-24.04-amd64-server
+               2. Restrict the results to images with a specific pattern in their AMI name (described later): 
 
-                  Here you can enter a pattern matching your desired image. For example, adjusting the name to match version and architecture.
+                  .. code-block:: text
 
-               #. Select the most recent image based on Creation date.
-               #. Choose **Launch instance from image** (or copy the AMI ID for CLI use).
+                     AMI name: ubuntu/images/hvm-ssd-gp3/ubuntu-noble-24.04-amd64-server
+               
+
+               Select the most recent image based on *Creation date*.
+
+               Choose :guilabel:`Launch instance from image` (or copy the AMI ID for CLI use).
 
                **AMI name filter syntax**
 
                ::
 
-                  ubuntu/images/$VIRT_TYPE-$VOL_TYPE/ubuntu-$RELEASE-$ARCH-$PRODUCT-$SERIAL
+                  ubuntu/images/$VIRT_TYPE-$VOL_TYPE/ubuntu-$RELEASE-$ARCH-$PRODUCT
 
                * VIRT_TYPE: `hvm` or `pv` (only for legacy releases ≤ 16.04)
                * VOL_TYPE: `ssd-gp3` (for >=23.10), `ssd` (for <=23.04), or `instance-store`
@@ -213,39 +219,43 @@ To find images on AWS, you can use the `SSM Parameter Store`_, the `describe-ima
                * PRODUCT: `server`, `server-minimal`, `pro-server` or `pro-minimal`
 
          .. tab:: EKS
-               #. Sign in to the `EC2 console <https://console.aws.amazon.com/ec2/>`_.
-               #. In the left navigation pane, choose **Images** > **AMIs**.
-               #. From the drop‑down next to the search bar, choose **Public images**.
-               #. Apply the following two **search filters**:
+               Sign in to the `EC2 console`_.
+               
+               In the left navigation pane, choose :guilabel:`Images` > :guilabel:`AMIs`.
+               
+               From the drop‑down next to the search bar, choose :guilabel:`Public images`.
 
-                  * .. code-block:: text
+               Apply the following two search filters:
 
-                       Owner = 099720109477
+               1. Restrict the results to Ubuntu images that Canonical publishes:
 
-                  This restricts the results to Ubuntu images that Canonical publishes.
+                  .. code-block:: text
 
-                  * .. code-block:: text
+                     Owner = 099720109477
+               
 
-                       AMI name = ubuntu-eks/k8s_1.33/images/hvm-ssd-gp3/ubuntu-noble-24.04-amd64
+               2. Restrict the results to images with a specific pattern in their AMI name (described later): 
 
-                  Here you can enter a pattern matching your desired image. For example, adjusting the name to match version and architecture.
+                  .. code-block:: text
 
-               #. Select the most recent image based on Creation date.
-               #. Choose **Launch instance from image** (or copy the AMI ID for CLI use).
+                     AMI name: ubuntu-eks/k8s_1.33/images/hvm-ssd-gp3/ubuntu-noble-24.04-amd64
+       
+
+               Select the most recent image based on Creation date
+               
+               Choose :guilabel:`Launch instance from image` (or copy the AMI ID for CLI use).
 
                **AMI name filter syntax**
 
                ::
 
-                  ubuntu-$EKS_PRODUCT/k8s_$K8S_VERSION/images/hvm-$VOL_TYPE/ubuntu-$RELEASE-$ARCH-server-$SERIAL
+                  ubuntu-$EKS_PRODUCT/k8s_$K8S_VERSION/images/hvm-$VOL_TYPE/ubuntu-$RELEASE-$ARCH-server
 
                * EKS_PRODUCT: `eks` or `eks-pro`
                * K8S_VERSION: one of the supported EKS versions (e.g. `1.31`)
                * VOL_TYPE: `ssd` (for <= 22.04) and `ssd-gp3` (for >= 24.04)
                * RELEASE: `noble-24.04` (for EKS 1.31 or greater, or EKS Pro); `jammy-22.04` (for EKS 1.29 or greater, or EKS Pro); `focal-20.04` (for EKS <= 1.29)
                * ARCH: `amd64` or `arm64`
-
-
 
 
 
@@ -292,3 +302,5 @@ All the above mentioned Marketplace images can also be found in the SSM paramete
 
 .. _SSM Parameter Store: https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-parameter-store.html
 .. _describe-images: https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-images.html
+.. _AWS Web Console: https://aws.amazon.com/console/
+.. _EC2 console: https://console.aws.amazon.com/ec2/
