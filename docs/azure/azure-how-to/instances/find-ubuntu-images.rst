@@ -16,21 +16,37 @@ Ubuntu 24.04 LTS - Noble Numbat
 | Quick start (China): `24.04 LTS on Azure China <https://portal.azure.cn/#create/canonical.ubuntu-24_04-ltsserver>`_
 
 .. list-table::
-   :widths: 10 9 50
+   :widths: 10 10 9 50
    :header-rows: 1
 
-   * - **Architecture**
+   * - **Flavor**
+     - **Architecture**
      - **Hyper-V Generation**
      - **URN**
-   * - AMD64
+   * - Server
+     - AMD64
      - Gen2
      - ``Canonical:ubuntu-24_04-lts:server:latest``
-   * - AMD64
+   * - Server
+     - AMD64
      - Gen1
      - ``Canonical:ubuntu-24_04-lts:server-gen1:latest``
-   * - Arm64
+   * - Server
+     - Arm64
      - Gen2
      - ``Canonical:ubuntu-24_04-lts:server-arm64:latest``
+   * - Minimal
+     - AMD64
+     - Gen2
+     - ``Canonical:ubuntu-24_04-lts:minimal:latest``
+   * - Minimal
+     - AMD64
+     - Gen1
+     - ``Canonical:ubuntu-24_04-lts:minimal-gen1:latest``
+   * - Minimal
+     - Arm64
+     - Gen2
+     - ``Canonical:ubuntu-24_04-lts:minimal-arm64:latest``
 
 
 Ubuntu 22.04 LTS - Jammy Jellyfish
@@ -40,21 +56,33 @@ Ubuntu 22.04 LTS - Jammy Jellyfish
 | Quick start (China): `22.04 LTS on Azure China <https://portal.azure.cn/#create/canonical.0001-com-ubuntu-server-jammy22_04-lts-ARM>`_
 
 .. list-table::
-   :widths: 10 9 50
+   :widths: 10 10 9 50
    :header-rows: 1
 
-   * - **Architecture**
+   * - **Flavor**
+     - **Architecture**
      - **Hyper-V Generation**
      - **URN**
-   * - AMD64
+   * - Server
+     - AMD64
      - Gen1
      - ``Canonical:0001-com-ubuntu-server-jammy:22_04-lts:latest``
-   * - AMD64
+   * - Server
+     - AMD64
      - Gen2
      - ``Canonical:0001-com-ubuntu-server-jammy:22_04-lts-gen2:latest``
-   * - Arm64
+   * - Server
+     - Arm64
      - Gen2
      - ``Canonical:0001-com-ubuntu-server-jammy:22_04-lts-arm64:latest``
+   * - Minimal
+     - AMD64
+     - Gen1
+     - ``Canonical:0001-com-ubuntu-minimal-jammy:minimal-22_04-lts:latest``
+   * - Minimal
+     - AMD64
+     - Gen2
+     - ``Canonical:0001-com-ubuntu-minimal-jammy:minimal-22_04-lts-gen2:latest``
 
 Interim releases
 ~~~~~~~~~~~~~~~~
