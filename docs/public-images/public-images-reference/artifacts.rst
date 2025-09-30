@@ -10,8 +10,8 @@ This section contains information on all of the Ubuntu cloud images available fo
 
 Architectures supported
 ~~~~~~~~~~~~~~~~~~~~~~~
--  **amd64:** Standard 64-bit PC architecture.
--  **arm64:** 64-bit ARM architecture.
+-  **AMD64:** Standard 64-bit PC architecture.
+-  **ARM64:** 64-bit ARM architecture.
 -  **armhf:** Hard-float 32-bit ARM architecture.
 -  **ppc64el:** 64-bit PowerPC little-endian architecture.
 -  **riscv64:** 64-bit RISC-V architecture.
