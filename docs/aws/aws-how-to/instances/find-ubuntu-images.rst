@@ -13,7 +13,7 @@ All images mentioned below are also available in `AWS Outposts <https://aws.amaz
 Finding images for EC2 and EKS
 ------------------------------
 
-To find images on AWS, you can use either the `SSM Parameter Store`_ or the `describe-images`_ API. Both methods are explained below.
+To find images on AWS, you can use the `SSM Parameter Store`_, the `describe-images`_ API or the Web console. The methods are explained below.
 
 .. tabs::
    .. tab:: Using SSM Parameter Store
@@ -173,6 +173,79 @@ To find images on AWS, you can use either the `SSM Parameter Store`_ or the `des
                            --output text)" \
            --instance-type t3.medium \
            --key-name TestKeyPair
+
+   .. tab:: Using the AWS Console
+
+      The AWS Management Console offers a graphical workflow to locate official Ubuntu AMIs.
+
+      .. tabs:: 
+         .. tab:: EC2
+               #. Sign in to the `EC2 console <https://console.aws.amazon.com/ec2/>`_.
+               #. In the left navigation pane, choose **Images** > **AMIs**.
+               #. From the drop‑down next to the search bar, choose **Public images**.
+               #. Apply the following two **search filters**:
+
+                  * .. code-block:: text
+
+                       Owner = 099720109477
+
+                  This restricts the results to Ubuntu images that Canonical publishes.
+
+                  * .. code-block:: text
+
+                       AMI name = ubuntu/images/hvm-ssd-gp3/ubuntu-noble-24.04-amd64-server
+
+                  Here you can enter a pattern matching your desired image. For example, adjusting the name to match version and architecture.
+
+               #. Select the most recent image based on Creation date.
+               #. Choose **Launch instance from image** (or copy the AMI ID for CLI use).
+
+               **AMI name filter syntax**
+
+               ::
+
+                  ubuntu/images/$VIRT_TYPE-$VOL_TYPE/ubuntu-$RELEASE-$ARCH-$PRODUCT-$SERIAL
+
+               * VIRT_TYPE: `hvm` or `pv` (only for legacy releases ≤ 16.04)
+               * VOL_TYPE: `ssd-gp3` (for >=23.10), `ssd` (for <=23.04), or `instance-store`
+               * RELEASE: `noble-24.04`, `jammy-22.04`, `focal-20.04`, `bionic-18.04`, or `xenial-16.04`
+               * ARCH: `amd64` or `arm64`
+               * PRODUCT: `server`, `server-minimal`, `pro-server` or `pro-minimal`
+
+         .. tab:: EKS
+               #. Sign in to the `EC2 console <https://console.aws.amazon.com/ec2/>`_.
+               #. In the left navigation pane, choose **Images** > **AMIs**.
+               #. From the drop‑down next to the search bar, choose **Public images**.
+               #. Apply the following two **search filters**:
+
+                  * .. code-block:: text
+
+                       Owner = 099720109477
+
+                  This restricts the results to Ubuntu images that Canonical publishes.
+
+                  * .. code-block:: text
+
+                       AMI name = ubuntu-eks/k8s_1.33/images/hvm-ssd-gp3/ubuntu-noble-24.04-amd64
+
+                  Here you can enter a pattern matching your desired image. For example, adjusting the name to match version and architecture.
+
+               #. Select the most recent image based on Creation date.
+               #. Choose **Launch instance from image** (or copy the AMI ID for CLI use).
+
+               **AMI name filter syntax**
+
+               ::
+
+                  ubuntu-$EKS_PRODUCT/k8s_$K8S_VERSION/images/hvm-$VOL_TYPE/ubuntu-$RELEASE-$ARCH-server-$SERIAL
+
+               * EKS_PRODUCT: `eks` or `eks-pro`
+               * K8S_VERSION: one of the supported EKS versions (e.g. `1.31`)
+               * VOL_TYPE: `ssd` (for <= 22.04) and `ssd-gp3` (for >= 24.04)
+               * RELEASE: `noble-24.04` (for EKS 1.31 or greater, or EKS Pro); `jammy-22.04` (for EKS 1.29 or greater, or EKS Pro); `focal-20.04` (for EKS <= 1.29)
+               * ARCH: `amd64` or `arm64`
+
+
 
 
 
