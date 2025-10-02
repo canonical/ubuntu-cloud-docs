@@ -11,12 +11,10 @@ DCO
 Diátaxis
 Dqlite
 dropdown
-EB
 EBS
 EKS
 enablement
 favicon
-FDDC
 Furo
 Git
 GitHub
@@ -245,12 +243,14 @@ Containerd
 Coturn
 Cryptographic
 Devel
+Discourse
 Endian
 Endianness
 Fluentd
 GraphQL
 HAProxy
 HAcluster
+HomeBrew
 Imagecraft
 Infiniband
 Influxdb
