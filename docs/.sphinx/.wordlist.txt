@@ -11,10 +11,12 @@ DCO
 Diátaxis
 Dqlite
 dropdown
+EB
 EBS
 EKS
 enablement
 favicon
+FDDC
 Furo
 Git
 GitHub
@@ -316,8 +318,10 @@ armhf
 autopkgtest
 cURL
 containeragent
+coreutils
 dqlite
 dsc
+gpg
 init
 jQuery
 juju
