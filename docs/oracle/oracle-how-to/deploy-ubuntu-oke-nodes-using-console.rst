@@ -60,7 +60,7 @@ To create an OKE cluster from the Oracle Cloud Console:
             :alt: Select Ubuntu image
 
       .. warning::
-         Pay attention to which image you select and ensure its architecture matches your chosen node shape (for example, amd64 or arm64).
+         Pay attention to which image you select and ensure its architecture matches your chosen node shape (for example, AMD64 or ARM64).
 
     - **Node count**: Set the node count to zero.
 

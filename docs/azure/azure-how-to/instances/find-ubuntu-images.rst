@@ -16,21 +16,37 @@ Ubuntu 24.04 LTS - Noble Numbat
 | Quick start (China): `24.04 LTS on Azure China <https://portal.azure.cn/#create/canonical.ubuntu-24_04-ltsserver>`_
 
 .. list-table::
-   :widths: 10 9 50
+   :widths: 10 10 9 50
    :header-rows: 1
 
-   * - **Architecture**
+   * - **Flavor**
+     - **Architecture**
      - **Hyper-V Generation**
      - **URN**
-   * - AMD64
+   * - Server
+     - AMD64
      - Gen2
      - ``Canonical:ubuntu-24_04-lts:server:latest``
-   * - AMD64
+   * - Server
+     - AMD64
      - Gen1
      - ``Canonical:ubuntu-24_04-lts:server-gen1:latest``
-   * - Arm64
+   * - Server
+     - ARM64
      - Gen2
      - ``Canonical:ubuntu-24_04-lts:server-arm64:latest``
+   * - Minimal
+     - AMD64
+     - Gen2
+     - ``Canonical:ubuntu-24_04-lts:minimal:latest``
+   * - Minimal
+     - AMD64
+     - Gen1
+     - ``Canonical:ubuntu-24_04-lts:minimal-gen1:latest``
+   * - Minimal
+     - ARM64
+     - Gen2
+     - ``Canonical:ubuntu-24_04-lts:minimal-arm64:latest``
 
 
 Ubuntu 22.04 LTS - Jammy Jellyfish
@@ -40,21 +56,33 @@ Ubuntu 22.04 LTS - Jammy Jellyfish
 | Quick start (China): `22.04 LTS on Azure China <https://portal.azure.cn/#create/canonical.0001-com-ubuntu-server-jammy22_04-lts-ARM>`_
 
 .. list-table::
-   :widths: 10 9 50
+   :widths: 10 10 9 50
    :header-rows: 1
 
-   * - **Architecture**
+   * - **Flavor**
+     - **Architecture**
      - **Hyper-V Generation**
      - **URN**
-   * - AMD64
+   * - Server
+     - AMD64
      - Gen1
      - ``Canonical:0001-com-ubuntu-server-jammy:22_04-lts:latest``
-   * - AMD64
+   * - Server
+     - AMD64
      - Gen2
      - ``Canonical:0001-com-ubuntu-server-jammy:22_04-lts-gen2:latest``
-   * - Arm64
+   * - Server
+     - ARM64
      - Gen2
      - ``Canonical:0001-com-ubuntu-server-jammy:22_04-lts-arm64:latest``
+   * - Minimal
+     - AMD64
+     - Gen1
+     - ``Canonical:0001-com-ubuntu-minimal-jammy:minimal-22_04-lts:latest``
+   * - Minimal
+     - AMD64
+     - Gen2
+     - ``Canonical:0001-com-ubuntu-minimal-jammy:minimal-22_04-lts-gen2:latest``
 
 Interim releases
 ~~~~~~~~~~~~~~~~
@@ -84,7 +112,7 @@ Ubuntu 25.04 - Plucky Puffin
      - Gen1
      - ``Canonical:ubuntu-25_04:server-gen1:latest``
    * - Server
-     - Arm64
+     - ARM64
      - Gen2
      - ``Canonical:ubuntu-25_04:server-arm64:latest``
    * - Minimal
@@ -96,7 +124,7 @@ Ubuntu 25.04 - Plucky Puffin
      - Gen1
      - ``Canonical:ubuntu-25_04:minimal-gen1:latest``
    * - Minimal
-     - Arm64
+     - ARM64
      - Gen2
      - ``Canonical:ubuntu-25_04:minimal-arm64:latest``
 
@@ -126,7 +154,7 @@ Ubuntu Pro 24.04 LTS - Noble Numbat
    * - AMD64
      - Gen1
      - ``Canonical:ubuntu-24_04-lts:ubuntu-pro-gen1:latest``
-   * - Arm64
+   * - ARM64
      - Gen2
      - ``Canonical:ubuntu-24_04-lts:ubuntu-pro-arm64:latest``
    * - AMD64
@@ -152,7 +180,7 @@ Quick start: `Ubuntu Pro 22.04 LTS on Azure <https://portal.azure.com/#create/ca
    * - AMD64
      - Gen2
      - ``Canonical:0001-com-ubuntu-pro-jammy:pro-22_04-lts-gen2:latest``
-   * - Arm64
+   * - ARM64
      - Gen2
      - ``Canonical:0001-com-ubuntu-pro-jammy:pro-22_04-lts-arm64:latest``
 
@@ -175,7 +203,7 @@ Quick start: `Ubuntu Pro 20.04 LTS on Azure <https://portal.azure.com/#create/ca
    * - AMD64
      - Gen2
      - ``Canonical:0001-com-ubuntu-pro-focal:pro-20_04-lts-gen2:latest``
-   * - Arm64
+   * - ARM64
      - Gen2
      - ``Canonical:0001-com-ubuntu-pro-focal:pro-20_04-lts-arm64:latest``
 
@@ -198,7 +226,7 @@ Quick start: `Ubuntu Pro 18.04 LTS on Azure <https://portal.azure.com/#create/ca
    * - AMD64
      - Gen2
      - ``Canonical:0001-com-ubuntu-pro-bionic:pro-18_04-lts-gen2:latest``
-   * - Arm64
+   * - ARM64
      - Gen2
      - ``Canonical:0001-com-ubuntu-pro-bionic:pro-18_04-lts-arm64:latest``
 
@@ -400,7 +428,7 @@ Quick start: `Ubuntu 24.04 LTS (GB200-Compatible) on Azure <https://portal.azure
    * - **Architecture**
      - **Hyper-V Generation**
      - **URN**
-   * - Arm64
+   * - ARM64
      - Gen2
      - ``Canonical:ubuntu-24_04-lts:specialized-hardware:latest``
 
@@ -416,7 +444,7 @@ Quick start: `Ubuntu Pro 24.04 LTS (GB200-Compatible) on Azure <https://portal.a
    * - **Architecture**
      - **Hyper-V Generation**
      - **URN**
-   * - Arm64
+   * - ARM64
      - Gen2
      - ``Canonical:ubuntu-24_04-lts:ubuntu-pro-specialized-hardware:latest``
 

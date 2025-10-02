@@ -70,7 +70,7 @@ The optimized ``linux-aws`` kernel used in most of the available offerings enabl
 
 * `Elastic Fabric Adapter`_ - which allows high-performance applications to directly access the network adapter and get reliable transport with low-latency. 
 * `Nitro enclaves driver`_ - which gives data processing applications a secure enclave with CPU and memory isolation to prevent data leaks.
-* `AWS Graviton`_ - The arm64 version of the kernel includes several patches to take advantage of the unique features of AWS Graviton native CPUs.
+* `AWS Graviton`_ - The ARM64 version of the kernel includes several patches to take advantage of the unique features of AWS Graviton native CPUs.
 
 
 Appliances and paid-for offerings

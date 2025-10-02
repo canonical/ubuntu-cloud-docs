@@ -1,58 +1,58 @@
 Name,Architecture,Identifier,GovCloud
-Ubuntu Pro Minimal 22.04 LTS with CIS hardening,amd64,``prod-zbdfwzjpx7kfq``,✓
-Ubuntu Pro Minimal 22.04 LTS with CIS hardening (Arm),arm64,``prod-xrjt5gpdpgtz4``,✓
-Minimal Ubuntu Pro 20.04 LTS,amd64,``prod-bhgby3sn457gk``,✓
-Minimal Ubuntu Pro 20.04 LTS,arm64,``prod-lokd3cuzefl64``,✓
-Ubuntu 22.04 LTS,amd64,``prod-lfutkwiaknxsk``,✓
-Ubuntu 22.04 LTS,arm64,``prod-amd2rg3s3i7tc``,✓
-Minimal Ubuntu 22.04 LTS,amd64,``prod-smq32swynllqw``,✓
-Minimal Ubuntu 22.04 LTS,arm64,``prod-zvdejcufto6ps``,✓
-Minimal Ubuntu Pro 22.04 LTS,amd64,``prod-ax3nm4x43w4za``,✓
-Minimal Ubuntu Pro 22.04 LTS,arm64,``prod-rp5bzjdqcbrq2``,✓
-Ubuntu 24.04 LTS,amd64,``prod-ib2w5aw4ynhey``,✓
-Ubuntu 24.04 LTS,arm64,``prod-uovi4c667gqya``,✓
-Minimal Ubuntu 24.04 LTS,amd64,``prod-u7oazfncxktmo``,✓
-Minimal Ubuntu 24.04 LTS,arm64,``prod-umggziwlkgulc``,✓
-Ubuntu 25.04,amd64,``prod-gnnl6xcmpyhiy``,✓
-Ubuntu 25.04,arm64,``prod-xfujpzcumd672``,✓
-Minimal Ubuntu 25.04,amd64,``prod-bw2dyjqg7udoc``,✓
-Minimal Ubuntu 25.04,arm64,``prod-5jxqt4zsjnxzg``,✓
-Ubuntu Pro FIPS 16.04 LTS,amd64,``prod-hykkbajyverq4``,✓
-Ubuntu Pro FIPS 18.04 LTS,amd64,``prod-7izp2xqnddwdc``,✓
-Ubuntu Pro FIPS 20.04 LTS,amd64,``prod-k6fgbnayirmrc``,✓
-Ubuntu Pro FIPS 20.04 LTS (FIPS with updates),amd64,``prod-ibsqi42w6rtey``,✓
-Ubuntu Pro FIPS 22.04 LTS (FIPS with updates),amd64,``prod-y5kejmnu3wodg``,✓
-Ubuntu Pro FIPS 22.04 LTS (FIPS with updates),arm64,``prod-rcuudwwonvpew``,✓
-Ubuntu Pro 22.04 LTS with Real-time Kernel,arm64,``prod-ezodmjvranjew``,✓
-Ubuntu 22.04 LTS for EKS 1.29,amd64,``prod-lg73jq6vy35h2``,✓
-Ubuntu 22.04 LTS for EKS 1.29,arm64,``prod-htjgvopsb6wo2``,✓
-Ubuntu 22.04 LTS for EKS 1.30,amd64,``prod-ju4oliv6acvmu``,✓
-Ubuntu 22.04 LTS for EKS 1.30,arm64,``prod-ju4oliv6acvmu``,✓
-Ubuntu 22.04 LTS for EKS 1.31,amd64,``prod-6cgarsgfcf6pw``,✓
-Ubuntu 22.04 LTS for EKS 1.31,arm64,``prod-37lry2b6efnve``,✓
-Ubuntu 22.04 LTS for EKS 1.32,amd64,``prod-iovuocxl2wqco``,✓
-Ubuntu 22.04 LTS for EKS 1.32,arm64,``prod-qneu3lsj5lxsg``,✓
-Ubuntu 24.04 LTS for EKS 1.31,amd64,``prod-jjmfgr4fqi24i``,✓
-Ubuntu 24.04 LTS for EKS 1.31,arm64,``prod-vu4rwlmwizmb2``,✓
-Ubuntu 24.04 LTS for EKS 1.32,amd64,``prod-apo236yrqs4ve``,✓
-Ubuntu 24.04 LTS for EKS 1.32,arm64,``prod-vboehvlnbsy3e``,✓
-Ubuntu 24.04 LTS for EKS 1.33,amd64,``prod-vipjxy4ycab24``,✓
-Ubuntu 24.04 LTS for EKS 1.33,arm64,``prod-6ekvrmao3h5aq``,✓
-Ubuntu Pro 20.04 LTS for EKS 1.28,amd64,``prod-hqauo4m24unwa``,✓
-Ubuntu Pro 20.04 LTS for EKS 1.28,arm64,``prod-tlw6qfb47lam2``,✓
-Ubuntu Pro 20.04 LTS for EKS 1.29,amd64,``prod-4yrqysyuk6vts``,✓
-Ubuntu Pro 20.04 LTS for EKS 1.29,arm64,``prod-mu642qufmvg5i``,✓
-Ubuntu Pro 22.04 LTS for EKS 1.29,amd64,``prod-zhspprfykjuvy``,✓
-Ubuntu Pro 22.04 LTS for EKS 1.29,arm64,``prod-ixonrj2zphe7a``,✓
-Ubuntu Pro 22.04 LTS for EKS 1.30,amd64,``prod-osdss3jl4ihci``,✓
-Ubuntu Pro 22.04 LTS for EKS 1.30,arm64,``prod-osdss3jl4ihci``,✓
-Ubuntu Pro 22.04 LTS for EKS 1.31,amd64,``prod-mtxapxlqfrxhk``,✓
-Ubuntu Pro 22.04 LTS for EKS 1.31,arm64,``prod-v64fpuhgxrpgm``,✓
-Ubuntu Pro 22.04 LTS for EKS 1.32,amd64,``prod-4xz6karhsfvnm``,✓
-Ubuntu Pro 22.04 LTS for EKS 1.32,arm64,``prod-tjcsrnmgrmqik``,✓
-Ubuntu Pro 24.04 LTS for EKS 1.31,amd64,``prod-7o5ls37u7nr4k``,✓
-Ubuntu Pro 24.04 LTS for EKS 1.31,arm64,``prod-mpcgirphmso2q``,✓
-Ubuntu Pro 24.04 LTS for EKS 1.32,amd64,``prod-q5t3gny3wvld4``,✓
-Ubuntu Pro 24.04 LTS for EKS 1.32,arm64,``prod-gib6hcvd53qe4``,✓
-Ubuntu Pro 24.04 LTS for EKS 1.33,amd64,``prod-iw7flxdfclfke``,✓
-Ubuntu Pro 24.04 LTS for EKS 1.33,arm64,``prod-ii4giewcdfc6a``,✓
+Ubuntu Pro Minimal 22.04 LTS with CIS hardening,AMD64,``prod-zbdfwzjpx7kfq``,✓
+Ubuntu Pro Minimal 22.04 LTS with CIS hardening,ARM64,``prod-xrjt5gpdpgtz4``,✓
+Minimal Ubuntu Pro 20.04 LTS,AMD64,``prod-bhgby3sn457gk``,✓
+Minimal Ubuntu Pro 20.04 LTS,ARM64,``prod-lokd3cuzefl64``,✓
+Ubuntu 22.04 LTS,AMD64,``prod-lfutkwiaknxsk``,✓
+Ubuntu 22.04 LTS,ARM64,``prod-amd2rg3s3i7tc``,✓
+Minimal Ubuntu 22.04 LTS,AMD64,``prod-smq32swynllqw``,✓
+Minimal Ubuntu 22.04 LTS,ARM64,``prod-zvdejcufto6ps``,✓
+Minimal Ubuntu Pro 22.04 LTS,AMD64,``prod-ax3nm4x43w4za``,✓
+Minimal Ubuntu Pro 22.04 LTS,ARM64,``prod-rp5bzjdqcbrq2``,✓
+Ubuntu 24.04 LTS,AMD64,``prod-ib2w5aw4ynhey``,✓
+Ubuntu 24.04 LTS,ARM64,``prod-uovi4c667gqya``,✓
+Minimal Ubuntu 24.04 LTS,AMD64,``prod-u7oazfncxktmo``,✓
+Minimal Ubuntu 24.04 LTS,ARM64,``prod-umggziwlkgulc``,✓
+Ubuntu 25.04,AMD64,``prod-gnnl6xcmpyhiy``,✓
+Ubuntu 25.04,ARM64,``prod-xfujpzcumd672``,✓
+Minimal Ubuntu 25.04,AMD64,``prod-bw2dyjqg7udoc``,✓
+Minimal Ubuntu 25.04,ARM64,``prod-5jxqt4zsjnxzg``,✓
+Ubuntu Pro FIPS 16.04 LTS,AMD64,``prod-hykkbajyverq4``,✓
+Ubuntu Pro FIPS 18.04 LTS,AMD64,``prod-7izp2xqnddwdc``,✓
+Ubuntu Pro FIPS 20.04 LTS,AMD64,``prod-k6fgbnayirmrc``,✓
+Ubuntu Pro FIPS 20.04 LTS (FIPS with updates),AMD64,``prod-ibsqi42w6rtey``,✓
+Ubuntu Pro FIPS 22.04 LTS (FIPS with updates),AMD64,``prod-y5kejmnu3wodg``,✓
+Ubuntu Pro FIPS 22.04 LTS (FIPS with updates),ARM64,``prod-rcuudwwonvpew``,✓
+Ubuntu Pro 22.04 LTS with Real-time Kernel,ARM64,``prod-ezodmjvranjew``,✓
+Ubuntu 22.04 LTS for EKS 1.29,AMD64,``prod-lg73jq6vy35h2``,✓
+Ubuntu 22.04 LTS for EKS 1.29,ARM64,``prod-htjgvopsb6wo2``,✓
+Ubuntu 22.04 LTS for EKS 1.30,AMD64,``prod-ju4oliv6acvmu``,✓
+Ubuntu 22.04 LTS for EKS 1.30,ARM64,``prod-ju4oliv6acvmu``,✓
+Ubuntu 22.04 LTS for EKS 1.31,AMD64,``prod-6cgarsgfcf6pw``,✓
+Ubuntu 22.04 LTS for EKS 1.31,ARM64,``prod-37lry2b6efnve``,✓
+Ubuntu 22.04 LTS for EKS 1.32,AMD64,``prod-iovuocxl2wqco``,✓
+Ubuntu 22.04 LTS for EKS 1.32,ARM64,``prod-qneu3lsj5lxsg``,✓
+Ubuntu 24.04 LTS for EKS 1.31,AMD64,``prod-jjmfgr4fqi24i``,✓
+Ubuntu 24.04 LTS for EKS 1.31,ARM64,``prod-vu4rwlmwizmb2``,✓
+Ubuntu 24.04 LTS for EKS 1.32,AMD64,``prod-apo236yrqs4ve``,✓
+Ubuntu 24.04 LTS for EKS 1.32,ARM64,``prod-vboehvlnbsy3e``,✓
+Ubuntu 24.04 LTS for EKS 1.33,AMD64,``prod-vipjxy4ycab24``,✓
+Ubuntu 24.04 LTS for EKS 1.33,ARM64,``prod-6ekvrmao3h5aq``,✓
+Ubuntu Pro 20.04 LTS for EKS 1.28,AMD64,``prod-hqauo4m24unwa``,✓
+Ubuntu Pro 20.04 LTS for EKS 1.28,ARM64,``prod-tlw6qfb47lam2``,✓
+Ubuntu Pro 20.04 LTS for EKS 1.29,AMD64,``prod-4yrqysyuk6vts``,✓
+Ubuntu Pro 20.04 LTS for EKS 1.29,ARM64,``prod-mu642qufmvg5i``,✓
+Ubuntu Pro 22.04 LTS for EKS 1.29,AMD64,``prod-zhspprfykjuvy``,✓
+Ubuntu Pro 22.04 LTS for EKS 1.29,ARM64,``prod-ixonrj2zphe7a``,✓
+Ubuntu Pro 22.04 LTS for EKS 1.30,AMD64,``prod-osdss3jl4ihci``,✓
+Ubuntu Pro 22.04 LTS for EKS 1.30,ARM64,``prod-osdss3jl4ihci``,✓
+Ubuntu Pro 22.04 LTS for EKS 1.31,AMD64,``prod-mtxapxlqfrxhk``,✓
+Ubuntu Pro 22.04 LTS for EKS 1.31,ARM64,``prod-v64fpuhgxrpgm``,✓
+Ubuntu Pro 22.04 LTS for EKS 1.32,AMD64,``prod-4xz6karhsfvnm``,✓
+Ubuntu Pro 22.04 LTS for EKS 1.32,ARM64,``prod-tjcsrnmgrmqik``,✓
+Ubuntu Pro 24.04 LTS for EKS 1.31,AMD64,``prod-7o5ls37u7nr4k``,✓
+Ubuntu Pro 24.04 LTS for EKS 1.31,ARM64,``prod-mpcgirphmso2q``,✓
+Ubuntu Pro 24.04 LTS for EKS 1.32,AMD64,``prod-q5t3gny3wvld4``,✓
+Ubuntu Pro 24.04 LTS for EKS 1.32,ARM64,``prod-gib6hcvd53qe4``,✓
+Ubuntu Pro 24.04 LTS for EKS 1.33,AMD64,``prod-iw7flxdfclfke``,✓
+Ubuntu Pro 24.04 LTS for EKS 1.33,ARM64,``prod-ii4giewcdfc6a``,✓
