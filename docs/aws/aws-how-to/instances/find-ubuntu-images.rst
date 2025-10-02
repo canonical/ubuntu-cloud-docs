@@ -282,7 +282,7 @@ You can also add Canonical's OwnerId to allow list:
 
    aws ec2 modify-allowed-images --image-owner $OWNER_ID
 
-By running the command above, you only allow Canonical ubuntu images and ensure that instances can only be launched with verified, official images.
+By running the command above, you only allow Canonical Ubuntu images and ensure that instances can only be launched with verified, official images.
 
 See the AWS announcement for more details on the `Allowed AMIs feature`_.
 
