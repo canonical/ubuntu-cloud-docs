@@ -155,7 +155,7 @@ For more information on Ubuntu Pro and how to get it, refer to :doc:`get-ubuntu-
 
 
 .. _`official Azure documentation`: https://learn.microsoft.com/en-us/azure/virtual-machines/linux/quick-create-cli
-.. _`Azure Command-Line Interface`: https://learn.microsoft.com/en-us/cli/azure/
+.. _`Azure Command-Line Interface`: https://learn.microsoft.com/en-us/cli/azure/?view=azure-cli-latest
 .. _`group create`: https://learn.microsoft.com/en-us/cli/azure/group?view=azure-cli-latest#az-group-create
 .. _`vm create`: https://learn.microsoft.com/en-us/cli/azure/vm?view=azure-cli-latest#az-vm-create
 .. _`supports CVM on Azure`: https://learn.microsoft.com/en-us/azure/confidential-computing/virtual-machine-solutions#sizes

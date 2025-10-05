@@ -78,11 +78,11 @@ contributions, suggestions, fixes and constructive feedback.
    azure-how-to/contribute-to-these-docs
 
 
-.. _SQL Server on Ubuntu Pro: https://azuremarketplace.microsoft.com/en-us/marketplace/apps/microsoftsqlserver.sql2019-ubuntupro2004?tab=Overview
+.. _SQL Server on Ubuntu Pro: https://marketplace.microsoft.com/en-us/product/virtual-machines/microsoftsqlserver.sql2019-ubuntupro2004?tab=Overview
 .. _AMD-based Confidential VMs: https://techcommunity.microsoft.com/blog/azureconfidentialcomputingblog/azure-confidential-vms-dcasv5ecasv5-using-amd-sev-snp-processors-are-now-general/2993530
 .. _Chiseled .Net images: https://devblogs.microsoft.com/dotnet/dotnet-6-is-now-in-ubuntu-2204
 .. _Get support: https://ubuntu.com/cloud/public-cloud
 .. _Join our online chat: https://discourse.ubuntu.com/c/project/azure/178
 .. _`Discuss on Matrix`: https://matrix.to/#/#ubuntu-cloud:ubuntu.com
 .. _Talk to us about Ubuntu on Azure: https://ubuntu.com/azure#get-in-touch
-.. _Code of conduct: https://ubuntu.com/community/ethos/code-of-conduct
+.. _Code of conduct: https://ubuntu.com/community/docs/ethos/code-of-conduct
