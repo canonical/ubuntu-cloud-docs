@@ -181,7 +181,7 @@ You can use the third notebook (03-spot-retries-workload) to try this out. Here 
          'url': 'https://storage.googleapis.com/ml-pipeline-playground/iris-csv-files.tar.gz'
       })
 
-.. _`Charmed Kubeflow`: https://charmed-kubeflow.io
+.. _`Charmed Kubeflow`: https://canonical.com/mlops/kubeflow
 .. _`Azure spot instances`: https://azure.microsoft.com/en-gb/products/virtual-machines/spot/
 .. _`Kubeflow-examples`: https://github.com/Barteus/kubeflow-examples
 .. _`Install Kubeflow on AKS`: https://charmed-kubeflow.io/docs/install-on-aks
