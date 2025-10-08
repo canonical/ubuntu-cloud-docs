@@ -243,12 +243,14 @@ Containerd
 Coturn
 Cryptographic
 Devel
+Discourse
 Endian
 Endianness
 Fluentd
 GraphQL
 HAProxy
 HAcluster
+HomeBrew
 Imagecraft
 Infiniband
 Influxdb
@@ -316,8 +318,10 @@ armhf
 autopkgtest
 cURL
 containeragent
+coreutils
 dqlite
 dsc
+gpg
 init
 jQuery
 juju

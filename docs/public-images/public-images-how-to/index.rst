@@ -16,6 +16,7 @@ Guides related to QCOW images:
 
 Other miscellaneous guides:
 
+- :ref:`verify-image-checksum`
 - :ref:`use-local-cloud-init-ds`
 - :ref:`run-an-ova-using-virtualbox`
 
@@ -27,5 +28,6 @@ Other miscellaneous guides:
    Run a Vagrant box<run-a-vagrant-box>
    Launch QCOW images using libvirt<launch-with-libvirt>
    Launch QCOW images using QEMU<launch-qcow-with-qemu>
+   Verify an image checksum<verify-image-checksum>
    Create a local cloud-init datasource<use-local-cloud-init-ds>
    Run an OVA using VirtualBox<run-an-ova-using-virtualbox>
