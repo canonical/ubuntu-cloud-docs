@@ -25,7 +25,7 @@ Installing kernels, custom drivers and configuring network cards:
 Performing upgrades and automating them:
 
 * :doc:`Perform in-place upgrade to Ubuntu Pro <upgrade-in-place-from-lts-to-pro>`
-* :doc:`Upgrade from Focal to Jammy <upgrade-from-focal-to-jammy>`
+* :doc:`Upgrade Ubuntu LTS release <upgrade-ubuntu-lts-release>`
 * :doc:`Upgrade to Ubuntu Pro at scale using tokens with SSM <upgrade-to-ubuntu-pro-at-scale-using-tokens-with-ssm>`
 * :doc:`Configure automated updates <automatically-update-ubuntu-instances>`
 
@@ -50,7 +50,7 @@ Deploying Canonical Products:
    Install NVIDIA drivers <install-nvidia-drivers>
    Configure multiple NICs <automatically-setup-multiple-nics>
    In-place upgrade to Ubuntu Pro <upgrade-in-place-from-lts-to-pro>
-   Upgrade from Focal to Jammy <upgrade-from-focal-to-jammy>
+   Upgrade Ubuntu LTS release <upgrade-ubuntu-lts-release>
    Upgrade to Ubuntu Pro at scale using tokens with SSM <upgrade-to-ubuntu-pro-at-scale-using-tokens-with-ssm>
    Configure automated updates <automatically-update-ubuntu-instances>
    Deploy Charmed Kubernetes <deploy-charmed-kubernetes-on-ubuntu-pro>
