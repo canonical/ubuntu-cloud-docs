@@ -28,7 +28,7 @@ Install kernels and custom drivers.
 Perform upgrades and set up automated updates.
 
 * :doc:`Perform in-place upgrade to Ubuntu Pro <instances/upgrade-in-place-from-lts-to-pro>`
-* :doc:`Upgrade from Focal to Jammy <instances/upgrade-from-focal-to-jammy>`
+* :doc:`Upgrade Ubuntu LTS release <instances/upgrade-ubuntu-lts-release>`
 * :doc:`Upgrade to Ubuntu Pro at scale using tokens with SSM <instances/upgrade-to-ubuntu-pro-at-scale-using-tokens-with-ssm>`
 * :doc:`Configure automated updates <instances/automatically-update-ubuntu-instances>`
 
