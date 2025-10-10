@@ -17,7 +17,7 @@ Image retention policy
    :start-after: Start: Daily vs release images
    :end-before: End: Daily vs release images
 
-For more details about these image types, check out our documentation of :doc:`image release types <all-clouds:all-clouds-explanation/release-types>`, and to get a list of these images on AWS, refer to: :doc:`../aws-how-to/instances/find-ubuntu-images`. In general, daily images are deleted, and release images are deprecated. Regardless of serial limits, images newer than 90 days are exempt from the policy even if they exceed the number of serials we usually keep.
+For more details about these image types, check out our documentation of :doc:`image release types <all-clouds:all-clouds-explanation/release-types>`, and to get a list of these images on AWS, refer to: :doc:`../aws-how-to/instances/find-ubuntu-images`. In general, daily images are deleted, and release images are deprecated. Each image type is retained for a defined period, with a minimum number of recent images always preserved.
 
 The retention policy can be summarized as follows:
 
@@ -30,7 +30,7 @@ The retention policy can be summarized as follows:
      - **Release Images**
    * - Interim Release
      - Active 
-     - Delete all *but* the last 3 serials, unless they were created in the last 90 days
+     - Delete all *but* the last 3 serials, unless they were created in the last 15 days
      - Deprecate all except last 3 serials, unless they were created in the last 90 days
    * - 
      - EOL*
@@ -42,8 +42,8 @@ The retention policy can be summarized as follows:
      - Privatize all except latest serial
    * - LTS Release
      - Active
-     - Delete all *but* the last 3 serials, unless they were created in the last 90 days
-     - Deprecate all except last 3 serials, unless they were created in the last 90 days 
+     - Delete all *but* the last 3 serials, unless they were created in the last 30 days
+     - Deprecate all except last 5 serials, unless they were created in the last 90 days 
    * - 
      - EOSS**
      - Delete all images
@@ -59,7 +59,7 @@ The retention policy can be summarized as follows:
    * - 
      - EOL*
      - N/A
-     - Delete all except last 3 serials
+     - Delete all except last 3 serials, unless they were created in the last 90 days
 
 where:
   - **EOL** refers to when an interim Ubuntu release (for example, Lunar Lobster 23.04) has reached end-of-life `and will no longer enjoy support <https://ubuntu.com/about/release-cycle/>`_, or when EKS is `no longer supported by AWS`_.
