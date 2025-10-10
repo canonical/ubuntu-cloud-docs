@@ -17,6 +17,10 @@ Ubuntu 25.04,AMD64,``prod-gnnl6xcmpyhiy``,✓
 Ubuntu 25.04,ARM64,``prod-xfujpzcumd672``,✓
 Minimal Ubuntu 25.04,AMD64,``prod-bw2dyjqg7udoc``,✓
 Minimal Ubuntu 25.04,ARM64,``prod-5jxqt4zsjnxzg``,✓
+Ubuntu 25.10,AMD64,``prod-dbwuezdrdb7iy``,✓
+Ubuntu 25.10,ARM64,``prod-ai5xvos27zaaa``,✓
+Minimal Ubuntu 25.10,AMD64,``prod-ubgcoqmfkuwdc``,✓
+Minimal Ubuntu 25.10,ARM64,``prod-3xdacybxd6mua``,✓
 Ubuntu Pro FIPS 16.04 LTS,AMD64,``prod-hykkbajyverq4``,✓
 Ubuntu Pro FIPS 18.04 LTS,AMD64,``prod-7izp2xqnddwdc``,✓
 Ubuntu Pro FIPS 20.04 LTS,AMD64,``prod-k6fgbnayirmrc``,✓
