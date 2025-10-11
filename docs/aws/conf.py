@@ -79,8 +79,8 @@ redirects = {
         "../instances/find-ubuntu-images/",
     "aws-how-to/launch-ubuntu-desktop":
         "../instances/launch-ubuntu-desktop/",
-    "aws-how-to/upgrade-from-focal-to-jammy":
-        "../instances/upgrade-from-focal-to-jammy/",
+    "aws-how-to/upgrade-ubuntu-lts-release":
+        "../instances/upgrade-ubuntu-lts-release/",
 
     "aws-how-to/deploy-charmed-kubernetes-on-ubuntu-pro":
         "../kubernetes/deploy-charmed-kubernetes-on-ubuntu-pro/",
