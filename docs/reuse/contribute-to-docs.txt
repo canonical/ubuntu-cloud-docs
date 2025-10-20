@@ -28,7 +28,9 @@ Use the :guilabel:`Give feedback` button at the top of any page to create a GitH
 New content
 -----------
 
-When adding new content, it's easier to work with the documentation on your local machine. For this, you'll need ``make`` and ``python3`` installed on your system. Once you've made your changes, ensure all checks have passed and everything looks satisfactory before submitting a pull request (PR).
+When adding new content, it's easier to work with the documentation on your local machine. Once the content is created, ensure that all checks pass and things looks satisfactory, before submitting a pull request (PR). 
+
+As a prerequisite, you'll need ``make`` and ``python3`` installed on your system. 
 
 Download and install the docs
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -148,6 +150,38 @@ You can create new pages by following these steps:
 
 
 End: How to contribute (continued)
+
+==============================================================
+
+Start: Maintain content
+
+Maintaining Content
+-------------------
+
+PR review
+~~~~~~~~~
+Once a PR is created, it will be reviewed by:
+
+* relevant team members for technical accuracy and 
+* the team's Technical Author (TA) for verifying adherence to documentation standards
+
+
+Periodic content review
+~~~~~~~~~~~~~~~~~~~~~~~
+
+A periodic review of the docs is necessary to ensure its accuracy. For this:
+
+* The TA adds every new page to a maintenance list with details such as:
+
+  - `Date checked`: The latest date on which the page was last reviewed
+  - `Link to the page`: A URL to the page
+  - `Owner`: The person who is able to verify the page's accuracy
+  - `Specific content to be verified` (Optional)
+
+* The TA has regular 1:1 meetings with every `Owner`. Any page that hasn't been checked for accuracy in the past 6 months is verified. If the verification cannot be completed during the meeting, a follow-up ticket is created for the same.
+
+
+End: Maintain content
 
 ==============================================================
 
