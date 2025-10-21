@@ -18,16 +18,23 @@ and features needed to run specific workloads.
 In this documentation
 ---------------------
 
-..  grid:: 1 1 2 2
+..  grid:: 1 1 1 1
    :padding: 0
-
-   .. grid-item:: :doc:`Explanation <oracle-explanation/index>`
-
-       **Discussion and clarification** of key topics, such as our offerings on Oracle Cloud, Ubuntu on OKE nodes and an overview of available security features. 
 
    ..  grid-item:: :doc:`How-to guides <oracle-how-to/index>`
 
       **Step-by-step guides** covering key operations and common tasks related to using Ubuntu images on Oracle Cloud.
+
+.. grid:: 1 1 2 2
+   :padding: 0
+
+   .. grid-item:: :doc:`Explanation <oracle-explanation/index>`
+
+      **Discussion and clarification** of key topics, such as our offerings on Oracle Cloud, Ubuntu on OKE nodes and an overview of available security features. 
+
+   .. grid-item:: :doc:`Ubuntu on OKE - A reference <oracle-reference/ubuntu-availability-on-oke>`
+
+      **Reference guide** about the availability of Ubuntu on OKE.
 
 
 

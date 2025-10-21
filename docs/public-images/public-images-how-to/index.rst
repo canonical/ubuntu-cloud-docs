@@ -4,17 +4,17 @@ How-to guides
 =============
 These guides provide instructions for performing basic operations related to different types of public Ubuntu cloud images.
 
-Guides related to vagrant:
+Building and running vagrant images:
 
 - :ref:`vagrant-bartender`
 - :ref:`run-a-vagrant-box`
 
-Guides related to QCOW images:
+Launching QCOW images:
 
 - :ref:`launch-libvirt`
 - :ref:`qcow-qemu`
 
-Other miscellaneous guides:
+Other miscellaneous guides about verifying an image checksum, using a cloud-init datasource and running an OVA: 
 
 - :ref:`verify-image-checksum`
 - :ref:`use-local-cloud-init-ds`
