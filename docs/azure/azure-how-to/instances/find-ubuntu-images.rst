@@ -52,8 +52,8 @@ Ubuntu 24.04 LTS - Noble Numbat
 Ubuntu 22.04 LTS - Jammy Jellyfish
 ++++++++++++++++++++++++++++++++++
 
-| Quick start: `22.04 LTS on Azure <https://portal.azure.com/#create/canonical.0001-com-ubuntu-server-jammy22_04-lts-ARM>`_
-| Quick start (China): `22.04 LTS on Azure China <https://portal.azure.cn/#create/canonical.0001-com-ubuntu-server-jammy22_04-lts-ARM>`_
+| Quick start: `22.04 LTS on Azure <https://portal.azure.com/#create/canonical.ubuntu-22_04-ltsserver>`_
+| Quick start (China): `22.04 LTS on Azure China <https://portal.azure.cn/#create/canonical.ubuntu-22_04-ltsserver>`_
 
 .. list-table::
    :widths: 10 10 9 50
@@ -65,16 +65,16 @@ Ubuntu 22.04 LTS - Jammy Jellyfish
      - **URN**
    * - Server
      - AMD64
-     - Gen1
-     - ``Canonical:0001-com-ubuntu-server-jammy:22_04-lts:latest``
+     - Gen2
+     - ``Canonical:ubuntu-22_04-lts:server:latest``
    * - Server
      - AMD64
-     - Gen2
-     - ``Canonical:0001-com-ubuntu-server-jammy:22_04-lts-gen2:latest``
+     - Gen1
+     - ``Canonical:ubuntu-22_04-lts:server-gen1:latest``
    * - Server
      - ARM64
      - Gen2
-     - ``Canonical:0001-com-ubuntu-server-jammy:22_04-lts-arm64:latest``
+     - ``Canonical:ubuntu-22_04-lts:server-arm64:latest``
    * - Minimal
      - AMD64
      - Gen1
@@ -157,14 +157,12 @@ Ubuntu Pro 24.04 LTS - Noble Numbat
    * - ARM64
      - Gen2
      - ``Canonical:ubuntu-24_04-lts:ubuntu-pro-arm64:latest``
-   * - AMD64
-     - Gen2
-     - ``Canonical:ubuntu-24_04-lts:ubuntu-pro-cvm:latest``
+
 
 Ubuntu Pro 22.04 LTS - Jammy Jellyfish
 ++++++++++++++++++++++++++++++++++++++
 
-Quick start: `Ubuntu Pro 22.04 LTS on Azure <https://portal.azure.com/#create/canonical.0001-com-ubuntu-pro-jammypro-22_04-lts>`_
+Quick start: `Ubuntu Pro 22.04 LTS on Azure <https://portal.azure.com/#create/canonical.ubuntu-22_04-ltsubuntu-pro>`_
 
 
 .. list-table::
@@ -175,14 +173,14 @@ Quick start: `Ubuntu Pro 22.04 LTS on Azure <https://portal.azure.com/#create/ca
      - **Hyper-V Generation**
      - **URN**
    * - AMD64
-     - Gen1
-     - ``Canonical:0001-com-ubuntu-pro-jammy:pro-22_04-lts:latest``
+     - Gen2
+     - ``Canonical:ubuntu-22_04-lts:ubuntu-pro:latest``
    * - AMD64
+     - Gen1
+     - ``Canonical:ubuntu-22_04-lts:ubuntu-pro-gen1:latest``
+   * - Arm64
      - Gen2
-     - ``Canonical:0001-com-ubuntu-pro-jammy:pro-22_04-lts-gen2:latest``
-   * - ARM64
-     - Gen2
-     - ``Canonical:0001-com-ubuntu-pro-jammy:pro-22_04-lts-arm64:latest``
+     - ``Canonical:ubuntu-22_04-lts:ubuntu-pro-arm64:latest``
 
 
 Ubuntu Pro 20.04 LTS - Focal Fossa
@@ -259,8 +257,8 @@ Ubuntu CVM 24.04 LTS - Noble Numbat
 Ubuntu CVM 22.04 LTS - Jammy Jellyfish
 ++++++++++++++++++++++++++++++++++++++
 
-| Quick start: `Ubuntu CVM 22.04 LTS on Azure <https://portal.azure.com/#create/canonical.0001-com-ubuntu-confidential-vm-jammy22_04-lts-cvm>`_
-| Quick start (China): `Ubuntu CVM 22.04 LTS on Azure China <https://portal.azure.cn/#create/canonical.0001-com-ubuntu-confidential-vm-jammy22_04-lts-cvm>`_
+| Quick start: `Ubuntu CVM 22.04 LTS on Azure <https://portal.azure.com/#create/canonical.ubuntu-22_04-ltscvm>`_
+| Quick start (China): `Ubuntu CVM 22.04 LTS on Azure China <https://portal.azure.cn/#create/canonical.ubuntu-22_04-ltscvm>`_
 
 .. list-table::
    :widths: 10 9 50
@@ -271,23 +269,10 @@ Ubuntu CVM 22.04 LTS - Jammy Jellyfish
      - **URN**
    * - AMD64
      - Gen2
-     - ``Canonical:0001-com-ubuntu-confidential-vm-jammy:22_04-lts-cvm:latest``
-
-Ubuntu Pro CVM 22.04 LTS - Jammy Jellyfish
-++++++++++++++++++++++++++++++++++++++++++
-
-| Quick start: `Ubuntu Pro CVM 22.04 LTS on Azure <https://portal.azure.com/#create/canonical.0001-com-ubuntu-pro-confidential-vm-jammypro-22_04-lts-cvm>`_
-
-.. list-table::
-   :widths: 10 9 50
-   :header-rows: 1
-
-   * - **Architecture**
-     - **Hyper-V Generation**
-     - **URN**
+     - ``Canonical:ubuntu-22_04-lts:cvm:latest``
    * - AMD64
      - Gen2
-     - ``Canonical:0001-com-ubuntu-pro-confidential-vm-jammy:pro-22_04-lts-cvm:latest``
+     - ``Canonical:ubuntu-22_04-lts:ubuntu-pro-cvm:latest``
 
 
 FIPS compliant offers
@@ -298,7 +283,7 @@ To learn more about FIPS: `FIPS for Ubuntu <https://ubuntu.com/security/certific
 Ubuntu Pro FIPS 22.04 LTS - Jammy Jellyfish
 +++++++++++++++++++++++++++++++++++++++++++
 
-Quick start: `Ubuntu Pro FIPS 22.04 LTS on Azure <https://portal.azure.com/#create/canonical.0001-com-ubuntu-pro-jammy-fipspro-fips-22_04>`_
+Quick start: `Ubuntu Pro FIPS 22.04 LTS on Azure <https://portal.azure.com/#create/canonical.ubuntu-22_04-ltsubuntu-pro-fips>`_
 
 .. list-table::
    :widths: 10 9 50
@@ -308,11 +293,11 @@ Quick start: `Ubuntu Pro FIPS 22.04 LTS on Azure <https://portal.azure.com/#crea
      - **Hyper-V Generation**
      - **URN**
    * - AMD64
-     - Gen1
-     - ``Canonical:0001-com-ubuntu-pro-jammy-fips:pro-fips-22_04-gen1:latest``
-   * - AMD64
      - Gen2
-     - ``Canonical:0001-com-ubuntu-pro-jammy-fips:pro-fips-22_04:latest``
+     - ``Canonical:ubuntu-22_04-lts:ubuntu-pro-fips:latest``
+   * - AMD64
+     - Gen1
+     - ``Canonical:ubuntu-22_04-lts:ubuntu-pro-fips-gen1:latest``
 
 
 Ubuntu Pro FIPS 20.04 LTS - Focal Fossa
@@ -363,8 +348,8 @@ To learn more about CIS compliance: `CIS compliance with Ubuntu LTS <https://ubu
 Ubuntu Minimal Pro CIS 22.04 LTS - Jammy Jellyfish
 ++++++++++++++++++++++++++++++++++++++++++++++++++
 
-| Quick start (CIS Profile Level 1 Server): `Ubuntu Pro CIS Level 1 22.04 LTS on Azure  <https://portal.azure.com/#create/canonical.0001-com-ubuntu-pro-minimal-cis-jammypro-cis-minimal-22_04-level-1>`_
-| Quick start (CIS Profile Level 2 Server): `Ubuntu Pro CIS Level 2 22.04 LTS on Azure  <https://portal.azure.com/#create/canonical.0001-com-ubuntu-pro-minimal-cis-jammypro-cis-minimal-22_04-level-2>`_
+| Quick start (CIS Profile Level 1 Server): `Ubuntu Pro CIS Level 1 22.04 LTS on Azure  <https://portal.azure.com/#create/canonical.ubuntu-22_04-ltsubuntu-pro-minimal-cis-level-1>`_
+| Quick start (CIS Profile Level 2 Server): `Ubuntu Pro CIS Level 2 22.04 LTS on Azure  <https://portal.azure.com/#create/canonical.ubuntu-22_04-ltsubuntu-pro-minimal-cis-level-2>`_
 
 .. list-table::
    :widths: 10 10 9 50
@@ -376,20 +361,20 @@ Ubuntu Minimal Pro CIS 22.04 LTS - Jammy Jellyfish
      - **URN**
    * - AMD64
      - cis_level1_server
-     - Gen1
-     - ``Canonical:0001-com-ubuntu-pro-minimal-cis-jammy:pro-cis-minimal-22_04-level-1-gen1:latest``
+     - Gen2
+     - ``Canonical:ubuntu-22_04-lts:ubuntu-pro-minimal-cis-level-1:latest``
    * - AMD64
      - cis_level1_server
+     - Gen1
+     - ``Canonical:ubuntu-22_04-lts:ubuntu-pro-minimal-cis-level-1-gen1:latest``
+   * - AMD64
+     - cis_level2_server
      - Gen2
-     - ``Canonical:0001-com-ubuntu-pro-minimal-cis-jammy:pro-cis-minimal-22_04-level-1:latest``
+     - ``Canonical:ubuntu-22_04-lts:ubuntu-pro-minimal-cis-level-2:latest``
    * - AMD64
      - cis_level2_server
      - Gen1
-     - ``Canonical:0001-com-ubuntu-pro-minimal-cis-jammy:pro-cis-minimal-22_04-level-2-gen1:latest``
-   * - AMD64
-     - cis_level2_server
-     - Gen2
-     - ``Canonical:0001-com-ubuntu-pro-minimal-cis-jammy:pro-cis-minimal-22_04-level-2:latest``
+     - ``Canonical:ubuntu-22_04-lts:ubuntu-pro-minimal-cis-level-2-gen1:latest``
 
 Ubuntu Minimal Pro CIS 20.04 LTS - Focal Fossa
 ++++++++++++++++++++++++++++++++++++++++++++++
