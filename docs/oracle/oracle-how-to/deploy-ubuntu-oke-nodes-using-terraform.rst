@@ -156,11 +156,11 @@ to get as output:
     No resources found
 
 
-OKE offers two different node types to add to the cluster, `Managed <managed-nodes-docs_>`_ and `Self-Managed <self-managed-nodes-docs_>`_. From an Ubuntu OKE node perspective, the differences are regarding the ``user-data`` that is provided to the nodes through ``cloud-init`` and how the nodes are provisioned -- node pools for Managed and instances for Self-Managed.
+OKE offers two different node types to add to the cluster, `managed <managed-nodes-docs_>`_ and `self-managed <self-managed-nodes-docs_>`_. From an Ubuntu OKE node perspective, the differences are regarding the ``user-data`` that is provided to the nodes through ``cloud-init`` and how the nodes are provisioned -- node pools for managed and instances for self-managed.
 
 These differences are illustrated in the two ``.yaml`` files present in the ``user-data`` folder of the Terraform example.
 
-The Managed nodes ``user-data`` is quite simple:
+The managed nodes ``user-data`` is quite simple:
 
 .. code:: yaml
    
@@ -169,7 +169,7 @@ The Managed nodes ``user-data`` is quite simple:
     runcmd:
     - oke bootstrap
 
-While the Self-Managed ``user-data`` requires variable substitution from Terraform for the cluster certificate and private control plane IP:
+While the self-managed ``user-data`` requires variable substitution from Terraform for the cluster certificate and private control plane IP:
 
 .. code:: yaml
 
@@ -200,7 +200,7 @@ To launch Ubuntu OKE nodes of these types, in ``terraform.tfvars``, set the vari
 
 .. note::
 
-    Both node types can be enabled independently, therefore you could have just Self-Managed, Managed or both.
+    Both node types can be enabled independently, therefore you could have just self-managed, managed or both.
 
 Once these variables are set, the next time you run ``terraform apply``, Terraform will attempt to update the state and create the nodes.
 

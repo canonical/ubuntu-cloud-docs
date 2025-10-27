@@ -17,7 +17,7 @@ You'll need:
 
 - ``kubectl`` installed.
 
-- `Domain`_, `Dynamic Group and Policy`_ configured (Self-Managed only). 
+- `Domain`_, `Dynamic Group and Policy`_ configured (for self-managed nodes only). 
 
 End: Intro and prereqs
 
@@ -110,7 +110,7 @@ Once your tenancy has been enabled for the LA, you will be able to list the imag
             runcmd:
             - oke bootstrap
         
-        For Self-Managed ``user-data``, use the following with appropriate variable substitutions for the cluster certificate (``cluster_ca_cert``) and private control plane IP (``api_server_endpoint``):
+        For self-managed ``user-data``, use the following with appropriate variable substitutions for the cluster certificate (``cluster_ca_cert``) and private control plane IP (``api_server_endpoint``):
         
         .. code:: yaml
         
