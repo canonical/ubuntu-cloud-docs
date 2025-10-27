@@ -1,5 +1,5 @@
 Deploy Ubuntu OKE nodes using Oracle Cloud Console
-================================================================
+==================================================
 
 .. Introduction to Ubuntu OKE node
 
@@ -9,10 +9,10 @@ Ubuntu images are available for OKE worker nodes, with support for a select numb
 Prerequisites
 -------------
 
-You’ll need:
+You'll need:
 
 - Oracle Cloud compartment to create the nodes.
-- `Domain`_, `Dynamic Group and Policy`_ configured (Self-Managed only).
+- `Domain`_, `Dynamic Group and Policy`_ configured (for self-managed nodes only).
 
 .. include:: ../../reuse/OKE-nodes.txt
    :start-after: Start: Get Ubuntu image access
@@ -25,77 +25,62 @@ Create an OKE cluster using Oracle Cloud Console
 
 To create an OKE cluster from the Oracle Cloud Console:
 
-1. In the Oracle Cloud Console, go to **Kubernetes Clusters (OKE)**.
-2. Click **Create cluster**. You will see two options:
+In the Oracle Cloud Console, search for **Kubernetes Clusters (OKE)**, and then select :guilabel:`Create cluster`. You'll see two options:
 
-    - **Quick create**: Creates a new cluster and all required network resources automatically (VCN, gateways, subnets, node pool, etc.). Recommended for new environments.
-    - **Custom create**: Let's you use existing network resources or customize the setup. Choose this if you need to integrate with existing VCNs or have specific network requirements.
+- **Quick create**: Creates a new cluster and all required network resources automatically (VCN, gateways, subnets, node pool, etc.). It is recommended for new environments.
+- **Custom create**: Lets you use existing network resources and allows you to customize the setup. Choose this if you need to integrate with existing VCNs or have specific network requirements.
 
-    .. image:: deploy-ubuntu-oke-nodes/oke-create.png
-        :alt: OKE Quick Create
-
-
-    **Quick create** is used for this example.
-
-3. After submitting, you will be prompted to enter the following cluster details:
-
-    - **Name**: The display name for your cluster.
-    - **Compartment**: The compartment where the cluster and resources will be created.
-    - **Kubernetes version**: The version of Kubernetes to deploy.
-    - **Kubernetes API endpoint**: Choose public or private endpoint access for the Kubernetes API server.
-    - **Node type**: Select Managed or Self-Managed nodes.
-    - **Kubernetes worker nodes**: Choose whether to create public or private worker nodes.
-
-    The following image shows the options covered so far:
-
-    .. image:: deploy-ubuntu-oke-nodes/oke-info1.png
-        :alt: OKE cluster options overview
+.. image:: deploy-ubuntu-oke-nodes/oke-create.png
+    :alt: OKE Quick Create
 
 
-    - **Shape and image**: Select the compute shape (OCPUs, memory) for your nodes. Then, to use Ubuntu, click **Change image** and choose your required image based on the architecture, Ubuntu suite, and Kubernetes version.
+On selecting **Quick create** which is used in this example, you'll be prompted to enter the cluster details:
 
-        After selecting your desired image based on the architecture, Ubuntu suite, and Kubernetes version, your configuration should look similar to the image below.
+- **Name**: the display name for your cluster
+- **Compartment**: the compartment where the cluster and resources will be created
+- **Kubernetes version**: the version of Kubernetes to deploy
+- **Kubernetes API endpoint**: choose public or private endpoint access for the Kubernetes API server
+- **Node type**: select managed or self-managed nodes.
+- **Kubernetes worker nodes**: choose whether to create public or private worker nodes
 
-        .. image:: deploy-ubuntu-oke-nodes/oke-info2.png
-            :alt: Select Ubuntu image
+.. image:: deploy-ubuntu-oke-nodes/oke-info1.png
+    :alt: OKE cluster options overview
 
-      .. warning::
-         Pay attention to which image you select and ensure its architecture matches your chosen node shape (for example, AMD64 or ARM64).
+- **Shape and image**: select the compute shape (OCPUs, memory) for your nodes. Then, to use Ubuntu, select :guilabel:`Change image` and choose your required image based on the architecture, Ubuntu suite, and Kubernetes version.
 
-    - **Node count**: Set the node count to zero.
+.. image:: deploy-ubuntu-oke-nodes/oke-info2.png
+    :alt: Select Ubuntu image
 
-5. Click Next to review your configuration and click **Create cluster**.
+.. warning::
+    Pay attention to which image you select and ensure its architecture matches your chosen node shape (for example, AMD64 or ARM64).
 
-The cluster will be created. You can add nodes later as needed.
+- **Node count**: Set the node count to zero and proceed.
+
+After reviewing your configuration, select :guilabel:`Create cluster` to create the cluster. 
+
 
 Add nodes to an existing OKE cluster
-------------------------------------------------
+------------------------------------
 
-Once your cluster is created, you can add nodes as follows:
+Once your cluster is created, on the cluster details page, under **Resources**, select **Node pools**. You'll see a list of node pools:
 
-1. On the cluster details page, under **Resources**, select **Node pools**.
-2. You will see a list of node pools as shown in the image below.
+.. image:: deploy-ubuntu-oke-nodes/oke-node-pool.png
+    :alt: Node pool list
 
-    .. image:: deploy-ubuntu-oke-nodes/oke-node-pool.png
-        :alt: Node pool list
+Select a pool ('pool1' in the above example), and change the node count to your desired value.
 
-3. Click on the pool name (for example, **pool1**). This opens the node pool details page.
-4. Change the node count to your desired value.
-5. Scroll to the bottom and select **Show advanced options**.
-6. Under **Initialization script**, you can browse or paste your cloud-init script. For example, you can use the following:
+Under **Show advanced options** > **Initialization script**, include your cloud-init script, which could just be: 
 
-    .. code-block:: yaml
+.. code-block:: yaml
 
-        #cloud-config
-        runcmd:
-          - oke bootstrap
+    #cloud-config
+    runcmd:
+        - oke bootstrap
 
-7. Save your changes.
+On saving the changes, the node pool will update, and new nodes will be created and initialized using your cloud-init script:
 
-The node pool will update, and new nodes will be created and initialized using your cloud-init script, as shown below.
-
-    .. image:: deploy-ubuntu-oke-nodes/oke-node-list.png
-        :alt: Node pool updated
+.. image:: deploy-ubuntu-oke-nodes/oke-node-list.png
+    :alt: Node pool updated
 
 .. include:: ../../reuse/OKE-nodes.txt
    :start-after: Start: References and links

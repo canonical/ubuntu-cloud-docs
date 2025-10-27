@@ -16,13 +16,13 @@ We are always looking for ways to improve our docs, so we appreciate your contri
 Minor changes
 -------------
 
-If you find a problem that you can fix and it's a small change, you can use the *Edit this page on GitHub* link at the bottom of the relevant page to edit it directly on GitHub. When you are done with your edits, select :guilabel:`Commit changes...` on the top right. This will help you create a new branch and start a pull request (PR). Use :guilabel:`Propose changes` to submit the PR. We will review it and merge the changes.
+On any page, if you find a problem that can be fixed with a small change, you can use the *Edit this page on GitHub* link to edit it directly on GitHub. When you are done with your edits, select :guilabel:`Commit changes...` to create a new branch and start a pull request (PR). Use :guilabel:`Propose changes` to submit the PR. We will review it and merge the changes.
 
 
 Suggestions and questions
 -------------------------
 
-Use the :guilabel:`Give feedback` button at the top of any page to create a GitHub issue for any suggestions or questions that you might have.
+Use the :guilabel:`Give feedback` button to create a GitHub issue for any suggestions or questions that you might have.
 
 
 New content

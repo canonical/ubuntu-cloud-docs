@@ -191,11 +191,11 @@ Once the bastion goes into an *Active* state, you can create a session using eit
 
         Select your bastion and choose :guilabel:`Create session`. Fill in the details:
 
-        * Session type: Managed SSH session
+        * Session type: managed SSH session
         * Session name: any name of your choice
         * Username: ubuntu  (if your VM is an Ubuntu instance, the default user is ubuntu)
         * Compute instance: <the VM that you would like to access through the bastion>
-        * Add SSH key: Add a public SSH key to inject into the bastion and the VM (you must have access to the corresponding private key)
+        * Add SSH key: add a public SSH key to inject into the bastion and the VM (you must have access to the corresponding private key)
 
         .. image:: use-bastion-to-access-VM-images/4_create_session.png
 
