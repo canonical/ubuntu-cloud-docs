@@ -58,16 +58,23 @@ The NVIDIA Tesla T4 GPU should be listed in the output. Now, install the NVIDIA 
 .. code::
 
     sudo apt install -y ubuntu-drivers-common
-    sudo ubuntu-drivers install
+    sudo ubuntu-drivers --gpgpu install
 
 .. note::
-    If you need a specific NVIDIA driver version, use e.g. ``sudo ubuntu-drivers install nvidia:535``.
+    If you need a specific NVIDIA driver version, use e.g. ``sudo ubuntu-drivers --gpgpu install nvidia:535``.
 
 After the installation, reboot the instance:
 
 .. code::
 
     sudo reboot
+
+.. note::
+    If you are running on Graviton instances (ARM64 CPU), you may need to install the driver directly:
+
+    .. code::
+    
+        sudo apt install nvidia-headless-580-server nvidia-utils-580-server -y
 
 
 Test if everything got properly installed:
