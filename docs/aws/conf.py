@@ -81,7 +81,7 @@ redirects = {
         "../instances/launch-ubuntu-desktop/",
     "aws-how-to/upgrade-from-focal-to-jammy":
         "../instances/upgrade-ubuntu-lts-release/",
-    "../instances/upgrade-from-focal-to-jammy/":
+    "aws-how-to/instances/upgrade-from-focal-to-jammy/":
         "../instances/upgrade-ubuntu-lts-release/",
 
     "aws-how-to/deploy-charmed-kubernetes-on-ubuntu-pro":

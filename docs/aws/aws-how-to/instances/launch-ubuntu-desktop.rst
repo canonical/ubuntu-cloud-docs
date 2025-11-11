@@ -1,75 +1,61 @@
 Launch an Ubuntu desktop on EC2
 ===============================
 
-This is a how-to guide on how to launch an Ubuntu desktop as an EC2 instance.
+To launch an Ubuntu desktop on EC2, you'll first need launch an Ubuntu instance and then install the Ubuntu desktop on it.
 
-It will go over launching the instance via the EC2 console, and via the AWS CLI. Lastly, it shows you how to connect to the instance using RDP.
+Launch an Ubuntu instance 
+--------------------------
 
-.. Note::
+To launch an Ubuntu instance, you can either use the EC2 console or the AWS CLI. To ensure that you are selecting the latest Long Term Support (LTS) or Pro version, check the `Ubuntu release notes <https://releases.ubuntu.com>`_ for any updates.
 
-    To ensure that you are selecting the latest Long Term Support (LTS) or Pro version, check the `Ubuntu release notes 
-    <https://releases.ubuntu.com>`_ for any updates.
+Using the EC2 Console
+~~~~~~~~~~~~~~~~~~~~~~
 
-Launch the instance 
--------------------
-
-There are two popular ways to launch an instance: using the EC2 console or using the AWS CLI to interact with the AWS API. Select the one you are most comfortable with.
-
-Use the EC2 Console
-~~~~~~~~~~~~~~~~~~~
-
-#. On the EC2 console, launch an instance by selecting an Ubuntu AMI.
-
-    .. image:: ./launch-ubuntu-desktop-on-ec2/2a_Launch_instance.png
+On the EC2 console, launch an instance by selecting an Ubuntu AMI.
         
-#. The recommended hardware requirements to run an Ubuntu desktop is at least 2 CPU cores, 8GB of RAM, and 8GB of volume. However, if you intend to install additional applications, you need a higher volume size.
+The recommended hardware requirements to run an Ubuntu desktop is at least 2 CPU cores, 8GB of RAM and 8GB of volume. However, if you intend to install additional applications, you'll need a higher volume size.
 
-#. Configure your security group to allow SSH and RDP ports (22 and 3389 respectively).
+Configure your security group to allow SSH and RDP ports (22 and 3389 respectively).
 
-    .. image:: ./launch-ubuntu-desktop-on-ec2/2b_Launch_instance.png
+.. image:: ./launch-ubuntu-desktop-on-ec2/2a_Launch_instance.png
 
-Use the AWS CLI
-~~~~~~~~~~~~~~~
 
-#. Retrieve the latest AMI ID for the EC2 instance using one of the following CLI commands:
+Using the AWS CLI
+~~~~~~~~~~~~~~~~~~
 
-    * Ubuntu LTS:
+Retrieve the latest AMI ID for an Ubuntu image using one of the following commands:
 
-      .. code-block:: bash
+* Ubuntu LTS:
 
-        aws ssm get-parameters --names /aws/service/canonical/ubuntu/server/24.04/stable/current/arm64/hvm/ebs-gp3/ami-id
+.. code-block:: bash
 
-    * Ubuntu Pro:
+    aws ssm get-parameters --names /aws/service/canonical/ubuntu/server/24.04/stable/current/arm64/hvm/ebs-gp3/ami-id
 
-      .. code-block:: bash
+* Ubuntu Pro:
 
-        aws ssm get-parameters --names /aws/service/canonical/ubuntu/pro-server/24.04/stable/current/arm64/hvm/ebs-gp3/ami-id
+.. code-block:: bash
 
-#. Launch the instance using the :doc:`AWS CLI<./launch-ubuntu-ec2-instance>`.
+    aws ssm get-parameters --names /aws/service/canonical/ubuntu/pro-server/24.04/stable/current/arm64/hvm/ebs-gp3/ami-id
 
-Install Ubuntu desktop and the snap store
------------------------------------------
 
-There are several popular ways to access the terminal of your server:
+Now launch the instance by referring to the instructions for :doc:`launching using the AWS CLI<./launch-ubuntu-ec2-instance>`.
 
-#. Using an SSH client like PuTTY if you are running Windows
-#. The ``ssh`` command executed in the terminal of your Linux, Mac, or Windows device.
-#. The AWS EC2 Instance Connect feature
 
-    .. image:: ./launch-ubuntu-desktop-on-ec2/2c_Launch_instance.png
+Install Ubuntu desktop 
+-----------------------
 
-After logging into your server, execute the commands below to install the Ubuntu desktop packages.
+Log in to your instance and install the Ubuntu desktop packages:
 
 .. code:: bash
 
     sudo apt-get update && sudo apt-get upgrade -y
     sudo apt-get install -y ubuntu-desktop
-    sudo snap install snap-store --edge
     sudo reboot
 
 .. Note::
     Don't disconnect the session after executing these commands. The installation process
     may take several minutes, and a disconnection could interrupt it.
+
 
 Install and configure RDP
 -------------------------
@@ -98,13 +84,12 @@ Restart the service:
 
     sudo systemctl restart xrdp
 
+
 Connect to your instance
 ------------------------
 
-Connect to your instance using your favorite RDP client. You can get the public IP address of the instance from the EC2 console. The RDP connection port is 3389.
+Connect to your instance using any RDP client, such as Remmina. You can get the public IP address of the instance from the EC2 console and the RDP connection port is 3389.
 
 The default username for the EC2 instance is ``ubuntu``.
 
 When prompted to input a password, use the password you configured for the user.
-
-.. image:: ./launch-ubuntu-desktop-on-ec2/2d_Launch_instance.png
