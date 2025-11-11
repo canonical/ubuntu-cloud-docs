@@ -1,7 +1,7 @@
 Launch an Ubuntu desktop on EC2
 ===============================
 
-To launch an Ubuntu desktop on EC2, you'll first need launch an Ubuntu instance and then install the Ubuntu desktop on it.
+To launch an Ubuntu desktop on EC2, you'll first need to launch an Ubuntu instance and then install the Ubuntu desktop on it.
 
 Launch an Ubuntu instance 
 --------------------------

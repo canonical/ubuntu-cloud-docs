@@ -4,6 +4,10 @@ Ubuntu cloud image artifacts
 ============================
 This document provides detailed information on various Ubuntu cloud image artifacts available on `cloud-images.ubuntu.com <https://cloud-images.ubuntu.com/>`_.
 
+.. note::
+
+  If you are looking for Ubuntu images to use on the major public clouds, their documentation can be found at: :doc:`Ubuntu on AWS <aws:index>`, :doc:`Ubuntu on Azure <azure:index>`, :doc:`Ubuntu on GCP <google:index>`, :doc:`Ubuntu on IBM <ibm:index>`, and :doc:`Ubuntu on Oracle <oracle:index>`.
+
 Images
 ------
 This section contains information on all of the Ubuntu cloud images available for download. These images are pre-configured and ready for deployment in cloud environments, supporting multiple architectures and configurations.
