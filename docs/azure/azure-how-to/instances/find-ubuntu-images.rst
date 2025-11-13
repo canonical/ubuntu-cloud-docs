@@ -182,21 +182,37 @@ Ubuntu Pro 24.04 LTS - Noble Numbat
 | Quick start: `Ubuntu Pro 24.04 LTS on Azure <https://portal.azure.com/#create/canonical.ubuntu-24_04-ltsubuntu-pro>`_
 
 .. list-table::
-   :widths: 10 9 50
+   :widths: 10 10 9 50
    :header-rows: 1
 
-   * - **Architecture**
+   * - **Flavor**
+     - **Architecture**
      - **Hyper-V Generation**
      - **URN**
-   * - AMD64
+   * - Server
+     - AMD64
      - Gen2
      - ``Canonical:ubuntu-24_04-lts:ubuntu-pro:latest``
-   * - AMD64
+   * - Server
+     - AMD64
      - Gen1
      - ``Canonical:ubuntu-24_04-lts:ubuntu-pro-gen1:latest``
-   * - ARM64
+   * - Server
+     - ARM64
      - Gen2
      - ``Canonical:ubuntu-24_04-lts:ubuntu-pro-arm64:latest``
+   * - Minimal
+     - AMD64
+     - Gen2
+     - ``Canonical:ubuntu-24_04-lts:ubuntu-pro-minimal:latest``
+   * - Minimal
+     - AMD64
+     - Gen1
+     - ``Canonical:ubuntu-24_04-lts:ubuntu-pro-minimal-gen1:latest``
+   * - Minimal
+     - ARM64
+     - Gen2
+     - ``Canonical:ubuntu-24_04-lts:ubuntu-pro-minimal-arm64:latest``
 
 
 Ubuntu Pro 22.04 LTS - Jammy Jellyfish
@@ -206,44 +222,77 @@ Quick start: `Ubuntu Pro 22.04 LTS on Azure <https://portal.azure.com/#create/ca
 
 
 .. list-table::
-   :widths: 10 9 50
+   :widths: 10 10 9 50
    :header-rows: 1
 
-   * - **Architecture**
+   * - **Flavor**
+     - **Architecture**
      - **Hyper-V Generation**
      - **URN**
-   * - AMD64
+   * - Server
+     - AMD64
      - Gen2
      - ``Canonical:ubuntu-22_04-lts:ubuntu-pro:latest``
-   * - AMD64
+   * - Server
+     - AMD64
      - Gen1
      - ``Canonical:ubuntu-22_04-lts:ubuntu-pro-gen1:latest``
-   * - Arm64
+   * - Server
+     - ARM64
      - Gen2
      - ``Canonical:ubuntu-22_04-lts:ubuntu-pro-arm64:latest``
+   * - Minimal
+     - AMD64
+     - Gen2
+     - ``Canonical:ubuntu-22_04-lts:ubuntu-pro-minimal:latest``
+   * - Minimal
+     - AMD64
+     - Gen1
+     - ``Canonical:ubuntu-22_04-lts:ubuntu-pro-minimal-gen1:latest``
+   * - Minimal
+     - ARM64
+     - Gen2
+     - ``Canonical:ubuntu-22_04-lts:ubuntu-pro-minimal-arm64:latest``
 
 
 Ubuntu Pro 20.04 LTS - Focal Fossa
 ++++++++++++++++++++++++++++++++++
 
-Quick start: `Ubuntu Pro 20.04 LTS on Azure <https://portal.azure.com/#create/canonical.0001-com-ubuntu-pro-focalpro-20_04-lts>`_
+| Quick start: `Ubuntu Pro 20.04 LTS on Azure <https://portal.azure.com/#create/canonical.0001-com-ubuntu-pro-focalpro-20_04-lts>`_
+| Quick start: `Ubuntu Pro Minimal 20.04 LTS on Azure <https://portal.azure.com/#create/canonical.0001-com-ubuntu-pro-minimal-focalpro-minimal-20_04-lts>`_
 
 .. list-table::
-   :widths: 10 9 50
+   :widths: 10 10 9 50
    :header-rows: 1
 
-   * - **Architecture**
+   * - **Flavor**
+     - **Architecture**
      - **Hyper-V Generation**
      - **URN**
-   * - AMD64
+   * - Server
+     - AMD64
      - Gen1
      - ``Canonical:0001-com-ubuntu-pro-focal:pro-20_04-lts:latest``
-   * - AMD64
+   * - Server
+     - AMD64
      - Gen2
      - ``Canonical:0001-com-ubuntu-pro-focal:pro-20_04-lts-gen2:latest``
-   * - ARM64
+   * - Server
+     - ARM64
      - Gen2
      - ``Canonical:0001-com-ubuntu-pro-focal:pro-20_04-lts-arm64:latest``
+   * - Minimal
+     - AMD64
+     - Gen1
+     - ``Canonical:0001-com-ubuntu-pro-minimal-focal:pro-minimal-20_04-lts:latest``
+   * - Minimal
+     - AMD64
+     - Gen2
+     - ``Canonical:0001-com-ubuntu-pro-minimal-focal:pro-minimal-20_04-lts-gen2:latest``
+   * - Minimal
+     - ARM64
+     - Gen2
+     - ``Canonical:0001-com-ubuntu-pro-minimal-focal:pro-minimal-20_04-lts-arm64:latest``
 
 
 Ubuntu Pro 18.04 LTS - Bionic Beaver
