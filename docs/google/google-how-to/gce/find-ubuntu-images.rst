@@ -14,7 +14,7 @@ Daily, untested images are found under the ``ubuntu-os-cloud-devel`` project:
 
 .. code::
 
-  gcloud compute images --project ubuntu-os-cloud-devel list --filter ubuntu-os-cloud-devel
+  gcloud compute images list --project ubuntu-os-cloud-devel --no-standard-images
 
 
 Image locator
