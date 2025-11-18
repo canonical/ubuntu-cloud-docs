@@ -15,8 +15,12 @@ Using EKS
 **Other EKS related how-to guides**
 
 * :doc:`Enable GPUs on EKS worker nodes <enable-gpus-on-eks>`
+* `Install Kubeflow on EKS (external link)`_
 
 .. _`AWS marketplace`: https://aws.amazon.com/marketplace/search/results?searchTerms=Ubuntu+Pro+eks&CREATOR=565feec9-3d43-413e-9760-c651546613f2&filters=CREATOR
+.. _`Install Kubeflow on EKS (external link)`: https://documentation.ubuntu.com/charmed-kubeflow/how-to/install/install-eks/
+
+
 
 .. toctree::
    :hidden:

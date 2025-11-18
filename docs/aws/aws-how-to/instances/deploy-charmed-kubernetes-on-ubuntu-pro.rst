@@ -152,6 +152,6 @@ You now have a fully working Kubernetes cluster, deployed painlessly and running
 
 
 .. _premium container images: https://ubuntu.com/containers
-.. _Juju: https://juju.is
+.. _Juju: https://canonical.com/juju
 .. _install AWS CLI: https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
 .. _Charmed Kubernetes: https://ubuntu.com/kubernetes/charmed-k8s/docs

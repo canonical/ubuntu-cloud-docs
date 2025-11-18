@@ -106,6 +106,6 @@ To check that the deployed nodes have Ubuntu Pro, run:
 
 
 .. _`Pro service`: https://ubuntu.com/pro
-.. _`install eksctl`: https://eksctl.io/installation/
+.. _`install eksctl`: https://docs.aws.amazon.com/eks/latest/eksctl/installation.html
 .. _`install kubectl`: https://docs.aws.amazon.com/eks/latest/userguide/install-kubectl.html
-.. _`eksctl details`: https://eksctl.io/
+.. _`eksctl details`: https://docs.aws.amazon.com/eks/latest/eksctl/what-is-eksctl.html
