@@ -38,16 +38,17 @@ Deploy some Canonical specific solutions.
 * :doc:`Deploy Canonical Data Science Stack <instances/data-science-stack-on-ec2>`
 
 
-EKS - Using Ubuntu Pro and GPUs on EKS
---------------------------------------
+EKS - Using Ubuntu Pro, GPUs and Kubeflow on EKS
+------------------------------------------------
 
-If you want to use Ubuntu and enable GPUs on Amazon's EKS service, you can refer to these instructions.
+If you want to use Ubuntu, enable GPUs or install Kubeflow on Amazon's EKS service, you can refer to these instructions.
 
 * :doc:`Deploy an Ubuntu EKS cluster <kubernetes/deploy-ubuntu-cluster-with-eks-ami>`
 * :doc:`Deploy an Ubuntu Pro cluster <kubernetes/deploy-ubuntu-pro-cluster-with-eks-pro-ami>`
 * :doc:`Deploy an Ubuntu Pro FIPS cluster <kubernetes/deploy-ubuntu-pro-fips-cluster>`
 * :doc:`Deploy a Pro cluster (with / without FIPS) using tokens <kubernetes/deploy-ubuntu-pro-cluster>`
 * :doc:`Enable GPUs on EKS worker nodes <kubernetes/enable-gpus-on-eks>`
+* `Install Kubeflow on EKS (external link)`_
 
 
 Using security features
@@ -65,4 +66,5 @@ AWS provides multiple features for additional security, many of which are suppor
    instances/index    
    kubernetes/index
    security/index   
-  
+
+.. _`Install Kubeflow on EKS (external link)`: https://documentation.ubuntu.com/charmed-kubeflow/how-to/install/install-eks/
