@@ -16,12 +16,12 @@ Ubuntu 24.04 LTS - Noble Numbat
 | Quick start (China): `24.04 LTS on Azure China <https://portal.azure.cn/#create/canonical.ubuntu-24_04-ltsserver>`_
 
 .. list-table::
-   :widths: 10 10 9 50
+   :widths: 10 10 12 68
    :header-rows: 1
 
    * - **Flavor**
-     - **Architecture**
-     - **Hyper-V Generation**
+     - **Arch**
+     - **Hyper-V**
      - **URN**
    * - Server
      - AMD64
@@ -56,12 +56,12 @@ Ubuntu 22.04 LTS - Jammy Jellyfish
 | Quick start (China): `22.04 LTS on Azure China <https://portal.azure.cn/#create/canonical.ubuntu-22_04-ltsserver>`_
 
 .. list-table::
-   :widths: 10 10 9 50
+   :widths: 10 10 12 68
    :header-rows: 1
 
    * - **Flavor**
-     - **Architecture**
-     - **Hyper-V Generation**
+     - **Arch**
+     - **Hyper-V**
      - **URN**
    * - Server
      - AMD64
@@ -96,12 +96,12 @@ Ubuntu 25.10 - Questing Quokka
 | Quick start (China): `25.10 on Azure China <https://portal.azure.cn/#create/canonical.ubuntu-25_10server>`_
 
 .. list-table::
-   :widths: 10 10 10 70
+   :widths: 10 10 12 68
    :header-rows: 1
 
    * - **Flavor**
-     - **Architecture**
-     - **Hyper-V Generation**
+     - **Arch**
+     - **Hyper-V**
      - **URN**
    * - Server
      - AMD64
@@ -136,12 +136,12 @@ Ubuntu 25.04 - Plucky Puffin
 | Quick start (China): `25.04 on Azure China <https://portal.azure.cn/#create/canonical.ubuntu-25_04server>`_
 
 .. list-table::
-   :widths: 10 10 10 70
+   :widths: 10 10 12 68
    :header-rows: 1
 
    * - **Flavor**
-     - **Architecture**
-     - **Hyper-V Generation**
+     - **Arch**
+     - **Hyper-V**
      - **URN**
    * - Server
      - AMD64
@@ -182,12 +182,12 @@ Ubuntu Pro 24.04 LTS - Noble Numbat
 | Quick start: `Ubuntu Pro 24.04 LTS on Azure <https://portal.azure.com/#create/canonical.ubuntu-24_04-ltsubuntu-pro>`_
 
 .. list-table::
-   :widths: 10 10 9 50
+   :widths: 10 10 12 68
    :header-rows: 1
 
    * - **Flavor**
-     - **Architecture**
-     - **Hyper-V Generation**
+     - **Arch**
+     - **Hyper-V**
      - **URN**
    * - Server
      - AMD64
@@ -222,12 +222,12 @@ Quick start: `Ubuntu Pro 22.04 LTS on Azure <https://portal.azure.com/#create/ca
 
 
 .. list-table::
-   :widths: 10 10 9 50
+   :widths: 10 10 12 68
    :header-rows: 1
 
    * - **Flavor**
-     - **Architecture**
-     - **Hyper-V Generation**
+     - **Arch**
+     - **Hyper-V**
      - **URN**
    * - Server
      - AMD64
@@ -262,12 +262,12 @@ Ubuntu Pro 20.04 LTS - Focal Fossa
 | Quick start: `Ubuntu Pro Minimal 20.04 LTS on Azure <https://portal.azure.com/#create/canonical.0001-com-ubuntu-pro-minimal-focalpro-minimal-20_04-lts>`_
 
 .. list-table::
-   :widths: 10 10 9 50
+   :widths: 10 10 12 68
    :header-rows: 1
 
    * - **Flavor**
-     - **Architecture**
-     - **Hyper-V Generation**
+     - **Arch**
+     - **Hyper-V**
      - **URN**
    * - Server
      - AMD64
@@ -301,11 +301,11 @@ Ubuntu Pro 18.04 LTS - Bionic Beaver
 Quick start: `Ubuntu Pro 18.04 LTS on Azure <https://portal.azure.com/#create/canonical.0001-com-ubuntu-pro-bionicpro-18_04-lts>`_
 
 .. list-table::
-   :widths: 10 9 50
+   :widths: 10 12 78
    :header-rows: 1
 
-   * - **Architecture**
-     - **Hyper-V Generation**
+   * - **Arch**
+     - **Hyper-V**
      - **URN**
    * - AMD64
      - Gen1
@@ -330,11 +330,11 @@ Ubuntu CVM 24.04 LTS - Noble Numbat
 | Quick start (China): `Ubuntu CVM 24.04 LTS on Azure China <https://portal.azure.cn/#create/canonical.ubuntu-24_04-ltscvm>`_
 
 .. list-table::
-   :widths: 10 9 50
+   :widths: 10 12 78
    :header-rows: 1
 
-   * - **Architecture**
-     - **Hyper-V Generation**
+   * - **Arch**
+     - **Hyper-V**
      - **URN**
    * - AMD64
      - Gen2
@@ -350,11 +350,11 @@ Ubuntu CVM 22.04 LTS - Jammy Jellyfish
 | Quick start (China): `Ubuntu CVM 22.04 LTS on Azure China <https://portal.azure.cn/#create/canonical.ubuntu-22_04-ltscvm>`_
 
 .. list-table::
-   :widths: 10 9 50
+   :widths: 10 12 78
    :header-rows: 1
 
-   * - **Architecture**
-     - **Hyper-V Generation**
+   * - **Arch**
+     - **Hyper-V**
      - **URN**
    * - AMD64
      - Gen2
@@ -375,11 +375,11 @@ Ubuntu Pro FIPS 22.04 LTS - Jammy Jellyfish
 Quick start: `Ubuntu Pro FIPS 22.04 LTS on Azure <https://portal.azure.com/#create/canonical.ubuntu-22_04-ltsubuntu-pro-fips>`_
 
 .. list-table::
-   :widths: 10 9 50
+   :widths: 10 12 78
    :header-rows: 1
 
-   * - **Architecture**
-     - **Hyper-V Generation**
+   * - **Arch**
+     - **Hyper-V**
      - **URN**
    * - AMD64
      - Gen2
@@ -395,11 +395,11 @@ Ubuntu Pro FIPS 20.04 LTS - Focal Fossa
 Quick start: `Ubuntu Pro FIPS 20.04 LTS on Azure <https://portal.azure.com/#create/canonical.0001-com-ubuntu-pro-focal-fipspro-fips-20_04>`_
 
 .. list-table::
-   :widths: 10 9 50
+   :widths: 10 12 78
    :header-rows: 1
 
-   * - **Architecture**
-     - **Hyper-V Generation**
+   * - **Arch**
+     - **Hyper-V**
      - **URN**
    * - AMD64
      - Gen1
@@ -415,11 +415,11 @@ Ubuntu Pro FIPS 18.04 LTS - Bionic Beaver
 Quick start: `Ubuntu Pro FIPS 18.04 LTS on Azure <https://portal.azure.com/#create/canonical.0001-com-ubuntu-pro-bionic-fipspro-fips-18_04>`_
 
 .. list-table::
-   :widths: 10 9 50
+   :widths: 10 12 78
    :header-rows: 1
 
-   * - **Architecture**
-     - **Hyper-V Generation**
+   * - **Arch**
+     - **Hyper-V**
      - **URN**
    * - AMD64
      - Gen1
@@ -441,12 +441,12 @@ Ubuntu Minimal Pro CIS 22.04 LTS - Jammy Jellyfish
 | Quick start (CIS Profile Level 2 Server): `Ubuntu Pro CIS Level 2 22.04 LTS on Azure  <https://portal.azure.com/#create/canonical.ubuntu-22_04-ltsubuntu-pro-minimal-cis-level-2>`_
 
 .. list-table::
-   :widths: 10 10 9 50
+   :widths: 10 10 12 68
    :header-rows: 1
 
-   * - **Architecture**
-     - **CIS Profile**
-     - **Hyper-V Generation**
+   * - **Arch**
+     - **Profile**
+     - **Hyper-V**
      - **URN**
    * - AMD64
      - cis_level1_server
@@ -471,11 +471,11 @@ Ubuntu Minimal Pro CIS 20.04 LTS - Focal Fossa
 Quick start: `Ubuntu Pro CIS 20.04 LTS on Azure  <https://portal.azure.com/#create/canonical.0001-com-ubuntu-pro-minimal-cis-focalpro-cis-minimal-20_04>`_
 
 .. list-table::
-   :widths: 10 9 50
+   :widths: 10 12 78
    :header-rows: 1
 
-   * - **Architecture**
-     - **Hyper-V Generation**
+   * - **Arch**
+     - **Hyper-V**
      - **URN**
    * - AMD64
      - Gen1
@@ -496,11 +496,11 @@ Ubuntu 24.04 LTS (GB200-Compatible) - Noble Numbat
 Quick start: `Ubuntu 24.04 LTS (GB200-Compatible) on Azure <https://portal.azure.com/#create/canonical.ubuntu-24_04-ltsspecialized-hardware>`_
 
 .. list-table::
-   :widths: 10 9 50
+   :widths: 10 12 78
    :header-rows: 1
 
-   * - **Architecture**
-     - **Hyper-V Generation**
+   * - **Arch**
+     - **Hyper-V**
      - **URN**
    * - ARM64
      - Gen2
@@ -512,11 +512,11 @@ Ubuntu Pro 24.04 LTS (GB200-Compatible) - Noble Numbat
 Quick start: `Ubuntu Pro 24.04 LTS (GB200-Compatible) on Azure <https://portal.azure.com/#create/canonical.ubuntu-24_04-ltsubuntu-pro-specialized-hardware>`_
 
 .. list-table::
-   :widths: 10 9 50
+   :widths: 10 12 78
    :header-rows: 1
 
-   * - **Architecture**
-     - **Hyper-V Generation**
+   * - **Arch**
+     - **Hyper-V**
      - **URN**
    * - ARM64
      - Gen2
