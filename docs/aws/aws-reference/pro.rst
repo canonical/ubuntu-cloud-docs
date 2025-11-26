@@ -37,11 +37,9 @@ that are expensive to migrate, such as kubernetes workers for EKS.
 
 Compliance
 ~~~~~~~~~~
-Ubuntu Pro offers compliance options for users that need to apply 
-CIS (level 1 and 2) or FIPS hardening. FIPS is currently supported
-on Ubuntu 18.04 and 20.04. For 22.04, it is currently available through the
-`fips-preview` and `fips-updates` repositories provided through the 
-FIPS pro entitlement, but these modules are not yet approved by NIST.
+Ubuntu Pro offers compliance options via support for different `security standards`_ such as  
+CIS (level 1 and 2) and FIPS. FIPS 140-2 is currently supported
+on Ubuntu 18.04 and 20.04, while FIPS 140-3 is supported on Ubuntu 22.04.
 
 Ubuntu Landscape
 ~~~~~~~~~~~~~~~~
@@ -55,6 +53,7 @@ the `sign up page`_.
 .. _`Ubuntu Pro`: https://ubuntu.com/aws/pro
 .. _`ESM`: https://ubuntu.com/security/esm
 .. _`Livepatch`: https://ubuntu.com/security/livepatch
+.. _`security standards`: https://ubuntu.com/security/security-standards
 .. _`Landscape`: https://ubuntu.com/landscape
 .. _`sign up page`: https://landscape.canonical.com/signup
 .. _`Amazon WorkSpaces`: https://aws.amazon.com/workspaces-family/
