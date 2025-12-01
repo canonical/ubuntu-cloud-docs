@@ -28,24 +28,14 @@ Ubuntu Pro FIPS 20.04 LTS (FIPS with updates),AMD64,``prod-ibsqi42w6rtey``,✓
 Ubuntu Pro FIPS 22.04 LTS (FIPS with updates),AMD64,``prod-y5kejmnu3wodg``,✓
 Ubuntu Pro FIPS 22.04 LTS (FIPS with updates),ARM64,``prod-rcuudwwonvpew``,✓
 Ubuntu Pro 22.04 LTS with Real-time Kernel,ARM64,``prod-ezodmjvranjew``,✓
-Ubuntu 22.04 LTS for EKS 1.29,AMD64,``prod-lg73jq6vy35h2``,✓
-Ubuntu 22.04 LTS for EKS 1.29,ARM64,``prod-htjgvopsb6wo2``,✓
-Ubuntu 22.04 LTS for EKS 1.30,AMD64,``prod-ju4oliv6acvmu``,✓
-Ubuntu 22.04 LTS for EKS 1.30,ARM64,``prod-ju4oliv6acvmu``,✓
-Ubuntu 22.04 LTS for EKS 1.31,AMD64,``prod-6cgarsgfcf6pw``,✓
-Ubuntu 22.04 LTS for EKS 1.31,ARM64,``prod-37lry2b6efnve``,✓
 Ubuntu 22.04 LTS for EKS 1.32,AMD64,``prod-iovuocxl2wqco``,✓
 Ubuntu 22.04 LTS for EKS 1.32,ARM64,``prod-qneu3lsj5lxsg``,✓
-Ubuntu 24.04 LTS for EKS 1.31,AMD64,``prod-jjmfgr4fqi24i``,✓
-Ubuntu 24.04 LTS for EKS 1.31,ARM64,``prod-vu4rwlmwizmb2``,✓
 Ubuntu 24.04 LTS for EKS 1.32,AMD64,``prod-apo236yrqs4ve``,✓
 Ubuntu 24.04 LTS for EKS 1.32,ARM64,``prod-vboehvlnbsy3e``,✓
 Ubuntu 24.04 LTS for EKS 1.33,AMD64,``prod-vipjxy4ycab24``,✓
 Ubuntu 24.04 LTS for EKS 1.33,ARM64,``prod-6ekvrmao3h5aq``,✓
 Ubuntu 24.04 LTS for EKS 1.34,AMD64,``prod-yekviic7ygm5u``,✓
 Ubuntu 24.04 LTS for EKS 1.34,ARM64,``prod-ock7ogk6tq4zk``,✓
-Ubuntu Pro 20.04 LTS for EKS 1.28,AMD64,``prod-hqauo4m24unwa``,✓
-Ubuntu Pro 20.04 LTS for EKS 1.28,ARM64,``prod-tlw6qfb47lam2``,✓
 Ubuntu Pro 20.04 LTS for EKS 1.29,AMD64,``prod-4yrqysyuk6vts``,✓
 Ubuntu Pro 20.04 LTS for EKS 1.29,ARM64,``prod-mu642qufmvg5i``,✓
 Ubuntu Pro 22.04 LTS for EKS 1.29,AMD64,``prod-zhspprfykjuvy``,✓
