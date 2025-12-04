@@ -77,12 +77,12 @@ Ubuntu 22.04 LTS - Jammy Jellyfish
      - ``Canonical:ubuntu-22_04-lts:server-arm64:latest``
    * - Minimal
      - AMD64
-     - Gen1
-     - ``Canonical:0001-com-ubuntu-minimal-jammy:minimal-22_04-lts:latest``
+     - Gen2
+     - ``Canonical:ubuntu-22_04-lts:ubuntu-minimal:latest``
    * - Minimal
      - AMD64
-     - Gen2
-     - ``Canonical:0001-com-ubuntu-minimal-jammy:minimal-22_04-lts-gen2:latest``
+     - Gen1
+     - ``Canonical:ubuntu-22_04-lts:ubuntu-minimal-gen1:latest``
 
 Interim releases
 ~~~~~~~~~~~~~~~~
