@@ -167,10 +167,12 @@ Future steps
 We have covered how using Launch Templates you can build your own managed nodes with Ubuntu, Ubuntu Pro and any customization you would need.
 
 Now that you understand the workflow, the next step is automation:
+
 - Use AWS EC2 Image Builder to generate new AMIs on a schedule.
 - Trigger EventBridge events that invoke a Lambda function to:
-        - Update the launch template with the new AMI.
-        - Point the managed node group to the new template version.
+
+  - Update the launch template with the new AMI.
+  - Point the managed node group to the new template version.
 
 This keeps your cluster always up-to-date with minimal manual effort.
 
