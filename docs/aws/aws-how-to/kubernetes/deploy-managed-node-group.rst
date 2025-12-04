@@ -113,6 +113,7 @@ Notes:
 Wait for the deployment to finish. If you want to control the cluster using `kubectl`_, you can update the ``kubectl`` configuration file as follows:
 
 ..  code-block:: bash
+
     aws eks update-kubeconfig --region us-east-1 --name My-Ubuntu-Cluster --profile eks
 
 Now you can monitor your cluster using ``kubectl`` as follows:
