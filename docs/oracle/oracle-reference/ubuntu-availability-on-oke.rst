@@ -25,12 +25,21 @@ The following Ubuntu images are available for worker nodes on Oracle Kubernetes 
    * -
      - 1.32.1
      - 30 days after 1.35.1 OKE Release
+   * -
+     - 1.33.1
+     - 30 days after 1.36.1 OKE Release
    * - 24.04 (Noble Numbat)
      - 1.31.1
      - 30 days after 1.34.1 OKE Release
    * -
      - 1.32.1
      - 30 days after 1.35.1 OKE Release
+   * -
+     - 1.33.1
+     - 30 days after 1.36.1 OKE Release
+   * -
+     - 1.34.1
+     - 30 days after 1.37.1 OKE Release
 
 
 Networking plugin availability
