@@ -116,7 +116,7 @@ Finally, we need to update the session manager to use our new session configurat
 
 .. code:: bash
 
-    sudo update-alternatives --install /usr/bin/x-session-manager x-session-manager /u
+    sudo update-alternatives --install /usr/bin/x-session-manager x-session-manager /usr/local/bin/ubuntu-session 60
 
 
 Connect to your instance
