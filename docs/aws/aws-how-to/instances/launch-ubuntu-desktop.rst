@@ -84,6 +84,40 @@ Restart the service:
 
     sudo systemctl restart xrdp
 
+Configuring the Ubuntu session
+------------------------------
+
+Using Nano or your favorite text editor, create the following file:
+
+.. code:: bash
+
+    sudo nano /usr/local/bin/ubuntu-session
+
+Insert the following content:
+
+.. code:: bash
+    
+    #!/bin/sh
+    
+    export GNOME_SHELL_SESSION_MODE=ubuntu
+    export DESKTOP_SESSION=ubuntu-xorg
+    export XDG_SESSION_DESKTOP=ubuntu-xorg
+    export XDG_CURRENT_DESKTOP=ubuntu:GNOME
+    
+    exec /usr/bin/gnome-session --session=ubuntu
+
+And make the script executable:
+
+.. code:: bash
+
+    sudo chmod +x /usr/local/bin/ubuntu-session
+
+Finally, we need to update the session manager to use our new session configuration:
+
+.. code:: bash
+
+    sudo update-alternatives --install /usr/bin/x-session-manager x-session-manager /usr/local/bin/ubuntu-session 60
+
 
 Connect to your instance
 ------------------------
