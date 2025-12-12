@@ -79,8 +79,8 @@ redirects = {
         "../instances/get-ubuntu-pro/",
     "azure-how-to/create-pro-fips-golden-image":
         "../instances/create-pro-fips-golden-image/",
-    "azure-how-to/upgrade-from-focal-to-jammy":
-        "../instances/upgrade-from-focal-to-jammy/",
+    "azure-how-to/upgrade-ubuntu-lts-release":
+        "../instances/upgrade-ubuntu-lts-release/",
 
     "azure-how-to/kubernetes/index":
         "https://charmed-kubeflow.io/docs/install-on-aks",
