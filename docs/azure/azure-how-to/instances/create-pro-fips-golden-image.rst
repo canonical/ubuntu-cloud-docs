@@ -17,7 +17,7 @@ What you'll need
 ----------------
 
 - A Microsoft Azure account
-- `Azure Command-Line Interface`_ 
+- `Azure Command-Line Interface`_
 
 
 Set up your Azure Compute Gallery
@@ -26,7 +26,7 @@ Set up your Azure Compute Gallery
 To set up the compute gallery, you'll need to create a resource group, a user-identity, a gallery and finally the image definition itself. To simplify the process, we start by creating some variables for values that'll be used repeatedly.
 
 
-Set up variables 
+Set up variables
 ~~~~~~~~~~~~~~~~
 
 A new resource group with an unused name will have to be created. It can be deleted after use.
@@ -38,7 +38,7 @@ A new resource group with an unused name will have to be created. It can be dele
 
     # Resource group name
     sigResourceGroup=ibUbuntuFIPSGalleryRG
-    # Datacenter location 
+    # Datacenter location
     location=westus2
     # Additional region for image replication
     additionalregion=eastus
@@ -64,13 +64,13 @@ Set up variables for the Ubuntu Pro plan to be used. If you have an Ubuntu Pro p
 
 .. code::
 
-    # Set the 'Publisher' field 
+    # Set the 'Publisher' field
     ProPlanPublisher=canonical
-    # Set the 'Offer' field 
+    # Set the 'Offer' field
     ProPlanOffer=0001-com-ubuntu-pro-focal-fips
-    # ProPlanSku the 'Sku' 
+    # ProPlanSku the 'Sku'
     ProPlanSku=pro-fips-20_04-gen2
-    
+
 
 Create required resources, identities and permissions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -147,7 +147,7 @@ Then, create an image definition. Ensure that the “hyper-v-generation” flag 
         --plan-publisher $ProPlanPublisher \
         --hyper-v-generation V2 \
         --subscription $subscriptionID
-        
+
 
 Create a configuration template
 -------------------------------
@@ -198,7 +198,7 @@ In case you want to change something or add your own actions, some of the follow
 The ``customize`` section allows you to run commands as part of the image building process. The command seen here is used to include a wait until Ubuntu’s ``ua`` client is attached to its subscription.
 
 .. code::
-    
+
     "customize": [
         {
         "type": "Shell",
@@ -241,7 +241,7 @@ The following commands deregister the golden image from Ubuntu Pro and remove th
     }
 
 
-Create the golden image 
+Create the golden image
 -----------------------
 
 To create the image in ACG, submit the image configuration to the AIB service:
@@ -293,9 +293,9 @@ Create a VM - using the Portal
 To create a VM based on the golden image, in the portal:
 
 #. Go to *Azure services* > *Virtual Machines* > *Create* > *Virtual machine*
-#. Open the *See all images* link located below the *Image* field drop-down 
+#. Open the *See all images* link located below the *Image* field drop-down
 #. Select *Shared Images* from the column on the left
-#. Choose your golden image and it should now be the selected image in the *Image* field 
+#. Choose your golden image and it should now be the selected image in the *Image* field
 #. Complete the remaining fields as per your requirements and select *Review + Create*
 
 
@@ -396,4 +396,3 @@ If you want to delete these resource groups, use the following command on each o
 
 
 .. _`Azure Command-Line Interface`: https://learn.microsoft.com/en-us/cli/azure/?view=azure-cli-latest
-
