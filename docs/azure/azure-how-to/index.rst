@@ -16,7 +16,7 @@ Since security is always an important consideration, you might want to check for
 
 * :doc:`Check for available security updates <instances/check-available-security-updates>`
 * :doc:`Get Ubuntu Pro <instances/get-ubuntu-pro>`
-* :doc:`Upgrade from Focal to Jammy <instances/upgrade-from-focal-to-jammy>`
+* :doc:`Upgrade Ubuntu LTS release <instances/upgrade-ubuntu-lts-release>`
 
 You can also create golden images to simplify your estate management:
 
@@ -39,7 +39,7 @@ Finally, you might want to deploy specific solutions like SQL Server and Kubeflo
    Launch images <instances/launch-ubuntu-images>   
    Check for available security updates <instances/check-available-security-updates>
    Get Ubuntu Pro <instances/get-ubuntu-pro>
-   Upgrade from Focal to Jammy <instances/upgrade-from-focal-to-jammy>
+   Upgrade Ubuntu LTS release <instances/upgrade-ubuntu-lts-release>
    Create a Pro golden image <instances/create-pro-fips-golden-image>
    Create a golden image pipeline <instances/create-a-golden-image-pipeline>   
    Deploy an Ubuntu VM running SQL Server <instances/provision-an-ubuntu-virtual-machine-running-sql-server-in-azure>
