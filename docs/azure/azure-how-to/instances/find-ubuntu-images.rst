@@ -323,11 +323,30 @@ Confidential compute capable offer
 
 To learn more about Confidential Compute: `Azure confidential computing <https://azure.microsoft.com/en-us/solutions/confidential-compute/#overview>`_
 
-Ubuntu CVM 24.04 LTS - Noble Numbat
-++++++++++++++++++++++++++++++++++++++
+.. note:: While confidential VMs safeguard your workload from external threats, internal vulnerabilities within their boundaries can still pose risks. This is where Ubuntu Pro proves invaluable, ensuring your guest CVM software stack is continuously patched and up-to-date.
 
-| Quick start: `Ubuntu CVM 24.04 LTS on Azure <https://portal.azure.com/#create/canonical.ubuntu-24_04-ltscvm>`_
-| Quick start (China): `Ubuntu CVM 24.04 LTS on Azure China <https://portal.azure.cn/#create/canonical.ubuntu-24_04-ltscvm>`_
+Ubuntu Pro 24.04 LTS (Confidential Compute) - Noble Numbat
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+| Quick start: `Ubuntu Pro 24.04 LTS (Confidential Compute) on Azure <https://portal.azure.com/#create/canonical.ubuntu-24_04-ltsubuntu-pro-cvm>`_
+| Quick start (China): `Ubuntu Pro 24.04 LTS (Confidential Compute) on Azure China <https://portal.azure.cn/#create/canonical.ubuntu-24_04-ltsubuntu-pro-cvm>`_
+
+.. list-table::
+   :widths: 10 12 78
+   :header-rows: 1
+
+   * - **Arch**
+     - **Hyper-V**
+     - **URN**
+   * - AMD64
+     - Gen2
+     - ``Canonical:ubuntu-24_04-lts:ubuntu-pro-cvm:latest``
+
+Ubuntu 24.04 LTS (Confidential Compute) - Noble Numbat
+++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+| Quick start: `Ubuntu 24.04 LTS (Confidential Compute) on Azure <https://portal.azure.com/#create/canonical.ubuntu-24_04-ltscvm>`_
+| Quick start (China): `Ubuntu 24.04 LTS (Confidential Compute) on Azure China <https://portal.azure.cn/#create/canonical.ubuntu-24_04-ltscvm>`_
 
 .. list-table::
    :widths: 10 12 78
@@ -339,15 +358,29 @@ Ubuntu CVM 24.04 LTS - Noble Numbat
    * - AMD64
      - Gen2
      - ``Canonical:ubuntu-24_04-lts:cvm:latest``
+
+Ubuntu Pro 22.04 LTS (Confidential Compute) - Jammy Jellyfish
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+| Quick start: `Ubuntu Pro 22.04 LTS (Confidential Compute) on Azure <https://portal.azure.com/#create/canonical.ubuntu-22_04-ltsubuntu-pro-cvm>`_
+| Quick start (China): `Ubuntu Pro 22.04 LTS (Confidential Compute) on Azure China <https://portal.azure.cn/#create/canonical.ubuntu-22_04-ltsubuntu-pro-cvm>`_
+
+.. list-table::
+   :widths: 10 12 78
+   :header-rows: 1
+
+   * - **Arch**
+     - **Hyper-V**
+     - **URN**
    * - AMD64
      - Gen2
-     - ``Canonical:ubuntu-24_04-lts:ubuntu-pro-cvm:latest``
+     - ``Canonical:ubuntu-22_04-lts:ubuntu-pro-cvm:latest``
 
-Ubuntu CVM 22.04 LTS - Jammy Jellyfish
-++++++++++++++++++++++++++++++++++++++
+Ubuntu 22.04 LTS (Confidential Compute) - Jammy Jellyfish
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-| Quick start: `Ubuntu CVM 22.04 LTS on Azure <https://portal.azure.com/#create/canonical.ubuntu-22_04-ltscvm>`_
-| Quick start (China): `Ubuntu CVM 22.04 LTS on Azure China <https://portal.azure.cn/#create/canonical.ubuntu-22_04-ltscvm>`_
+| Quick start: `Ubuntu 22.04 LTS (Confidential Compute) on Azure <https://portal.azure.com/#create/canonical.ubuntu-22_04-ltscvm>`_
+| Quick start (China): `Ubuntu 22.04 LTS (Confidential Compute) on Azure China <https://portal.azure.cn/#create/canonical.ubuntu-22_04-ltscvm>`_
 
 .. list-table::
    :widths: 10 12 78
@@ -359,9 +392,6 @@ Ubuntu CVM 22.04 LTS - Jammy Jellyfish
    * - AMD64
      - Gen2
      - ``Canonical:ubuntu-22_04-lts:cvm:latest``
-   * - AMD64
-     - Gen2
-     - ``Canonical:ubuntu-22_04-lts:ubuntu-pro-cvm:latest``
 
 
 FIPS compliant offers
