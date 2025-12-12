@@ -30,7 +30,7 @@ In the cluster details screen of your Kubeflow deployment on AKS, go to :guilabe
 .. image:: deploy-kubeflow-pipelines-with-aks-spot-instances-images/kubeflow-aks-02.png
    :align: center
 
-Select :guilabel:`Enable Azure Spot instances`:
+Ensure that :guilabel:`Ubuntu Linux` is selected as the :guilabel:`OS SKU`, select :guilabel:`Enable Azure Spot instances`, and click :guilabel:`Configure` adjacent to :guilabel:`Azure Spot configuration`:
 
 .. image:: deploy-kubeflow-pipelines-with-aks-spot-instances-images/kubeflow-aks-03.png
    :align: center
