@@ -248,6 +248,7 @@ nsswitch
 Numbat
 Nutanix
 NVIDIA
+nvidia
 NVMe
 observability
 oci
