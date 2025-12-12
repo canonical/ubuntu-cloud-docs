@@ -464,11 +464,11 @@ CIS Hardened offer
 
 To learn more about CIS compliance: `CIS compliance with Ubuntu LTS <https://ubuntu.com/security/certifications/docs/usg/cis>`_
 
-Ubuntu Minimal Pro CIS 22.04 LTS - Jammy Jellyfish
-++++++++++++++++++++++++++++++++++++++++++++++++++
+Ubuntu Pro 22.04 LTS Minimal with CIS Hardening - Jammy Jellyfish
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-| Quick start (CIS Profile Level 1 Server): `Ubuntu Pro CIS Level 1 22.04 LTS on Azure  <https://portal.azure.com/#create/canonical.ubuntu-22_04-ltsubuntu-pro-minimal-cis-level-1>`_
-| Quick start (CIS Profile Level 2 Server): `Ubuntu Pro CIS Level 2 22.04 LTS on Azure  <https://portal.azure.com/#create/canonical.ubuntu-22_04-ltsubuntu-pro-minimal-cis-level-2>`_
+| Quick start (Level 1): `Ubuntu Pro 22.04 LTS Minimal with CIS Hardening (Level 1) on Azure  <https://portal.azure.com/#create/canonical.ubuntu-22_04-ltsubuntu-pro-minimal-cis-level-1>`_
+| Quick start (Level 2): `Ubuntu Pro 22.04 LTS Minimal with CIS Hardening (Level 2) on Azure  <https://portal.azure.com/#create/canonical.ubuntu-22_04-ltsubuntu-pro-minimal-cis-level-2>`_
 
 .. list-table::
    :widths: 10 10 12 68
@@ -495,10 +495,12 @@ Ubuntu Minimal Pro CIS 22.04 LTS - Jammy Jellyfish
      - Gen1
      - ``Canonical:ubuntu-22_04-lts:ubuntu-pro-minimal-cis-level-2-gen1:latest``
 
-Ubuntu Minimal Pro CIS 20.04 LTS - Focal Fossa
-++++++++++++++++++++++++++++++++++++++++++++++
+Ubuntu Pro 20.04 LTS Minimal with CIS Hardening - Focal Fossa
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Quick start: `Ubuntu Pro CIS 20.04 LTS on Azure  <https://portal.azure.com/#create/canonical.0001-com-ubuntu-pro-minimal-cis-focalpro-cis-minimal-20_04>`_
+.. note:: The images under this offer are hardened against the CIS Level 2 Benchmark.
+
+Quick start: `Ubuntu Pro 20.04 LTS Minimal with CIS Hardening on Azure  <https://portal.azure.com/#create/canonical.0001-com-ubuntu-pro-minimal-cis-focalpro-cis-minimal-20_04>`_
 
 .. list-table::
    :widths: 10 12 78
