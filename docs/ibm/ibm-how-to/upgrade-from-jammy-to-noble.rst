@@ -26,6 +26,14 @@ requires some :ref:`manual intervention <manual intervention ibm noble>` as expl
 Getting started
 ---------------
 
+Ensure your machine is updated and running the latest kernel:
+
+.. code-block::
+
+   sudo apt update
+   sudo apt upgrade
+   sudo reboot
+
 Run the following command to start the upgrade process:
 
 .. code-block::

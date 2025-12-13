@@ -20,6 +20,24 @@ For systems that cannot be easily created or destroyed and require manual config
 
 .. _manual intervention ibm jammy:
 
+Getting started
+---------------
+
+Ensure your machine is updated and running the latest kernel:
+
+.. code-block::
+
+   sudo apt update
+   sudo apt upgrade
+   sudo reboot
+
+Run the following command to start the upgrade process:
+
+.. code-block::
+
+   sudo do-release-upgrade
+
+
 Manual intervention steps
 -------------------------
 
