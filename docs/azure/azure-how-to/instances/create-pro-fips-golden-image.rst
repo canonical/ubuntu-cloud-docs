@@ -34,7 +34,7 @@ A new resource group with an unused name will have to be created. It can be dele
 .. note::
     To create a custom image, the AIB must be in the same resource group as the source-managed image.
 
-.. code::
+.. code-block:: sh
 
     # Resource group name
     sigResourceGroup=ibUbuntuFIPSGalleryRG
@@ -45,7 +45,7 @@ A new resource group with an unused name will have to be created. It can be dele
 
 Create variables for gallery name and image definition name. The image will be displayed in the Azure Portal as ``sigName/imageDefName``.
 
-.. code::
+.. code-block:: sh
 
     # Name of the ACG
     sigName=myIbGallery
@@ -56,13 +56,13 @@ Create variables for gallery name and image definition name. The image will be d
 
 Create a variable for your subscription ID:
 
-.. code::
+.. code-block:: sh
 
     subscriptionID=$(az account show --query id --output tsv)
 
 Set up variables for the Ubuntu Pro plan to be used. If you have an Ubuntu Pro private offer with Canonical that includes 24x7 technical support with SLAs, you'll have a custom offer and SKU, which can be used here. If not, as seen in the example below, you can use the details from the Ubuntu Pro 20.04 LTS FIPS image that is publicly available at the Azure Marketplace.
 
-.. code::
+.. code-block:: sh
 
     # Set the 'Publisher' field
     ProPlanPublisher=canonical
@@ -77,13 +77,13 @@ Create required resources, identities and permissions
 
 Create the resource group:
 
-.. code::
+.. code-block:: sh
 
     az group create -n $sigResourceGroup -l $location --subscription $subscriptionID
 
 AIB needs a user-identity to inject an image into ACG. So first create an Azure role definition with actions needed to distribute an image to ACG, and then assign that role definition to the user-identity.
 
-.. code::
+.. code-block:: sh
 
     # Create a user-identity
     identityName=aibBuiUserId$(date +'%s')
@@ -123,7 +123,7 @@ To use AIB with ACG, you'll need to have an existing gallery and an image defini
 
 First, create a gallery:
 
-.. code::
+.. code-block:: sh
 
     az sig create \
         -g $sigResourceGroup \
@@ -132,7 +132,7 @@ First, create a gallery:
 
 Then, create an image definition. Ensure that the “hyper-v-generation” flag is set to the same generation as the base image that you plan to use.
 
-.. code::
+.. code-block:: sh
 
     az sig image-definition create \
         -g $sigResourceGroup \
@@ -154,13 +154,13 @@ Create a configuration template
 
 We'll be using a sample JSON template to configure the image. It can be customized to include build instructions that are specifically needed for your golden image. Download a template:
 
-.. code::
+.. code-block:: sh
 
     curl https://pastebin.com/raw/fCkQAgAc -o UbuntuProFips2004SIGTemplate.json
 
 Customize it to use the values set above:
 
-.. code::
+.. code-block:: sh
 
     sed -i -e "s/<subscriptionID>/$subscriptionID/g" UbuntuProFips2004SIGTemplate.json
     sed -i -e "s/<rgName>/$sigResourceGroup/g" UbuntuProFips2004SIGTemplate.json
@@ -180,7 +180,7 @@ Review the template content
 
 In case you want to change something or add your own actions, some of the following sections might help. The plan details of the VM image being used as a starting point for your golden image are under 'source':
 
-.. code::
+.. code-block:: json
 
     "source": {
         "type": "PlatformImage",
@@ -197,7 +197,7 @@ In case you want to change something or add your own actions, some of the follow
 
 The ``customize`` section allows you to run commands as part of the image building process. The command seen here is used to include a wait until Ubuntu’s ``ua`` client is attached to its subscription.
 
-.. code::
+.. code-block:: json
 
     "customize": [
         {
@@ -210,7 +210,7 @@ The ``customize`` section allows you to run commands as part of the image buildi
 
 Within this section you can add your own actions, for say hardening the image or installing specific software.
 
-.. code::
+.. code-block:: json
 
     {
         "type": "Shell",
@@ -222,7 +222,7 @@ Within this section you can add your own actions, for say hardening the image or
 
 The following commands deregister the golden image from Ubuntu Pro and remove the machine-id. This will ensure that VMs generated from the golden image will generate their own unique IDs.
 
-.. code::
+.. code-block:: json
 
     {
         "type": "Shell",
@@ -246,7 +246,7 @@ Create the golden image
 
 To create the image in ACG, submit the image configuration to the AIB service:
 
-.. code::
+.. code-block:: sh
 
     az resource create \
         --resource-group $sigResourceGroup \
@@ -258,13 +258,13 @@ To create the image in ACG, submit the image configuration to the AIB service:
 
 Accept the legal terms of the image:
 
-.. code::
+.. code-block:: sh
 
     az vm image terms accept --plan $ProPlanSku --offer $ProPlanOffer --publisher $ProPlanPublisher --subscription $subscriptionID
 
 Start the image build process:
 
-.. code::
+.. code-block:: sh
 
     az resource invoke-action \
         --resource-group $sigResourceGroup \
@@ -277,7 +277,7 @@ This step can take some time (~25 minutes) as Azure will actually launch a VM an
 
 Once the build process is completed, the status will change from “Running” to "Succeeded", to show something like:
 
-.. code::
+.. code-block:: json
 
     {
         "endTime": "2022-09-10T23:13:25.9008064Z",
@@ -304,11 +304,11 @@ Create a VM - using the CLI
 
 To create a VM from the command line, you'll need to use all the variables created earlier. If you already have an SSH key use the following commands to launch the VM:
 
-.. code::
+.. code-block:: sh
 
     SSHPublicKeyPath=<path to your id_rsa.pub>
 
-.. code::
+.. code-block:: sh
 
     az vm create \
         --resource-group $sigResourceGroup \
@@ -325,7 +325,7 @@ To create a VM from the command line, you'll need to use all the variables creat
 
 Alternatively, if you do not have an SSH key, replace the ``--ssh-key-values $SSHPublicKeyPath`` with ``--generate-ssh-keys`` as shown below. However this may overwrite the ssh keypair ``id_rsa`` and ``id_rsa.pub`` located in .ssh in your home directory.
 
-.. code::
+.. code-block:: sh
 
     az vm create \
         --resource-group $sigResourceGroup \
@@ -343,7 +343,7 @@ Alternatively, if you do not have an SSH key, replace the ``--ssh-key-values $SS
 
 Once the command completes, you should see something like:
 
-.. code::
+.. code-block:: json
 
     {
         "fqdns": "",
@@ -365,7 +365,7 @@ Once the command completes, you should see something like:
 
 You can use the ``publicIpAddress`` (``51.143.126.x`` in this case) to ssh into the machine. To check that the VM is attached to an Ubuntu Pro subscription and is running a FIPS kernel, run:
 
-.. code::
+.. code-block:: sh
 
     sudo pro status --wait
 
@@ -375,7 +375,7 @@ Post creation cleanup
 
 You now have an Azure Compute Gallery with an Ubuntu Pro 20.04 LTS FIPS image inside. You have also launched and tested a VM based on this golden image. So you can go ahead with the deletion of the resource groups that were created. You should be able to see the created resource groups with:
 
-.. code::
+.. code-block:: sh
 
     az group list --query [].name --output table --subscription $subscriptionID | grep $sigResourceGroup
 
@@ -388,7 +388,7 @@ This command returns something like:
 
 If you want to delete these resource groups, use the following command on each of them. You may find that deleting the first one automatically deletes the second.
 
-.. code::
+.. code-block:: sh
 
     az group delete --name [the name from above] --subscription $subscriptionID
 
