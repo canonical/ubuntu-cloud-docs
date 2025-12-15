@@ -95,8 +95,8 @@ type for your Azure subscription:
         --generate-ssh-keys
 
 
-Confidential Virtual Machines (CVM)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Confidential Virtual Machine (CVM) images
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Ubuntu CVM images must be launched with `specialized hardware`_ and configure `Confidential OS disk encryption`_ for
 the deployment - either with or without Trusted Platform Module (TPM)-backed Full Disk Encryption (FDE).
