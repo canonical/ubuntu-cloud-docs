@@ -32,6 +32,9 @@ Azure CLI commands in this guide share some declared variables:
     # Ubuntu image lines.
     UBUNTU_IMAGE_URN="..."
 
+Familiarity with `Azure Virtual Machine size and series naming`_ is also helpful, as some images can only be deployed
+on specific hardware.
+
 Create a resource group
 -----------------------
 
@@ -130,3 +133,4 @@ the deployment - either with or without Trusted Platform Module (TPM)-backed Ful
 .. _`Trusted Launch`: https://learn.microsoft.com/en-us/azure/virtual-machines/trusted-launch
 .. _`specialized hardware`: https://learn.microsoft.com/en-us/azure/confidential-computing/confidential-vm-overview#size-support
 .. _`Confidential OS disk encryption`: https://learn.microsoft.com/en-us/azure/confidential-computing/confidential-vm-overview#confidential-os-disk-encryption
+.. _`Azure Virtual Machine size and series naming`: https://learn.microsoft.com/en-us/azure/virtual-machines/sizes
