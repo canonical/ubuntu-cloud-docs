@@ -42,7 +42,8 @@ Collaborative Optimizations
 #. `Anbox on Azure`_, that allows users to run Android apps on Azure at scale
 #. Collaboration with Azure's AKS team to support the `Azure Kubernetes worker node`_ image, as these worker nodes nearly always run Ubuntu
 #. Collaboration with the Azure Guest Patching Service and Update Manager teams to ensure simple security patch management for users
-#. Collaboration with the .Net team on `Chiseled .Net images`_ that have a smaller size and security cross-section 
+#. Collaboration with the .Net team on `Chiseled .Net images`_ that have a smaller size and security cross-section
+#. `Landscape on Azure`_, for managing your Ubuntu deployments at scale
 
 .. _`Server images`: https://ubuntu.com/azure
 .. _`Minimal images`: https://documentation.ubuntu.com/public-cloud/all-clouds-explanation/ubuntu-base-and-minimal-images/
@@ -58,3 +59,4 @@ Collaborative Optimizations
 .. _`Anbox on Azure`: https://documentation.ubuntu.com/anbox-cloud/howto/install-appliance/install-on-azure/
 .. _`Azure Kubernetes worker node`: http://documentation.ubuntu.com/azure/azure-explanation/ubuntu-on-aks-worker-nodes
 .. _`Chiseled .Net images`: https://devblogs.microsoft.com/dotnet/dotnet-6-is-now-in-ubuntu-2204
+.. _`Landscape on Azure`: https://documentation.ubuntu.com/landscape/how-to-guides/landscape-installation-and-set-up/cloud-providers/install-on-microsoft-azure/
