@@ -1,16 +1,16 @@
-Create an Ubuntu Pro FIPS golden image with Azure Image Builder
+Create an Ubuntu Pro golden image with Azure Image Builder
 ===============================================================
 
-This guide will provide instructions for using the Azure Image Builder (AIB) to create an Ubuntu Pro 20.04 LTS FIPS “golden” image in an Azure Compute Gallery, (formerly Shared Image Gallery). In the process, you'll:
+This guide will provide instructions for using the Azure Image Builder (AIB) to create an Ubuntu Pro “golden” image in an Azure Compute Gallery (formerly Shared Image Gallery). In the process, you'll:
 
 - Set up an environment with an Azure Compute Gallery (ACG) and the necessary resources to distribute an image from it
-- Create an image definition for Ubuntu Pro 20.04 LTS FIPS
+- Create an image definition for an Ubuntu Pro image
 - Create a build configuration template to add optional applications
 - Create the golden image using the AIB service
 - Create a VM from the golden image in the ACG
 
-.. note::
-    We are using a pre-enabled FIPS image, but you can also use the standard Ubuntu Pro if it better suits your needs.
+.. warning::
+    There are differences in this guide depending on what image is selected; these differences are covered in the tabbed sections.
 
 .. note::
     If you have manually configured a VM and would like to create a golden image from it you should instead follow `Azure's VM generalization instructions <https://learn.microsoft.com/en-us/azure/virtual-machines/generalize>`_.
@@ -21,7 +21,7 @@ What you'll need
 
 - A Microsoft Azure account
 - `Azure Command-Line Interface`_
-
+- jq (``sudo apt install jq``)
 
 Set up your Azure Compute Gallery
 ---------------------------------
@@ -40,22 +40,11 @@ A new resource group with an unused name will have to be created. It can be dele
 .. code-block:: sh
 
     # Resource group name
-    sigResourceGroup=ibUbuntuFIPSGalleryRG
+    sigResourceGroup=ibUbuntuGalleryRG
     # Datacenter location
     location=westus2
     # Additional region for image replication
     additionalregion=eastus
-
-Create variables for gallery name and image definition name. The image will be displayed in the Azure Portal as ``sigName/imageDefName``.
-
-.. code-block:: sh
-
-    # Name of the ACG
-    sigName=myIbGallery
-    # Name of the image definition to be created
-    imageDefName=myIbImageDef
-    # Image distribution metadata reference name
-    runOutputName=aibUbuntuSIG
 
 Create a variable for your subscription ID:
 
@@ -63,16 +52,91 @@ Create a variable for your subscription ID:
 
     subscriptionID=$(az account show --query id --output tsv)
 
-Set up variables for the Ubuntu Pro plan to be used. If you have an Ubuntu Pro private offer with Canonical that includes 24x7 technical support with SLAs, you'll have a custom offer and SKU, which can be used here. If not, as seen in the example below, you can use the details from the Ubuntu Pro 20.04 LTS FIPS image that is publicly available at the Azure Marketplace.
+Create variables for gallery name, image definition name and Ubuntu Pro plan to be used. See :doc:`Find Ubuntu images on Azure <find-ubuntu-images>` for a full list of available Pro images. If you have an Ubuntu Pro private offer with Canonical you'll have a custom offer and SKU which should be used.
 
-.. code-block:: sh
+.. tabs::
 
-    # Set the 'Publisher' field
-    ProPlanPublisher=canonical
-    # Set the 'Offer' field
-    ProPlanOffer=0001-com-ubuntu-pro-focal-fips
-    # ProPlanSku the 'Sku'
-    ProPlanSku=pro-fips-20_04-gen2
+   .. tab:: Ubuntu Pro Server 24.04
+
+      .. code-block:: sh
+
+         # Name of the ACG
+         sigName=myIbGallery
+         # Name of the image definition to be created
+         imageDefName=ubuntuPro2404
+         # Image distribution metadata reference name
+         runOutputName=aibUbuntuSIG
+         # Image template filename
+         imageTemplateFile=UbuntuPro2404SIGTemplate.json
+         # Image template name
+         imageTemplateName=UbuntuPro2404SIG01
+
+         # Set the 'Publisher' field
+         ProPlanPublisher=canonical
+         # Set the 'Offer' field
+         ProPlanOffer=ubuntu-24_04-lts
+         # ProPlanSku the 'Sku'
+         ProPlanSku=ubuntu-pro
+
+   .. tab:: Ubuntu Pro FIPS 22.04
+
+      .. code-block:: sh
+
+         # Name of the ACG
+         sigName=myIbGallery
+         # Name of the image definition to be created
+         imageDefName=ubuntuProFips2204
+         # Image distribution metadata reference name
+         runOutputName=aibUbuntuSIG
+         # Image template filename
+         imageTemplateFile=UbuntuProFips2204SIGTemplate.json
+         # Image template name
+         imageTemplateName=UbuntuProFips2204SIG01
+
+         # Set the 'Publisher' field
+         ProPlanPublisher=canonical
+         # Set the 'Offer' field
+         ProPlanOffer=ubuntu-22_04-lts
+         # ProPlanSku the 'Sku'
+         ProPlanSku=ubuntu-pro-fips
+
+   .. tab:: Ubuntu Pro FIPS 20.04
+
+      .. code-block:: sh
+
+         # Name of the ACG
+         sigName=myIbGallery
+         # Name of the image definition to be created
+         imageDefName=ubuntuProFips2004
+         # Image distribution metadata reference name
+         runOutputName=aibUbuntuSIG
+         # Image template filename
+         imageTemplateFile=UbuntuProFips2004SIGTemplate.json
+         # Image template name
+         imageTemplateName=UbuntuProFips2004SIG01
+
+         # Set the 'Publisher' field
+         ProPlanPublisher=canonical
+         # Set the 'Offer' field
+         ProPlanOffer=0001-com-ubuntu-pro-focal-fips
+         # ProPlanSku the 'Sku'
+         ProPlanSku=pro-fips-20_04-gen2
+
+.. important::
+   Azure has different kinds of images which will change the instructions in the following sections. To determine whether you are using an image "with plan metadata" or "without plan metadata" use ``az vm image show --urn <your image>`` and check for the presence of the "plan" key.
+
+   .. code-block:: sh
+
+       # Ubuntu Pro FIPS 22.04
+       az vm image show --urn "Canonical:ubuntu-22_04-lts:ubuntu-pro-fips:latest" | jq 'has("plan")'
+       # Returns false, therefore does NOT have plan metadata
+
+       # Ubuntu Pro FIPS 20.04
+       az vm image show --urn "Canonical:0001-com-ubuntu-pro-focal-fips:pro-fips-20_04:latest" | jq 'has("plan")'
+       # Returns true, therefore has plan metadata
+
+
+   In the following sections make sure to select the tab corresponding to your image type.
 
 
 Create required resources, identities and permissions
@@ -135,21 +199,40 @@ First, create a gallery:
 
 Then, create an image definition. Ensure that the “hyper-v-generation” flag is set to the same generation as the base image that you plan to use.
 
-.. code-block:: sh
+.. tabs::
 
-    az sig image-definition create \
-        -g $sigResourceGroup \
-        --gallery-name $sigName \
-        --gallery-image-definition $imageDefName \
-        --publisher $ProPlanPublisher \
-        --offer $ProPlanOffer \
-        --sku $ProPlanSku \
-        --os-type Linux \
-        --plan-name $ProPlanSku \
-        --plan-product $ProPlanOffer \
-        --plan-publisher $ProPlanPublisher \
-        --hyper-v-generation V2 \
-        --subscription $subscriptionID
+   .. tab:: Image without plan metadata
+
+      .. code-block:: sh
+
+         az sig image-definition create \
+             -g $sigResourceGroup \
+             --gallery-name $sigName \
+             --gallery-image-definition $imageDefName \
+             --publisher $ProPlanPublisher \
+             --offer $ProPlanOffer \
+             --sku $ProPlanSku \
+             --os-type Linux \
+             --hyper-v-generation V2 \
+             --subscription $subscriptionID
+
+   .. tab:: Image with plan metadata
+
+      .. code-block:: sh
+
+         az sig image-definition create \
+             -g $sigResourceGroup \
+             --gallery-name $sigName \
+             --gallery-image-definition $imageDefName \
+             --publisher $ProPlanPublisher \
+             --offer $ProPlanOffer \
+             --sku $ProPlanSku \
+             --os-type Linux \
+             --plan-name $ProPlanSku \
+             --plan-product $ProPlanOffer \
+             --plan-publisher $ProPlanPublisher \
+             --hyper-v-generation V2 \
+             --subscription $subscriptionID
 
 
 Create a configuration template
@@ -157,25 +240,36 @@ Create a configuration template
 
 We'll be using a sample JSON template to configure the image. It can be customized to include build instructions that are specifically needed for your golden image. Download a template:
 
-.. code-block:: sh
+.. tabs::
 
-    curl https://raw.githubusercontent.com/canonical/ubuntu-cloud-docs/refs/heads/main/docs/azure/azure-how-to/instances/aibImageTemplate.json -o UbuntuProFips2004SIGTemplate.json
+   .. tab:: Image without plan metadata
+
+      .. code-block:: sh
+
+         curl https://raw.githubusercontent.com/canonical/ubuntu-cloud-docs/refs/heads/main/docs/azure/azure-how-to/instances/aibImageTemplateWithoutPlanMetadata.json -o $imageTemplateFile
+
+   .. tab:: Image with plan metadata
+
+      .. code-block:: sh
+
+         curl https://raw.githubusercontent.com/canonical/ubuntu-cloud-docs/refs/heads/main/docs/azure/azure-how-to/instances/aibImageTemplateWithPlanMetadata.json -o $imageTemplateFile
+
 
 Customize it to use the values set above:
 
 .. code-block:: sh
 
-    sed -i -e "s/<subscriptionID>/$subscriptionID/g" UbuntuProFips2004SIGTemplate.json
-    sed -i -e "s/<rgName>/$sigResourceGroup/g" UbuntuProFips2004SIGTemplate.json
-    sed -i -e "s/<imageDefName>/$imageDefName/g" UbuntuProFips2004SIGTemplate.json
-    sed -i -e "s/<sharedImageGalName>/$sigName/g" UbuntuProFips2004SIGTemplate.json
-    sed -i -e "s/<region1>/$location/g" UbuntuProFips2004SIGTemplate.json
-    sed -i -e "s/<region2>/$additionalregion/g" UbuntuProFips2004SIGTemplate.json
-    sed -i -e "s/<runOutputName>/$runOutputName/g" UbuntuProFips2004SIGTemplate.json
-    sed -i -e "s%<imgBuilderId>%$imgBuilderId%g" UbuntuProFips2004SIGTemplate.json
-    sed -i -e "s/<ProPlanPublisher>/$ProPlanPublisher/g" UbuntuProFips2004SIGTemplate.json
-    sed -i -e "s/<ProPlanOffer>/$ProPlanOffer/g" UbuntuProFips2004SIGTemplate.json
-    sed -i -e "s/<ProPlanSku>/$ProPlanSku/g" UbuntuProFips2004SIGTemplate.json
+    sed -i -e "s/<subscriptionID>/$subscriptionID/g" $imageTemplateFile
+    sed -i -e "s/<rgName>/$sigResourceGroup/g" $imageTemplateFile
+    sed -i -e "s/<imageDefName>/$imageDefName/g" $imageTemplateFile
+    sed -i -e "s/<sharedImageGalName>/$sigName/g" $imageTemplateFile
+    sed -i -e "s/<region1>/$location/g" $imageTemplateFile
+    sed -i -e "s/<region2>/$additionalregion/g" $imageTemplateFile
+    sed -i -e "s/<runOutputName>/$runOutputName/g" $imageTemplateFile
+    sed -i -e "s%<imgBuilderId>%$imgBuilderId%g" $imageTemplateFile
+    sed -i -e "s/<ProPlanPublisher>/$ProPlanPublisher/g" $imageTemplateFile
+    sed -i -e "s/<ProPlanOffer>/$ProPlanOffer/g" $imageTemplateFile
+    sed -i -e "s/<ProPlanSku>/$ProPlanSku/g" $imageTemplateFile
 
 
 Review the template content
@@ -183,29 +277,45 @@ Review the template content
 
 In case you want to change something or add your own actions, some of the following sections might help. The plan details of the VM image being used as a starting point for your golden image are under 'source':
 
-.. code-block:: json
+.. tabs::
 
-    "source": {
-        "type": "PlatformImage",
-            "publisher": "canonical",
-            "offer": "0001-com-ubuntu-pro-focal-fips",
-            "sku": "pro-fips-20_04-gen2",
-            "version": "latest",
-    "planInfo": {
+   .. tab:: Image without plan metadata
+
+      .. code-block:: json
+
+         "source": {
+             "type": "PlatformImage",
+             "publisher": "canonical",
+             "offer": "ubuntu-22_04-lts",
+             "sku": "ubuntu-pro-fips",
+             "version": "latest"
+         },
+
+   .. tab:: Image with plan metadata
+
+      .. code-block:: json
+
+         "source": {
+             "type": "PlatformImage",
+             "publisher": "canonical",
+             "offer": "0001-com-ubuntu-pro-focal-fips",
+             "sku": "pro-fips-20_04-gen2",
+             "version": "latest",
+             "planInfo": {
                 "planName": "pro-fips-20_04-gen2",
                 "planProduct": "0001-com-ubuntu-pro-focal-fips",
                 "planPublisher": "canonical"
-            }
-    },
+             }
+         },
 
-The ``customize`` section allows you to run commands as part of the image building process. The command seen here is used to include a wait until Ubuntu’s ``ua`` client is attached to its subscription.
+The ``customize`` section allows you to run commands as part of the image building process. The command seen here is used to include a wait until Ubuntu’s ``pro`` client is attached to its subscription.
 
 .. code-block:: json
 
     "customize": [
         {
         "type": "Shell",
-        "name": "WaitForUAtokenAutoAttach",
+        "name": "WaitForProTokenAutoAttach",
         "inline": [
             "sudo pro status --wait"
         ]
@@ -225,23 +335,38 @@ Within this section you can add your own actions, for say hardening the image or
 
 The following commands deregister the golden image from Ubuntu Pro and remove the machine-id. This will ensure that VMs generated from the golden image will generate their own unique IDs.
 
-.. code-block:: json
+.. tabs::
 
-    {
-        "type": "Shell",
-        "name": "DetachUA -- images created from this will auto attach themselves with new credentials",
-        "inline": [
-            "sudo ua detach --assume-yes && sudo rm -rf /var/log/ubuntu-advantage.log"
-        ]
-    },
+   .. tab:: Image without plan metadata
 
-    {
-        "type": "Shell",
-        "name": "Replace /etc/machine-id with empty file to ensure UA client does not see clones as duplicates",
-        "inline": [
-            "sudo rm -f /etc/machine-id && sudo touch /etc/machine-id"
-        ]
-    }
+      .. code-block:: json
+
+          {
+             "type": "Shell",
+             "name": "Replace /etc/machine-id with empty file to ensure the Pro client does not see clones as duplicates",
+             "inline": [
+                  "sudo rm -f /etc/machine-id && sudo touch /etc/machine-id"
+             ]
+          }
+
+   .. tab:: Image with plan metadata
+
+      .. code-block:: json
+
+          {
+              "type": "Shell",
+              "name": "DetachPro -- images created from this will auto attach themselves with new credentials",
+              "inline": [
+                   "sudo pro detach --assume-yes && sudo rm -rf /var/log/ubuntu-advantage.log"
+              ]
+          },
+          {
+             "type": "Shell",
+             "name": "Replace /etc/machine-id with empty file to ensure the Pro client does not see clones as duplicates",
+             "inline": [
+                  "sudo rm -f /etc/machine-id && sudo touch /etc/machine-id"
+             ]
+          }
 
 
 Create the golden image
@@ -254,10 +379,10 @@ To create the image in ACG, submit the image configuration to the AIB service:
     az resource create \
         --resource-group $sigResourceGroup \
         --subscription $subscriptionID \
-        --properties @UbuntuProFips2004SIGTemplate.json \
+        --properties @$imageTemplateFile \
         --is-full-object \
         --resource-type Microsoft.VirtualMachineImages/imageTemplates \
-        -n UbuntuProFips2004SIG01
+        -n $imageTemplateName
 
 Accept the legal terms of the image:
 
@@ -273,7 +398,7 @@ Start the image build process:
         --resource-group $sigResourceGroup \
         --subscription $subscriptionID \
         --resource-type  Microsoft.VirtualMachineImages/imageTemplates \
-        -n UbuntuProFips2004SIG01 \
+        -n $imageTemplateName \
         --action Run
 
 This step can take some time (~25 minutes) as Azure will actually launch a VM and run the steps that you have defined. While you are waiting for the AIB build process to complete, you can view the corresponding logs by going to the storage account inside the resource group created by AIB. (i.e. Go to Azure Portal > Resource groups > ``IT_ibUbuntuFIPSGalleryRG_***`` > Random ID of the storage account > Containers > ``packerlogs`` > Random ID of the container > ``customization.log`` > Download)
@@ -311,38 +436,73 @@ To create a VM from the command line, you'll need to use all the variables creat
 
     SSHPublicKeyPath=<path to your id_rsa.pub>
 
-.. code-block:: sh
+.. tabs::
 
-    az vm create \
-        --resource-group $sigResourceGroup \
-        --subscription $subscriptionID \
-        --name myAibGalleryVM \
-        --admin-username aibuser \
-        --location $location \
-        --image "/subscriptions/$subscriptionID/resourceGroups/$sigResourceGroup/providers/Microsoft.Compute/galleries/$sigName/images/$imageDefName/versions/latest" \
-        --ssh-key-values $SSHPublicKeyPath \
-        --plan-name $ProPlanSku \
-        --plan-product $ProPlanOffer \
-        --public-ip-sku Standard \
-        --plan-publisher $ProPlanPublisher
+   .. tab:: Image without plan metadata
+
+      .. code-block:: sh
+
+         az vm create \
+             --resource-group $sigResourceGroup \
+             --subscription $subscriptionID \
+             --name myAibGalleryVM \
+             --admin-username aibuser \
+             --location $location \
+             --image "/subscriptions/$subscriptionID/resourceGroups/$sigResourceGroup/providers/Microsoft.Compute/galleries/$sigName/images/$imageDefName/versions/latest" \
+             --ssh-key-values $SSHPublicKeyPath \
+             --public-ip-sku Standard
+
+   .. tab:: Image with plan metadata
+
+      .. code-block:: sh
+
+         az vm create \
+             --resource-group $sigResourceGroup \
+             --subscription $subscriptionID \
+             --name myAibGalleryVM \
+             --admin-username aibuser \
+             --location $location \
+             --image "/subscriptions/$subscriptionID/resourceGroups/$sigResourceGroup/providers/Microsoft.Compute/galleries/$sigName/images/$imageDefName/versions/latest" \
+             --ssh-key-values $SSHPublicKeyPath \
+             --plan-name $ProPlanSku \
+             --plan-product $ProPlanOffer \
+             --public-ip-sku Standard \
+             --plan-publisher $ProPlanPublisher
 
 Alternatively, if you do not have an SSH key, replace the ``--ssh-key-values $SSHPublicKeyPath`` with ``--generate-ssh-keys`` as shown below. However this may overwrite the ssh keypair ``id_rsa`` and ``id_rsa.pub`` located in .ssh in your home directory.
 
-.. code-block:: sh
+.. tabs::
 
-    az vm create \
-        --resource-group $sigResourceGroup \
-        --subscription $subscriptionID \
-        --name myAibGalleryVM \
-        --admin-username aibuser \
-        --location $location \
-        --image "/subscriptions/$subscriptionID/resourceGroups/$sigResourceGroup/providers/Microsoft.Compute/galleries/$sigName/images/$imageDefName/versions/latest" \
-        --generate-ssh-keys \
-        --plan-name $ProPlanSku \
-        --plan-product $ProPlanOffer \
-        --public-ip-sku Standard \
-        --plan-publisher $ProPlanPublisher
+   .. tab:: Image without plan metadata
 
+      .. code-block:: sh
+
+         az vm create \
+             --resource-group $sigResourceGroup \
+             --subscription $subscriptionID \
+             --name myAibGalleryVM \
+             --admin-username aibuser \
+             --location $location \
+             --image "/subscriptions/$subscriptionID/resourceGroups/$sigResourceGroup/providers/Microsoft.Compute/galleries/$sigName/images/$imageDefName/versions/latest" \
+             --generate-ssh-keys \
+             --public-ip-sku Standard
+
+   .. tab:: Image with plan metadata
+
+      .. code-block:: sh
+
+         az vm create \
+             --resource-group $sigResourceGroup \
+             --subscription $subscriptionID \
+             --name myAibGalleryVM \
+             --admin-username aibuser \
+             --location $location \
+             --image "/subscriptions/$subscriptionID/resourceGroups/$sigResourceGroup/providers/Microsoft.Compute/galleries/$sigName/images/$imageDefName/versions/latest" \
+             --generate-ssh-keys \
+             --plan-name $ProPlanSku \
+             --plan-product $ProPlanOffer \
+             --public-ip-sku Standard \
+             --plan-publisher $ProPlanPublisher
 
 Once the command completes, you should see something like:
 
@@ -366,17 +526,18 @@ Once the command completes, you should see something like:
         "zones": ""
     }
 
-You can use the ``publicIpAddress`` (``51.143.126.x`` in this case) to ssh into the machine. To check that the VM is attached to an Ubuntu Pro subscription and is running a FIPS kernel, run:
+You can use the ``publicIpAddress`` (``51.143.126.x`` in this case) to ssh into the machine. To check that the VM has attached to Pro:
 
 .. code-block:: sh
 
+    ssh aibuser@<ip address>
     sudo pro status --wait
 
 
 Post creation cleanup
 ---------------------
 
-You now have an Azure Compute Gallery with an Ubuntu Pro 20.04 LTS FIPS image inside. You have also launched and tested a VM based on this golden image. So you can go ahead with the deletion of the resource groups that were created. You should be able to see the created resource groups with:
+You now have an Azure Compute Gallery with an Ubuntu Pro image inside. You have also launched and tested a VM based on this golden image. So you can go ahead with the deletion of the resource groups that were created. You should be able to see the created resource groups with:
 
 .. code-block:: sh
 
@@ -394,8 +555,6 @@ If you want to delete these resource groups, use the following command on each o
 .. code-block:: sh
 
     az group delete --name [the name from above] --subscription $subscriptionID
-
-
 
 
 .. _`Azure Command-Line Interface`: https://learn.microsoft.com/en-us/cli/azure/?view=azure-cli-latest

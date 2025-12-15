@@ -39,9 +39,9 @@
     "customize": [
       {
         "type": "Shell",
-        "name": "WaitForUAtokenAutoAttach",
+        "name": "WaitForProTokenAutoAttach",
         "inline": [
-          "sudo ua status --wait"
+          "sudo pro status --wait"
         ]
       },
 
@@ -55,15 +55,15 @@
 
       {
         "type": "Shell",
-        "name": "DetachUA -- images created from this will auto attach themselves with new credentials",
+        "name": "DetachPro -- images created from this will auto attach themselves with new credentials",
         "inline": [
-          "sudo ua detach --assume-yes && sudo rm -rf /var/log/ubuntu-advantage.log"
+          "sudo pro detach --assume-yes && sudo rm -rf /var/log/ubuntu-advantage.log"
         ]
       },
 
       {
         "type": "Shell",
-        "name": "Replace /etc/machine-id with empty file to ensure UA client does not see clones as duplicates",
+        "name": "Replace /etc/machine-id with empty file to ensure the Pro client does not see clones as duplicates",
         "inline": [
           "sudo rm -f /etc/machine-id && sudo touch /etc/machine-id"
         ]
