@@ -16,7 +16,7 @@ Azure CLI commands in this guide share some declared variables:
 
 .. code::
 
-    # The resource group to create the virtual machine in. this can either be
+    # The resource group to create the virtual machine in. This can either be
     # an existing resource group, or one created as part of the guide.
     RESOURCE_GROUP_NAME="..."
 
