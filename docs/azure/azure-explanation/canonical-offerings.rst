@@ -35,6 +35,15 @@ Customized kernel
 
 The ``linux-azure`` kernel enables accelerated networking for the InfiniBand capable instances, as well as consistent support for the Single Root I/O Virtualization (SR-IOV) on the present hardware, enabling network traffic to bypass the virtualization stack and achieve almost native performance. It comes with FPGA support out of the box, taking advantage of Project Catapult to provide performance without the cost and complexity of a custom ASIC.
 
+Kernel variants
++++++++++++++++
+
+In addition to the default ``linux-azure`` kernel on Azure, Canonical produces kernel variants:
+
+- ``linux-azure-fde``: Enables support for Azure Confidential Compute and is installed in `Ubuntu CVM images`_.
+- ``linux-azure-nvidia``: The kernel for GB200-Compatible Server images to enable support for `NVIDIA GB200 Grace Blackwell hardware`_.
+- ``linux-azure-fips``: The FIPS complain kernel for Ubuntu images on Azure and is installed in `Ubuntu Pro FIPS images`_.
+
 Collaborative Optimizations
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -54,6 +63,7 @@ Collaborative Optimizations
 .. _`Ubuntu Pro FIPS images`: https://ubuntu.com/azure/fips
 .. _`Ubuntu Pro Minimal CIS images`: https://ubuntu.com/security/cis
 .. _`Confidential Virtual Machine (CVM) images`: http://documentation.ubuntu.com/azure/azure-explanation/security-overview/#confidential-virtual-machines-cvms
+.. _`Ubuntu CVM images`: http://documentation.ubuntu.com/azure/azure-explanation/security-overview/#confidential-virtual-machines-cvms
 .. _`SQL Server on Ubuntu Pro`: https://marketplace.microsoft.com/en-us/product/virtual-machines/microsoftsqlserver.sql2019-ubuntupro2004?tab=Overview
 .. _`Anbox on Azure`: https://documentation.ubuntu.com/anbox-cloud/howto/install-appliance/install-on-azure/
 .. _`Azure Kubernetes worker node`: http://documentation.ubuntu.com/azure/azure-explanation/ubuntu-on-aks-worker-nodes
