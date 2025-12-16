@@ -323,11 +323,30 @@ Confidential compute capable offer
 
 To learn more about Confidential Compute: `Azure confidential computing <https://azure.microsoft.com/en-us/solutions/confidential-compute/#overview>`_
 
-Ubuntu CVM 24.04 LTS - Noble Numbat
-++++++++++++++++++++++++++++++++++++++
+.. note:: While confidential VMs safeguard your workload from external threats, internal vulnerabilities within their boundaries can still pose risks. This is where Ubuntu Pro proves invaluable, ensuring your guest CVM software stack is continuously patched and up-to-date.
 
-| Quick start: `Ubuntu CVM 24.04 LTS on Azure <https://portal.azure.com/#create/canonical.ubuntu-24_04-ltscvm>`_
-| Quick start (China): `Ubuntu CVM 24.04 LTS on Azure China <https://portal.azure.cn/#create/canonical.ubuntu-24_04-ltscvm>`_
+Ubuntu Pro 24.04 LTS (Confidential Compute) - Noble Numbat
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+| Quick start: `Ubuntu Pro 24.04 LTS (Confidential Compute) on Azure <https://portal.azure.com/#create/canonical.ubuntu-24_04-ltsubuntu-pro-cvm>`_
+| Quick start (China): `Ubuntu Pro 24.04 LTS (Confidential Compute) on Azure China <https://portal.azure.cn/#create/canonical.ubuntu-24_04-ltsubuntu-pro-cvm>`_
+
+.. list-table::
+   :widths: 10 12 78
+   :header-rows: 1
+
+   * - **Arch**
+     - **Hyper-V**
+     - **URN**
+   * - AMD64
+     - Gen2
+     - ``Canonical:ubuntu-24_04-lts:ubuntu-pro-cvm:latest``
+
+Ubuntu 24.04 LTS (Confidential Compute) - Noble Numbat
+++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+| Quick start: `Ubuntu 24.04 LTS (Confidential Compute) on Azure <https://portal.azure.com/#create/canonical.ubuntu-24_04-ltscvm>`_
+| Quick start (China): `Ubuntu 24.04 LTS (Confidential Compute) on Azure China <https://portal.azure.cn/#create/canonical.ubuntu-24_04-ltscvm>`_
 
 .. list-table::
    :widths: 10 12 78
@@ -339,15 +358,29 @@ Ubuntu CVM 24.04 LTS - Noble Numbat
    * - AMD64
      - Gen2
      - ``Canonical:ubuntu-24_04-lts:cvm:latest``
+
+Ubuntu Pro 22.04 LTS (Confidential Compute) - Jammy Jellyfish
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+| Quick start: `Ubuntu Pro 22.04 LTS (Confidential Compute) on Azure <https://portal.azure.com/#create/canonical.ubuntu-22_04-ltsubuntu-pro-cvm>`_
+| Quick start (China): `Ubuntu Pro 22.04 LTS (Confidential Compute) on Azure China <https://portal.azure.cn/#create/canonical.ubuntu-22_04-ltsubuntu-pro-cvm>`_
+
+.. list-table::
+   :widths: 10 12 78
+   :header-rows: 1
+
+   * - **Arch**
+     - **Hyper-V**
+     - **URN**
    * - AMD64
      - Gen2
-     - ``Canonical:ubuntu-24_04-lts:ubuntu-pro-cvm:latest``
+     - ``Canonical:ubuntu-22_04-lts:ubuntu-pro-cvm:latest``
 
-Ubuntu CVM 22.04 LTS - Jammy Jellyfish
-++++++++++++++++++++++++++++++++++++++
+Ubuntu 22.04 LTS (Confidential Compute) - Jammy Jellyfish
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-| Quick start: `Ubuntu CVM 22.04 LTS on Azure <https://portal.azure.com/#create/canonical.ubuntu-22_04-ltscvm>`_
-| Quick start (China): `Ubuntu CVM 22.04 LTS on Azure China <https://portal.azure.cn/#create/canonical.ubuntu-22_04-ltscvm>`_
+| Quick start: `Ubuntu 22.04 LTS (Confidential Compute) on Azure <https://portal.azure.com/#create/canonical.ubuntu-22_04-ltscvm>`_
+| Quick start (China): `Ubuntu 22.04 LTS (Confidential Compute) on Azure China <https://portal.azure.cn/#create/canonical.ubuntu-22_04-ltscvm>`_
 
 .. list-table::
    :widths: 10 12 78
@@ -359,15 +392,17 @@ Ubuntu CVM 22.04 LTS - Jammy Jellyfish
    * - AMD64
      - Gen2
      - ``Canonical:ubuntu-22_04-lts:cvm:latest``
-   * - AMD64
-     - Gen2
-     - ``Canonical:ubuntu-22_04-lts:ubuntu-pro-cvm:latest``
 
 
 FIPS compliant offers
 ~~~~~~~~~~~~~~~~~~~~~
 
 To learn more about FIPS: `FIPS for Ubuntu <https://ubuntu.com/security/certifications/docs/fips>`_
+
+.. note::
+  | Starting with Ubuntu Pro FIPS 22.04 LTS, images are based on the ``fips-updates`` Ubuntu Pro service, which provides ongoing security updates to the FIPS-140-3-certified modules included in the image. Ubuntu Pro FIPS images corresponding to earlier Ubuntu releases are based on the ``fips`` Ubuntu Pro service, which provides FIPS-140-2-certified modules, but no ongoing security updates.
+
+  | The difference reflects FEDRAMP's move to more permissive guidelines and rectifies the inherent insecurity of the images corresponding to earlier Ubuntu releases. See this `Canonical blog post <https://ubuntu.com/blog/the-role-of-fips-140-3-in-the-latest-fedramp-guidance>`_ to learn more about why this change was made and how ``fips-updates`` is more secure for your cloud environment.
 
 Ubuntu Pro FIPS 22.04 LTS - Jammy Jellyfish
 +++++++++++++++++++++++++++++++++++++++++++
@@ -434,11 +469,11 @@ CIS Hardened offer
 
 To learn more about CIS compliance: `CIS compliance with Ubuntu LTS <https://ubuntu.com/security/certifications/docs/usg/cis>`_
 
-Ubuntu Minimal Pro CIS 22.04 LTS - Jammy Jellyfish
-++++++++++++++++++++++++++++++++++++++++++++++++++
+Ubuntu Pro 22.04 LTS Minimal with CIS Hardening - Jammy Jellyfish
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-| Quick start (CIS Profile Level 1 Server): `Ubuntu Pro CIS Level 1 22.04 LTS on Azure  <https://portal.azure.com/#create/canonical.ubuntu-22_04-ltsubuntu-pro-minimal-cis-level-1>`_
-| Quick start (CIS Profile Level 2 Server): `Ubuntu Pro CIS Level 2 22.04 LTS on Azure  <https://portal.azure.com/#create/canonical.ubuntu-22_04-ltsubuntu-pro-minimal-cis-level-2>`_
+| Quick start (Level 1): `Ubuntu Pro 22.04 LTS Minimal with CIS Hardening (Level 1) on Azure  <https://portal.azure.com/#create/canonical.ubuntu-22_04-ltsubuntu-pro-minimal-cis-level-1>`_
+| Quick start (Level 2): `Ubuntu Pro 22.04 LTS Minimal with CIS Hardening (Level 2) on Azure  <https://portal.azure.com/#create/canonical.ubuntu-22_04-ltsubuntu-pro-minimal-cis-level-2>`_
 
 .. list-table::
    :widths: 10 10 12 68
@@ -465,10 +500,12 @@ Ubuntu Minimal Pro CIS 22.04 LTS - Jammy Jellyfish
      - Gen1
      - ``Canonical:ubuntu-22_04-lts:ubuntu-pro-minimal-cis-level-2-gen1:latest``
 
-Ubuntu Minimal Pro CIS 20.04 LTS - Focal Fossa
-++++++++++++++++++++++++++++++++++++++++++++++
+Ubuntu Pro 20.04 LTS Minimal with CIS Hardening - Focal Fossa
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Quick start: `Ubuntu Pro CIS 20.04 LTS on Azure  <https://portal.azure.com/#create/canonical.0001-com-ubuntu-pro-minimal-cis-focalpro-cis-minimal-20_04>`_
+.. note:: The images under this offer are hardened against the CIS Level 2 Benchmark.
+
+Quick start: `Ubuntu Pro 20.04 LTS Minimal with CIS Hardening on Azure  <https://portal.azure.com/#create/canonical.0001-com-ubuntu-pro-minimal-cis-focalpro-cis-minimal-20_04>`_
 
 .. list-table::
    :widths: 10 12 78
