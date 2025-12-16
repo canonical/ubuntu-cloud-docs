@@ -38,7 +38,6 @@ Users can select from the following auto-upgrade channel options: ``None``, ``Un
      Legacy clusters may default to ``None``, thereby disabling automatic updates. Administrators should adjust their cluster's setting according to their security and maintenance preferences.
 
 
-.. _`end of standard support for Ubuntu 18.04 LTS`: https://ubuntu.com/blog/18-04-end-of-standard-support
 .. _`AgentBaker`: https://github.com/Azure/AgentBaker
 .. _`unattended-upgrades`: https://ubuntu.com/blog/ubuntu-updates-best-practices-for-updating-your-instance#updating-automatically-with-unattended-upgrades
 .. _`Kubernetes cluster version upgrades`: https://learn.microsoft.com/en-us/azure/aks/auto-upgrade-cluster
