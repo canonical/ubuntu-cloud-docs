@@ -6,13 +6,13 @@ Ubuntu images
 
 Canonical produces a wide variety of Ubuntu images to support numerous features found on Azure.
 
-* `Server images`_ are general-purpose, customized for Azure Virtual Machines using the ``linux-azure`` kernel. These images are also available with `Ubuntu Pro`_ enabled.
+* `Server images`_ are general-purpose images customized for Azure Virtual Machines. These images are also available with `Ubuntu Pro`_ enabled.
 
 * `Minimal images`_ are designed for automated deployment at scale with a reduced default package set. Things like interactive usage tools are omitted. They are much smaller, boot faster, and require fewer security updates over time due to the fewer installed packages. These images are also available with `Ubuntu Pro`_ enabled.
 
 * `Confidential Virtual Machine (CVM) images`_ provide enhanced security features designed to protect data at rest, in use, and during boot. CVM images are Intended for use with Azure's confidential computing capabilities using hardware-enabled security features. These images are also available with `Ubuntu Pro`_ enabled.
 
-* GB200-Compatible Server images are optimized for AI when enabled with `NVIDIA GB200 Grace Blackwell hardware`_. They are built with a custom ``linux-azure-nvidia`` kernel and a pre-configured RDMA/InfiniBand user-space. These images are also available with `Ubuntu Pro`_ enabled.
+* GB200-Compatible Server images are optimized for AI and designed to run on `NVIDIA GB200 hardware`_. These images are also availble with `Ubuntu Pro`_ enabled.
 
 * `Ubuntu Pro images`_ are premium images that include certified components, hardening options, and comprehensive, open-source security coverage for at least 10 years, `kernel Livepatch service`_ and optional `24/7 enterprise-grade support`_.
 
@@ -35,6 +35,15 @@ Customized kernel
 
 The ``linux-azure`` kernel enables accelerated networking for the InfiniBand capable instances, as well as consistent support for the Single Root I/O Virtualization (SR-IOV) on the present hardware, enabling network traffic to bypass the virtualization stack and achieve almost native performance. It comes with FPGA support out of the box, taking advantage of Project Catapult to provide performance without the cost and complexity of a custom ASIC.
 
+Kernel variants
++++++++++++++++
+
+In addition to the default ``linux-azure`` kernel on Azure, Canonical produces kernel variants:
+
+- ``linux-azure-fde``: Enables support for Azure Confidential Compute and is installed in `Ubuntu CVM images`_.
+- ``linux-azure-nvidia``: The kernel for GB200-Compatible Server images to enable support for `NVIDIA GB200 hardware`_.
+- ``linux-azure-fips``: The FIPS-compliant kernel for Ubuntu images on Azure. Installed in `Ubuntu Pro FIPS images`_.
+
 Collaborative Optimizations
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -46,7 +55,7 @@ Collaborative Optimizations
 
 .. _`Server images`: https://ubuntu.com/azure
 .. _`Minimal images`: https://documentation.ubuntu.com/public-cloud/all-clouds-explanation/ubuntu-base-and-minimal-images/
-.. _`NVIDIA GB200 Grace Blackwell hardware`: https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/nd-gb200-v6-series?tabs=sizebasic
+.. _`NVIDIA GB200 hardware`: https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/nd-gb200-v6-series?tabs=sizebasic
 .. _`Ubuntu Pro images`: https://ubuntu.com/azure/pro
 .. _`Ubuntu Pro`: https://ubuntu.com/azure/pro
 .. _`kernel Livepatch service`: https://ubuntu.com/security/livepatch
@@ -54,6 +63,7 @@ Collaborative Optimizations
 .. _`Ubuntu Pro FIPS images`: https://ubuntu.com/azure/fips
 .. _`Ubuntu Pro Minimal CIS images`: https://ubuntu.com/security/cis
 .. _`Confidential Virtual Machine (CVM) images`: http://documentation.ubuntu.com/azure/azure-explanation/security-overview/#confidential-virtual-machines-cvms
+.. _`Ubuntu CVM images`: http://documentation.ubuntu.com/azure/azure-explanation/security-overview/#confidential-virtual-machines-cvms
 .. _`SQL Server on Ubuntu Pro`: https://marketplace.microsoft.com/en-us/product/virtual-machines/microsoftsqlserver.sql2019-ubuntupro2004?tab=Overview
 .. _`Anbox on Azure`: https://documentation.ubuntu.com/anbox-cloud/howto/install-appliance/install-on-azure/
 .. _`Azure Kubernetes worker node`: http://documentation.ubuntu.com/azure/azure-explanation/ubuntu-on-aks-worker-nodes
