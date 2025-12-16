@@ -1,7 +1,7 @@
 Upgrade Ubuntu LTS release on Azure
 ===================================
 
-General Advice
+General advice
 ---------------
 
 Once you have decided to upgrade your system, the next question is how? There are two options depending on whether your system is setup/deployed with automation or whether it requires manual configuration.
