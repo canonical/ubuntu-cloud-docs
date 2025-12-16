@@ -16,7 +16,7 @@ Azure CLI commands in this guide share some declared variables:
 
 .. code::
 
-    # The resource group to create the virtual machine in. this can either be
+    # The resource group to create the virtual machine in. This can either be
     # an existing resource group, or one created as part of the guide.
     RESOURCE_GROUP_NAME="..."
 
@@ -31,6 +31,9 @@ Azure CLI commands in this guide share some declared variables:
     # between commands as certain Azure features are only supported by specific
     # Ubuntu image lines.
     UBUNTU_IMAGE_URN="..."
+
+Familiarity with `Azure Virtual Machine size and series naming`_ is also helpful, as some images can only be deployed
+on specific hardware.
 
 Create a resource group
 -----------------------
@@ -92,8 +95,8 @@ type for your Azure subscription:
         --generate-ssh-keys
 
 
-Confidential Virtual Machines (CVM)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Confidential Virtual Machine (CVM) images
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Ubuntu CVM images must be launched with `specialized hardware`_ and configure `Confidential OS disk encryption`_ for
 the deployment - either with or without Trusted Platform Module (TPM)-backed Full Disk Encryption (FDE).
@@ -130,3 +133,4 @@ the deployment - either with or without Trusted Platform Module (TPM)-backed Ful
 .. _`Trusted Launch`: https://learn.microsoft.com/en-us/azure/virtual-machines/trusted-launch
 .. _`specialized hardware`: https://learn.microsoft.com/en-us/azure/confidential-computing/confidential-vm-overview#size-support
 .. _`Confidential OS disk encryption`: https://learn.microsoft.com/en-us/azure/confidential-computing/confidential-vm-overview#confidential-os-disk-encryption
+.. _`Azure Virtual Machine size and series naming`: https://learn.microsoft.com/en-us/azure/virtual-machines/sizes
