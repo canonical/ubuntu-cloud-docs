@@ -18,6 +18,8 @@ Trusted Launch
 
 `Trusted Launch`_ is now available by default when you launch an Ubuntu image on Azure. It comes with support for `secure boot`_ and includes a virtual Trusted Platform Module (vTPM). All Ubuntu images from 20.04 LTS (Focal Fossa) support trusted launch and secure boot on Hyper-V Gen2 instances.
 
+.. _azure-cvms:
+
 Confidential Virtual Machines (CVMs)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
