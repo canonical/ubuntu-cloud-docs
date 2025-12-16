@@ -323,7 +323,9 @@ Confidential compute capable offer
 
 To learn more about Confidential Compute: `Azure confidential computing <https://azure.microsoft.com/en-us/solutions/confidential-compute/#overview>`_
 
-.. note:: While confidential VMs safeguard your workload from external threats, internal vulnerabilities within their boundaries can still pose risks. This is where Ubuntu Pro proves invaluable, ensuring your guest CVM software stack is continuously patched and up-to-date.
+.. note:: 
+  
+  While confidential VMs safeguard your workload from external threats, internal vulnerabilities within their boundaries can still pose risks. This is where Ubuntu Pro proves invaluable, ensuring your guest CVM software stack is continuously patched and up-to-date.
 
 Ubuntu Pro 24.04 LTS (Confidential Compute) - Noble Numbat
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -400,9 +402,10 @@ FIPS compliant offers
 To learn more about FIPS: `FIPS for Ubuntu <https://ubuntu.com/security/certifications/docs/fips>`_
 
 .. note::
-  | Starting with Ubuntu Pro FIPS 22.04 LTS, images are based on the ``fips-updates`` Ubuntu Pro service, which provides ongoing security updates to the FIPS-140-3-certified modules included in the image. Ubuntu Pro FIPS images corresponding to earlier Ubuntu releases are based on the ``fips`` Ubuntu Pro service, which provides FIPS-140-2-certified modules, but no ongoing security updates.
 
-  | The difference reflects FEDRAMP's move to more permissive guidelines and rectifies the inherent insecurity of the images corresponding to earlier Ubuntu releases. See this `Canonical blog post <https://ubuntu.com/blog/the-role-of-fips-140-3-in-the-latest-fedramp-guidance>`_ to learn more about why this change was made and how ``fips-updates`` is more secure for your cloud environment.
+    Starting with Ubuntu Pro FIPS 22.04 LTS, images are based on the ``fips-updates`` Ubuntu Pro service, which provides ongoing security updates to the FIPS-140-3-certified modules included in the image. Ubuntu Pro FIPS images corresponding to earlier Ubuntu releases are based on the ``fips`` Ubuntu Pro service, which provides FIPS-140-2-certified modules, but no ongoing security updates.
+
+    The difference reflects FedRAMP's move to more permissive guidelines and rectifies the inherent insecurity of the images corresponding to earlier Ubuntu releases. See this `Canonical blog post <https://ubuntu.com/blog/the-role-of-fips-140-3-in-the-latest-fedramp-guidance>`_ to learn more about why this change was made and how ``fips-updates`` is more secure for your cloud environment.
 
 Ubuntu Pro FIPS 22.04 LTS - Jammy Jellyfish
 +++++++++++++++++++++++++++++++++++++++++++
