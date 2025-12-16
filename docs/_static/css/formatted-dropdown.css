@@ -1,3 +1,10 @@
+.dropdown-widget,
+.dropdown-select,
+.dropdown-select option,
+.dropdown-copy {
+    color: inherit;
+}
+
 /* Overall container */
 .dropdown-widget {
     margin: 1rem 0;
@@ -24,6 +31,10 @@
     background: transparent;
     border-radius: 2px;
 }
+.dropdown-select option {
+    color: currentColor;
+    background: rgb(from color-mix(in srgb, currentColor 85%, transparent) calc(255 - r) calc(255 - g) calc(255 - b));
+}
 
 /* Code container */
 .dropdown-code {
@@ -33,15 +44,14 @@
     padding: 0.5rem 0.75rem;
     border-radius: 4px;
 
-    /* subtle contrast, theme-aware */
     background: color-mix(in srgb, currentColor 7%, transparent);
     color: color-mix(in srgb, currentColor 85%, transparent);
 }
 
 /* Wrapping code text */
 .dropdown-output-text {
-    white-space: normal;        /* allow wrapping */
-    word-break: break-word;     /* break long segments */
+    white-space: normal;
+    word-break: break-word;
     overflow-wrap: anywhere;
 }
 
@@ -54,12 +64,3 @@
     cursor: pointer;
     white-space: nowrap;
 }
-
-/* Make sure all text inside the widget inherits the page’s current colour */
-.dropdown-widget,
-.dropdown-select,
-.dropdown-select option,
-.dropdown-copy {
-    color: inherit;
-}
-

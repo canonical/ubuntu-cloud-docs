@@ -31,7 +31,7 @@ class FormattedDropdownDirective(Directive):
             return {"value": value, "conditions": {}}
 
         cond_map = {}
-        for cond in conds.split(","):
+        for cond in re.split(r"[;,]", conds):
             cond = cond.strip()
             if not cond:
                 continue

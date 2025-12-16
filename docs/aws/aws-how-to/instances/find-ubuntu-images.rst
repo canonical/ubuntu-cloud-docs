@@ -13,6 +13,7 @@ All images mentioned below are also available in `AWS Outposts <https://aws.amaz
 Finding images for EC2 and EKS
 ------------------------------
 
+
 To find images on AWS, you can use the `SSM Parameter Store`_, the `describe-images`_ API or the `AWS Web Console`_. All three methods are explained below.
 
 .. tabs::
@@ -26,43 +27,34 @@ To find images on AWS, you can use the `SSM Parameter Store`_, the `describe-ima
 
             For EC2, find the latest AMI ID using:
 
-            .. code-block::
-
-               aws ssm get-parameters --names \
-                  /aws/service/canonical/ubuntu/server/24.04/stable/current/amd64/hvm/ebs-gp3/ami-id
-
-            The format for the parameter is:
-
-            .. code-block::
-
-               ubuntu/$PRODUCT/$RELEASE/stable/current/$ARCH/$VIRT_TYPE/$VOL_TYPE/ami-id
+            .. formatted-dropdown::
+               aws ssm get-parameters --names /aws/service/canonical/ubuntu/{product}/{release}/stable/{serial}/{arch}/hvm/{vol}/ami-id
+               :product: server{release:noble;release:jammy}, server-minimal{release:noble;release:jammy}, pro-server, pro-minimal
+               :release: noble, jammy, focal
+               :serial: current, 20250804, 20240115
+               :arch: amd64, arm64
+               :vol: ebs-gp3{release:noble}, ebs-gp2{release:jammy;release:focal}
 
             * PRODUCT: `server`, `server-minimal`, `pro-server` or `pro-minimal`
             * RELEASE: `noble`, 24.04, `jammy`, `22.04`, `focal`, `20.04`, `bionic`, `18.04`, `xenial`, or `16.04`
             * ARCH: `amd64` or `arm64`
-            * VIRT_TYPE: `hvm` or `pv` (only for legacy releases ≤ 16.04)
+            * VIRT_TYPE: `hvm` or `pv` (legacy only)
             * VOL_TYPE: `ebs-gp3` (for >=23.10), `ebs-gp2` (for <=23.04), `ebs-io1`, `ebs-standard`, or `instance-store`
 
-            In place of `current`, the serial number given to an image can also be used (e.g., `20250804`):
-
-            .. code-block::
-               
-               ubuntu/$PRODUCT/$RELEASE/stable/$SERIAL/$ARCH/$VIRT_TYPE/$VOL_TYPE/ami-id
-               
 
          .. tab:: EKS
             
             For EKS, the latest EKS AMI ID for each supported EKS version can be found in the SSM parameter store using:
 
-            .. code-block::
+            .. formatted-dropdown::
+               aws ssm get-parameters --names ubuntu/{eks_product}/{release}/{k8s}/stable/{serial}/{arch}/hvm/{vol}/ami-id
+               :eks_product: eks, eks-pro
+               :release: noble, jammy
+               :k8s: 1.34, 1.33, 1.32, 1.31
+               :serial: current, 20250804, 20240115
+               :arch: amd64, arm64
+               :vol: ebs-gp3{release:noble}, ebs-gp2{release:jammy}
 
-               aws ssm get-parameters --names /aws/service/canonical/ubuntu/eks/24.04/1.31/stable/current/amd64/hvm/ebs-gp3/ami-id
-
-            The format for the parameter is:
-
-            .. code-block::
-
-               ubuntu/$EKS_PRODUCT/$RELEASE/$K8S_VERSION/stable/current/$ARCH/hvm/$VOL_TYPE/ami-id
 
             * EKS_PRODUCT: `eks` or `eks-pro`
             * RELEASE: `noble`, `24.04` (for EKS 1.31 or greater, or EKS Pro); `jammy`, `22.04` (for EKS 1.29 or greater, or EKS Pro); `focal`, `20.04` (for EKS <= 1.29)
@@ -90,14 +82,16 @@ To find images on AWS, you can use the `SSM Parameter Store`_, the `describe-ima
 
             For EC2, find the latest AMI ID using:
 
-            .. code-block::
+            .. formatted-dropdown::
+               aws ec2 describe-images --owners 099720109477 --filters 'Name=name,Values=ubuntu/images/hvm-{vol}/ubuntu-{release}-{suite}-{arch}-{product}-{serial}' --query 'Images | sort_by(@, &CreationDate) | [-1].ImageId' --output text
+               :product: server{release:noble;release:jammy}, server-minimal{release:noble;release:jammy}, pro-server, pro-minimal
+               :release: noble, jammy, focal
+               :suite: 24.04{release:noble}, 22.04{release:jammy}, 20.04{release:focal}
+               :serial: *, 20250804, 20240115
+               :arch: amd64, arm64
+               :vol: ssd-gp3{release:noble}, ssd{release:jammy;release:focal}
 
-               aws ec2 describe-images \
-                  --owners 099720109477 \
-                  --filters \
-                     "Name=name,Values=ubuntu/images/hvm-ssd-gp3/ubuntu-noble-24.04-amd64-server-*" \
-                  --query "Images | sort_by(@, &CreationDate) | [-1].ImageId" \
-                  --output text
+
 
             In the filter expression, ``Name=name`` specifies that the filter should apply to the AMI's
             **Name** attribute (the human-readable AMI name string) and the ``Values=...`` part provides
@@ -125,14 +119,15 @@ To find images on AWS, you can use the `SSM Parameter Store`_, the `describe-ima
 
             For EKS, find the latest EKS AMI ID using:
 
-            .. code-block::
-
-               aws ec2 describe-images \
-                  --owners 099720109477 \
-                  --filters \
-                     "Name=name,Values=ubuntu-eks/k8s_1.31/images/hvm-ssd-gp3/ubuntu-noble-24.04-amd64-server-*" \
-                  --query "Images | sort_by(@, &CreationDate) | [-1].ImageId" \
-                  --output text
+            .. formatted-dropdown::
+               aws ec2 describe-images --owners 099720109477 --filters 'Name=name,Values=ubuntu-{eks_product}/k8s{k8s}/images/hvm-{vol}/ubuntu-{release}-{suite}-{arch}-server-{serial}' --query 'Images | sort_by(@, &CreationDate) | [-1].ImageId' --output text
+               :eks_product: eks, eks-pro
+               :release: noble, jammy
+               :suite: 24.04{release:noble}, 22.04{release:jammy}
+               :k8s: 1.34, 1.33, 1.32, 1.31
+               :serial: *, 20250804, 20240115
+               :arch: amd64, arm64
+               :vol: ssd-gp3{release:noble}, ssd{release:jammy}
 
             In the filter expression, ``Name=name`` specifies that the filter should apply to the AMI's
             **Name** attribute (the human-readable AMI name string) and the ``Values=...`` part provides
