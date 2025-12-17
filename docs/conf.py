@@ -283,13 +283,19 @@ linkcheck_timeout = 300
 #       - terminal-output
 #       - youtube-links
 
+import sys
+from pathlib import Path
+
+sys.path.append(str(Path('exts').resolve()))
+
 extensions = [
     "multiproject",
     "canonical_sphinx",
     "sphinxcontrib.cairosvgconverter",
     "sphinx_last_updated_by_git",
     "sphinx.ext.intersphinx",
-    "sphinx_sitemap"
+    "sphinx_sitemap",
+    "formatted-dropdown",
 ]
 
 # Disable Sphinx tab closing

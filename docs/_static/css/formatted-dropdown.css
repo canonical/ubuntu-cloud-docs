@@ -1,0 +1,66 @@
+.dropdown-widget,
+.dropdown-select,
+.dropdown-select option,
+.dropdown-copy {
+    color: inherit;
+}
+
+/* Overall container */
+.dropdown-widget {
+    margin: 1rem 0;
+    padding: 0.75rem;
+    background: color-mix(in srgb, currentColor 7%, transparent);
+}
+
+/* Dropdown row */
+.dropdown-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.dropdown-field {
+    display: flex;
+}
+
+/* Dropdowns */
+.dropdown-select {
+    padding: 0.35rem 0.5rem;
+    border: 1px solid color-mix(in srgb, currentColor 50%, transparent);
+    background: transparent;
+    border-radius: 2px;
+}
+.dropdown-select option {
+    color: currentColor;
+    background: rgb(from color-mix(in srgb, currentColor 85%, transparent) calc(255 - r) calc(255 - g) calc(255 - b));
+}
+
+/* Code container */
+.dropdown-code {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    padding: 0.5rem 0.75rem;
+    border-radius: 4px;
+
+    background: color-mix(in srgb, currentColor 7%, transparent);
+    color: color-mix(in srgb, currentColor 85%, transparent);
+}
+
+/* Wrapping code text */
+.dropdown-output-text {
+    white-space: normal;
+    word-break: break-word;
+    overflow-wrap: anywhere;
+}
+
+/* Copy button */
+.dropdown-copy {
+    font: inherit;
+    padding: 0.25rem 0.5rem;
+    border: 1px solid currentColor;
+    background: transparent;
+    cursor: pointer;
+    white-space: nowrap;
+}
