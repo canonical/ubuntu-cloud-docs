@@ -80,7 +80,7 @@ redirects = {
     "azure-how-to/create-pro-fips-golden-image":
         "../instances/create-pro-fips-golden-image/",
     "azure-how-to/upgrade-from-focal-to-jammy":
-        "../instances/upgrade-from-focal-to-jammy/",
+        "../instances/upgrade-ubuntu-lts-release/",
 
     "azure-how-to/kubernetes/index":
         "https://charmed-kubeflow.io/docs/install-on-aks",
