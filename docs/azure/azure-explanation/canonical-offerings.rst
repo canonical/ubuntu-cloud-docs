@@ -10,7 +10,7 @@ Canonical produces a wide variety of Ubuntu images to support numerous features 
 
 * :doc:`Minimal images <all-clouds:all-clouds-explanation/ubuntu-base-and-minimal-images>` are designed for automated deployment at scale with a reduced default package set. Things like interactive usage tools are omitted. They are much smaller, boot faster, and require fewer security updates over time due to the fewer installed packages. These images are also available with `Ubuntu Pro`_ enabled.
 
-* `Confidential Virtual Machine (CVM) images`_ provide enhanced security features designed to protect data at rest, in use, and during boot. CVM images are intended for use with Azure's confidential computing capabilities using hardware-enabled security features. These images are also available with `Ubuntu Pro`_ enabled.
+*  :ref:`Confidential Virtual Machine (CVM) images <azure-cvms>` provide enhanced security features designed to protect data at rest, in use, and during boot. CVM images are intended for use with Azure's confidential computing capabilities using hardware-enabled security features. These images are also available with `Ubuntu Pro`_ enabled.
 
 * GB200-Compatible Server images are optimized for AI and designed to run on `NVIDIA GB200 hardware`_. These images are also available with `Ubuntu Pro`_ enabled.
 
@@ -20,7 +20,7 @@ Canonical produces a wide variety of Ubuntu images to support numerous features 
 
 * `Ubuntu Pro Minimal CIS images`_ are built on Ubuntu Pro and are CIS-hardened with a minimal footprint to maximize security. These images are available with CIS Level 1 or CIS Level 2 hardening.
 
-The availability of each of these images and the means to find them on Azure can be found `here <https://documentation.ubuntu.com/azure/azure-how-to/instances/find-ubuntu-images/>`_.
+The availability of each of these images and the means to find them on Azure is described in the :doc:`Find Ubuntu images <../azure-how-to/instances/find-ubuntu-images/>` page.
 
 Optimizations for Azure
 -----------------------
@@ -48,15 +48,13 @@ Collaborative Optimizations
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 1. `Anbox on Azure`_, that allows users to run Android apps on Azure at scale
-#. Collaboration with Azure's AKS team to support the `Azure Kubernetes worker node`_ image, as these worker nodes nearly always run Ubuntu
+#. Collaboration with Azure's AKS team to support the :doc:`Azure Kubernetes worker node <ubuntu-on-aks-worker-nodes>` image, as these worker nodes nearly always run Ubuntu
 #. Collaboration with the Azure Guest Patching Service and Update Manager teams to ensure simple security patch management for users
 #. Collaboration with the .Net team on `Chiseled .Net images`_ that have a smaller size and security cross-section
 #. `Landscape on Azure`_, for managing your Ubuntu deployments at scale
 
 .. _`Server images`: https://ubuntu.com/azure
 .. _`Ubuntu Pro`: https://ubuntu.com/azure/pro
-.. _`Minimal images`: https://documentation.ubuntu.com/public-cloud/all-clouds-explanation/ubuntu-base-and-minimal-images/
-.. _`Confidential Virtual Machine (CVM) images`: http://documentation.ubuntu.com/azure/azure-explanation/security-overview/#confidential-virtual-machines-cvms
 .. _`NVIDIA GB200 hardware`: https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/nd-gb200-v6-series?tabs=sizebasic
 .. _`Ubuntu Pro images`: https://ubuntu.com/azure/pro
 .. _`kernel Livepatch service`: https://ubuntu.com/security/livepatch
@@ -66,6 +64,5 @@ Collaborative Optimizations
 .. _`Ubuntu Pro FIPS images`: https://ubuntu.com/azure/fips
 .. _`Ubuntu Pro Minimal CIS images`: https://ubuntu.com/security/cis
 .. _`Anbox on Azure`: https://documentation.ubuntu.com/anbox-cloud/howto/install-appliance/install-on-azure/
-.. _`Azure Kubernetes worker node`: http://documentation.ubuntu.com/azure/azure-explanation/ubuntu-on-aks-worker-nodes
 .. _`Chiseled .Net images`: https://devblogs.microsoft.com/dotnet/dotnet-6-is-now-in-ubuntu-2204
 .. _`Landscape on Azure`: https://documentation.ubuntu.com/landscape/how-to-guides/landscape-installation-and-set-up/cloud-providers/install-on-microsoft-azure/
