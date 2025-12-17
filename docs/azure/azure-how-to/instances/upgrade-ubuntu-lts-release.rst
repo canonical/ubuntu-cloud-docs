@@ -16,6 +16,7 @@ Getting started
 Ensure all the packages on your machine are current:
 
 .. code-block::
+
    sudo apt update -y
    sudo apt upgrade -y
    sudo reboot
@@ -23,6 +24,7 @@ Ensure all the packages on your machine are current:
 Run the following command to start the release upgrade process:
 
 .. code-block::
+
    sudo do-release-upgrade
 
 .. _manual intervention azure:
