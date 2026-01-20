@@ -115,8 +115,7 @@ Create an Accelerator (GPU) instance
 
 On your Google Cloud console, while creating a new instance from :guilabel:`Compute Engine` > :guilabel:`VM instances` > :guilabel:`CREATE INSTANCE`:
 
-* choose a compatible machine series such as ``N1`` in :guilabel:`Machine configuration` > :guilabel:`Series`
-* select a GPU type and the number of GPUs that match your workload in :guilabel:`GPU`
+* select a GPU type and the number of GPUs that match your workload in :guilabel:`GPUs` tab
 * select a machine type that matches your vCPUs and memory needs, or choose :guilabel:`Custom` to set them manually
 * go to :guilabel:`OS and storage` > :guilabel:`Change`, then in :guilabel:`Public images` select the **Ubuntu Accelerator Optimized** operating system and choose an image such as ``Ubuntu 24.04 LTS NVIDIA 580``
 
