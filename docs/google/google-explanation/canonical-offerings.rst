@@ -25,7 +25,7 @@ For each active Ubuntu release, at least two image variants are created for GCE:
 
 For the LTS releases from 22.04 onwards, we also have:
 
-* **Accelerator** images that contain the packages needed to run accelerator workloads on advanced GPUs
+* **Accelerator** images that contain the packages needed to run accelerator workloads on advanced GPUs and include pre-tested NVIDIA driver stacks for faster provisioning. These images are intended for machine learning, HPC, and graphics workloads where GPU readiness is required at boot.
 
 For the Ubuntu Pro offering, we have: 
 
