@@ -108,4 +108,36 @@ where:
 * INSTANCE_NAME: is the name of the instance to create and
 * ``image-family`` can be set to a supported image family, such as ``ubuntu-2204-lts`` or ``ubuntu-2404-lts-amd64``.
 
+.. _create-accelerator-on-gcp:
+
+Create an Accelerator (GPU) instance
+------------------------------------
+
+On your Google Cloud console, while creating a new instance from :guilabel:`Compute Engine` > :guilabel:`VM instances` > :guilabel:`CREATE INSTANCE`:
+
+* choose a compatible machine series such as ``N1`` in :guilabel:`Machine configuration` > :guilabel:`Series`
+* select a GPU type and the number of GPUs that match your workload in :guilabel:`GPU`
+* select a machine type that matches your vCPUs and memory needs, or choose :guilabel:`Custom` to set them manually
+* go to :guilabel:`OS and storage` > :guilabel:`Change`, then in :guilabel:`Public images` select the **Ubuntu Accelerator Optimized** operating system and choose an image such as ``Ubuntu 24.04 LTS NVIDIA 580``
+
+Optionally, you can also use the Google Cloud CLI to create a GPU-enabled VM. Use the ``instances create`` command with the ``--accelerator`` flag and a compatible machine type.
+
+.. code::
+   
+   gcloud compute instances create INSTANCE_NAME \
+    --zone=ZONE \
+    --machine-type=n1-standard-4 \
+    --accelerator=type=nvidia-tesla-t4,count=1 \
+    --maintenance-policy=TERMINATE \
+    --image=ubuntu-accelerator-2404-amd64-with-nvidia-580-vYYYYMMDD \
+    --image-project=ubuntu-os-accelerator-images
+
+where:
+
+* INSTANCE_NAME: is the name of the instance to create and
+* ``--accelerator`` specifies the GPU type and count for the instance.
+
+For details on supported GPU types and host machine series, see `Accelerator-optimized machine types`_.
+
 .. _`C3 machine series`: https://cloud.google.com/compute/docs/general-purpose-machines#c3_series
+.. _`Accelerator-optimized machine types`: https://cloud.google.com/compute/docs/accelerator-optimized-machines
