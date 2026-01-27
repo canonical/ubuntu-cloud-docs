@@ -32,8 +32,9 @@ Create an SSM Document to attach the token
 The SSM document is a JSON or YAML file that contains the steps or actions to be executed on an instance. In this case, we will 
 run the commands required to attach a token and apply Ubuntu Pro updates, if available.
 
-    .. note::
-    Because tokens are fungible, it is not recommended to hard-code them in the document. Instead, pass the token as a user-defined parameter.
+.. note::
+    
+   Because tokens are fungible, it is not recommended to hard-code them in the document. Instead, pass the token as a user-defined parameter.
 
 Below is the full SSM document definition:
 
