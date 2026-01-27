@@ -75,7 +75,7 @@ No reboot is required unless updates affect core components such as the kernel.
 Run the SSM script
 ------------------
 
-The SSM document can be executed either from Fleet Manager or using SSM Run Command. More information is available in `this tutorial <https://ubuntu.com/tutorials/how-to-create-ssm-documents-and-use-them-to-install-packages-massively-with-run-command#1-overview>`
+The SSM document can be executed either from Fleet Manager or using SSM Run Command. More information is available in `this tutorial <https://ubuntu.com/tutorials/how-to-create-ssm-documents-and-use-them-to-install-packages-massively-with-run-command#1-overview>`_.
 
 You do not need to restart your machines after attaching the token. If the SSM execution fails, check the document format for errors or typos and try again. If the issue persists, review the command output in SSM for configuration problems, for example, whether the instances have network access to package repositories. Ubuntu Pro repositories are hosted on dedicated endpoints, which may require additional network configuration. See the references at the end of this tutorial for details.
 
