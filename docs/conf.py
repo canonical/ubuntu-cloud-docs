@@ -296,6 +296,7 @@ extensions = [
     "sphinx.ext.intersphinx",
     "sphinx_sitemap",
     "formatted-dropdown",
+    "sphinx_terminal"
 ]
 
 # Disable Sphinx tab closing
