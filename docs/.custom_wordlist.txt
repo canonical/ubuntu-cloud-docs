@@ -115,6 +115,7 @@ EOSS
 EPYC
 ESM
 ethernet
+EventBridge
 executables
 favicon
 FDE
@@ -237,6 +238,7 @@ Multipass
 MyST
 namespace
 namespaces
+nano
 natively
 netfilter
 NIC
@@ -249,13 +251,13 @@ nsswitch
 Numbat
 Nutanix
 NVIDIA
-nvidia
 NVMe
 observability
 oci
 OCI
 OCID
 OCIR
+OCPUs
 OEM
 OKE
 OLM
@@ -379,6 +381,7 @@ uvtool
 Vagrantfile
 vagrantfiles
 VCN
+VCNs
 vCPUs
 verifications
 VFIO
@@ -411,8 +414,3 @@ xrdp
 XZ
 YAML
 zoneinfo
-VCNs
-OCPUs
-UserData
-EventBridge
-nano
