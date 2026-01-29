@@ -6,11 +6,18 @@ Using EKS
 
 * Use an Ubuntu AMI - Ubuntu EKS AMIs are available through :doc:`AWS CLI<../../aws-how-to/instances/find-ubuntu-images>` or from the `AWS marketplace`_. They can be used to:
    * :doc:`Deploy an Ubuntu EKS cluster <deploy-ubuntu-cluster-with-eks-ami>`
-   * :doc:`Deploy an Ubuntu Pro cluster <deploy-ubuntu-pro-cluster-with-eks-pro-ami>`
-   * :doc:`Deploy an Ubuntu Pro FIPS cluster <deploy-ubuntu-pro-fips-cluster>`
+   * :doc:`Deploy an Ubuntu Pro EKS cluster <deploy-ubuntu-pro-cluster-with-eks-pro-ami>`
+   * :doc:`Deploy an Ubuntu Pro FIPS EKS cluster <deploy-ubuntu-pro-fips-cluster>`
 
 * Use a Pro token - If you want to create an EKS cluster using your Pro token obtained from Canonical, follow the instructions given in:
    * :doc:`Deploy a Pro cluster (with / without FIPS) using tokens  <deploy-ubuntu-pro-cluster>`
+
+
+**Node group deployment options** - You can create both managed and self-managed node groups using Ubuntu on EKS. Choose from the following options:
+
+* :doc:`Deploy a self-managed Ubuntu node group <deploy-self-managed-node-group>`
+* :doc:`Deploy managed Ubuntu node groups <deploy-managed-node-group>`
+
 
 **Other EKS related how-to guides**
 

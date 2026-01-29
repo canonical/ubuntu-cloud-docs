@@ -21,8 +21,6 @@ For systems that cannot be easily created or destroyed and require manual config
 requires some :ref:`manual intervention <manual intervention ibm noble>` as explained below. 
 
 
-.. _manual intervention ibm noble:
-
 Getting started
 ---------------
 
@@ -40,6 +38,7 @@ Run the following command to start the upgrade process:
 
    sudo do-release-upgrade
 
+.. _manual intervention ibm noble:
 
 Manual intervention steps
 -------------------------

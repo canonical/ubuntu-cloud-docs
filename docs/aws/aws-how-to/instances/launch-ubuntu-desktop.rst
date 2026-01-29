@@ -84,8 +84,9 @@ Restart the service:
 
     sudo systemctl restart xrdp
 
-Configuring the Ubuntu session
-------------------------------
+
+Configure the Ubuntu session
+----------------------------
 
 Using Nano or your favorite text editor, create the following file:
 
@@ -106,13 +107,13 @@ Insert the following content:
     
     exec /usr/bin/gnome-session --session=ubuntu
 
-And make the script executable:
+Make the script executable:
 
 .. code:: bash
 
     sudo chmod +x /usr/local/bin/ubuntu-session
 
-Finally, we need to update the session manager to use our new session configuration:
+Finally, update the session manager to use the new session configuration:
 
 .. code:: bash
 

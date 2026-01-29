@@ -44,10 +44,11 @@ EKS - Using Ubuntu Pro, GPUs and Kubeflow on EKS
 If you want to use Ubuntu, enable GPUs or install Kubeflow on Amazon's EKS service, you can refer to these instructions.
 
 * :doc:`Deploy an Ubuntu EKS cluster <kubernetes/deploy-ubuntu-cluster-with-eks-ami>`
-* :doc:`Deploy an Ubuntu Pro cluster <kubernetes/deploy-ubuntu-pro-cluster-with-eks-pro-ami>`
-* :doc:`Deploy managed Ubuntu node groups <kubernetes/deploy-managed-node-group>`
-* :doc:`Deploy an Ubuntu Pro FIPS cluster <kubernetes/deploy-ubuntu-pro-fips-cluster>`
+* :doc:`Deploy an Ubuntu Pro EKS cluster <kubernetes/deploy-ubuntu-pro-cluster-with-eks-pro-ami>`
+* :doc:`Deploy an Ubuntu Pro FIPS EKS cluster <kubernetes/deploy-ubuntu-pro-fips-cluster>`
 * :doc:`Deploy a Pro cluster (with / without FIPS) using tokens <kubernetes/deploy-ubuntu-pro-cluster>`
+* :doc:`Deploy a self-managed Ubuntu node group <kubernetes/deploy-self-managed-node-group>`
+* :doc:`Deploy managed Ubuntu node groups <kubernetes/deploy-managed-node-group>`
 * :doc:`Enable GPUs on EKS worker nodes <kubernetes/enable-gpus-on-eks>`
 * `Install Kubeflow on EKS (external link)`_
 
