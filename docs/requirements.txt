@@ -31,5 +31,11 @@ sphinx-sitemap
 rst2html
 vale
 
+
+### Public Cloud docs specific extensions ###
+
 # Multiproject support
 sphinx-multiproject
+
+# Spelling support
+pyspelling
