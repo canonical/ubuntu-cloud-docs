@@ -129,46 +129,6 @@ Ubuntu 25.10 - Questing Quokka
      - ``Canonical:ubuntu-25_10:minimal-arm64:latest``
 
 
-Ubuntu 25.04 - Plucky Puffin
-++++++++++++++++++++++++++++++++++
-
-| Quick start: `25.04 on Azure <https://portal.azure.com/#create/canonical.ubuntu-25_04server>`_
-| Quick start (China): `25.04 on Azure China <https://portal.azure.cn/#create/canonical.ubuntu-25_04server>`_
-
-.. list-table::
-   :widths: 10 10 12 68
-   :header-rows: 1
-
-   * - **Flavor**
-     - **Arch**
-     - **Hyper-V**
-     - **URN**
-   * - Server
-     - AMD64
-     - Gen2
-     - ``Canonical:ubuntu-25_04:server:latest``
-   * - Server
-     - AMD64
-     - Gen1
-     - ``Canonical:ubuntu-25_04:server-gen1:latest``
-   * - Server
-     - ARM64
-     - Gen2
-     - ``Canonical:ubuntu-25_04:server-arm64:latest``
-   * - Minimal
-     - AMD64
-     - Gen2
-     - ``Canonical:ubuntu-25_04:minimal:latest``
-   * - Minimal
-     - AMD64
-     - Gen1
-     - ``Canonical:ubuntu-25_04:minimal-gen1:latest``
-   * - Minimal
-     - ARM64
-     - Gen2
-     - ``Canonical:ubuntu-25_04:minimal-arm64:latest``
-
-
 .. _find-ubuntu-pro-on-azure:
 
 Ubuntu Pro Offers
