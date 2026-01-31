@@ -532,3 +532,4 @@ Canonical publishes Ubuntu images under the ``Canonical`` publisher ID. You can 
 
 
 Via the portal, make sure to look for ``Canonical`` rather than ``Ubuntu`` to find the official Ubuntu images. Also, always make sure the offer is published by Canonical. **Non-Pro LTS offers are always FREE**.
+
