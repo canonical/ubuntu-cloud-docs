@@ -13,6 +13,7 @@ Perform tasks such as finding the right image to use and launching different typ
 * :doc:`Launch a desktop <instances/launch-ubuntu-desktop>`
 * :doc:`Launch and attest an AMD SEV-SNP instance <instances/launch-and-attest-amd-sev-snp-instances>`
 * :doc:`Import a local Ubuntu VM into AWS <instances/import-local-vm-to-aws>`
+* :doc:`Harden a base CIS Level 1 instance  <instances/cis-hardening>`
 
 Create a customized AMI and templates. 
 
