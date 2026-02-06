@@ -21,11 +21,13 @@ Prerequisites
 
 - An Ubuntu One account with your Ubuntu Pro token(s). You can create one for free on the `Ubuntu Pro portal <https://ubuntu.com/pro>`_.
 - Ubuntu machines with the SSM Agent installed (available by default on Ubuntu 16.04 and later). If the instances have the right IAM role for SSM access, the servers will appear as Managed Nodes in AWS Systems Manager Fleet Manager (see the reference links for more information).
-- A basic understanding of how to write and run SSM Documents (see the reference links for more information).
+- A basic understanding of `how to write and run SSM Documents <https://docs.aws.amazon.com/systems-manager/latest/userguide/documents-creating-content.html>`_
 
 
 Create an SSM Document to attach the token
 --------------------------------------------
+
+.. admonition:: SSM document:
 
     An AWS Systems Manager document (SSM document) defines the actions that Systems Manager performs on your managed instances.
 
@@ -66,9 +68,9 @@ Below is the full SSM document definition:
 
 The token will be requested from the user when the document is executed. The document performs the following steps:
 
-    1. Runs an update to ensure the Pro client is up to date.
-    2. Attaches the Ubuntu Pro token.
-    3. Runs another update in case installed software can now receive security updates from Ubuntu Pro repositories.
+1. Runs an update to ensure the Pro client is up to date.
+2. Attaches the Ubuntu Pro token.
+3. Runs another update in case installed software can now receive security updates from Ubuntu Pro repositories.
 
 No reboot is required unless updates affect core components such as the kernel.
 
@@ -78,7 +80,7 @@ Run the SSM script
 
 The SSM document can be executed either from Fleet Manager or using SSM Run Command. More information is available in `this tutorial <https://ubuntu.com/tutorials/how-to-create-ssm-documents-and-use-them-to-install-packages-massively-with-run-command#1-overview>`_.
 
-You do not need to restart your machines after attaching the token. If the SSM execution fails, check the document format for errors or typos and try again. If the issue persists, review the command output in SSM for configuration problems, for example, whether the instances have network access to package repositories. Ubuntu Pro repositories are hosted on dedicated endpoints, which may require additional network configuration. See the references at the end of this tutorial for details.
+You do not need to restart your machines after attaching the token. If the SSM execution fails, check the document format for errors or typos and try again. If the issue persists, review the command output in SSM for configuration problems, for example, whether the instances have network access to package repositories. Ubuntu Pro repositories are hosted on dedicated endpoints, which may require `additional network configuration <https://documentation.ubuntu.com/pro-client/en/latest/references/network_requirements/>`_.
 
 .. image:: upgrade-to-ubuntu-pro-at-scale-using-tokens-with-ssm-images/1_run_command_screen.png
    :align: center

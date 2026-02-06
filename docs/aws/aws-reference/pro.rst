@@ -58,4 +58,4 @@ the `sign up page`_.
 .. _`security standards`: https://ubuntu.com/security/security-standards
 .. _`Landscape`: https://ubuntu.com/landscape
 .. _`sign up page`: https://landscape.canonical.com/signup
-.. _`Amazon WorkSpaces`: https://aws.amazon.com/workspaces-family/
+.. _`Amazon WorkSpaces`: https://aws.amazon.com/workspaces/
