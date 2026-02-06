@@ -11,7 +11,7 @@ Create an Ubuntu LTS instance
 
 On your Google Cloud console, while creating a new instance from :guilabel:`Compute Engine` > :guilabel:`VM instances`> :guilabel:`CREATE INSTANCE`:
 
-* select ``Ubuntu`` and ``Ubuntu 24.04 LTS`` in :guilabel:`Boot disk` > :guilabel:`CHANGE` > :guilabel:`Operating system` and :guilabel:`Version`
+* in the :guilabel:`OS and storage` tab, select ``Ubuntu`` and ``Ubuntu 24.04 LTS`` in :guilabel:`Operating system and storage` > :guilabel:`CHANGE` > :guilabel:`Operating system` and :guilabel:`Version`
 
 
 .. _create-pro-on-gcp:
@@ -21,7 +21,7 @@ Create an Ubuntu Pro instance
 
 On your Google Cloud console, while creating a new instance from :guilabel:`Compute Engine` > :guilabel:`VM instances`> :guilabel:`CREATE INSTANCE`:
 
-* select ``Ubuntu Pro`` and ``Ubuntu 24.04 LTS Pro Server`` in :guilabel:`Boot disk` > :guilabel:`CHANGE` > :guilabel:`Operating system` and :guilabel:`Version`
+* in the :guilabel:`OS and storage` tab, select ``Ubuntu Pro`` and ``Ubuntu 24.04 LTS Pro Server`` in :guilabel:`Operating system and storage` > :guilabel:`CHANGE` > :guilabel:`Operating system` and :guilabel:`Version`
 
 Once the instance is up, ssh into it and run
 
@@ -39,7 +39,7 @@ Create an Ubuntu Pro FIPS instance
 
 On your Google Cloud console, while creating a new instance from :guilabel:`Compute Engine` > :guilabel:`VM instances`> :guilabel:`CREATE INSTANCE`:
 
-* select ``Ubuntu Pro`` and ``Ubuntu 20.04 LTS Pro FIPS Server`` in :guilabel:`Boot disk` > :guilabel:`CHANGE` > :guilabel:`Operating system` and :guilabel:`Version`
+* in the :guilabel:`OS and storage` tab, select ``Ubuntu Pro`` and ``Ubuntu 20.04 LTS Pro FIPS Updates Server`` in :guilabel:`Operating system and storage` > :guilabel:`CHANGE` > :guilabel:`Operating system` and :guilabel:`Version`
 
 Once the instance is up, ssh into it and run
 
@@ -64,7 +64,7 @@ Create an ARM-based instance
 On your Google Cloud console, while creating a new instance from :guilabel:`Compute Engine` > :guilabel:`VM instances`> :guilabel:`CREATE INSTANCE`:
 
 * choose the ARM CPU platform ``T2A`` in :guilabel:`Machine configuration` > :guilabel:`Series`
-* choose an ARM compatible OS and version, say ``Ubuntu`` and ``Ubuntu 24.04 LTS Minimal`` in :guilabel:`Boot disk` > :guilabel:`CHANGE` > :guilabel:`Operating system` and :guilabel:`Version` 
+* choose an ARM compatible OS and version, say ``Ubuntu`` and ``Ubuntu 24.04 LTS Minimal`` in :guilabel:`OS and storage` > :guilabel:`Operating system and storage` > :guilabel:`CHANGE` > :guilabel:`Operating system` and :guilabel:`Version` 
 
 
 .. _create-amd-sev-conf-compute-on-gcp:
