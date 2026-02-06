@@ -134,12 +134,15 @@ gapped
 gcc
 GCE
 gcloud
+gcp
 GCP
 GCP's
 Git
 GitHub
+gke
 GKE
 GKE's
+gkeop
 Golang
 GovCloud
 gp

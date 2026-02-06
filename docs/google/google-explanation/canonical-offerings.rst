@@ -15,6 +15,48 @@ Another useful feature is the native integration of Ubuntu images with the Admin
 
 
 
+Kernel optimizations
+--------------------
+
+Ubuntu images available on GCP use optimized kernels tailored for different workload types. GCE images run the ``linux-gcp`` kernel, while GKE node images use the ``linux-gke`` kernel optimized specifically for Kubernetes workloads. Anthos on VMware images use the ``linux-gkeop`` kernel designed for on-premises Kubernetes deployments.
+
+By default, Ubuntu images use a **rolling kernel model**, which provides the latest upstream bug fixes and performance improvements around task scheduling, I/O scheduling, networking, hypervisor guests and containers. A rolling kernel model transitions the default kernel from one base version to the next as part of its regular patching cycle. That new kernel, called the HWE Kernel (Hardware Enablement Kernel) is the kernel of the latest Ubuntu release.
+
+For example, users running Ubuntu 24.04 LTS instances launched in early 2024 would start with the 6.8 kernel by default. However, as new Ubuntu interim versions are released, the linux-gcp kernel "rolls" forward to the next release's kernel version. Consequently, an Ubuntu 24.04 LTS instance launched at a later point in time—such as in 2025 or 2026—would include a different kernel version depending on when it was launched; for instance, it might feature version 6.11 or 6.14.
+
+Furthermore, all running instances that use the rolling linux-gcp package have their kernels automatically updated to the latest version in the track upon reboot. This means that even instances originally launched with the 6.8 kernel will eventually transition to these newer versions, ensuring they benefit from the latest Google Cloud hardware support and performance optimizations.
+
+For more details about the rolling kernel model, refer to the `Ubuntu kernel release cycle`_ and the relevant `installation options`_.
+
+If you do not want to roll to a new kernel, and want to stay on the base kernel provided by the LTS release (which continues to get support and receive updates for the length of the LTS), you need to install a specific corresponding kernel variant: ``linux-gcp-lts-<release>`` for GCE or ``linux-gke-lts-<release>`` for GKE. (Refer to the next section for an example.)
+
+
+Kernel variants
+~~~~~~~~~~~~~~~
+
+Canonical provides different kernel variants, all optimized for GCP. They are available in the APT archives, and can be installed with the ``apt install`` command.
+
+**For GCE (Compute Engine) instances:**
+
+For x86_64 instances:
+
+* ``linux-gcp-lts-<release>``: Where <release> is replaced by an LTS Ubuntu version, such as 18.04, 20.04, 22.04 or 24.04. This kernel does not roll and sticks to the original kernel present in the Ubuntu release, for the life of the release (e.g.: linux-gcp-lts-24.04 will always point to a 6.8 kernel for the life of Ubuntu 24.04 LTS).
+* ``linux-gcp-edge``: The -edge kernel provides early access to the next HWE kernel. It is fully supported, but is less exposed to real world use cases since it is relatively new. It eventually transitions to the linux-gcp kernel. It can for instance be used for testing the upcoming kernels in your specific environment.
+
+For ARM64 instances, we have four variants - the two mentioned above for x86_64 instances and two more:
+
+* ``linux-gcp-64k``: This variant uses 64k memory pages by default (instead of the standard 4k). It is optimized for high-performance networking and memory-intensive workloads on ARM-based infrastructure.
+
+* ``linux-gcp-64k-edge``: This variant provides early access to the next HWE kernel that is configured to use 64k memory pages by default.
+
+**For GKE (Kubernetes Engine) node images:**
+
+* ``linux-gke``: The default kernel for GKE node images, optimized for Kubernetes workloads.
+* ``linux-gke-64k``: For ARM64 GKE nodes, a 64k page size variant is available for improved performance in high-memory scenarios. This is available starting from GKE version 1.34.
+* ``linux-gke-lts-<release>``: Non-rolling kernel variant that stays on the original LTS kernel version.
+
+
+
 GCE Images
 ~~~~~~~~~~
 
@@ -49,6 +91,8 @@ Google provides a multi-cloud GKE strategy through a variety of Anthos product o
 * `GKE Anthos on Azure`_ 
 * `GKE Anthos on VMware`_ 
 
+.. _`Ubuntu kernel release cycle`: https://ubuntu.com/about/release-cycle#ubuntu-kernel-release-cycle
+.. _`installation options`: https://ubuntu.com/kernel/lifecycle
 .. _`SEV-SNP`: https://www.amd.com/en/developer/sev.html
 .. _`Intel TDX`: https://www.intel.com/content/www/us/en/developer/tools/trust-domain-extensions/overview.html
 .. _`GKE node images`: https://cloud.google.com/kubernetes-engine/docs/concepts/node-images
