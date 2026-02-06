@@ -114,7 +114,7 @@ Charmed Kubeflow on AWS
 .. _`Amazon WorkSpaces`: https://aws.amazon.com/workspaces/
 .. _`Anbox cloud`: https://canonical.com/anbox-cloud 
 .. _`AWS marketplace (Anbox cloud)`: https://aws.amazon.com/marketplace/search/results?searchTerms=Anbox&CREATOR=565feec9-3d43-413e-9760-c651546613f2&filters=CREATOR
-.. _`MicroK8s`: https://microk8s.io/
+.. _`MicroK8s`: https://canonical.com/microk8s
 .. _`AWS marketplace (MicroK8s)`: https://aws.amazon.com/marketplace/pp/prodview-iwqx66ka26u3w
 .. _`Charmed Kubeflow`: https://canonical.com/mlops/kubeflow
 .. _`AWS marketplace (Charmed Kubeflow)`: https://aws.amazon.com/marketplace/search/results?searchTerms=Charmed+Kubeflow&CREATOR=565feec9-3d43-413e-9760-c651546613f2&filters=CREATOR
