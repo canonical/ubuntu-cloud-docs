@@ -5,48 +5,38 @@ Upgrade to Ubuntu Pro at scale using tokens with SSM
 Overview
 --------
 
-Ubuntu Pro expands Ubuntu LTS’ 5 years of coverage up to ten-years of security coverage with an additional support of 23,000 packages beyond the main operating system and it is free for use on up to 5 machines!
+Ubuntu Pro extends Ubuntu LTS’ standard 5 years of security maintenance to 10 years, with an additional 5 years available through the Legacy add-on. It also expands security coverage beyond the main repository to more than 25,000 packages in the Universe repository.
 
 There are three ways to get Ubuntu Pro on AWS:
 
-    1. Launching an Ubuntu Pro machine from the AWS Marketplace, which is ready to use through a pay-as-you-go pricing model.
-    2. Attaching an Ubuntu Pro token to any running Ubuntu LTS server using AWS Systems Manager (SSM)
-    3. Upgrading to Ubuntu Pro using AWS License Manager
+1. Launch an Ubuntu Pro instance from the AWS Marketplace, ready to use with a pay-as-you-go pricing model.
+2. Upgrade an existing instance to Ubuntu Pro using AWS License Manager.
+3. Attach an Ubuntu Pro token to any running Ubuntu LTS instance.
 
-This how-to will cover the second case: Activating Pro via token using AWS Systems Manager.
-
-There are many ways to automate actions on AWS Systems Manager but for this how-to, we are going to use SSM Documents and the Run Command functionality.
+This how-to covers the third option: activating Ubuntu Pro via token using AWS Systems Manager (SSM).
 
 
 Prerequisites
 -------------
 
-- An AWS account with write access to SSM and the ability to connect to VMs
-- An Ubuntu One account (you can create one on `Ubuntu Pro | Ubuntu <https://ubuntu.com/pro>`_)
-- Machines with SSM agent installed (available by default on Ubuntu 16.04 onwards). If the agent is properly configured, the servers will appear as Managed Nodes on AWS SSM Fleet Manager (see the reference links for more information)
-- Basic understanding about writing and running SSM Documents (see the reference links for more information)
+- An Ubuntu One account with your Ubuntu Pro token(s). You can create one for free on the `Ubuntu Pro portal <https://ubuntu.com/pro>`_.
+- Ubuntu machines with the SSM Agent installed (available by default on Ubuntu 16.04 and later). If the instances have the right IAM role for SSM access, the servers will appear as Managed Nodes in AWS Systems Manager Fleet Manager (see the reference links for more information).
+- A basic understanding of how to write and run SSM Documents (see the reference links for more information).
 
 
-1. Get a token
---------------
-
-To get an Ubuntu Pro token, you need to create an account in `Ubuntu Pro | Ubuntu <https://ubuntu.com/pro>` to see your subscriptions and get your tokens. Anyone can use Ubuntu Pro for free on up to 5 machines, even for production workloads.
-
-Log-in by clicking on *Your subscriptions*. You will be redirected to the following screen where the token is exposed as shown in the orange ellipse:
-
-.. image:: upgrade-to-ubuntu-pro-at-scale-using-tokens-with-ssm-images/0_token_screen.png
-   :align: center
-
-
-2. Create a SSM Document to attach the token
+Create an SSM Document to attach the token
 --------------------------------------------
 
-The SSM Document is just a JSON or YAML file containing the script in steps or sections.
+    An AWS Systems Manager document (SSM document) defines the actions that Systems Manager performs on your managed instances.
 
-    Note:
-    As the token is personal, it is not recommended to hard-code it into the code but add it as a user parameter.
+The SSM document is a JSON or YAML file that contains the steps or actions to be executed on an instance. In this case, we will 
+run the commands required to attach a token and apply Ubuntu Pro updates, if available.
 
-This is the full code:
+.. note::
+    
+   Because tokens are fungible, it is not recommended to hard-code them in the document. Instead, pass the token as a user-defined parameter.
+
+Below is the full SSM document definition:
 
 .. code-block::
 
@@ -54,57 +44,56 @@ This is the full code:
     schemaVersion: '2.2'
     description: "Enable Pro services using a Pro token"
     parameters:
-    token:
+      token:
         type: String
     mainSteps:
     - action: aws:runShellScript
-    name: update
-    inputs:
+      name: update
+      inputs:
         runCommand:
         - "sudo apt-get update && sudo apt-get upgrade -y"
     - action: aws:runShellScript
-    name: attachToken
-    inputs:
+      name: attachToken
+      inputs:
         runCommand:
         - "sudo pro attach {{ token }}"
     - action: aws:runShellScript
-    name: updateWithESM
-    inputs:
+      name: updateWithESM
+      inputs:
         runCommand:
         - "sudo apt-get update && sudo apt-get upgrade -y"
 
 
-The token will be requested from the user when running this document. The document will then do the following:
+The token will be requested from the user when the document is executed. The document performs the following steps:
 
-    1. Run an update (to make sure the pro agent is at the latest version)
-    2. Attach the token.
-    3. Update again in case you have installed software that could get security updates from Pro repositories.
+    1. Runs an update to ensure the Pro client is up to date.
+    2. Attaches the Ubuntu Pro token.
+    3. Runs another update in case installed software can now receive security updates from Ubuntu Pro repositories.
 
-No reboot is needed.
+No reboot is required unless updates affect core components such as the kernel.
 
 
-3. Run the SSM script
----------------------
+Run the SSM script
+------------------
 
-The SSM script can be run either from the Fleet Manager or with the SSM Run Command. More information can be found in `this tutorial <https://ubuntu.com/tutorials/how-to-create-ssm-documents-and-use-them-to-install-packages-massively-with-run-command#1-overview>`
+The SSM document can be executed either from Fleet Manager or using SSM Run Command. More information is available in `this tutorial <https://ubuntu.com/tutorials/how-to-create-ssm-documents-and-use-them-to-install-packages-massively-with-run-command#1-overview>`_.
 
-You don’t need to restart the machines after applying the token. If the SSM script fails, check the SSM format of your document, see if there are any typos and try again. If this does not work check the output generated by SSM and look for any configuration issue (do your machines have access to update and upgrade packages? Pro repositories are available on different endpoints [[than what?]]. Check the references at the end of the tutorial).
-
+You do not need to restart your machines after attaching the token. If the SSM execution fails, check the document format for errors or typos and try again. If the issue persists, review the command output in SSM for configuration problems, for example, whether the instances have network access to package repositories. Ubuntu Pro repositories are hosted on dedicated endpoints, which may require additional network configuration. See the references at the end of this tutorial for details.
 
 .. image:: upgrade-to-ubuntu-pro-at-scale-using-tokens-with-ssm-images/1_run_command_screen.png
    :align: center
 
 
-4. Check the Pro status of your machine
----------------------------------------
+Check the Pro status of your machine
+------------------------------------
 
-You can always check the status of the subscription by running: 
+You can verify the subscription status at any time by running: 
 
 .. code-block::
     
     sudo pro status 
 
-This will display your entitlements and enabled services.
+This command displays your entitlements and the services that are enabled.
 
 
 Additional resources and links
