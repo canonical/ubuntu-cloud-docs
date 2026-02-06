@@ -226,7 +226,8 @@ to get something like:
 
 .. terminal::
 
-   $ ip a
+   ip a
+   
    1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN
        group default qlen 1000
        link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
@@ -254,16 +255,13 @@ confirm that you want to connect.
 
 .. terminal::
 
-  $ ssh ubuntu@192.168.1.123
-  The authenticity of host ‘192.168.1.123 (192.168.1.123)’ can’t be
-  established.
-  ED25519 key fingerprint is
-  SHA256:7vJHf4BcNaZ9dQKSPG8tFw3uRlXnV1kTbmYgEjL0h5o.
+  ssh ubuntu@192.168.1.123
+
+  The authenticity of host ‘192.168.1.123 (192.168.1.123)’ can’t be established.
+  ED25519 key fingerprint is SHA256:7vJHf4BcNaZ9dQKSPG8tFw3uRlXnV1kTbmYgEjL0h5o.
   This key is not known by any other names
-  Are you sure you want to continue connecting (yes/no/[fingerprint])?
-  yes
-  Warning: Permanently added ‘192.168.1.123’ (ED25519) to the list of
-  known hosts.
+  Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+  Warning: Permanently added ‘192.168.1.123’ (ED25519) to the list of known hosts.
 
 Once done, disconnecting from the SSH session will not power down the
 VM unless you explicitly called ``poweroff`` or another similar command.

@@ -67,6 +67,7 @@ QEMU running
 When you try and start Vagrant after building your box, you may get a variation on the following error:
 
 .. terminal::
+   :output-only:
 
    VirtualBox can't enable the AMD-V extension. Please disable the KVM kernel extension, recompile your kernel and reboot (VERR_SVM_IN_USE)
 
@@ -77,6 +78,7 @@ VirtualBox (Vagrant) running
 If you have VirtualBox (Vagrant) running and you try and launch a QEMU VM, you may encounter a variation of the following error:
 
 .. terminal::
+   :output-only:
 
    ioctl(KVM_CREATE_VM) failed: 16 Device or resource busy
    qemu-system-x86_64: failed to initialize kvm: Device or resource busy
@@ -88,6 +90,7 @@ Remote host identification has changed
 If you create and launch multiple different Vagrant boxes, you may get a scary looking warning when you try and connect via ``vagrant ssh``:                                                                                                                                  
 
 .. terminal::
+   :output-only:
 
    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!
 
