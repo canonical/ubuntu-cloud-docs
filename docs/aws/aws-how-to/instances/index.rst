@@ -10,6 +10,7 @@ Launching different types of instances and finding the right image to use:
 * :doc:`Launch a desktop <launch-ubuntu-desktop>`
 * :doc:`Launch and attest an AMD SEV-SNP instance <launch-and-attest-amd-sev-snp-instances>`
 * :doc:`Import a local Ubuntu VM into AWS <import-local-vm-to-aws>`
+* :doc:`Harden a base CIS Level 1 instance  <cis-hardening>`
 
 Creating AMIs and CloudFormation templates:
 
@@ -44,6 +45,7 @@ Deploying Canonical Products:
    Launch a desktop <launch-ubuntu-desktop>
    Launch and attest an AMD SEV-SNP instance <launch-and-attest-amd-sev-snp-instances>
    Import a local Ubuntu VM <import-local-vm-to-aws>
+   Harden a base CIS Level 1 instance  <cis-hardening>
    Build an Ubuntu Pro AMI using Packer <build-pro-ami-using-packer>
    Create CloudFormation templates <build-cloudformation-templates>
    Install 64k page kernel <install-64k-kernel>
