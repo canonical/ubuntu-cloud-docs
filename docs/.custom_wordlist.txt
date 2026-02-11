@@ -179,6 +179,7 @@ IOV
 iptables
 ipv
 IPv
+jq
 IronBank
 iSCSI
 Istio
@@ -279,6 +280,7 @@ PARAVIRTUALIZED
 PAYG
 PCI
 Permalink
+planInfo
 png
 powerpc
 ppc
