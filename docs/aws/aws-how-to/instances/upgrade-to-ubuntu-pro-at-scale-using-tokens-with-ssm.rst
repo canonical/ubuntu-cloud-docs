@@ -27,7 +27,7 @@ Prerequisites
 Create an SSM Document to attach the token
 --------------------------------------------
 
-.. admonition:: SSM document:
+.. admonition:: What is an SSM document?
 
     An AWS Systems Manager document (SSM document) defines the actions that Systems Manager performs on your managed instances.
 

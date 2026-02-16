@@ -34,7 +34,6 @@ Perform upgrades and set up automated updates.
 
 Deploy some Canonical specific solutions.
  
-* :doc:`Deploy Charmed Kubernetes <instances/deploy-charmed-kubernetes-on-ubuntu-pro>`
 * :doc:`Deploy Canonical Data Science Stack <instances/data-science-stack-on-ec2>`
 
 
