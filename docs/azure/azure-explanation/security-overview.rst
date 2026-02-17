@@ -23,7 +23,7 @@ Trusted Launch
 Confidential Virtual Machines (CVMs)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-`CVMs`_ powered by Ubuntu and AMD's SEV-SNP technology as the underlying hardware are currently available. Ubuntu LTS images starting from 20.04 support AMD SEV-SNP, while from 22.04 onwards the images support both AMD SEV-SNP and Intel TDX. The Intel TDX option is still in public preview and is not yet generally available.
+`CVMs`_ powered by Ubuntu and AMD's SEV-SNP technology as the underlying hardware are currently available. Ubuntu LTS images starting from 22.04 onwards support both AMD SEV-SNP and Intel TDX. The Intel TDX option is still in public preview and is not yet generally available.
 
 Apart from the trusted execution environments (TEE) provided by these specialized hardware components, these CVMS also support `measured boot`_ using a vTPM.
 
