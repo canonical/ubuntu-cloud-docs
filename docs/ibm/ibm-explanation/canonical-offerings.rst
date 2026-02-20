@@ -51,7 +51,7 @@ Ubuntu Pro can be enabled on any Ubuntu instance running in IBM Cloud. After `se
 Canonical Support
 -----------------
 
-Ubuntu instances on IBM Cloud can receive 24/7 `enterprise support <https://ubuntu.com/support>`__ from Canonical. In addition to Ubuntu Pro services, a support contract enititles you to:
+Ubuntu instances on IBM Cloud can receive 24/7 `enterprise support <https://ubuntu.com/support>`__ from Canonical. In addition to Ubuntu Pro services, a support contract entitles you to:
 
 - Full access to our Knowledge Base
 - Break-fix support
