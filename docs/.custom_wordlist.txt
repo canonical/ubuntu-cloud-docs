@@ -2,6 +2,7 @@
 AArch
 ACG
 ACR
+Ad-hoc
 adapter
 addons
 AES
@@ -24,6 +25,7 @@ APIs
 AppArmor
 armhf
 ASIC
+AskUbuntu
 Authorize
 aws
 awspub
@@ -153,6 +155,7 @@ gzip
 HashiCorp
 HCL
 HIPAA
+hoc
 hostname
 hostnames
 hotplug
