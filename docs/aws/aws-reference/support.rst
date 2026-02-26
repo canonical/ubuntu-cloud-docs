@@ -24,6 +24,9 @@ cloud deployments.
 
 To purchase phone support please reach out to aws@canonical.com.
 
+An Ubuntu Pro subscription also provides access to our `Knowledge Base`_ which is a repository of technical documentation, how-to-guides, and tutorials on Canonical products.
+Additionally, support contracts (i.e. Not self-service) provide access to `SLA-backed support`_.
+
 
 Amazon front line support
 -------------------------
@@ -45,3 +48,5 @@ best effort.
 .. _`Amazon Web Services marketplace`: https://aws.amazon.com/marketplace/search/results?searchTerms=ubuntu+pro&CREATOR=e6a5002c-6dd0-4d1e-8196-0a1d1857229b&filters=CREATOR
 .. _`AWS support portal`: https://console.aws.amazon.com/support/home#/case/create?issueType=technical
 .. _`file a bug`: https://bugs.launchpad.net/cloud-images/+filebug/+login
+.. _`Knowledge base`: https://documentation.ubuntu.com/pro/support-overview/#knowledge-base
+.. _`SLA-backed support`: https://documentation.ubuntu.com/pro/support-overview/#severity-levels-and-response-times
