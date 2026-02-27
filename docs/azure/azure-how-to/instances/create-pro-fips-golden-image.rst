@@ -12,6 +12,9 @@ This guide will provide instructions for using the Azure Image Builder (AIB) to 
 .. note::
     We are using a pre-enabled FIPS image, but you can also use the standard Ubuntu Pro if it better suits your needs.
 
+.. note::
+    If you have manually configured a VM and would like to create a golden image from it you should instead follow `Azure's VM generalization instructions <https://learn.microsoft.com/en-us/azure/virtual-machines/generalize>`_.
+
 
 What you'll need
 ----------------
