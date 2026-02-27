@@ -28,12 +28,11 @@ CIS 6.2.1.2.2 - Configure ``systemd-journal-remote`` authentication
       ServerCertificateFile=/etc/ssl/certs/journal-upload.pem
       TrustedCertificateFile=/etc/ssl/ca/trusted.pem
 
-2. Restart the service::
+2. Restart the service
 
 .. code-block:: console
 
    systemctl restart systemd-journal-upload
-
 
 CIS 5.1.4 - Restrict *sshd* Access
 ----------------------------------
@@ -55,7 +54,7 @@ Limit SSH log-ins to known users or groups.
 
    The *first* occurrence of each directive takes precedence over any other occurrence of the same directive.
 
-3. Reload SSH::
+3. Reload SSH
 
 .. code-block:: console
 
