@@ -159,7 +159,7 @@ We'll be using a sample JSON template to configure the image. It can be customiz
 
 .. code-block:: sh
 
-    curl https://pastebin.com/raw/fCkQAgAc -o UbuntuProFips2004SIGTemplate.json
+    curl https://raw.githubusercontent.com/canonical/ubuntu-cloud-docs/refs/heads/main/docs/azure/azure-how-to/instances/aibImageTemplate.json -o UbuntuProFips2004SIGTemplate.json
 
 Customize it to use the values set above:
 
