@@ -295,6 +295,7 @@ PuTTY
 pv
 QCOW
 QEMU
+quickstart
 Quokka
 ramdisk
 RBAC
