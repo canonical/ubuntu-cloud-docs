@@ -43,3 +43,4 @@ Some specific customizations available in our cloud images are described here - 
    Confidential computing <confidential-computing>
    Cloud-init metapackages <cloud-init-metapackages>
    Architecture Variants <architecture-variants>
+   Kernels on the cloud <kernels-on-the-cloud>
