@@ -30,6 +30,10 @@ In this documentation
 
       **Discussion and clarification** of key topics, such as security features, Ubuntu on AKS nodes and our image retention policy.
 
+   .. grid-item:: :doc:`Support on Azure <azure-reference/support>`
+
+      **Reference documentation** for support options on Azure.
+
 ---------
 
 Azure-optimized Ubuntu images
@@ -77,6 +81,7 @@ contributions, suggestions, fixes and constructive feedback.
 
    azure-how-to/index
    azure-explanation/index
+   azure-reference/support
    azure-how-to/contribute-to-these-docs
 
 .. _Get support: https://ubuntu.com/cloud/public-cloud
