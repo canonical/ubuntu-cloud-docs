@@ -1,0 +1,3 @@
+.sphinx/
+__pycache__
+_build

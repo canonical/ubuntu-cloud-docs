@@ -1,0 +1,88 @@
+{
+  "type": "Microsoft.VirtualMachineImages",
+  "apiVersion": "2020-02-14",
+  "location": "<region1>",
+  "dependsOn": [],
+  "tags": {
+    "imagebuilderTemplate": "AzureImageBuilderSIG",
+    "userIdentity": "enabled"
+  },
+  "identity": {
+    "type": "UserAssigned",
+    "userAssignedIdentities": {
+      "<imgBuilderId>": {}
+    }
+  },
+
+  "properties": {
+
+    "buildTimeoutInMinutes" : 80,
+
+    "vmProfile":
+            {
+              "vmSize": "Standard_DS1_v2",
+              "osDiskSizeGB": 30
+            },
+
+    "source": {
+      "type": "PlatformImage",
+      "publisher": "<ProPlanPublisher>",
+      "offer": "<ProPlanOffer>",
+      "sku": "<ProPlanSku>",
+      "version": "latest",
+      "planInfo": {
+        "planName": "<ProPlanSku>",
+        "planProduct": "<ProPlanOffer>",
+        "planPublisher": "<ProPlanPublisher>"
+      }
+    },
+    "customize": [
+      {
+        "type": "Shell",
+        "name": "WaitForProTokenAutoAttach",
+        "inline": [
+          "sudo pro status --wait"
+        ]
+      },
+
+      {
+        "type": "Shell",
+        "name": "Placeholder for custom commands required in each Ubuntu VM",
+        "inline": [
+          "echo 'Replace me!'"
+        ]
+      },
+
+      {
+        "type": "Shell",
+        "name": "DetachPro -- images created from this will auto attach themselves with new credentials",
+        "inline": [
+          "sudo pro detach --assume-yes && sudo rm -rf /var/log/ubuntu-advantage.log"
+        ]
+      },
+
+      {
+        "type": "Shell",
+        "name": "Replace /etc/machine-id with empty file to ensure the Pro client does not see clones as duplicates",
+        "inline": [
+          "sudo rm -f /etc/machine-id && sudo touch /etc/machine-id"
+        ]
+      }
+    ],
+    "distribute": [
+      {
+        "type": "SharedImage",
+        "galleryImageId": "/subscriptions/<subscriptionID>/resourceGroups/<rgName>/providers/Microsoft.Compute/galleries/<sharedImageGalName>/images/<imageDefName>",
+        "runOutputName": "<runOutputName>",
+        "artifactTags": {
+          "source": "azureVmImageBuilder",
+          "baseosimg": "ubuntupro1804"
+        },
+        "replicationRegions": [
+          "<region1>",
+          "<region2>"
+        ]
+      }
+    ]
+  }
+}
