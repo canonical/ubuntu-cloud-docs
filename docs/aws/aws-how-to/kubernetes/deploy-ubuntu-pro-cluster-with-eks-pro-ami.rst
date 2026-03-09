@@ -1,11 +1,11 @@
 Deploy an Ubuntu Pro EKS cluster - using a Pro AMI
 ==================================================
 
-This guide shows how to deploy an Ubuntu Pro EKS cluster using an EKS Pro AMI. You can also use Pro tokens and an EC2 launch template to deploy such a cluster. For instructions on how to do that, refer to :doc:`./deploy-ubuntu-pro-cluster`.
+This guide shows how to deploy an Ubuntu Pro EKS cluster using an EKS Pro AMI. 
 
-An EKS Pro AMI is an Ubuntu EKS AMI with the `Pro service`_ included, which provides services such as Livepatch for LTS-based nodes and Expanded Security Maintenance (ESM).
+An EKS Pro AMI is an Ubuntu EKS AMI that includes the `Pro subscription`_, which provides services such as Livepatch for LTS-based nodes and Expanded Security Maintenance (ESM). It also grants the cluster a license to run Pro containers with no limitations on quantity or variety.
 
-Currently, only Ubuntu Pro 22.04 LTS is available as an EKS AMI, and it does not include the FIPS components. For an earlier version, such as Ubuntu Pro 20.04 LTS, use Pro tokens as mentioned above. For including FIPS, refer to :doc:`./deploy-ubuntu-pro-fips-cluster`.
+Ubuntu Pro 22.04 LTS supports EKS up to version 1.34, while Ubuntu 24.04 LTS will continue supporting current and future EKS versions. Currently, only 22.04 LTS provides NIST-validated FIPS components. For earlier versions or other combinations of EKS and Ubuntu releases, use Pro tokens as described in :doc:`./deploy-ubuntu-pro-cluster`. To include FIPS, refer to :doc:`./deploy-ubuntu-pro-fips-cluster`.
 
 Prerequisites
 -------------
@@ -31,7 +31,7 @@ Create a ``config.yaml`` with the following content:
     metadata:
       name: my-pro-cluster
       region: us-east-1
-      version: '1.31'
+      version: '1.35'
     
     iam:
       withOIDC: true
@@ -55,7 +55,7 @@ Create a ``config.yaml`` with the following content:
 This config file will allow you to use ``eksctl`` to create an EKS cluster and node groups. By specifying ``amiFamily: UbuntuPro2404``, we ensure that the EKS Pro AMI will be used during creation and deployment.
 
 To use an Ubuntu specific Ubuntu Pro AMI version, set ``amiFamily`` to one of these choices:
-- ``UbuntuPro2204`` for EKS version >= 1.29
+- ``UbuntuPro2204`` for EKS version >= 1.29 and < 1.35
 - ``UbuntuPro2404`` for EKS version >= 1.31
 
 For further cluster customization check out `eksctl details`_.
@@ -79,8 +79,8 @@ You can confirm the status of the nodes on your cluster using:
     $ kubectl get nodes
 
     NAME                                           STATUS   ROLES    AGE     VERSION
-    ip-xxx-xxx-xx-xxx.us-east-1.compute.internal   Ready    <none>   2m45s   v1.31.x
-    ip-xxx-xxx-x-xx.us-east-1.compute.internal     Ready    <none>   2m45s   v1.31.x
+    ip-xxx-xxx-xx-xxx.us-east-1.compute.internal   Ready    <none>   2m45s   v1.35.x
+    ip-xxx-xxx-x-xx.us-east-1.compute.internal     Ready    <none>   2m45s   v1.35.x
 
 
 (Optional) Verify Pro subscription
@@ -105,7 +105,7 @@ To check that the deployed nodes have Ubuntu Pro, run:
 
 
 
-.. _`Pro service`: https://ubuntu.com/pro
+.. _`Pro subscription`: https://ubuntu.com/pro
 .. _`install eksctl`: https://docs.aws.amazon.com/eks/latest/eksctl/installation.html
 .. _`install kubectl`: https://docs.aws.amazon.com/eks/latest/userguide/install-kubectl.html
 .. _`eksctl details`: https://docs.aws.amazon.com/eks/latest/eksctl/what-is-eksctl.html
