@@ -11,4 +11,4 @@ Some key topics needed to understand the public cloud images are discussed here.
    Security overview <security-overview>
    Confidential computing <confidential-computing>
    Cloud-init metapackages <cloud-init-metapackages>
-      
+   Rolling kernel model <rolling-kernels>
