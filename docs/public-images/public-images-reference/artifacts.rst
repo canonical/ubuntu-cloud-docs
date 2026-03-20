@@ -14,8 +14,9 @@ This section contains information on all of the Ubuntu cloud images available fo
 
 Architectures supported
 ~~~~~~~~~~~~~~~~~~~~~~~
--  **AMD64:** Standard 64-bit PC architecture.
--  **ARM64:** 64-bit ARM architecture.
+-  **amd64:** Legacy x86_64 64-bit PC architecture.
+-  **amd64v3:** Modern variant of the amd64/x86_64 architecture, with support for latest ABI and instruction set extensions. This variant is only supported for Ubuntu 26.04 Resolute Raccoon and forward.
+-  **arm64:** 64-bit ARM architecture.
 -  **armhf:** Hard-float 32-bit ARM architecture.
 -  **ppc64el:** 64-bit PowerPC little-endian architecture.
 -  **riscv64:** 64-bit RISC-V architecture.

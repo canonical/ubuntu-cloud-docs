@@ -27,6 +27,12 @@ learn more about these artifacts and supported architectures, visit our
 Ubuntu :doc:`cloud image artifacts <../public-images-reference/artifacts>`
 documentation.
 
+Supported Architectures
+-----------------------
+
+LXD and OpenStack "Download" images are made available for a wide variety of system architectures.
+See the `cloud image artifacts`_ documentation for a list of supported architectures for LXD and OpenStack images.
+
 
 How do you access them?
 -----------------------
@@ -210,3 +216,4 @@ rely on the ``virt-*`` tools from ``libguestfs`` to perform specific tasks. For 
 .. _modifying images: https://docs.openstack.org/image-guide/modify-images.html
 .. _tools: https://libguestfs.org/
 .. _interactive shell: https://libguestfs.org/guestfish.1.html
+.. _cloud image artifacts: https://documentation.ubuntu.com/public-images/public-images-reference/artifacts/
