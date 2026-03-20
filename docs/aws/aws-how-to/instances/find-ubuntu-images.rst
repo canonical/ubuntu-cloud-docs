@@ -47,7 +47,7 @@ To find images on AWS, you can use the `SSM Parameter Store`_, the `describe-ima
             For EKS, the latest EKS AMI ID for each supported EKS version can be found in the SSM parameter store using:
 
             .. formatted-dropdown::
-               aws ssm get-parameters --names ubuntu/{eks_product}/{release}/{k8s}/stable/{serial}/{arch}/hvm/{vol}/ami-id
+               aws ssm get-parameters --names /aws/service/canonical/ubuntu/{eks_product}/{release}/{k8s}/stable/{serial}/{arch}/hvm/{vol}/ami-id
                :eks_product: eks, eks-pro
                :release: noble, jammy
                :k8s: 1.34, 1.33, 1.32, 1.31
