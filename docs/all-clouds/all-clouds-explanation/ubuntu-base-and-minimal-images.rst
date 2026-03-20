@@ -56,5 +56,5 @@ To run ``unminimize``, you simply need to call:
 
 
 .. _cloud-minimal: https://ubuntu-archive-team.ubuntu.com/seeds/ubuntu.noble/cloud-minimal
-.. _germinate: https://manpages.ubuntu.com/manpages/noble/man1/germinate.1.html
+.. _germinate: https://documentation.ubuntu.com/project/staging/release-team/germinate/
 .. _image manifest: https://cloud-images.ubuntu.com/minimal/daily/noble/current/noble-minimal-cloudimg-amd64.manifest
