@@ -3,7 +3,7 @@ Deploy an Ubuntu Pro EKS cluster — using Pro tokens
 
 This guide shows how to deploy an EKS cluster with Ubuntu Pro nodes using Ubuntu Pro tokens and EC2 launch templates.
 
-This guide covers creating Pro clusters using tokens only. If you prefer getting an pre-activated Ubuntu Pro AMI with metered billing, please check :doc:`deploy-ubuntu-pro-cluster-with-eks-pro-ami`.
+This guide covers creating Pro clusters using tokens only. If you prefer getting a pre-activated Ubuntu Pro AMI with metered billing, please check :doc:`deploy-ubuntu-pro-cluster-with-eks-pro-ami`.
 
 For FIPS clusters, please note that only Ubuntu 22.04 LTS has NIST-validated FIPS modules at the moment.
 
@@ -26,13 +26,13 @@ The steps needed for deploying the cluster depend on whether you need to enable 
     .. group-tab:: Without FIPS
         
         When FIPS is not enabled, you can use one of the existing Ubuntu EKS AMIs and
-        customize it using cloud-init's `ubuntu-advantage module`_ during deployment.
+        customize it using cloud-init's `ubuntu-pro module`_ during deployment.
 
         For this deployment, you'll also need to have an existing `launch template`_ on AWS.
 
         **Update user-data in launch template**        
         
-        Go to the EC2 console and create a Launch Templates for your nodes.
+        Go to the EC2 console and create a Launch Template for your nodes.
         This Launch Template will be used to create the Node Groups. 
 
         On the advanced section of your launch template (user-data section), copy
@@ -236,8 +236,8 @@ profiles). When this command finishes, see the nodes with
 
 
 .. _`Packer installation instructions`: https://developer.hashicorp.com/packer/tutorials/docker-get-started/get-started-install-cli
-.. _`install eksctl`: https://eksctl.io/installation/
-.. _`ubuntu-advantage module`: https://cloudinit.readthedocs.io/en/latest/reference/modules.html#ubuntu-advantage
+.. _`install eksctl`: https://docs.aws.amazon.com/eks/latest/eksctl/installation.html
+.. _`ubuntu-pro module`: https://docs.cloud-init.io/en/latest/reference/modules.html#ubuntu-pro
 .. _`launch template`: https://docs.aws.amazon.com/autoscaling/ec2/userguide/launch-templates.html
 .. _`troubleshooting options`: https://docs.aws.amazon.com/eks/latest/userguide/troubleshooting.html
 .. _`EC2 Image Builder`: https://aws.amazon.com/image-builder

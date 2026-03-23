@@ -52,7 +52,7 @@ The recommended method to enable this is using user-data while creating the inst
 
 
 .. _`cloud-init v24.1`: https://github.com/canonical/cloud-init/releases/tag/24.1
-.. _`events`: https://cloudinit.readthedocs.io/en/latest/explanation/events.html
+.. _`events`: https://docs.cloud-init.io/en/latest/explanation/events.html
 .. _`cloud-init datasources`: https://docs.cloud-init.io/en/latest/reference/datasources.html
 .. _`EC2 as a cloud-init datasource`: https://docs.cloud-init.io/en/latest/reference/datasources/ec2.html
 .. _`cloud-init's CLI documentation`: https://docs.cloud-init.io/en/latest/reference/cli.html

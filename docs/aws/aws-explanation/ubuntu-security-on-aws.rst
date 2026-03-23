@@ -45,7 +45,7 @@ To find Ubuntu Pro images on AWS (for both EC2 and EKS), refer to :doc:`../aws-h
 
 
 .. _`Ubuntu security page`: https://ubuntu.com/security
-.. _`Introductory page on security`: https://documentation.ubuntu.com/server/explanation/intro-to/security/
+.. _`Introductory page on security`: https://ubuntu.com/server/docs/explanation/intro-to/security/
 .. _`Security in Amazon EC2`: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-security.html
 .. _`Build a CIS hardened Ubuntu Pro server image on the AWS Console`: https://www.youtube.com/watch?v=t5js7q-Cvko
 .. _`Ubuntu Pro`: https://ubuntu.com/aws/pro
