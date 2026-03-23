@@ -31,7 +31,7 @@ Supported Architectures
 -----------------------
 
 LXD and OpenStack "Download" images are made available for a wide variety of system architectures.
-See the `cloud image artifacts`_ documentation for a list of supported architectures for LXD and OpenStack images.
+See the :ref:`cloud image artifacts <uci-artifacts>` documentation for a list of supported architectures for LXD and OpenStack images.
 
 
 How do you access them?
@@ -207,13 +207,12 @@ rely on the ``virt-*`` tools from ``libguestfs`` to perform specific tasks. For 
 .. _minimal cloud images: https://cloud-images.ubuntu.com/minimal/
 .. _OpenStack command-line client: https://docs.openstack.org/ocata/admin-guide/common/cli-install-openstack-command-line-clients.html
 .. _Manage images: https://docs.openstack.org/ocata/admin-guide/common/cli-manage-images.html#create-or-update-an-image-glance
-.. _LXD containers: https://documentation.ubuntu.com/server/how-to/containers/lxd-containers/
+.. _LXD containers: https://ubuntu.com/server/docs/how-to/containers/lxd-containers/
 .. _LXD image format: https://documentation.ubuntu.com/lxd/latest/reference/image_format/
 .. _How to customize LXD image metadata for cloud-init: https://discourse.ubuntu.com/t/how-to-customize-lxd-image-metadata-for-cloud-init/25157
-.. _Cloud-init: https://cloudinit.readthedocs.io/en/latest/index.html
+.. _Cloud-init: https://docs.cloud-init.io/en/latest/index.html
 .. _LXD docs on cloud-init: https://documentation.ubuntu.com/lxd/latest/cloud-init/
 .. _LXD documentation on images: https://documentation.ubuntu.com/lxd/latest/howto/images_manage/
 .. _modifying images: https://docs.openstack.org/image-guide/modify-images.html
 .. _tools: https://libguestfs.org/
 .. _interactive shell: https://libguestfs.org/guestfish.1.html
-.. _cloud image artifacts: https://documentation.ubuntu.com/public-images/public-images-reference/artifacts/

@@ -6,7 +6,7 @@ Ubuntu Buildd images
 Buildd images are another offering of cloud images built by Canonical that are primarily used to serve the `Launchpad build farm <https://documentation.ubuntu.com/launchpad/en/latest/reference/services/build-farm/#>`_.
 These images are publicly available to download and use and can be found under `cloud-images.ubuntu.com/buildd <https://cloud-images.ubuntu.com/buildd/>`_.
 
-Buildd images are built and published for the same `set of supported system architectures <https://documentation.ubuntu.com/public-images/public-images-reference/artifacts/#architectures-supported>`_
+Buildd images are built and published for the same :ref:`set of supported system architectures <architectures-supported>` 
 that Ubuntu "Download" cloud images support.
 
 Ubuntu Buildd image use cases

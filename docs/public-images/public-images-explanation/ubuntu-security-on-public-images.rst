@@ -38,4 +38,4 @@ The Ubuntu tutorial `How to verify Ubuntu <https://ubuntu.com/tutorials/how-to-v
 verify and validate the integrity of an image.
 
 .. _`Ubuntu security page`: https://ubuntu.com/security
-.. _`Ubuntu server's security overview page`: https://documentation.ubuntu.com/server/explanation/intro-to/security/
+.. _`Ubuntu server's security overview page`: https://ubuntu.com/server/docs/explanation/intro-to/security/
