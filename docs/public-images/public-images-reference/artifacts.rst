@@ -12,6 +12,9 @@ Images
 ------
 This section contains information on all of the Ubuntu cloud images available for download. These images are pre-configured and ready for deployment in cloud environments, supporting multiple architectures and configurations.
 
+
+.. _architectures-supported:
+
 Architectures supported
 ~~~~~~~~~~~~~~~~~~~~~~~
 -  **amd64:** Legacy x86_64 64-bit PC architecture.
