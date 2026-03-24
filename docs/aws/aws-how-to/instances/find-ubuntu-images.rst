@@ -83,13 +83,14 @@ To find images on AWS, you can use the `SSM Parameter Store`_, the `describe-ima
             For EC2, find the latest AMI ID using:
 
             .. formatted-dropdown::
-               aws ec2 describe-images --owners 099720109477 --filters 'Name=name,Values=ubuntu/images/hvm-{vol}/ubuntu-{release}-{suite}-{arch}-{product}-{serial}' --query 'Images | sort_by(@, &CreationDate) | [-1].ImageId' --output text
-               :product: server{release:noble;release:jammy}, server-minimal{release:noble;release:jammy}, pro-server, pro-minimal
+               aws ec2 describe-images --owners 099720109477 --filters 'Name=name,Values=ubuntu{prefix}/images/hvm-{vol}/ubuntu-{release}-{suite}-{arch}-{product}-{serial}' --query 'Images | sort_by(@, &CreationDate) | [-1].ImageId' --output text
+               :product: server{release:noble;release:jammy}, minimal{release:noble;release:jammy}, pro-server, pro-minimal
                :release: noble, jammy, focal
                :suite: 24.04{release:noble}, 22.04{release:jammy}, 20.04{release:focal}
                :serial: *, 20250804, 20240115
                :arch: amd64, arm64
                :vol: ssd-gp3{release:noble}, ssd{release:jammy;release:focal}
+               :prefix: ""{product:server}, -pro-server{product:pro-server}, -pro-minimal{product:pro-minimal}, -minimal{product:minimal}
 
 
 
