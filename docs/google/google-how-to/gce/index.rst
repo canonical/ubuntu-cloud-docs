@@ -16,7 +16,7 @@ Creating golden images and customized containers:
 
 Performing upgrades:
 
-* :doc:`Upgrade to Pro <upgrade-in-place-from-lts-to-pro>`
+* :doc:`Change license between LTS and Pro <upgrade-in-place-from-lts-to-pro>`
 * :doc:`Enable Pro features <enable-pro-features>`
 * :doc:`Upgrade from Focal to Jammy <upgrade-from-focal-to-jammy>`
 
@@ -33,7 +33,7 @@ Administrative operations:
    Launch a desktop <launch-ubuntu-desktop>
    Build a Pro golden image <build-ubuntu-pro-golden-image>
    Create customized docker containers <create-customized-docker-container>
-   Upgrade to Pro <upgrade-in-place-from-lts-to-pro>
+   Change license between LTS and Pro <upgrade-in-place-from-lts-to-pro>
    Enable Pro features <enable-pro-features>   
    Upgrade from Focal to Jammy <upgrade-from-focal-to-jammy>
    Set hostname <set-hostname-using-cloudinit>
