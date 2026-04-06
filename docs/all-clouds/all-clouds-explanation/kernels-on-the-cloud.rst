@@ -52,6 +52,16 @@ Early access HWE package
 
 The early access HWE kernel package (``linux-<cloud>-edge``) gives users the ability to experiment with the next HWE kernel before it is adopted into the rolling kernel package. Using this package can allow users to test a new kernel before their deployment (without the ``-edge`` kernel) automatically upgrades to it via the default rolling kernel package. These kernels are still fully supported, but are less exposed to real world use cases since they are relatively new.
 
+Installing kernel packages
+++++++++++++++++++++++++++
+
+The package names are listed in each kernel section such that you can replace the following as applicable to derive the exact package name:
+
+- ``<cloud>`` with one of ``azure``, ``aws``, ``gcp``, ``gke``, ``oracle``
+- ``<release>`` with the LTS release number corresponding to your instance (i.e. ``22.04`` or ``24.04``)
+
+Given each kernel package receives updates as kernels become available, it is best to follow the walk-through in the :ref:`migrate-kernel-variants` document to ensure you receive updates from the intended kernel package.
+
 .. _`live-patch service on Ubuntu Pro`: https://ubuntu.com/security/livepatch
 .. _`Hardware Enablement (HWE) Kernel`: https://canonical-kernel-docs.readthedocs-hosted.com/latest/reference/hwe-kernels/
 .. _`Ubuntu kernel release cycle`: https://ubuntu.com/about/release-cycle#ubuntu-kernel-release-cycle
