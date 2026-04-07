@@ -1,3 +1,6 @@
+.. meta::
+   :description: Learn how to deploy an EKS cluster with Ubuntu Pro nodes using Ubuntu Pro tokens and EC2 launch templates.
+
 Deploy an Ubuntu Pro EKS cluster — using Pro tokens
 ===================================================
 

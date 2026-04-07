@@ -1,3 +1,6 @@
+.. meta::
+   :description: Understand Ubuntu OCI container images, their compliance with OCI standards, and their security and update guarantees.
+
 .. _ubuntu-oci-container-images:
 
 Ubuntu OCI container images
@@ -22,4 +25,4 @@ starting point, and so also benefit from its
 The Ubuntu container image is built from a minimal rootfs tarball. This tarball
 already contains the modifications needed to make the rootfs suitable for 
 building OCI/Docker container images. The Ubuntu OCI rootfs tarballs are published
-in `OCI partner images <https://partner-images.canonical.com/oci/>`_. 
+in `OCI partner images <https://partner-images.canonical.com/oci/>`_.

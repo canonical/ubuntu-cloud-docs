@@ -1,3 +1,6 @@
+.. meta::
+   :description: Learn how to create an Ubuntu FIPS-compliant Docker image using Ubuntu Pro, with step-by-step instructions and requirements.
+
 .. _how-to-fips-ubuntu-container:
 
 Create an Ubuntu FIPS Docker image

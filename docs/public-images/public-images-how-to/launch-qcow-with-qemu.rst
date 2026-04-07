@@ -1,3 +1,7 @@
+
+.. meta::
+   :description: Learn how to launch QCOW images using QEMU, including instructions for both SeaBIOS and UEFI firmware options.
+
 .. _qcow-qemu:
 
 Launch QCOW images using QEMU

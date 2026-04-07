@@ -1,4 +1,9 @@
+
+.. meta::
+   :description: Learn about LXD and OpenStack Ubuntu images, about how to access and configure them.
+   
 .. _lxd-openstack-images:
+
 
 LXD and OpenStack images
 ========================

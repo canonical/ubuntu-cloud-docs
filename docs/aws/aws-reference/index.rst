@@ -1,3 +1,6 @@
+.. meta::
+   :description: Reference documentation for Ubuntu on AWS, including EC2 credentials, EKS snaps, Pro features, and support options.
+
 Reference
 =========
 

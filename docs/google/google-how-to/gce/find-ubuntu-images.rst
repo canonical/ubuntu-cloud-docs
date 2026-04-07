@@ -1,3 +1,7 @@
+.. meta::
+   :description: Learn how to find Ubuntu images on GCE using the Google Cloud console or the gcloud command line tool. Includes a link to Canonical's Ubuntu cloud image finder for more filtering options.
+
+
 Find Ubuntu images on GCE
 =========================
 

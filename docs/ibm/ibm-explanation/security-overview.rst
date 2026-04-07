@@ -1,3 +1,7 @@
+.. meta::
+   :description: Understand the Ubuntu and IBM security features available while using Ubuntu on IBM Cloud.
+
+
 Security features with Ubuntu on IBM Cloud
 ==========================================
 
@@ -17,5 +21,5 @@ IBM Cloud offers comprehensive security and data protection in the cloud. `IBM c
 
 
 .. _`Ubuntu security page`: https://ubuntu.com/security
-.. _`Introductory page on security`: https://documentation.ubuntu.com/server/explanation/intro-to/security/
-.. _`IBM cloud security`: https://www.ibm.com/cloud/security
+.. _`Introductory page on security`: https://ubuntu.com/server/docs/explanation/intro-to/security/
+.. _`IBM cloud security`: https://www.ibm.com/products/cloud/security

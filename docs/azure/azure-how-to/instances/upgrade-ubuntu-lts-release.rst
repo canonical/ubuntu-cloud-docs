@@ -1,3 +1,7 @@
+.. meta::
+   :description: Learn how to upgrade from one Ubuntu LTS release to the next on Azure virtual machines.
+
+
 Upgrade Ubuntu LTS release on Azure
 ===================================
 

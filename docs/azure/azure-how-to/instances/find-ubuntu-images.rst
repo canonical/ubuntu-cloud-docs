@@ -1,3 +1,7 @@
+.. meta::
+   :description: Learn how to find and select different Ubuntu images on Microsoft Azure. Includes URNs for LTS, interim releases, Pro, CVM, FIPS-compliant, and CIS-hardened images published by Canonical. 
+
+
 Find Ubuntu images on Azure
 ============================
 

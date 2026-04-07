@@ -1,3 +1,6 @@
+.. meta::
+   :description: See which snaps are bundled in Ubuntu EKS worker images on AWS and why, including kubelet, kubectl, and ECR credential provider.
+
 Snap usage in EKS worker images
 ===============================
 

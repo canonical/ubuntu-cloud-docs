@@ -1,3 +1,7 @@
+.. meta::
+   :description: Learn how to create an instance with confidential computing enabled on Oracle Cloud.
+
+
 Enable confidential computing
 =============================
 

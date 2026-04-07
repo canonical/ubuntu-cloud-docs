@@ -1,3 +1,7 @@
+.. meta::
+   :description: Learn how to switch between Ubuntu LTS and Ubuntu Pro in-place on GCE. Includes steps to update the license and verify the changes.
+
+
 Change license between LTS and Pro
 ====================================
 
@@ -189,7 +193,7 @@ You can change the license on an existing VM's disk to switch between Ubuntu LTS
          The output should confirm that Ubuntu Pro services are no longer entitled.
 
 
-.. _`upgrading to Pro`: https://cloud.google.com/compute/docs/images/premium/ubuntu-pro/upgrade-from-ubuntu
+.. _`upgrading to Pro`: https://docs.cloud.google.com/compute/docs/images/premium/ubuntu-pro/upgrade-from-ubuntu
 
 
 

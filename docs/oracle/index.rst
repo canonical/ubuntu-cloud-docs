@@ -1,3 +1,6 @@
+.. meta::
+   :description: Discover Ubuntu on Oracle Cloud, including optimized images, deployment guides, and best practices for cloud workloads.
+   
 Ubuntu on Oracle
 ================
 

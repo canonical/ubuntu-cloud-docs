@@ -1,3 +1,6 @@
+.. meta::
+   :description: Discover Ubuntu on Azure, including optimized images, deployment guides, technical reference, and best practices for cloud workloads.
+
 Ubuntu on Azure
 ===============
 

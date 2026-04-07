@@ -1,3 +1,7 @@
+.. meta::
+   :description: Learn how to launch Ubuntu virtual machines on Azure. Includes instructions for creating resource groups and launching VMs using the Azure CLI, with specific guidance for ARM64 and Confidential VM images.
+
+
 Launch Ubuntu images on Azure
 =============================
 

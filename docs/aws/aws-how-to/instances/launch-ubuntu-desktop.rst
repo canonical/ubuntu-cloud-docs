@@ -1,3 +1,6 @@
+.. meta::
+   :description: Learn how to launch an Ubuntu Desktop on AWS EC2. Includes steps for launching the instance, installing the desktop environment, configuring RDP, and connecting to the instance.  
+
 Launch an Ubuntu desktop on EC2
 ===============================
 

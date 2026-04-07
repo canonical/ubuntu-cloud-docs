@@ -1,3 +1,6 @@
+.. meta::
+   :description: Learn about the specific Ubuntu images available on OKE worker nodes for different OKE versions. 
+
 Ubuntu Availability on OKE
 ==========================
 

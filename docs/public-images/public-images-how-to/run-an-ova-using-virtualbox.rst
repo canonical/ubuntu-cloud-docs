@@ -1,4 +1,9 @@
+
+.. meta::
+   :description: Learn how to acquire an OVA file, install VirtualBox, and configure and launch an Ubuntu VM that you can connect to via the virtual console or over SSH.
+
 .. _run-an-ova-using-virtualbox:
+
 
 Run an OVA using VirtualBox
 ===========================

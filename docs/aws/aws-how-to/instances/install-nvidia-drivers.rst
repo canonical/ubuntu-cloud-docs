@@ -1,3 +1,7 @@
+.. meta::
+   :description: Learn how to install NVIDIA drivers on GPU-enabled EC2 instances. Launch a G4DN instance, install the NVIDIA driver and verify the installation with nvidia-smi.
+
+
 Install NVIDIA drivers on a GPU-enabled EC2 instance 
 =====================================================
 

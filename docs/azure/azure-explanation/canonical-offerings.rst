@@ -1,3 +1,6 @@
+.. meta::
+   :description: Learn about Canonical's Ubuntu image offerings on Azure, including Pro, minimal, CVM, and CIS-hardened images for cloud workloads. Includes details about kernel variants and collaborative optimizations done with Microsoft.
+
 Canonical's offerings on Azure
 ==============================
 

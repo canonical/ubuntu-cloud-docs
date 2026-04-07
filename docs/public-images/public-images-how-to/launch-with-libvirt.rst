@@ -1,3 +1,7 @@
+
+.. meta::
+   :description: Learn how to launch QCOW images using libvirt from the command-line or using the uvtool.
+
 .. _launch-libvirt:
 
 Launch QCOW images using libvirt

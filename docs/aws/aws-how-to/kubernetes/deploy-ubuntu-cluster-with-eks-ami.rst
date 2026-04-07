@@ -1,3 +1,7 @@
+.. meta::
+   :description: Learn how to deploy Ubuntu EKS clusters using eksctl and the official EKS AMIs. 
+
+
 Deploy an Ubuntu EKS cluster
 ============================
 

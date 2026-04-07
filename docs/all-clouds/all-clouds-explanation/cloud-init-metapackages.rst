@@ -1,3 +1,6 @@
+.. meta::
+   :description: Explore cloud-init metapackages in Ubuntu 25.04+, including cloud-specific dependencies and how to choose the right cloud-init package for your image.
+
 Cloud-init metapackages
 =======================
 

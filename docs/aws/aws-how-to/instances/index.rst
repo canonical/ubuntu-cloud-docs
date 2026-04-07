@@ -1,3 +1,6 @@
+.. meta::
+   :description: List of how-to guides related to launching and using Ubuntu-based EC2 instances.
+
 Using EC2
 =========
 

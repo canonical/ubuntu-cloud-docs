@@ -1,3 +1,6 @@
+.. meta::
+   :description: Understand key concepts for Ubuntu public cloud images, including release types, security, base images, and confidential computing.
+
 Explanation
 ===========
 

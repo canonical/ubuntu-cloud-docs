@@ -1,3 +1,6 @@
+.. meta::
+   :description: Details about the kubelet-eks snap for EKS worker nodes, including channels, updates, and snap management.
+
 EKS kubelet snap
 ================
 

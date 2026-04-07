@@ -1,3 +1,6 @@
+.. meta::
+   :description: Learn how to deploy Ubuntu Pro EKS clusters using an EKS Pro AMI. Includes steps for creating an eksctl config file and using it to deploy the cluster.
+
 Deploy an Ubuntu Pro EKS cluster - using a Pro AMI
 ==================================================
 

@@ -1,3 +1,6 @@
+.. meta::
+   :description: Learn about Ubuntu container images on OCI registries, including security, multi-arch support, and trusted application base images.
+
 Ubuntu on OCI container registries
 ==================================
 

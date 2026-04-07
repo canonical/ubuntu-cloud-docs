@@ -1,3 +1,6 @@
+.. meta::
+   :description: Advanced how-to guides for Ubuntu container images on OCI, including deployments and Ubuntu Pro usage.
+
 .. _oci-how-to:
 
 How-to guides

@@ -1,3 +1,6 @@
+.. meta::
+   :description:  Learn about Canonical's Ubuntu image offerings on Oracle Cloud, including a custom kernel, and two image types - server and minimal.
+
 Canonical's offerings on Oracle Cloud
 =====================================
 

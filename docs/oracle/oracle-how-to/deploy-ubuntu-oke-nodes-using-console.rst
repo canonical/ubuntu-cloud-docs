@@ -1,3 +1,6 @@
+.. meta::
+   :description: Learn how to deploy Ubuntu OKE nodes using Oracle Cloud Console, including cluster creation and node pool management.
+
 Deploy Ubuntu OKE nodes using Oracle Cloud Console
 ==================================================
 

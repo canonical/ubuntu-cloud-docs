@@ -1,3 +1,6 @@
+.. meta::
+   :description: Reference documentation for Ubuntu OCI container images, including configuration and compliance details.
+
 .. _oci-reference:
 
 Reference

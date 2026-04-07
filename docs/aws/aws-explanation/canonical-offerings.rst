@@ -1,3 +1,6 @@
+.. meta::
+   :description: Learn about Canonical's Ubuntu image offerings on AWS, including Pro, minimal, EKS, and real-time kernel images for cloud workloads. Canonical's offerings in terms of appliances on AWS are also covered.
+
 Canonical's offerings on AWS
 ============================
 
@@ -57,8 +60,6 @@ The different variations and the means to find them in AWS are summarized below:
    * - EKS Pro images
      - :doc:`CLI<../aws-how-to/instances/find-ubuntu-images>`, `Marketplace <https://aws.amazon.com/marketplace/search/results?searchTerms=Ubuntu+Pro+eks&CREATOR=565feec9-3d43-413e-9760-c651546613f2&AMI_ARCHITECTURE=x86_64&filters=CREATOR%2CAMI_ARCHITECTURE>`__
      - :doc:`CLI<../aws-how-to/instances/find-ubuntu-images>`, `Marketplace <https://aws.amazon.com/marketplace/search/results?searchTerms=Ubuntu+Pro+eks&CREATOR=565feec9-3d43-413e-9760-c651546613f2&AMI_ARCHITECTURE=arm64&filters=CREATOR%2CAMI_ARCHITECTURE>`__
-
-  
 
 
 Optimizations for AWS

@@ -1,3 +1,7 @@
+.. meta::
+   :description: Learn how to enable GPUs on EKS worker nodes. Create a cluster of GPU based instances, install NVIDIA drivers, set up the NVIDIA Container Toolkit, and apply the NVIDIA Device Plugin to the cluster.
+
+
 Enable GPUs on EKS worker nodes
 ===============================
 

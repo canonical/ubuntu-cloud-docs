@@ -1,3 +1,7 @@
+.. meta::
+   :description: Learn how to create different instance types on Google Cloud Platform. Includes steps to create Ubuntu LTS, Ubuntu Pro, Ubuntu Pro FIPS, ARM-based, confidential computing and GPU instances.
+
+
 Create different instance types on GCP
 ======================================
 
@@ -139,4 +143,4 @@ where:
 For details on supported GPU types and host machine series, see `Accelerator-optimized machine types`_.
 
 .. _`C3 machine series`: https://cloud.google.com/compute/docs/general-purpose-machines#c3_series
-.. _`Accelerator-optimized machine types`: https://cloud.google.com/compute/docs/accelerator-optimized-machines
+.. _`Accelerator-optimized machine types`: https://docs.cloud.google.com/compute/docs/accelerator-optimized-machines

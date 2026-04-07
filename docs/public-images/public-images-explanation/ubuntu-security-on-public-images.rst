@@ -1,3 +1,8 @@
+
+.. meta::
+   :description: Explore Ubuntu security features on cloud images. Learn about CVE tracking, image signing, and enhanced security with Ubuntu Pro.
+
+
 .. _ubuntu-security-on-public-images:
 
 Ubuntu security on cloud images

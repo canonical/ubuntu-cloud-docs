@@ -1,3 +1,7 @@
+.. meta::
+   :description: Learn how to contribute to Ubuntu on IBM Cloud documentation, including editing, building, and submitting pull requests.
+
+
 Contribute to these docs
 ========================
 

@@ -1,3 +1,6 @@
+.. meta::
+   :description: Learn how to launch Ubuntu EC2 instances using AWS CLI. Step-by-step guide for setting up credentials, installing AWS CLI, finding Ubuntu AMIs, launching instances and connecting to them. 
+
 Launch an Ubuntu EC2 instance using the AWS CLI
 ===============================================
 

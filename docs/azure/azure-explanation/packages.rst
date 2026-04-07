@@ -1,3 +1,6 @@
+.. meta::
+   :description: List of packages maintained by Canonical for Ubuntu cloud images on Azure, including walinuxagent, azure-proxy-agent and azure-vm-utils.
+
 Packages maintained by Canonical for Azure
 ==========================================
 

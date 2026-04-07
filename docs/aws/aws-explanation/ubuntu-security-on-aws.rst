@@ -1,3 +1,6 @@
+.. meta::
+   :description: Learn about security features available with Ubuntu images on AWS, including Secure Boot, CIS hardening, and AMD SEV-SNP.
+
 Security features with Ubuntu on AWS
 ====================================
 

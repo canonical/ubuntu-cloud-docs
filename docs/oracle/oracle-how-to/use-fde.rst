@@ -1,3 +1,7 @@
+.. meta::
+   :description: Learn how to create an instance on Oracle Cloud with personalized full-disk encryption (FDE).
+
+
 Use full-disk encryption (FDE)
 ==============================
 

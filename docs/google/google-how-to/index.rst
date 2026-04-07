@@ -1,3 +1,6 @@
+.. meta::
+   :description: List of how-to guides for launching, managing, and upgrading Ubuntu on Google Cloud, including image selection and solution deployment.
+   
 How-to guides
 =============
 
@@ -35,4 +38,4 @@ If you want to use Ubuntu Pro on your Kubernetes cluster, or install Charmed Kub
    gke/index
  
   
-.. _Install Charmed Kubeflow on GKE: https://documentation.ubuntu.com/charmed-kubeflow/how-to/install/install-gke/
+.. _Install Charmed Kubeflow on GKE: https://documentation.ubuntu.com/charmed-kubeflow/latest/how-to/install/install-gke/

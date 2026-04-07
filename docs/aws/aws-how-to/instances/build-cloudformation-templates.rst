@@ -1,3 +1,6 @@
+.. meta::
+   :description: Learn how to create CloudFormation templates with latest Ubuntu AMIs. Step-by-step guide for querying SSM parameter store for latest AMI IDs, and creating CloudFormation templates.
+
 Create CloudFormation templates with the latest Ubuntu AMI
 ==========================================================
 

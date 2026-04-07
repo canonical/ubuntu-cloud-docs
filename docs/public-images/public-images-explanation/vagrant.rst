@@ -1,3 +1,7 @@
+
+.. meta::
+   :description: Understand Vagrant boxes, their purpose, publication schedule, build process, and support status in the context of Ubuntu public images. 
+
 .. _vagrant-explanation:
 
 Vagrant

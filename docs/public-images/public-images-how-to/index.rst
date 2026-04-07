@@ -1,4 +1,9 @@
+
+.. meta::
+   :description: List of how-to guides for building and launching different types of public Ubuntu cloud images, including Vagrant boxes, QCOW images, and OVA files.
+
 .. _public-images-how-to:
+
 
 How-to guides
 =============

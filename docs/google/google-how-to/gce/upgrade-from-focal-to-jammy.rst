@@ -1,3 +1,6 @@
+.. meta::
+   :description: Learn how to upgrade Ubuntu from 20.04 LTS (Focal) to 22.04 LTS (Jammy) on GCE. Includes detailed steps for performing an in-place upgrade using do-release-upgrade.
+
 Upgrade from Focal to Jammy on GCE
 ==================================
 

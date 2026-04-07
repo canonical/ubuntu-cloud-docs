@@ -1,3 +1,6 @@
+.. meta::
+   :description: In-depth explanation of Ubuntu OCI image configuration, layers, and multi-architecture support for container deployments.
+
 Ubuntu OCI image configuration
 ******************************
 

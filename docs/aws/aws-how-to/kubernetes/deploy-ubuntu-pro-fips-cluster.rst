@@ -1,3 +1,7 @@
+.. meta::
+   :description: Learn how to deploy an EKS cluster of FIPS-certified Ubuntu nodes. Includes creating your custom EKS FIPS AMI using Packer, and then deploying it using eksctl.
+
+
 Deploy an Ubuntu Pro FIPS EKS cluster - using a Pro AMI
 =======================================================
 

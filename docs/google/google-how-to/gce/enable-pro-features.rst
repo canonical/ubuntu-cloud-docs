@@ -1,3 +1,7 @@
+.. meta::
+   :description: Learn how to enable Ubuntu Pro features on GCE instances. Includes steps to enable ESM, CIS hardening, FIPS compliance and Livepatch on your Pro VM.
+
+
 Enable Ubuntu Pro features
 ==========================
 

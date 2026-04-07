@@ -1,3 +1,6 @@
+.. meta::
+   :description: Understand AWS Ubuntu image retention policy, including release, deprecation, and deletion stages for AMIs.
+
 AWS image retention policy
 ==========================
 

@@ -1,3 +1,7 @@
+.. meta::
+   :description: List of how-to guides for launching, managing, and upgrading Ubuntu on GCE, including image selection and instance creation.
+
+
 Using GCE
 =========
 

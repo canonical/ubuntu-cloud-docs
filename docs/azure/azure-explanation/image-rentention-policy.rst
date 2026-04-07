@@ -1,3 +1,6 @@
+.. meta::
+   :description: Understand the Ubuntu image retention policy on Azure, including release and daily image lifecycles and marketplace availability.
+
 Image retention policy
 ======================
 
