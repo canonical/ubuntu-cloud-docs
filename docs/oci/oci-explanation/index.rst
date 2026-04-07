@@ -1,3 +1,6 @@
+.. meta::
+   :description: Definitions and explanations of Ubuntu and Ubuntu Pro container images for OCI-compliant environments.
+
 .. _oci-explanation:
 
 ***********

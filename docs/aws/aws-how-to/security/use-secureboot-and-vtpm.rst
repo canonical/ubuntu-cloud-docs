@@ -1,3 +1,7 @@
+.. meta::
+   :description: Learn how to use Secure Boot and vTPM on Ubuntu EC2 instances. Includes steps for using a prebuilt UEFI Secure Boot variable store while registering a new AMI.
+
+
 Use UEFI Secure Boot and TPM on Ubuntu-based EC2 instances
 ==========================================================
 

@@ -1,3 +1,7 @@
+.. meta::
+   :description: Learn how to launch Ubuntu VSI instances on IBM Cloud using the web console or the CLI. 
+
+
 Launch an Ubuntu VSI on IBM Cloud
 =================================
 

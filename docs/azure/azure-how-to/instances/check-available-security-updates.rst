@@ -1,3 +1,7 @@
+.. meta::
+   :description: Learn how to check for available security updates using Azure Update Manager. Includes instructions for assessing updates on individual VMs and across multiple VMs.
+
+
 Check for available security updates using Azure Update Manager
 ================================================================
 

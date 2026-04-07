@@ -1,3 +1,6 @@
+.. meta::
+   :description: Learn about the security features available with Ubuntu images on GCP, including confidential computing and Ubuntu Pro enhancements.
+
 Security features with Ubuntu on GCP
 ====================================
 
@@ -46,7 +49,7 @@ For other Pro related operations such as, enabling features and performing an in
 
 
 .. _`Ubuntu security page`: https://ubuntu.com/security
-.. _`Introductory page on security`: https://documentation.ubuntu.com/server/explanation/intro-to/security/
-.. _`Security in Google Cloud`: https://cloud.google.com/docs/security
+.. _`Introductory page on security`: https://ubuntu.com/server/docs/explanation/intro-to/security/
+.. _`Security in Google Cloud`: https://docs.cloud.google.com/docs/security
 .. _`Ubuntu Pro`: https://ubuntu.com/gcp/pro
 

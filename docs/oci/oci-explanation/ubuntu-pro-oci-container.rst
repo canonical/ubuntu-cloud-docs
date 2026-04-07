@@ -1,3 +1,6 @@
+.. meta::
+   :description: Learn how to build and use Ubuntu Pro OCI container images with ESM, FIPS, and Pro services for secure deployments.
+
 .. _ubuntu-pro-oci-container-images:
 
 Ubuntu Pro OCI container images

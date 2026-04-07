@@ -1,3 +1,7 @@
+.. meta::
+   :description: Learn how to import local virtual machines to AWS EC2. Step-by-step guide for uploading VM images to S3, creating IAM roles, importing VMs, and preparing them for production on AWS.
+
+
 Import a local Ubuntu VM into AWS
 ==================================
 

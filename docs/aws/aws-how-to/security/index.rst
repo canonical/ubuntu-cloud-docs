@@ -1,3 +1,7 @@
+.. meta::
+   :description: List of how-to guides related to using security features on Ubuntu-based EC2 instances.
+
+
 Using security features
 =======================
 

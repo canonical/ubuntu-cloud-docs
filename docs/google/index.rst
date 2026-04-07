@@ -1,3 +1,6 @@
+.. meta::
+   :description: Discover Ubuntu on Google Cloud Platform (GCP), including optimized images, deployment guides, and best practices for cloud workloads.
+
 Ubuntu on GCP
 =============
 

@@ -1,17 +1,21 @@
+
+.. meta::
+   :description: Learn how to apply post-deployment CIS Level 1 hardening controls for Ubuntu 22.04 EC2 instances on AWS. Includes controls that are not pre-configured. 
+
 .. _cis_post_deploy_hardening:
 
 Post-deployment CIS Hardening for Ubuntu 22.04 EC2
 ==================================================
 
-.. note::
-
-   Amazon Inspector currently implements the CIS benchmark 2.0.0 version for Ubuntu 22.04, and 1.0.0 for Ubuntu 24.04, which may be updated in the future.
-   This may cause the exact version number of a control to differ from the one listed here, but the underlying issue will remain the same.
-
 This guide explains how to apply **CIS Level 1** controls that are **not**
 pre-configured in Canonical's Ubuntu 22.04 *CIS-hardened* AMIs.  
 Because these controls require environment-specific details,
 they cannot be included in our base AMI.
+
+.. note::
+
+   Amazon Inspector currently implements the CIS benchmark 2.0.0 version for Ubuntu 22.04, and 1.0.0 for Ubuntu 24.04, which may be updated in the future.
+   This may cause the exact version number of a control to differ from the one listed here, but the underlying issue will remain the same.
 
 
 CIS 6.2.1.2.2 - Configure ``systemd-journal-remote`` authentication

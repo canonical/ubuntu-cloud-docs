@@ -1,3 +1,6 @@
+.. meta::
+   :description: Learn about Ubuntu on public cloud platforms, including AWS, Azure, Google, IBM, Oracle, and optimized cloud images for enterprise workloads.
+
 Ubuntu on public cloud
 ======================
 

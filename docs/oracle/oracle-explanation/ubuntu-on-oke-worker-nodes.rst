@@ -1,3 +1,6 @@
+.. meta::
+   :description: Learn about using Ubuntu on OKE worker nodes, including supported configurations, deployment options and update management.
+
 Ubuntu on OKE worker nodes
 ==========================
 

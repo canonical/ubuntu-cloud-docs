@@ -1,3 +1,6 @@
+.. meta::
+   :description: Step-by-step guide to deploying Ubuntu Pro containers on Kubernetes clusters with Ubuntu Pro nodes across clouds.
+
 .. _how-to-deploy-pro-container-on-pro-cluster:
 
 Deploy Ubuntu Pro containers on Kubernetes

@@ -1,3 +1,6 @@
+.. meta::
+   :description: Learn how to use bastion to access VMs on Oracle Cloud, including steps for creating a bastion and accessing VMs securely without public IPs.
+
 Use a bastion to access your VM
 ===============================
 

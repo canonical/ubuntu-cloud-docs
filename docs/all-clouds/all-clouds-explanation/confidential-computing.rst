@@ -1,3 +1,6 @@
+.. meta::
+   :description: Learn how confidential computing protects sensitive workloads in Ubuntu cloud environments using trusted execution environments (Intel TDX and AMD SEV-SNP).
+
 Confidential computing
 ======================
 
@@ -49,4 +52,4 @@ For further details, check out this white paper on `AMD SEV-SNP - Strengthening 
 
 .. _`Intel® Trust Domain Extensions`: https://cdrdv2-public.intel.com/690419/TDX-Whitepaper-February2022.pdf
 
-.. _`AMD SEV-SNP - Strengthening VM Isolation with Integrity Protection and More`: https://www.amd.com/content/dam/amd/en/documents/epyc-business-docs/white-papers/SEV-SNP-strengthening-vm-isolation-with-integrity-protection-and-more.pdf
+.. _`AMD SEV-SNP - Strengthening VM Isolation with Integrity Protection and More`: https://docs.amd.com/v/u/en-US/SEV-SNP-strengthening-vm-isolation-with-integrity-protection-and-more

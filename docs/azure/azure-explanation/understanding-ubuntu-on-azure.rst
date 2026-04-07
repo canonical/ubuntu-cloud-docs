@@ -1,3 +1,6 @@
+.. meta::
+   :description: Answers to common questions about Ubuntu on Azure, including image availability, refresh, deprecation, and customizations.
+
 Understanding Ubuntu on Azure
 =============================
 -----------------------------

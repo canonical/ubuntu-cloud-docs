@@ -1,3 +1,6 @@
+.. meta::
+   :description: Learn how to launch and attest AMD SEV-SNP enabled instances on AWS. Includes steps for launching the instance, building the attestation tool, and validating the attestation report.  
+
 Launch and attest AMD SEV-SNP instances with Ubuntu 24.04 on AWS
 ================================================================
 

@@ -1,3 +1,7 @@
+.. meta::
+   :description: List of how-to guides related to Google Kubernetes Engine (GKE). Learn how to create a kubernetes cluster using Ubuntu Pro and how to install Charmed Kubeflow on GKE.
+
+
 Using Kubernetes
 ================
 
@@ -14,4 +18,4 @@ If you want to use Ubuntu Pro on your Kubernetes cluster, or install Charmed Kub
    deploy-kubernetes-with-ubuntu-pro
 
   
-.. _Install Charmed Kubeflow on GKE: https://documentation.ubuntu.com/charmed-kubeflow/how-to/install/install-gke/
+.. _Install Charmed Kubeflow on GKE: https://documentation.ubuntu.com/charmed-kubeflow/latest/how-to/install/install-gke/

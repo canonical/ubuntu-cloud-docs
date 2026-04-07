@@ -1,3 +1,6 @@
+.. meta::
+   :description: Learn about Ubuntu Pro on AWS, including ESM, Livepatch, compliance, and Pro image availability for cloud workloads.
+
 Ubuntu Pro on AWS
 =================
 

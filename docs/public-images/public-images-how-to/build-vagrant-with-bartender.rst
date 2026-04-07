@@ -1,3 +1,7 @@
+
+.. meta::
+   :description: Learn how to build custom Vagrant images using Ubuntu Bartender for development purposes (not production). 
+   
 .. _vagrant-bartender:
 
 Build a Vagrant box with Bartender

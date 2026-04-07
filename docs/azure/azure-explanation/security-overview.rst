@@ -1,3 +1,6 @@
+.. meta::
+   :description: Learn about security features available with Ubuntu images on Azure, including Trusted Launch, CVMs, and Ubuntu Pro enhancements.
+
 Ubuntu Security on Azure
 ========================
 

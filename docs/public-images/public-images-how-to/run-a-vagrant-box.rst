@@ -1,3 +1,6 @@
+.. meta::
+   :description: Learn how to run Ubuntu Vagrant boxes effectively, including setup, common issues, and troubleshooting tips for a smooth experience.
+   
 .. _run-a-vagrant-box:
 
 Run a Vagrant box

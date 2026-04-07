@@ -1,3 +1,6 @@
+.. meta::
+   :description: Discover the different Google guest agents installed on Ubuntu GCP images - google-guest-agent, gce-compute-image-packages, google-compute-engine-oslogin and google-osconfig-agent.
+
 Google agents installed on Ubuntu
 =================================
 
@@ -38,18 +41,18 @@ This package (written in ``BASH``) is a collection of different configuration sc
 
 ``google-compute-engine-oslogin``
 ---------------------------------
-Written in a mixture of ``C`` and ``C++``, this package is responsible for providing GCP's `OS Login <https://cloud.google.com/compute/docs/oslogin>`_ to Ubuntu VMs.
+Written in a mixture of ``C`` and ``C++``, this package is responsible for providing GCP's `OS Login <https://docs.cloud.google.com/compute/docs/oslogin>`_ to Ubuntu VMs.
 At a high level it can be described as providing the following:
 
 * **Authorized Keys Command**: provides SSH keys (from an OS Login profile) to ``sshd`` for authentication
 * **NSS Modules**: support for making OS Login user/group information available to the VM using NSS (Name Service Switch)
-* **PAM Modules**: provides authorization (and authentication if ``2FA`` is enabled) to allow the VM to grant ``ssh`` access/``sudo`` privileges based on the user's allotted `IAM permissions <https://cloud.google.com/iam/docs>`_
+* **PAM Modules**: provides authorization (and authentication if ``2FA`` is enabled) to allow the VM to grant ``ssh`` access/``sudo`` privileges based on the user's allotted `IAM permissions <https://docs.cloud.google.com/iam/docs>`_
 
 ``google-osconfig-agent``
 -------------------------
-This package is written in ``Go`` and is installed to facilitate GCP's `OS Config <https://cloud.google.com/compute/docs/osconfig/rest>`_ (also known as "`VM manager <https://cloud.google.com/compute/vm-manager/docs>`_").
+This package is written in ``Go`` and is installed to facilitate GCP's `OS Config <https://docs.cloud.google.com/compute/docs/osconfig/rest>`_ (also known as "`VM manager <https://docs.cloud.google.com/compute/vm-manager/docs>`_").
 At a high level, OS Config supports the following:
 
-* `OS inventory management <https://cloud.google.com/compute/vm-manager/docs/os-inventory/os-inventory-management>`_
-* `Patch <https://cloud.google.com/compute/vm-manager/docs/patch>`_
-* `OS policies <https://cloud.google.com/compute/vm-manager/docs/os-policies>`_
+* `OS inventory management <https://docs.cloud.google.com/compute/vm-manager/docs/os-inventory/os-inventory-management>`_
+* `Patch <https://docs.cloud.google.com/compute/vm-manager/docs/patch>`_
+* `OS policies <https://docs.cloud.google.com/compute/vm-manager/docs/os-policies>`_

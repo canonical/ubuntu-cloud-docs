@@ -1,3 +1,6 @@
+.. meta::
+   :description: Learn how to install and test NVIDIA drivers from the proposed pocket on Ubuntu cloud images before official release, with step-by-step instructions.
+
 Install NVIDIA drivers from proposed pocket for testing
 =======================================================
 This guide will help you test your workload on NVIDIA drivers available in proposed pocket before they are released.

@@ -1,3 +1,6 @@
+.. meta::
+   :description: Stay updated with announcements related Ubuntu on AWS, by subscribing to the Ubuntu on AWS discourse channel. Use it to monitor release notes, new products and upcoming features.
+
 Ubuntu on AWS Announcements
 ===========================
 

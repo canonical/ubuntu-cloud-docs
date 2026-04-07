@@ -1,3 +1,6 @@
+.. meta::
+   :description: Learn how to verify an Ubuntu cloud image's checksum to ensure its authenticity and integrity.
+
 .. _verify-image-checksum:
 
 Verify an image checksum

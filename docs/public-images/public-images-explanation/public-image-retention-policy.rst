@@ -1,3 +1,8 @@
+
+.. meta::
+   :description: Learn about the image retention policy of Ubuntu cloud images for both daily and release images, based on their support status.
+
+
 .. _public-image-retention-policy:
 
 Public images retention policies

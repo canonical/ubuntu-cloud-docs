@@ -1,3 +1,8 @@
+.. meta::
+   :description: List of how-to guides for using Ubuntu images, enabling security features, and performing upgrades on Oracle Cloud.
+
+
+
 How-to guides
 =============
 

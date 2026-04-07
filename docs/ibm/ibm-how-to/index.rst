@@ -1,3 +1,6 @@
+.. meta::
+   :description: List of how-to guides for finding, launching and upgrading Ubuntu images on IBM Cloud.
+
 How-to guides
 =============
 

@@ -1,6 +1,9 @@
+.. meta::
+   :description: Learn how to deploy Canonical Data Science Stack on a GPU-enabled EC2 instance. Step-by-step guide for launching a G4DN instance, installing GPU drivers, setting up MicroK8s, and creating Jupyter Notebooks with CUDA support. 
+
+
 Deploy Canonical Data Science Stack on EC2 using a GPU-enabled instance type
 ============================================================================
-
 
 Canonical Data Science Stack (DSS) is a command line interface-based tool that bundles Jupyter Notebooks, MLflow and frameworks like PyTorch and TensorFlow on top of an orchestration layer, making this product excellent for rapid testing, prototyping and doing ML at a small scale. 
 

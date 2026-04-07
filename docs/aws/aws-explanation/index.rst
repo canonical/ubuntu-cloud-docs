@@ -1,3 +1,6 @@
+.. meta::
+   :description: Explore Ubuntu on AWS: offerings, image retention, EKS snaps, and security features for cloud deployments.
+
 Explanation
 ===========
 

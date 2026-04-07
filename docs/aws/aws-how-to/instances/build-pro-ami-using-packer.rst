@@ -1,3 +1,6 @@
+.. meta::
+   :description: Learn how to build custom Ubuntu Pro AMIs using Packer. Step-by-step guide with detailed instructions for setting up Packer, defining builders and provisioners, and creating a reusable golden image. 
+
 Build an Ubuntu Pro AMI using Packer
 ====================================
 

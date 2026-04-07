@@ -1,3 +1,6 @@
+.. meta::
+   :description: List of how-to guides for launching, managing, and upgrading Ubuntu on Azure, including image selection and solution deployment.
+
 How-to guides
 =============
 
@@ -45,5 +48,5 @@ Finally, you might want to deploy specific solutions like SQL Server and Kubeflo
    Deploy an Ubuntu VM running SQL Server <instances/provision-an-ubuntu-virtual-machine-running-sql-server-in-azure>
    Deploy Kubeflow with AKS spot instances <instances/deploy-kubeflow-pipelines-with-aks-spot-instances>  
   
-.. _`Install Kubeflow on AKS (external link)`: https://documentation.ubuntu.com/charmed-kubeflow/how-to/install/install-aks/
+.. _`Install Kubeflow on AKS (external link)`: https://documentation.ubuntu.com/charmed-kubeflow/latest/how-to/install/install-aks/
 

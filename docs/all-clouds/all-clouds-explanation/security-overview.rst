@@ -1,3 +1,6 @@
+.. meta::
+   :description: Learn about Ubuntu cloud image security, including CVE handling, hardening, FIPS, AppArmor, verified boot, and confidential computing features.
+
 Security in the Ubuntu cloud images
 ===================================
 

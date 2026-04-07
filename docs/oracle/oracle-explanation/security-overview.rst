@@ -1,3 +1,6 @@
+.. meta::
+   :description: Understand the Ubuntu and Oracle Cloud security features available while using Ubuntu on Oracle Cloud, including full-disk encryption.
+
 Security features with Ubuntu on Oracle Cloud
 =============================================
 

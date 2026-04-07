@@ -1,3 +1,7 @@
+.. meta::
+   :description: Learn how to upgrade Ubuntu from 22.04 to 24.04  on Oracle Cloud. Includes manual intervention steps and best practices.
+
+
 Upgrade from Ubuntu 22.04 LTS (Jammy) to 24.04 LTS (Noble)
 ==========================================================
 

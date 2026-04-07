@@ -1,3 +1,6 @@
+.. meta::
+   :description: A reference for Ubuntu cloud image artifacts. Learn about their formats and the use cases where they are most suitable.
+
 .. _uci-artifacts:
 
 Ubuntu cloud image artifacts

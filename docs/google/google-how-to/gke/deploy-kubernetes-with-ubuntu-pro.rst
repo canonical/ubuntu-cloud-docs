@@ -1,3 +1,7 @@
+.. meta::
+   :description: Learn how to deploy Kubernetes with Ubuntu Pro on Google Cloud. Includes steps to create Ubuntu Pro VMs, install Kubernetes using MicroK8s, create a cluster and access it.
+
+
 Deploy Kubernetes with Ubuntu Pro on GCE
 ========================================
 
@@ -189,10 +193,10 @@ This will show you details about your cluster nodes. You can verify the Pro subs
 
 .. _`Google Kubernetes Engine`: https://cloud.google.com/kubernetes-engine
 .. _`GKE docs`: https://cloud.google.com/kubernetes-engine/docs/concepts/node-images#modifications
-.. _`gcloud CLI tool`: https://cloud.google.com/sdk/gcloud
-.. _`MicroK8s`: https://microk8s.io/
-.. _`MicroK8s clustering doc`: https://microk8s.io/docs/clustering
+.. _`gcloud CLI tool`: https://docs.cloud.google.com/sdk/gcloud
+.. _`MicroK8s`: https://canonical.com/microk8s
+.. _`MicroK8s clustering doc`: https://canonical.com/microk8s/docs/clustering
 .. _`GCE VM Instances`: https://console.cloud.google.com/compute/instances
 .. _`VPC firewall rules`: https://console.cloud.google.com/networking/firewalls/list
-.. _`Google Cloud VPC docs`: https://cloud.google.com/firewall/docs/using-firewalls
+.. _`Google Cloud VPC docs`: https://docs.cloud.google.com/firewall/docs/using-firewalls
 .. _`kubeconfig`: https://kubernetes.io/docs/concepts/configuration/organize-cluster-access-kubeconfig

@@ -1,3 +1,6 @@
+.. meta::
+   :description: List of how-to guides that provide instructions for performing different operations related to Ubuntu on AWS.
+
 How-to guides
 =============
 
@@ -69,4 +72,4 @@ AWS provides multiple features for additional security, many of which are suppor
    kubernetes/index
    security/index   
 
-.. _`Install Kubeflow on EKS (external link)`: https://documentation.ubuntu.com/charmed-kubeflow/how-to/install/install-eks/
+.. _`Install Kubeflow on EKS (external link)`: https://documentation.ubuntu.com/charmed-kubeflow/latest/how-to/install/install-eks/

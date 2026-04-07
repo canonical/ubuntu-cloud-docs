@@ -1,3 +1,6 @@
+.. meta::
+   :description: Understand GCE Ubuntu image retention policies, including release, deprecation, and deletion stages for cloud images.
+
 GCE image retention policies
 =============================
 

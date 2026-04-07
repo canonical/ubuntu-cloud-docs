@@ -1,3 +1,7 @@
+.. meta::
+   :description: Learn how to set hostname of GCE instances using Google's DHCP service or using cloud-init. Includes details about changes needed for Ubuntu 24.04 LTS and later images.
+
+
 Set hostname of GCE instances
 =============================
 
@@ -88,6 +92,6 @@ Set the cloud-init key ``create_hostname_file`` to true in the user-data file:
     create_hostname_file: true
 
 
-.. _`Create a VM instance with a custom hostname`: https://cloud.google.com/compute/docs/instances/custom-hostname-vm
-.. _`gcloud compute instances add-metadata`: https://cloud.google.com/sdk/gcloud/reference/compute/instances/add-metadata
+.. _`Create a VM instance with a custom hostname`: https://docs.cloud.google.com/compute/docs/instances/custom-hostname-vm
+.. _`gcloud compute instances add-metadata`: https://docs.cloud.google.com/sdk/gcloud/reference/compute/instances/add-metadata
 .. _`Set Hostname`: https://cloudinit.readthedocs.io/en/latest/reference/modules.html#set-hostname

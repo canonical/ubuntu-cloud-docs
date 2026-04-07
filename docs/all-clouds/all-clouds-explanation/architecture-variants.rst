@@ -1,3 +1,6 @@
+.. meta::
+   :description: Learn about Ubuntu cloud image architecture variants, starting with amd64v3 in Ubuntu 26.04, including supported variants, compatibility, and future plans.
+
 Architecture Variants Support in Ubuntu Cloud Images
 ====================================================
 

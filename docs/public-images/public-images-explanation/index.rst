@@ -1,4 +1,10 @@
+
+.. meta::
+   :description: List of explanatory guides about different types of Ubuntu cloud images, including their image retention policy, and security features.
+
+
 .. _public-images-explanation:
+
 
 Explanation
 ===========

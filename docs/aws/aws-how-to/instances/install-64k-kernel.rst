@@ -1,3 +1,7 @@
+.. meta::
+   :description: Learn how to install 64k page kernel on ARM64 EC2 instances. Includes steps for switching to the 64k page kernel and selecting the kernel flavor permanently.
+
+
 Install 64k page kernel on ARM64 instances 
 ==========================================
 

@@ -1,3 +1,6 @@
+.. meta::
+   :description: Overview of Ubuntu as the default OS for Azure Kubernetes Service (AKS) worker nodes, including updates and customization.
+
 Ubuntu on AKS worker nodes
 ==========================
 
@@ -41,4 +44,4 @@ Users can select from the following auto-upgrade channel options: ``None``, ``Un
 .. _`AgentBaker`: https://github.com/Azure/AgentBaker
 .. _`unattended-upgrades`: https://ubuntu.com/blog/ubuntu-updates-best-practices-for-updating-your-instance#updating-automatically-with-unattended-upgrades
 .. _`Kubernetes cluster version upgrades`: https://learn.microsoft.com/en-us/azure/aks/auto-upgrade-cluster
-.. _`official AKS documentation for auto-upgrade`: https://learn.microsoft.com/en-us/azure/aks/auto-upgrade-node-os-image  
+.. _`official AKS documentation for auto-upgrade`: https://learn.microsoft.com/en-us/azure/aks/auto-upgrade-node-os-image

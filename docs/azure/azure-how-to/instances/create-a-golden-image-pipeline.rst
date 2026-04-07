@@ -1,3 +1,7 @@
+.. meta::
+   :description: Step-by-step guide to create Ubuntu golden image pipelines with GitHub Actions and Azure Image Builder. Includes detailed instructions and best practices.
+
+
 Create an Ubuntu golden image pipeline
 ======================================
 

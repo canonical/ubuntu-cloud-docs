@@ -1,3 +1,6 @@
+.. meta::
+   :description: Explanations of Ubuntu on Azure offerings, security, image retention, and package maintenance policies.
+
 Explanation
 ===========
 

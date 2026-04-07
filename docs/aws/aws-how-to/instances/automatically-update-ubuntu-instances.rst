@@ -1,3 +1,6 @@
+.. meta::
+   :description: Learn how to automate Ubuntu instance updates using AWS Systems Manager. Step-by-step guide for creating maintenance windows and registering run command tasks in SSM.
+
 Set up automated updates of Ubuntu instances using AWS SSM
 ==========================================================
 

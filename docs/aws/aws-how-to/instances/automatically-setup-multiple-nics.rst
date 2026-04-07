@@ -1,3 +1,6 @@
+.. meta::
+   :description: Learn how to automatically configure multiple network interfaces on EC2. Includes steps for enabling configuration during instance creation and on running instances.
+
 Automatically configure multiple NICs on EC2 instances
 ======================================================
 

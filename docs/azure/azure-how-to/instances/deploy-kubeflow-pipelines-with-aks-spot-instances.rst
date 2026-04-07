@@ -1,3 +1,7 @@
+.. meta::
+   :description: Learn how to deploy Kubeflow pipelines on AKS using spot instances. Includes steps for adding spot instances to an AKS cluster and updating the pipeline to allow task execution on them.
+
+   
 Deploy Kubeflow pipelines with AKS spot instances
 =================================================
 

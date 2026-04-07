@@ -1,3 +1,6 @@
+.. meta::
+   :description: Learn how to contribute to Ubuntu Public Images documentation, including editing, building, and submitting pull requests.
+
 .. _public-images-contribute:
 
 Contribute to these docs

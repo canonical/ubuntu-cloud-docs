@@ -1,3 +1,6 @@
+.. meta::
+   :description: Discover Ubuntu on AWS, including optimized images, deployment guides, technical reference, and best practices for cloud workloads.
+
 Ubuntu on AWS
 =============
 

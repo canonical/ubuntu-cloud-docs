@@ -1,3 +1,7 @@
+.. meta::
+   :description: Learn how to create Ubuntu Pro golden images with Azure Image Builder. Includes steps for setting up an Azure Compute Gallery and creating the golden image from a configuration template.
+
+
 Create an Ubuntu Pro golden image with Azure Image Builder
 ===============================================================
 

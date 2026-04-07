@@ -1,5 +1,8 @@
+.. meta::
+   :description: Learn how to contribute to Ubuntu on OCI container registry documentation, including editing, building, and submitting pull requests.
+
 Contribute to these docs
-************************
+========================
 
 .. include:: ../../reuse/contribute-to-docs.txt
    :start-after: Start: How to contribute

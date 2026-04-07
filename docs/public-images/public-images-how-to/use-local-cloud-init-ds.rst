@@ -1,3 +1,6 @@
+.. meta::
+   :description: Learn how to create and use an Ubuntu seed image that defines a custom cloud-init datasource.
+
 .. _use-local-cloud-init-ds:
 
 Create and use a local cloud-init datasource

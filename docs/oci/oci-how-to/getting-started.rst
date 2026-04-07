@@ -1,3 +1,6 @@
+.. meta::
+   :description: Learn how to get started with Ubuntu container images on Docker Hub, Amazon ECR, Microsoft ACR, and IronBank.
+
 Getting started
 ***************
 

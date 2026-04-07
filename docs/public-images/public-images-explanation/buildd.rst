@@ -1,3 +1,8 @@
+
+.. meta::
+   :description: Discover Ubuntu Buildd cloud images, images  that are primarily used to serve the Launchpad build farm.
+
+   
 .. _buildd:
 
 Ubuntu Buildd images

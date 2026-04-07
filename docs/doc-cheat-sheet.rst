@@ -1,3 +1,6 @@
+.. meta::
+   :description: Quick reference for reStructuredText (reST) markup syntax, headings, formatting, and style conventions for documentation.
+
 :orphan:
 
 .. vale off

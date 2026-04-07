@@ -1,3 +1,7 @@
+.. meta::
+   :description: Learn how to find Ubuntu images on IBM Cloud. Includes instructions for using the web console and the CLI for both IBM VPC and Classic infrastructures.
+
+
 Find Ubuntu images on IBM Cloud
 ===============================
 

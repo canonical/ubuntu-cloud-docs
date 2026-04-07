@@ -1,3 +1,6 @@
+.. meta::
+   :description: List of how-to guides related to using Ubuntu on EKS worker nodes.
+
 Using EKS
 =========
 

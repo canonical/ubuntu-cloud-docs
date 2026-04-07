@@ -1,3 +1,6 @@
+.. meta::
+   :description: Overview of support options on AWS, including Canonical support via Ubuntu Pro and Amazon front line support channels and bug reporting options.
+
 Support options on AWS
 ============================
 

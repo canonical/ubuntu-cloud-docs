@@ -1,3 +1,7 @@
+.. meta::
+   :description: Learn how to provision Ubuntu VMs running SQL Server on Azure. Includes steps for launching a pre-installled SQL Server VM, configuring password, and enabling remote connections.
+
+
 Provision an Ubuntu virtual machine running SQL Server in Azure
 ===============================================================
 
