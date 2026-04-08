@@ -6,14 +6,17 @@ How-to guides
 
 These guides provide instructions related to launching and using Ubuntu instances on Azure. They help you to perform different operations related to our products on Azure.
 
-The most basic requirement for performing most operations is the Azure CLI. 
+Finding and launching images
+----------------------------
+
+Use the Azure CLI to find and launch appropriate images:
 
 * :doc:`Install Azure CLI <instances/install-azure-cli>`
-
-Next you'd need to find and launch appropriate images:
-
 * :doc:`Find images <instances/find-ubuntu-images>`
 * :doc:`Launch images <instances/launch-ubuntu-images>`
+
+Upgrades and maintenance
+------------------------
 
 Since security is always an important consideration, you might want to check for available security upgrades, install Ubuntu Pro and perform relevant upgrades:
 
@@ -21,13 +24,17 @@ Since security is always an important consideration, you might want to check for
 * :doc:`Get Ubuntu Pro <instances/get-ubuntu-pro>`
 * :doc:`Upgrade Ubuntu LTS release <instances/upgrade-ubuntu-lts-release>`
 
-You can also create golden images to simplify your estate management:
+Creating golden images
+-----------------------
+
+You can create golden images to simplify your estate management:
 
 * :doc:`Create a Pro golden image <instances/create-pro-fips-golden-image>`
 * :doc:`Create a golden image pipeline <instances/create-a-golden-image-pipeline>`
 
-
-Finally, you might want to deploy specific solutions like SQL Server and Kubeflow on Azure:
+Custom deployments
+------------------
+If you want to deploy specific solutions like SQL Server and Kubeflow on Azure, use:
 
 * :doc:`Deploy an Ubuntu VM with SQL Server <instances/provision-an-ubuntu-virtual-machine-running-sql-server-in-azure>`
 * `Install Kubeflow on AKS (external link)`_

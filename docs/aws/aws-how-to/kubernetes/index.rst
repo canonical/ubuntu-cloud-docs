@@ -4,8 +4,10 @@
 Using EKS
 =========
 
+Deployment options for using Ubuntu on EKS
+-------------------------------------------
 
-**How-to guides for using Ubuntu on EKS** - If you want to use Ubuntu on your EKS worker nodes, choose from one of the following deployment options:
+If you want to use Ubuntu on your EKS worker nodes, choose from one of the following deployment options:
 
 * Use an Ubuntu AMI - Ubuntu EKS AMIs are available through :doc:`AWS CLI<../../aws-how-to/instances/find-ubuntu-images>` or from the `AWS marketplace`_. They can be used to:
    * :doc:`Deploy an Ubuntu EKS cluster <deploy-ubuntu-cluster-with-eks-ami>`
@@ -16,16 +18,22 @@ Using EKS
    * :doc:`Deploy a Pro cluster (with / without FIPS) using tokens  <deploy-ubuntu-pro-cluster>`
 
 
-**Node group deployment options** - You can create both managed and self-managed node groups using Ubuntu on EKS. Choose from the following options:
+Deployment options for node groups
+----------------------------------
+
+You can create both managed and self-managed node groups using Ubuntu on EKS. Choose from the following options:
 
 * :doc:`Deploy a self-managed Ubuntu node group <deploy-self-managed-node-group>`
 * :doc:`Deploy managed Ubuntu node groups <deploy-managed-node-group>`
 
 
-**Other EKS related how-to guides**
+Custom EKS deployments
+-----------------------
+If you want to use Ubuntu on EKS with custom configurations, such as enabling GPUs or installing Kubeflow, check the following guides:
 
 * :doc:`Enable GPUs on EKS worker nodes <enable-gpus-on-eks>`
 * `Install Kubeflow on EKS (external link)`_
+
 
 .. _`AWS marketplace`: https://aws.amazon.com/marketplace/search/results?searchTerms=Ubuntu+Pro+eks&CREATOR=565feec9-3d43-413e-9760-c651546613f2&filters=CREATOR
 .. _`Install Kubeflow on EKS (external link)`: https://documentation.ubuntu.com/charmed-kubeflow/how-to/install/install-eks/

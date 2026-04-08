@@ -4,22 +4,26 @@
 Explanation
 ===========
 
-These section explains our approach, offerings and policies. 
+This section provides explanations of key topics related to Ubuntu on Azure. It includes an overview of our offerings, a description of the security features available, and details about our policies such as image retention and package maintenance for Azure.
 
-General understanding about our offerings on Azure: 
+Our offerings
+-------------
+
+Details about our offerings, including the different types of images available, the Azure-specific optimizations and the packages that we maintain for Azure:
 
 * :doc:`Ubuntu on Azure <understanding-ubuntu-on-azure>`
 * :doc:`Canonical's offerings on Azure <canonical-offerings>`
 * :doc:`Ubuntu on AKS<ubuntu-on-aks-worker-nodes>`
-
-Security aspects:
-
-* :doc:`Security overview<security-overview>`
-
-Policies such as lifetime of an image and the packages maintained:
- 
-* :doc:`Image retention policy<image-rentention-policy>`
 * :doc:`Packages maintained by Canonical for Azure<packages>`
+
+
+Our policies
+------------
+
+Our policies such as the security features available via Ubuntu and Ubuntu Pro and our image retention policy:
+ 
+* :doc:`Security overview<security-overview>`
+* :doc:`Image retention policy<image-rentention-policy>`
 
 .. toctree::
    :hidden:

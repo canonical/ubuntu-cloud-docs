@@ -21,11 +21,15 @@ In this documentation
     :widths: 35 65
     :header-rows: 0
 
+
+    * - **Tutorial**
+      - :doc:`Create an Ubuntu FIPS Docker image <oci-tutorials/fips-ubuntu-container>`
+
     * - **Canonical's offerings**
       - :doc:`Ubuntu OCI container images <oci-explanation/ubuntu-oci-container>` • :doc:`Ubuntu Pro OCI container images <oci-explanation/ubuntu-pro-oci-container>` • :doc:`OCI image configuration <oci-reference/oci-image-configuration>` 
 
     * - **Working with Ubuntu OCI containers**
-      - :doc:`Find the Ubuntu container images <oci-how-to/getting-started>` • :doc:`Create an Ubuntu FIPS Docker image <oci-tutorials/fips-ubuntu-container>` • :doc:`Deploy Ubuntu Pro containers on Kubernetes <oci-how-to/deploy-pro-container-on-pro-kubernetes-cluster>`
+      - :doc:`Find the Ubuntu container images <oci-how-to/getting-started>` • :doc:`Deploy Ubuntu Pro containers on Kubernetes <oci-how-to/deploy-pro-container-on-pro-kubernetes-cluster>`
       
 
 How this documentation is organized
