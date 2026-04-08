@@ -68,20 +68,60 @@ For publishing and maintaining the images, Canonical has created some tools.
 -----------------------------------------------------------------
 
 
+In this documentation
+---------------------
+
+.. list-table::
+    :widths: 35 65
+    :header-rows: 0
+
+    * - **Ubuntu image specifics**
+      - :doc:`Base and minimal images <all-clouds-explanation/ubuntu-base-and-minimal-images>` •
+        :doc:`Architecture variants support <all-clouds-explanation/architecture-variants>` •
+        :doc:`Cloud image release types <all-clouds-explanation/release-types>` 
+
+    * - **Security aspects**
+      - :doc:`Security in Ubuntu cloud images <all-clouds-explanation/security-overview>` •
+        :doc:`Check CVE status <all-clouds-how-to/check-cve-on-instance>` 
+        
+    * - **Customizations**
+      - :doc:`Install NVIDIA drivers from proposed pocket <all-clouds-how-to/install-proposed-nvidia-drivers-for-testing>` •
+        :doc:`Confidential computing <all-clouds-explanation/confidential-computing>` •
+        :doc:`Cloud-init metapackages <all-clouds-explanation/cloud-init-metapackages>` 
+    
+
+-----------------------------------------------------------------
+
+
+How this documentation is organized
+-----------------------------------
+
+This documentation uses the `Diátaxis documentation structure <https://diataxis.fr/>`__.
+
+* :doc:`How-to guides <all-clouds-how-to/index>` assume you have basic familiarity with Ubuntu cloud images and want to achieve specific goals. They are instructions applicable to applicable to any Ubuntu cloud image, regardless of the cloud platform. 
+
+* :doc:`Explanation <all-clouds-explanation/index>` includes topic overviews, background and context and detailed discussion. These are also applicable across all public cloud platforms.
+
+-----------------------------------------------------------------
+
 
 Project and community
 ---------------------
 
 Ubuntu public cloud is open source project that warmly welcomes community projects, contributions, suggestions, fixes and constructive feedback.
 
+Get involved
+~~~~~~~~~~~~
 
 * `Get support`_
 * `Join our online chat`_
 * `Discuss on Matrix`_
 * `Start using Ubuntu today`_
 * :doc:`all-clouds-how-to/contribute-to-these-docs`
-* `Code of conduct`_
 
+Governance and policies
+~~~~~~~~~~~~~~~~~~~~~~~
+* `Code of conduct`_
 
 .. toctree::
    :hidden:
@@ -95,6 +135,6 @@ Ubuntu public cloud is open source project that warmly welcomes community projec
 .. _awspub: https://canonical-awspub.readthedocs-hosted.com/
 .. _Get support: https://ubuntu.com/cloud/public-cloud
 .. _Join our online chat: https://discourse.ubuntu.com/c/project/public-cloud/176
-.. _`Discuss on Matrix`: https://matrix.to/#/#ubuntu-cloud:ubuntu.com
+.. _Discuss on Matrix: https://matrix.to/#/#ubuntu-cloud:ubuntu.com
 .. _Start using Ubuntu today: https://ubuntu.com/download/cloud
 .. _Code of conduct: https://ubuntu.com/community/docs/ethos/code-of-conduct

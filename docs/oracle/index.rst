@@ -21,27 +21,39 @@ and features needed to run specific workloads.
 In this documentation
 ---------------------
 
-..  grid:: 1 1 1 1
-   :padding: 0
+.. list-table::
+    :widths: 35 65
+    :header-rows: 0
 
-   ..  grid-item:: :doc:`How-to guides <oracle-how-to/index>`
+    * - **Canonical's offerings**
+      - :doc:`Oracle optimizations <oracle-explanation/canonical-offerings>` • :doc:`Security overview <oracle-explanation/security-overview>` 
+      
+    * - **Finding and launching images**
+      - :doc:`Find images <oracle-how-to/find-ubuntu-images>` • :doc:`Use a bastion to access <oracle-how-to/use-bastion-to-access-VM>` 
+      
+    * - **Upgrades and maintenance**
+      - :doc:`Upgrade from Ubuntu 20.04 to 22.04 <oracle-how-to/upgrade-from-focal-to-jammy>` • :doc:`Upgrade from Ubuntu 22.04 to 24.04 <oracle-how-to/upgrade-from-jammy-to-noble>`
+      
+    * - **Deploying Ubuntu OKE worker nodes**
+      - :doc:`Availability details <oracle-reference/ubuntu-availability-on-oke>` • :doc:`Deploy using Oracle Cloud Console <oracle-how-to/deploy-ubuntu-oke-nodes-using-console>` • :doc:`Deploy using CLI <oracle-how-to/deploy-ubuntu-oke-nodes-using-cli>` • :doc:`Deploy using Terraform <oracle-how-to/deploy-ubuntu-oke-nodes-using-terraform>` 
 
-      **Step-by-step guides** covering key operations and common tasks related to using Ubuntu images on Oracle Cloud.
+    * - **Custom deployments**
+      - :doc:`Use full-disk encryption <oracle-how-to/use-fde>` • :doc:`Enable confidential computing <oracle-how-to/enable-confidential-computing>` 
 
-.. grid:: 1 1 2 2
-   :padding: 0
+   
 
-   .. grid-item:: :doc:`Explanation <oracle-explanation/index>`
-
-      **Discussion and clarification** of key topics, such as our offerings on Oracle Cloud, Ubuntu on OKE nodes and an overview of available security features. 
-
-   .. grid-item:: :doc:`Ubuntu on OKE - A reference <oracle-reference/ubuntu-availability-on-oke>`
-
-      **Reference guide** about the availability of Ubuntu on OKE.
+How this documentation is organized
+------------------------------------
 
 
+This documentation uses the `Diátaxis documentation structure <https://diataxis.fr/>`__.
 
-----------
+* :doc:`How-to guides  <oracle-how-to/index>` assume you have basic familiarity with Ubuntu images on Oracle Cloud and want to achieve specific goals. They are instructions covering key operations and common tasks involving the use of Ubuntu images on Oracle Cloud.
+
+* :doc:`Explanation <oracle-explanation/index>` includes topic overviews, background and context and detailed discussion. These include key topics, such as our offerings on Oracle Cloud, Ubuntu on OKE nodes and an overview of available security features. 
+
+
+---------
 
 Project and community
 ---------------------
@@ -49,10 +61,17 @@ Project and community
 Ubuntu on Oracle is a member of the Ubuntu family and the project warmly welcomes 
 community projects, contributions, suggestions, fixes and constructive feedback.
 
+Get involved
+~~~~~~~~~~~~
+	
 * `Get support`_
 * `Join our online chat`_
 * `Discuss on Matrix`_
 * :doc:`oracle-how-to/contribute-to-these-docs`
+
+Governance and policies
+~~~~~~~~~~~~~~~~~~~~~~~
+
 * `Code of conduct`_
 
 .. toctree::

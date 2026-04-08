@@ -20,62 +20,113 @@ and features needed to run specific workloads.
 
 ---------
 
+
+
 In this documentation
 ---------------------
 
-..  grid:: 1 1 1 1
-   :padding: 0
+Ubuntu on AWS 
+~~~~~~~~~~~~~
 
-   ..  grid-item:: :doc:`How-to guides <aws-how-to/index>`
+Canonical provides a range of optimized Ubuntu images and services tailored for AWS, backed by clear policies on security and image lifecycle management. 
 
-      **Step-by-step guides** covering key operations and common tasks involving the use of Ubuntu on EC2 and EKS.
+.. list-table::
+   :widths: 35 65
 
-.. grid:: 1 1 2 2
-   :padding: 0
-   :reverse:
+   * - **Canonical's offerings**
+     - :doc:`AWS optimizations <aws-explanation/canonical-offerings>` • :doc:`Ubuntu Pro on AWS <aws-reference/pro>` • :doc:`Support options <aws-reference/support>`
 
-   .. grid-item:: :doc:`Reference <aws-reference/index>`
+   * - **Canonical's policies**
+     - :doc:`Security aspects <aws-explanation/ubuntu-security-on-aws>` • :doc:`Image retention policy <aws-explanation/ec2-image-retention-policy>` • :doc:`Ubuntu on AWS Announcements <aws-reference/aws-announcements>`
+     
+     
 
-      **Technical information** about things like EC2 credentials, EKS snaps, Ubuntu Pro and the support options available on AWS.
+Ubuntu on EC2 
+~~~~~~~~~~~~~
 
-   .. grid-item:: :doc:`Explanation <aws-explanation/index>`
+Ubuntu on EC2 offers a flexible foundation for running cloud workloads, from launching instances and building custom AMIs to applying security hardening and managing upgrades. 
 
-      **Discussion and clarification** of key topics, such as our offerings, our image retention policy and the usage of snaps in our EKS images.
+.. list-table::
+   :widths: 35 65
+
+   * - **Finding images and launching instances**
+     - :doc:`EC2 credentials <aws-reference/ec2-credentials>` • :doc:`Launch an instance using CLI <aws-how-to/instances/launch-ubuntu-ec2-instance>` • :doc:`Find images <aws-how-to/instances/find-ubuntu-images>` • :doc:`Launch a desktop <aws-how-to/instances/launch-ubuntu-desktop>` • :doc:`Import a local Ubuntu VM into AWS <aws-how-to/instances/import-local-vm-to-aws>`
+
+   * - **Creating AMIs and templates**
+     - :doc:`Build an Ubuntu Pro AMI using Packer <aws-how-to/instances/build-pro-ami-using-packer>` • :doc:`Create CloudFormation templates <aws-how-to/instances/build-cloudformation-templates>` 
+
+   * - **Custom configurations**
+     - :doc:`Install 64K page kernel <aws-how-to/instances/install-64k-kernel>` • :doc:`install NVIDIA drivers <aws-how-to/instances/install-nvidia-drivers>` • :doc:`Configure multiple NICs <aws-how-to/instances/automatically-setup-multiple-nics>` • :doc:`Use UEFI secure boot and TPM <aws-how-to/security/use-secureboot-and-vtpm>` • :doc:`Launch and attest an AMD SEV-SNP instance <aws-how-to/instances/launch-and-attest-amd-sev-snp-instances>` • :doc:`Complete hardening of a base CIS Level 1 instance <aws-how-to/instances/cis-hardening>` 
+
+   * - **Upgrades and maintenance**
+     - :doc:`Perform in-place upgrade to Ubuntu Pro <aws-how-to/instances/upgrade-in-place-from-lts-to-pro>` • :doc:`Upgrade Ubuntu LTS release <aws-how-to/instances/upgrade-ubuntu-lts-release>` • :doc:`Upgrade to Ubuntu Pro at scale using tokens with SSM <aws-how-to/instances/upgrade-to-ubuntu-pro-at-scale-using-tokens-with-ssm>` •  :doc:`Configure automated updates <aws-how-to/instances/automatically-update-ubuntu-instances>`
+
+   * - **Using Canonical products**
+     - :doc:`Deploy Canonical Data Science Stack <aws-how-to/instances/data-science-stack-on-ec2>`
+     
+
+Ubuntu on EKS
+~~~~~~~~~~~~~
+
+Ubuntu on EKS provides secure, optimized worker node images for Amazon's managed Kubernetes service, with support for Ubuntu Pro, FIPS compliance, and GPU workloads. 
+
+.. list-table::
+   :widths: 35 65
+
+   * - **Using Ubuntu AMIs for worker nodes**
+     - :doc:`Deploy Ubuntu EKS cluster <aws-how-to/kubernetes/deploy-ubuntu-cluster-with-eks-ami>` • :doc:`Deploy Ubuntu Pro EKS cluster <aws-how-to/kubernetes/deploy-ubuntu-pro-cluster-with-eks-pro-ami>` • :doc:`Deploy Ubuntu Pro FIPS EKS cluster <aws-how-to/kubernetes/deploy-ubuntu-pro-fips-cluster>` 
+
+   * - **Using pro tokens for worker nodes**
+     - :doc:`Deploy Ubuntu Pro EKS cluster  <aws-how-to/kubernetes/deploy-ubuntu-pro-cluster>` •
+
+   * - **Deploying Ubuntu node groups**
+     - :doc:`Deploy self-managed node groups <aws-how-to/kubernetes/deploy-self-managed-node-group>` • :doc:`Deploy managed node groups <aws-how-to/kubernetes/deploy-managed-node-group>` 
+
+   * - **Custom configurations**
+     - :doc:`Enable GPUs on EKS <aws-how-to/kubernetes/enable-gpus-on-eks>` • `Install Kubeflow on EKS <https://documentation.ubuntu.com/charmed-kubeflow/how-to/install/install-eks/>`_ 
+
+   * - **EKS snaps**
+     - :doc:`Snap usage in EKS worker images <aws-explanation/eks-snaps>` • :doc:`EKS kubelet snap <aws-reference/eks-kubelet-snap>` 
+
+     
 
 
-----------
 
-Customized Ubuntu images
-------------------------
+How this documentation is organized
+------------------------------------
 
-For each Ubuntu release, we deliver multiple customized images to AWS. These images are based on the - AWS service being used, underlying architectures, required features, storage types and virtualization types:
 
-* **AWS services** - EC2, EKS
-* **architectures** - AMD64, ARM64 (Graviton)
-* **Ubuntu image types** - server, minimal
-* **storage types** - instance store, Elastic Block Store (EBS)
-* **virtualization types** - Paravirtual (PV), Hardware Virtual Machine (HVM)
-* **support/security compliance levels** - standard, Ubuntu Pro, Ubuntu Pro FIPS
+This documentation uses the `Diátaxis documentation structure <https://diataxis.fr/>`__.
 
-More details are available in our explanation about :doc:`aws-explanation/canonical-offerings`
+* :doc:`How-to guides  <aws-how-to/index>` assume you have basic familiarity with Ubuntu images on AWS and want to achieve specific goals. They are instructions covering key operations and common tasks involving the use of Ubuntu on EC2 and EKS. 
+
+* :doc:`Reference <aws-reference/index>` includes technical information about Ubuntu on AWS, such  EC2 credentials, EKS snaps, Ubuntu Pro and the support options available on AWS.
+
+* :doc:`Explanation <aws-explanation/index>` includes topic overviews, background and context and detailed discussion. These include key topics, such as our offerings, our image retention policy and the usage of snaps in our EKS images.
 
 ---------
 
 Project and community
 ---------------------
 
-Ubuntu on AWS is a member of the Ubuntu family and the project warmly welcomes community projects, contributions, 
-suggestions, fixes and constructive feedback.
+Ubuntu on AWS is a member of the Ubuntu family and the project warmly welcomes community projects, contributions, suggestions, fixes and constructive feedback.
 
+
+Get involved
+~~~~~~~~~~~~
 
 * `Get support`_
 * `Join our online chat`_
 * `Discuss on Matrix`_
 * `Talk to us about Ubuntu on AWS`_
 * :doc:`aws-how-to/contribute-to-these-docs`
-* `Code of conduct`_
 
 If none of the above options are suitable for you, and you still want to get in touch, send us an email: aws@canonical.com.
+
+Governance and policies
+~~~~~~~~~~~~~~~~~~~~~~~
+* `Code of conduct`_
+
 
 .. toctree::
    :hidden:

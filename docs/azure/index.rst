@@ -19,62 +19,63 @@ and features needed to run specific workloads.
 
 ---------
 
+
 In this documentation
 ---------------------
 
-..  grid:: 1 1 2 2
-   :padding: 0
+.. list-table::
+    :widths: 35 65
+    :header-rows: 0
 
-   ..  grid-item:: :doc:`How-to guides <azure-how-to/index>`
+    * - **Canonical's offerings**
+      - :doc:`Azure optimizations <azure-explanation/canonical-offerings>` • :doc:`Ubuntu on AKS <azure-explanation/ubuntu-on-aks-worker-nodes>` • :doc:`Support options <azure-reference/support>` • :doc:`Packages maintained <azure-explanation/packages>` • :doc:`Understanding Ubuntu on Azure <azure-explanation/understanding-ubuntu-on-azure>` 
+      
+    * - **Finding and launching images**
+      - :doc:`Install Azure CLI <azure-how-to/instances/install-azure-cli>` • :doc:`Find images <azure-how-to/instances/find-ubuntu-images>` • :doc:`Launch images <azure-how-to/instances/launch-ubuntu-images>` 
+      
+    * - **Upgrades and maintenance**
+      - :doc:`Check for available security updates <azure-how-to/instances/check-available-security-updates>` • :doc:`Get Ubuntu Pro <azure-how-to/instances/get-ubuntu-pro>` • :doc:`Upgrade Ubuntu LTS release <azure-how-to/instances/upgrade-ubuntu-lts-release>` 
+      
+    * - **Creating golden images**
+      - :doc:`Create a Pro golden image <azure-how-to/instances/create-pro-fips-golden-image>` • :doc:`Create a golden image pipeline <azure-how-to/instances/create-a-golden-image-pipeline>` 
 
-      **Step-by-step guides** covering key operations and common tasks involving the use of Ubuntu images on Azure.
-
-   .. grid-item:: :doc:`Explanation <azure-explanation/index>`
-
-      **Discussion and clarification** of key topics, such as security features, Ubuntu on AKS nodes and our image retention policy.
-
-   .. grid-item:: :doc:`Support on Azure <azure-reference/support>`
-
-      **Reference documentation** for support options on Azure.
-
----------
-
-Azure-optimized Ubuntu images
------------------------------
-
-Ubuntu images are specifically fine-tuned to maximize performance on Azure infrastructure and support the latest cloud features as they are released. The images integrate with core Azure services, such as Azure Pricing, Azure Guest Patching Service (AzGPS), and Update Management Center.
-
-* **Server images**: General-purpose customized images based on an Azure-optimized kernel. 
-
-* **Minimal server images** - Images designed for automated deployment at scale with a reduced default package set.
-
-* **Ubuntu Pro images** - Premium images that include optional FIPS certified components, CIS hardening options, ESM-enabled comprehensive open source security coverage for up to 12 years, Kernel Livepatch service, estate management service through Landscape and an optional 24/7 enterprise-grade support. 
-
-* **Ubuntu Pro FIPS images** - Images built on Ubuntu Pro, but with the FIPS-certified modules pre-enabled so that it's easier for users moving their workload to Azure to avail FIPS coverage from first boot of the image.
-
-* **CIS hardened images** - Pre-hardened (CIS) Ubuntu Pro minimal images, designed for those who want to implement security best practices for Ubuntu out of the box.
-
-* **Confidential VM images** - Confidential-compute capable images that support chipsets from both AMD SEV-SNP and Intel TDX.
-
-* **NVIDIA VM images** - Images optimized for use in virtual machines running on NVIDIA GB200 hardware.
+    * - **Custom deployments**
+      - :doc:`Deploy an Ubuntu VM with SQL Server <azure-how-to/instances/provision-an-ubuntu-virtual-machine-running-sql-server-in-azure>` • `Install Kubeflow on AKS <https://documentation.ubuntu.com/charmed-kubeflow/latest/how-to/install/install-aks/>`_ • :doc:`Deploy Kubeflow with AKS spot instances <azure-how-to/instances/deploy-kubeflow-pipelines-with-aks-spot-instances>` 
+      
+    * - **Policies**
+      - :doc:`Security aspects <azure-explanation/security-overview>` • :doc:`Image retention policy <azure-explanation/image-rentention-policy>`  
 
 
 
-More details are available in our explanation about :doc:`azure-explanation/canonical-offerings`
+How this documentation is organized
+------------------------------------
+
+
+This documentation uses the `Diátaxis documentation structure <https://diataxis.fr/>`__.
+
+* :doc:`How-to guides  <azure-how-to/index>` assume you have basic familiarity with Ubuntu images on Azure and want to achieve specific goals. They are instructions covering key operations and common tasks involving the use of Ubuntu on Azure.
+
+* :doc:`Explanation <azure-explanation/index>` includes topic overviews, background and context and detailed discussion. These include key topics, such as our offerings, security features, package maintenance our image retention policy.
 
 ---------
 
 Project and community
 ---------------------
 
-Ubuntu on Azure is a member of the Ubuntu family and the project warmly welcomes community projects, 
-contributions, suggestions, fixes and constructive feedback.
+Ubuntu on Azure is a member of the Ubuntu family and the project warmly welcomes community projects, contributions, suggestions, fixes and constructive feedback.
+
+Get involved
+~~~~~~~~~~~~
 
 * `Get support`_
 * `Join our online chat`_
 * `Discuss on Matrix`_
 * `Talk to us about Ubuntu on Azure`_
 * :doc:`azure-how-to/contribute-to-these-docs`
+
+Governance and policies
+~~~~~~~~~~~~~~~~~~~~~~~
+
 * `Code of conduct`_
 
 
