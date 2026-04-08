@@ -426,3 +426,8 @@ xrdp
 XZ
 YAML
 zoneinfo
+Ashburn
+NSG
+VCN's
+NSGs
+routable
