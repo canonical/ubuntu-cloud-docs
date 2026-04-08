@@ -4,10 +4,10 @@
 Canonical's offerings on AWS
 ============================
 
-Ubuntu images
--------------
+Customized Ubuntu images
+------------------------
 
-Canonical produces a wide variety of Ubuntu images to support numerous features found on AWS.
+For each Ubuntu release, Canonical delivers multiple customized images to AWS. These images differ based on the - AWS service being used (EC2, EKS), underlying architectures (AMD64, ARM64), required features, storage types (instance store, EBS) and virtualization types (PV, HVM).
 
 * `Server images`_ - These are general-purpose customized Amazon Machine Images (AMIs) based on an AWS-optimized kernel. They include improved device drivers and relevant agents such as `EC2 Instance Connect` and `AWS Systems Manager`.
 

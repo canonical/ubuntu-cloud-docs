@@ -22,18 +22,29 @@ and features needed to run specific workloads.
 In this documentation
 ---------------------
 
-..  grid:: 1 1 2 2
-   :padding: 0
+.. list-table::
+    :widths: 35 65
+    :header-rows: 0
+
+    * - **Canonical's offerings**
+      - :doc:`IBM optimizations <ibm-explanation/canonical-offerings>` • :doc:`Security overview <ibm-explanation/security-overview>` 
+      
+    * - **Finding and launching images**
+      - :doc:`Find images <ibm-how-to/find-ubuntu-images>` • :doc:`Launch an Ubuntu VSI <ibm-how-to/launch-ubuntu-instances>` 
+
+    * - **Upgrades and maintenance**
+      - :doc:`Upgrade from Ubuntu 20.04 to 22.04 <ibm-how-to/upgrade-from-focal-to-jammy>` • :doc:`Upgrade from Ubuntu 22.04 to 24.04 <ibm-how-to/upgrade-from-jammy-to-noble>` 
 
 
-   ..  grid-item:: :doc:`How-to guides <ibm-how-to/index>`
+How this documentation is organized
+------------------------------------
 
-      **Step-by-step guides** covering key operations and common tasks related to using Ubuntu images on IBM Cloud.
 
-   .. grid-item:: :doc:`Explanation <ibm-explanation/index>`
+This documentation uses the `Diátaxis documentation structure <https://diataxis.fr/>`__.
 
-       **Discussion and clarification** of key topics, such as our offerings on IBM Cloud and an overview of available security features.
+* :doc:`How-to guides  <ibm-how-to/index>` assume you have basic familiarity with Ubuntu images on IBM Cloud and want to achieve specific goals. They are instructions covering key operations and common tasks involving the use of Ubuntu on IBM Cloud.
 
+* :doc:`Explanation <ibm-explanation/index>` includes topic overviews, background and context and detailed discussion. These include key topics, such as our offerings on IBM Cloud and an overview of available security features.
 
 ---------
 
@@ -43,11 +54,18 @@ Project and community
 Ubuntu on IBM is a member of the Ubuntu family and the project warmly welcomes community projects, contributions, suggestions, fixes and constructive feedback.
 
 	
+Get involved
+~~~~~~~~~~~~
+
 * `Get support`_
 * `Join our online chat`_
 * `Discuss on Matrix`_
 * `Talk to us about Ubuntu on IBM`_
 * :doc:`ibm-how-to/contribute-to-these-docs`
+
+Governance and policies
+~~~~~~~~~~~~~~~~~~~~~~~
+
 * `Code of conduct`_
 
 .. toctree::

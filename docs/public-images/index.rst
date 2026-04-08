@@ -18,41 +18,49 @@ Canonical also produces so-called Buildd images that are used primarily by `Laun
 In this documentation
 ---------------------
 
-..  grid:: 1 1 1 1
-   :padding: 0
+.. list-table::
+    :widths: 35 65
+    :header-rows: 0
 
-   ..  grid-item:: :doc:`How-to guides <public-images-how-to/index>`
+    * - **Canonical's offerings**
+      - :doc:`Ubuntu cloud image artifacts <public-images-reference/artifacts>` • :doc:`LXD and OpenStack images <public-images-explanation/lxd-openstack-images>` • :doc:`Vagrant boxes <public-images-explanation/vagrant>` • :doc:`Buildd images <public-images-explanation/buildd>` 
+      
+    * - **Building and launching images**
+      - :doc:`Build a Vagrant box with Bartender <public-images-how-to/build-vagrant-with-bartender>` • :doc:`Run a Vagrant box <public-images-how-to/run-a-vagrant-box>` • :doc:`Launch QCOW images using libvirt <public-images-how-to/launch-with-libvirt>` • :doc:`Launch QCOW images using QEMU <public-images-how-to/launch-qcow-with-qemu>`  • :doc:`Run an OVA using VirtualBox <public-images-how-to/run-an-ova-using-virtualbox>`  • :doc:`Create and use a local cloud-init datasource <public-images-how-to/use-local-cloud-init-ds>`  • :doc:`Verify an image checksum <public-images-how-to/verify-image-checksum>` 
+      
+    * - **Policies**
+      - :doc:`Security overview <public-images-explanation/ubuntu-security-on-public-images>` • :doc:`Image retention policy <public-images-explanation/public-image-retention-policy>` 
+      
 
-      **Step-by-step guides** covering key operations related to our Public Images offerings.
+How this documentation is organized
+------------------------------------
 
-.. grid:: 1 1 2 2
-   :padding: 0
+This documentation uses the `Diátaxis documentation structure <https://diataxis.fr/>`__.
 
-   .. grid-item:: :doc:`Explanation <public-images-explanation/index>`
+* :doc:`How-to guides  <public-images-how-to/index>` assume you have basic familiarity with Ubuntu images on public clouds and want to achieve specific goals. They are instructions covering key operations and common tasks involving different types of public Ubuntu cloud images.
 
-      **Discussion and clarification** of key topics such as the different types of images available, security aspects and our retention policy.
+* :doc:`Explanation <public-images-explanation/index>` includes topic overviews, background and context and detailed discussion. These include key topics, such as the different types of images that we build and support, security aspects and our image retention policy.
 
-   .. grid-item:: :doc:`Cloud image artifacts - A reference <public-images-reference/artifacts>`
-
-      **Reference guide** for the artifacts found on `cloud-images.ubuntu.com`_.
-
-
-
-----------
+---------
 
 Project and community
 ---------------------
 
-Ubuntu Public Images is a member of the Ubuntu family and the project warmly welcomes community projects, contributions, 
-suggestions, fixes and constructive feedback.
+Ubuntu Public Images is a member of the Ubuntu family and the project warmly welcomes community projects, contributions, suggestions, fixes and constructive feedback.
 
 
+Get involved
+~~~~~~~~~~~~
+	
 * `Get support`_
 * `Discuss on Matrix`_
 * :ref:`public-images-contribute`
+
+Governance and policies
+~~~~~~~~~~~~~~~~~~~~~~~
+
 * `Code of conduct`_
 
-.. If none of the above options are suitable for you, and you still want to get in touch, send us an email: aws@canonical.com.
 
 .. toctree::
    :hidden:

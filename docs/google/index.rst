@@ -21,33 +21,59 @@ and features needed to run specific workloads.
 In this documentation
 ---------------------
 
-..  grid:: 1 1 2 2
-   :padding: 0
+.. list-table::
+    :widths: 35 65
+    :header-rows: 0
+
+    * - **Canonical's offerings**
+      - :doc:`GCP optimizations <google-explanation/canonical-offerings>` • :doc:`Packaged Google agents <google-explanation/guest-agents>` •  
+      
+    * - **Finding and launching images**
+      - :doc:`Find images <google-how-to/gce/find-ubuntu-images>` • :doc:`Create instances <google-how-to/gce/create-different-instance-types>` • :doc:`Launch a desktop <google-how-to/gce/launch-ubuntu-desktop>` 
+      
+    * - **Upgrades and maintenance**
+      - :doc:`Switch between LTS and Pro <google-how-to/gce/upgrade-in-place-from-lts-to-pro>` • :doc:`Enable Ubuntu Pro features <google-how-to/gce/enable-pro-features>` • :doc:`Upgrade from Focal to Jammy <google-how-to/gce/upgrade-from-focal-to-jammy>` 
+
+    * - **Creating golden images**
+      - :doc:`Build a Pro golden image <google-how-to/gce/build-ubuntu-pro-golden-image>` •
+            
+    * - **Custom deployments**
+      - :doc:`Deploy Kubernetes with Ubuntu Pro on GCE <google-how-to/gke/deploy-kubernetes-with-ubuntu-pro>` • :doc:`Create customized docker containers <google-how-to/gce/create-customized-docker-container>` • :doc:`Set hostname <google-how-to/gce/set-hostname-using-cloudinit>` 
+      
+    * - **Policies**
+      - :doc:`Security aspects <google-explanation/security-overview>` • :doc:`Image retention policy <google-explanation/gce-image-retention-policy>` 
 
 
-   ..  grid-item:: :doc:`How-to guides <google-how-to/index>`
 
-      **Step-by-step guides** covering key operations and common tasks related to using Ubuntu images on GCE.
+How this documentation is organized
+------------------------------------
 
-   .. grid-item:: :doc:`Explanation <google-explanation/index>`
 
-      **Discussion and clarification** of key topics, such as security features, Google's 'guest agents' on Ubuntu and our image retention policy.
+This documentation uses the `Diátaxis documentation structure <https://diataxis.fr/>`__.
 
+* :doc:`How-to guides  <google-how-to/index>` assume you have basic familiarity with Ubuntu images on GCP and want to achieve specific goals. They are instructions covering key operations and common tasks involving the use of Ubuntu on GCP.
+
+* :doc:`Explanation <google-explanation/index>` includes topic overviews, background and context and detailed discussion. These include key topics, such as our offerings, security features, Google's 'guest agents' on Ubuntu and our image retention policy.
 
 ---------
 
 Project and community
 ---------------------
 
-Ubuntu on GCP is a member of the Ubuntu family and the project warmly welcomes community projects, contributions, 
-suggestions, fixes and constructive feedback.
+Ubuntu on GCP is a member of the Ubuntu family and the project warmly welcomes community projects, contributions, suggestions, fixes and constructive feedback.
 
+Get involved
+~~~~~~~~~~~~
 	
 * `Get support`_
 * `Join our online chat`_
 * `Discuss on Matrix`_
 * `Talk to us about Ubuntu on Google cloud`_
 * :doc:`google-how-to/contribute-to-these-docs`
+
+Governance and policies
+~~~~~~~~~~~~~~~~~~~~~~~
+
 * `Code of conduct`_
 
 .. toctree::

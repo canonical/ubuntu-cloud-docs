@@ -4,10 +4,11 @@
 Canonical's offerings on Azure
 ==============================
 
-Ubuntu images
--------------
 
-Canonical produces a wide variety of Ubuntu images to support numerous features found on Azure.
+Azure-optimized Ubuntu images
+------------------------------
+
+Ubuntu images are specifically fine-tuned to maximize performance on Azure infrastructure and support the latest cloud features as they are released. The images integrate with core Azure services, such as Azure Pricing, Azure Guest Patching Service (AzGPS), and Update Management Center.
 
 * `Server images`_ are general-purpose images customized for Azure Virtual Machines. These images are also available with `Ubuntu Pro`_ enabled.
 
