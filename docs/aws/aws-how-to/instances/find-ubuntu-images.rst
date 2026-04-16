@@ -53,7 +53,7 @@ To find images on AWS, you can use the `SSM Parameter Store`_, the `describe-ima
                aws ssm get-parameters --names /aws/service/canonical/ubuntu/{eks_product}/{release}/{k8s}/stable/{serial}/{arch}/hvm/{vol}/ami-id
                :eks_product: eks, eks-pro
                :release: noble, jammy
-               :k8s: 1.34, 1.33, 1.32, 1.31
+               :k8s: 1.35, 1.34, 1.33, 1.32, 1.31
                :serial: current, 20250804, 20240115
                :arch: amd64, arm64
                :vol: ebs-gp3{release:noble}, ebs-gp2{release:jammy}
@@ -128,7 +128,7 @@ To find images on AWS, you can use the `SSM Parameter Store`_, the `describe-ima
                :eks_product: eks, eks-pro
                :release: noble, jammy
                :suite: 24.04{release:noble}, 22.04{release:jammy}
-               :k8s: 1.34, 1.33, 1.32, 1.31
+               :k8s: 1.35, 1.34, 1.33, 1.32, 1.31
                :serial: *, 20250804, 20240115
                :arch: amd64, arm64
                :vol: ssd-gp3{release:noble}, ssd{release:jammy}
