@@ -4,7 +4,7 @@
 Architecture Variants Support in Ubuntu Cloud Images
 ====================================================
 
-Starting with 26.04 (Resolute Raccoon), Ubuntu cloud images will be built and published to support architecture variants.
+Starting with 26.04 (Resolute Raccoon), Ubuntu cloud images will be built and published to support `architecture variants`_.
 This means that for a given base architecture (e.g. amd64), there may be multiple architecture variants (e.g. amd64v3)
 built, published, and supported officially by Canonical.
 
@@ -43,3 +43,5 @@ older ABIs and new instructions; for example, legacy amd64 images can run on amd
 all modern x86_64 hardware. However, the inverse is not true -- newer architecture variants cannot run without error on
 older hardware. This is at least the case for amd64 and amd64v3, and is likely to be the case for future variants as
 well.
+
+.. _`architecture variants`: https://documentation.ubuntu.com/project/how-ubuntu-is-made/concepts/supported-architectures/#architecture-variants
