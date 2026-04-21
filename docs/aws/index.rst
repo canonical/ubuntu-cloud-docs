@@ -77,7 +77,7 @@ Ubuntu on EKS provides secure, optimized worker node images for Amazon's managed
      - :doc:`Deploy Ubuntu EKS cluster <aws-how-to/kubernetes/deploy-ubuntu-cluster-with-eks-ami>` • :doc:`Deploy Ubuntu Pro EKS cluster <aws-how-to/kubernetes/deploy-ubuntu-pro-cluster-with-eks-pro-ami>` • :doc:`Deploy Ubuntu Pro FIPS EKS cluster <aws-how-to/kubernetes/deploy-ubuntu-pro-fips-cluster>` 
 
    * - **Using pro tokens for worker nodes**
-     - :doc:`Deploy Ubuntu Pro EKS cluster  <aws-how-to/kubernetes/deploy-ubuntu-pro-cluster>` •
+     - :doc:`Deploy Ubuntu Pro EKS cluster  <aws-how-to/kubernetes/deploy-ubuntu-pro-cluster>` 
 
    * - **Deploying Ubuntu node groups**
      - :doc:`Deploy self-managed node groups <aws-how-to/kubernetes/deploy-self-managed-node-group>` • :doc:`Deploy managed node groups <aws-how-to/kubernetes/deploy-managed-node-group>` 
