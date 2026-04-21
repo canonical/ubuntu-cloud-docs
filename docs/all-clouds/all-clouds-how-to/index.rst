@@ -20,6 +20,12 @@ A guide to help you install NVIDIA drivers from the 'proposed' pocket for testin
 
 * :doc:`Install NVIDIA drivers from 'proposed' pocket for testing <install-proposed-nvidia-drivers-for-testing>`
 
+Ubuntu image specifics
+----------------------
+
+A guide to help you migrate to a different kernel variant.
+
+* :doc:`Migrate kernel variants <migrate-kernel-variants>`
 
 .. toctree::
    :hidden:
@@ -27,3 +33,4 @@ A guide to help you install NVIDIA drivers from the 'proposed' pocket for testin
   
    Check CVE status of an image <check-cve-on-instance>
    Install NVIDIA drivers from proposed pocket for testing <install-proposed-nvidia-drivers-for-testing>
+   Migrate kernel variants <migrate-kernel-variants>
