@@ -1,3 +1,7 @@
+
+.. meta::
+   :description: Learn about Ubuntu kernel packages on the cloud, including how kernel updates work, and the differences between rolling and LTS kernel variants.
+   
 .. _kernels-on-the-cloud:
 
 Kernels on the cloud
@@ -32,7 +36,7 @@ Each Ubuntu LTS release has an HWE package associated to it that upgrades to new
 
 For example, the final HWE kernel for Ubuntu 22.04 was version 6.8, whereas the first HWE kernel for Ubuntu 24.04 was version 6.8. Ubuntu 25.04 released with kernel version 6.14. This kernel version eventually promoted to the HWE package, and then the Ubuntu 24.04 HWE kernel version rolled to kernel version 6.14. Similarly, the release of Ubuntu 25.10 came with kernel version 6.17. This kernel version eventually promoted to the HWE kernel package, and then 24.04 HWE kernel rolled to kernel version 6.17.
 
-Note that this is a general guideline and the exact dates in which kernels roll across the clouds is dependent on a number of external factors.
+Note that this is a general guideline and the exact dates on which kernels roll across the clouds is dependent on a number of external factors.
 
 For more details about the rolling kernel model, refer to the `Ubuntu kernel release cycle`_ and the relevant `installation options`_ as well as the `Hardware Enablement (HWE) Kernel`_ page.
 
@@ -41,7 +45,7 @@ For more details about the rolling kernel model, refer to the `Ubuntu kernel rel
 LTS package
 -----------
 
-The LTS kernel package (``linux-<cloud>-lts-<release>``) maintains the stable kernel associated to a specific release for the standard support lifetime of the release. This package behaves similarly to the ``linux-generic`` kernel package. The only difference is that there are no cloud-specific enhancements in the ``linux-generic`` package.
+The LTS kernel package (``linux-<cloud>-lts-<release>``) maintains the stable kernel associated to a specific release for the standard support lifetime of the release. This package behaves in a manner similar to the ``linux-generic`` kernel package. The only difference is that there are no cloud-specific enhancements in the ``linux-generic`` package.
 
 The LTS kernel is more stable than the HWE kernel since it is the accumulation of multiple HWE kernels and is highly scrutinized since the LTS package is only produced every 2 years alongside LTS releases. This kernel does not usually receive feature upgrades, and is generally limited to bug, security, and performance patches.
 
@@ -55,7 +59,7 @@ The early access HWE kernel package (``linux-<cloud>-edge``) gives users the abi
 Installing kernel packages
 ++++++++++++++++++++++++++
 
-The package names are listed in each kernel section such that you can replace the following as applicable to derive the exact package name:
+The package names are listed above in each kernel section such that you can replace the following as applicable to derive the exact package name:
 
 - ``<cloud>`` with one of ``azure``, ``aws``, ``gcp``, ``gke``, ``oracle``
 - ``<release>`` with the LTS release number corresponding to your instance (i.e. ``22.04`` or ``24.04``)
