@@ -1,9 +1,12 @@
+.. meta::
+   :description: Step-by-step guide to migrating between Ubuntu kernel variants on the cloud, such as switching from a rolling kernel to an LTS kernel package.
+
 .. _migrate-kernel-variants:
 
 Migrate kernel variants
 =======================
 
-There are many scenarios in which you may want to migrate to a different kernel variant than is currently installed on your virtual machine.
+There are many scenarios in which you may want to migrate to a different kernel variant than what is currently installed on your virtual machine.
 
 For more information about kernel behaviors on the cloud and why it may be desirable to install a different kernel variant, see :ref:`kernels-on-the-cloud`.
 
@@ -12,8 +15,6 @@ Walk-through
 
 .. note::
    | This workflow is not intended to be used at scale. This should be done as part of the deployment process for a new instance or as part of creating a golden image. Pre-existing instances may require additional manual intervention to address incompatibilities.
-
-The following is a step-by-step guide as to how this process can be completed.
 
 In this example, we assume you have launched an Ubuntu instance on Azure. You started on the ``linux-azure`` kernel package by default and want to migrate to the ``linux-azure-lts-22.04`` kernel package.
 
@@ -29,25 +30,25 @@ Get current status
 
 First, you need to determine which kernel package(s) and version(s) are currently installed on your instance.
 
-To find the currently booted kernel version:
+Find the currently booted kernel version:
 
 .. code-block:: bash
 
    uname -r
 
-You should see something in a format similar to the following:
+You should see something like:
 
 .. code-block::
 
    6.8.0-1051-azure
 
-This finds which kernel packages are installed if running on Azure:
+Find which kernel packages are installed (assuming azure in this example):
 
 .. code-block:: bash
 
    dpkg --list | grep linux-azure | grep ii
 
-This will output currently installed packages associated to individual kernel versions as well as the kernel package. You will see something similar to the following:
+It will output currently installed packages associated to individual kernel versions as well as the kernel package. You'll see something like:
 
 .. code-block::
 
@@ -122,7 +123,7 @@ Once you have installed your new kernel variant, compare the versions and pick y
 
          uname -r
 
-      If the kernel version does not match the kernel version associated your kernel variant, check that you have correctly :ref:`installed the new kernel package <install-kernel-package>`. Otherwise, you may be booting onto a lower versioned kernel package, and need to follow those steps instead.
+      If the kernel version does not match the kernel version associated with your kernel variant, check that you have correctly :ref:`installed the new kernel package <install-kernel-package>`. Otherwise, you may be booting onto a lower versioned kernel package, and need to follow those steps instead.
 
       It is best practice to remove the old kernel images, modules, and tools, but is not strictly required when migrating to a higher versioned kernel package:
 
@@ -164,7 +165,7 @@ Once you have installed your new kernel variant, compare the versions and pick y
 
             In this example, we are expecting to see ``5.15.0-1102-azure``.
 
-            If the kernel version does not match the kernel version associated your kernel variant, check that you have correctly :ref:`installed the new kernel package <install-kernel-package>` and properly :ref:`rebooted onto the new kernel <reboot-on-new-kernel>`.
+            If the kernel version does not match the kernel version associated with your kernel variant, check that you have correctly :ref:`installed the new kernel package <install-kernel-package>` and properly :ref:`rebooted onto the new kernel <reboot-on-new-kernel>`.
 
             Now you can remove all pre-existing kernel images and packages that are not from the package you are migrating to. Package names may vary depending on which kernel package you are migrating from as well as the cloud and currently available kernel package versions.
 
