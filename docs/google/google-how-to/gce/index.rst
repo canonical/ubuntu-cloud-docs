@@ -12,6 +12,7 @@ Launching different types of instances:
 * :doc:`Find images <find-ubuntu-images>`
 * :doc:`Create instances <create-different-instance-types>`
 * :doc:`Launch a desktop <launch-ubuntu-desktop>`
+* :doc:`ARM64 on Google Cloud <arm64-on-google-cloud>`
 
 Creating golden images and customized containers:
 
@@ -41,3 +42,4 @@ Administrative operations:
    Enable Pro features <enable-pro-features>   
    Upgrade from Focal to Jammy <upgrade-from-focal-to-jammy>
    Set hostname <set-hostname-using-cloudinit>
+   ARM64 on Google Cloud <arm64-on-google-cloud>

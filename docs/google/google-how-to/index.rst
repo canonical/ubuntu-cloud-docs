@@ -20,6 +20,7 @@ While using Ubuntu on GCP, you'll need to perform tasks such as finding the righ
 * :doc:`Enable Pro features <gce/enable-pro-features>`
 * :doc:`Upgrade from Focal to Jammy <gce/upgrade-from-focal-to-jammy>`
 * :doc:`Set hostname <gce/set-hostname-using-cloudinit>`
+* :doc:`ARM64 on Google Cloud <gce/arm64-on-google-cloud>`
 
 GKE and Kubernetes
 ------------------
