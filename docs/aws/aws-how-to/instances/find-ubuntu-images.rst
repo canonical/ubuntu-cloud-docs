@@ -32,14 +32,14 @@ To find images on AWS, you can use the `SSM Parameter Store`_, the `describe-ima
 
             .. formatted-dropdown::
                aws ssm get-parameters --names /aws/service/canonical/ubuntu/{product}/{release}/stable/{serial}/{arch}/hvm/{vol}/ami-id
-               :product: server{release:noble;release:jammy}, server-minimal{release:noble;release:jammy}, pro-server, pro-minimal
-               :release: noble, jammy, focal
+               :product: server{release:resolute;release:noble;release:jammy}, server-minimal{release:resolute;release:noble;release:jammy}, pro-server, pro-minimal
+               :release: resolute, noble, jammy, focal
                :serial: current, 20250804, 20240115
                :arch: amd64, arm64
-               :vol: ebs-gp3{release:noble}, ebs-gp2{release:jammy;release:focal}
+               :vol: ebs-gp3{release:noble;release:resolute}, ebs-gp2{release:jammy;release:focal}
 
             * PRODUCT: `server`, `server-minimal`, `pro-server` or `pro-minimal`
-            * RELEASE: `noble`, 24.04, `jammy`, `22.04`, `focal`, `20.04`, `bionic`, `18.04`, `xenial`, or `16.04`
+            * RELEASE: `resolute`, `26.04`, `noble`, `24.04`, `jammy`, `22.04`, `focal`, `20.04`, `bionic`, `18.04`, `xenial`, or `16.04`
             * ARCH: `amd64` or `arm64`
             * VIRT_TYPE: `hvm` or `pv` (legacy only)
             * VOL_TYPE: `ebs-gp3` (for >=23.10), `ebs-gp2` (for <=23.04), `ebs-io1`, `ebs-standard`, or `instance-store`
@@ -72,7 +72,7 @@ To find images on AWS, you can use the `SSM Parameter Store`_, the `describe-ima
       .. code::
 
          aws ec2 run-instances \
-            --image-id resolve:ssm:/aws/service/canonical/ubuntu/server/24.04/stable/current/amd64/hvm/ebs-gp3/ami-id \
+            --image-id resolve:ssm:/aws/service/canonical/ubuntu/server/26.04/stable/current/amd64/hvm/ebs-gp3/ami-id \
             --key-name TestKeyPair \
             --instance-type t3.medium
 
@@ -87,12 +87,12 @@ To find images on AWS, you can use the `SSM Parameter Store`_, the `describe-ima
 
             .. formatted-dropdown::
                aws ec2 describe-images --owners 099720109477 --filters 'Name=name,Values=ubuntu{prefix}/images/hvm-{vol}/ubuntu-{release}-{suite}-{arch}-{product}-{serial}' --query 'Images | sort_by(@, &CreationDate) | [-1].ImageId' --output text
-               :product: server{release:noble;release:jammy}, minimal{release:noble;release:jammy}, pro-server, pro-minimal
-               :release: noble, jammy, focal
-               :suite: 24.04{release:noble}, 22.04{release:jammy}, 20.04{release:focal}
+               :product: server{release:resolute;release:noble;release:jammy}, minimal{release:resolute;release:noble;release:jammy}, pro-server, pro-minimal
+               :release: resolute, noble, jammy, focal
+               :suite: 26.04{release:resolute}, 24.04{release:noble}, 22.04{release:jammy}, 20.04{release:focal}
                :serial: *, 20250804, 20240115
                :arch: amd64, arm64
-               :vol: ssd-gp3{release:noble}, ssd{release:jammy;release:focal}
+               :vol: ssd-gp3{release:resolute;release:noble}, ssd{release:jammy;release:focal}
                :prefix: ""{product:server}, -pro-server{product:pro-server}, -pro-minimal{product:pro-minimal}, -minimal{product:minimal}
 
 
@@ -109,7 +109,7 @@ To find images on AWS, you can use the `SSM Parameter Store`_, the `describe-ima
 
             * VIRT_TYPE: `hvm` or `pv` (only for legacy releases ≤ 16.04)
             * VOL_TYPE: `ssd-gp3` (for >=23.10), `ssd` (for <=23.04), or `instance-store`
-            * RELEASE: `noble-24.04`, `jammy-22.04`, `focal-20.04`, `bionic-18.04`, or `xenial-16.04`
+            * RELEASE: `resolute-26.04`, `noble-24.04`, `jammy-22.04`, `focal-20.04`, `bionic-18.04`, or `xenial-16.04`
             * ARCH: `amd64` or `arm64`
             * PRODUCT: `server`, `server-minimal`, `pro-server` or `pro-minimal`
 
@@ -167,7 +167,7 @@ To find images on AWS, you can use the `SSM Parameter Store`_, the `describe-ima
            --image-id "$(aws ec2 describe-images \
                            --owners 099720109477 \
                            --filters \
-                             'Name=name,Values=ubuntu/images/hvm-ssd-gp3/ubuntu-noble-24.04-amd64-server-*' \
+                             'Name=name,Values=ubuntu/images/hvm-ssd-gp3/ubuntu-resolute-26.04-amd64-server-*' \
                            --query 'Images | sort_by(@, &CreationDate) | [-1].ImageId' \
                            --output text)" \
            --instance-type t3.medium \
@@ -198,7 +198,7 @@ To find images on AWS, you can use the `SSM Parameter Store`_, the `describe-ima
 
                   .. code-block:: text
 
-                     AMI name: ubuntu/images/hvm-ssd-gp3/ubuntu-noble-24.04-amd64-server
+                     AMI name: ubuntu/images/hvm-ssd-gp3/ubuntu-resolute-26.04-amd64-server
                
 
                Select the most recent image based on *Creation date*.
@@ -213,7 +213,7 @@ To find images on AWS, you can use the `SSM Parameter Store`_, the `describe-ima
 
                * VIRT_TYPE: `hvm` or `pv` (only for legacy releases ≤ 16.04)
                * VOL_TYPE: `ssd-gp3` (for >=23.10), `ssd` (for <=23.04), or `instance-store`
-               * RELEASE: `noble-24.04`, `jammy-22.04`, `focal-20.04`, `bionic-18.04`, or `xenial-16.04`
+               * RELEASE: `resolute-26.04`, `noble-24.04`, `jammy-22.04`, `focal-20.04`, `bionic-18.04`, or `xenial-16.04`
                * ARCH: `amd64` or `arm64`
                * PRODUCT: `server`, `server-minimal`, `pro-server` or `pro-minimal`
 
