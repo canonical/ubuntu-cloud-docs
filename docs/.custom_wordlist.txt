@@ -250,7 +250,6 @@ namespace
 namespaces
 nano
 natively
-needrestart
 netfilter
 NIC
 NICs
@@ -278,7 +277,6 @@ OpenShift
 OpenSSH
 openssl
 OpenStack
-os
 OVA
 OVAs
 OVF
@@ -315,7 +313,6 @@ reStructuredText
 RHCOS
 RHEL
 riscv
-rmadison
 rollout
 rootfs
 RSA
@@ -381,7 +378,6 @@ UbuntuPro
 udev
 UEFI
 UI
-uname
 uncompress
 unlaunched
 unminimize
