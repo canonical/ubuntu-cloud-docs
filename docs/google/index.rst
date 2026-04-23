@@ -29,7 +29,7 @@ In this documentation
       - :doc:`GCP optimizations <google-explanation/canonical-offerings>` • :doc:`Packaged Google agents <google-explanation/guest-agents>` •  
       
     * - **Finding and launching images**
-      - :doc:`Find images <google-how-to/gce/find-ubuntu-images>` • :doc:`Create instances <google-how-to/gce/create-different-instance-types>` • :doc:`Launch a desktop <google-how-to/gce/launch-ubuntu-desktop>` 
+      - :doc:`Find images <google-how-to/gce/find-ubuntu-images>` • :doc:`Create instances <google-how-to/gce/create-different-instance-types>` • :doc:`Launch a desktop <google-how-to/gce/launch-ubuntu-desktop>` • :doc:`ARM64 on Google Cloud <google-how-to/gce/arm64-on-google-cloud>`
       
     * - **Upgrades and maintenance**
       - :doc:`Switch between LTS and Pro <google-how-to/gce/upgrade-in-place-from-lts-to-pro>` • :doc:`Enable Ubuntu Pro features <google-how-to/gce/enable-pro-features>` • :doc:`Upgrade from Focal to Jammy <google-how-to/gce/upgrade-from-focal-to-jammy>` 
