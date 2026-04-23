@@ -13,6 +13,46 @@ Free long term support offers
 
 To learn more about LTS versions of Ubuntu read `this article <https://ubuntu.com/blog/what-is-an-ubuntu-lts-release>`_.
 
+Ubuntu 26.04 LTS - Resolute Raccoon
++++++++++++++++++++++++++++++++++++
+
+| Quick start: `26.04 LTS on Azure <https://portal.azure.com/#create/canonical.ubuntu-26_04-ltsserver>`_
+| Quick start (China): `26.04 LTS on Azure China <https://portal.azure.cn/#create/canonical.ubuntu-26_04-ltsserver>`_
+
+.. list-table::
+   :widths: 10 10 12 68
+   :header-rows: 1
+
+   * - **Flavor**
+     - **Arch**
+     - **Hyper-V**
+     - **URN**
+   * - Server
+     - AMD64
+     - Gen2
+     - ``Canonical:ubuntu-26_04-lts:server:latest``
+   * - Server
+     - AMD64
+     - Gen1
+     - ``Canonical:ubuntu-26_04-lts:server-gen1:latest``
+   * - Server
+     - ARM64
+     - Gen2
+     - ``Canonical:ubuntu-26_04-lts:server-arm64:latest``
+   * - Minimal
+     - AMD64
+     - Gen2
+     - ``Canonical:ubuntu-26_04-lts:minimal:latest``
+   * - Minimal
+     - AMD64
+     - Gen1
+     - ``Canonical:ubuntu-26_04-lts:minimal-gen1:latest``
+   * - Minimal
+     - ARM64
+     - Gen2
+     - ``Canonical:ubuntu-26_04-lts:minimal-arm64:latest``
+
+
 Ubuntu 24.04 LTS - Noble Numbat
 ++++++++++++++++++++++++++++++++++
 
@@ -139,6 +179,45 @@ Ubuntu Pro Offers
 ~~~~~~~~~~~~~~~~~
 
 To learn more about Ubuntu Pro on Azure: `Ubuntu Pro for Azure <https://ubuntu.com/azure/pro>`_
+
+Ubuntu Pro 26.04 LTS - Resolute Raccoon
++++++++++++++++++++++++++++++++++++++++
+
+| Quick start: `Ubuntu Pro 26.04 LTS on Azure <https://portal.azure.com/#create/canonical.ubuntu-pro-26_04-ltsserver>`_
+
+.. list-table::
+   :widths: 10 10 12 68
+   :header-rows: 1
+
+   * - **Flavor**
+     - **Arch**
+     - **Hyper-V**
+     - **URN**
+   * - Server
+     - AMD64
+     - Gen2
+     - ``Canonical:ubuntu-pro-26_04-lts:server:latest``
+   * - Server
+     - AMD64
+     - Gen1
+     - ``Canonical:ubuntu-pro-26_04-lts:server-gen1:latest``
+   * - Server
+     - ARM64
+     - Gen2
+     - ``Canonical:ubuntu-pro-26_04-lts:server-arm64:latest``
+   * - Minimal
+     - AMD64
+     - Gen2
+     - ``Canonical:ubuntu-pro-26_04-lts:minimal:latest``
+   * - Minimal
+     - AMD64
+     - Gen1
+     - ``Canonical:ubuntu-pro-26_04-lts:minimal-gen1:latest``
+   * - Minimal
+     - ARM64
+     - Gen2
+     - ``Canonical:ubuntu-pro-26_04-lts:minimal-arm64:latest``
+
 
 Ubuntu Pro 24.04 LTS - Noble Numbat
 ++++++++++++++++++++++++++++++++++++++
@@ -290,6 +369,41 @@ To learn more about Confidential Compute: `Azure confidential computing <https:/
 .. note:: 
   
   While confidential VMs safeguard your workload from external threats, internal vulnerabilities within their boundaries can still pose risks. This is where Ubuntu Pro proves invaluable, ensuring your guest CVM software stack is continuously patched and up-to-date.
+
+Ubuntu Pro 26.04 LTS (Confidential Compute) - Resolute Raccoon
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+| Quick start: `Ubuntu Pro 26.04 LTS (Confidential Compute) on Azure <https://portal.azure.com/#create/canonical.ubuntu-pro-26_04-ltsserver-cvm>`_
+| Quick start (China): `Ubuntu Pro 26.04 LTS (Confidential Compute) on Azure China <https://portal.azure.cn/#create/canonical.ubuntu-pro-26_04-ltsserver-cvm>`_
+
+.. list-table::
+   :widths: 10 12 78
+   :header-rows: 1
+
+   * - **Arch**
+     - **Hyper-V**
+     - **URN**
+   * - AMD64
+     - Gen2
+     - ``Canonical:ubuntu-pro-26_04-lts:server-cvm:latest``
+
+Ubuntu 26.04 LTS (Confidential Compute) - Resolute Raccoon
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+| Quick start: `Ubuntu 26.04 LTS (Confidential Compute) on Azure <https://portal.azure.com/#create/canonical.ubuntu-26_04-ltsserver-cvm>`_
+| Quick start (China): `Ubuntu 26.04 LTS (Confidential Compute) on Azure China <https://portal.azure.cn/#create/canonical.ubuntu-26_04-ltsserver-cvm>`_
+
+.. list-table::
+   :widths: 10 12 78
+   :header-rows: 1
+
+   * - **Arch**
+     - **Hyper-V**
+     - **URN**
+   * - AMD64
+     - Gen2
+     - ``Canonical:ubuntu-26_04-lts:server-cvm:latest``
+
 
 Ubuntu Pro 24.04 LTS (Confidential Compute) - Noble Numbat
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
