@@ -32,8 +32,8 @@ For running instances, you can perform an in-place upgrade from Ubuntu Server to
 SSH into the instance and run:
 
 .. code::
-    
-    sudo apt install ubuntu-advantage-tools
+
+    sudo apt install ubuntu-pro-client
     sudo pro auto-attach
 
 .. note::
@@ -42,5 +42,5 @@ SSH into the instance and run:
 To verify that Ubuntu Pro is enabled on your instance run:
 
 .. code::
-    
+
     pro status --all --wait
