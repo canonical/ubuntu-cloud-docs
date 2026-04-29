@@ -27,7 +27,7 @@ This model provides the latest upstream bug fixes and performance improvements a
 
 This package is the default for at least Ubuntu Server and Ubuntu Minimal images across all clouds.
 
-.. note:: Some Ubuntu images do not use this package by default. Products like Ubuntu Pro FIPS and Ubuntu CVM generally have specifically tailored kernel variants that do not follow the rolling kernel model, and instead focus on bug fixes and performance updates to ensure more environmental stability for that product, similar to the behavior of the :ref:`LTS kernel package <lts-kernel>`.
+.. note:: Some Ubuntu images do not use this package by default. Products like Ubuntu Pro FIPS have specifically tailored kernel variants that do not follow the rolling kernel model, and instead focus on bug fixes and performance updates to ensure more environmental stability for that product, similar to the behavior of the :ref:`LTS kernel package <lts-kernel>`.
 
 How kernel rolling works
 ________________________
