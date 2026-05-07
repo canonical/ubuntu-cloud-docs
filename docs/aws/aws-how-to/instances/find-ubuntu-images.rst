@@ -36,7 +36,7 @@ To find images on AWS, you can use the `SSM Parameter Store`_, the `describe-ima
                :release: resolute, noble, jammy, focal
                :serial: current, 20250804, 20240115
                :arch: amd64, arm64
-               :vol: ebs-gp3{release:noble;release:resolute}, ebs-gp2{release:jammy;release:focal}
+               :vol: ebs-gp3{release:resolute;release:noble}, ebs-gp2{release:jammy;release:focal}
 
             * PRODUCT: `server`, `server-minimal`, `pro-server` or `pro-minimal`
             * RELEASE: `resolute`, `26.04`, `noble`, `24.04`, `jammy`, `22.04`, `focal`, `20.04`, `bionic`, `18.04`, `xenial`, or `16.04`
@@ -52,15 +52,15 @@ To find images on AWS, you can use the `SSM Parameter Store`_, the `describe-ima
             .. formatted-dropdown::
                aws ssm get-parameters --names /aws/service/canonical/ubuntu/{eks_product}/{release}/{k8s}/stable/{serial}/{arch}/hvm/{vol}/ami-id
                :eks_product: eks, eks-pro
-               :release: noble, jammy
-               :k8s: 1.35, 1.34, 1.33, 1.32, 1.31
+               :release: resolute, noble, jammy
+               :k8s: 1.35{release:resolute;release:noble}, 1.34{release:noble;release:jammy}, 1.33{release:noble;release:jammy}, 1.32{release:noble;release:jammy}, 1.31{release:noble;release:jammy}
                :serial: current, 20250804, 20240115
                :arch: amd64, arm64
-               :vol: ebs-gp3{release:noble}, ebs-gp2{release:jammy}
+               :vol: ebs-gp3{release:resolute;release:noble}, ebs-gp2{release:jammy}
 
 
             * EKS_PRODUCT: `eks` or `eks-pro`
-            * RELEASE: `noble`, `24.04` (for EKS 1.31 or greater, or EKS Pro); `jammy`, `22.04` (for EKS 1.29 or greater, or EKS Pro); `focal`, `20.04` (for EKS <= 1.29)
+            * RELEASE: `resolute`, `26.04` (for EKS 1.35 or greater, or EKS Pro); `noble`, `24.04` (for EKS 1.31 or greater, or EKS Pro); `jammy`, `22.04` (for EKS 1.29 or greater, or EKS Pro); `focal`, `20.04` (for EKS <= 1.29)
             * K8S_VERSION: one of the supported EKS versions (e.g. `1.31`)
             * ARCH: `amd64` or `arm64`
             * VOL_TYPE: `ebs-gp2` (for <= 22.04) and `ebs-gp3` (for >= 24.04)
@@ -126,12 +126,12 @@ To find images on AWS, you can use the `SSM Parameter Store`_, the `describe-ima
             .. formatted-dropdown::
                aws ec2 describe-images --owners 099720109477 --filters 'Name=name,Values=ubuntu-{eks_product}/k8s{k8s}/images/hvm-{vol}/ubuntu-{release}-{suite}-{arch}-server-{serial}' --query 'Images | sort_by(@, &CreationDate) | [-1].ImageId' --output text
                :eks_product: eks, eks-pro
-               :release: noble, jammy
-               :suite: 24.04{release:noble}, 22.04{release:jammy}
-               :k8s: 1.35, 1.34, 1.33, 1.32, 1.31
+               :release: resolute, noble, jammy
+               :suite: 26.04{release:resolute}, 24.04{release:noble}, 22.04{release:jammy}
+               :k8s: 1.35{release:resolute;release:noble}, 1.34{release:noble;release:jammy}, 1.33{release:noble;release:jammy}, 1.32{release:noble;release:jammy}, 1.31{release:noble;release:jammy}
                :serial: *, 20250804, 20240115
                :arch: amd64, arm64
-               :vol: ssd-gp3{release:noble}, ssd{release:jammy}
+               :vol: ssd-gp3{release:resolute;release:noble}, ssd{release:jammy}
 
             In the filter expression, ``Name=name`` specifies that the filter should apply to the AMI's
             **Name** attribute (the human-readable AMI name string) and the ``Values=...`` part provides
@@ -146,7 +146,7 @@ To find images on AWS, you can use the `SSM Parameter Store`_, the `describe-ima
             * EKS_PRODUCT: `eks` or `eks-pro`
             * K8S_VERSION: one of the supported EKS versions (e.g. `1.31`)
             * VOL_TYPE: `ssd` (for <= 22.04) and `ssd-gp3` (for >= 24.04)
-            * RELEASE: `noble-24.04` (for EKS 1.31 or greater, or EKS Pro); `jammy-22.04` (for EKS 1.29 or greater, or EKS Pro); `focal-20.04` (for EKS <= 1.29)
+            * RELEASE: `resolute-26.04` (for EKS 1.35 or greater, or EKS Pro); `noble-24.04` (for EKS 1.31 or greater, or EKS Pro); `jammy-22.04` (for EKS 1.29 or greater, or EKS Pro); `focal-20.04` (for EKS <= 1.29)
             * ARCH: `amd64` or `arm64`
             
 
