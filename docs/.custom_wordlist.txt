@@ -3,6 +3,7 @@ AArch
 ABIs
 ACG
 ACR
+Ashburn
 Ad-hoc
 adapter
 addons
@@ -87,6 +88,7 @@ datastores
 decrypt
 decrypted
 deregister
+DenseIO
 DHCP
 Diátaxis
 DISA
@@ -368,6 +370,7 @@ TLS
 toctree
 toctree
 TPM
+TSME
 tunings
 tzdata
 UA
