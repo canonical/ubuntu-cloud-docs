@@ -21,9 +21,18 @@ Oracle Cloud offers comprehensive security and data protection in the cloud. Thi
 Full-disk encryption (FDE)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-FDE ensures that all data on the disk is inaccessible without an encryption key. To use FDE on Oracle Cloud, refer to :doc:`../oracle-how-to/use-fde`. 
+FDE ensures that all data on the disk is inaccessible without an encryption key. To use FDE on Oracle Cloud, refer to :doc:`../oracle-how-to/use-fde`.
 
 
+Confidential computing
+~~~~~~~~~~~~~~~~~~~~~~
+
+Confidential computing protects data in-use by performing computation in a hardware-based trusted execution environment. Oracle Cloud supports confidential computing on AMD EPYC™ processors using two technologies:
+
+* **AMD SEV** (Secure Encrypted Virtualization) on VM shapes — encrypts VM memory with a unique key per VM, isolating guests from the hypervisor.
+* **AMD TSME** (Transparent Secure Memory Encryption) on bare metal shapes — encrypts all system memory transparently.
+
+These technologies are available on E3, E4, and E5 shapes across select regions. For a general overview of confidential computing technologies, see :doc:`all-clouds:all-clouds-explanation/confidential-computing`. To enable confidential computing on an Oracle Cloud instance, refer to :doc:`../oracle-how-to/enable-confidential-computing`.
 
 
 .. _`Ubuntu security page`: https://ubuntu.com/security
