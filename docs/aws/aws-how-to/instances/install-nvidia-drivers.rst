@@ -62,7 +62,7 @@ The NVIDIA Tesla T4 GPU should be listed in the output. Now, install the NVIDIA 
 .. code::
 
     sudo apt install -y ubuntu-drivers-common
-    sudo ubuntu-drivers --gpgpu install
+    sudo ubuntu-drivers install --gpgpu
 
 .. note::
     If you need a specific NVIDIA driver version, use e.g. ``sudo ubuntu-drivers --gpgpu install nvidia:535``.
