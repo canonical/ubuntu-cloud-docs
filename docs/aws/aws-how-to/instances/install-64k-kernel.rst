@@ -62,4 +62,4 @@ and reboot the instance, for the change to take effect:
 
 Future boots will automatically use the latest version of the selected kernel flavor.
 
-.. _HWE kernel: https://canonical-kernel-docs.readthedocs-hosted.com/latest/reference/glossary/#term-HWE
+.. _HWE kernel: https://documentation.ubuntu.com/kernel/reference/glossary/#term-HWE
