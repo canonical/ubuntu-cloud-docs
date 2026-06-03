@@ -32,9 +32,10 @@ Confidential computing protects data in-use by performing computation in a hardw
 * **AMD SEV** (Secure Encrypted Virtualization) on VM shapes — encrypts VM memory with a unique key per VM, isolating guests from the hypervisor.
 * **AMD TSME** (Transparent Secure Memory Encryption) on bare metal shapes — encrypts all system memory transparently.
 
-These technologies are available on E3, E4, and E5 shapes across select regions. For a general overview of confidential computing technologies, see :doc:`all-clouds:all-clouds-explanation/confidential-computing`. To enable confidential computing on an Oracle Cloud instance, refer to :doc:`../oracle-how-to/enable-confidential-computing`.
+These technologies are available on E3, E4, and E5 shapes across select regions. For further details about AMD SEV and TSME, see `AMD's description of SEV`_. To enable confidential computing on an Oracle Cloud instance, refer to :doc:`../oracle-how-to/enable-confidential-computing`.
 
 
 .. _`Ubuntu security page`: https://ubuntu.com/security
 .. _`Introductory page on security`: https://documentation.ubuntu.com/server/explanation/intro-to/security/
 .. _`Security in the Oracle Cloud Infrastructure`: https://docs.oracle.com/en-us/iaas/Content/Security/Concepts/security.htm
+.. _`AMD's description of SEV`: https://www.amd.com/en/developer/sev.html
