@@ -49,9 +49,9 @@ Governance and policies
 
 .. toctree::
    :hidden:
-   :maxdepth: 2
+   :maxdepth: 1
 
-   vmware-how-to/index
+   vmware-reference/index
    vmware-how-to/contribute-to-these-docs
 
 .. _Get support: https://ubuntu.com/cloud/public-cloud
