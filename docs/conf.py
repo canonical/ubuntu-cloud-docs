@@ -320,6 +320,7 @@ multiproject_projects = {
     "oracle": {},
     "oci": {},
     "public-images": {},
+    "vmware": {},
 }
 
 # Adds custom CSS files, located under 'html_static_path'

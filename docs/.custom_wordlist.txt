@@ -420,6 +420,7 @@ VMware
 VNC
 VPC
 VPCs
+VCF
 VSI
 vTPM
 walinuxagent
