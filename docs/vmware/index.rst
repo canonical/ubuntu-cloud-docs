@@ -1,5 +1,5 @@
 .. meta::
-   :description: Discover Ubuntu on VMware, including optimized images, deployment guides, and best practices for VMware workloads.
+   :description: Discover Ubuntu on VMware, including a dashboard for detecting CVE vulnerabilities on VMware workloads.
 
 Ubuntu on VMware
 ================
@@ -20,10 +20,7 @@ and features needed to run specific workloads.
 How this documentation is organized
 ------------------------------------
 
-This documentation uses the `Diátaxis documentation structure <https://diataxis.fr/>`__.
-
-* :doc:`How-to guides <vmware-how-to/index>` assume you have basic familiarity with Ubuntu
-  images on VMware and want to achieve specific goals.
+This documentation is currently minimal and includes information about :doc:`finding CVE vulnerabilities <vmware-reference/vcf-cve-dashboard>` on active Ubuntu on VMware images. We'll be updating it with more content in the future, including how-to guides and other reference material for running Ubuntu on VMware. At that point, the documentation will use the `Diátaxis documentation structure <https://diataxis.fr/>`__.
 
 ---------
 
@@ -51,7 +48,7 @@ Governance and policies
    :hidden:
    :maxdepth: 1
 
-   vmware-reference/index
+   vmware-reference/vcf-cve-dashboard
    vmware-how-to/contribute-to-these-docs
 
 .. _Get support: https://ubuntu.com/cloud/public-cloud
