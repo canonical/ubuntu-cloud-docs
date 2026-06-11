@@ -393,5 +393,6 @@ intersphinx_mapping = {
     'ibm': ('https://canonical-ibm.readthedocs-hosted.com/', None),
     'oracle': ('https://documentation.ubuntu.com/oracle/', None),
     'oci': ('https://documentation.ubuntu.com/oci-registries/', None),
-    'public-images': ('https://documentation.ubuntu.com/public-images/', None)
+    'public-images': ('https://documentation.ubuntu.com/public-images/', None),
+    'vmware': ('https://documentation.ubuntu.com/vmware/', None)
 }

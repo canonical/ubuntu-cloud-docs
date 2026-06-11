@@ -10,7 +10,7 @@ html_title = project + ' documentation'
 # in the sub projects for correct functioning (don't remove them)
 html_context = {
 
-      # Add your product tag (the orange part of your logo, will be used in the
+    # Add your product tag (the orange part of your logo, will be used in the
     # header) to ".sphinx/_static" and change the path here (start with "_static")
     # (default is the circle of friends)
     'product_tag': '_static/tag.png',
