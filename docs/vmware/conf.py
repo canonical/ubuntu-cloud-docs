@@ -10,13 +10,7 @@ html_title = project + ' documentation'
 # in the sub projects for correct functioning (don't remove them)
 html_context = {
 
-    # Change to the link to the website of your product (without "https://")
-    # For example: "ubuntu.com/lxd" or "microcloud.is"
-    # If there is no product website, edit the header template to remove the
-    # link (see the readme for instructions).
-    'product_page': 'ubuntu.com/vmware',
-
-    # Add your product tag (the orange part of your logo, will be used in the
+      # Add your product tag (the orange part of your logo, will be used in the
     # header) to ".sphinx/_static" and change the path here (start with "_static")
     # (default is the circle of friends)
     'product_tag': '_static/tag.png',
@@ -57,6 +51,10 @@ html_context = {
     'sequential_nav': "both"
 }
 
+# If your documentation is hosted on https://docs.ubuntu.com/,
+#       uncomment and update as needed.
+
+slug = 'vmware'
 
 ############################################################
 ### Sitemap configuration
