@@ -25,6 +25,7 @@ Ansible
 Anthos
 API
 APIs
+ARN
 AppArmor
 armhf
 ASIC

@@ -21,6 +21,7 @@ Perform tasks such as finding the right image to use and launching different typ
 Create a customized AMI and CloudFormation templates:
 
 * :doc:`Build an Ubuntu Pro AMI using Packer <instances/build-pro-ami-using-packer>`
+* :doc:`Build a custom Ubuntu Pro image with EC2 Image Builder <instances/build-ubuntu-pro-image-with-ec2-image-builder>`
 * :doc:`Create CloudFormation templates <instances/build-cloudformation-templates>`
 
 Perform custom configurations like installing custom kernels and drivers:
