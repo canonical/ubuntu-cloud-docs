@@ -1,15 +1,16 @@
 .. meta::
-   :description: Explanations of Ubuntu on GCP offerings, security, google guest agents, and image retention policies for cloud deployments.
+   :description: Explanations of Ubuntu on GCP offerings, security, google guest agents, image testing, and image retention policies for cloud deployments.
 
 Explanation
 ===========
 
-If you have questions about our offerings on Google Cloud, about Google's 'guest agents' on Ubuntu, about the security features available, or if you are wondering about the lifetime of any image, then this is the place to look.
+If you have questions about our offerings on Google Cloud, about Google's 'guest agents' on Ubuntu, about the security features available, about how our images are tested, or if you are wondering about the lifetime of any image, then this is the place to look.
 
 .. toctree::
    :maxdepth: 1
-   
+
    Canonical's offerings <canonical-offerings>
    Google's "guest agents" <guest-agents>
    Security overview <security-overview>
+   Image testing <gce-image-testing>
    Image retention policy <gce-image-retention-policy>

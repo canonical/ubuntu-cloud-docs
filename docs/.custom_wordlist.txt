@@ -26,6 +26,7 @@ Anthos
 API
 APIs
 AppArmor
+Arm
 armhf
 ASIC
 AskUbuntu
@@ -59,6 +60,7 @@ Chrony
 CIDR
 CIS
 cis
+CIT
 cjk
 CLI
 CloudFormation
@@ -73,6 +75,7 @@ CPUs
 cron
 cryptographic
 cryptographically
+CTF
 CUDA
 customizations
 CVE
@@ -179,6 +182,7 @@ initrd
 initrds
 installable
 instantiation
+Intel
 intra
 intranode
 io
@@ -192,6 +196,7 @@ IronBank
 iSCSI
 Istio
 JSON
+JUnit
 Juju
 Jupyter
 Karbon
@@ -358,6 +363,7 @@ subnet
 subnets
 subtree
 superset
+systemd
 Tanzu
 TCO
 TCP
@@ -370,6 +376,7 @@ TLS
 toctree
 toctree
 TPM
+TPU
 TSME
 tunings
 tzdata
