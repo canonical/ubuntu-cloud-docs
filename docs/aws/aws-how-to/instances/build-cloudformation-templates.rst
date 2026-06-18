@@ -81,10 +81,13 @@ Since Ubuntu Pro FIPS is only available at the AWS Marketplace, the product ID n
    * - Ubuntu Pro FIPS 20.04 LTS
      - AMD64
      - ``prod-k6fgbnayirmrc``
-   * - Ubuntu Pro FIPS 22.04 LTS
+   * - Ubuntu Pro FIPS 20.04 LTS (FIPS with updates)
+     - AMD64
+     - ``prod-ibsqi42w6rtey``
+   * - Ubuntu Pro FIPS 22.04 LTS (FIPS with updates)
      - AMD64
      - ``prod-y5kejmnu3wodg``
-   * - Ubuntu Pro FIPS 22.04 LTS
+   * - Ubuntu Pro FIPS 22.04 LTS (FIPS with updates)
      - ARM64
      - ``prod-rcuudwwonvpew``
 
