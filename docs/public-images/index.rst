@@ -1,5 +1,5 @@
 .. meta::
-   :description: Discover details about the publically available Ubuntu cloud images, including LXD, OpenStack, Vagrant, QCOW and Buildd images.
+   :description: Discover details about the publicly available Ubuntu cloud images, including LXD, OpenStack, Vagrant, QCOW and Buildd images.
 
 
 Ubuntu Public Images
