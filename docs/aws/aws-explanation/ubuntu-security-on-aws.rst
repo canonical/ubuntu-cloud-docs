@@ -41,8 +41,8 @@ Enhanced security using Ubuntu Pro
 
 Apart from the Ubuntu Server images, AWS also has images for `Ubuntu Pro`_, which come with enhanced security features:
 
-* Expanded Security Maintenance (ESM): Provides 10 years of security patching for packages in the Ubuntu (main and universe) repositories.
-* Live kernel updates: These reduce downtime and unplanned reboots in case of kernel vulnerabilities.
+* Expanded Security Maintenance (ESM): Provides 10 years of security patching for packages in the Ubuntu (main and universe) repositories, with an additional 5 years available through the Legacy add-on.
+* Kernel Livepatch: These reduce downtime and unplanned reboots in case of kernel vulnerabilities.
 * FIPS compliance: Includes FIPS-certified modules to enable the use of Ubuntu in highly regulated environments.
 
 To find Ubuntu Pro images on AWS (for both EC2 and EKS), refer to :doc:`../aws-how-to/instances/find-ubuntu-images`. The product parameter allows you to specify Pro.

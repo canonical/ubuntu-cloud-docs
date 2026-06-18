@@ -13,7 +13,7 @@ For each Ubuntu release, Canonical delivers multiple customized images to AWS. T
 
 * `Minimal server images`_ - These are designed for automated deployment at scale and have a reduced default package set. Things like interactive usage tools are omitted. They are much smaller, boot faster, and require fewer security updates over time due to the fewer installed packages.
 
-* `Ubuntu Pro images`_ - These are premium images that include certified components, hardening options, comprehensive open source security coverage for 10 years, `kernel Livepatch service`_ and optional `24/7 enterprise-grade support`_.
+* `Ubuntu Pro images`_ - These are premium images that include certified components, hardening options, comprehensive open source security coverage for 10 years (extendable to 15 years with the Legacy add-on), `kernel Livepatch service`_ and optional `24/7 enterprise-grade support`_.
 
 * `Ubuntu Pro FIPS images`_ - These are images built on Ubuntu Pro, but with the FIPS-certified modules pre-enabled so that they are used from the first boot of the image.
 
