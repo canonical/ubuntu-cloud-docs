@@ -29,6 +29,7 @@ the main archive to 10 years through the ``esm-infra`` entitlement. In addition
 to patching the core of Ubuntu (i.e. the `Ubuntu main` repository), Pro also offers security maintenance of the 
 `Ubuntu universe` repository. This security coverage is considered best effort
 without Ubuntu Pro.
+The Legacy add-on extends ESM by a further 5 years, for up to 15 years total.
 
 Livepatch
 ~~~~~~~~~
