@@ -40,8 +40,8 @@ In this documentation
     * - **Custom deployments**
       - :doc:`Deploy Kubernetes with Ubuntu Pro on GCE <google-how-to/gke/deploy-kubernetes-with-ubuntu-pro>` • :doc:`Create customized docker containers <google-how-to/gce/create-customized-docker-container>` • :doc:`Set hostname <google-how-to/gce/set-hostname-using-cloudinit>` 
       
-    * - **Policies**
-      - :doc:`Security aspects <google-explanation/security-overview>` • :doc:`Image retention policy <google-explanation/gce-image-retention-policy>` 
+    * - **Quality and policies**
+      - :doc:`Security aspects <google-explanation/security-overview>` • :doc:`Image testing <google-explanation/gce-image-testing>` • :doc:`Image retention policy <google-explanation/gce-image-retention-policy>`
 
 
 
