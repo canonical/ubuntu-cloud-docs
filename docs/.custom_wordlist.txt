@@ -69,6 +69,7 @@ CloudSigma
 CNCF
 codename
 config
+coreutils
 CPC
 cpc
 CPUs
@@ -173,6 +174,7 @@ hvm
 HWE
 hyperparameter
 IAM
+ibm
 ideation
 ImageLocation
 InfiniBand
@@ -188,6 +190,7 @@ intranode
 io
 IOPS
 IOV
+IPs
 iptables
 ipv
 IPv
@@ -300,6 +303,7 @@ ppc
 pre
 prebuilt
 preemptible
+prereqs
 programmatically
 provisioner
 provisioners
@@ -325,6 +329,7 @@ rootfs
 RSA
 rst
 RTD
+runcmd
 runtime
 runtimes
 rustc
@@ -362,7 +367,9 @@ subfolders
 subnet
 subnets
 subtree
+sudo
 superset
+systemctl
 systemd
 Tanzu
 TCO

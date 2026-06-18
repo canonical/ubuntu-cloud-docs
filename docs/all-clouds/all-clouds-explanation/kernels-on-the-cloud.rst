@@ -68,5 +68,5 @@ Given each kernel package receives updates as kernels become available, it is be
 
 .. _`live-patch service on Ubuntu Pro`: https://ubuntu.com/security/livepatch
 .. _`Hardware Enablement (HWE) Kernel`: https://documentation.ubuntu.com/kernel/reference/hwe-kernels/
-.. _`Ubuntu kernel release cycle`: https://ubuntu.com/about/release-cycle#ubuntu-kernel-release-cycle
+.. _`Ubuntu kernel release cycle`: https://ubuntu.com/about/release-cycle
 .. _`installation options`: https://ubuntu.com/kernel/lifecycle

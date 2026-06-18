@@ -190,12 +190,13 @@ if os.environ.get("READTHEDOCS"):
 linkcheck_ignore = [
     "http://127.0.0.1:8000",
     'http://localhost:8000',
-    r'.*#.*'
+    r'.*#.*',
     "https://github.com",
     r"https://matrix\.to/.*",
     "https://example.com",
     # SourceForge domains often block linkcheck
     r"https://.*\.sourceforge\.(net|io)/.*",
+    "https://www.cloudsigma.com"
 ]
 
 # A regex list of URLs where anchors are ignored by 'make linkcheck'
