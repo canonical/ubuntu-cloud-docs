@@ -348,7 +348,7 @@ If passwords are enabled, follow the instructions in the
 CIS 5.1.1 - Ensure permissions on /etc/ssh/sshd_config are configured
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 The USG remediation sets permissions on ``/etc/ssh/sshd_config`` itself but leaves files
-inside ``/etc/ssh/sshd_config.d/`` unchanged. Files added by cloud-init or other tooling
+inside ``/etc/ssh/sshd_config.d/`` unchanged. Files added by :doc:`cloud-init <public-images:public-images-how-to/use-local-cloud-init-ds>` or other tooling
 after remediation may not have ``0600`` permissions. Check and correct manually if needed::
 
    sudo chmod 0600 /etc/ssh/sshd_config.d/*

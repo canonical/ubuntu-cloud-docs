@@ -20,6 +20,7 @@ Requirements
         
         ``sudo qemu-img convert -O raw /var/lib/libvirt/images/my-machine.qcow2 my-machine.raw``
     
+For more about LXD and OpenStack Ubuntu images, see :doc:`LXD/OpenStack images <public-images:public-images-explanation/lxd-openstack-images>`.
 
 
 Upload your OVA machine image to S3
@@ -123,6 +124,7 @@ Get the VM image ready for production
 -------------------------------------
 
 The VM image is almost ready to be used at scale on AWS. The last step is to allow cloud-init to reinitialize the machine ID. This ensures that each instance launched from this image will generate its own machine ID and will re-detect the cloud that it is running on so that certain features specific to AWS can be enabled. This is also needed if you’re planning to upgrade to Ubuntu Pro in the future.
+For using cloud-init with a local data source, see :doc:`Use a local cloud-init data source <public-images:public-images-how-to/use-local-cloud-init-ds>`.
 
 Run:
 

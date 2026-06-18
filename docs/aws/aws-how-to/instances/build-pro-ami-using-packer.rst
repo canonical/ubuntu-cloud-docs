@@ -50,6 +50,7 @@ Create AWS Credentials
 ~~~~~~~~~~~~~~~~~~~~~~
 
 Follow the instructions in the *Programmatic access* section of the `IAM page for creating credentials`_. For a list of the minimal set of permissions needed in your IAM user or role policy, refer to `IAM permissions needed for Packer`_.
+For an overview of AWS credentials used with EC2, see :doc:`../../aws-reference/ec2-credentials`.
 
 Save your credentials, they should be similar to:
 

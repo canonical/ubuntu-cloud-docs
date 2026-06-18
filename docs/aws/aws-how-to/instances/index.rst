@@ -9,7 +9,7 @@ These how-to guides relate to launching and using Ubuntu-based EC2 instances. Th
 Finding images and launching instances
 --------------------------------------
 
-Guides to help you find the right Ubuntu image for your use case and launch different types of EC2 instances, including desktops, confidential computing instances, local VMs and hardened instances.
+Guides to help you find the right Ubuntu image for your use case and launch different types of EC2 instances, including desktops, :doc:`confidential computing <all-clouds:all-clouds-explanation/confidential-computing>` instances, local VMs and hardened instances.
 
 * :doc:`Launch an instance using CLI <launch-ubuntu-ec2-instance>`
 * :doc:`Find images <find-ubuntu-images>`

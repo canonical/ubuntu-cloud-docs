@@ -10,12 +10,14 @@ This guide covers creating Pro clusters using tokens only. If you prefer getting
 
 For FIPS clusters, please note that only Ubuntu 22.04 LTS has NIST-validated FIPS modules at the moment.
 
+For a dedicated FIPS guide, see :doc:`deploy-ubuntu-pro-fips-cluster`.
+
 Prerequisites
 ~~~~~~~~~~~~~
 
 - ``eksctl``: Check the instructions to `install eksctl`_
 - ``Packer`` version 1.8.1 or newer installed. (`Packer installation instructions`_). Only needed if you want to enable FIPS for the cluster nodes. 
-- Your AWS access key ID and secret access key
+- Your AWS access key ID and secret access key (see :doc:`../../aws-reference/ec2-credentials`)
 - An Ubuntu Pro token
 
 
@@ -158,6 +160,8 @@ The steps needed for deploying the cluster depend on whether you need to enable 
 
         .. note::
             Save a copy of the provided AMI ID for the next step.
+
+        See also: :doc:`Build a Pro AMI using Packer <../instances/build-pro-ami-using-packer>`.
 
 
 Create the ``eksctl`` config file
