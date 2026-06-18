@@ -4,7 +4,7 @@
 Explanation
 ===========
 
-If you are curious about our offerings on AWS, about snap usage in EKS, about the security features available, or if you are wondering about the lifetime of any image, then this is the place to look.  
+If you are curious about our offerings on AWS, about snap usage in EKS, about the security features available, or if you are wondering about the lifetime of any image, then this is the place to look.
 
 Our offerings on AWS
 --------------------

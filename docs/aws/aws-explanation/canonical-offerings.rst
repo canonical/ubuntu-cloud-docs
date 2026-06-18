@@ -23,7 +23,7 @@ For each Ubuntu release, Canonical delivers multiple customized images to AWS. T
 
 * Ubuntu Pro EKS images - These are Ubuntu Pro AMIs optimized to run as worker nodes on EKS. They are similar to the Ubuntu Server EKS images, but also include all the premium features of an Ubuntu Pro image such as certified components, hardening options, kernel livepatch and expanded security maintenance.
 
-Each of these variations have multiple versions that are released at regular intervals. For instance, untested dailies maybe published everyday, while the fully tested release versions include interim versions published every six months and long-term support (LTS) versions published every 2 years. 
+Each of these variations have multiple versions that are released at regular intervals. For instance, untested dailies may be published every day, while the fully tested release versions include interim versions published every six months and long-term support (LTS) versions published every 2 years.
 
 The different variations and the means to find them in AWS are summarized below: 
 

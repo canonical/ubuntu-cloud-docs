@@ -10,7 +10,7 @@ Ubuntu images on AWS include the security features provided by both Ubuntu and A
 Ubuntu security features
 ------------------------
 
-Ubuntu on AWS provides all the security features available on Ubuntu Server. A detailed description of these features can be found on the `Ubuntu security page`_ and in our explanation about :doc:`Security in the Ubuntu cloud images <all-clouds:all-clouds-explanation/security-overview>`. For further guidance on usage refer to  Ubuntu server's `Introductory page on security`_. 
+Ubuntu on AWS provides all the security features available on Ubuntu Server. A detailed description of these features can be found on the `Ubuntu security page`_ and in our explanation about :doc:`Security in the Ubuntu cloud images <all-clouds:all-clouds-explanation/security-overview>`. For further guidance on usage refer to Ubuntu server's `Introductory page on security`_.
 
 
 AWS security features

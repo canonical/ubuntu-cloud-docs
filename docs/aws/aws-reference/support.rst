@@ -42,7 +42,7 @@ Users of these images are able to get support directly through the
 Public Bug Tracker
 ------------------
 The Canonical Public Cloud (CPC) team maintains a bug tracker for all cloud images. If you find
-a problem with a cloud image you case `file a bug`_.
+a problem with a cloud image you can `file a bug`_.
 When creating a bug please describe the issue, provide a minimal reproducer, and ensure you include
 which AMI you see this issue on. CPC regularly triage issues but note that support here is
 best effort.
