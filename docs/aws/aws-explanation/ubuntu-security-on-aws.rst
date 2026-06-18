@@ -29,6 +29,7 @@ CIS hardened image
 CIS hardened images are available for use on Amazon EC2. These images include the security related configurations specified by the Center for Internet Security (CIS).
 
 To create a hardened image using Ubuntu Pro, refer to `Build a CIS hardened Ubuntu Pro server image on the AWS Console`_.
+For step-by-step hardening instructions, see :doc:`../aws-how-to/instances/cis-hardening`.
 
 AMD SEV-SNP
 ~~~~~~~~~~~
