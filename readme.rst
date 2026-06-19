@@ -13,6 +13,7 @@ Each documentation set is currently published to a different location:
 * https://documentation.ubuntu.com/oci-registries/
 * https://documentation.ubuntu.com/oracle/
 * https://documentation.ubuntu.com/public-images/
+* https://documentation.ubuntu.com/vmware/
 
 
 How to work with this documentation
@@ -40,7 +41,7 @@ Since each cloud has it's own separate documentation set, you have to specify th
 
 	PROJECT=aws make run
 
-The different projects that can be specfied are 'all-clouds', 'aws', 'azure', 'google', 'ibm', 'oracle', 'oci' and 'public-images'.
+The different projects that can be specfied are 'all-clouds', 'aws', 'azure', 'google', 'ibm', 'oracle', 'oci', 'public-images' and 'vmware'.
 
 The documentation will be available at `127.0.0.1:8000 <http://127.0.0.1:8000>`_ or equivalently at `localhost:8000 <http://localhost:8000>`_.
 
@@ -60,7 +61,7 @@ Check spelling
 
 Run a spell check::
 
-	PROJECT=azure make spelling
+	make spelling
 
 If new words are to be added to the allowed list, update ``.custom_wordlist.txt`` accordingly.
 
@@ -85,3 +86,4 @@ Each project has its own contribution guide:
 * `OCI container registries <https://documentation.ubuntu.com/oci-registries/oci-how-to/contribute-to-these-docs/>`_
 * `Oracle <https://documentation.ubuntu.com/oracle/oracle-how-to/contribute-to-these-docs/>`_
 * `Public Images <https://documentation.ubuntu.com/public-images/public-images-how-to/contribute-to-these-docs/>`_
+* `VMware <https://documentation.ubuntu.com/vmware/vmware-how-to/contribute-to-these-docs/>`_
