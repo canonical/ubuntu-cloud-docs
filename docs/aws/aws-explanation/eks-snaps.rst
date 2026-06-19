@@ -27,3 +27,4 @@ Snaps
      - `aws-credential-provider <https://github.com/kubernetes/cloud-provider-aws/tree/master?tab=readme-ov-file#aws-credential-provider>`_, which provides credentials for allowing a k8s cluster to pull container images from ECR
      - EKS 1.28
 
+For deploying Ubuntu Pro containers on Kubernetes clusters, see :doc:`Deploy Ubuntu Pro containers on Kubernetes <oci:oci-how-to/deploy-pro-container-on-pro-kubernetes-cluster>`.

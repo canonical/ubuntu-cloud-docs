@@ -13,7 +13,7 @@ For each Ubuntu release, Canonical delivers multiple customized images to AWS. T
 
 * `Minimal server images`_ - These are designed for automated deployment at scale and have a reduced default package set. Things like interactive usage tools are omitted. They are much smaller, boot faster, and require fewer security updates over time due to the fewer installed packages.
 
-* `Ubuntu Pro images`_ - These are premium images that include certified components, hardening options, comprehensive open source security coverage for 10 years, `kernel Livepatch service`_ and optional `24/7 enterprise-grade support`_.
+* `Ubuntu Pro images`_ - These are premium images that include certified components, hardening options, comprehensive open source security coverage for 10 years (extendable to 15 years with the Legacy add-on), `kernel Livepatch service`_ and optional `24/7 enterprise-grade support`_.
 
 * `Ubuntu Pro FIPS images`_ - These are images built on Ubuntu Pro, but with the FIPS-certified modules pre-enabled so that they are used from the first boot of the image.
 
@@ -23,7 +23,7 @@ For each Ubuntu release, Canonical delivers multiple customized images to AWS. T
 
 * Ubuntu Pro EKS images - These are Ubuntu Pro AMIs optimized to run as worker nodes on EKS. They are similar to the Ubuntu Server EKS images, but also include all the premium features of an Ubuntu Pro image such as certified components, hardening options, kernel livepatch and expanded security maintenance.
 
-Each of these variations have multiple versions that are released at regular intervals. For instance, untested dailies maybe published everyday, while the fully tested release versions include interim versions published every six months and long-term support (LTS) versions published every 2 years. 
+Each of these variations have multiple versions that are released at regular intervals. For instance, untested dailies may be published every day, while the fully tested release versions include interim versions published every six months and long-term support (LTS) versions published every 2 years.
 
 The different variations and the means to find them in AWS are summarized below: 
 

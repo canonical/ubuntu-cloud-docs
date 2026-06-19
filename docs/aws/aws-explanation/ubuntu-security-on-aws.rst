@@ -10,7 +10,7 @@ Ubuntu images on AWS include the security features provided by both Ubuntu and A
 Ubuntu security features
 ------------------------
 
-Ubuntu on AWS provides all the security features available on Ubuntu Server. A detailed description of these features can be found on the `Ubuntu security page`_ and in our explanation about :doc:`Security in the Ubuntu cloud images <all-clouds:all-clouds-explanation/security-overview>`. For further guidance on usage refer to  Ubuntu server's `Introductory page on security`_. 
+Ubuntu on AWS provides all the security features available on Ubuntu Server. A detailed description of these features can be found on the `Ubuntu security page`_ and in our explanation about :doc:`Security in the Ubuntu cloud images <all-clouds:all-clouds-explanation/security-overview>`. For further guidance on usage refer to Ubuntu server's `Introductory page on security`_.
 
 
 AWS security features
@@ -29,6 +29,7 @@ CIS hardened image
 CIS hardened images are available for use on Amazon EC2. These images include the security related configurations specified by the Center for Internet Security (CIS).
 
 To create a hardened image using Ubuntu Pro, refer to `Build a CIS hardened Ubuntu Pro server image on the AWS Console`_.
+For step-by-step hardening instructions, see :doc:`../aws-how-to/instances/cis-hardening`.
 
 AMD SEV-SNP
 ~~~~~~~~~~~
@@ -40,8 +41,8 @@ Enhanced security using Ubuntu Pro
 
 Apart from the Ubuntu Server images, AWS also has images for `Ubuntu Pro`_, which come with enhanced security features:
 
-* Expanded Security Maintenance (ESM): Provides 10 years of security patching for packages in the Ubuntu (main and universe) repositories.
-* Live kernel updates: These reduce downtime and unplanned reboots in case of kernel vulnerabilities.
+* Expanded Security Maintenance (ESM): Provides 10 years of security patching for packages in the Ubuntu (main and universe) repositories, with an additional 5 years available through the Legacy add-on.
+* Kernel Livepatch: These reduce downtime and unplanned reboots in case of kernel vulnerabilities.
 * FIPS compliance: Includes FIPS-certified modules to enable the use of Ubuntu in highly regulated environments.
 
 To find Ubuntu Pro images on AWS (for both EC2 and EKS), refer to :doc:`../aws-how-to/instances/find-ubuntu-images`. The product parameter allows you to specify Pro.
