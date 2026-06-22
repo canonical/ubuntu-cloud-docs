@@ -25,7 +25,7 @@ To follow these steps, you'll need ``aws-cli`` and ``jq``:
 
 .. code-block::
 
-   sudo snap install aws-cli
+   sudo snap install aws-cli --classic
    sudo apt install jq
 
 Download a prebuilt UEFI Secure Boot variable store

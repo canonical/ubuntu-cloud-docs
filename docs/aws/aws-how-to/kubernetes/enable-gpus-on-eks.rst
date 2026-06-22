@@ -126,7 +126,7 @@ Once the pod is up and running, check its log using:
 
 .. code-block:: bash
 
-   kubectl logs nvidia-smi.yaml
+   kubectl logs nvidia-smi
 
 .. _`GPU based instances`: https://docs.aws.amazon.com/dlami/latest/devguide/gpu.html
 .. _`NVIDIA drivers`: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/install-nvidia-driver.html

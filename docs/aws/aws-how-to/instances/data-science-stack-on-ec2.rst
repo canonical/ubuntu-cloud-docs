@@ -49,7 +49,7 @@ Now install the GPU drivers:
 .. code::
 
     sudo apt install -y ubuntu-drivers-common
-    sudo ubuntu-drivers install
+    sudo ubuntu-drivers install --gpgpu
     sudo reboot
 
 

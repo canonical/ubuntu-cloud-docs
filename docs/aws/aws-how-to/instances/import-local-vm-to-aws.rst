@@ -128,7 +128,7 @@ Run:
 
 .. code::
 
-        sudo cloud-init clean  
+        sudo cloud-init clean --machine-id
 
 
 Your machine is now ready. You can either continue using this VM as a normal EC2 instance or create another AMI from this instance to have your final golden image, ready for production.

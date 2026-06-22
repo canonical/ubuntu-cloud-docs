@@ -50,10 +50,12 @@ The steps needed for deploying the cluster depend on whether you need to enable 
 
             --==MYBOUNDARY==
             Content-Type: text/cloud-config; charset="us-ascii"
-            ubuntu_advantage:
-            token: <PRO_TOKEN>
-            enable:
-            - esm
+
+            ubuntu_pro:
+              token: <PRO_TOKEN>
+              enable:
+                - esm-infra
+                - esm-apps
         
             --==MYBOUNDARY==
             Content-Type: text/x-shellscript; charset="us-ascii"
@@ -224,7 +226,7 @@ For further cluster customization check out `eksctl details`_.
 Create the EKS cluster
 ~~~~~~~~~~~~~~~~~~~~~~
 
-To create the EKS cluster, run ``eksctl create nodegroup -f cluster.yaml``
+To create the EKS cluster, run ``eksctl create cluster -f cluster.yaml``
 (you might need to specify the ``--profile`` option if you have multiple
 profiles). When this command finishes, see the nodes with
 
