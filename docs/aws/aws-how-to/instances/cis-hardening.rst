@@ -8,7 +8,7 @@ Post-deployment CIS Hardening for Ubuntu 22.04 EC2
 ==================================================
 
 This guide explains how to apply **CIS Level 1** controls that are **not**
-pre-configured in Canonical's Ubuntu 22.04 *CIS-hardened* AMIs.  
+pre-configured in Canonical's Ubuntu 22.04 *CIS-hardened* AMIs. 
 Because these controls require environment-specific details,
 they cannot be included in our base AMI.
 
@@ -84,7 +84,7 @@ The base CIS hardened image already contains the base chains (ordered lists of `
 
    .. code-block:: console
    
-      # add http/s output rules to allow cloudinit to function
+      # add http/s output rules to allow cloud-init to function
       sudo sed -i '/^[[:space:]]*chain output {/a\
       \        tcp dport 80 ct state new accept\n\
       \        tcp dport 443 ct state new accept\n\

@@ -100,7 +100,7 @@ This documentation uses the `Diátaxis documentation structure <https://diataxis
 
 * :doc:`How-to guides  <aws-how-to/index>` assume you have basic familiarity with Ubuntu images on AWS and want to achieve specific goals. They are instructions covering key operations and common tasks involving the use of Ubuntu on EC2 and EKS. 
 
-* :doc:`Reference <aws-reference/index>` includes technical information about Ubuntu on AWS, such  EC2 credentials, EKS snaps, Ubuntu Pro and the support options available on AWS.
+* :doc:`Reference <aws-reference/index>` includes technical information about Ubuntu on AWS, such EC2 credentials, EKS snaps, Ubuntu Pro and the support options available on AWS.
 
 * :doc:`Explanation <aws-explanation/index>` includes topic overviews, background and context and detailed discussion. These include key topics, such as our offerings, our image retention policy and the usage of snaps in our EKS images.
 

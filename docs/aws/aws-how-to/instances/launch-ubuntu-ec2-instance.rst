@@ -138,7 +138,7 @@ You will be billed as long the instance is running, so you'll probably want to s
 
 .. code::
 
-    aws ec2 terminate-instances --instance -ids <instance id>
+    aws ec2 terminate-instances --instance-ids <instance id>
 
 
 

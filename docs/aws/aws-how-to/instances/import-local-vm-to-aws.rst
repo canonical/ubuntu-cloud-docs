@@ -31,7 +31,7 @@ Go to S3, create or reuse a bucket and upload the image there. Make a note of yo
 Create a containers JSON file
 -----------------------------
 
-This file (say ``containers.json``) will specify the bucket and full path to the uploaded image for a single disk machine. In case of a multiple disk machine, each disk has to be defined in this file as a separate container (for instance, separate ``VDMK`` files). If you are importing a raw image, make sure to change the format and the image URL accordingly.
+This file (say ``containers.json``) will specify the bucket and full path to the uploaded image for a single disk machine. In case of a multiple disk machine, each disk has to be defined in this file as a separate container (for instance, separate ``VMDK`` files). If you are importing a raw image, make sure to change the format and the image URL accordingly.
 
 .. code::
 
@@ -122,7 +122,7 @@ Restart the machine.
 Get the VM image ready for production
 -------------------------------------
 
-The VM image is almost ready to be used at scale on AWS. The last step is to allow cloud-init to reinitialize the machine ID. This ensures that each instance launched from this image will generate its own machine ID and will re-detect the cloud that  it is running on so that certain features specific to AWS can be enabled. This is also needed if you’re planning to upgrade to Ubuntu Pro in the future.
+The VM image is almost ready to be used at scale on AWS. The last step is to allow cloud-init to reinitialize the machine ID. This ensures that each instance launched from this image will generate its own machine ID and will re-detect the cloud that it is running on so that certain features specific to AWS can be enabled. This is also needed if you’re planning to upgrade to Ubuntu Pro in the future.
 
 Run:
 
