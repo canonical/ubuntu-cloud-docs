@@ -63,7 +63,7 @@ html_context = {
 # If your documentation is hosted on https://docs.ubuntu.com/,
 #       uncomment and update as needed.
 
-slug = 'aws'
+slug = 'aws/docs'
 
 # Set up redirects (https://documatt.gitlab.io/sphinx-reredirects/usage.html)
 # For example: "explanation/old-name.html": "../how-to/prettify.html",
@@ -100,4 +100,10 @@ redirects = {
 ### Sitemap configuration
 ############################################################
 
-html_baseurl = 'https://documentation.ubuntu.com/aws/'
+
+html_baseurl = f"https://ubuntu.com/aws/docs/"
+ogp_site_url = f"https://ubuntu.com/aws/docs/"
+html_static_path = ["_static"]
+html_js_files = ["js/overwrite_links_aws.js"]
+sitemap_filename = "doc-sitemap.xml"
+sitemap_url_scheme = "{link}"
