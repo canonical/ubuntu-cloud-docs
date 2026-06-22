@@ -1,38 +1,39 @@
- // Replaces oldDomain with newDomain in relevant anchor tags
- const oldDomain = 'canonical-ubuntu-on-aws-migration.readthedocs-hosted.com';
- const newDomain = 'ubuntu.com/aws/docs';
+// Replaces rtd-address with new-address in links
 
- function escapeRegExp(value) {
-     return value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
- }
+const rtd_address = 'canonical-ubuntu-on-aws-migration.readthedocs-hosted.com';
+const new_address = 'ubuntu.com/aws/docs';
 
- function overwriteMatchingAnchorUrls(container) {
-     if (!container) return;
+function escapeRegExp(value) {
+    return value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
 
-     const anchors = container.querySelectorAll('a[href], link[href]');
-     const oldDomainRegex = new RegExp(escapeRegExp(oldDomain), 'g');
+function overwriteMatchingAnchorUrls(container) {
+    if (!container) return;
 
-     anchors.forEach(anchor => {
-         anchor.href = anchor.href.replace(oldDomainRegex, newDomain);
-     });
- }
+    const anchors = container.querySelectorAll('a[href], link[href]');
+    const rtd_addressRegex = new RegExp(escapeRegExp(rtd_address), 'g');
 
- overwriteMatchingAnchorUrls(document.querySelector('header'));
+    anchors.forEach(anchor => {
+        anchor.href = anchor.href.replace(rtd_addressRegex, new_address);
+    });
+}
 
- // Use a MutationObserver to wait for the RTD flyout element to appear in the DOM
- const observer = new MutationObserver(function(mutations, obs) {
+overwriteMatchingAnchorUrls(document.querySelector('header'));
 
-     const rtdFlyout = document.querySelector('readthedocs-flyout');
-     if (!rtdFlyout) return;
+// Use a MutationObserver to wait for the RTD flyout element to appear in the DOM
+const observer = new MutationObserver(function(mutations, obs) {
 
-     obs.disconnect();
+    const rtdFlyout = document.querySelector('readthedocs-flyout');
+    if (!rtdFlyout) return;
 
-     rtdFlyout.addEventListener('click', function() {
-         const shadowRoot = rtdFlyout.shadowRoot;
-         if (!shadowRoot) return;
+    obs.disconnect();
 
-         overwriteMatchingAnchorUrls(shadowRoot);
-     });
- });
+    rtdFlyout.addEventListener('click', function() {
+        const shadowRoot = rtdFlyout.shadowRoot;
+        if (!shadowRoot) return;
 
- observer.observe(document.body, { childList: true, subtree: true });
+        overwriteMatchingAnchorUrls(shadowRoot);
+    });
+});
+
+observer.observe(document.body, { childList: true, subtree: true });
