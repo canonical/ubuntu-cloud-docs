@@ -26,6 +26,8 @@ class FormattedDropdownDirective(Directive):
             return {"value": raw.strip(), "conditions": {}}
 
         value = m.group("val").strip()
+        if value == '""':
+            value = ""
         conds = m.group("conds")
         if not conds:
             return {"value": value, "conditions": {}}
