@@ -23,9 +23,6 @@ The following Ubuntu images are available for worker nodes on Oracle Kubernetes 
      - OKE Version
      - End of Life
    * - 22.04 (Jammy Jellyfish)
-     - 1.33.1
-     - 30 days after 1.36.1 OKE Release
-   * -
      - 1.34.1
      - 30 days after 1.37.1 OKE Release
    * -
@@ -33,9 +30,6 @@ The following Ubuntu images are available for worker nodes on Oracle Kubernetes 
      - 30 days after 1.38.1 OKE Release
 
    * - 24.04 (Noble Numbat)
-     - 1.33.1
-     - 30 days after 1.36.1 OKE Release
-   * -
      - 1.34.1
      - 30 days after 1.37.1 OKE Release
    * -
