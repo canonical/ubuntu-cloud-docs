@@ -1,6 +1,5 @@
 import datetime
 import os
-#import textwrap
 
 # Configuration for the Sphinx documentation builder.
 # All configuration specific to your project should be done in this file.
@@ -271,11 +270,6 @@ intersphinx_mapping = {
     'vmware': ('https://documentation.ubuntu.com/vmware/', None)
 }
 
-'''
-# Project slug
-# TODO: If your documentation is hosted on https://documentation.ubuntu.com/,
-#       uncomment and set to the RTD slug.
-slug = 'aws/docs'
 
 
 ################################
@@ -288,26 +282,14 @@ templates_path = ["_templates"]
 # Adds custom CSS files, located remotely or in 'html_static_path'.
 html_css_files = ['css/cookie-banner.css']
 
-# Adds custom JavaScript files, located remotely or in 'html_static_path'.
-html_js_files = ['js/bundle.js', 'js/overwrite_links_aws.js']
 
-#######################
-# Sitemap configuration: https://sphinx-sitemap.readthedocs.io/
-#######################
-
-
-html_baseurl = f"https://ubuntu.com/aws/docs/"
-#ogp_site_url = f"https://ubuntu.com/aws/docs/"
-#html_js_files = ["js/overwrite_links_aws.js"]
-sitemap_filename = "doc-sitemap.xml"
-sitemap_url_scheme = "{link}"
-
-# Use RTD canonical URL to ensure duplicate pages have a specific canonical URL
-#html_baseurl = "https://ubuntu.com/cloud/public-cloud/docs/"
+#########################
+# Sitemap configuration #
+#########################
 
 # sphinx-sitemap uses html_baseurl to generate the full URL for each page:
-#sitemap_url_scheme = "{link}"
-#sitemap_filename = "doc-sitemap.xml"
+sitemap_url_scheme = "{link}"
+sitemap_filename = "doc-sitemap.xml"
 
 # Include `lastmod` dates in the sitemap:
 sitemap_show_lastmod = True
@@ -321,23 +303,3 @@ sitemap_excludes = [
     "search/",
 ]
 
-
-############################
-# sphinx-llm configuration #
-############################
-
-# This description is included in llms.txt to provide some initial context for your
-# product docs.
-# TODO: Add a description in the form "This is the documentation for <product name>,
-# <first sentence of home page>".
-llms_txt_description = textwrap.dedent(
-    """\
-    This is the documentation for Ubuntu images available on the various Public Clouds, including AWS, Azure, Google Cloud, IBM Cloud, Oracle Cloud and VMWare.
-    """
-)
-
-# The base URL for references built by sphinx-markdown-builder.
-if os.environ.get("READTHEDOCS"):
-    markdown_http_base = html_baseurl
-
-'''
