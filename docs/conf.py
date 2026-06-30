@@ -130,25 +130,6 @@ html_theme_options = {
 # Strips '/index.html' from destination URLs when building with 'dirhtml'
 #rediraffe_dir_only = True
 
-
-############################
-# sphinx-llm configuration #
-############################
-
-# This description is included in llms.txt to provide some initial context for your
-# product docs.
-# TODO: Add a description in the form "This is the documentation for <product name>,
-# <first sentence of home page>".
-llms_txt_description = textwrap.dedent(
-    """\
-    This is the documentation for Ubuntu images available on the various Public Clouds, including AWS, Azure, Google Cloud, IBM Cloud, Oracle Cloud and VMWare.
-    """
-)
-
-# The base URL for references built by sphinx-markdown-builder.
-if os.environ.get("READTHEDOCS"):
-    markdown_http_base = html_baseurl
-
 ###########################
 # Link checker exceptions #
 ###########################
@@ -339,3 +320,22 @@ sitemap_excludes = [
     "genindex/",
     "search/",
 ]
+
+
+############################
+# sphinx-llm configuration #
+############################
+
+# This description is included in llms.txt to provide some initial context for your
+# product docs.
+# TODO: Add a description in the form "This is the documentation for <product name>,
+# <first sentence of home page>".
+llms_txt_description = textwrap.dedent(
+    """\
+    This is the documentation for Ubuntu images available on the various Public Clouds, including AWS, Azure, Google Cloud, IBM Cloud, Oracle Cloud and VMWare.
+    """
+)
+
+# The base URL for references built by sphinx-markdown-builder.
+if os.environ.get("READTHEDOCS"):
+    markdown_http_base = html_baseurl
