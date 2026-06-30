@@ -64,6 +64,7 @@ Deploy Canonical products such as the data science stack on your EC2 instances.
    Import a local Ubuntu VM <import-local-vm-to-aws>
    Complete hardening of a base CIS Level 1 instance  <cis-hardening>
    Build an Ubuntu Pro AMI using Packer <build-pro-ami-using-packer>
+   Build a custom Ubuntu Pro image with EC2 Image Builder <build-ubuntu-pro-image-with-ec2-image-builder>
    Create CloudFormation templates <build-cloudformation-templates>
    Install 64k page kernel <install-64k-kernel>
    Install NVIDIA drivers <install-nvidia-drivers>

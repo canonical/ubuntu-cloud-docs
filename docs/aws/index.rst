@@ -53,7 +53,7 @@ Ubuntu on EC2 offers a flexible foundation for running cloud workloads, from lau
      - :doc:`EC2 credentials <aws-reference/ec2-credentials>` • :doc:`Launch an instance using CLI <aws-how-to/instances/launch-ubuntu-ec2-instance>` • :doc:`Find images <aws-how-to/instances/find-ubuntu-images>` • :doc:`Launch a desktop <aws-how-to/instances/launch-ubuntu-desktop>` • :doc:`Import a local Ubuntu VM into AWS <aws-how-to/instances/import-local-vm-to-aws>`
 
    * - **Creating AMIs and templates**
-     - :doc:`Build an Ubuntu Pro AMI using Packer <aws-how-to/instances/build-pro-ami-using-packer>` • :doc:`Create CloudFormation templates <aws-how-to/instances/build-cloudformation-templates>` 
+     - :doc:`Build an Ubuntu Pro AMI using Packer <aws-how-to/instances/build-pro-ami-using-packer>` • :doc:`Build a custom Ubuntu Pro image with EC2 Image Builder <aws-how-to/instances/build-ubuntu-pro-image-with-ec2-image-builder>` • :doc:`Create CloudFormation templates <aws-how-to/instances/build-cloudformation-templates>` 
 
    * - **Custom configurations**
      - :doc:`Install 64K page kernel <aws-how-to/instances/install-64k-kernel>` • :doc:`install NVIDIA drivers <aws-how-to/instances/install-nvidia-drivers>` • :doc:`Configure multiple NICs <aws-how-to/instances/automatically-setup-multiple-nics>` • :doc:`Use UEFI secure boot and TPM <aws-how-to/security/use-secureboot-and-vtpm>` • :doc:`Launch and attest an AMD SEV-SNP instance <aws-how-to/instances/launch-and-attest-amd-sev-snp-instances>` • :doc:`Complete hardening of a base CIS Level 1 instance <aws-how-to/instances/cis-hardening>` 
