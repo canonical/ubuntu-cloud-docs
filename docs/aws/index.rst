@@ -4,6 +4,7 @@
 Ubuntu on AWS
 =============
 
+Testing on Staging!
 
 **Ubuntu on AWS is a set of customized Ubuntu images** that allow easy access to a wide range 
 of products and services - offered by both Amazon Web Services (AWS) and Canonical. These images 

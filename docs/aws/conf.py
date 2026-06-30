@@ -101,8 +101,8 @@ redirects = {
 ############################################################
 
 
-html_baseurl = f"https://ubuntu.com/aws/docs/"
-ogp_site_url = f"https://ubuntu.com/aws/docs/"
-html_js_files = ["js/overwrite_links_aws.js"]
-sitemap_filename = "doc-sitemap.xml"
-sitemap_url_scheme = "{link}"
+#html_baseurl = f"https://ubuntu.com/aws/docs/"
+#ogp_site_url = f"https://ubuntu.com/aws/docs/"
+#html_js_files = ["js/overwrite_links_aws.js"]
+#sitemap_filename = "doc-sitemap.xml"
+#sitemap_url_scheme = "{link}"
