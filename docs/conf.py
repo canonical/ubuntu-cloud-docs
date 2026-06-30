@@ -271,7 +271,7 @@ intersphinx_mapping = {
     'vmware': ('https://documentation.ubuntu.com/vmware/', None)
 }
 
-
+'''
 # Project slug
 # TODO: If your documentation is hosted on https://documentation.ubuntu.com/,
 #       uncomment and set to the RTD slug.
@@ -339,3 +339,5 @@ llms_txt_description = textwrap.dedent(
 # The base URL for references built by sphinx-markdown-builder.
 if os.environ.get("READTHEDOCS"):
     markdown_http_base = html_baseurl
+
+'''
