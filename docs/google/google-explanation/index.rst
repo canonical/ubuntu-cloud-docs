@@ -12,5 +12,4 @@ If you have questions about our offerings on Google Cloud, about Google's 'guest
    Canonical's offerings <canonical-offerings>
    Google's "guest agents" <guest-agents>
    Security overview <security-overview>
-   Image testing <gce-image-testing>
    Image retention policy <gce-image-retention-policy>
