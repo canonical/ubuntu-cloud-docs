@@ -289,7 +289,7 @@ html_css_files = ['css/cookie-banner.css']
 
 # sphinx-sitemap uses html_baseurl to generate the full URL for each page:
 sitemap_url_scheme = "{link}"
-sitemap_filename = "doc-sitemap.xml"
+sitemap_filename = "sitemap.xml"
 
 # Include `lastmod` dates in the sitemap:
 sitemap_show_lastmod = True
