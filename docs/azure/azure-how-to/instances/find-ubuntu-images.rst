@@ -477,7 +477,7 @@ Ubuntu 22.04 LTS (Confidential Compute) - Jammy Jellyfish
 FIPS compliant offers
 ~~~~~~~~~~~~~~~~~~~~~
 
-To learn more about FIPS: `FIPS for Ubuntu <https://ubuntu.com/security/certifications/docs/fips>`_
+To learn more about FIPS: `FIPS for Ubuntu <https://documentation.ubuntu.com/security/compliance/fips/>`_
 
 .. note::
 
@@ -548,7 +548,7 @@ Quick start: `Ubuntu Pro FIPS 18.04 LTS on Azure <https://portal.azure.com/#crea
 CIS Hardened offer
 ~~~~~~~~~~~~~~~~~~
 
-To learn more about CIS compliance: `CIS compliance with Ubuntu LTS <https://ubuntu.com/security/certifications/docs/usg/cis>`_
+To learn more about CIS compliance: `CIS compliance with Ubuntu LTS <https://documentation.ubuntu.com/security/compliance/usg/cis/>`_
 
 Ubuntu Pro 22.04 LTS Minimal with CIS Hardening - Jammy Jellyfish
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

@@ -113,7 +113,7 @@ Any VM deployed on and capable of using such hardware is called a Confidential V
 Finally, it is also possible to verify that a CVM is actually launched on confidential-computing capable hardware without having to take the cloud provider's word for it. This can be done through remote attestation of the TEE. By verifying the signed quote sent by the TEE, it is possible to ensure two things: (1) that the cloud's TEE hardware used is genuine and (2) that the software loaded into the TEE has not been tampered with.
 
 
-.. _`the Ubuntu Security Guide (USG)`: https://ubuntu.com/security/certifications/docs/usg
+.. _`the Ubuntu Security Guide (USG)`: https://documentation.ubuntu.com/security/compliance/usg/
 .. _`CVEs`: https://ubuntu.com/security/cves/about
 .. _`Kernel Livepatch`: https://ubuntu.com/security/livepatch
 .. _`Expanded Security Maintenance (ESM)`: https://ubuntu.com/security/esm
