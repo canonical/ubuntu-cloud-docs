@@ -9,7 +9,7 @@ These how-to guides relate to launching and using Ubuntu-based EC2 instances. Th
 Finding images and launching instances
 --------------------------------------
 
-Guides to help you find the right Ubuntu image for your use case and launch different types of EC2 instances, including desktops, confidential computing instances, local VMs and hardened instances.
+Guides to help you find the right Ubuntu image for your use case and launch different types of EC2 instances, including desktops, :doc:`confidential computing <all-clouds:all-clouds-explanation/confidential-computing>` instances, local VMs and hardened instances.
 
 * :doc:`Launch an instance using CLI <launch-ubuntu-ec2-instance>`
 * :doc:`Find images <find-ubuntu-images>`
@@ -58,11 +58,11 @@ Deploy Canonical products such as the data science stack on your EC2 instances.
    :maxdepth: 1
    
    Launch instance using CLI <launch-ubuntu-ec2-instance>
-   Find images <find-ubuntu-images>  
+   Find images <find-ubuntu-images>
    Launch a desktop <launch-ubuntu-desktop>
    Launch and attest an AMD SEV-SNP instance <launch-and-attest-amd-sev-snp-instances>
    Import a local Ubuntu VM <import-local-vm-to-aws>
-   Complete hardening of a base CIS Level 1 instance  <cis-hardening>
+   Complete hardening of a base CIS Level 1 instance <cis-hardening>
    Build an Ubuntu Pro AMI using Packer <build-pro-ami-using-packer>
    Create CloudFormation templates <build-cloudformation-templates>
    Install 64k page kernel <install-64k-kernel>
