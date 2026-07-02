@@ -53,7 +53,7 @@ To find images on AWS, you can use the `SSM Parameter Store`_, the `describe-ima
                aws ssm get-parameters --names /aws/service/canonical/ubuntu/{eks_product}/{release}/{k8s}/stable/{serial}/{arch}/hvm/{vol}/ami-id
                :eks_product: eks, eks-pro
                :release: resolute, noble, jammy
-               :k8s: 1.35{release:resolute;release:noble}, 1.34{release:noble;release:jammy}, 1.33{release:noble;release:jammy}, 1.32{release:noble;release:jammy}, 1.31{release:noble;release:jammy}
+               :k8s: 1.36{release:resolute;release:noble}, 1.35{release:resolute;release:noble}, 1.34{release:noble;release:jammy}, 1.33{release:noble;release:jammy}, 1.32{release:noble;release:jammy}, 1.31{release:noble;release:jammy}
                :serial: current, 20250804, 20240115
                :arch: amd64, arm64
                :vol: ebs-gp3{release:resolute;release:noble}, ebs-gp2{release:jammy}
@@ -128,7 +128,7 @@ To find images on AWS, you can use the `SSM Parameter Store`_, the `describe-ima
                :eks_product: eks, eks-pro
                :release: resolute, noble, jammy
                :suite: 26.04{release:resolute}, 24.04{release:noble}, 22.04{release:jammy}
-               :k8s: 1.35{release:resolute;release:noble}, 1.34{release:noble;release:jammy}, 1.33{release:noble;release:jammy}, 1.32{release:noble;release:jammy}, 1.31{release:noble;release:jammy}
+               :k8s: 1.36{release:resolute;release:noble}, 1.35{release:resolute;release:noble}, 1.34{release:noble;release:jammy}, 1.33{release:noble;release:jammy}, 1.32{release:noble;release:jammy}, 1.31{release:noble;release:jammy}
                :serial: *, 20250804, 20240115
                :arch: amd64, arm64
                :vol: ssd-gp3{release:resolute;release:noble}, ssd{release:jammy}
