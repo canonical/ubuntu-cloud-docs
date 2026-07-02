@@ -139,7 +139,7 @@ Further references
 For more information about creating confidential computing enabled instances, refer to the Oracle Cloud documentation:
 
 * `Creating an Instance <https://docs.oracle.com/en-us/iaas/Content/Compute/Tasks/launchinginstance.htm#top>`_
-* `Protect data in use with OCI confidential computing <https://blogs.oracle.com/cloud-infrastructure/post/protect-data-in-use-with-confidential-computing>`_
+* `Protect data in use with OCI confidential computing <https://blogs.oracle.com/cloud-infrastructure/protect-data-in-use-with-confidential-computing>`_
 * `Confidential computing <https://docs.oracle.com/en-us/iaas/Content/Compute/References/confidential_compute.htm>`_
 
 For a general overview of confidential computing technologies, see :doc:`all-clouds:all-clouds-explanation/confidential-computing`.

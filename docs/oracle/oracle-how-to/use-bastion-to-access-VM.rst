@@ -281,7 +281,7 @@ The Oracle Cloud documentation is a good resource for more information about its
 * `Service gateway`_
 * `Internet gateway`_
 * `NAT gateway`_
-* `Blog - Simplify secure access with OCI bastion service`_
+* `Blog - Simplifying secure access with OCI bastion connector`_
      
 
 .. _`Oracle's bastion feature`: https://docs.oracle.com/en-us/iaas/Content/Bastion/Concepts/bastionoverview.htm
@@ -290,5 +290,5 @@ The Oracle Cloud documentation is a good resource for more information about its
 .. _`NAT gateway`: https://docs.oracle.com/en-us/iaas/Content/Network/Tasks/NATgateway.htm
 .. _`IAM policy`: https://docs.oracle.com/en-us/iaas/Content/Bastion/Tasks/managingbastions.htm#managingbastions_topic-Required_IAM_Policy
 .. _`Bastion overview`: https://docs.oracle.com/en-us/iaas/Content/Bastion/Concepts/bastionoverview.htm
-.. _`Blog - Simplify secure access with OCI bastion service`: https://blogs.oracle.com/cloudsecurity/post/secure-access-with-oci-bastion
+.. _`Blog - Simplifying secure access with OCI bastion connector`: https://blogs.oracle.com/cloud-infrastructure/oci-bastion-connector-private-access
 
