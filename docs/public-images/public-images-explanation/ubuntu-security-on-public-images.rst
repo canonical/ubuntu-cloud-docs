@@ -20,7 +20,7 @@ Enhanced security features are available for Ubuntu via the Ubuntu Pro subscript
 
 * Expanded Security Maintenance (ESM): Provides up to 12 years of support for security updates as detailed in the `ESM <https://ubuntu.com/security/esm>`_ section.
 * Kernel livepatching: Shrinks the exploit window for critical kernel vulnerabilities as detailed in the `Livepatch <https://ubuntu.com/security/livepatch>`_ section.
-* Security compliance and certifications: Provides rigorous security certifications such as FIPS and CIS as detailed in the `Certifications <https://ubuntu.com/security/certifications/docs>`_ section.
+* Security compliance and certifications: Provides rigorous security certifications such as FIPS and CIS as detailed in the `Compliance automation <hhttps://documentation.ubuntu.com/security/compliance/>`_ section.
 
 Common Vulnerabilities and Exposures (CVE)
 ------------------------------------------
