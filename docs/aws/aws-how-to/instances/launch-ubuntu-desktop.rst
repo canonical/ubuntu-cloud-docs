@@ -32,13 +32,13 @@ Retrieve the latest AMI ID for an Ubuntu image using one of the following comman
 
 .. code-block:: bash
 
-    aws ssm get-parameters --names /aws/service/canonical/ubuntu/server/24.04/stable/current/arm64/hvm/ebs-gp3/ami-id
+    aws ssm get-parameters --names /aws/service/canonical/ubuntu/server/26.04/stable/current/arm64/hvm/ebs-gp3/ami-id
 
 * Ubuntu Pro:
 
 .. code-block:: bash
 
-    aws ssm get-parameters --names /aws/service/canonical/ubuntu/pro-server/24.04/stable/current/arm64/hvm/ebs-gp3/ami-id
+    aws ssm get-parameters --names /aws/service/canonical/ubuntu/pro-server/26.04/stable/current/arm64/hvm/ebs-gp3/ami-id
 
 
 Now launch the instance by referring to the instructions for :doc:`launching using the AWS CLI<./launch-ubuntu-ec2-instance>`.

@@ -29,7 +29,7 @@ While you can use the AWS EC2 web console to manually create a launch template, 
 
 While creating the launch template, you'll need to include a user-data script that is used to bootstrap the node and join it to a cluster. To create the script, in a new file (called, say ``my-user-data.txt``) add:
 
-..  code-block:: bash
+.. code-block:: bash
 
     #!/bin/bash
     /etc/eks/bootstrap.sh My-Ubuntu-Cluster
