@@ -17,6 +17,8 @@ For the GPU based instances to work, you'll need to install the appropriate `NVI
 
 After installation, use ``sudo nvidia-smi`` to verify that the driver is successfully installed.
 
+For Canonical's own NVIDIA driver installation guide for Ubuntu on AWS, see :doc:`Install NVIDIA drivers <../instances/install-nvidia-drivers>`.
+
 
 Install and set up the 'NVIDIA Container Toolkit' on each node
 --------------------------------------------------------------
@@ -66,6 +68,8 @@ The output should be similar to:
    GPU 0: Tesla M60 (UUID: GPU-632acfab-13c7-fcf3-a9d5-1833d921cf80)
    Applications clocks set to "(MEM 2505, SM 1177)" for GPU 00000000:00:1E.0
    All done.
+
+For details on the kubelet snap used in EKS, see :doc:`EKS kubelet snap <../../aws-reference/eks-kubelet-snap>`.
 
 
 Apply 'NVIDIA Device Plugin' to the cluster
@@ -126,7 +130,7 @@ Once the pod is up and running, check its log using:
 
 .. code-block:: bash
 
-   kubectl logs nvidia-smi.yaml
+   kubectl logs nvidia-smi
 
 .. _`GPU based instances`: https://docs.aws.amazon.com/dlami/latest/devguide/gpu.html
 .. _`NVIDIA drivers`: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/install-nvidia-driver.html

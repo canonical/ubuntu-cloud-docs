@@ -10,12 +10,14 @@ This guide covers creating Pro clusters using tokens only. If you prefer getting
 
 For FIPS clusters, please note that only Ubuntu 22.04 LTS has NIST-validated FIPS modules at the moment.
 
+For a dedicated FIPS guide, see :doc:`deploy-ubuntu-pro-fips-cluster`.
+
 Prerequisites
 ~~~~~~~~~~~~~
 
 - ``eksctl``: Check the instructions to `install eksctl`_
 - ``Packer`` version 1.8.1 or newer installed. (`Packer installation instructions`_). Only needed if you want to enable FIPS for the cluster nodes. 
-- Your AWS access key ID and secret access key
+- Your AWS access key ID and secret access key (see :doc:`../../aws-reference/ec2-credentials`)
 - An Ubuntu Pro token
 
 
@@ -50,10 +52,12 @@ The steps needed for deploying the cluster depend on whether you need to enable 
 
             --==MYBOUNDARY==
             Content-Type: text/cloud-config; charset="us-ascii"
-            ubuntu_advantage:
-            token: <PRO_TOKEN>
-            enable:
-            - esm
+
+            ubuntu_pro:
+              token: <PRO_TOKEN>
+              enable:
+                - esm-infra
+                - esm-apps
         
             --==MYBOUNDARY==
             Content-Type: text/x-shellscript; charset="us-ascii"
@@ -157,6 +161,8 @@ The steps needed for deploying the cluster depend on whether you need to enable 
         .. note::
             Save a copy of the provided AMI ID for the next step.
 
+        See also: :doc:`Build a Pro AMI using Packer <../instances/build-pro-ami-using-packer>`.
+
 
 Create the ``eksctl`` config file
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -224,7 +230,7 @@ For further cluster customization check out `eksctl details`_.
 Create the EKS cluster
 ~~~~~~~~~~~~~~~~~~~~~~
 
-To create the EKS cluster, run ``eksctl create nodegroup -f cluster.yaml``
+To create the EKS cluster, run ``eksctl create cluster -f cluster.yaml``
 (you might need to specify the ``--profile`` option if you have multiple
 profiles). When this command finishes, see the nodes with
 

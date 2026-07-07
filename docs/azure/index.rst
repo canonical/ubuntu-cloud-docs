@@ -43,7 +43,7 @@ In this documentation
       - :doc:`Deploy an Ubuntu VM with SQL Server <azure-how-to/instances/provision-an-ubuntu-virtual-machine-running-sql-server-in-azure>` • `Install Kubeflow on AKS <https://documentation.ubuntu.com/charmed-kubeflow/latest/how-to/install/install-aks/>`_ • :doc:`Deploy Kubeflow with AKS spot instances <azure-how-to/instances/deploy-kubeflow-pipelines-with-aks-spot-instances>` 
       
     * - **Policies**
-      - :doc:`Security aspects <azure-explanation/security-overview>` • :doc:`Image retention policy <azure-explanation/image-rentention-policy>`  
+      - :doc:`Security aspects <azure-explanation/security-overview>` • :doc:`Image retention policy <azure-explanation/image-retention-policy>`  
 
 
 
