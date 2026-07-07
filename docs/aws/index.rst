@@ -4,7 +4,6 @@
 Ubuntu on AWS
 =============
 
-
 **Ubuntu on AWS is a set of customized Ubuntu images** that allow easy access to a wide range 
 of products and services - offered by both Amazon Web Services (AWS) and Canonical. These images 
 have an optimized kernel that boots faster, has a smaller footprint and includes AWS-specific drivers.
