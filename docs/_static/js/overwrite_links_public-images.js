@@ -1,7 +1,7 @@
 // Replaces rtd-address with new-address in links
 
-const rtd_address = 'canonical-aws.readthedocs-hosted.com';
-const new_address = 'ubuntu.com/aws/docs';
+const rtd_address = 'canonical-public-images.readthedocs-hosted.com';
+const new_address = 'ubuntu.com/docs/public-images';
 
 function escapeRegExp(value) {
   return value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');

@@ -1,3 +1,6 @@
+import os
+import textwrap
+
 # Some settings in the html_context dictionary have to be repeated 
 # in the sub projects for correct functioning (don't remove them)
 html_context = {
@@ -56,7 +59,7 @@ html_context = {
 # If your documentation is hosted on https://docs.ubuntu.com/,
 #       uncomment and update as needed.
 
-slug = 'public-cloud'
+slug = 'cloud/public-cloud/docs'
 
 # Set up redirects (https://documatt.gitlab.io/sphinx-reredirects/usage.html)
 # For example: "explanation/old-name.html": "../how-to/prettify.html",
@@ -68,8 +71,27 @@ redirects = {
 }
 
 
-############################################################
-### Sitemap configuration
-############################################################
+html_baseurl = f"https://ubuntu.com/cloud/public-cloud/docs/"
+ogp_site_url = f"https://ubuntu.com/cloud/public-cloud/docs/"
 
-html_baseurl = 'https://documentation.ubuntu.com/public-cloud/'
+# Adds custom JavaScript files, located remotely or in 'html_static_path'.
+html_js_files = ['js/bundle.js', 'js/overwrite_links_all-clouds.js']
+
+
+############################
+# sphinx-llm configuration #
+############################
+
+# This description is included in llms.txt to provide some initial context for your
+# product docs.
+# TODO: Add a description in the form "This is the documentation for <product name>,
+# <first sentence of home page>".
+llms_txt_description = textwrap.dedent(
+    """\
+    This is the documentation for Ubuntu images available on the major public clouds.
+    """
+)
+
+# The base URL for references built by sphinx-markdown-builder.
+if os.environ.get("READTHEDOCS"):
+    markdown_http_base = html_baseurl
