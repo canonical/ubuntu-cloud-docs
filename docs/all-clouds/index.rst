@@ -30,7 +30,6 @@ For further details, refer to the cloud-specific documentation:
    .. grid-item-card:: :doc:`Ubuntu on AWS <aws:index>`   
    .. grid-item-card:: :doc:`Ubuntu on Azure <azure:index>`  
    .. grid-item-card:: :doc:`Ubuntu on GCP <google:index>` 
-   .. grid-item-card:: :doc:`Ubuntu on IBM <ibm:index>` 
    .. grid-item-card:: :doc:`Ubuntu on Oracle <oracle:index>`
    .. grid-item-card:: :doc:`Ubuntu on VMware <vmware:index>`
 
