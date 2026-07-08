@@ -76,7 +76,6 @@ CPUs
 cron
 cryptographic
 cryptographically
-CTF
 CUDA
 customizations
 CVE
