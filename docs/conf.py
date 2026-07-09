@@ -263,7 +263,7 @@ intersphinx_mapping = {
     'aws': ('https://documentation.ubuntu.com/aws/', None),
     'azure': ('https://documentation.ubuntu.com/azure/', None),
     'google': ('https://documentation.ubuntu.com/gcp/', None),
-#    'ibm': ('https://documentation.ubuntu.com/ibm/', None),
+    'ibm': ('https://documentation.ubuntu.com/ibm/', None),
     'oracle': ('https://documentation.ubuntu.com/oracle/', None),
     'oci': ('https://documentation.ubuntu.com/oci-registries/', None),
     'public-images': ('https://documentation.ubuntu.com/public-images/', None),
