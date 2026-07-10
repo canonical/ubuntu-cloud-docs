@@ -65,9 +65,9 @@ slug = 'cloud/public-cloud/docs'
 # For example: "explanation/old-name.html": "../how-to/prettify.html",
 redirects = {
     "oci/oci-how-to/create-chiselled-ubuntu-image.html":
-        "https://documentation.ubuntu.com/chisel/en/latest/tutorial/getting-started/",
+        "https://ubuntu.com/chisel/docs/latest/tutorial/getting-started/",
     "oci/oci-how-to/deploy-pro-container-on-pro-kubernetes-cluster.html":
-        "https://documentation.ubuntu.com/oci-registries/oci-how-to/deploy-pro-container-on-pro-kubernetes-cluster/"
+        "https://ubuntu.com/docs/oci-registries/oci-how-to/deploy-pro-container-on-pro-kubernetes-cluster/"
 }
 
 

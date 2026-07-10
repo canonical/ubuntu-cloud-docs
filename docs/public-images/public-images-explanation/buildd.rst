@@ -8,7 +8,7 @@
 Ubuntu Buildd images
 ====================
 
-Buildd images are another offering of cloud images built by Canonical that are primarily used to serve the `Launchpad build farm <https://documentation.ubuntu.com/launchpad/en/latest/reference/services/build-farm/#>`_.
+Buildd images are another offering of cloud images built by Canonical that are primarily used to serve the `Launchpad build farm <https://ubuntu.com/docs/launchpad/developer/reference/services/build-farm/>`_.
 These images are publicly available to download and use and can be found under `cloud-images.ubuntu.com/buildd <https://cloud-images.ubuntu.com/buildd/>`_.
 
 Buildd images are built and published for the same :ref:`set of supported system architectures <architectures-supported>` 
@@ -16,7 +16,7 @@ that Ubuntu "Download" cloud images support.
 
 Ubuntu Buildd image use cases
 ------------------------------
-Buildd images are intended to be used for building Ubuntu packages or other Ubuntu images as detailed in the `build farm description <https://documentation.ubuntu.com/launchpad/en/latest/reference/services/build-farm/#detailed-description>`_ section:
+Buildd images are intended to be used for building Ubuntu packages or other Ubuntu images as detailed in the `build farm description <https://ubuntu.com/docs/launchpad/developer/reference/services/build-farm/#detailed-description>`_ section:
 
 * Deb packages for the `Ubuntu Archive <https://archive.ubuntu.com/>`_
 * Snaps for Canonical's `Snapcraft <https://snapcraft.io/>`_

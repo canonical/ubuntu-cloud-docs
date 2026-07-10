@@ -50,10 +50,10 @@ To find Ubuntu Pro images on Azure, refer to :doc:`../azure-how-to/instances/fin
 
 
 .. _`Ubuntu security page`: https://ubuntu.com/security
-.. _`Introductory page on security`: https://documentation.ubuntu.com/server/explanation/intro-to/security/
+.. _`Introductory page on security`: https://ubuntu.com/server/docs/explanation/intro-to/security/
 .. _`Trusted Launch`: https://learn.microsoft.com/en-us/azure/virtual-machines/trusted-launch
 .. _`secure boot`: https://wiki.ubuntu.com/UEFI/SecureBoot
 .. _`CVMs`: https://learn.microsoft.com/en-us/azure/confidential-computing/confidential-vm-overview
 .. _`measured boot`: https://learn.microsoft.com/en-us/azure/security/fundamentals/measured-boot-host-attestation
-.. _`generic cloud security overview page`: https://documentation.ubuntu.com/public-cloud/all-clouds-explanation/security-overview/#verified-boot-tpm-fde
+.. _`generic cloud security overview page`: https://ubuntu.com/cloud/public-cloud/docs/all-clouds-explanation/security-overview/#verified-boot-tpm-fde
 .. _`Ubuntu Pro`: https://ubuntu.com/azure/pro

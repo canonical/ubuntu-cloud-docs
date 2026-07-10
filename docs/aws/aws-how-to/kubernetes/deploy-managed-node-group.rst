@@ -184,9 +184,9 @@ This will keep your cluster always up-to-date with minimal manual effort.
 
 
 .. _`eksctl`: https://docs.aws.amazon.com/eks/latest/eksctl/installation.html
-.. _`AWS CLI`: https://documentation.ubuntu.com/aws/aws-how-to/instances/find-ubuntu-images/
+.. _`AWS CLI`: https://ubuntu.com/aws/docs/aws-how-to/instances/find-ubuntu-images/
 .. _`AWS Marketplace`: https://aws.amazon.com/marketplace/search/results?searchTerms=ubuntu+eks&CREATOR=565feec9-3d43-413e-9760-c651546613f2&filters=CREATOR
 .. _`AWS EC2 Image Builder`: https://www.youtube.com/watch?v=ALFuCc5kfpE
-.. _`Packer`: https://documentation.ubuntu.com/aws/aws-how-to/instances/build-pro-ami-using-packer/
+.. _`Packer`: https://ubuntu.com/aws/docs/aws-how-to/instances/build-pro-ami-using-packer/
 .. _`kubectl`: https://docs.aws.amazon.com/eks/latest/userguide/install-kubectl.html
 

@@ -55,4 +55,4 @@ For more information about the different kernel variants and their use cases, re
 * `Choosing between 4K and 64K kernel options for ARM64`_
 * :ref:`Kernels on the cloud <kernels-on-the-cloud>`
 
-.. _`Choosing between 4K and 64K kernel options for ARM64`: https://documentation.ubuntu.com/server/explanation/installation/choosing-between-the-arm64-and-arm64-largemem-installer-options/index.html
+.. _`Choosing between 4K and 64K kernel options for ARM64`: https://ubuntu.com/server/docs/how-to/installation/choosing-between-the-arm64-and-arm64-largemem-installer-options/

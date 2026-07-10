@@ -155,7 +155,7 @@ For more information, you can checkout the following resources
 
 
 .. _`ubuntu cloud image`: https://cloud-images.ubuntu.com
-.. _`Ubuntu on WSL`: https://documentation.ubuntu.com/wsl/stable/
+.. _`Ubuntu on WSL`: https://ubuntu.com/wsl/docs/stable/
 .. _`HomeBrew`: https://brew.sh/
 .. _`GnuPG`: https://www.gnupg.org/gph/en/manual/x135.html
 .. _`Ubuntu Discourse`: https://discourse.ubuntu.com/

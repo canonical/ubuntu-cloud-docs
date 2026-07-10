@@ -20,7 +20,7 @@ Requirements
         
         ``sudo qemu-img convert -O raw /var/lib/libvirt/images/my-machine.qcow2 my-machine.raw``
     
-For more about LXD and OpenStack Ubuntu images, see :doc:`LXD/OpenStack images <public-images:public-images-explanation/lxd-openstack-images>`.
+        For more about LXD and OpenStack Ubuntu images, see :doc:`LXD/OpenStack images <public-images:public-images-explanation/lxd-openstack-images>`.
 
 
 Upload your OVA machine image to S3
@@ -139,6 +139,6 @@ Your machine is now ready. You can either continue using this VM as a normal EC2
 
 .. _`AWS documentation: Import your VM as an image`: https://docs.aws.amazon.com/vm-import/latest/userguide/import-vm-image.html
 .. _`AWS documentation: Required IAM roles`: https://docs.aws.amazon.com/vm-import/latest/userguide/required-permissions.html#vmimport-role
-.. _`official documentation`: https://documentation.ubuntu.com/aws/en/latest/aws-how-to/instances/launch-ubuntu-ec2-instance/#launch-the-instance
+.. _`official documentation`: https://ubuntu.com/aws/docs/aws-how-to/instances/launch-ubuntu-ec2-instance/#launch-the-instance
 
 
