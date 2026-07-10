@@ -67,6 +67,6 @@ Collaborative Optimizations
 .. _`Ubuntu Security Guide`: https://documentation.ubuntu.com/security/compliance/usg/
 .. _`Ubuntu Pro FIPS images`: https://ubuntu.com/azure/fips
 .. _`Ubuntu Pro Minimal CIS images`: https://ubuntu.com/security/cis
-.. _`Anbox on Azure`: https://documentation.ubuntu.com/anbox-cloud/howto/install-appliance/install-on-azure/
+.. _`Anbox on Azure`: https://canonical.com/anbox-cloud/docs/howto/install-appliance/install-on-azure/
 .. _`Chiseled .Net images`: https://devblogs.microsoft.com/dotnet/dotnet-6-is-now-in-ubuntu-2204
-.. _`Landscape on Azure`: https://documentation.ubuntu.com/landscape/how-to-guides/landscape-installation-and-set-up/cloud-providers/install-on-microsoft-azure/
+.. _`Landscape on Azure`: https://ubuntu.com/landscape/docs/how-to-guides/landscape-installation-and-set-up/cloud-providers/install-on-microsoft-azure/

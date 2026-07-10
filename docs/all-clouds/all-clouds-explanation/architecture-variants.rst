@@ -44,4 +44,4 @@ all modern x86_64 hardware. However, the inverse is not true -- newer architectu
 older hardware. This is at least the case for amd64 and amd64v3, and is likely to be the case for future variants as
 well.
 
-.. _`architecture variants`: https://documentation.ubuntu.com/project/how-ubuntu-is-made/concepts/supported-architectures/#architecture-variants
+.. _`architecture variants`: https://ubuntu.com/project/docs/how-ubuntu-is-made/concepts/supported-architectures/#architecture-variants

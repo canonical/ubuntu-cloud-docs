@@ -118,4 +118,4 @@ Finally, it is also possible to verify that a CVM is actually launched on confid
 .. _`Kernel Livepatch`: https://ubuntu.com/security/livepatch
 .. _`Expanded Security Maintenance (ESM)`: https://ubuntu.com/security/esm
 .. _`FIPS`: https://ubuntu.com/security/fips
-.. _`AppArmor`: https://documentation.ubuntu.com/server/how-to/security/apparmor/
+.. _`AppArmor`: https://ubuntu.com/server/docs/how-to/security/apparmor/

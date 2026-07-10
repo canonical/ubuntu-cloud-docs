@@ -259,14 +259,14 @@ rst_prolog = """
 # Configuration for Intersphinx projects
 
 intersphinx_mapping = {
-    'all-clouds': ('https://documentation.ubuntu.com/public-cloud/', None),
-    'aws': ('https://documentation.ubuntu.com/aws/', None),
-    'azure': ('https://documentation.ubuntu.com/azure/', None),
-    'google': ('https://documentation.ubuntu.com/gcp/', None),
-    'ibm': ('https://documentation.ubuntu.com/ibm/', None),
-    'oracle': ('https://documentation.ubuntu.com/oracle/', None),
-    'oci': ('https://documentation.ubuntu.com/oci-registries/', None),
-    'public-images': ('https://documentation.ubuntu.com/public-images/', None),
+    'all-clouds': ('https://ubuntu.com/cloud/public-cloud/docs/', None),
+    'aws': ('https://ubuntu.com/aws/docs/', None),
+    'azure': ('https://ubuntu.com/azure/docs/', None),
+    'google': ('https://ubuntu.com/gcp/docs/', None),
+    'ibm': ('https://ubuntu.com/docs/ibm/', None),
+    'oracle': ('https://ubuntu.com/docs/oracle/', None),
+    'oci': ('https://ubuntu.com/docs/oci-registries/', None),
+    'public-images': ('https://ubuntu.com/docs/public-images/', None),
     'vmware': ('https://documentation.ubuntu.com/vmware/', None)
 }
 

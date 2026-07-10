@@ -213,11 +213,11 @@ rely on the ``virt-*`` tools from ``libguestfs`` to perform specific tasks. For 
 .. _OpenStack command-line client: https://docs.openstack.org/ocata/admin-guide/common/cli-install-openstack-command-line-clients.html
 .. _Manage images: https://docs.openstack.org/ocata/admin-guide/common/cli-manage-images.html#create-or-update-an-image-glance
 .. _LXD containers: https://ubuntu.com/server/docs/how-to/containers/lxd-containers/
-.. _LXD image format: https://documentation.ubuntu.com/lxd/latest/reference/image_format/
+.. _LXD image format: https://canonical.com/lxd/docs/latest/reference/image_format/
 .. _How to customize LXD image metadata for cloud-init: https://discourse.ubuntu.com/t/how-to-customize-lxd-image-metadata-for-cloud-init/25157
 .. _Cloud-init: https://docs.cloud-init.io/en/latest/index.html
-.. _LXD docs on cloud-init: https://documentation.ubuntu.com/lxd/latest/cloud-init/
-.. _LXD documentation on images: https://documentation.ubuntu.com/lxd/latest/howto/images_manage/
+.. _LXD docs on cloud-init: https://canonical.com/lxd/docs/latest/cloud-init/
+.. _LXD documentation on images: https://canonical.com/lxd/docs/latest/howto/images_manage/
 .. _modifying images: https://docs.openstack.org/image-guide/modify-images.html
 .. _tools: https://libguestfs.org/
 .. _interactive shell: https://libguestfs.org/guestfish.1.html
