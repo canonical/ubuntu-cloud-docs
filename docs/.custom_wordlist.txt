@@ -436,6 +436,7 @@ VPC
 VPCs
 VCF
 VSI
+vSphere
 vTPM
 walinuxagent
 workspaces
