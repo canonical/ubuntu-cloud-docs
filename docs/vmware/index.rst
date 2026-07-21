@@ -38,7 +38,6 @@ Get involved
 * `Join our online chat`_
 * `Discuss on Matrix`_
 * :doc:`vmware-how-to/contribute-to-these-docs`
-* :doc:`vmware-how-to/configure-your-vm`
 
 Governance and policies
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -50,8 +49,8 @@ Governance and policies
    :maxdepth: 1
 
    vmware-reference/vcf-cve-dashboard
-   vmware-how-to/contribute-to-these-docs
    vmware-how-to/configure-your-vm
+   vmware-how-to/contribute-to-these-docs
 
 .. _Get support: https://ubuntu.com/cloud/public-cloud
 .. _Join our online chat: https://discourse.ubuntu.com/c/project/public-cloud/176
