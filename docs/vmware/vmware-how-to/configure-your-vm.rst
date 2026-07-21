@@ -10,7 +10,7 @@ When deploying an Ubuntu OVA in a VMware cluster, the "Customize template" step
 through a set of OVF properties. These properties are consumed by
 `cloud-init`_ on first boot and drive the initial instance configuration.
 
-.. figure:: vm-template-variables-screenshot.png
+.. figure:: configure-your-vm-images/vm-template-variables-screenshot.png
    :alt: VMware vSphere "Customize template" step showing the available OVF properties.
 
    The "Customize template" step in the Deploy OVF Template wizard.
