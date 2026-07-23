@@ -35,6 +35,16 @@ The following Ubuntu images are available for worker nodes on Oracle Kubernetes 
    * -
      - 1.35.2
      - 30 days after 1.38.1 OKE Release
+   * -
+     - 1.36.1
+     - 30 days after 1.39.1 OKE Release
+
+   * - 26.04 (Resolute Raccoon)
+     - 1.35.2
+     - 30 days after 1.38.1 OKE Release
+   * -
+     - 1.36.1
+     - 30 days after 1.39.1 OKE Release
 
 
 Networking plugin availability
