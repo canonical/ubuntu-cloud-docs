@@ -38,7 +38,7 @@ In this documentation
       - :doc:`Build a Pro golden image <google-how-to/gce/build-ubuntu-pro-golden-image>`
             
     * - **Custom deployments**
-      - :doc:`Deploy Kubernetes with Ubuntu Pro on GCE <google-how-to/gke/deploy-kubernetes-with-ubuntu-pro>` • :doc:`Create customized docker containers <google-how-to/gce/create-customized-docker-container>` • :doc:`Set hostname <google-how-to/gce/set-hostname-using-cloudinit>` 
+      - :doc:`Create a GKE cluster with Ubuntu nodes <google-how-to/gke/create-gke-cluster-with-ubuntu-nodes>` • :doc:`Deploy Kubernetes with Ubuntu Pro on GCE <google-how-to/gke/deploy-kubernetes-with-ubuntu-pro>` • :doc:`Create customized docker containers <google-how-to/gce/create-customized-docker-container>` • :doc:`Set hostname <google-how-to/gce/set-hostname-using-cloudinit>` 
       
     * - **Quality and policies**
       - :doc:`Security aspects <google-explanation/security-overview>` • :doc:`Image testing <google-explanation/gce-image-testing>` • :doc:`Image retention policy <google-explanation/gce-image-retention-policy>`
