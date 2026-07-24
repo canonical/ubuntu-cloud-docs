@@ -32,6 +32,7 @@ armhf
 ASIC
 AskUbuntu
 Authorize
+Autopilot
 aws
 awspub
 Axion
@@ -70,6 +71,7 @@ CloudSigma
 CNCF
 codename
 config
+containerd
 coreutils
 CPC
 cpc

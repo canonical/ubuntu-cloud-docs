@@ -5,8 +5,9 @@
 Using Kubernetes
 ================
 
-If you want to use Ubuntu Pro on your Kubernetes cluster, or install Charmed Kubeflow on GKE, you can use these how-to guides.
+If you want to create a GKE cluster with Ubuntu nodes, use Ubuntu Pro on your Kubernetes cluster, or install Charmed Kubeflow on GKE, you can use these how-to guides.
 
+* :doc:`Create a GKE cluster with Ubuntu nodes <create-gke-cluster-with-ubuntu-nodes>`
 * :doc:`Deploy Ubuntu Pro based k8s on GCE <deploy-kubernetes-with-ubuntu-pro>`
 * `Install Charmed Kubeflow on GKE`_
 
@@ -15,6 +16,7 @@ If you want to use Ubuntu Pro on your Kubernetes cluster, or install Charmed Kub
    :hidden:
    :maxdepth: 1
    
+   create-gke-cluster-with-ubuntu-nodes
    deploy-kubernetes-with-ubuntu-pro
 
   
