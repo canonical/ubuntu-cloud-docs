@@ -340,6 +340,7 @@ SaaS
 scalability
 SDK
 SeaBIOS
+secureboot
 SEV
 SHA
 simplestreams

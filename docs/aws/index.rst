@@ -36,7 +36,7 @@ Canonical provides a range of optimized Ubuntu images and services tailored for 
      - :doc:`AWS optimizations <aws-explanation/canonical-offerings>` • :doc:`Ubuntu Pro on AWS <aws-reference/pro>` • :doc:`Support options <aws-reference/support>`
 
    * - **Canonical's policies**
-     - :doc:`Security aspects <aws-explanation/ubuntu-security-on-aws>` • :doc:`Image retention policy <aws-explanation/ec2-image-retention-policy>` • :doc:`Ubuntu on AWS Announcements <aws-reference/aws-announcements>`
+     - :doc:`Security aspects <aws-explanation/ubuntu-security-on-aws>` • :doc:`Image testing <aws-explanation/aws-image-testing>` • :doc:`Image retention policy <aws-explanation/ec2-image-retention-policy>` • :doc:`Ubuntu on AWS Announcements <aws-reference/aws-announcements>`
      
      
 
