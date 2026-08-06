@@ -9,6 +9,7 @@ adapter
 addons
 AES
 AgentBaker
+agentic
 AIB
 AKS
 allocatable
