@@ -29,6 +29,7 @@ the main archive to 10 years through the ``esm-infra`` entitlement. In addition
 to patching the core of Ubuntu (i.e. the `Ubuntu main` repository), Pro also offers security maintenance of the 
 `Ubuntu universe` repository. This security coverage is considered best effort
 without Ubuntu Pro.
+The Legacy add-on extends ESM by a further 5 years, for up to 15 years total.
 
 Livepatch
 ~~~~~~~~~
@@ -41,7 +42,7 @@ that are expensive to migrate, such as kubernetes workers for EKS.
 Compliance
 ~~~~~~~~~~
 Ubuntu Pro offers compliance options via support for different `security standards`_ such as  
-CIS (level 1 and 2) and FIPS. FIPS 140-2 is currently supported
+:doc:`CIS (level 1 and 2) <../aws-how-to/instances/cis-hardening>` and FIPS. FIPS 140-2 is currently supported
 on Ubuntu 18.04 and 20.04, while FIPS 140-3 is supported on Ubuntu 22.04. For Ubuntu 24.04, 
 FIPS 140-3 is available through the `fips-updates` repository, while the modules await NIST
 certification.

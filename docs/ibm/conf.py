@@ -1,3 +1,6 @@
+import os
+import textwrap
+
 # Configuration file for the Sphinx documentation builder.
 project = 'Ubuntu on IBM'
 
@@ -60,9 +63,29 @@ html_context = {
     'sequential_nav': "both"
 }
 
+slug = 'docs/ibm'
 
-############################################################
-### Sitemap configuration
-############################################################
+html_baseurl = f"https://ubuntu.com/docs/ibm/"
+ogp_site_url = f"https://ubuntu.com/docs/ibm/"
 
-html_baseurl = 'https://canonical-ibm.readthedocs-hosted.com/'
+# Adds custom JavaScript files, located remotely or in 'html_static_path'.
+html_js_files = ['js/bundle.js', 'js/overwrite_links_ibm.js']
+
+
+############################
+# sphinx-llm configuration #
+############################
+
+# This description is included in llms.txt to provide some initial context for your
+# product docs.
+# TODO: Add a description in the form "This is the documentation for <product name>,
+# <first sentence of home page>".
+llms_txt_description = textwrap.dedent(
+    """\
+    This is the documentation for Ubuntu images available on IBM cloud.
+    """
+)
+
+# The base URL for references built by sphinx-markdown-builder.
+if os.environ.get("READTHEDOCS"):
+    markdown_http_base = html_baseurl

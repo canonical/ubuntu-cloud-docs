@@ -45,11 +45,13 @@ Once you have connected, run a full upgrade:
 If you get a new kernel, it is advised to restart the machine before proceeding.
 
 Now install the GPU drivers:
+For comprehensive GPU driver installation instructions, see :doc:`install-nvidia-drivers`.
+
 
 .. code::
 
     sudo apt install -y ubuntu-drivers-common
-    sudo ubuntu-drivers install
+    sudo ubuntu-drivers install --gpgpu
     sudo reboot
 
 

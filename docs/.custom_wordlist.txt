@@ -25,12 +25,14 @@ Ansible
 Anthos
 API
 APIs
+ARN
 AppArmor
 Arm
 armhf
 ASIC
 AskUbuntu
 Authorize
+Autopilot
 aws
 awspub
 Axion
@@ -69,6 +71,7 @@ CloudSigma
 CNCF
 codename
 config
+containerd
 coreutils
 CPC
 cpc
@@ -76,7 +79,6 @@ CPUs
 cron
 cryptographic
 cryptographically
-CTF
 CUDA
 customizations
 CVE
@@ -338,6 +340,7 @@ SaaS
 scalability
 SDK
 SeaBIOS
+secureboot
 SEV
 SHA
 simplestreams
@@ -436,6 +439,7 @@ VPC
 VPCs
 VCF
 VSI
+vSphere
 vTPM
 walinuxagent
 workspaces

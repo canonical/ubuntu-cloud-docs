@@ -25,7 +25,7 @@ To follow these steps, you'll need ``aws-cli`` and ``jq``:
 
 .. code-block::
 
-   sudo snap install aws-cli
+   sudo snap install aws-cli --classic
    sudo apt install jq
 
 Download a prebuilt UEFI Secure Boot variable store
@@ -59,7 +59,7 @@ use it to get the image name and its snapshot ID. These will be needed during th
    AMI_NAME=$(aws ec2 describe-images \
        --image-id "${AMI}" \
        | jq -r '.Images[0].Name')
-   AMI_SNAPSHOT=$(aws ec2 describe-images  \
+   AMI_SNAPSHOT=$(aws ec2 describe-images \
        --image-id "${AMI}" \
        | jq -r '.Images[0].BlockDeviceMappings[0].Ebs.SnapshotId')
 

@@ -23,7 +23,7 @@ Our policies
 Our policies such as the security features available via Ubuntu and Ubuntu Pro and our image retention policy:
  
 * :doc:`Security overview<security-overview>`
-* :doc:`Image retention policy<image-rentention-policy>`
+* :doc:`Image retention policy<image-retention-policy>`
 
 .. toctree::
    :hidden:
@@ -33,5 +33,5 @@ Our policies such as the security features available via Ubuntu and Ubuntu Pro a
    Canonical's offerings on Azure <canonical-offerings>
    Ubuntu on AKS<ubuntu-on-aks-worker-nodes>
    Security overview<security-overview>
-   Image retention policy<image-rentention-policy>
+   Image retention policy<image-retention-policy>
    Packages maintained by Canonical for Azure<packages>

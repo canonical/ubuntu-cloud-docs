@@ -16,6 +16,8 @@ Note that the `latest` channel track of the snap is unused.
 See the `official snap documentation <https://snapcraft.io/docs/channels>`_ for more information
 about the concept of channels and tracks.
 
+For an overview of all snaps bundled in EKS worker images, see :doc:`Snap usage in EKS worker images <../aws-explanation/eks-snaps>`.
+
 Automatic snap updates
 ~~~~~~~~~~~~~~~~~~~~~~
 

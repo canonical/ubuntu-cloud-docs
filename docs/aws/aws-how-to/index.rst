@@ -16,11 +16,12 @@ Perform tasks such as finding the right image to use and launching different typ
 * :doc:`Launch a desktop <instances/launch-ubuntu-desktop>`
 * :doc:`Launch and attest an AMD SEV-SNP instance <instances/launch-and-attest-amd-sev-snp-instances>`
 * :doc:`Import a local Ubuntu VM into AWS <instances/import-local-vm-to-aws>`
-* :doc:`Complete hardening of a base CIS Level 1 instance  <instances/cis-hardening>`
+* :doc:`Complete hardening of a base CIS Level 1 instance <instances/cis-hardening>`
 
 Create a customized AMI and CloudFormation templates:
 
 * :doc:`Build an Ubuntu Pro AMI using Packer <instances/build-pro-ami-using-packer>`
+* :doc:`Build a custom Ubuntu Pro image with EC2 Image Builder <instances/build-ubuntu-pro-image-with-ec2-image-builder>`
 * :doc:`Create CloudFormation templates <instances/build-cloudformation-templates>`
 
 Perform custom configurations like installing custom kernels and drivers:

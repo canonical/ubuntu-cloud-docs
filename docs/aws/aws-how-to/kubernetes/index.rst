@@ -15,7 +15,7 @@ If you want to use Ubuntu on your EKS worker nodes, choose from one of the follo
    * :doc:`Deploy an Ubuntu Pro FIPS EKS cluster <deploy-ubuntu-pro-fips-cluster>`
 
 * Use a Pro token - If you want to create an EKS cluster using your Pro token obtained from Canonical, follow the instructions given in:
-   * :doc:`Deploy a Pro cluster (with / without FIPS) using tokens  <deploy-ubuntu-pro-cluster>`
+   * :doc:`Deploy a Pro cluster (with / without FIPS) using tokens <deploy-ubuntu-pro-cluster>`
 
 
 Deployment options for node groups

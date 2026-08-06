@@ -8,7 +8,7 @@ Deploy self-managed Ubuntu nodes
 Amazon provides a good baseline for `launching self-managed node groups`_. 
 Minor modifications to eksctl can enable the same functionality for Ubuntu nodes.
 
-To specify Ubuntu nodes, in the ``eksctl create nodegroup`` command, supply the `--node-ami-family argument` with one of
+To specify Ubuntu nodes, in the ``eksctl create nodegroup`` command, supply the `--node-ami-family` argument with one of
 the following supported Node AMI families:
 
 * Ubuntu2004

@@ -36,6 +36,6 @@ These technologies are available on E3, E4, and E5 shapes across select regions.
 
 
 .. _`Ubuntu security page`: https://ubuntu.com/security
-.. _`Introductory page on security`: https://documentation.ubuntu.com/server/explanation/intro-to/security/
+.. _`Introductory page on security`: https://ubuntu.com/server/docs/explanation/intro-to/security/
 .. _`Security in the Oracle Cloud Infrastructure`: https://docs.oracle.com/en-us/iaas/Content/Security/Concepts/security.htm
 .. _`AMD's description of SEV`: https://www.amd.com/en/developer/sev.html

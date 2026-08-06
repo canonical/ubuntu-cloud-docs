@@ -124,7 +124,7 @@ To find images on AWS, you can use the `SSM Parameter Store`_, the `describe-ima
             For EKS, find the latest EKS AMI ID using:
 
             .. formatted-dropdown::
-               aws ec2 describe-images --owners 099720109477 --filters 'Name=name,Values=ubuntu-{eks_product}/k8s{k8s}/images/hvm-{vol}/ubuntu-{release}-{suite}-{arch}-server-{serial}' --query 'Images | sort_by(@, &CreationDate) | [-1].ImageId' --output text
+               aws ec2 describe-images --owners 099720109477 --filters 'Name=name,Values=ubuntu-{eks_product}/k8s_{k8s}/images/hvm-{vol}/ubuntu-{release}-{suite}-{arch}-server-{serial}' --query 'Images | sort_by(@, &CreationDate) | [-1].ImageId' --output text
                :eks_product: eks, eks-pro
                :release: resolute, noble, jammy
                :suite: 26.04{release:resolute}, 24.04{release:noble}, 22.04{release:jammy}

@@ -29,7 +29,12 @@ There are different retention policies for *release* and *daily* images:
 *release* images
 ~~~~~~~~~~~~~~~~
 
-Only 90 *release* images per plan/SKU are kept alive at any given time. This is due to a marketplace limit on the number of images. For example, the image described by the  URN ``Canonical:0001-com-ubuntu-server-jammy:22_04-lts-arm64:22.04.202206220`` will be available until 90 new images have been published under the ``Canonical:0001-com-ubuntu-server-jammy:22_04-lts-arm64`` plan. This translates into an approximate time period of two years.
+The retention policy for *release* images depends on the status of the plan:
+
+* **Active release plans.** The last 20 *release* image versions per plan/SKU are retained. No image version less than six months old will be removed, ensuring recent builds remain available regardless of the 20-image threshold.
+* **Plans past standard maintenance.** For SKUs under plans that no longer receive active image updates (such as free public plans for releases that have transitioned out of their standard five-year window), only a single, final image version is retained.
+
+For example, the image described by the URN ``Canonical:0001-com-ubuntu-server-jammy:22_04-lts-arm64:22.04.202206220`` will be available until 20 newer images have been published under the ``Canonical:0001-com-ubuntu-server-jammy:22_04-lts-arm64`` plan, or until the image is more than six months old (whichever comes later).
 
 *daily* images
 ~~~~~~~~~~~~~~

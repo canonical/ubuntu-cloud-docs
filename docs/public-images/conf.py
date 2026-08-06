@@ -1,3 +1,6 @@
+import os
+import textwrap
+
 # Configuration file for the Sphinx documentation builder.
 project = 'Ubuntu Public Images'
 
@@ -63,15 +66,34 @@ html_context = {
 # If your documentation is hosted on https://docs.ubuntu.com/,
 #       uncomment and update as needed.
 
-slug = 'public-images'
+slug = 'docs/public-images'
 
 # Set up redirects (https://documatt.gitlab.io/sphinx-reredirects/usage.html)
 # For example: "explanation/old-name.html": "../how-to/prettify.html",
 redirects = {}
 
 
-############################################################
-### Sitemap configuration
-############################################################
+html_baseurl = f"https://ubuntu.com/docs/public-images/"
+ogp_site_url = f"https://ubuntu.com/docs/public-images/"
 
-html_baseurl = 'https://documentation.ubuntu.com/public-images/'
+# Adds custom JavaScript files, located remotely or in 'html_static_path'.
+html_js_files = ['js/bundle.js', 'js/overwrite_links_public-images.js']
+
+
+############################
+# sphinx-llm configuration #
+############################
+
+# This description is included in llms.txt to provide some initial context for your
+# product docs.
+# TODO: Add a description in the form "This is the documentation for <product name>,
+# <first sentence of home page>".
+llms_txt_description = textwrap.dedent(
+    """\
+    This is the documentation for generic Ubuntu cloud images, LXD images and KVM optimized cloud images.
+    """
+)
+
+# The base URL for references built by sphinx-markdown-builder.
+if os.environ.get("READTHEDOCS"):
+    markdown_http_base = html_baseurl

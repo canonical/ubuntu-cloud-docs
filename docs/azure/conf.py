@@ -1,3 +1,6 @@
+import os
+import textwrap
+
 # Configuration file for the Sphinx documentation builder.
 project = 'Ubuntu on Azure'
 
@@ -64,7 +67,7 @@ html_context = {
 # If your documentation is hosted on https://docs.ubuntu.com/,
 #       uncomment and update as needed.
 
-slug = 'azure'
+slug = 'azure/docs'
 
 
 # Set up redirects (https://documatt.gitlab.io/sphinx-reredirects/usage.html)
@@ -91,8 +94,27 @@ redirects = {
 }
 
 
-############################################################
-### Sitemap configuration
-############################################################
+html_baseurl = f"https://ubuntu.com/azure/docs/"
+ogp_site_url = f"https://ubuntu.com/azure/docs/"
 
-html_baseurl = 'https://documentation.ubuntu.com/azure/'
+# Adds custom JavaScript files, located remotely or in 'html_static_path'.
+html_js_files = ['js/bundle.js', 'js/overwrite_links_azure.js']
+
+
+############################
+# sphinx-llm configuration #
+############################
+
+# This description is included in llms.txt to provide some initial context for your
+# product docs.
+# TODO: Add a description in the form "This is the documentation for <product name>,
+# <first sentence of home page>".
+llms_txt_description = textwrap.dedent(
+    """\
+    This is the documentation for Ubuntu images available on Azure.
+    """
+)
+
+# The base URL for references built by sphinx-markdown-builder.
+if os.environ.get("READTHEDOCS"):
+    markdown_http_base = html_baseurl

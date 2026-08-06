@@ -49,6 +49,7 @@ Governance and policies
    :maxdepth: 1
 
    vmware-reference/vcf-cve-dashboard
+   vmware-how-to/configure-your-vm
    vmware-how-to/contribute-to-these-docs
 
 .. _Get support: https://ubuntu.com/cloud/public-cloud

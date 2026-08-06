@@ -20,9 +20,10 @@ A description of the snaps used in EKS worker images, and their purpose.
 
 Our policies
 ------------
-A description of the available security features and of our image retention policy.
+A description of the available security features, how our images are tested, and of our image retention policy.
 
 * :doc:`Security overview <ubuntu-security-on-aws>`
+* :doc:`Image testing <aws-image-testing>`
 * :doc:`Image retention policy <ec2-image-retention-policy>`
 
 .. toctree::
@@ -32,4 +33,5 @@ A description of the available security features and of our image retention poli
    Canonical's offerings on AWS <canonical-offerings>
    Snap usage in EKS worker images <eks-snaps.rst>
    Security overview <ubuntu-security-on-aws>
+   Image testing <aws-image-testing>
    Image retention policy <ec2-image-retention-policy>

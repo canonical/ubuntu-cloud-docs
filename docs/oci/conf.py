@@ -1,5 +1,7 @@
 import pathlib
 import urllib.request
+import os
+import textwrap
 
 # Configuration file for the Sphinx documentation builder.
 project = "Ubuntu on OCI registries"
@@ -50,11 +52,30 @@ html_context = {
 # If your documentation is hosted on https://docs.ubuntu.com/,
 #       uncomment and update as needed.
 
-slug = 'oci-registries'
+slug = 'docs/oci-registries'
 
 
-############################################################
-### Sitemap configuration
-############################################################
+html_baseurl = f"https://ubuntu.com/docs/oci-registries/"
+ogp_site_url = f"https://ubuntu.com/docs/oci-registries/"
 
-html_baseurl = 'https://documentation.ubuntu.com/oci-registries/'
+# Adds custom JavaScript files, located remotely or in 'html_static_path'.
+html_js_files = ['js/bundle.js', 'js/overwrite_links_oci.js']
+
+
+############################
+# sphinx-llm configuration #
+############################
+
+# This description is included in llms.txt to provide some initial context for your
+# product docs.
+# TODO: Add a description in the form "This is the documentation for <product name>,
+# <first sentence of home page>".
+llms_txt_description = textwrap.dedent(
+    """\
+    This is the documentation for Ubuntu images available on OCI container registries.
+    """
+)
+
+# The base URL for references built by sphinx-markdown-builder.
+if os.environ.get("READTHEDOCS"):
+    markdown_http_base = html_baseurl

@@ -35,6 +35,8 @@ The Ubuntu version (e.g. noble, jammy) and the architecture (ARM64 or AMD64) can
             Properties:
                   ImageId: !Ref LatestAmiId
 
+For upgrading between Ubuntu LTS releases, see :doc:`upgrade-ubuntu-lts-release`.
+
 
 Ubuntu Pro
 ~~~~~~~~~~
@@ -59,6 +61,8 @@ The format for the parameter is:
 * VIRT_TYPE: `pv` or `hvm`
 * VOL_TYPE: `ebs-gp3` (for >=23.10), `ebs-gp2` (for <=23.04), `ebs-io1`, `ebs-standard`, or `instance-store`
 
+To upgrade an existing LTS instance to Ubuntu Pro, see :doc:`upgrade-in-place-from-lts-to-pro`.
+
 
 Ubuntu Pro FIPS
 ~~~~~~~~~~~~~~~
@@ -81,10 +85,13 @@ Since Ubuntu Pro FIPS is only available at the AWS Marketplace, the product ID n
    * - Ubuntu Pro FIPS 20.04 LTS
      - AMD64
      - ``prod-k6fgbnayirmrc``
-   * - Ubuntu Pro FIPS 22.04 LTS
+   * - Ubuntu Pro FIPS 20.04 LTS (FIPS with updates)
+     - AMD64
+     - ``prod-ibsqi42w6rtey``
+   * - Ubuntu Pro FIPS 22.04 LTS (FIPS with updates)
      - AMD64
      - ``prod-y5kejmnu3wodg``
-   * - Ubuntu Pro FIPS 22.04 LTS
+   * - Ubuntu Pro FIPS 22.04 LTS (FIPS with updates)
      - ARM64
      - ``prod-rcuudwwonvpew``
 
@@ -100,6 +107,8 @@ To create the parameter in your CloudFormation template, choose a product ID fro
 
    Before launching any Marketplace product you'll have to subscribe to it, even if it is free of charge.
 
+To deploy an Ubuntu Pro FIPS cluster on EKS, see :doc:`../kubernetes/deploy-ubuntu-pro-fips-cluster`.
+
 
 Ubuntu LTS for EKS
 ~~~~~~~~~~~~~~~~~~
@@ -111,6 +120,8 @@ For Ubuntu-EKS AMI IDs, use the following query string with any required changes
        LatestAmiId:
                 Type: 'AWS::SSM::Parameter::Value<AWS::EC2::Image::Id>'
                 Default: '/aws/service/canonical/ubuntu/eks/24.04/1.32/stable/current/amd64/hvm/ebs-gp3/ami-id'
+
+For deploying an Ubuntu EKS cluster, see :doc:`../kubernetes/deploy-ubuntu-cluster-with-eks-ami`. For Ubuntu Pro on EKS, see :doc:`../kubernetes/deploy-ubuntu-pro-cluster-with-eks-pro-ami`.
 
 
 Create template

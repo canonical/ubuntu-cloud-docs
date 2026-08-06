@@ -33,32 +33,44 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         function updateDropdowns() {
-            selects.forEach(sel => {
-                const key = sel.dataset.key;
-                const field = widget.querySelector(`.dropdown-field[data-field="${key}"]`);
+            for (let pass = 0; pass < selects.length; pass++) {
+                let changed = false;
 
-                const prevValue = sel.value;
-                const available = computeAvailableValues(key);
+                selects.forEach(sel => {
+                    const key = sel.dataset.key;
+                    const field = widget.querySelector(`.dropdown-field[data-field="${key}"]`);
 
-                sel.innerHTML = available
-                    .map(o => `<option value="${o.value}">${o.value}</option>`)
-                    .join("");
+                    const prevValue = sel.value;
+                    const available = computeAvailableValues(key);
 
-                // Try to restore previous value
-                if (available.some(a => a.value === prevValue)) {
-                    sel.value = prevValue;
-                } else {
-                    // Otherwise pick first valid value
-                    sel.value = available[0]?.value;
+                    sel.innerHTML = available
+                        .map(o => `<option value="${o.value}">${o.value}</option>`)
+                        .join("");
+
+                    // Try to restore previous value
+                    if (available.some(a => a.value === prevValue)) {
+                        sel.value = prevValue;
+                    } else {
+                        // Otherwise pick first valid value
+                        sel.value = available[0]?.value;
+                    }
+
+                    if (sel.value !== prevValue) {
+                        changed = true;
+                    }
+
+                    // Hide the field if only one possible value
+                    if (available.length === 1) {
+                        field.style.display = "none";
+                    } else {
+                        field.style.display = "flex";
+                    }
+                });
+
+                if (!changed) {
+                    break;
                 }
-
-                // Hide the field if only one possible value
-                if (available.length === 1) {
-                    field.style.display = "none";
-                } else {
-                    field.style.display = "flex";
-                }
-            });
+            }
         }
 
         function updateOutput() {

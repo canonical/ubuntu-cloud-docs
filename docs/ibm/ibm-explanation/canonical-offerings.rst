@@ -69,4 +69,4 @@ Flexible options allow for you to receive coverage on just the packages you need
 Community Support
 -----------------
 
-Ad-hoc assistance can also be found on our community platforms like `AskUbuntu <https://askubuntu.com/>`__ and `Matrix <https://documentation.ubuntu.com/project/community/contributors/matrix/onboarding/#matrix-onboarding>`__.
+Ad-hoc assistance can also be found on our community platforms like `AskUbuntu <https://askubuntu.com/>`__ and `Matrix <https://ubuntu.com/project/docs/community/contributors/matrix/onboarding/#matrix-onboarding>`__.
