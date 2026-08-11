@@ -18,8 +18,8 @@ Requirements:
 * AWSCLI installed and configured
 * eksctl (make sure to keep it updated to support latest EKS and Ubuntu versions)
 
-Launching nodegroups from the command line
-------------------------------------------
+Launching node groups from the command line
+-------------------------------------------
 
 Eksctl supports Ubuntu nodes natively. To specify Ubuntu nodes, in the
 ``eksctl create nodegroup`` command, supply the ``--node-ami-family`` argument
@@ -56,7 +56,7 @@ with one of the following supported Node AMI families:
    defined via a launch template, and EKS automatically handles the node
    recycling strategy.
 
-Therefore, launching a new nodegroup with the Ubuntu 24.04 LTS AMI would be:
+Therefore, launching a new node group with the Ubuntu 24.04 LTS AMI would be:
 
 .. code-block:: bash
 
@@ -87,11 +87,11 @@ cluster to run Ubuntu Pro containers, use the following command:
      --ssh-public-key my-key \
      --node-ami-family ubuntupro2404
 
-Launching nodegroups from a YAML configuration file
----------------------------------------------------
+Launching node groups from a YAML configuration file
+----------------------------------------------------
 
 If you need to change default configurations or track configuration changes as
-code, you can start the new nodegroup from a cluster configuration YAML file:
+code, you can start the new node group from a cluster configuration YAML file:
 
 .. code-block:: yaml
 
