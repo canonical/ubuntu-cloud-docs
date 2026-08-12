@@ -14,7 +14,7 @@ Ubuntu images are specifically fine-tuned to maximize performance on Azure infra
 
 * `Server images`_ are general-purpose images customized for Azure Virtual Machines. These images are also available with `Ubuntu Pro`_ enabled.
 
-* :ref:`Minimal images <all-clouds:ubuntu-base-and-minimal-images>` are designed for automated deployment at scale with a reduced default package set. Things like interactive usage tools are omitted. They are much smaller, boot faster, and require fewer security updates over time due to the fewer installed packages. These images are also available with `Ubuntu Pro`_ enabled.
+* :doc:`Minimal images <all-clouds:all-clouds-explanation/ubuntu-base-and-minimal-images>` are designed for automated deployment at scale with a reduced default package set. Things like interactive usage tools are omitted. They are much smaller, boot faster, and require fewer security updates over time due to the fewer installed packages. These images are also available with `Ubuntu Pro`_ enabled.
 
 *  :ref:`Confidential Virtual Machine (CVM) images <azure-cvms>` provide enhanced security features designed to protect data at rest, in use, and during boot. CVM images are intended for use with Azure's confidential computing capabilities using hardware-enabled security features. These images are also available with `Ubuntu Pro`_ enabled.
 

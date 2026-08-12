@@ -20,7 +20,7 @@ Image retention policy
    :start-after: Start: Daily vs release images
    :end-before: End: Daily vs release images
 
-For more details about these image types, check out our documentation of :ref:`image release types <all-clouds:release-types>`.
+For more details about these image types, check out our documentation of :doc:`image release types <all-clouds:all-clouds-explanation/release-types>`.
 
 The retention policy can be summarized as follows:
 

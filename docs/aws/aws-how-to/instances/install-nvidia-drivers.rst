@@ -12,7 +12,7 @@ AWS provides GPU-enabled instance types for workloads that require GPU compute p
 
 For more comprehensive instructions on checking the available drivers and installing the correct one based on different use-cases, refer to the `Ubuntu server documentation for installing NVIDIA drivers`_.
 
-To test proposed NVIDIA driver versions before release, see :ref:`all-clouds:install-proposed-nvidia-drivers-for-testing`.
+To test proposed NVIDIA driver versions before release, see :doc:`all-clouds:all-clouds-how-to/install-proposed-nvidia-drivers-for-testing`.
 
 Launch your instance
 --------------------

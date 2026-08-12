@@ -9,7 +9,7 @@ This document provides detailed information on various Ubuntu cloud image artifa
 
 .. note::
 
-  If you are looking for Ubuntu images to use on the major public clouds, their documentation can be found at: :ref:`Ubuntu on AWS <aws:index>`, :ref:`Ubuntu on Azure <azure:index>`, :ref:`Ubuntu on GCP <google:index>`, :ref:`Ubuntu on IBM <ibm:index>` and :ref:`Ubuntu on Oracle <oracle:index>`.
+  If you are looking for Ubuntu images to use on the major public clouds, their documentation can be found at: :doc:`Ubuntu on AWS <aws:index>`, :doc:`Ubuntu on Azure <azure:index>`, :doc:`Ubuntu on GCP <google:index>`, :doc:`Ubuntu on IBM <ibm:index>` and :doc:`Ubuntu on Oracle <oracle:index>`.
 
 Images
 ------
