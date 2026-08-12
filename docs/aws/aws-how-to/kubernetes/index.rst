@@ -4,38 +4,71 @@
 Using EKS
 =========
 
-Deployment options for using Ubuntu on EKS
--------------------------------------------
+Canonical publishes Ubuntu EKS images ready for use in your EKS clusters. These
+images come pre-configured to join a cluster and are integrated into ``eksctl``,
+the official EKS management CLI tool. Ubuntu LTS and Ubuntu Pro LTS images are
+available via the :doc:`AWS CLI <../../aws-how-to/instances/find-ubuntu-images>`,
+``eksctl``, or the `AWS Marketplace`_.
 
-If you want to use Ubuntu on your EKS worker nodes, choose from one of the following deployment options:
+The following table details the currently supported images and EKS version
+coverage:
 
-* Use an Ubuntu AMI - Ubuntu EKS AMIs are available through :doc:`AWS CLI<../../aws-how-to/instances/find-ubuntu-images>` or from the `AWS marketplace`_. They can be used to:
-   * :doc:`Deploy an Ubuntu EKS cluster <deploy-ubuntu-cluster-with-eks-ami>`
-   * :doc:`Deploy an Ubuntu Pro EKS cluster <deploy-ubuntu-pro-cluster-with-eks-pro-ami>`
-   * :doc:`Deploy an Ubuntu Pro FIPS EKS cluster <deploy-ubuntu-pro-fips-cluster>`
+.. list-table::
+   :header-rows: 1
 
-* Use a Pro token - If you want to create an EKS cluster using your Pro token obtained from Canonical, follow the instructions given in:
-   * :doc:`Deploy a Pro cluster (with / without FIPS) using tokens <deploy-ubuntu-pro-cluster>`
+   * - ``amiFamily``
+     - Ubuntu release
+     - Supported EKS versions
+   * - ``Ubuntu2204``
+     - 22.04 Jammy Jellyfish
+     - 1.29 – 1.32
+   * - ``UbuntuPro2204``
+     - 22.04 Jammy Jellyfish (Pro)
+     - 1.29 – 1.34
+   * - ``Ubuntu2404``
+     - 24.04 Noble Numbat
+     - 1.31 – 1.36
+   * - ``UbuntuPro2404``
+     - 24.04 Noble Numbat (Pro)
+     - 1.31 – 1.36
+   * - ``Ubuntu2604``
+     - 26.04 Resolute Raccoon
+     - 1.36 only
+   * - ``UbuntuPro2604``
+     - 26.04 Resolute Raccoon (Pro)
+     - 1.36 only
 
+Cluster deployment options for Ubuntu on EKS
+--------------------------------------------
+
+To use Ubuntu as the operating system for your EKS worker nodes, choose from the
+following deployment options:
+
+* :doc:`Deploy an Ubuntu EKS cluster <deploy-ubuntu-cluster-with-eks-ami>`
+* :doc:`Deploy an Ubuntu Pro EKS cluster <deploy-ubuntu-pro-cluster-with-eks-pro-ami>` (using the pre-activated Ubuntu Pro AMI)
+* :doc:`Deploy an Ubuntu Pro FIPS EKS cluster <deploy-ubuntu-pro-fips-cluster>` (using the pre-activated Ubuntu Pro AMI)
+* :doc:`Deploy an Ubuntu Pro cluster using tokens <deploy-ubuntu-pro-cluster>`
 
 Deployment options for node groups
 ----------------------------------
 
-You can create both managed and self-managed node groups using Ubuntu on EKS. Choose from the following options:
+You can create both managed and self-managed node groups using Ubuntu on EKS.
+Select from the following options:
 
 * :doc:`Deploy a self-managed Ubuntu node group <deploy-self-managed-node-group>`
 * :doc:`Deploy managed Ubuntu node groups <deploy-managed-node-group>`
 
-
 Custom EKS deployments
------------------------
-If you want to use Ubuntu on EKS with custom configurations, such as enabling GPUs or installing Kubeflow, check the following guides:
+----------------------
+
+For custom configurations, such as GPU-enabled deployments or installing
+Kubeflow, refer to these guides:
 
 * :doc:`Enable GPUs on EKS worker nodes <enable-gpus-on-eks>`
 * `Install Kubeflow on EKS (external link)`_
 
 
-.. _`AWS marketplace`: https://aws.amazon.com/marketplace/search/results?searchTerms=Ubuntu+Pro+eks&CREATOR=565feec9-3d43-413e-9760-c651546613f2&filters=CREATOR
+.. _`AWS Marketplace`: https://aws.amazon.com/marketplace/search/results?searchTerms=Ubuntu+Pro+eks&CREATOR=565feec9-3d43-413e-9760-c651546613f2&filters=CREATOR
 .. _`Install Kubeflow on EKS (external link)`: https://documentation.ubuntu.com/charmed-kubeflow/how-to/install/install-eks/
 
 
@@ -43,7 +76,7 @@ If you want to use Ubuntu on EKS with custom configurations, such as enabling GP
 .. toctree::
    :hidden:
    :maxdepth: 1
-   
+
    Deploy an Ubuntu cluster <deploy-ubuntu-cluster-with-eks-ami>
    Deploy an Ubuntu Pro cluster <deploy-ubuntu-pro-cluster-with-eks-pro-ami>
    Deploy an Ubuntu Pro FIPS cluster <deploy-ubuntu-pro-fips-cluster>
