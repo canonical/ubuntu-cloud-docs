@@ -144,7 +144,7 @@ For more information about creating confidential computing enabled instances, re
 * `Protect data in use with OCI confidential computing <https://blogs.oracle.com/cloud-infrastructure/protect-data-in-use-with-confidential-computing>`_
 * `Confidential computing <https://docs.oracle.com/en-us/iaas/Content/Compute/References/confidential_compute.htm>`_
 
-For a general overview of confidential computing technologies, see :doc:`all-clouds:all-clouds-explanation/confidential-computing`.
+For a general overview of confidential computing technologies, see :ref:`all-clouds:confidential-computing`.
 
 .. _`AMD documentation`: https://www.amd.com/en/developer/sev.html
 .. _`Shapes that support confidential computing`: https://docs.oracle.com/en-us/iaas/Content/Compute/References/confidential_compute.htm#confidential_compute__coco_supported_shapes

@@ -17,7 +17,7 @@ We run two sets of automated tests on each daily GCE image:
 Testing in the image life-cycle
 -------------------------------
 
-Ubuntu images on GCE move through a life-cycle of *daily* builds that may be promoted to *release* images. (For background on these image types, see :doc:`image release types <all-clouds:all-clouds-explanation/release-types>` and the :doc:`GCE image retention policy <gce-image-retention-policy>`.)
+Ubuntu images on GCE move through a life-cycle of *daily* builds that may be promoted to *release* images. (For background on these image types, see :ref:`image release types <all-clouds:release-types>` and the :ref:`GCE image retention policy <gce-image-retention-policy>`.)
 
 New images are built daily from the latest packages. Each daily build is uploaded and then exercised by the two sets of tests described below.
 
