@@ -14,7 +14,7 @@ We run **Canonical's own internal test suite** on each daily EC2 image. This sui
 Testing in the image life-cycle
 -------------------------------
 
-Ubuntu images on AWS move through a life-cycle of *daily* builds that may be promoted to *release* images. (For background on these image types, see :doc:`image release types <all-clouds:all-clouds-explanation/release-types>` and the :doc:`EC2 image retention policy <ec2-image-retention-policy>`.)
+Ubuntu images on AWS move through a life-cycle of *daily* builds that may be promoted to *release* images. (For background on these image types, see :ref:`image release types <all-clouds:release-types>` and the :ref:`EC2 image retention policy <ec2-image-retention-policy>`.)
 
 New images are built daily from the latest packages. Each daily build is uploaded and then exercised by the tests described below.
 

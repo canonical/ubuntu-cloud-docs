@@ -11,7 +11,7 @@ Ubuntu images on Azure include the security features provided by both Ubuntu and
 Ubuntu security features
 ------------------------
 
-Ubuntu on Azure inherits and benefits from all of the security features available to Ubuntu Server. A detailed description of these features can be found on the `Ubuntu security page`_ and in our explanation about :doc:`Security in the Ubuntu cloud images <all-clouds:all-clouds-explanation/security-overview>`. For further guidance on usage refer to  Ubuntu server's `Introductory page on security`_. 
+Ubuntu on Azure inherits and benefits from all of the security features available to Ubuntu Server. A detailed description of these features can be found on the `Ubuntu security page`_ and in our explanation about :ref:`Security in the Ubuntu cloud images <all-clouds:security-overview>`. For further guidance on usage refer to  Ubuntu server's `Introductory page on security`_. 
 
 Azure security features
 -----------------------
