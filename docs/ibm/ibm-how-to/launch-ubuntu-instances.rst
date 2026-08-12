@@ -2,6 +2,8 @@
    :description: Learn how to launch Ubuntu VSI instances on IBM Cloud using the web console or the CLI. 
 
 
+.. _launch-ubuntu-instances:
+
 Launch an Ubuntu VSI on IBM Cloud
 =================================
 
@@ -57,7 +59,7 @@ SSH key pairs are needed to log in to a VSI from your local machine. To create o
 Find an Ubuntu image
 ~~~~~~~~~~~~~~~~~~~~
 
-Use :doc:`Find Ubuntu images <find-ubuntu-images>` to find an appropriate Ubuntu image and its ID.
+Use :ref:`Find Ubuntu images <find-ubuntu-images>` to find an appropriate Ubuntu image and its ID.
 
 
 Choose a zone and region

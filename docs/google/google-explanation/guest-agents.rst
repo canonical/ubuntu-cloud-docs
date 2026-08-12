@@ -1,6 +1,8 @@
 .. meta::
    :description: Discover the different Google guest agents installed on Ubuntu GCP images - google-guest-agent, gce-compute-image-packages, google-compute-engine-oslogin and google-osconfig-agent.
 
+.. _guest-agents:
+
 Google agents installed on Ubuntu
 =================================
 

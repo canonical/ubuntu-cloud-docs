@@ -1,6 +1,8 @@
 .. meta::
    :description: Understand how Canonical tests Ubuntu AWS images before release, using its own internal test suite covering EC2, hibernation and EKS worker images.
 
+.. _aws-image-testing:
+
 Image testing
 =============
 
@@ -12,7 +14,7 @@ We run **Canonical's own internal test suite** on each daily EC2 image. This sui
 Testing in the image life-cycle
 -------------------------------
 
-Ubuntu images on AWS move through a life-cycle of *daily* builds that may be promoted to *release* images. (For background on these image types, see :doc:`image release types <all-clouds:all-clouds-explanation/release-types>` and the :doc:`EC2 image retention policy <ec2-image-retention-policy>`.)
+Ubuntu images on AWS move through a life-cycle of *daily* builds that may be promoted to *release* images. (For background on these image types, see :ref:`image release types <all-clouds:release-types>` and the :ref:`EC2 image retention policy <ec2-image-retention-policy>`.)
 
 New images are built daily from the latest packages. Each daily build is uploaded and then exercised by the tests described below.
 
@@ -62,7 +64,7 @@ Image families and architectures
 
 The image families published for AWS (including standard, minimal, Ubuntu Pro and EKS worker images) are each tested with the checks relevant to them. Tests run across the supported architectures (`amd64` and `arm64`), so both architectures of an image are validated before release.
 
-Coverage is tailored per family: for example, EKS worker images additionally run a full Kubernetes conformance suite against a live cluster. For more on the available families, see :doc:`Canonical's offerings on AWS <canonical-offerings>`.
+Coverage is tailored per family: for example, EKS worker images additionally run a full Kubernetes conformance suite against a live cluster. For more on the available families, see :ref:`Canonical's offerings on AWS <canonical-offerings>`.
 
 
 Test outcomes
@@ -70,4 +72,4 @@ Test outcomes
 
 Test outcomes determine whether a daily image can be promoted: if all tests pass, the build becomes eligible for promotion to a release image; if any test fails, the build is not promoted.
 
-The result of this process is that the Ubuntu images you launch from AWS have each passed Canonical's own internal test suite for their family and architecture. For more on the security features validated along the way, see the :doc:`security overview <ubuntu-security-on-aws>`.
+The result of this process is that the Ubuntu images you launch from AWS have each passed Canonical's own internal test suite for their family and architecture. For more on the security features validated along the way, see the :ref:`security overview <ubuntu-security-on-aws>`.

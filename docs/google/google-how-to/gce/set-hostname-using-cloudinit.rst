@@ -2,6 +2,8 @@
    :description: Learn how to set hostname of GCE instances using Google's DHCP service or using cloud-init. Includes details about changes needed for Ubuntu 24.04 LTS and later images.
 
 
+.. _set-hostname-using-cloudinit:
+
 Set hostname of GCE instances
 =============================
 

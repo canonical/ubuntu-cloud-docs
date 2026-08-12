@@ -2,6 +2,8 @@
    :description: Learn how to deploy Ubuntu OKE nodes using Terraform, including the creation of an OKE cluster, and adding nodes.
 
 
+.. _deploy-ubuntu-oke-nodes-using-terraform:
+
 Deploy Ubuntu OKE nodes using Terraform
 =======================================
 

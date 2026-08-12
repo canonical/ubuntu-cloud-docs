@@ -1,6 +1,8 @@
 .. meta::
    :description: Explanations of Ubuntu on Azure offerings, security, image retention, and package maintenance policies.
 
+.. _azure-explanation-index:
+
 Explanation
 ===========
 
@@ -11,10 +13,10 @@ Our offerings
 
 Details about our offerings, including the different types of images available, the Azure-specific optimizations and the packages that we maintain for Azure:
 
-* :doc:`Ubuntu on Azure <understanding-ubuntu-on-azure>`
-* :doc:`Canonical's offerings on Azure <canonical-offerings>`
-* :doc:`Ubuntu on AKS<ubuntu-on-aks-worker-nodes>`
-* :doc:`Packages maintained by Canonical for Azure<packages>`
+* :ref:`Ubuntu on Azure <understanding-ubuntu-on-azure>`
+* :ref:`Canonical's offerings on Azure <canonical-offerings>`
+* :ref:`Ubuntu on AKS <ubuntu-on-aks-worker-nodes>`
+* :ref:`Packages maintained by Canonical for Azure <packages>`
 
 
 Our policies
@@ -22,8 +24,8 @@ Our policies
 
 Our policies such as the security features available via Ubuntu and Ubuntu Pro and our image retention policy:
  
-* :doc:`Security overview<security-overview>`
-* :doc:`Image retention policy<image-retention-policy>`
+* :ref:`Security overview <security-overview>`
+* :ref:`Image retention policy <image-retention-policy>`
 
 .. toctree::
    :hidden:

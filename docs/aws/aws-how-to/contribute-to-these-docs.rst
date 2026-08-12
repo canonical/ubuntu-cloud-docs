@@ -1,6 +1,8 @@
 .. meta::
    :description:  Find out how to contribute to the Ubuntu on AWS documentation, including editing, building, and submitting pull requests.
 
+.. _contribute-to-these-docs:
+
 Contribute to these docs
 ========================
 

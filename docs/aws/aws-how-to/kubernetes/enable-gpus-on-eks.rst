@@ -2,6 +2,8 @@
    :description: Learn how to enable GPUs on EKS worker nodes. Create a cluster of GPU based instances, install NVIDIA drivers, set up the NVIDIA Container Toolkit, and apply the NVIDIA Device Plugin to the cluster.
 
 
+.. _enable-gpus-on-eks:
+
 Enable GPUs on EKS worker nodes
 ===============================
 
@@ -17,7 +19,7 @@ For the GPU based instances to work, you'll need to install the appropriate `NVI
 
 After installation, use ``sudo nvidia-smi`` to verify that the driver is successfully installed.
 
-For Canonical's own NVIDIA driver installation guide for Ubuntu on AWS, see :doc:`Install NVIDIA drivers <../instances/install-nvidia-drivers>`.
+For Canonical's own NVIDIA driver installation guide for Ubuntu on AWS, see :ref:`Install NVIDIA drivers <install-nvidia-drivers>`.
 
 
 Install and set up the 'NVIDIA Container Toolkit' on each node
@@ -69,7 +71,7 @@ The output should be similar to:
    Applications clocks set to "(MEM 2505, SM 1177)" for GPU 00000000:00:1E.0
    All done.
 
-For details on the kubelet snap used in EKS, see :doc:`EKS kubelet snap <../../aws-reference/eks-kubelet-snap>`.
+For details on the kubelet snap used in EKS, see :ref:`EKS kubelet snap <eks-kubelet-snap>`.
 
 
 Apply 'NVIDIA Device Plugin' to the cluster

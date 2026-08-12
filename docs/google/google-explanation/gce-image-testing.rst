@@ -1,6 +1,8 @@
 .. meta::
    :description: Understand how Canonical tests Ubuntu GCE images before release, using its own internal test suite and Google's upstream cloud-image-tests.
 
+.. _gce-image-testing:
+
 Image testing
 =============
 
@@ -15,7 +17,7 @@ We run two sets of automated tests on each daily GCE image:
 Testing in the image life-cycle
 -------------------------------
 
-Ubuntu images on GCE move through a life-cycle of *daily* builds that may be promoted to *release* images. (For background on these image types, see :doc:`image release types <all-clouds:all-clouds-explanation/release-types>` and the :doc:`GCE image retention policy <gce-image-retention-policy>`.)
+Ubuntu images on GCE move through a life-cycle of *daily* builds that may be promoted to *release* images. (For background on these image types, see :ref:`image release types <all-clouds:release-types>` and the :ref:`GCE image retention policy <gce-image-retention-policy>`.)
 
 New images are built daily from the latest packages. Each daily build is uploaded and then exercised by the two sets of tests described below.
 
@@ -84,7 +86,7 @@ Image families and architectures
 
 The image families published for GCE (including Base, Minimal, Accelerator, TPU, Ubuntu Pro, Ubuntu Pro FIPS and Ubuntu Core) are each tested with the checks relevant to them. Tests run across the supported architectures (`amd64` and `arm64`), so both architectures of an image are validated before release.
 
-Coverage is tailored per family: for example, Pro images additionally validate Pro entitlements, accelerator images additionally validate GPU readiness, and Ubuntu Core images follow a dedicated test path suited to their image format. For more on the available families, see :doc:`Canonical's offerings on GCP <canonical-offerings>`.
+Coverage is tailored per family: for example, Pro images additionally validate Pro entitlements, accelerator images additionally validate GPU readiness, and Ubuntu Core images follow a dedicated test path suited to their image format. For more on the available families, see :ref:`Canonical's offerings on GCP <canonical-offerings>`.
 
 
 Test outcomes
@@ -92,7 +94,7 @@ Test outcomes
 
 Test outcomes determine whether a daily image can be promoted: if all tests pass, the build becomes eligible for promotion to a release image; if any test fails, the build is not promoted.
 
-The result of this process is that the Ubuntu images you launch from GCE have each passed both Canonical's own internal test suite and Google's upstream Cloud Image Tests for their family and architecture. For more on the security features validated along the way, see the :doc:`security overview <security-overview>`.
+The result of this process is that the Ubuntu images you launch from GCE have each passed both Canonical's own internal test suite and Google's upstream Cloud Image Tests for their family and architecture. For more on the security features validated along the way, see the :ref:`security overview <security-overview>`.
 
 
 .. _`cloud-image-tests`: https://github.com/GoogleCloudPlatform/cloud-image-tests

@@ -1,6 +1,8 @@
 .. meta::
    :description: Learn about Ubuntu on public cloud platforms, including AWS, Azure, Google, IBM, Oracle, and optimized cloud images for enterprise workloads.
 
+.. _index:
+
 Ubuntu on public cloud
 ======================
 
@@ -27,12 +29,12 @@ For further details, refer to the cloud-specific documentation:
 ..  grid:: 1 1 2 2
    :padding: 0
 
-   .. grid-item-card:: :doc:`Ubuntu on AWS <aws:index>`   
-   .. grid-item-card:: :doc:`Ubuntu on Azure <azure:index>`  
-   .. grid-item-card:: :doc:`Ubuntu on GCP <google:index>` 
-   .. grid-item-card:: :doc:`Ubuntu on IBM <ibm:index>`
-   .. grid-item-card:: :doc:`Ubuntu on Oracle <oracle:index>`
-   .. grid-item-card:: :doc:`Ubuntu on VMware <vmware:index>`
+   .. grid-item-card:: :ref:`Ubuntu on AWS <aws:index>`   
+   .. grid-item-card:: :ref:`Ubuntu on Azure <azure:index>`  
+   .. grid-item-card:: :ref:`Ubuntu on GCP <google:index>` 
+   .. grid-item-card:: :ref:`Ubuntu on IBM <ibm:index>`
+   .. grid-item-card:: :ref:`Ubuntu on Oracle <oracle:index>`
+   .. grid-item-card:: :ref:`Ubuntu on VMware <vmware:index>`
 
 -----------------------------------------------------------------
 
@@ -46,8 +48,8 @@ Apart from the specific public clouds, Canonical also produces a variety of Ubun
 ..  grid:: 1 1 2 2
    :padding: 0
 
-   .. grid-item-card:: :doc:`Ubuntu on OCI container registries <oci:index>`
-   .. grid-item-card:: :doc:`Ubuntu Public Images <public-images:index>`
+   .. grid-item-card:: :ref:`Ubuntu on OCI container registries <oci:index>`
+   .. grid-item-card:: :ref:`Ubuntu Public Images <public-images:index>`
 
 
 
@@ -77,18 +79,18 @@ In this documentation
     :header-rows: 0
 
     * - **Ubuntu image specifics**
-      - :doc:`Base and minimal images <all-clouds-explanation/ubuntu-base-and-minimal-images>` •
-        :doc:`Architecture variants support <all-clouds-explanation/architecture-variants>` •
-        :doc:`Cloud image release types <all-clouds-explanation/release-types>` 
+      - :ref:`Base and minimal images <ubuntu-base-and-minimal-images>` •
+        :ref:`Architecture variants support <architecture-variants>` •
+        :ref:`Cloud image release types <release-types>` 
 
     * - **Security aspects**
-      - :doc:`Security in Ubuntu cloud images <all-clouds-explanation/security-overview>` •
-        :doc:`Check CVE status <all-clouds-how-to/check-cve-on-instance>` 
+      - :ref:`Security in Ubuntu cloud images <security-overview>` •
+        :ref:`Check CVE status <check-cve-on-instance>` 
         
     * - **Customizations**
-      - :doc:`Install NVIDIA drivers from proposed pocket <all-clouds-how-to/install-proposed-nvidia-drivers-for-testing>` •
-        :doc:`Confidential computing <all-clouds-explanation/confidential-computing>` •
-        :doc:`Cloud-init metapackages <all-clouds-explanation/cloud-init-metapackages>` 
+      - :ref:`Install NVIDIA drivers from proposed pocket <install-proposed-nvidia-drivers-for-testing>` •
+        :ref:`Confidential computing <confidential-computing>` •
+        :ref:`Cloud-init metapackages <cloud-init-metapackages>` 
     
 
 -----------------------------------------------------------------
@@ -99,9 +101,9 @@ How this documentation is organized
 
 This documentation uses the `Diátaxis documentation structure <https://diataxis.fr/>`__.
 
-* :doc:`How-to guides <all-clouds-how-to/index>` assume you have basic familiarity with Ubuntu cloud images and want to achieve specific goals. They are instructions applicable to applicable to any Ubuntu cloud image, regardless of the cloud platform. 
+* :ref:`How-to guides <all-clouds-how-to-index>` assume you have basic familiarity with Ubuntu cloud images and want to achieve specific goals. They are instructions applicable to applicable to any Ubuntu cloud image, regardless of the cloud platform. 
 
-* :doc:`Explanation <all-clouds-explanation/index>` includes topic overviews, background and context and detailed discussion. These are also applicable across all public cloud platforms.
+* :ref:`Explanation <all-clouds-explanation-index>` includes topic overviews, background and context and detailed discussion. These are also applicable across all public cloud platforms.
 
 -----------------------------------------------------------------
 
@@ -118,7 +120,7 @@ Get involved
 * `Join our online chat`_
 * `Discuss on Matrix`_
 * `Start using Ubuntu today`_
-* :doc:`all-clouds-how-to/contribute-to-these-docs`
+* :ref:`contribute-to-these-docs`
 
 Governance and policies
 ~~~~~~~~~~~~~~~~~~~~~~~

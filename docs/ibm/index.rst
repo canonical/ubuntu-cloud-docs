@@ -1,6 +1,8 @@
 .. meta::
    :description: Discover Ubuntu on IBM Cloud, including optimized images, deployment guides, and best practices for cloud workloads.
 
+.. _index:
+
 Ubuntu on IBM
 =============
 
@@ -27,13 +29,13 @@ In this documentation
     :header-rows: 0
 
     * - **Canonical's offerings**
-      - :doc:`IBM optimizations <ibm-explanation/canonical-offerings>` • :doc:`Security overview <ibm-explanation/security-overview>` 
+      - :ref:`IBM optimizations <canonical-offerings>` • :ref:`Security overview <security-overview>` 
       
     * - **Finding and launching images**
-      - :doc:`Find images <ibm-how-to/find-ubuntu-images>` • :doc:`Launch an Ubuntu VSI <ibm-how-to/launch-ubuntu-instances>` 
+      - :ref:`Find images <find-ubuntu-images>` • :ref:`Launch an Ubuntu VSI <launch-ubuntu-instances>` 
 
     * - **Upgrades and maintenance**
-      - :doc:`Upgrade from Ubuntu 20.04 to 22.04 <ibm-how-to/upgrade-from-focal-to-jammy>` • :doc:`Upgrade from Ubuntu 22.04 to 24.04 <ibm-how-to/upgrade-from-jammy-to-noble>` 
+      - :ref:`Upgrade from Ubuntu 20.04 to 22.04 <upgrade-from-focal-to-jammy>` • :ref:`Upgrade from Ubuntu 22.04 to 24.04 <upgrade-from-jammy-to-noble>` 
 
 
 How this documentation is organized
@@ -42,9 +44,9 @@ How this documentation is organized
 
 This documentation uses the `Diátaxis documentation structure <https://diataxis.fr/>`__.
 
-* :doc:`How-to guides  <ibm-how-to/index>` assume you have basic familiarity with Ubuntu images on IBM Cloud and want to achieve specific goals. They are instructions covering key operations and common tasks involving the use of Ubuntu on IBM Cloud.
+* :ref:`How-to guides <ibm-how-to-index>` assume you have basic familiarity with Ubuntu images on IBM Cloud and want to achieve specific goals. They are instructions covering key operations and common tasks involving the use of Ubuntu on IBM Cloud.
 
-* :doc:`Explanation <ibm-explanation/index>` includes topic overviews, background and context and detailed discussion. These include key topics, such as our offerings on IBM Cloud and an overview of available security features.
+* :ref:`Explanation <ibm-explanation-index>` includes topic overviews, background and context and detailed discussion. These include key topics, such as our offerings on IBM Cloud and an overview of available security features.
 
 ---------
 
@@ -61,7 +63,7 @@ Get involved
 * `Join our online chat`_
 * `Discuss on Matrix`_
 * `Talk to us about Ubuntu on IBM`_
-* :doc:`ibm-how-to/contribute-to-these-docs`
+* :ref:`contribute-to-these-docs`
 
 Governance and policies
 ~~~~~~~~~~~~~~~~~~~~~~~

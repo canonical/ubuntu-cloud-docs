@@ -1,6 +1,8 @@
 .. meta::
    :description: Learn how to deploy EKS managed node groups with Ubuntu. Includes steps for creating a custom image, a corresponding launch template and finally a managed node group.
 
+.. _deploy-managed-node-group:
+
 Deploy managed Ubuntu nodes on EKS
 ==================================
 

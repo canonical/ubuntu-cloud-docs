@@ -1,6 +1,8 @@
 .. meta::
    :description: Learn about Ubuntu base and minimal cloud images, their differences, and about the 'unminimize' command.
 
+.. _ubuntu-base-and-minimal-images:
+
 Ubuntu base and minimal images
 ==============================
 

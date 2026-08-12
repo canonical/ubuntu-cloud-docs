@@ -2,6 +2,8 @@
    :description: Learn how to use Secure Boot and vTPM on Ubuntu EC2 instances. Includes steps for using a prebuilt UEFI Secure Boot variable store while registering a new AMI.
 
 
+.. _use-secureboot-and-vtpm:
+
 Use UEFI Secure Boot and TPM on Ubuntu-based EC2 instances
 ==========================================================
 
@@ -51,7 +53,7 @@ The SSM parameter store can be used to get e.g. the latest Ubuntu 22.04 LTS AMI 
        --names /aws/service/canonical/ubuntu/server/22.04/stable/current/amd64/hvm/ebs-gp2/ami-id \
        --query 'Parameters[0].Value' --output text)
 
-If you want to use a different Ubuntu image, refer to :doc:`../instances/find-ubuntu-images`. Once you have the AMI ID, 
+If you want to use a different Ubuntu image, refer to :ref:`find-ubuntu-images`. Once you have the AMI ID, 
 use it to get the image name and its snapshot ID. These will be needed during the registration of a new AMI.
 
 .. code-block::

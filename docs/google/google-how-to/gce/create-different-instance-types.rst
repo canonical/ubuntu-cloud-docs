@@ -2,6 +2,8 @@
    :description: Learn how to create different instance types on Google Cloud Platform. Includes steps to create Ubuntu LTS, Ubuntu Pro, Ubuntu Pro FIPS, ARM-based, confidential computing and GPU instances.
 
 
+.. _create-different-instance-types:
+
 Create different instance types on GCP
 ======================================
 

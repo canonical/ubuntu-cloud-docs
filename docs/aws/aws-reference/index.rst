@@ -1,6 +1,8 @@
 .. meta::
    :description: Reference documentation for Ubuntu on AWS, including EC2 credentials, EKS snaps, Pro features, and support options.
 
+.. _aws-reference-index:
+
 Reference
 =========
 
@@ -10,26 +12,26 @@ EC2-related
 -----------
 Information about the different types of EC2 credentials, including how to obtain them and use them to access Ubuntu images on AWS.
 
-* :doc:`EC2 credentials <ec2-credentials>`
+* :ref:`EC2 credentials <ec2-credentials>`
 
 EKS-related
 ------------
 Details about the kubelet snap that EKS worker nodes use.
 
-* :doc:`EKS kubelet snap <eks-kubelet-snap>`
+* :ref:`EKS kubelet snap <eks-kubelet-snap>`
 
 Support-related
 -----------------
 Details about the support options available for Ubuntu on AWS.
 
-* :doc:`Ubuntu Pro on AWS <pro>`
-* :doc:`Support options on AWS <support>`
+* :ref:`Ubuntu Pro on AWS <pro>`
+* :ref:`Support options on AWS <support>`
 
 Announcements
 -----------------
 Keep track of the latest announcements related to Ubuntu on AWS.
 
-* :doc:`Ubuntu on AWS Announcements <aws-announcements>`
+* :ref:`Ubuntu on AWS Announcements <aws-announcements>`
 
 .. toctree::
    :hidden:

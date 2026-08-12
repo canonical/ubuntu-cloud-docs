@@ -1,6 +1,8 @@
 .. meta::
    :description: Learn about Canonical's Ubuntu image offerings on AWS, including Pro, minimal, EKS, and real-time kernel images for cloud workloads. Canonical's offerings in terms of appliances on AWS are also covered.
 
+.. _canonical-offerings:
+
 Canonical's offerings on AWS
 ============================
 
@@ -34,16 +36,16 @@ The different variations and the means to find them in AWS are summarized below:
      - **ARM64 (Graviton)** 
 
    * - Server 
-     - EC2 console, :doc:`CLI<../aws-how-to/instances/find-ubuntu-images>`, `Marketplace <https://aws.amazon.com/marketplace/search/results?searchTerms=Ubuntu&CREATOR=565feec9-3d43-413e-9760-c651546613f2&AMI_ARCHITECTURE=x86_64&filters=CREATOR%2CAMI_ARCHITECTURE>`__
-     - EC2 console, :doc:`CLI<../aws-how-to/instances/find-ubuntu-images>`, `Marketplace <https://aws.amazon.com/marketplace/search/results?searchTerms=Ubuntu&CREATOR=565feec9-3d43-413e-9760-c651546613f2&AMI_ARCHITECTURE=arm64&filters=CREATOR%2CAMI_ARCHITECTURE>`__
+     - EC2 console, :ref:`CLI <find-ubuntu-images>`, `Marketplace <https://aws.amazon.com/marketplace/search/results?searchTerms=Ubuntu&CREATOR=565feec9-3d43-413e-9760-c651546613f2&AMI_ARCHITECTURE=x86_64&filters=CREATOR%2CAMI_ARCHITECTURE>`__
+     - EC2 console, :ref:`CLI <find-ubuntu-images>`, `Marketplace <https://aws.amazon.com/marketplace/search/results?searchTerms=Ubuntu&CREATOR=565feec9-3d43-413e-9760-c651546613f2&AMI_ARCHITECTURE=arm64&filters=CREATOR%2CAMI_ARCHITECTURE>`__
    
    * - Server minimal
-     - :doc:`CLI<../aws-how-to/instances/find-ubuntu-images>`, `Marketplace <https://aws.amazon.com/marketplace/search/results?searchTerms=Ubuntu+minimal&CREATOR=565feec9-3d43-413e-9760-c651546613f2&AMI_ARCHITECTURE=x86_64&filters=CREATOR%2CAMI_ARCHITECTURE>`__
-     - :doc:`CLI<../aws-how-to/instances/find-ubuntu-images>`, `Marketplace <https://aws.amazon.com/marketplace/search/results?searchTerms=Ubuntu+minimal&CREATOR=565feec9-3d43-413e-9760-c651546613f2&AMI_ARCHITECTURE=arm64&filters=CREATOR%2CAMI_ARCHITECTURE>`__
+     - :ref:`CLI <find-ubuntu-images>`, `Marketplace <https://aws.amazon.com/marketplace/search/results?searchTerms=Ubuntu+minimal&CREATOR=565feec9-3d43-413e-9760-c651546613f2&AMI_ARCHITECTURE=x86_64&filters=CREATOR%2CAMI_ARCHITECTURE>`__
+     - :ref:`CLI <find-ubuntu-images>`, `Marketplace <https://aws.amazon.com/marketplace/search/results?searchTerms=Ubuntu+minimal&CREATOR=565feec9-3d43-413e-9760-c651546613f2&AMI_ARCHITECTURE=arm64&filters=CREATOR%2CAMI_ARCHITECTURE>`__
    
    * - Pro
-     - :doc:`CLI<../aws-how-to/instances/find-ubuntu-images>`, `Marketplace <https://aws.amazon.com/marketplace/search/results?searchTerms=Ubuntu+pro&AMI_ARCHITECTURE=x86_64&CREATOR=e6a5002c-6dd0-4d1e-8196-0a1d1857229b&filters=AMI_ARCHITECTURE%2CCREATOR>`__
-     - EC2 console, :doc:`CLI<../aws-how-to/instances/find-ubuntu-images>`, `Marketplace <https://aws.amazon.com/marketplace/search/results?searchTerms=Ubuntu+pro&AMI_ARCHITECTURE=arm64&CREATOR=e6a5002c-6dd0-4d1e-8196-0a1d1857229b&filters=AMI_ARCHITECTURE%2CCREATOR>`__
+     - :ref:`CLI <find-ubuntu-images>`, `Marketplace <https://aws.amazon.com/marketplace/search/results?searchTerms=Ubuntu+pro&AMI_ARCHITECTURE=x86_64&CREATOR=e6a5002c-6dd0-4d1e-8196-0a1d1857229b&filters=AMI_ARCHITECTURE%2CCREATOR>`__
+     - EC2 console, :ref:`CLI <find-ubuntu-images>`, `Marketplace <https://aws.amazon.com/marketplace/search/results?searchTerms=Ubuntu+pro&AMI_ARCHITECTURE=arm64&CREATOR=e6a5002c-6dd0-4d1e-8196-0a1d1857229b&filters=AMI_ARCHITECTURE%2CCREATOR>`__
 
    * - Pro FIPS 
      - `Marketplace <https://aws.amazon.com/marketplace/search/results?searchTerms=Ubuntu+pro+fips&CREATOR=565feec9-3d43-413e-9760-c651546613f2&AMI_ARCHITECTURE=x86_64&filters=CREATOR%2CAMI_ARCHITECTURE>`__, Private offers
@@ -54,12 +56,12 @@ The different variations and the means to find them in AWS are summarized below:
      - `Marketplace <https://aws.amazon.com/marketplace/search/results?searchTerms=Ubuntu+pro+real&CREATOR=565feec9-3d43-413e-9760-c651546613f2&AMI_ARCHITECTURE=arm64&filters=CREATOR%2CAMI_ARCHITECTURE>`__
 
    * - EKS server images
-     - :doc:`CLI<../aws-how-to/instances/find-ubuntu-images>`, `Marketplace <https://aws.amazon.com/marketplace/search/results?searchTerms=Ubuntu+eks&CREATOR=565feec9-3d43-413e-9760-c651546613f2&AMI_ARCHITECTURE=x86_64&filters=CREATOR%2CAMI_ARCHITECTURE>`__
-     - :doc:`CLI<../aws-how-to/instances/find-ubuntu-images>`, `Marketplace <https://aws.amazon.com/marketplace/search/results?searchTerms=Ubuntu+eks&CREATOR=565feec9-3d43-413e-9760-c651546613f2&AMI_ARCHITECTURE=arm64&filters=CREATOR%2CAMI_ARCHITECTURE>`__
+     - :ref:`CLI <find-ubuntu-images>`, `Marketplace <https://aws.amazon.com/marketplace/search/results?searchTerms=Ubuntu+eks&CREATOR=565feec9-3d43-413e-9760-c651546613f2&AMI_ARCHITECTURE=x86_64&filters=CREATOR%2CAMI_ARCHITECTURE>`__
+     - :ref:`CLI <find-ubuntu-images>`, `Marketplace <https://aws.amazon.com/marketplace/search/results?searchTerms=Ubuntu+eks&CREATOR=565feec9-3d43-413e-9760-c651546613f2&AMI_ARCHITECTURE=arm64&filters=CREATOR%2CAMI_ARCHITECTURE>`__
 
    * - EKS Pro images
-     - :doc:`CLI<../aws-how-to/instances/find-ubuntu-images>`, `Marketplace <https://aws.amazon.com/marketplace/search/results?searchTerms=Ubuntu+Pro+eks&CREATOR=565feec9-3d43-413e-9760-c651546613f2&AMI_ARCHITECTURE=x86_64&filters=CREATOR%2CAMI_ARCHITECTURE>`__
-     - :doc:`CLI<../aws-how-to/instances/find-ubuntu-images>`, `Marketplace <https://aws.amazon.com/marketplace/search/results?searchTerms=Ubuntu+Pro+eks&CREATOR=565feec9-3d43-413e-9760-c651546613f2&AMI_ARCHITECTURE=arm64&filters=CREATOR%2CAMI_ARCHITECTURE>`__
+     - :ref:`CLI <find-ubuntu-images>`, `Marketplace <https://aws.amazon.com/marketplace/search/results?searchTerms=Ubuntu+Pro+eks&CREATOR=565feec9-3d43-413e-9760-c651546613f2&AMI_ARCHITECTURE=x86_64&filters=CREATOR%2CAMI_ARCHITECTURE>`__
+     - :ref:`CLI <find-ubuntu-images>`, `Marketplace <https://aws.amazon.com/marketplace/search/results?searchTerms=Ubuntu+Pro+eks&CREATOR=565feec9-3d43-413e-9760-c651546613f2&AMI_ARCHITECTURE=arm64&filters=CREATOR%2CAMI_ARCHITECTURE>`__
 
 
 Optimizations for AWS

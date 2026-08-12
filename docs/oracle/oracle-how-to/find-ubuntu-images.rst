@@ -1,6 +1,8 @@
 .. meta::
    :description: Learn how to find Ubuntu images on Oracle Cloud using the web console and CLI, and also to find images for OKE worker nodes. 
 
+.. _find-ubuntu-images:
+
 Find Ubuntu images on Oracle Cloud 
 ==================================
 

@@ -1,6 +1,8 @@
 .. meta::
    :description: Learn how to build custom Ubuntu Pro AMIs using Packer. Step-by-step guide with detailed instructions for setting up Packer, defining builders and provisioners, and creating a reusable golden image. 
 
+.. _build-pro-ami-using-packer:
+
 Build an Ubuntu Pro AMI using Packer
 ====================================
 
@@ -13,7 +15,7 @@ We'll be using Ubuntu Pro 24.04 LTS for this guide, but the method is equally ap
    * For **Ubuntu Pro FIPS**, it is better to use a pre-enabled FIPS image from the Marketplace to avoid unnecessary additional steps. 
    * For **Ubuntu LTS**, you can use this method with a small change as explained at the end of the :ref:`define-provisioners` section below. 
    * For **Ubuntu 22.04 LTS and above** you need Packer version 1.8.1 or newer.
-   * For an overview of Ubuntu image types, see :doc:`Ubuntu base and minimal images <all-clouds:all-clouds-explanation/ubuntu-base-and-minimal-images>`.
+   * For an overview of Ubuntu image types, see :ref:`Ubuntu base and minimal images <all-clouds:ubuntu-base-and-minimal-images>`.
 
 Basic setup
 -------------
@@ -50,7 +52,7 @@ Create AWS Credentials
 ~~~~~~~~~~~~~~~~~~~~~~
 
 Follow the instructions in the *Programmatic access* section of the `IAM page for creating credentials`_. For a list of the minimal set of permissions needed in your IAM user or role policy, refer to `IAM permissions needed for Packer`_.
-For an overview of AWS credentials used with EC2, see :doc:`../../aws-reference/ec2-credentials`.
+For an overview of AWS credentials used with EC2, see :ref:`ec2-credentials`.
 
 Save your credentials, they should be similar to:
 

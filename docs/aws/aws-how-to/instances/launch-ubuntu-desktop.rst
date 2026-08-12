@@ -1,6 +1,8 @@
 .. meta::
    :description: Learn how to launch an Ubuntu Desktop on AWS EC2. Includes steps for launching the instance, installing the desktop environment, configuring RDP, and connecting to the instance.  
 
+.. _launch-ubuntu-desktop:
+
 Launch an Ubuntu desktop on EC2
 ===============================
 
@@ -41,7 +43,7 @@ Retrieve the latest AMI ID for an Ubuntu image using one of the following comman
     aws ssm get-parameters --names /aws/service/canonical/ubuntu/pro-server/26.04/stable/current/arm64/hvm/ebs-gp3/ami-id
 
 
-Now launch the instance by referring to the instructions for :doc:`launching using the AWS CLI<./launch-ubuntu-ec2-instance>`.
+Now launch the instance by referring to the instructions for :ref:`launching using the AWS CLI <launch-ubuntu-ec2-instance>`.
 
 
 Install Ubuntu desktop 

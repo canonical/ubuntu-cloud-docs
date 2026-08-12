@@ -1,6 +1,8 @@
 .. meta::
    :description:  Learn about Canonical's Ubuntu image offerings on Oracle Cloud, including a custom kernel, and two image types - server and minimal.
 
+.. _canonical-offerings:
+
 Canonical's offerings on Oracle Cloud
 =====================================
 
@@ -19,9 +21,9 @@ The images are built regularly and follow a thorough test framework that helps d
 
 With a single image type that is validated to work on both virtual machines and bare metal instances, the images aim to provide a consistent experience for users.
 
-Ubuntu images on Oracle Cloud also support confidential computing on AMD EPYC™ shapes (E3, E4, and E5). This provides hardware-level memory encryption using AMD SEV for VMs and AMD TSME for bare metal instances. For details on enabling this feature, refer to :doc:`../oracle-how-to/enable-confidential-computing`.
+Ubuntu images on Oracle Cloud also support confidential computing on AMD EPYC™ shapes (E3, E4, and E5). This provides hardware-level memory encryption using AMD SEV for VMs and AMD TSME for bare metal instances. For details on enabling this feature, refer to :ref:`enable-confidential-computing`.
 
-For instructions on how to find the images, refer to :doc:`../oracle-how-to/find-ubuntu-images`.
+For instructions on how to find the images, refer to :ref:`find-ubuntu-images`.
 
 
 Optimizations for Oracle Cloud

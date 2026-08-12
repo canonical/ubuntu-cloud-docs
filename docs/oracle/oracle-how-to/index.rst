@@ -3,6 +3,8 @@
 
 
 
+.. _oracle-how-to-index:
+
 How-to guides
 =============
 
@@ -13,26 +15,26 @@ Using Ubuntu images on Oracle Cloud
 -----------------------------------
 You can use Ubuntu images on Oracle Cloud to deploy virtual machines (VMs) or Oracle Kubernetes Engine (OKE) nodes.
 
-* :doc:`Find Ubuntu images <find-ubuntu-images>`
-* :doc:`Deploy Ubuntu OKE nodes using Oracle Cloud Console <deploy-ubuntu-oke-nodes-using-console>`
-* :doc:`Deploy Ubuntu OKE nodes using CLI <deploy-ubuntu-oke-nodes-using-cli>`
-* :doc:`Deploy Ubuntu OKE nodes using Terraform <deploy-ubuntu-oke-nodes-using-terraform>`
+* :ref:`Find Ubuntu images <find-ubuntu-images>`
+* :ref:`Deploy Ubuntu OKE nodes using Oracle Cloud Console <deploy-ubuntu-oke-nodes-using-console>`
+* :ref:`Deploy Ubuntu OKE nodes using CLI <deploy-ubuntu-oke-nodes-using-cli>`
+* :ref:`Deploy Ubuntu OKE nodes using Terraform <deploy-ubuntu-oke-nodes-using-terraform>`
 
 Enabling security features
 --------------------------
 Enable security features such as full-disk encryption and confidential computing, or use a bastion to access your VM.
 
-* :doc:`use-fde`
-* :doc:`enable-confidential-computing`
-* :doc:`Use a bastion for access <use-bastion-to-access-VM>`
+* :ref:`use-fde`
+* :ref:`enable-confidential-computing`
+* :ref:`Use a bastion for access <use-bastion-to-access-VM>`
 
 
 Performing upgrades
 -------------------
 Upgrade from one LTS version of Ubuntu to another.
 
-* :doc:`upgrade-from-focal-to-jammy`
-* :doc:`upgrade-from-jammy-to-noble`
+* :ref:`upgrade-from-focal-to-jammy`
+* :ref:`upgrade-from-jammy-to-noble`
 
 
 .. toctree::

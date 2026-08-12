@@ -2,6 +2,8 @@
    :description: List of how-to guides for launching, managing, and upgrading Ubuntu on GCE, including image selection and instance creation.
 
 
+.. _gce-index:
+
 Using GCE
 =========
 
@@ -9,25 +11,25 @@ These how-to guides relate to launching and using Ubuntu-based GCE instances. Th
 
 Launching different types of instances:
 
-* :doc:`Find images <find-ubuntu-images>`
-* :doc:`Create instances <create-different-instance-types>`
-* :doc:`Launch a desktop <launch-ubuntu-desktop>`
-* :doc:`Use 64K page kernel on ARM64 instances <arm64-on-google-cloud>`
+* :ref:`Find images <find-ubuntu-images>`
+* :ref:`Create instances <create-different-instance-types>`
+* :ref:`Launch a desktop <launch-ubuntu-desktop>`
+* :ref:`Use 64K page kernel on ARM64 instances <arm64-on-google-cloud>`
 
 Creating golden images and customized containers:
 
-* :doc:`Build a Pro golden image <build-ubuntu-pro-golden-image>`
-* :doc:`Create customized docker containers <create-customized-docker-container>`
+* :ref:`Build a Pro golden image <build-ubuntu-pro-golden-image>`
+* :ref:`Create customized docker containers <create-customized-docker-container>`
 
 Performing upgrades:
 
-* :doc:`Change license between LTS and Pro <upgrade-in-place-from-lts-to-pro>`
-* :doc:`Enable Pro features <enable-pro-features>`
-* :doc:`Upgrade from Focal to Jammy <upgrade-from-focal-to-jammy>`
+* :ref:`Change license between LTS and Pro <upgrade-in-place-from-lts-to-pro>`
+* :ref:`Enable Pro features <enable-pro-features>`
+* :ref:`Upgrade from Focal to Jammy <upgrade-from-focal-to-jammy>`
 
 Administrative operations:
 
-* :doc:`Set hostname <set-hostname-using-cloudinit>`
+* :ref:`Set hostname <set-hostname-using-cloudinit>`
 
 .. toctree::
    :hidden:

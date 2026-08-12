@@ -2,6 +2,8 @@
    :description: Learn about Canonical's Ubuntu image offerings on IBM Cloud, including a custom kernel, Ubuntu Pro and support options from Canonical and the community.
 
 
+.. _canonical-offerings:
+
 Canonical's offerings on IBM Cloud
 ===================================
 

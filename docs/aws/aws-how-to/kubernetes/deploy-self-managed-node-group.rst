@@ -2,6 +2,8 @@
    :description: Learn how to deploy self-managed node groups using Ubuntu nodes on EKS. Specify 'Ubuntu' as the node AMI family when creating a node group with eksctl.
 
 
+.. _deploy-self-managed-node-group:
+
 Deploy self-managed Ubuntu nodes
 ================================
 
@@ -52,7 +54,7 @@ with one of the following supported Node AMI families:
 
 .. note::
    If you prefer to use managed node groups, refer to
-   :doc:`this guide <deploy-managed-node-group>`. In that scenario, the AMI is
+   :ref:`this guide <deploy-managed-node-group>`. In that scenario, the AMI is
    defined via a launch template, and EKS automatically handles the node
    recycling strategy.
 

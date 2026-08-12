@@ -1,6 +1,8 @@
 .. meta::
    :description: Learn how to launch Ubuntu Desktop on GCE virtual machines. Includes steps to install Chrome Remote Desktop, set up a desktop environment and connect to it from your local machine.
 
+.. _launch-ubuntu-desktop:
+
 Launch an Ubuntu desktop on a VM
 ================================
 

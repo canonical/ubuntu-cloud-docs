@@ -1,6 +1,8 @@
 .. meta::
    :description: Learn how to upgrade Ubuntu from 20.04 (Focal) to 22.04 (Jammy) on IBM Cloud. 
 
+.. _upgrade-from-focal-to-jammy:
+
 Upgrade from Focal to Jammy on IBM Cloud
 ========================================
 

@@ -2,6 +2,8 @@
    :description: Learn how to deploy Canonical Data Science Stack on a GPU-enabled EC2 instance. Step-by-step guide for launching a G4DN instance, installing GPU drivers, setting up MicroK8s, and creating Jupyter Notebooks with CUDA support. 
 
 
+.. _data-science-stack-on-ec2:
+
 Deploy Canonical Data Science Stack on EC2 using a GPU-enabled instance type
 ============================================================================
 
@@ -45,7 +47,7 @@ Once you have connected, run a full upgrade:
 If you get a new kernel, it is advised to restart the machine before proceeding.
 
 Now install the GPU drivers:
-For comprehensive GPU driver installation instructions, see :doc:`install-nvidia-drivers`.
+For comprehensive GPU driver installation instructions, see :ref:`install-nvidia-drivers`.
 
 
 .. code::

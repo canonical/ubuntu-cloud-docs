@@ -2,6 +2,8 @@
    :description: Learn how to install and configure Azure CLI on Ubuntu systems. Includes instructions for adding the Microsoft repository and installing the CLI from there.
 
 
+.. _install-azure-cli:
+
 Install Azure CLI on Ubuntu
 ============================
 

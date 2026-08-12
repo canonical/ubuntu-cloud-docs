@@ -1,6 +1,8 @@
 .. meta::
    :description: Learn about Ubuntu container images on OCI registries, including security, multi-arch support, and trusted application base images.
 
+.. _index:
+
 Ubuntu on OCI container registries
 ==================================
 
@@ -23,13 +25,13 @@ In this documentation
 
 
     * - **Tutorial**
-      - :doc:`Create an Ubuntu FIPS Docker image <oci-tutorials/fips-ubuntu-container>`
+      - :ref:`Create an Ubuntu FIPS Docker image <how-to-fips-ubuntu-container>`
 
     * - **Canonical's offerings**
-      - :doc:`Ubuntu OCI container images <oci-explanation/ubuntu-oci-container>` • :doc:`Ubuntu Pro OCI container images <oci-explanation/ubuntu-pro-oci-container>` • :doc:`OCI image configuration <oci-reference/oci-image-configuration>` 
+      - :ref:`Ubuntu OCI container images <ubuntu-oci-container-images>` • :ref:`Ubuntu Pro OCI container images <ubuntu-pro-oci-container-images>` • :ref:`OCI image configuration <oci-image-configuration>` 
 
     * - **Working with Ubuntu OCI containers**
-      - :doc:`Find the Ubuntu container images <oci-how-to/getting-started>` • :doc:`Deploy Ubuntu Pro containers on Kubernetes <oci-how-to/deploy-pro-container-on-pro-kubernetes-cluster>`
+      - :ref:`Find the Ubuntu container images <getting-started>` • :ref:`Deploy Ubuntu Pro containers on Kubernetes <how-to-deploy-pro-container-on-pro-cluster>`
       
 
 How this documentation is organized
@@ -38,13 +40,13 @@ How this documentation is organized
 
 This documentation uses the `Diátaxis documentation structure <https://diataxis.fr/>`__.
 
-* The :doc:`Tutorial <oci-tutorials/fips-ubuntu-container>` takes you step-by-step through the basics of creating an Ubuntu FIPS Docker image.
+* The :ref:`Tutorial <how-to-fips-ubuntu-container>` takes you step-by-step through the basics of creating an Ubuntu FIPS Docker image.
 
-* :doc:`How-to guides  <oci-how-to/index>` assume you have basic familiarity with Ubuntu images on OCI container registries and want to achieve specific goals. They are instructions for finding Ubuntu container images and deploying Ubuntu Pro containers on Kubernetes clusters.
+* :ref:`How-to guides <oci-how-to>` assume you have basic familiarity with Ubuntu images on OCI container registries and want to achieve specific goals. They are instructions for finding Ubuntu container images and deploying Ubuntu Pro containers on Kubernetes clusters.
 
-* :doc:`Reference <oci-reference/index>` includes an in-depth description of the Ubuntu image's OCI configuration.
+* :ref:`Reference <oci-reference>` includes an in-depth description of the Ubuntu image's OCI configuration.
 
-* :doc:`Explanation <oci-explanation/index>` includes definitions of the Ubuntu and Ubuntu Pro container images.
+* :ref:`Explanation <oci-explanation-index>` includes definitions of the Ubuntu and Ubuntu Pro container images.
 
 ---------
 

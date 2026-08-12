@@ -1,6 +1,8 @@
 .. meta::
    :description: Understand AWS Ubuntu image retention policy, including release, deprecation, and deletion stages for AMIs.
 
+.. _ec2-image-retention-policy:
+
 AWS image retention policy
 ==========================
 
@@ -20,7 +22,7 @@ Image retention policy
    :start-after: Start: Daily vs release images
    :end-before: End: Daily vs release images
 
-For more details about these image types, check out our documentation of :doc:`image release types <all-clouds:all-clouds-explanation/release-types>`, and to get a list of these images on AWS, refer to: :doc:`../aws-how-to/instances/find-ubuntu-images`. In general, daily images are deleted, and release images are deprecated. Each image type is retained for a defined period, with a minimum number of recent images always preserved.
+For more details about these image types, check out our documentation of :ref:`image release types <all-clouds:release-types>`, and to get a list of these images on AWS, refer to: :ref:`find-ubuntu-images`. In general, daily images are deleted, and release images are deprecated. Each image type is retained for a defined period, with a minimum number of recent images always preserved.
 
 The retention policy can be summarized as follows:
 

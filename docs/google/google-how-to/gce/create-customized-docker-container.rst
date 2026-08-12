@@ -2,6 +2,8 @@
    :description: Learn how to create customized Docker containers on Ubuntu Pro. Includes steps to install Docker, pull an official Ubuntu image, run a container and customize it.
 
 
+.. _create-customized-docker-container:
+
 Create customized docker containers on Ubuntu Pro
 =================================================
 

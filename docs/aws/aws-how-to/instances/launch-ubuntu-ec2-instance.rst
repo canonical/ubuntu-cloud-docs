@@ -1,6 +1,8 @@
 .. meta::
    :description: Learn how to launch Ubuntu EC2 instances using AWS CLI. Step-by-step guide for setting up credentials, installing AWS CLI, finding Ubuntu AMIs, launching instances and connecting to them. 
 
+.. _launch-ubuntu-ec2-instance:
+
 Launch an Ubuntu EC2 instance using the AWS CLI
 ===============================================
 
@@ -15,7 +17,7 @@ Assuming you have an existing AWS account and some means for terminal based comm
 Setup credentials
 -----------------
 
-You need key pairs and access keys to use AWS and EC2 services. A brief introduction to these credentials can be found in :doc:`../../aws-reference/ec2-credentials`.
+You need key pairs and access keys to use AWS and EC2 services. A brief introduction to these credentials can be found in :ref:`ec2-credentials`.
 
 Create a key pair
 ~~~~~~~~~~~~~~~~~
@@ -65,7 +67,7 @@ Use the access key details saved earlier, specify a region and choose your prefe
 Find an Ubuntu AMI
 ------------------
 
-To launch an EC2 instance that uses Ubuntu, you'll need to choose an appropriate Ubuntu image and get the official AMI ID for it. The image can be chosen based on your requirements, e.g. the machine's architecture, features needed from the OS, etc. Once chosen, get the corresponding AMI ID by following the instructions at :doc:`./find-ubuntu-images`.
+To launch an EC2 instance that uses Ubuntu, you'll need to choose an appropriate Ubuntu image and get the official AMI ID for it. The image can be chosen based on your requirements, e.g. the machine's architecture, features needed from the OS, etc. Once chosen, get the corresponding AMI ID by following the instructions at :ref:`find-ubuntu-images`.
 
 .. note::
     

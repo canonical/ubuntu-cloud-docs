@@ -2,6 +2,8 @@
    :description: Learn how to get Ubuntu Pro on Microsoft Azure. Includes instructions for enabling Ubuntu Pro on new and running instances, as well as verification steps to confirm Pro features are active.
 
 
+.. _get-ubuntu-pro:
+
 Get Ubuntu Pro on Azure
 =======================
 

@@ -1,6 +1,8 @@
 .. meta::
    :description: Learn how to upgrade Ubuntu from 22.04 (Jammy) to 24.04 (Noble) on IBM Cloud. 
    
+.. _upgrade-from-jammy-to-noble:
+
 Upgrade from Jammy to Noble on IBM Cloud
 ========================================
 

@@ -1,6 +1,8 @@
 .. meta::
    :description: Overview of EC2 credentials for AWS, including sign-in credentials, access keys, X.509 certificates, and SSH key pairs.
 
+.. _ec2-credentials:
+
 EC2 credentials
 ===============
 

@@ -2,6 +2,8 @@
    :description: Learn how to upgrade to Ubuntu Pro at scale using AWS SSM. Step-by-step guide for creating SSM documents to attach Ubuntu Pro tokens and applying updates on multiple instances simultaneously. 
 
 
+.. _upgrade-to-ubuntu-pro-at-scale-using-tokens-with-ssm:
+
 Upgrade to Ubuntu Pro at scale using tokens with SSM
 ====================================================
 

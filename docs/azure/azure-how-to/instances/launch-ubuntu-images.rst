@@ -2,6 +2,8 @@
    :description: Learn how to launch Ubuntu virtual machines on Azure. Includes instructions for creating resource groups and launching VMs using the Azure CLI, with specific guidance for ARM64 and Confidential VM images.
 
 
+.. _launch-ubuntu-images:
+
 Launch Ubuntu images on Azure
 =============================
 
@@ -14,7 +16,7 @@ Prerequisites
 
 - Microsoft Azure account
 - Azure CLI
-- Uniform Resource Name (URN) for an Ubuntu image (see :doc:`find-ubuntu-images`)
+- Uniform Resource Name (URN) for an Ubuntu image (see :ref:`find-ubuntu-images`)
 
 Azure CLI commands in this guide share some declared variables:
 

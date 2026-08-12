@@ -1,6 +1,8 @@
 .. meta::
    :description: Learn how confidential computing protects sensitive workloads in Ubuntu cloud environments using trusted execution environments (Intel TDX and AMD SEV-SNP).
 
+.. _confidential-computing:
+
 Confidential computing
 ======================
 

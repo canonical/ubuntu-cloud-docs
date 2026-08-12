@@ -1,6 +1,8 @@
 .. meta::
    :description: Explanations of Ubuntu on GCP offerings, security, google guest agents, image testing, and image retention policies for cloud deployments.
 
+.. _google-explanation-index:
+
 Explanation
 ===========
 

@@ -1,6 +1,8 @@
 .. meta::
    :description: Discover the differences between Ubuntu cloud image release and daily types, and learn when to use each for your cloud deployments.
 
+.. _release-types:
+
 Cloud image release types
 =========================
 

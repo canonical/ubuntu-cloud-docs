@@ -2,6 +2,8 @@
    :description: Learn how to create a Google Kubernetes Engine (GKE) cluster with Ubuntu nodes using the gcloud CLI, and verify the node OS image.
 
 
+.. _create-gke-cluster-with-ubuntu-nodes:
+
 Create a GKE cluster with Ubuntu nodes
 ======================================
 

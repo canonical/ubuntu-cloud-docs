@@ -1,6 +1,8 @@
 .. meta::
    :description: Discover Ubuntu on Azure, including optimized images, deployment guides, technical reference, and best practices for cloud workloads.
 
+.. _index:
+
 Ubuntu on Azure
 ===============
 
@@ -28,22 +30,22 @@ In this documentation
     :header-rows: 0
 
     * - **Canonical's offerings**
-      - :doc:`Azure optimizations <azure-explanation/canonical-offerings>` • :doc:`Ubuntu on AKS <azure-explanation/ubuntu-on-aks-worker-nodes>` • :doc:`Support options <azure-reference/support>` • :doc:`Packages maintained <azure-explanation/packages>` • :doc:`Understanding Ubuntu on Azure <azure-explanation/understanding-ubuntu-on-azure>` 
+      - :ref:`Azure optimizations <canonical-offerings>` • :ref:`Ubuntu on AKS <ubuntu-on-aks-worker-nodes>` • :ref:`Support options <support>` • :ref:`Packages maintained <packages>` • :ref:`Understanding Ubuntu on Azure <understanding-ubuntu-on-azure>` 
       
     * - **Finding and launching images**
-      - :doc:`Install Azure CLI <azure-how-to/instances/install-azure-cli>` • :doc:`Find images <azure-how-to/instances/find-ubuntu-images>` • :doc:`Launch images <azure-how-to/instances/launch-ubuntu-images>` 
+      - :ref:`Install Azure CLI <install-azure-cli>` • :ref:`Find images <find-ubuntu-images>` • :ref:`Launch images <launch-ubuntu-images>` 
       
     * - **Upgrades and maintenance**
-      - :doc:`Check for available security updates <azure-how-to/instances/check-available-security-updates>` • :doc:`Get Ubuntu Pro <azure-how-to/instances/get-ubuntu-pro>` • :doc:`Upgrade Ubuntu LTS release <azure-how-to/instances/upgrade-ubuntu-lts-release>` 
+      - :ref:`Check for available security updates <check-available-security-updates>` • :ref:`Get Ubuntu Pro <get-ubuntu-pro>` • :ref:`Upgrade Ubuntu LTS release <upgrade-ubuntu-lts-release>` 
       
     * - **Creating golden images**
-      - :doc:`Create a Pro golden image <azure-how-to/instances/create-pro-fips-golden-image>` • :doc:`Create a golden image pipeline <azure-how-to/instances/create-a-golden-image-pipeline>` 
+      - :ref:`Create a Pro golden image <create-pro-fips-golden-image>` • :ref:`Create a golden image pipeline <create-a-golden-image-pipeline>` 
 
     * - **Custom deployments**
-      - :doc:`Deploy an Ubuntu VM with SQL Server <azure-how-to/instances/provision-an-ubuntu-virtual-machine-running-sql-server-in-azure>` • `Install Kubeflow on AKS <https://documentation.ubuntu.com/charmed-kubeflow/latest/how-to/install/install-aks/>`_ • :doc:`Deploy Kubeflow with AKS spot instances <azure-how-to/instances/deploy-kubeflow-pipelines-with-aks-spot-instances>` 
+      - :ref:`Deploy an Ubuntu VM with SQL Server <provision-an-ubuntu-virtual-machine-running-sql-server-in-azure>` • `Install Kubeflow on AKS <https://documentation.ubuntu.com/charmed-kubeflow/latest/how-to/install/install-aks/>`_ • :ref:`Deploy Kubeflow with AKS spot instances <deploy-kubeflow-pipelines-with-aks-spot-instances>` 
       
     * - **Policies**
-      - :doc:`Security aspects <azure-explanation/security-overview>` • :doc:`Image retention policy <azure-explanation/image-retention-policy>`  
+      - :ref:`Security aspects <security-overview>` • :ref:`Image retention policy <image-retention-policy>`  
 
 
 
@@ -53,9 +55,9 @@ How this documentation is organized
 
 This documentation uses the `Diátaxis documentation structure <https://diataxis.fr/>`__.
 
-* :doc:`How-to guides  <azure-how-to/index>` assume you have basic familiarity with Ubuntu images on Azure and want to achieve specific goals. They are instructions covering key operations and common tasks involving the use of Ubuntu on Azure.
+* :ref:`How-to guides <azure-how-to-index>` assume you have basic familiarity with Ubuntu images on Azure and want to achieve specific goals. They are instructions covering key operations and common tasks involving the use of Ubuntu on Azure.
 
-* :doc:`Explanation <azure-explanation/index>` includes topic overviews, background and context and detailed discussion. These include key topics, such as our offerings, security features, package maintenance our image retention policy.
+* :ref:`Explanation <azure-explanation-index>` includes topic overviews, background and context and detailed discussion. These include key topics, such as our offerings, security features, package maintenance our image retention policy.
 
 ---------
 
@@ -71,7 +73,7 @@ Get involved
 * `Join our online chat`_
 * `Discuss on Matrix`_
 * `Talk to us about Ubuntu on Azure`_
-* :doc:`azure-how-to/contribute-to-these-docs`
+* :ref:`contribute-to-these-docs`
 
 Governance and policies
 ~~~~~~~~~~~~~~~~~~~~~~~

@@ -2,6 +2,8 @@
    :description: Understand the Ubuntu and IBM security features available while using Ubuntu on IBM Cloud.
 
 
+.. _security-overview:
+
 Security features with Ubuntu on IBM Cloud
 ==========================================
 
@@ -10,7 +12,7 @@ Ubuntu images on IBM Cloud include the security features provided by both Ubuntu
 Ubuntu security features
 ------------------------
 
-Ubuntu on IBM provides all the security features available on Ubuntu Server. A detailed description of these features can be found on the `Ubuntu security page`_ and in our explanation about :doc:`Security in the Ubuntu cloud images <all-clouds:all-clouds-explanation/security-overview>`. For further guidance on usage refer to  Ubuntu server's `Introductory page on security`_. 
+Ubuntu on IBM provides all the security features available on Ubuntu Server. A detailed description of these features can be found on the `Ubuntu security page`_ and in our explanation about :ref:`Security in the Ubuntu cloud images <all-clouds:security-overview>`. For further guidance on usage refer to  Ubuntu server's `Introductory page on security`_. 
 
 
 IBM Cloud security features
