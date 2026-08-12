@@ -1,6 +1,8 @@
 .. meta::
    :description: Learn about the security features available with Ubuntu images on GCP, including confidential computing and Ubuntu Pro enhancements.
 
+.. _security-overview:
+
 Security features with Ubuntu on GCP
 ====================================
 
@@ -10,7 +12,7 @@ Ubuntu images on Google Cloud include the security features provided by both Ubu
 Ubuntu security features
 ------------------------
 
-Ubuntu on GCP provides all the security features available on Ubuntu Server. A detailed description of these features can be found on the `Ubuntu security page`_ and in our explanation about :doc:`Security in the Ubuntu cloud images <all-clouds:all-clouds-explanation/security-overview>`. For further guidance on usage refer to  Ubuntu server's `Introductory page on security`_. 
+Ubuntu on GCP provides all the security features available on Ubuntu Server. A detailed description of these features can be found on the `Ubuntu security page`_ and in our explanation about :ref:`Security in the Ubuntu cloud images <all-clouds:security-overview>`. For further guidance on usage refer to  Ubuntu server's `Introductory page on security`_. 
 
 
 GCP security features
@@ -44,8 +46,8 @@ To find Ubuntu Pro images on GCE, refer to:
 
 For other Pro related operations such as, enabling features and performing an in-place upgrade, refer to:
 
-* :doc:`../google-how-to/gce/enable-pro-features`
-* :doc:`../google-how-to/gce/upgrade-in-place-from-lts-to-pro`
+* :ref:`enable-pro-features`
+* :ref:`upgrade-in-place-from-lts-to-pro`
 
 
 .. _`Ubuntu security page`: https://ubuntu.com/security

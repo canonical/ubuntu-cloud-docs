@@ -1,6 +1,8 @@
 .. meta::
    :description:  Learn how to upgrade Ubuntu from 20.04 to 22.04  on Oracle Cloud. Includes manual intervention steps and best practices.
 
+.. _upgrade-from-focal-to-jammy:
+
 Upgrade from Ubuntu 20.04 LTS (Focal) to 22.04 LTS (Jammy)
 ==========================================================
 

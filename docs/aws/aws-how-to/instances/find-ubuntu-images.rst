@@ -1,6 +1,8 @@
 .. meta::
    :description: Learn how to find and select Ubuntu AMIs for EC2 and EKS. Includes methods using SSM Parameter Store, describe-images API, and AWS Console, with tips for verifying ownership and using Marketplace images.
 
+.. _find-ubuntu-images:
+
 Find Ubuntu images on AWS
 =========================
 

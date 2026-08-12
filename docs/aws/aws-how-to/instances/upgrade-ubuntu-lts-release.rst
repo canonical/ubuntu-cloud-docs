@@ -2,6 +2,8 @@
    :description: Learn how to upgrade Ubuntu LTS releases on EC2. Includes manual intervention steps and best practices to ensure a smooth upgrade process.
 
 
+.. _upgrade-ubuntu-lts-release:
+
 Upgrade Ubuntu LTS release on EC2
 ==================================
 

@@ -1,14 +1,16 @@
 .. meta::
    :description: Learn how to deploy Ubuntu Pro EKS clusters using an EKS Pro AMI. Includes steps for creating an eksctl config file and using it to deploy the cluster.
 
+.. _deploy-ubuntu-pro-cluster-with-eks-pro-ami:
+
 Deploy an Ubuntu Pro EKS cluster - using a Pro AMI
 ==================================================
 
 This guide shows how to deploy an Ubuntu Pro EKS cluster using an EKS Pro AMI. 
 
-An EKS Pro AMI is an :doc:`Ubuntu EKS AMI <./deploy-ubuntu-cluster-with-eks-ami>` that includes the `Pro subscription`_, which provides services such as Livepatch for LTS-based nodes and Expanded Security Maintenance (ESM). It also grants the cluster a license to run Pro containers with no limitations on quantity or variety.
+An EKS Pro AMI is an :ref:`Ubuntu EKS AMI <deploy-ubuntu-cluster-with-eks-ami>` that includes the `Pro subscription`_, which provides services such as Livepatch for LTS-based nodes and Expanded Security Maintenance (ESM). It also grants the cluster a license to run Pro containers with no limitations on quantity or variety.
 
-Ubuntu Pro 22.04 LTS supports EKS up to version 1.34, while Ubuntu 24.04 LTS will continue supporting current and future EKS versions. Currently, only 22.04 LTS provides NIST-validated FIPS components. For earlier versions or other combinations of EKS and Ubuntu releases, use Pro tokens as described in :doc:`./deploy-ubuntu-pro-cluster`. To include FIPS, refer to :doc:`./deploy-ubuntu-pro-fips-cluster`.
+Ubuntu Pro 22.04 LTS supports EKS up to version 1.34, while Ubuntu 24.04 LTS will continue supporting current and future EKS versions. Currently, only 22.04 LTS provides NIST-validated FIPS components. For earlier versions or other combinations of EKS and Ubuntu releases, use Pro tokens as described in :ref:`deploy-ubuntu-pro-cluster`. To include FIPS, refer to :ref:`deploy-ubuntu-pro-fips-cluster`.
 
 Prerequisites
 -------------

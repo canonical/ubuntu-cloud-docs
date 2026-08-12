@@ -1,6 +1,8 @@
 .. meta::
    :description: See which snaps are bundled in Ubuntu EKS worker images on AWS and why, including kubelet, kubectl, and ECR credential provider.
 
+.. _eks-snaps:
+
 Snap usage in EKS worker images
 ===============================
 
@@ -17,7 +19,7 @@ Snaps
    * - **Snap Name**
      - **Provides**
      - **Bundled Since**
-   * - :doc:`kubelet-eks </aws-reference/eks-kubelet-snap>`
+   * - :ref:`kubelet-eks <eks-kubelet-snap>`
      - the `kubelet <https://kubernetes.io/docs/reference/command-line-tools-reference/kubelet/>`_ binary, which includes the primary configuration mechanism for kubelet
      - EKS 1.17
    * - kubectl-eks
@@ -27,4 +29,4 @@ Snaps
      - `aws-credential-provider <https://github.com/kubernetes/cloud-provider-aws/tree/master?tab=readme-ov-file#aws-credential-provider>`_, which provides credentials for allowing a k8s cluster to pull container images from ECR
      - EKS 1.28
 
-For deploying Ubuntu Pro containers on Kubernetes clusters, see :doc:`Deploy Ubuntu Pro containers on Kubernetes <oci:oci-how-to/deploy-pro-container-on-pro-kubernetes-cluster>`.
+For deploying Ubuntu Pro containers on Kubernetes clusters, see :ref:`Deploy Ubuntu Pro containers on Kubernetes <oci:how-to-deploy-pro-container-on-pro-cluster>`.

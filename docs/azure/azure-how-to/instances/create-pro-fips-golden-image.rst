@@ -2,6 +2,8 @@
    :description: Learn how to create Ubuntu Pro golden images with Azure Image Builder. Includes steps for setting up an Azure Compute Gallery and creating the golden image from a configuration template.
 
 
+.. _create-pro-fips-golden-image:
+
 Create an Ubuntu Pro golden image with Azure Image Builder
 ===============================================================
 
@@ -56,7 +58,7 @@ Create a variable for your subscription ID:
 
     subscriptionID=$(az account show --query id --output tsv)
 
-Create variables for gallery name, image definition name and Ubuntu Pro plan to be used. See :doc:`Find Ubuntu images on Azure <find-ubuntu-images>` for a full list of available Pro images. If you have an Ubuntu Pro private offer with Canonical you'll have a custom offer and SKU which should be used.
+Create variables for gallery name, image definition name and Ubuntu Pro plan to be used. See :ref:`Find Ubuntu images on Azure <find-ubuntu-images>` for a full list of available Pro images. If you have an Ubuntu Pro private offer with Canonical you'll have a custom offer and SKU which should be used.
 
 .. tabs::
 

@@ -2,6 +2,8 @@
    :description: How to configure an Ubuntu VM using OVF template variables when deploying an OVA on VMware.
 
 
+.. _configure-your-vm:
+
 Configure your VM using template variables
 ==========================================
 

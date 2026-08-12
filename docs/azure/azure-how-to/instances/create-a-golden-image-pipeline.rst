@@ -2,12 +2,14 @@
    :description: Step-by-step guide to create Ubuntu golden image pipelines with GitHub Actions and Azure Image Builder. Includes detailed instructions and best practices.
 
 
+.. _create-a-golden-image-pipeline:
+
 Create an Ubuntu golden image pipeline
 ======================================
 
 You can use GitHub Actions to create a pipeline for building Ubuntu "golden" images with the Azure Image Builder (AIB). Creating an automated pipeline is a great way to ensure that your golden image is kept up to date with the latest security and bug fixes. 
 
-The focus here is on automating the use of AIB. If you want more information about how to use AIB see the :doc:`Create a Pro golden image <create-pro-fips-golden-image>` guide which explains the individual steps.
+The focus here is on automating the use of AIB. If you want more information about how to use AIB see the :ref:`Create a Pro golden image <create-pro-fips-golden-image>` guide which explains the individual steps.
 
 
 Prerequisites

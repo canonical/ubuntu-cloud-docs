@@ -1,6 +1,8 @@
 .. meta::
    :description: Discover Ubuntu on VMware, including a dashboard for detecting CVE vulnerabilities on VMware workloads.
 
+.. _index:
+
 Ubuntu on VMware
 ================
 
@@ -20,7 +22,7 @@ and features needed to run specific workloads.
 How this documentation is organized
 ------------------------------------
 
-This documentation is currently minimal and includes information about :doc:`finding CVE vulnerabilities <vmware-reference/vcf-cve-dashboard>` on active Ubuntu on VMware images. We'll be updating it with more content in the future, including how-to guides and other reference material for running Ubuntu on VMware. At that point, the documentation will use the `Diátaxis documentation structure <https://diataxis.fr/>`__.
+This documentation is currently minimal and includes information about :ref:`finding CVE vulnerabilities <vcf-cve-dashboard>` on active Ubuntu on VMware images. We'll be updating it with more content in the future, including how-to guides and other reference material for running Ubuntu on VMware. At that point, the documentation will use the `Diátaxis documentation structure <https://diataxis.fr/>`__.
 
 ---------
 
@@ -37,7 +39,7 @@ Get involved
 * `Get support`_
 * `Join our online chat`_
 * `Discuss on Matrix`_
-* :doc:`vmware-how-to/contribute-to-these-docs`
+* :ref:`contribute-to-these-docs`
 
 Governance and policies
 ~~~~~~~~~~~~~~~~~~~~~~~

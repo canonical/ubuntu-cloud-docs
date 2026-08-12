@@ -2,6 +2,8 @@
    :description: Explanations about Canonical's offerings on IBM Cloud and the available security features.
 
 
+.. _ibm-explanation-index:
+
 Explanation
 ===========
 

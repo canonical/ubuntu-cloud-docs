@@ -1,12 +1,14 @@
 .. meta::
    :description: Overview of support options on AWS, including Canonical support via Ubuntu Pro and Amazon front line support channels and bug reporting options.
 
+.. _support:
+
 Support options on AWS
 ============================
 
 Ubuntu Pro on AWS
 -----------------
-Ubuntu Pro provides numerous support options. Please see the :doc:`Pro <pro>` page for 
+Ubuntu Pro provides numerous support options. Please see the :ref:`Pro <pro>` page for 
 more details.
 
 

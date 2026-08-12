@@ -1,6 +1,8 @@
 .. meta::
    :description: Learn about using Ubuntu on OKE worker nodes, including supported configurations, deployment options and update management.
 
+.. _ubuntu-on-oke-worker-nodes:
+
 Ubuntu on OKE worker nodes
 ==========================
 
@@ -10,7 +12,7 @@ Ubuntu images are now available for worker nodes on Oracle Kubernetes Engine (OK
 Supported OKE configurations
 ----------------------------
 
-Currently there are only a select number of suites and Kubernetes versions supported due to this being a Limited Availability release. For a list of supported OKE configurations, see our :doc:`Ubuntu availability on OKE </oracle-reference/ubuntu-availability-on-oke>` page.
+Currently there are only a select number of suites and Kubernetes versions supported due to this being a Limited Availability release. For a list of supported OKE configurations, see our :ref:`Ubuntu availability on OKE <ubuntu-availability-on-oke>` page.
 
 
 Deployment options
@@ -18,9 +20,9 @@ Deployment options
 
 To deploy an Ubuntu worker node on OKE, you can use the Oracle Cloud Console, Oracle CLI (``oci``), or Terraform. For detailed instructions, refer to:
 
-- :doc:`Deploying Ubuntu worker nodes using the Oracle Cloud Console </oracle-how-to/deploy-ubuntu-oke-nodes-using-console>`
-- :doc:`Deploying Ubuntu worker nodes using the CLI </oracle-how-to/deploy-ubuntu-oke-nodes-using-cli>`
-- :doc:`Deploying Ubuntu worker nodes using Terraform </oracle-how-to/deploy-ubuntu-oke-nodes-using-terraform>`
+- :ref:`Deploying Ubuntu worker nodes using the Oracle Cloud Console <deploy-ubuntu-oke-nodes-using-console>`
+- :ref:`Deploying Ubuntu worker nodes using the CLI <deploy-ubuntu-oke-nodes-using-cli>`
+- :ref:`Deploying Ubuntu worker nodes using Terraform <deploy-ubuntu-oke-nodes-using-terraform>`
 
 
 Updates and security patches

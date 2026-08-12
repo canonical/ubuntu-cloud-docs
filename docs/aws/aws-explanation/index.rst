@@ -1,6 +1,8 @@
 .. meta::
    :description: Explore Ubuntu on AWS: offerings, image retention, EKS snaps, and security features for cloud deployments.
 
+.. _aws-explanation-index:
+
 Explanation
 ===========
 
@@ -10,21 +12,21 @@ Our offerings on AWS
 --------------------
 Our offerings include customized Ubuntu images for different use cases, AWS-specific optimizations, and appliances for specific workloads.
 
-* :doc:`Canonical's offerings on AWS <canonical-offerings>`
+* :ref:`Canonical's offerings on AWS <canonical-offerings>`
 
 Snaps in EKS
 ------------
 A description of the snaps used in EKS worker images, and their purpose.
 
-* :doc:`Snap usage in EKS worker images <eks-snaps>`
+* :ref:`Snap usage in EKS worker images <eks-snaps>`
 
 Our policies
 ------------
 A description of the available security features, how our images are tested, and of our image retention policy.
 
-* :doc:`Security overview <ubuntu-security-on-aws>`
-* :doc:`Image testing <aws-image-testing>`
-* :doc:`Image retention policy <ec2-image-retention-policy>`
+* :ref:`Security overview <ubuntu-security-on-aws>`
+* :ref:`Image testing <aws-image-testing>`
+* :ref:`Image retention policy <ec2-image-retention-policy>`
 
 .. toctree::
    :hidden:

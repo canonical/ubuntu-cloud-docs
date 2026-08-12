@@ -29,7 +29,7 @@ Canonical provides cloud image artifacts on
 `cloud-images.ubuntu.com`_ that have
 been customized to run on public clouds, including LXD and OpenStack. To
 learn more about these artifacts and supported architectures, visit our
-Ubuntu :doc:`cloud image artifacts <../public-images-reference/artifacts>`
+Ubuntu :ref:`cloud image artifacts <uci-artifacts>`
 documentation.
 
 Supported Architectures

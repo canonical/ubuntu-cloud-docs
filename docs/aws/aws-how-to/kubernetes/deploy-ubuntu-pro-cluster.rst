@@ -1,23 +1,25 @@
 .. meta::
    :description: Learn how to deploy an EKS cluster with Ubuntu Pro nodes using Ubuntu Pro tokens and EC2 launch templates.
 
+.. _deploy-ubuntu-pro-cluster:
+
 Deploy an Ubuntu Pro EKS cluster — using Pro tokens
 ===================================================
 
 This guide shows how to deploy an EKS cluster with Ubuntu Pro nodes using Ubuntu Pro tokens and EC2 launch templates.
 
-This guide covers creating Pro clusters using tokens only. If you prefer getting a pre-activated Ubuntu Pro AMI with metered billing, please check :doc:`deploy-ubuntu-pro-cluster-with-eks-pro-ami`.
+This guide covers creating Pro clusters using tokens only. If you prefer getting a pre-activated Ubuntu Pro AMI with metered billing, please check :ref:`deploy-ubuntu-pro-cluster-with-eks-pro-ami`.
 
 For FIPS clusters, please note that only Ubuntu 22.04 LTS has NIST-validated FIPS modules at the moment.
 
-For a dedicated FIPS guide, see :doc:`deploy-ubuntu-pro-fips-cluster`.
+For a dedicated FIPS guide, see :ref:`deploy-ubuntu-pro-fips-cluster`.
 
 Prerequisites
 ~~~~~~~~~~~~~
 
 - ``eksctl``: Check the instructions to `install eksctl`_
 - ``Packer`` version 1.8.1 or newer installed. (`Packer installation instructions`_). Only needed if you want to enable FIPS for the cluster nodes. 
-- Your AWS access key ID and secret access key (see :doc:`../../aws-reference/ec2-credentials`)
+- Your AWS access key ID and secret access key (see :ref:`ec2-credentials`)
 - An Ubuntu Pro token
 
 
@@ -161,7 +163,7 @@ The steps needed for deploying the cluster depend on whether you need to enable 
         .. note::
             Save a copy of the provided AMI ID for the next step.
 
-        See also: :doc:`Build a Pro AMI using Packer <../instances/build-pro-ami-using-packer>`.
+        See also: :ref:`Build a Pro AMI using Packer <build-pro-ami-using-packer>`.
 
 
 Create the ``eksctl`` config file
@@ -182,7 +184,7 @@ To do so, start by creating a ``cluster.yaml`` with the following content
 
 Change <CLUSTER_NAME> and <YOUR_EKS_VERSION> accordingly. 
 
-Note that Ubuntu 22.04 LTS (non pro) covers EKS versions up to 1.32. For newer EKS versions please use Ubuntu 24.04 LTS or use the already pre activated Pro AMIs which provide broader coverage: :doc:`deploy-ubuntu-pro-cluster-with-eks-pro-ami`).
+Note that Ubuntu 22.04 LTS (non pro) covers EKS versions up to 1.32. For newer EKS versions please use Ubuntu 24.04 LTS or use the already pre activated Pro AMIs which provide broader coverage: :ref:`deploy-ubuntu-pro-cluster-with-eks-pro-ami`).
 
 Add the following content to your file.
 

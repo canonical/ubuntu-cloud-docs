@@ -2,6 +2,8 @@
    :description: Learn how to deploy an EKS cluster of FIPS-certified Ubuntu nodes. Includes creating your custom EKS FIPS AMI using Packer, and then deploying it using eksctl.
 
 
+.. _deploy-ubuntu-pro-fips-cluster:
+
 Deploy an Ubuntu Pro FIPS EKS cluster - using a Pro AMI
 =======================================================
 
@@ -9,7 +11,7 @@ This guide will walk you through the steps needed to get an EKS cluster of FIPS-
 
 The process involves creating your custom EKS FIPS AMI using Packer, and then deploying it using ``eksctl``. To test and take a peek inside the cluster, ``kubectl`` can be used.
 
-For non-FIPS clusters, see :doc:`deploy-ubuntu-cluster-with-eks-ami` or :doc:`deploy-ubuntu-pro-cluster-with-eks-pro-ami`. For FIPS on OCI containers, see :doc:`FIPS Ubuntu container <oci:oci-tutorials/fips-ubuntu-container>`.
+For non-FIPS clusters, see :ref:`deploy-ubuntu-cluster-with-eks-ami` or :ref:`deploy-ubuntu-pro-cluster-with-eks-pro-ami`. For FIPS on OCI containers, see :ref:`FIPS Ubuntu container <oci:how-to-fips-ubuntu-container>`.
 
 
 Prerequisites
@@ -86,7 +88,7 @@ Build your image with:
 
 
 
-See also: :doc:`Build a Pro AMI using Packer <../instances/build-pro-ami-using-packer>`.
+See also: :ref:`Build a Pro AMI using Packer <build-pro-ami-using-packer>`.
 Once the build is complete, either:
 
 * :ref:`Create a new cluster (option 1) <create_new_cluster>` or 

@@ -1,6 +1,8 @@
 .. meta::
    :description: Learn how to use bastion to access VMs on Oracle Cloud, including steps for creating a bastion and accessing VMs securely without public IPs.
 
+.. _use-bastion-to-access-VM:
+
 Use a bastion to access your VM
 ===============================
 
@@ -63,7 +65,7 @@ You can create the policy using the console or the CLI.
 Install oracle-cloud-agent on the VM
 ------------------------------------
 
-If you are using the images created by Canonical and published by Oracle (as described in :doc:`find-ubuntu-images`), they already have the oracle-cloud-agent pre-installed by default, and no additional action is necessary.
+If you are using the images created by Canonical and published by Oracle (as described in :ref:`find-ubuntu-images`), they already have the oracle-cloud-agent pre-installed by default, and no additional action is necessary.
 
 To check if the agent is installed, run:
 

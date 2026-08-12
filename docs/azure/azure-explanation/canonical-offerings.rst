@@ -1,6 +1,8 @@
 .. meta::
    :description: Learn about Canonical's Ubuntu image offerings on Azure, including Pro, minimal, CVM, and CIS-hardened images for cloud workloads. Includes details about kernel variants and collaborative optimizations done with Microsoft.
 
+.. _canonical-offerings:
+
 Canonical's offerings on Azure
 ==============================
 
@@ -12,7 +14,7 @@ Ubuntu images are specifically fine-tuned to maximize performance on Azure infra
 
 * `Server images`_ are general-purpose images customized for Azure Virtual Machines. These images are also available with `Ubuntu Pro`_ enabled.
 
-* :doc:`Minimal images <all-clouds:all-clouds-explanation/ubuntu-base-and-minimal-images>` are designed for automated deployment at scale with a reduced default package set. Things like interactive usage tools are omitted. They are much smaller, boot faster, and require fewer security updates over time due to the fewer installed packages. These images are also available with `Ubuntu Pro`_ enabled.
+* :ref:`Minimal images <all-clouds:ubuntu-base-and-minimal-images>` are designed for automated deployment at scale with a reduced default package set. Things like interactive usage tools are omitted. They are much smaller, boot faster, and require fewer security updates over time due to the fewer installed packages. These images are also available with `Ubuntu Pro`_ enabled.
 
 *  :ref:`Confidential Virtual Machine (CVM) images <azure-cvms>` provide enhanced security features designed to protect data at rest, in use, and during boot. CVM images are intended for use with Azure's confidential computing capabilities using hardware-enabled security features. These images are also available with `Ubuntu Pro`_ enabled.
 
@@ -24,7 +26,7 @@ Ubuntu images are specifically fine-tuned to maximize performance on Azure infra
 
 * `Ubuntu Pro Minimal CIS images`_ are built on Ubuntu Pro and are CIS-hardened with a minimal footprint to maximize security. These images are available with CIS Level 1 or CIS Level 2 hardening.
 
-The availability of each of these images and the means to find them on Azure is described in the :doc:`Find Ubuntu images <../azure-how-to/instances/find-ubuntu-images/>` page.
+The availability of each of these images and the means to find them on Azure is described in the :ref:`Find Ubuntu images <find-ubuntu-images>` page.
 
 Optimizations for Azure
 -----------------------
@@ -52,7 +54,7 @@ Collaborative Optimizations
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 1. `Anbox on Azure`_, that allows users to run Android apps on Azure at scale
-#. Collaboration with Azure's AKS team to support the :doc:`Azure Kubernetes worker node <ubuntu-on-aks-worker-nodes>` image, as these worker nodes nearly always run Ubuntu
+#. Collaboration with Azure's AKS team to support the :ref:`Azure Kubernetes worker node <ubuntu-on-aks-worker-nodes>` image, as these worker nodes nearly always run Ubuntu
 #. Collaboration with the Azure Guest Patching Service and Update Manager teams to ensure simple security patch management for users
 #. Collaboration with the .Net team on `Chiseled .Net images`_ that have a smaller size and security cross-section
 #. `Landscape on Azure`_, for managing your Ubuntu deployments at scale

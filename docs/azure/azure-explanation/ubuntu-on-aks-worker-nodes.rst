@@ -1,6 +1,8 @@
 .. meta::
    :description: Overview of Ubuntu as the default OS for Azure Kubernetes Service (AKS) worker nodes, including updates and customization.
 
+.. _ubuntu-on-aks-worker-nodes:
+
 Ubuntu on AKS worker nodes
 ==========================
 

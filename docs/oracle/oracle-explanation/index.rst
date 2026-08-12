@@ -1,6 +1,8 @@
 .. meta::
    :description: Explanations about Canonical's offerings on Oracle Cloud, including OKE and the available security features.
 
+.. _oracle-explanation-index:
+
 Explanation
 ===========
 

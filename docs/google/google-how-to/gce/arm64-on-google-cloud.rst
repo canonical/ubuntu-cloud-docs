@@ -1,6 +1,8 @@
 .. meta::
    :description: Learn how to use the 64K page kernel on ARM64 instances on Google Cloud, including supported machine types and how to switch kernel variants.
 
+.. _arm64-on-google-cloud:
+
 Use 64K page kernel on ARM64 instances
 ======================================
 

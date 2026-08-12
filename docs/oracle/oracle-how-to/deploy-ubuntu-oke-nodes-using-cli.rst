@@ -1,6 +1,8 @@
 .. meta::
    :description: Learn how to deploy Ubuntu OKE nodes using CLI, including the creation of network resources, OKE cluster, and managed or self-managed node pools.
 
+.. _deploy-ubuntu-oke-nodes-using-cli:
+
 Deploy Ubuntu OKE nodes using CLI
 =================================
 

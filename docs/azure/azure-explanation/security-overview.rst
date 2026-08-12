@@ -1,6 +1,8 @@
 .. meta::
    :description: Learn about security features available with Ubuntu images on Azure, including Trusted Launch, CVMs, and Ubuntu Pro enhancements.
 
+.. _security-overview:
+
 Ubuntu Security on Azure
 ========================
 
@@ -9,7 +11,7 @@ Ubuntu images on Azure include the security features provided by both Ubuntu and
 Ubuntu security features
 ------------------------
 
-Ubuntu on Azure inherits and benefits from all of the security features available to Ubuntu Server. A detailed description of these features can be found on the `Ubuntu security page`_ and in our explanation about :doc:`Security in the Ubuntu cloud images <all-clouds:all-clouds-explanation/security-overview>`. For further guidance on usage refer to  Ubuntu server's `Introductory page on security`_. 
+Ubuntu on Azure inherits and benefits from all of the security features available to Ubuntu Server. A detailed description of these features can be found on the `Ubuntu security page`_ and in our explanation about :ref:`Security in the Ubuntu cloud images <all-clouds:security-overview>`. For further guidance on usage refer to  Ubuntu server's `Introductory page on security`_. 
 
 Azure security features
 -----------------------
@@ -32,7 +34,7 @@ Apart from the trusted execution environments (TEE) provided by these specialize
 
 For confidential AI workloads, the security model also extends to GPU processing through the NVIDIA H100 Tensor Core GPU, which implements its own TEE with encrypted data transfer between the CPU and GPU.
 
-To launch Ubuntu Confidential VMs, refer to :doc:`../azure-how-to/instances/launch-ubuntu-images`. It's important to note that though memory encryption is always enabled (via the TEE) with a confidential VM, full-disk encryption (FDE) is optional, and it requires explicit activation after the VM is provisioned.
+To launch Ubuntu Confidential VMs, refer to :ref:`launch-ubuntu-images`. It's important to note that though memory encryption is always enabled (via the TEE) with a confidential VM, full-disk encryption (FDE) is optional, and it requires explicit activation after the VM is provisioned.
 
 To better understand the concepts of secure boot, measured boot, FDE and CVMs, refer to the relevant sections in our `generic cloud security overview page`_.
 
@@ -46,7 +48,7 @@ Apart from the Ubuntu Server images, Azure also has images for `Ubuntu Pro`_, wh
 * Live kernel updates: These reduce downtime and unplanned reboots in case of kernel vulnerabilities.
 * FIPS compliance: Includes FIPS-certified modules to enable the use of Ubuntu in highly regulated environments.
 
-To find Ubuntu Pro images on Azure, refer to :doc:`../azure-how-to/instances/find-ubuntu-images`. 
+To find Ubuntu Pro images on Azure, refer to :ref:`find-ubuntu-images`. 
 
 
 .. _`Ubuntu security page`: https://ubuntu.com/security

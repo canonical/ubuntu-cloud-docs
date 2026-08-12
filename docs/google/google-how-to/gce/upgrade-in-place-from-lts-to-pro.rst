@@ -2,6 +2,8 @@
    :description: Learn how to switch between Ubuntu LTS and Ubuntu Pro in-place on GCE. Includes steps to update the license and verify the changes.
 
 
+.. _upgrade-in-place-from-lts-to-pro:
+
 Change license between LTS and Pro
 ====================================
 

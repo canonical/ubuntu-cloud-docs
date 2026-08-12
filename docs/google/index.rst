@@ -1,6 +1,8 @@
 .. meta::
    :description: Discover Ubuntu on Google Cloud Platform (GCP), including optimized images, deployment guides, and best practices for cloud workloads.
 
+.. _index:
+
 Ubuntu on GCP
 =============
 
@@ -26,22 +28,22 @@ In this documentation
     :header-rows: 0
 
     * - **Canonical's offerings**
-      - :doc:`GCP optimizations <google-explanation/canonical-offerings>` • :doc:`Packaged Google agents <google-explanation/guest-agents>` 
+      - :ref:`GCP optimizations <canonical-offerings>` • :ref:`Packaged Google agents <guest-agents>` 
       
     * - **Finding and launching images**
-      - :doc:`Find images <google-how-to/gce/find-ubuntu-images>` • :doc:`Create instances <google-how-to/gce/create-different-instance-types>` • :doc:`Launch a desktop <google-how-to/gce/launch-ubuntu-desktop>` • :doc:`Use 64K page kernel on ARM64 instances <google-how-to/gce/arm64-on-google-cloud>`
+      - :ref:`Find images <find-ubuntu-images>` • :ref:`Create instances <create-different-instance-types>` • :ref:`Launch a desktop <launch-ubuntu-desktop>` • :ref:`Use 64K page kernel on ARM64 instances <arm64-on-google-cloud>`
       
     * - **Upgrades and maintenance**
-      - :doc:`Switch between LTS and Pro <google-how-to/gce/upgrade-in-place-from-lts-to-pro>` • :doc:`Enable Ubuntu Pro features <google-how-to/gce/enable-pro-features>` • :doc:`Upgrade from Focal to Jammy <google-how-to/gce/upgrade-from-focal-to-jammy>` 
+      - :ref:`Switch between LTS and Pro <upgrade-in-place-from-lts-to-pro>` • :ref:`Enable Ubuntu Pro features <enable-pro-features>` • :ref:`Upgrade from Focal to Jammy <upgrade-from-focal-to-jammy>` 
 
     * - **Creating golden images**
-      - :doc:`Build a Pro golden image <google-how-to/gce/build-ubuntu-pro-golden-image>`
+      - :ref:`Build a Pro golden image <build-ubuntu-pro-golden-image>`
             
     * - **Custom deployments**
-      - :doc:`Create a GKE cluster with Ubuntu nodes <google-how-to/gke/create-gke-cluster-with-ubuntu-nodes>` • :doc:`Deploy Kubernetes with Ubuntu Pro on GCE <google-how-to/gke/deploy-kubernetes-with-ubuntu-pro>` • :doc:`Create customized docker containers <google-how-to/gce/create-customized-docker-container>` • :doc:`Set hostname <google-how-to/gce/set-hostname-using-cloudinit>` 
+      - :ref:`Create a GKE cluster with Ubuntu nodes <create-gke-cluster-with-ubuntu-nodes>` • :ref:`Deploy Kubernetes with Ubuntu Pro on GCE <deploy-kubernetes-with-ubuntu-pro>` • :ref:`Create customized docker containers <create-customized-docker-container>` • :ref:`Set hostname <set-hostname-using-cloudinit>` 
       
     * - **Quality and policies**
-      - :doc:`Security aspects <google-explanation/security-overview>` • :doc:`Image testing <google-explanation/gce-image-testing>` • :doc:`Image retention policy <google-explanation/gce-image-retention-policy>`
+      - :ref:`Security aspects <security-overview>` • :ref:`Image testing <gce-image-testing>` • :ref:`Image retention policy <gce-image-retention-policy>`
 
 
 
@@ -51,9 +53,9 @@ How this documentation is organized
 
 This documentation uses the `Diátaxis documentation structure <https://diataxis.fr/>`__.
 
-* :doc:`How-to guides  <google-how-to/index>` assume you have basic familiarity with Ubuntu images on GCP and want to achieve specific goals. They are instructions covering key operations and common tasks involving the use of Ubuntu on GCP.
+* :ref:`How-to guides <google-how-to-index>` assume you have basic familiarity with Ubuntu images on GCP and want to achieve specific goals. They are instructions covering key operations and common tasks involving the use of Ubuntu on GCP.
 
-* :doc:`Explanation <google-explanation/index>` includes topic overviews, background and context and detailed discussion. These include key topics, such as our offerings, security features, Google's 'guest agents' on Ubuntu and our image retention policy.
+* :ref:`Explanation <google-explanation-index>` includes topic overviews, background and context and detailed discussion. These include key topics, such as our offerings, security features, Google's 'guest agents' on Ubuntu and our image retention policy.
 
 ---------
 
@@ -69,7 +71,7 @@ Get involved
 * `Join our online chat`_
 * `Discuss on Matrix`_
 * `Talk to us about Ubuntu on Google cloud`_
-* :doc:`google-how-to/contribute-to-these-docs`
+* :ref:`contribute-to-these-docs`
 
 Governance and policies
 ~~~~~~~~~~~~~~~~~~~~~~~

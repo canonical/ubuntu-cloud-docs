@@ -1,13 +1,15 @@
 .. meta::
    :description: List of how-to guides related to using Ubuntu on EKS worker nodes.
 
+.. _kubernetes-index:
+
 Using EKS
 =========
 
 Canonical publishes Ubuntu EKS images ready for use in your EKS clusters. These
 images come pre-configured to join a cluster and are integrated into ``eksctl``,
 the official EKS management CLI tool. Ubuntu LTS and Ubuntu Pro LTS images are
-available via the :doc:`AWS CLI <../../aws-how-to/instances/find-ubuntu-images>`,
+available via the :ref:`AWS CLI <find-ubuntu-images>`,
 ``eksctl``, or the `AWS Marketplace`_.
 
 The following table details the currently supported images and EKS version
@@ -44,10 +46,10 @@ Cluster deployment options for Ubuntu on EKS
 To use Ubuntu as the operating system for your EKS worker nodes, choose from the
 following deployment options:
 
-* :doc:`Deploy an Ubuntu EKS cluster <deploy-ubuntu-cluster-with-eks-ami>`
-* :doc:`Deploy an Ubuntu Pro EKS cluster <deploy-ubuntu-pro-cluster-with-eks-pro-ami>` (using the pre-activated Ubuntu Pro AMI)
-* :doc:`Deploy an Ubuntu Pro FIPS EKS cluster <deploy-ubuntu-pro-fips-cluster>` (using the pre-activated Ubuntu Pro AMI)
-* :doc:`Deploy an Ubuntu Pro cluster using tokens <deploy-ubuntu-pro-cluster>`
+* :ref:`Deploy an Ubuntu EKS cluster <deploy-ubuntu-cluster-with-eks-ami>`
+* :ref:`Deploy an Ubuntu Pro EKS cluster <deploy-ubuntu-pro-cluster-with-eks-pro-ami>` (using the pre-activated Ubuntu Pro AMI)
+* :ref:`Deploy an Ubuntu Pro FIPS EKS cluster <deploy-ubuntu-pro-fips-cluster>` (using the pre-activated Ubuntu Pro AMI)
+* :ref:`Deploy an Ubuntu Pro cluster using tokens <deploy-ubuntu-pro-cluster>`
 
 Deployment options for node groups
 ----------------------------------
@@ -55,8 +57,8 @@ Deployment options for node groups
 You can create both managed and self-managed node groups using Ubuntu on EKS.
 Select from the following options:
 
-* :doc:`Deploy a self-managed Ubuntu node group <deploy-self-managed-node-group>`
-* :doc:`Deploy managed Ubuntu node groups <deploy-managed-node-group>`
+* :ref:`Deploy a self-managed Ubuntu node group <deploy-self-managed-node-group>`
+* :ref:`Deploy managed Ubuntu node groups <deploy-managed-node-group>`
 
 Custom EKS deployments
 ----------------------
@@ -64,7 +66,7 @@ Custom EKS deployments
 For custom configurations, such as GPU-enabled deployments or installing
 Kubeflow, refer to these guides:
 
-* :doc:`Enable GPUs on EKS worker nodes <enable-gpus-on-eks>`
+* :ref:`Enable GPUs on EKS worker nodes <enable-gpus-on-eks>`
 * `Install Kubeflow on EKS (external link)`_
 
 

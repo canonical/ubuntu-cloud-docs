@@ -1,6 +1,8 @@
 .. meta::
    :description: Learn how to contribute to Ubuntu on Google Cloud documentation, including editing, building, and submitting pull requests.
 
+.. _contribute-to-these-docs:
+
 Contribute to these docs
 ========================
 

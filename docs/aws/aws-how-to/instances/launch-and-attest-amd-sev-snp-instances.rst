@@ -1,10 +1,12 @@
 .. meta::
    :description: Learn how to launch and attest AMD SEV-SNP enabled instances on AWS. Includes steps for launching the instance, building the attestation tool, and validating the attestation report.  
 
+.. _launch-and-attest-amd-sev-snp-instances:
+
 Launch and attest AMD SEV-SNP instances with Ubuntu 24.04 on AWS
 ================================================================
 
-Amazon EC2 now supports AMD Secure Encrypted Virtualization-Secure Nested Paging (AMD SEV-SNP), on M6a, C6a, and R6a instance types in certain regions. These instances, when used with Ubuntu 24.04 LTS, allow customers to leverage AMD's confidential computing capabilities (:doc:`overview <all-clouds:all-clouds-explanation/confidential-computing>`) on AWS.
+Amazon EC2 now supports AMD Secure Encrypted Virtualization-Secure Nested Paging (AMD SEV-SNP), on M6a, C6a, and R6a instance types in certain regions. These instances, when used with Ubuntu 24.04 LTS, allow customers to leverage AMD's confidential computing capabilities (:ref:`overview <all-clouds:confidential-computing>`) on AWS.
 
 This guide covers the steps needed to launch, test and validate the AMD SEV-SNP capabilities on AWS. The steps have been tested with Ubuntu 24.04 LTS and Ubuntu Pro 24.04 LTS on us-east-2.
 

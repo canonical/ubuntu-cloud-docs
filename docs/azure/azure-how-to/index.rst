@@ -1,6 +1,8 @@
 .. meta::
    :description: List of how-to guides for launching, managing, and upgrading Ubuntu on Azure, including image selection and solution deployment.
 
+.. _azure-how-to-index:
+
 How-to guides
 =============
 
@@ -11,34 +13,34 @@ Finding and launching images
 
 Use the Azure CLI to find and launch appropriate images:
 
-* :doc:`Install Azure CLI <instances/install-azure-cli>`
-* :doc:`Find images <instances/find-ubuntu-images>`
-* :doc:`Launch images <instances/launch-ubuntu-images>`
+* :ref:`Install Azure CLI <install-azure-cli>`
+* :ref:`Find images <find-ubuntu-images>`
+* :ref:`Launch images <launch-ubuntu-images>`
 
 Upgrades and maintenance
 ------------------------
 
 Since security is always an important consideration, you might want to check for available security upgrades, install Ubuntu Pro and perform relevant upgrades:
 
-* :doc:`Check for available security updates <instances/check-available-security-updates>`
-* :doc:`Get Ubuntu Pro <instances/get-ubuntu-pro>`
-* :doc:`Upgrade Ubuntu LTS release <instances/upgrade-ubuntu-lts-release>`
+* :ref:`Check for available security updates <check-available-security-updates>`
+* :ref:`Get Ubuntu Pro <get-ubuntu-pro>`
+* :ref:`Upgrade Ubuntu LTS release <upgrade-ubuntu-lts-release>`
 
 Creating golden images
 -----------------------
 
 You can create golden images to simplify your estate management:
 
-* :doc:`Create a Pro golden image <instances/create-pro-fips-golden-image>`
-* :doc:`Create a golden image pipeline <instances/create-a-golden-image-pipeline>`
+* :ref:`Create a Pro golden image <create-pro-fips-golden-image>`
+* :ref:`Create a golden image pipeline <create-a-golden-image-pipeline>`
 
 Custom deployments
 ------------------
 If you want to deploy specific solutions like SQL Server and Kubeflow on Azure, use:
 
-* :doc:`Deploy an Ubuntu VM with SQL Server <instances/provision-an-ubuntu-virtual-machine-running-sql-server-in-azure>`
+* :ref:`Deploy an Ubuntu VM with SQL Server <provision-an-ubuntu-virtual-machine-running-sql-server-in-azure>`
 * `Install Kubeflow on AKS (external link)`_
-* :doc:`Deploy Kubeflow with AKS spot instances <instances/deploy-kubeflow-pipelines-with-aks-spot-instances>`
+* :ref:`Deploy Kubeflow with AKS spot instances <deploy-kubeflow-pipelines-with-aks-spot-instances>`
 
 .. toctree::
    :hidden:

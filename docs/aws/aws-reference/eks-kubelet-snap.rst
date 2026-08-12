@@ -1,6 +1,8 @@
 .. meta::
    :description: Details about the kubelet-eks snap for EKS worker nodes, including channels, updates, and snap management.
 
+.. _eks-kubelet-snap:
+
 EKS kubelet snap
 ================
 
@@ -16,7 +18,7 @@ Note that the `latest` channel track of the snap is unused.
 See the `official snap documentation <https://snapcraft.io/docs/channels>`_ for more information
 about the concept of channels and tracks.
 
-For an overview of all snaps bundled in EKS worker images, see :doc:`Snap usage in EKS worker images <../aws-explanation/eks-snaps>`.
+For an overview of all snaps bundled in EKS worker images, see :ref:`Snap usage in EKS worker images <eks-snaps>`.
 
 Automatic snap updates
 ~~~~~~~~~~~~~~~~~~~~~~

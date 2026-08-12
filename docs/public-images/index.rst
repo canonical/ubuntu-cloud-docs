@@ -2,6 +2,8 @@
    :description: Discover details about the publicly available Ubuntu cloud images, including LXD, OpenStack, Vagrant, QCOW and Buildd images.
 
 
+.. _index:
+
 Ubuntu Public Images
 ====================
 
@@ -23,13 +25,13 @@ In this documentation
     :header-rows: 0
 
     * - **Canonical's offerings**
-      - :doc:`Ubuntu cloud image artifacts <public-images-reference/artifacts>` • :doc:`LXD and OpenStack images <public-images-explanation/lxd-openstack-images>` • :doc:`Vagrant boxes <public-images-explanation/vagrant>` • :doc:`Buildd images <public-images-explanation/buildd>` 
+      - :ref:`Ubuntu cloud image artifacts <uci-artifacts>` • :ref:`LXD and OpenStack images <lxd-openstack-images>` • :ref:`Vagrant boxes <vagrant-explanation>` • :ref:`Buildd images <buildd>` 
       
     * - **Building and launching images**
-      - :doc:`Build a Vagrant box with Bartender <public-images-how-to/build-vagrant-with-bartender>` • :doc:`Run a Vagrant box <public-images-how-to/run-a-vagrant-box>` • :doc:`Launch QCOW images using libvirt <public-images-how-to/launch-with-libvirt>` • :doc:`Launch QCOW images using QEMU <public-images-how-to/launch-qcow-with-qemu>`  • :doc:`Run an OVA using VirtualBox <public-images-how-to/run-an-ova-using-virtualbox>`  • :doc:`Create and use a local cloud-init datasource <public-images-how-to/use-local-cloud-init-ds>`  • :doc:`Verify an image checksum <public-images-how-to/verify-image-checksum>` 
+      - :ref:`Build a Vagrant box with Bartender <vagrant-bartender>` • :ref:`Run a Vagrant box <run-a-vagrant-box>` • :ref:`Launch QCOW images using libvirt <launch-libvirt>` • :ref:`Launch QCOW images using QEMU <qcow-qemu>`  • :ref:`Run an OVA using VirtualBox <run-an-ova-using-virtualbox>`  • :ref:`Create and use a local cloud-init datasource <use-local-cloud-init-ds>`  • :ref:`Verify an image checksum <verify-image-checksum>` 
       
     * - **Policies**
-      - :doc:`Security overview <public-images-explanation/ubuntu-security-on-public-images>` • :doc:`Image retention policy <public-images-explanation/public-image-retention-policy>` 
+      - :ref:`Security overview <ubuntu-security-on-public-images>` • :ref:`Image retention policy <public-image-retention-policy>` 
       
 
 How this documentation is organized
@@ -37,9 +39,9 @@ How this documentation is organized
 
 This documentation uses the `Diátaxis documentation structure <https://diataxis.fr/>`__.
 
-* :doc:`How-to guides  <public-images-how-to/index>` assume you have basic familiarity with Ubuntu images on public clouds and want to achieve specific goals. They are instructions covering key operations and common tasks involving different types of public Ubuntu cloud images.
+* :ref:`How-to guides <public-images-how-to>` assume you have basic familiarity with Ubuntu images on public clouds and want to achieve specific goals. They are instructions covering key operations and common tasks involving different types of public Ubuntu cloud images.
 
-* :doc:`Explanation <public-images-explanation/index>` includes topic overviews, background and context and detailed discussion. These include key topics, such as the different types of images that we build and support, security aspects and our image retention policy.
+* :ref:`Explanation <public-images-explanation>` includes topic overviews, background and context and detailed discussion. These include key topics, such as the different types of images that we build and support, security aspects and our image retention policy.
 
 ---------
 

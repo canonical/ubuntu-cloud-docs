@@ -1,6 +1,8 @@
 .. meta::
    :description: Learn about Ubuntu Pro on AWS, including ESM, Livepatch, compliance, and Pro image availability for cloud workloads.
 
+.. _pro:
+
 Ubuntu Pro on AWS
 =================
 
@@ -12,7 +14,7 @@ Ubuntu Pro availability on AWS
 
 Ubuntu Pro on AWS is available through different methods:
 
-:doc:`Launch new Amazon Images (AMIs) <../aws-how-to/instances/launch-ubuntu-ec2-instance>`,
+:ref:`Launch new Amazon Images (AMIs) <launch-ubuntu-ec2-instance>`,
 covering the following products:
 
 * Ubuntu Pro server images: EC2, Marketplace
@@ -24,13 +26,13 @@ covering the following products:
 
 In-place upgrade of existing Ubuntu LTS instances to Ubuntu Pro:
 
-* :doc:`Using AWS License Manager <../aws-how-to/instances/upgrade-in-place-from-lts-to-pro>`: EC2, Marketplace (coming soon)
+* :ref:`Using AWS License Manager <upgrade-in-place-from-lts-to-pro>`: EC2, Marketplace (coming soon)
 * Using Canonical Tokens: Marketplace (contact us)
 
 Build custom AMIs using EC2 Image Builder:
 
 * Starting from any base Ubuntu Pro image: EC2, Marketplace
-* Using the :doc:`Upgrade to Ubuntu Pro component <../aws-how-to/instances/build-ubuntu-pro-image-with-ec2-image-builder>`: Marketplace
+* Using the :ref:`Upgrade to Ubuntu Pro component <build-ubuntu-pro-image-with-ec2-image-builder>`: Marketplace
 
 Ubuntu Pro features overview
 ----------------------------

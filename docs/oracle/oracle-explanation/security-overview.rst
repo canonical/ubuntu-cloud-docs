@@ -1,6 +1,8 @@
 .. meta::
    :description: Understand the Ubuntu and Oracle Cloud security features available while using Ubuntu on Oracle Cloud, including full-disk encryption.
 
+.. _security-overview:
+
 Security features with Ubuntu on Oracle Cloud
 =============================================
 
@@ -9,7 +11,7 @@ Ubuntu images on Oracle Cloud include the security features provided by both Ubu
 Ubuntu security features
 ------------------------
 
-Ubuntu on Oracle provides all the security features available on Ubuntu Server. A detailed description of these features can be found on the `Ubuntu security page`_ and in our explanation about :doc:`Security in the Ubuntu cloud images <all-clouds:all-clouds-explanation/security-overview>`. For further guidance on usage refer to  Ubuntu server's `Introductory page on security`_. 
+Ubuntu on Oracle provides all the security features available on Ubuntu Server. A detailed description of these features can be found on the `Ubuntu security page`_ and in our explanation about :ref:`Security in the Ubuntu cloud images <all-clouds:security-overview>`. For further guidance on usage refer to  Ubuntu server's `Introductory page on security`_. 
 
 
 Oracle Cloud security features
@@ -21,7 +23,7 @@ Oracle Cloud offers comprehensive security and data protection in the cloud. Thi
 Full-disk encryption (FDE)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-FDE ensures that all data on the disk is inaccessible without an encryption key. To use FDE on Oracle Cloud, refer to :doc:`../oracle-how-to/use-fde`.
+FDE ensures that all data on the disk is inaccessible without an encryption key. To use FDE on Oracle Cloud, refer to :ref:`use-fde`.
 
 
 Confidential computing
@@ -32,7 +34,7 @@ Confidential computing protects data in-use by performing computation in a hardw
 * **AMD SEV** (Secure Encrypted Virtualization) on VM shapes — encrypts VM memory with a unique key per VM, isolating guests from the hypervisor.
 * **AMD TSME** (Transparent Secure Memory Encryption) on bare metal shapes — encrypts all system memory transparently.
 
-These technologies are available on E3, E4, and E5 shapes across select regions. For further details about AMD SEV and TSME, see `AMD's description of SEV`_. To enable confidential computing on an Oracle Cloud instance, refer to :doc:`../oracle-how-to/enable-confidential-computing`.
+These technologies are available on E3, E4, and E5 shapes across select regions. For further details about AMD SEV and TSME, see `AMD's description of SEV`_. To enable confidential computing on an Oracle Cloud instance, refer to :ref:`enable-confidential-computing`.
 
 
 .. _`Ubuntu security page`: https://ubuntu.com/security

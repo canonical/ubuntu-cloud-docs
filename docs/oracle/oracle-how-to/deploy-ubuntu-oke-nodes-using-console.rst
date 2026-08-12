@@ -1,12 +1,14 @@
 .. meta::
    :description: Learn how to deploy Ubuntu OKE nodes using Oracle Cloud Console, including cluster creation and node pool management.
 
+.. _deploy-ubuntu-oke-nodes-using-console:
+
 Deploy Ubuntu OKE nodes using Oracle Cloud Console
 ==================================================
 
 .. Introduction to Ubuntu OKE node
 
-Ubuntu images are available for OKE worker nodes, with support for a select number of suites and Kubernetes versions. For a list of supported OKE configurations, see our :doc:`Ubuntu availability on OKE </oracle-reference/ubuntu-availability-on-oke>` page.
+Ubuntu images are available for OKE worker nodes, with support for a select number of suites and Kubernetes versions. For a list of supported OKE configurations, see our :ref:`Ubuntu availability on OKE <ubuntu-availability-on-oke>` page.
 
 
 Prerequisites

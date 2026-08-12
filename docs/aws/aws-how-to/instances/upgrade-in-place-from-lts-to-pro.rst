@@ -1,6 +1,8 @@
 .. meta::
    :description: Learn how to upgrade from Ubuntu LTS to Ubuntu Pro in-place. Step-by-step guide for using AWS License Manager to perform the upgrade, including requirements and verification steps.
 
+.. _upgrade-in-place-from-lts-to-pro:
+
 Upgrade from Ubuntu to Ubuntu Pro using AWS License Manager
 ===========================================================
 

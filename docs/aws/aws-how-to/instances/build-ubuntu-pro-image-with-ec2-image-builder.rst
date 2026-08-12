@@ -1,6 +1,8 @@
 .. meta::
    :description: Learn how to build custom Ubuntu Pro images using EC2 Image Builder with the Ubuntu Pro component from the AWS Marketplace. Bake Pro services and security features directly into your AMIs at build time.
 
+.. _build-ubuntu-pro-image-with-ec2-image-builder:
+
 Build a custom Ubuntu Pro image with EC2 Image Builder
 =======================================================
 

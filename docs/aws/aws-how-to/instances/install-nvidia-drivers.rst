@@ -2,6 +2,8 @@
    :description: Learn how to install NVIDIA drivers on GPU-enabled EC2 instances. Launch a G4DN instance, install the NVIDIA driver and verify the installation with nvidia-smi.
 
 
+.. _install-nvidia-drivers:
+
 Install NVIDIA drivers on a GPU-enabled EC2 instance 
 =====================================================
 
@@ -10,14 +12,14 @@ AWS provides GPU-enabled instance types for workloads that require GPU compute p
 
 For more comprehensive instructions on checking the available drivers and installing the correct one based on different use-cases, refer to the `Ubuntu server documentation for installing NVIDIA drivers`_.
 
-To test proposed NVIDIA driver versions before release, see :doc:`all-clouds:all-clouds-how-to/install-proposed-nvidia-drivers-for-testing`.
+To test proposed NVIDIA driver versions before release, see :ref:`all-clouds:install-proposed-nvidia-drivers-for-testing`.
 
 Launch your instance
 --------------------
 
 Launch your Ubuntu 24.04 LTS VM using either `AWS CLI or the web console`_. Make sure you allocate enough disk space for your use case, as ML models tend to need a significant amount. 
 
-For detailed instructions on launching Ubuntu EC2 instances, see :doc:`launch-ubuntu-ec2-instance`.
+For detailed instructions on launching Ubuntu EC2 instances, see :ref:`launch-ubuntu-ec2-instance`.
 
 SSH access is required, so make sure to either open port 22 or enable SSM to access the machine through Session Manager. 
 
@@ -117,7 +119,7 @@ This should display the NVIDIA GPU information, including the CUDA version in th
 
 
 If CUDA was not installed, you can visit the `NVIDIA website`_ to download the CUDA version that matches the driver you just installed.
-For a complete ML environment including Jupyter and frameworks, see :doc:`data-science-stack-on-ec2`.
+For a complete ML environment including Jupyter and frameworks, see :ref:`data-science-stack-on-ec2`.
 
 
 

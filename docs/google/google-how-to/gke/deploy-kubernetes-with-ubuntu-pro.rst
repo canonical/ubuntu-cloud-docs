@@ -2,6 +2,8 @@
    :description: Learn how to deploy Kubernetes with Ubuntu Pro on Google Cloud. Includes steps to create Ubuntu Pro VMs, install Kubernetes using MicroK8s, create a cluster and access it.
 
 
+.. _deploy-kubernetes-with-ubuntu-pro:
+
 Deploy Kubernetes with Ubuntu Pro on GCE
 ========================================
 

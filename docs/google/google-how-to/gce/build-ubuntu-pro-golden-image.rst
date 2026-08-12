@@ -2,6 +2,8 @@
    :description: Learn how to create an Ubuntu Pro golden image using GCP's Cloud Shell. Includes steps to share the image with other users and to create an instance using the image.
 
 
+.. _build-ubuntu-pro-golden-image:
+
 Build Ubuntu Pro golden image
 =============================
 
