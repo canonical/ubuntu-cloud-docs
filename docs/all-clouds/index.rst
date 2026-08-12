@@ -29,12 +29,12 @@ For further details, refer to the cloud-specific documentation:
 ..  grid:: 1 1 2 2
    :padding: 0
 
-   .. grid-item-card:: :ref:`Ubuntu on AWS <aws:index>`   
-   .. grid-item-card:: :ref:`Ubuntu on Azure <azure:index>`  
-   .. grid-item-card:: :ref:`Ubuntu on GCP <google:index>` 
-   .. grid-item-card:: :ref:`Ubuntu on IBM <ibm:index>`
-   .. grid-item-card:: :ref:`Ubuntu on Oracle <oracle:index>`
-   .. grid-item-card:: :ref:`Ubuntu on VMware <vmware:index>`
+   .. grid-item-card:: :doc:`Ubuntu on AWS <aws:index>`   
+   .. grid-item-card:: :doc:`Ubuntu on Azure <azure:index>`  
+   .. grid-item-card:: :doc:`Ubuntu on GCP <google:index>` 
+   .. grid-item-card:: :doc:`Ubuntu on IBM <ibm:index>`
+   .. grid-item-card:: :doc:`Ubuntu on Oracle <oracle:index>`
+   .. grid-item-card:: :doc:`Ubuntu on VMware <vmware:index>`
 
 -----------------------------------------------------------------
 
@@ -48,8 +48,8 @@ Apart from the specific public clouds, Canonical also produces a variety of Ubun
 ..  grid:: 1 1 2 2
    :padding: 0
 
-   .. grid-item-card:: :ref:`Ubuntu on OCI container registries <oci:index>`
-   .. grid-item-card:: :ref:`Ubuntu Public Images <public-images:index>`
+   .. grid-item-card:: :doc:`Ubuntu on OCI container registries <oci:index>`
+   .. grid-item-card:: :doc:`Ubuntu Public Images <public-images:index>`
 
 
 

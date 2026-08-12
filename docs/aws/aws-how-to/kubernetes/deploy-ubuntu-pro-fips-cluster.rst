@@ -11,7 +11,7 @@ This guide will walk you through the steps needed to get an EKS cluster of FIPS-
 
 The process involves creating your custom EKS FIPS AMI using Packer, and then deploying it using ``eksctl``. To test and take a peek inside the cluster, ``kubectl`` can be used.
 
-For non-FIPS clusters, see :ref:`deploy-ubuntu-cluster-with-eks-ami` or :ref:`deploy-ubuntu-pro-cluster-with-eks-pro-ami`. For FIPS on OCI containers, see :ref:`FIPS Ubuntu container <oci:how-to-fips-ubuntu-container>`.
+For non-FIPS clusters, see :doc:`deploy-ubuntu-cluster-with-eks-ami` or :doc:`deploy-ubuntu-pro-cluster-with-eks-pro-ami`. For FIPS on OCI containers, see :doc:`FIPS Ubuntu container <oci:oci-tutorials/fips-ubuntu-container>`.
 
 
 Prerequisites
