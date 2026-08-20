@@ -137,7 +137,6 @@ html_theme_options = {
 linkcheck_ignore = [
     "http://127.0.0.1:8000",
     'http://localhost:8000',
-    r'.*#.*',
     "https://github.com",
     r"https://matrix\.to/.*",
     "https://example.com",
@@ -146,8 +145,37 @@ linkcheck_ignore = [
     "https://www.cloudsigma.com"
 ]
 
-# A regex list of URLs where anchors are ignored by 'make linkcheck'
-linkcheck_anchors_ignore_for_url = [r"https://github\.com/.*"]
+# A regex list of URLs where anchors are ignored by 'make linkcheck'.
+# The base URL is still checked for reachability; only the in-page anchor
+# match is skipped. Domains are listed here (instead of blanket-ignoring
+# every URL that contains a '#') because they either render their
+# anchors/headings client-side with JavaScript (so the static HTML
+# linkcheck fetches never contains the target id) or serve inconsistent
+# markup that intermittently defeats Python's HTML parser, causing false
+# "Anchor not found" reports even though the link works for readers.
+linkcheck_anchors_ignore_for_url = [
+    r"https://github\.com/.*",
+    # ubuntu.com injects in-page section anchors client-side
+    r"https://ubuntu\.com/.*",
+    # Azure Portal "create" links are client-side SPA routes, not HTML anchors
+    r"https://portal\.azure\.(com|cn)/.*",
+    # AWS Console is a client-side SPA; '#/...' is a route, not an anchor
+    r"https://console\.aws\.amazon\.com/.*",
+    # AWS docs and the HashiCorp Developer site are JS-rendered; their
+    # heading ids either aren't in the static HTML or don't match the
+    # public URL fragment exactly (e.g. HashiCorp prefixes ids with
+    # "user-content-")
+    r"https://docs\.aws\.amazon\.com/.*",
+    r"https://developer\.hashicorp\.com/.*",
+    # docs.oracle.com renders reference-page anchors client-side
+    r"https://docs\.oracle\.com/.*",
+    # azure.microsoft.com marketing pages inject section anchors client-side
+    r"https://azure\.microsoft\.com/.*",
+    # cloud.ibm.com docs serve markup that reproducibly defeats the anchor
+    # parser (confirmed by running linkcheck against it directly), even
+    # though the anchors are present and the pages render fine for readers
+    r"https://cloud\.ibm\.com/.*",
+]
 
 # How long the link checker will wait for a response for each request
 # TODO: Decrease to improve run time or increase if links frequently time out.
