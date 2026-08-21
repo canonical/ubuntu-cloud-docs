@@ -30,7 +30,7 @@ In this documentation
     :header-rows: 0
 
     * - **Canonical's offerings**
-      - :ref:`Azure optimizations <canonical-offerings>` • :ref:`Ubuntu on AKS <ubuntu-on-aks-worker-nodes>` • :ref:`Support options <support>` • :ref:`Packages maintained <packages>` • :ref:`Understanding Ubuntu on Azure <understanding-ubuntu-on-azure>` 
+      - :ref:`Azure optimizations <canonical-offerings>` • :ref:`Ubuntu on AKS <ubuntu-on-aks-worker-nodes>` • :ref:`Support options <support>` • :ref:`Packages maintained <packages>`
       
     * - **Finding and launching images**
       - :ref:`Install Azure CLI <install-azure-cli>` • :ref:`Find images <find-ubuntu-images>` • :ref:`Launch images <launch-ubuntu-images>` 

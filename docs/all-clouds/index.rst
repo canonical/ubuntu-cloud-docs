@@ -79,7 +79,8 @@ In this documentation
     :header-rows: 0
 
     * - **Ubuntu image specifics**
-      - :ref:`Base and minimal images <ubuntu-base-and-minimal-images>` •
+      - :ref:`Understanding cloud images <understanding-ubuntu-cloud-images>` •
+        :ref:`Base and minimal images <ubuntu-base-and-minimal-images>` •
         :ref:`Architecture variants support <architecture-variants>` •
         :ref:`Cloud image release types <release-types>` 
 

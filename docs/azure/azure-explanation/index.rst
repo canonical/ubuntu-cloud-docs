@@ -13,7 +13,7 @@ Our offerings
 
 Details about our offerings, including the different types of images available, the Azure-specific optimizations and the packages that we maintain for Azure:
 
-* :ref:`Ubuntu on Azure <understanding-ubuntu-on-azure>`
+* :ref:`Understanding Ubuntu cloud images <all-clouds:understanding-ubuntu-cloud-images>`
 * :ref:`Canonical's offerings on Azure <canonical-offerings>`
 * :ref:`Ubuntu on AKS <ubuntu-on-aks-worker-nodes>`
 * :ref:`Packages maintained by Canonical for Azure <packages>`
@@ -31,7 +31,6 @@ Our policies such as the security features available via Ubuntu and Ubuntu Pro a
    :hidden:
    :maxdepth: 1
    
-   Understanding Ubuntu on Azure <understanding-ubuntu-on-azure>
    Canonical's offerings on Azure <canonical-offerings>
    Ubuntu on AKS<ubuntu-on-aks-worker-nodes>
    Security overview<security-overview>

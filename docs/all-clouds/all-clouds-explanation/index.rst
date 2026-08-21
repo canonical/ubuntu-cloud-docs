@@ -11,8 +11,9 @@ Some key topics needed to understand the public cloud images are discussed here.
 Ubuntu image specifics
 -----------------------
 
-Understand some of the fundamental variants of Ubuntu cloud images - different release types, base vs minimal images, and architecture variants.
+Understand some of the fundamental variants of Ubuntu cloud images - different release types, base vs minimal images, architecture variants, and general cloud image characteristics.
 
+* :ref:`Understanding Ubuntu cloud images <understanding-ubuntu-cloud-images>`
 * :ref:`Cloud image release types <release-types>` 
 * :ref:`Ubuntu base and minimal images <ubuntu-base-and-minimal-images>` 
 * :ref:`Architecture variants support <architecture-variants>`
@@ -39,6 +40,7 @@ Some specific customizations available in our cloud images are described here - 
    :maxdepth: 1
    :hidden:
    
+   Understanding Ubuntu cloud images <understanding-ubuntu-cloud-images>
    Cloud image release types <release-types>
    Ubuntu base and minimal images <ubuntu-base-and-minimal-images>
    Security overview <security-overview>
