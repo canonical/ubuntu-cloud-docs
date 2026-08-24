@@ -21,7 +21,7 @@ Azure provides two main types of security features.
 Trusted Launch
 ~~~~~~~~~~~~~~
 
-`Trusted Launch`_ is now available by default when you launch an Ubuntu image on Azure. It comes with support for `secure boot`_ and includes a virtual Trusted Platform Module (vTPM). All Ubuntu images from 20.04 LTS (Focal Fossa) support trusted launch and secure boot on Hyper-V Gen2 instances.
+`Trusted Launch`_ is now available by default when you launch an Ubuntu image on Azure. It comes with support for `secure boot`_ and includes a virtual Trusted Platform Module (vTPM). All `Hyper-V Generation 2`_ Ubuntu instances support trusted launch and secure boot.
 
 .. _azure-cvms:
 
@@ -48,12 +48,15 @@ Apart from the Ubuntu Server images, Azure also has images for `Ubuntu Pro`_, wh
 * Live kernel updates: These reduce downtime and unplanned reboots in case of kernel vulnerabilities.
 * FIPS compliance: Includes FIPS-certified modules to enable the use of Ubuntu in highly regulated environments.
 
+.. note:: Packages sourced from the ``fips`` pocket are FIPS-certified, but frozen in-place. Packages in this pocket do not recieve bug or CVE fixes. Packages sourced from the ``fips-updates`` pocket were previously ``fips`` packages that are updated with bug or CVE fixes.
+
 To find Ubuntu Pro images on Azure, refer to :ref:`find-ubuntu-images`. 
 
 
 .. _`Ubuntu security page`: https://ubuntu.com/security
 .. _`Introductory page on security`: https://ubuntu.com/server/docs/explanation/intro-to/security/
 .. _`Trusted Launch`: https://learn.microsoft.com/en-us/azure/virtual-machines/trusted-launch
+.. _`Hyper-V Generation 2`: https://learn.microsoft.com/en-us/azure/virtual-machines/generation-2
 .. _`secure boot`: https://wiki.ubuntu.com/UEFI/SecureBoot
 .. _`CVMs`: https://learn.microsoft.com/en-us/azure/confidential-computing/confidential-vm-overview
 .. _`measured boot`: https://learn.microsoft.com/en-us/azure/security/fundamentals/measured-boot-host-attestation
