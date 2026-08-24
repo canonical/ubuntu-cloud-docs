@@ -50,6 +50,11 @@ In addition to the default ``linux-azure`` kernel on Azure, Canonical produces k
 - ``linux-azure-nvidia``: The kernel for GB200-Compatible Server images to enable support for `NVIDIA GB200 hardware`_.
 - ``linux-azure-fips``: The FIPS-compliant kernel for Ubuntu images on Azure. Installed in `Ubuntu Pro FIPS images`_.
 
+Boot architecture support
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Ubuntu images support modern UEFI and legacy non-UEFI boot architectures. `Generation 2 VMs on Azure`_ rely on UEFI support for `Trusted Launch` and larger boot volume features. Generation 2 VMs require an Ubuntu Gen2 image and compatible `Generation 2 VM size`_ to boot, while Generation 1 VMs need an Ubuntu Gen1 image to boot. Consult Microsoft's `Comparison of Azure VM generations`_ for more information on which generation best suits your needs.
+
 Collaborative Optimizations
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -72,3 +77,6 @@ Collaborative Optimizations
 .. _`Anbox on Azure`: https://canonical.com/anbox-cloud/docs/howto/install-appliance/install-on-azure/
 .. _`Chiseled .Net images`: https://devblogs.microsoft.com/dotnet/dotnet-6-is-now-in-ubuntu-2204
 .. _`Landscape on Azure`: https://ubuntu.com/landscape/docs/how-to-guides/landscape-installation-and-set-up/cloud-providers/install-on-microsoft-azure/
+.. _`Generation 2 VMs on Azure`: https://learn.microsoft.com/en-us/azure/virtual-machines/generation-2
+.. _`Generation 2 VM size`: https://learn.microsoft.com/en-us/azure/virtual-machines/generation-2#generation-2-vm-sizes
+.. _`Comparison of Azure VM generations`: https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/plan/should-i-create-a-generation-1-or-2-virtual-machine-in-hyper-v
