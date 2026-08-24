@@ -46,9 +46,7 @@ Apart from the Ubuntu Server images, Azure also has images for `Ubuntu Pro`_, wh
 
 * Expanded Security Maintenance (ESM): Provides 10 years of security patching for packages in the Ubuntu (main and universe) repositories.
 * Live kernel updates: These reduce downtime and unplanned reboots in case of kernel vulnerabilities.
-* FIPS compliance: Includes FIPS-certified modules to enable the use of Ubuntu in highly regulated environments.
-
-.. note:: Packages sourced from the ``fips`` pocket are FIPS-certified, but frozen in-place. Packages in this pocket do not recieve bug or CVE fixes. Packages sourced from the ``fips-updates`` pocket were previously ``fips`` packages that are updated with bug or CVE fixes.
+* FIPS compliance: Includes FIPS-certified modules to enable the use of Ubuntu in highly regulated environments. To maintain safety and security, the `fips-updates`_ module stream also provides security patching on top of FIPS-certified modules.
 
 To find Ubuntu Pro images on Azure, refer to :ref:`find-ubuntu-images`. 
 
@@ -62,3 +60,4 @@ To find Ubuntu Pro images on Azure, refer to :ref:`find-ubuntu-images`.
 .. _`measured boot`: https://learn.microsoft.com/en-us/azure/security/fundamentals/measured-boot-host-attestation
 .. _`generic cloud security overview page`: https://ubuntu.com/cloud/public-cloud/docs/all-clouds-explanation/security-overview/#verified-boot-tpm-fde
 .. _`Ubuntu Pro`: https://ubuntu.com/azure/pro
+.. _`fips-updates`: https://ubuntu.com/security/certifications/docs/fips-updates
