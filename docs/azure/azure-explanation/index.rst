@@ -15,6 +15,7 @@ Details about our offerings, including the different types of images available, 
 
 * :ref:`Ubuntu on Azure <understanding-ubuntu-on-azure>`
 * :ref:`Canonical's offerings on Azure <canonical-offerings>`
+* :ref:`Offer, plan, and SKU naming on Azure <offer-plan-sku-naming-on-azure>`
 * :ref:`Ubuntu on AKS <ubuntu-on-aks-worker-nodes>`
 * :ref:`Packages maintained by Canonical for Azure <packages>`
 
@@ -33,6 +34,7 @@ Our policies such as the security features available via Ubuntu and Ubuntu Pro a
    
    Understanding Ubuntu on Azure <understanding-ubuntu-on-azure>
    Canonical's offerings on Azure <canonical-offerings>
+   Offer, plan, and SKU naming on Azure <offer-plan-sku-naming-on-azure>
    Ubuntu on AKS<ubuntu-on-aks-worker-nodes>
    Security overview<security-overview>
    Image retention policy<image-retention-policy>
