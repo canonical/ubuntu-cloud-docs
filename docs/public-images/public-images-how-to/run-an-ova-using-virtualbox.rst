@@ -23,8 +23,7 @@ The easiest way to get an OVA is to download one from
 get the latest daily OVA for a given
 ``$SERIES`` by downloading ``https://cloud-images.ubuntu.com/$SERIES/current/$SERIES-server-cloudimg-amd64.ova``.
 
-Create a new directory and get the latest daily for Ubuntu 24.04
-LTS (Noble Numbat).
+Create a new directory and get the latest daily for Ubuntu 24.04 LTS (Noble Numbat).
 
 .. code:: bash
 

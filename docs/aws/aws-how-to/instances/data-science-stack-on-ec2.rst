@@ -19,7 +19,7 @@ Launch a GPU-EC2 instance (G4DN instance family)
 ------------------------------------------------
 
 
-Navigate to the EC2 Web console, select :guilabel:`Launch instance` and make sure you select either Ubuntu 22.04 or 24.04 LTS (free or Pro), and any G4DN instance type family.
+Navigate to the EC2 Web console, select :guilabel:`Launch instance` and make sure you select either Ubuntu 22.04 LTS or Ubuntu 24.04 LTS (free or Pro), and any G4DN instance type family.
 
 For this example, we are using 22.04 on ``g4dn.xlarge``, which has 4 vCPUs and 16 GB of RAM. It is powered with an NVIDIA T4 GPU.
 

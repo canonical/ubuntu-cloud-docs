@@ -1,11 +1,11 @@
 
 .. meta::
-   :description: Learn how to apply post-deployment CIS Level 1 hardening controls for Ubuntu 22.04 EC2 instances on AWS. Includes controls that are not pre-configured. 
+   :description: Learn how to apply post-deployment CIS Level 1 hardening controls for Ubuntu 22.04 LTS EC2 instances on AWS. Includes controls that are not pre-configured. 
 
 .. _cis_post_deploy_hardening:
 
-Post-deployment CIS Hardening for Ubuntu 22.04 EC2
-==================================================
+Post-deployment CIS Hardening for Ubuntu 22.04 on EC2
+=====================================================
 
 This guide explains how to apply **CIS Level 1** controls that are **not**
 pre-configured in Canonical's Ubuntu 22.04 *CIS-hardened* AMIs. 

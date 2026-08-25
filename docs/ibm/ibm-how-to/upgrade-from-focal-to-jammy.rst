@@ -9,7 +9,7 @@ Upgrade from Focal to Jammy on IBM Cloud
 Introduction
 ------------
 
-This how-to guide explains how to upgrade from Focal (Ubuntu 20.04) to Jammy (Ubuntu 22.04) on both IBM VPC and IBM
+This how-to guide explains how to upgrade from Ubuntu 20.04 LTS (Focal Fossa) to Ubuntu 22.04 LTS (Jammy Jellyfish) on both IBM VPC and IBM
 Classic using the `do-release-upgrade` command. Despite many differences between the two, the upgrade process is
 identical for both IBM VPC and IBM Classic.
 

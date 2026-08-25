@@ -27,7 +27,7 @@ Find and download an image
 
 Ubuntu cloud images are hosted on https://cloud-images.ubuntu.com/. Refer to :ref:`uci-artifacts` for a description of the various image types found there.
 
-QCOW images (``.img``) are suitable for use with libvirt and the QEMU driver. Once you have identified a suitable image, download it. For example, the following would download the current daily Ubuntu 24.04 (noble) image for AMD64 machines:
+QCOW images (``.img``) are suitable for use with libvirt and the QEMU driver. Once you have identified a suitable image, download it. For example, the following would download the current daily Ubuntu 24.04 LTS (Noble Numbat) image for AMD64 machines:
 
 .. code:: bash
 
