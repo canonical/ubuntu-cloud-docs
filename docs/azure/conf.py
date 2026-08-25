@@ -90,7 +90,9 @@ redirects = {
     "azure-how-to/kubernetes/install-kubeflow-on-aks":
         "https://charmed-kubeflow.io/docs/install-on-aks",
     "azure-how-to/kubernetes/deploy-kubeflow-pipelines-with-aks-spot-instances":
-        "../instances/deploy-kubeflow-pipelines-with-aks-spot-instances/"
+        "../instances/deploy-kubeflow-pipelines-with-aks-spot-instances/",
+    "azure-explanation/understanding-ubuntu-on-azure":
+        "https://ubuntu.com/cloud/public-cloud/docs/all-clouds-explanation/understanding-ubuntu-cloud-images/"
 }
 
 

@@ -10,7 +10,7 @@ Image retention policy
    :start-after: Start: Daily vs release images
    :end-before: End: Daily vs release images
 
-For more details about these image types, check out our documentation of :ref:`image release types <all-clouds:release-types>`. 
+Refer to :ref:`image release types <all-clouds:release-types>` and :ref:`Understanding Ubuntu cloud images <all-clouds:understanding-ubuntu-cloud-images>` for further explanation of cloud images and image types.
 
 On Azure, *release* and *daily* images for a given Ubuntu release are published under two distinct offers. To avoid confusion, only *release* images of Ubuntu are displayed on the Azure Marketplace and *daily* images are 'hidden'.
 
@@ -26,7 +26,15 @@ Retention policies
 
 The images published on Azure are not retained forever. Whenever possible, it is safer to use the ``latest`` tag while selecting images. For example, use ``Canonical:0001-com-ubuntu-server-jammy:22_04-lts-gen2:latest`` instead of ``Canonical:0001-com-ubuntu-server-jammy:22_04-lts-gen2:22.04.202311010``. 
 
-There are different retention policies for *release* and *daily* images:
+Deprecation lifecycle
+~~~~~~~~~~~~~~~~~~~~~
+
+Once an image version falls outside the retention limits described below, it is deprecated rather than removed immediately:
+
+1. The image enters a 90-day deprecation period. During this time, users receive warnings from Azure.
+2. After the 90-day period expires, the deprecated image version is permanently removed from the marketplace and cannot be used to launch new virtual machines.
+
+This lifecycle applies uniformly to both *release* and *daily* images. There are different retention policies for *release* and *daily* images, which determine when an image becomes eligible for deprecation:
 
 *release* images
 ~~~~~~~~~~~~~~~~
