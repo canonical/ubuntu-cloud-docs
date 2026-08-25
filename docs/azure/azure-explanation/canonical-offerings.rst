@@ -55,14 +55,15 @@ Boot architecture support
 
 Ubuntu images support modern UEFI and legacy non-UEFI boot architectures. `Generation 2 VMs on Azure`_ rely on UEFI support for `Trusted Launch` and larger boot volume features. Generation 2 VMs require an Ubuntu Gen2 image and compatible `Generation 2 VM size`_ to boot, while Generation 1 VMs need an Ubuntu Gen1 image to boot. Consult Microsoft's `Comparison of Azure VM generations`_ for more information on which generation best suits your needs.
 
-Collaborative Optimizations
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Additional offerings on Azure
+-----------------------------
 
-1. `Anbox on Azure`_, that allows users to run Android apps on Azure at scale
+1. `Managed Kubeflow on Azure`_, a Marketplace solution for common Kubeflow deployments that leverages Canonical's Charmed Kubeflow on Azure infrastructure. If you are looking for a more customized deployment, refer to our `Charmed Kubeflow`_ page to get in touch.
+#. `Anbox on Azure`_, that allows users to run Android apps on Azure at scale
+#. `Landscape on Azure`_, for managing your Ubuntu deployments at scale
 #. Collaboration with Azure's AKS team to support the :ref:`Azure Kubernetes worker node <ubuntu-on-aks-worker-nodes>` image, as these worker nodes nearly always run Ubuntu
 #. Collaboration with the Azure Guest Patching Service and Update Manager teams to ensure simple security patch management for users
 #. Collaboration with the .Net team on `Chiseled .Net images`_ that have a smaller size and security cross-section
-#. `Landscape on Azure`_, for managing your Ubuntu deployments at scale
 
 .. _`Server images`: https://ubuntu.com/azure
 .. _`Ubuntu Pro`: https://ubuntu.com/azure/pro
@@ -80,3 +81,5 @@ Collaborative Optimizations
 .. _`Generation 2 VMs on Azure`: https://learn.microsoft.com/en-us/azure/virtual-machines/generation-2
 .. _`Generation 2 VM size`: https://learn.microsoft.com/en-us/azure/virtual-machines/generation-2#generation-2-vm-sizes
 .. _`Comparison of Azure VM generations`: https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/plan/should-i-create-a-generation-1-or-2-virtual-machine-in-hyper-v
+.. _`Managed Kubeflow on Azure`: https://marketplace.microsoft.com/en-us/product/canonical.managed-kubeflow
+.. _`Charmed Kubeflow`: https://canonical.com/mlops/kubeflow
