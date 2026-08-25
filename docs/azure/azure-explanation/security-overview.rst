@@ -21,14 +21,14 @@ Azure provides two main types of security features.
 Trusted Launch
 ~~~~~~~~~~~~~~
 
-`Trusted Launch`_ is now available by default when you launch an Ubuntu image on Azure. It comes with support for `secure boot`_ and includes a virtual Trusted Platform Module (vTPM). All Ubuntu images from 20.04 LTS (Focal Fossa) support trusted launch and secure boot on Hyper-V Gen2 instances.
+`Trusted Launch`_ is now available by default when you launch an Ubuntu image on Azure. It comes with support for `secure boot`_ and includes a virtual Trusted Platform Module (vTPM). All `Hyper-V Generation 2`_ Ubuntu instances support trusted launch and secure boot.
 
 .. _azure-cvms:
 
 Confidential Virtual Machines (CVMs)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-`CVMs`_ powered by Ubuntu and AMD's SEV-SNP technology as the underlying hardware are currently available. Ubuntu LTS images starting from 22.04 onwards support both AMD SEV-SNP and Intel TDX. The Intel TDX option is still in public preview and is not yet generally available.
+`CVMs`_ powered by Ubuntu are currently available with AMD SEV-SNP or Intel TDX technology.
 
 Apart from the trusted execution environments (TEE) provided by these specialized hardware components, these CVMS also support `measured boot`_ using a vTPM.
 
@@ -44,9 +44,9 @@ Enhanced security using Ubuntu Pro
 
 Apart from the Ubuntu Server images, Azure also has images for `Ubuntu Pro`_, which come with enhanced security features:
 
-* Expanded Security Maintenance (ESM): Provides 10 years of security patching for packages in the Ubuntu (main and universe) repositories.
+* Expanded Security Maintenance (ESM): Provides 10 years of security patching for packages in the Ubuntu (main and universe) repositories. Additional support can be added outside the 10-year ESM window with Canonical's Legacy support add-on.
 * Live kernel updates: These reduce downtime and unplanned reboots in case of kernel vulnerabilities.
-* FIPS compliance: Includes FIPS-certified modules to enable the use of Ubuntu in highly regulated environments.
+* FIPS compliance: Includes FIPS-certified modules to enable the use of Ubuntu in highly regulated environments. To maintain safety and security, the `fips-updates`_ module stream also provides security patching on top of FIPS-certified modules.
 
 To find Ubuntu Pro images on Azure, refer to :ref:`find-ubuntu-images`. 
 
@@ -54,8 +54,10 @@ To find Ubuntu Pro images on Azure, refer to :ref:`find-ubuntu-images`.
 .. _`Ubuntu security page`: https://ubuntu.com/security
 .. _`Introductory page on security`: https://ubuntu.com/server/docs/explanation/intro-to/security/
 .. _`Trusted Launch`: https://learn.microsoft.com/en-us/azure/virtual-machines/trusted-launch
+.. _`Hyper-V Generation 2`: https://learn.microsoft.com/en-us/azure/virtual-machines/generation-2
 .. _`secure boot`: https://wiki.ubuntu.com/UEFI/SecureBoot
 .. _`CVMs`: https://learn.microsoft.com/en-us/azure/confidential-computing/confidential-vm-overview
 .. _`measured boot`: https://learn.microsoft.com/en-us/azure/security/fundamentals/measured-boot-host-attestation
 .. _`generic cloud security overview page`: https://ubuntu.com/cloud/public-cloud/docs/all-clouds-explanation/security-overview/#verified-boot-tpm-fde
 .. _`Ubuntu Pro`: https://ubuntu.com/azure/pro
+.. _`fips-updates`: https://ubuntu.com/security/certifications/docs/fips-updates
