@@ -84,10 +84,10 @@ Ubuntu WorkSpaces
 
 `Ubuntu WorkSpaces`_ are virtual Ubuntu desktops powered by AWS. WorkSpaces is a paid offering supported through `Amazon Workspaces`_ and the image provided for workspaces is basically an Ubuntu Desktop running on EC2, with Ubuntu Pro services (ESM, livepatch) enabled by default.
 
-Anbox cloud appliance
+Anbox Cloud appliance
 ~~~~~~~~~~~~~~~~~~~~~
 
-The `Anbox cloud`_ appliance runs Android containers in the cloud, providing mobile development capabilities. It is available at the `AWS marketplace (Anbox cloud)`_.
+The `Anbox Cloud`_ appliance runs Android containers in the cloud, providing mobile development capabilities. It is available at the `AWS marketplace (Anbox cloud)`_.
 
 
 MicroK8s AWS appliance
@@ -115,7 +115,7 @@ Charmed Kubeflow on AWS
 .. _`AWS Graviton`: https://aws.amazon.com/ec2/graviton/
 .. _`Ubuntu WorkSpaces`: https://ubuntu.com/aws/workspaces
 .. _`Amazon WorkSpaces`: https://aws.amazon.com/workspaces/
-.. _`Anbox cloud`: https://canonical.com/anbox-cloud 
+.. _`Anbox Cloud`: https://canonical.com/anbox-cloud 
 .. _`AWS marketplace (Anbox cloud)`: https://aws.amazon.com/marketplace/search/results?searchTerms=Anbox&CREATOR=565feec9-3d43-413e-9760-c651546613f2&filters=CREATOR
 .. _`MicroK8s`: https://canonical.com/microk8s
 .. _`AWS marketplace (MicroK8s)`: https://aws.amazon.com/marketplace/pp/prodview-iwqx66ka26u3w

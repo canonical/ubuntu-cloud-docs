@@ -1,5 +1,5 @@
 .. meta::
-   :description: Learn about Ubuntu cloud image architecture variants, starting with amd64v3 in Ubuntu 26.04, including supported variants, compatibility, and future plans.
+   :description: Learn about Ubuntu cloud image architecture variants, starting with amd64v3 in Ubuntu 26.04 LTS, including supported variants, compatibility, and future plans.
 
 .. _architecture-variants:
 
@@ -17,7 +17,7 @@ Supported Variants
 ------------------
 
 The first architecture variant supported is amd64v3, which represents the latest x86_64 ABI and instruction set
-extensions. This variant will be supported for Ubuntu 26.04 Resolute Raccoon and future releases. There are no plans to
+extensions. This variant will be supported for Ubuntu 26.04 LTS (Resolute Raccoon) and future releases. There are no plans to
 build existing supported releases (e.g. 24.04 LTS Noble Numbat) for architecture variants.
 
 See individual cloud docs pages for detailed information on how any given variant is delivered and supported. For

@@ -75,7 +75,7 @@ To import an image into LXD, you will need two artifacts:
 
    - The bootable disk image for a virtual machine is a :ref:`qcow-ref` image (``*.img``)
 
-The following are example commands to import an image for creating LXD containers and virtual machines based on downloaded Ubuntu 24.04 artifacts:
+The following are example commands to import an image for creating LXD containers and virtual machines based on downloaded Ubuntu 24.04 LTS artifacts:
 
 .. code :: bash
 

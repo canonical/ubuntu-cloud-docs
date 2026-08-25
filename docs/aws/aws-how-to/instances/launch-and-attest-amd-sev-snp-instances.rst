@@ -3,8 +3,8 @@
 
 .. _launch-and-attest-amd-sev-snp-instances:
 
-Launch and attest AMD SEV-SNP instances with Ubuntu 24.04 on AWS
-================================================================
+Launch and attest AMD SEV-SNP instances with Ubuntu 24.04 LTS on AWS
+====================================================================
 
 Amazon EC2 now supports AMD Secure Encrypted Virtualization-Secure Nested Paging (AMD SEV-SNP), on M6a, C6a, and R6a instance types in certain regions. These instances, when used with Ubuntu 24.04 LTS, allow customers to leverage AMD's confidential computing capabilities (:ref:`overview <all-clouds:confidential-computing>`) on AWS.
 

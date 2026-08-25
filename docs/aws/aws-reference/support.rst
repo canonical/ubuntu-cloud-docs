@@ -15,7 +15,7 @@ more details.
 Canonical support
 -----------------
 Purchasing Pro through AWS provides a convenient mechanism for getting access to the above features
-using a unified billing portal. However, Ubuntu pro images published under the
+using a unified billing portal. However, Ubuntu Pro images published under the
 `Canonical Group Limited marketplace`_
 account or launched through the EC2 console does not include phone support. 
 If you would like to receive 24/5 or 24/7 phone support you can do so with the following options.

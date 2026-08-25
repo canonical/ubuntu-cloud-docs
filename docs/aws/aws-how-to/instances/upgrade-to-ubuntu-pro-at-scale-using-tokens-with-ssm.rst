@@ -26,7 +26,7 @@ Prerequisites
 -------------
 
 - An Ubuntu One account with your Ubuntu Pro token(s). You can create one for free on the `Ubuntu Pro portal <https://ubuntu.com/pro>`_.
-- Ubuntu machines with the SSM Agent installed (available by default on Ubuntu 16.04 and later). If the instances have the right IAM role for SSM access, the servers will appear as Managed Nodes in AWS Systems Manager Fleet Manager (see the reference links for more information).
+- Ubuntu machines with the SSM Agent installed (available by default on Ubuntu 16.04 LTS and later). If the instances have the right IAM role for SSM access, the servers will appear as Managed Nodes in AWS Systems Manager Fleet Manager (see the reference links for more information).
 - A basic understanding of `how to write and run SSM Documents <https://docs.aws.amazon.com/systems-manager/latest/userguide/documents-creating-content.html>`_
 
 
