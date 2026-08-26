@@ -149,7 +149,7 @@ By default, ``--imageProperties`` points to ``./config/imageDefinitionProperties
 Customization
 ~~~~~~~~~~~~~
 
-``--customizations`` points to ``.config/customizations.json`` by default. This is where you define the commands to modify your base image into your golden image:
+``--customizations`` points to ``./config/customizations.json`` by default. This is where you define the commands to modify your base image into your golden image:
 
 .. code::
 

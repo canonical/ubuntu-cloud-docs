@@ -176,8 +176,8 @@ You can use the third notebook (03-spot-retries-workload) to try this out. Here 
       web_downloader_task.add_affinity(aff)
       merge_csv_task.add_affinity(aff)
       
-      web_downloader_task.set_retry(num_retries=5, backoff_dureation="5m")
-      merge_csv_task.set_retry(num_retries=5, backoff_dureation="5m")
+      web_downloader_task.set_retry(num_retries=5, backoff_duration="5m")
+      merge_csv_task.set_retry(num_retries=5, backoff_duration="5m")
 
    client = kfp.Client()
 
