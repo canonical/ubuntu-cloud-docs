@@ -8,7 +8,7 @@ Verify an image checksum
 
 For every `ubuntu cloud image`_, Canonical provides a corresponding SHA256 checksum. These checksums help reassure that the image you have downloaded is not corrupted in any way and that it is an authentic image that hasn't been tampered with.
 
-You can use the provided checksums to verify the authenticity of your downloaded image. These steps can be used to verify other related files too, such as changelog files, tarballs and manifests.
+You can use the provided checksums to verify the authenticity of your downloaded image. These steps can be used to verify other related files too, such as changelog files, tarballs and manifests. For descriptions of these files, see :ref:`Ubuntu cloud image artifacts <uci-artifacts>`.
 
 Install the necessary packages
 ------------------------------

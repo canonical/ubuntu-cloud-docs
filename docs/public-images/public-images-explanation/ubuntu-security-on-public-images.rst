@@ -40,7 +40,7 @@ Each image published under `Cloud images <https://cloud-images.ubuntu.com/>`_ co
 it has not been corrupted or tampered with. 
 
 The Ubuntu tutorial `How to verify Ubuntu <https://ubuntu.com/tutorials/how-to-verify-ubuntu>`_ gives a detailed guide on how to
-verify and validate the integrity of an image.
+verify and validate the integrity of an image. For cloud-image-specific instructions, see :ref:`Verify an image checksum <verify-image-checksum>`.
 
 .. _`Ubuntu security page`: https://ubuntu.com/security
 .. _`Ubuntu server's security overview page`: https://ubuntu.com/server/docs/explanation/intro-to/security/

@@ -184,7 +184,7 @@ Vagrant box
    * - Format description
      - The Vagrant box format is used to package and distribute virtual machine environments managed by Vagrant.
    * - Use cases
-     - These files contain a virtual machine image along with metadata required for Vagrant. Vagrant simplifies the creation and provisioning of virtual environments, making it easier to manage and share development environments across different systems. You can use a ``.box`` file along with a supported provider to quickly set up environments with specific configurations, tools and dependencies. All Vagrant boxes are provider specific, with our boxes having been built for VirtualBox.
+     - These files contain a virtual machine image along with metadata required for Vagrant. Vagrant simplifies the creation and provisioning of virtual environments, making it easier to manage and share development environments across different systems. You can use a ``.box`` file along with a supported provider to quickly set up environments with specific configurations, tools and dependencies. All Vagrant boxes are provider specific, with our boxes having been built for VirtualBox. See :ref:`Run a Vagrant box <run-a-vagrant-box>` for instructions.
 
 .. _vhd-ref:
 
@@ -208,7 +208,7 @@ Virtual Hard Disk (VHD)
 
 Other files
 -----------
-This section includes information on checksums, GPG signatures, changelogs and manifest files. These files help verify the integrity and authenticity of the images, provide details on changes between versions and list all included packages.
+This section includes information on checksums, GPG signatures, changelogs and manifest files. These files help verify the integrity and authenticity of the images, provide details on changes between versions and list all included packages. See :ref:`Verify an image checksum <verify-image-checksum>` for instructions.
 
 .. note::
   On Ubuntu systems, the public keys for Ubuntu cloud images are present in ``/usr/share/keyrings/ubuntu-cloudimage-keyring.gpg``. You can use this keyring to verify GPG signatures and checksums of downloaded artifacts with a command such as ``gpg --verify --keyring /usr/share/keyrings/ubuntu-cloudimage-keyring.gpg SHA256SUMS.gpg SHA256SUMS && sha256sum -c SHA256SUMS``.
