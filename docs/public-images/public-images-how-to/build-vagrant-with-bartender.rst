@@ -20,7 +20,7 @@ To run Bartender, you will need a copy of the Ubuntu Old Fashioned repository, `
 .. code:: bash
 
    sudo apt install petname git
-   snap install multipass
+   sudo snap install multipass
    git clone https://github.com/ubuntu-bartenders/ubuntu-old-fashioned.git
    cd ubuntu-old-fashioned/scripts/ubuntu-bartender/
 

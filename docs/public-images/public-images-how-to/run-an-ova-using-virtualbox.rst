@@ -92,12 +92,12 @@ Create and attach an ISO image
 ------------------------------
 
 To create an ISO image we'll use the ``cloud-localds`` function from
-the ``cloud-utils`` package. On Ubuntu and Debian systems you can install
+the ``cloud-image-utils`` package. On Ubuntu and Debian systems you can install
 this via apt:
 
 .. code:: bash
 
-  sudo apt install cloud-utils
+  sudo apt install cloud-image-utils
 
 For other operating systems, follow the instructions from the
 `cloud-utils upstream repository <https://github.com/canonical/cloud-utils>`_.
@@ -126,7 +126,8 @@ Choose between two YAML configurations based on your cloud-init version:
         - {name: ubuntu, password: ubuntu, type: text}
         expire: False
       ssh_pwauth: True
-      ssh_authorized_keys: <YOUR_PUB_KEY>
+      ssh_authorized_keys:
+        - <YOUR_PUB_KEY>
       EOF
       
   .. group-tab:: cloud-init < 22.3
@@ -140,7 +141,8 @@ Choose between two YAML configurations based on your cloud-init version:
           ubuntu:ubuntu
         expire: False
       ssh_pwauth: True
-      ssh_authorized_keys: <YOUR_PUB_KEY>
+      ssh_authorized_keys:
+        - <YOUR_PUB_KEY>
       EOF
 
 Replace ``<YOUR_PUB_KEY>`` with your public key.

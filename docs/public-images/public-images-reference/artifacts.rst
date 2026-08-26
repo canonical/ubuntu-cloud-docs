@@ -109,7 +109,7 @@ QEMU Copy On Write (QCOW)
    * - Example filename
      - ``noble-server-cloudimg-amd64.img``
    * - Format description
-     - QCOW image files are disk image files containing raw sector-by-sector copies of a storage device.
+     - QCOW image files are disk image files used by QEMU.
    * - Use cases
      - 
        QCOW images are used for creating bootable disks and virtual machines in virtualization environments. Some of the features that make QCOW images attractive are their support for dynamic disk sizing, snapshot support and copy-on-write. 
