@@ -15,7 +15,7 @@ The use of Bartender to build custom Vagrant images is intended for development 
 
 Basic setup
 -----------
-To run Bartender, you will need a copy of the Ubuntu Old Fashioned repository, ``git`` (version control), ``petname`` (for project naming), and availability of one of the build providers (Google Cloud Engine, AWS EC2, Microsoft Azure, or Multipass). In a suitable directory, run:
+To run Bartender, you will need a copy of the Ubuntu Old Fashioned repository, ``git`` (version control), ``petname`` (for project naming), and availability of one of the build providers (Google Compute Engine, AWS EC2, Microsoft Azure, or Multipass). In a suitable directory, run:
 
 .. code:: bash
 
@@ -26,7 +26,7 @@ To run Bartender, you will need a copy of the Ubuntu Old Fashioned repository, `
 
 Building the box
 ----------------
-Bartender takes in a number of configuration options. There following are of concern for building the Vagrant box:
+Bartender takes in a number of configuration options. The following are of concern for building the Vagrant box:
 
 - ``livecd-rootfs-branch``
    * This needs to match the ``series`` name described below
@@ -63,9 +63,9 @@ To build a Vagrant box for a given Ubuntu series name, run the following from th
 
          ./ubuntu-bartender \
             --livecd-rootfs-branch ubuntu/jammy \
-            --build-provider multipass \ 
+            --build-provider multipass \
             -- \
-            --series jammy \ 
+            --series jammy \
             --image-target vagrant \
             --project ubuntu-cpc
 

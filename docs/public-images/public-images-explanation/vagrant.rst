@@ -24,13 +24,13 @@ Despite their publication date, all boxes published to Vagrant Cloud point to th
 
 How are they built
 ~~~~~~~~~~~~~~~~~~
-The VirtualBox Vagrant box is produced as part of a "Base" build with the code living in `livecd-roofs <https://git.launchpad.net/livecd-rootfs/tree/live-build/ubuntu-cpc/hooks.d/base/vagrant.binary>`_. The build generates a ``box.ovf`` config file, a config drive ``vmdk``, the base server ``vmdk``, Vagrantfile, and Vagrant metadata. These build components are then combined in the ``.box`` tarball.
+The VirtualBox Vagrant box is produced as part of a "Base" build with the code living in `livecd-rootfs <https://git.launchpad.net/livecd-rootfs/tree/live-build/ubuntu-cpc/hooks.d/base/vagrant.binary>`_. The build generates a ``box.ovf`` config file, a config drive ``vmdk``, the base server ``vmdk``, Vagrantfile, and Vagrant metadata. These build components are then combined in the ``.box`` tarball.
 
 See :ref:`public-images-how-to` for more on building and running Vagrant boxes.
 
 Support
 -------
-Vagrant has been dropped by Ubuntu due to the adoption of the  `Business Source License (BSL) <https://www.hashicorp.com/bsl>`_.  Following this change, **Canonical will no longer publish Vagrant images** directly starting with Ubuntu 24.04 LTS (Noble Numbat).
+Vagrant has been dropped by Ubuntu due to the adoption of the `Business Source License (BSL) <https://www.hashicorp.com/bsl>`_. Following this change, **Canonical will no longer publish Vagrant images** directly starting with Ubuntu 24.04 LTS (Noble Numbat).
 
 Support Matrix
 ~~~~~~~~~~~~~~

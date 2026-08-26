@@ -101,6 +101,6 @@ This occurs when you try to connect to the same localhost connection, but the un
 
 .. code:: bash
 
-   ssh-keygen -f "/home/$USER$/.ssh/known_hosts" -R "[localhost]:2222"
+   ssh-keygen -f "/home/$USER/.ssh/known_hosts" -R "[localhost]:2222"
 
 This removes the connection from your ``known_hosts`` file and allows you to add the keys from the new guest VM and connect as expected.

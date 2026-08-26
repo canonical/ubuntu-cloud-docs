@@ -20,7 +20,7 @@ You'll require the ``sha256sum``, ``md5sum`` and ``gpg`` packages. Based on your
         These are part of the ``coreutils`` and ``gnupg`` packages, which are installed by default.
     
     .. tab:: MacOS
-        Install the latest GnuPG and coreutils using `HomeBrew`_:
+        Install the latest GnuPG and coreutils using `Homebrew`_:
 
         .. code:: bash
 
@@ -156,7 +156,7 @@ For more information, you can checkout the following resources
 
 .. _`ubuntu cloud image`: https://cloud-images.ubuntu.com
 .. _`Ubuntu on WSL`: https://ubuntu.com/wsl/docs/stable/
-.. _`HomeBrew`: https://brew.sh/
+.. _`Homebrew`: https://brew.sh/
 .. _`GnuPG`: https://www.gnupg.org/gph/en/manual/x135.html
 .. _`Ubuntu Discourse`: https://discourse.ubuntu.com/
 .. _`SHA-2 checksum`: https://en.wikipedia.org/wiki/SHA-2

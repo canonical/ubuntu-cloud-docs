@@ -39,7 +39,7 @@ Initial ramdisk (initrd)
    * - Extension
      - ``<artifact>-initrd-generic``
    * - Example filename
-     - ``unpacked/noble-server-cloudimg-amd70-initrd-generic``
+     - ``unpacked/noble-server-cloudimg-amd64-initrd-generic``
    * - Format description
      - An initial ramdisk is a temporary root file system loaded into memory during the boot process to initialize the system before the real root file system is mounted.
    * - Use cases
@@ -513,7 +513,7 @@ GPG signatures
         .. code-block:: bash
 
             # Verify the GPG signature
-            gpg ~~verify SHA256SUMS.gpg SHA256SUMS
+            gpg --verify SHA256SUMS.gpg SHA256SUMS
 
 
         If there is no public key for Ubuntu present, you will get an error message with a ``key id``. Use that id to import the GPG key from the Ubuntu keyserver.
