@@ -8,7 +8,7 @@ AWS image retention policy
 
 Ubuntu images on AWS have three stage of life cycle : *release* > *deprecation* > *deletion*. 
 
-Whenever a new image is built and released to AWS, all the previous serials for that image are deprecated except for the last 3. A deprecated image is not visible on the AWS console, but it can still be launched from the `AWS CLI`_ using its AMI ID. You can also find and view details of deprecated images using the AWS CLI `describe-images`_ command by including the ``--include-deprecated`` flag.
+Whenever a new image is built and released to AWS, older serials may be deprecated according to the image type and lifecycle stage summarized below. A deprecated image is not visible on the AWS console, but it can still be launched from the `AWS CLI`_ using its AMI ID. You can also find and view details of deprecated images using the AWS CLI `describe-images`_ command by including the ``--include-deprecated`` flag.
 
 Apart from these three stages, some AMIs also become *private*. AMIs that go unused and have long since been replaced by newer images are marked as private. This is done so that we can reduce the overhead in searching for relevant AMIs in the console or with AWS CLI. Unlike deprecated images, private images are not available for use and are invisible to the ``describe-images`` command. From a user's perspective, they are functionally equivalent to deleted images.
 
