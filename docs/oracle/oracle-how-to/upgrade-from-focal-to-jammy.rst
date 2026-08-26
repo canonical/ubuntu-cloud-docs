@@ -15,6 +15,8 @@ For fully automated system deployments it is recommended to redeploy with new Ja
 
 For systems that cannot be easily created or destroyed and require manual configuration, running `do-release-upgrade <https://manpages.ubuntu.com/manpages/jammy/en/man8/do-release-upgrade.8.html>`_ is a good option. However this option requires some :ref:`manual intervention <manual intervention oracle>` as explained below. 
 
+For the next upgrade step, see :ref:`Upgrade from Ubuntu 22.04 LTS to 24.04 LTS <upgrade-from-jammy-to-noble>`.
+
 .. warning:: Avoid apt lock conflicts
 
    Oracle images run ``oracle-cloud-agent`` services that may conflict with the ``do-release-upgrade`` process. To avoid problems, disable the ``oracle-cloud-agent`` and ``unified-monitoring-agent`` services::
