@@ -54,7 +54,7 @@ Set VPC CLI to use generation 2:
 Create an SSH key pair
 ~~~~~~~~~~~~~~~~~~~~~~
 
-SSH key pairs are needed to log in to a VSI from your local machine. To create one, follow the `IBM  instructions for creating key pairs`_.
+SSH key pairs are needed to log in to a VSI from your local machine. To create one, follow the `IBM instructions for creating key pairs`_.
 
 Find an Ubuntu image
 ~~~~~~~~~~~~~~~~~~~~
@@ -138,7 +138,7 @@ When you are finished with your VSI, you can terminate it using:
 .. _`IBM's documentation about VSI`: https://cloud.ibm.com/docs/vpc?topic=vpc-about-advanced-virtual-servers
 .. _`sign up for one`: https://cloud.ibm.com/registration
 .. _`IBM instructions for installing CLI`: https://cloud.ibm.com/docs/cli?topic=cli-getting-started
-.. _`IBM  instructions for creating key pairs`: https://cloud.ibm.com/docs/vpc?topic=vpc-managing-ssh-keys&interface=cli
+.. _`IBM instructions for creating key pairs`: https://cloud.ibm.com/docs/vpc?topic=vpc-managing-ssh-keys&interface=cli
 .. _`IBM's documentation about regions`: https://cloud.ibm.com/docs/vpc?topic=vpc-creating-a-vpc-in-a-different-region&interface=cli
 .. _`IBM's instructions for creating VPC resources`: https://cloud.ibm.com/docs/vpc?topic=vpc-creating-vpc-resources-with-cli-and-api&interface=cli#creating-a-vpc-using-cli
 .. _`IBM's documentation on instance profiles`: https://cloud.ibm.com/docs/vpc?topic=vpc-profiles&interface=ui
