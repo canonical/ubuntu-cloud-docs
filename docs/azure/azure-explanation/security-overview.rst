@@ -11,7 +11,7 @@ Ubuntu images on Azure include the security features provided by both Ubuntu and
 Ubuntu security features
 ------------------------
 
-Ubuntu on Azure inherits and benefits from all of the security features available to Ubuntu Server. A detailed description of these features can be found on the `Ubuntu security page`_ and in our explanation about :ref:`Security in the Ubuntu cloud images <all-clouds:security-overview>`. For further guidance on usage refer to  Ubuntu server's `Introductory page on security`_. 
+Ubuntu on Azure inherits and benefits from all of the security features available to Ubuntu Server. A detailed description of these features can be found on the `Ubuntu security page`_ and in our explanation about :ref:`Security in the Ubuntu cloud images <all-clouds:security-overview>`. For further guidance on usage refer to Ubuntu server's `Introductory page on security`_.
 
 Azure security features
 -----------------------
@@ -30,7 +30,7 @@ Confidential Virtual Machines (CVMs)
 
 `CVMs`_ powered by Ubuntu are currently available with AMD SEV-SNP or Intel TDX technology.
 
-Apart from the trusted execution environments (TEE) provided by these specialized hardware components, these CVMS also support `measured boot`_ using a vTPM.
+Apart from the trusted execution environments (TEE) provided by these specialized hardware components, these CVMs also support `measured boot`_ using a vTPM.
 
 For confidential AI workloads, the security model also extends to GPU processing through the NVIDIA H100 Tensor Core GPU, which implements its own TEE with encrypted data transfer between the CPU and GPU.
 

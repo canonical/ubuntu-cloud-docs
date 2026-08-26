@@ -24,7 +24,7 @@ The view displays the packages with known vulnerabilities for which patches are 
 Check updates for multiple VMs
 ------------------------------
 
-To get a unified dashboard view for your entire fleet, you can you can select multiple VMs and initiate assessments simultaneously. You should see something like:
+To get a unified dashboard view for your entire fleet, you can select multiple VMs and initiate assessments simultaneously. You should see something like:
 
 .. image:: ../instances/check-available-security-updates/multiple_machines.png
    :alt: Azure Update Manager multiple VM view
