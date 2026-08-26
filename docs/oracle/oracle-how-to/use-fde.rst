@@ -41,7 +41,7 @@ Change the encryption key (optional)
 
 The encryption key for a boot volume can also be changed after it has been created. To do that navigate to the instance details page and under *Resources*, select :guilabel:`Boot volume`. From the list of available boot volumes, browse to the details of the one that you want to modify. It should look similar to:
 
-.. image::  use-fde-images/2_boot_volume_details.png
+.. image:: use-fde-images/2_boot_volume_details.png
 
 Locate *Encryption key*, select :guilabel:`Edit` or :guilabel:`Assign` (the label depends on whether a key is already assigned to the volume or not) and put in the details for the new key.
 
