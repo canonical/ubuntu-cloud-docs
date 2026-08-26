@@ -11,6 +11,8 @@ ARM64 platforms
 
 Google Cloud currently provides two different CPU platforms for ARM64: Ampere Altra (via the "Tau" `T2A` machine type) and Google's own Axion (via the `N4A` and `C4A` machine types).
 
+For more information about ARM-based machine types, see :ref:`Create different instance types on GCP <create-different-instance-types>`.
+
 
 64K page kernels
 -------------------
