@@ -14,7 +14,7 @@ CVE handling, Kernel Livepatch
 Defense against known vulnerabilities
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To defend against known vulnerabilities (`CVEs`_), you need to monitor them and patch them with security updates. Each LTS release of Ubuntu includes five years of security updates for the ~2300 packages available in the main repository. With `Expanded Security Maintenance (ESM)`_, which is available as part of Ubuntu Pro, this expands to up to 12 years and includes an additional ~34000 packages from the universe repository.
+To defend against known vulnerabilities (`CVEs`_), you need to monitor them and patch them with security updates. Each LTS release of Ubuntu includes five years of security updates for the ~2300 packages available in the main repository. With `Expanded Security Maintenance (ESM)`_, which is available as part of Ubuntu Pro, this expands to 10 years and includes an additional 40,000+ packages from the universe repository. The Legacy add-on extends ESM by a further five years, for up to 15 years total.
 
 Ubuntu Pro also supports `Kernel Livepatch`_, a feature that allows patching of high and critical kernel vulnerabilities at run-time, without requiring an immediate reboot. This allows one to remain secure while deferring unplanned reboots for up to a year.
 

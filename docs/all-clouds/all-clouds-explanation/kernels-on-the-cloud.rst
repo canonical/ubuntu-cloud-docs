@@ -12,7 +12,9 @@ Basic kernel packages
 
 Each Ubuntu image is built with a pre-installed kernel meta-package. That meta-package determines which kernels are installed via ``unattended-upgrades`` or ``sudo apt update && sudo apt upgrade``. When a new kernel package is available and the instance fetches the archive, the meta-package is updated to the new kernel version, which triggers the installation of all kernel image and modules associated to that new version.
 
-.. note:: After a new kernel version is installed, the instance must be rebooted in order to run the new kernel. Otherwise, the only way to receive kernel updates without rebooting or redeploying is through the `live-patch service on Ubuntu Pro`_, but this is generally limited to security-related patching.
+.. note:: After a new kernel version is installed, the instance must be rebooted in order to run the new kernel. Otherwise, the only way to receive kernel updates without rebooting or redeploying is through `Kernel Livepatch`_, but this is generally limited to security-related patching.
+
+For more information about security updates and Livepatch, see :ref:`Security in the Ubuntu cloud images <security-overview>`.
 
 The default meta-package, or kernel variant, for most Ubuntu cloud images is the :ref:`rolling kernel variant <rolling-kernel>`. However, some images may default to another variant specific to the product. For instance, Ubuntu Pro FIPS images default to a cloud-specific variant tailored to the FIPS environment. Different clouds provide and support different variants, but the common packages are listed below.
 
@@ -66,7 +68,7 @@ The package names are listed above in each kernel section such that you can repl
 
 Given each kernel package receives updates as kernels become available, it is best to follow the walk-through in the :ref:`migrate-kernel-variants` document to ensure you receive updates from the intended kernel package.
 
-.. _`live-patch service on Ubuntu Pro`: https://ubuntu.com/security/livepatch
+.. _`Kernel Livepatch`: https://ubuntu.com/security/livepatch
 .. _`Hardware Enablement (HWE) Kernel`: https://documentation.ubuntu.com/kernel/reference/hwe-kernels/
 .. _`Ubuntu kernel release cycle`: https://ubuntu.com/about/release-cycle
 .. _`installation options`: https://ubuntu.com/kernel/lifecycle
