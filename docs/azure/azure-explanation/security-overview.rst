@@ -44,8 +44,8 @@ Enhanced security using Ubuntu Pro
 
 Apart from the Ubuntu Server images, Azure also has images for `Ubuntu Pro`_, which come with enhanced security features:
 
-* Expanded Security Maintenance (ESM): Provides 10 years of security patching for packages in the Ubuntu (main and universe) repositories. Additional support can be added outside the 10-year ESM window with Canonical's Legacy support add-on.
-* Live kernel updates: These reduce downtime and unplanned reboots in case of kernel vulnerabilities.
+* Expanded Security Maintenance (ESM): Provides 10 years of security patching for packages in the Ubuntu main and universe repositories, including 40,000+ packages in universe. The Legacy add-on extends ESM by a further five years, for up to 15 years total.
+* Kernel Livepatch: This reduces downtime and unplanned reboots in case of kernel vulnerabilities.
 * FIPS compliance: Includes FIPS-certified modules to enable the use of Ubuntu in highly regulated environments. To maintain safety and security, the `fips-updates`_ module stream also provides security patching on top of FIPS-certified modules.
 
 To find Ubuntu Pro images on Azure, refer to :ref:`find-ubuntu-images`. 

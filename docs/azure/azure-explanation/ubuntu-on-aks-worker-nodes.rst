@@ -25,7 +25,7 @@ For automatic security updates, traditional Ubuntu systems use `unattended-upgra
 
 .. note::
      
-     With Ubuntu 20.04 LTS reaching the end of standard support, AKS users are urged to upgrade their node pools to Ubuntu 22.04 LTS to ensure continued security compliance and access to the latest features.
+     With Ubuntu 20.04 LTS having reached the end of standard support, AKS users are urged to upgrade their node pools to Ubuntu 22.04 LTS to ensure continued :ref:`security compliance <security-overview>` and access to the latest features.
 
 
 Auto-upgrade channels
