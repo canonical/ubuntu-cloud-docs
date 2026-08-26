@@ -116,9 +116,9 @@ Create your first Jupyter Notebook:
     dss create my-tensorflow-notebook --image=kubeflownotebookswg/jupyter-tensorflow-cuda:v1.8.0
 
 
-DSS will deploy Jupyter Notebooks with TensorFlow and with CUDA enabled. It’ll use a ``clusterIP`` from the MicroK8s cluster, which will only be accessible from inside the machine for the moment.
+DSS will deploy Jupyter Notebooks with TensorFlow and with CUDA enabled. It’ll use a ``ClusterIP`` from the MicroK8s cluster, which will only be accessible from inside the machine for the moment.
 
-To allow outside access, change the deployment to use a ``Nodeport`` instead of a ``clusterIP`` and reconnect using an SSH tunnel:
+To allow outside access, change the deployment to use a ``NodePort`` instead of a ``ClusterIP`` and reconnect using an SSH tunnel:
 
 
 .. code::
