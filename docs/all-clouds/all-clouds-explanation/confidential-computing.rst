@@ -46,7 +46,7 @@ Secure Encrypted Virtualization-Secure Nested Paging (SEV-SNP) is a security fea
 * `Increased isolation` - it allows each VM to have its own secure memory space. This means that a VM cannot access the memory of another VM, even if the hypervisor is compromised.
 * `Enhanced performance` - it can be used to improve the performance of virtualized applications. This is because SEV-SNP allows the hypervisor to offload some of the security processing to the processor.
 
-SEV-SNP provides an extra layer of safeguard against malicious hypervisor-based attacks, such as data reply and memory re-mapping, by establishing a secure and isolated execution environment.
+SEV-SNP provides an extra layer of safeguard against malicious hypervisor-based attacks, such as data replay and memory re-mapping, by establishing a secure and isolated execution environment.
 
 It also introduces several optional security enhancements, strengthens protection around interrupt behavior and bolsters defenses against side channel attacks.
 
