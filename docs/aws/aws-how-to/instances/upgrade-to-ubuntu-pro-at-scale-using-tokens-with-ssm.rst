@@ -11,7 +11,7 @@ Upgrade to Ubuntu Pro at scale using tokens with SSM
 Overview
 --------
 
-Ubuntu Pro extends Ubuntu LTS’ standard 5 years of security maintenance to 10 years, with an additional 5 years available through the Legacy add-on. It also expands security coverage beyond the main repository to more than 40,000 packages in the Universe repository.
+:ref:`Ubuntu Pro <pro>` extends Ubuntu LTS’ standard 5 years of security maintenance to 10 years, with an additional 5 years available through the Legacy add-on. It also expands security coverage beyond the main repository to more than 40,000 packages in the Universe repository.
 
 There are three ways to get Ubuntu Pro on AWS:
 

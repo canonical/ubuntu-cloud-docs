@@ -68,7 +68,7 @@ The retention policy can be summarized as follows:
 
 where:
   - **EOL** refers to when an interim Ubuntu release (for example, Lunar Lobster 23.04) has reached end-of-life `and will no longer enjoy support <https://ubuntu.com/about/release-cycle/>`_, or when EKS is `no longer supported by AWS`_.
-  - **EOSS** refers to when an LTS Ubuntu release (for example, Focal Fossa 20.04 LTS) has reached "End of Standard Support" but will remain supported under Ubuntu Pro
+  - **EOSS** refers to when an LTS Ubuntu release (for example, Focal Fossa 20.04 LTS) has reached "End of Standard Support" but will remain supported under :ref:`Ubuntu Pro <pro>`
   - **Unlaunched** refers to AMIs that are older than 6 months and have never been launched by any AWS user
 
 .. _`AWS CLI`: https://docs.aws.amazon.com/cli/

@@ -83,7 +83,7 @@ Launch it and install AWS-specific packages
 -------------------------------------------
 
 
-Your machine has been imported and is ready to be launched. We recommend some final steps to include an AWS-optimized kernel for better performance and other tools for enabling services such as SSM management (``amazon-ssm-agent``), EC2 instance connect (``ec2-instance-connect``) and hibernation (``ec2-hibinit-agent``).
+Your machine has been imported and is ready to be launched. We recommend some final steps to include an AWS-optimized kernel for better performance and other tools for enabling services such as SSM management (``amazon-ssm-agent``), EC2 instance connect (``ec2-instance-connect``) and hibernation (``ec2-hibinit-agent``). For details about the AWS-optimized kernel, see :ref:`Canonical's offerings on AWS <canonical-offerings>`.
 
 Launch your EC2 server using the AMI ID obtained in the previous step. This can be done using the AWS CLI or the EC2 web console. 
 
@@ -125,7 +125,7 @@ Restart the machine.
 Get the VM image ready for production
 -------------------------------------
 
-The VM image is almost ready to be used at scale on AWS. The last step is to allow cloud-init to reinitialize the machine ID. This ensures that each instance launched from this image will generate its own machine ID and will re-detect the cloud that it is running on so that certain features specific to AWS can be enabled. This is also needed if you’re planning to upgrade to Ubuntu Pro in the future.
+The VM image is almost ready to be used at scale on AWS. The last step is to allow cloud-init to reinitialize the machine ID. This ensures that each instance launched from this image will generate its own machine ID and will re-detect the cloud that it is running on so that certain features specific to AWS can be enabled. This is also needed if you’re planning to upgrade to :ref:`Ubuntu Pro <pro>` in the future.
 For using cloud-init with a local data source, see :ref:`Use a local cloud-init data source <public-images:use-local-cloud-init-ds>`.
 
 Run:
