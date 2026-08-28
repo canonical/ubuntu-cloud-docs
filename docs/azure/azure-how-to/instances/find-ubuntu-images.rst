@@ -134,46 +134,7 @@ Interim releases
 ~~~~~~~~~~~~~~~~
 
 To learn more about the difference between LTS releases and interim releases, see `this page <https://ubuntu.com/about/release-cycle#ubuntu>`_.
-
-Ubuntu 25.10 - Questing Quokka
-++++++++++++++++++++++++++++++++++
-
-| Quick start: `25.10 on Azure <https://portal.azure.com/#create/canonical.ubuntu-25_10server>`_
-| Quick start (China): `25.10 on Azure China <https://portal.azure.cn/#create/canonical.ubuntu-25_10server>`_
-
-.. list-table::
-   :widths: 10 10 12 68
-   :header-rows: 1
-
-   * - **Flavor**
-     - **Arch**
-     - **Hyper-V**
-     - **URN**
-   * - Server
-     - AMD64
-     - Gen2
-     - ``Canonical:ubuntu-25_10:server:latest``
-   * - Server
-     - AMD64
-     - Gen1
-     - ``Canonical:ubuntu-25_10:server-gen1:latest``
-   * - Server
-     - ARM64
-     - Gen2
-     - ``Canonical:ubuntu-25_10:server-arm64:latest``
-   * - Minimal
-     - AMD64
-     - Gen2
-     - ``Canonical:ubuntu-25_10:minimal:latest``
-   * - Minimal
-     - AMD64
-     - Gen1
-     - ``Canonical:ubuntu-25_10:minimal-gen1:latest``
-   * - Minimal
-     - ARM64
-     - Gen2
-     - ``Canonical:ubuntu-25_10:minimal-arm64:latest``
-
+There are currently no actively-supported Interim releases.
 
 .. _find-ubuntu-pro-on-azure:
 
