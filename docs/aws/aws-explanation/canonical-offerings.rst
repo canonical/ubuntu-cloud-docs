@@ -21,7 +21,7 @@ For each Ubuntu release, Canonical delivers multiple customized images to AWS. T
 
 * Ubuntu Pro with `real-time kernel`_ - These are Ubuntu Pro images with a real-time kernel in them. They are used by enterprises in the automotive, industrial, and telecommunication sectors to unlock real-time compute and reduce development time by validating their code in a cloud environment.
 
-* `Ubuntu server EKS images`_ - These are optimized AMIs that run as worker nodes in Amazon's Elastic Kubernetes Service (EKS). They include the AWS-optimized kernel, a slimmed-down minimal version of Ubuntu, and are optimized for performance and security on EKS clusters. They also come with the Kubernetes worker node related softwares such as ``kubelet`` and ``kubectl``.
+* `Ubuntu server EKS images`_ - These are optimized AMIs that run as worker nodes in Amazon's Elastic Kubernetes Service (EKS). They include the AWS-optimized kernel, a slimmed-down minimal version of Ubuntu, and are optimized for performance and security on EKS clusters. They also come with the Kubernetes worker node related software such as ``kubelet`` and ``kubectl``.
 
 * Ubuntu Pro EKS images - These are Ubuntu Pro AMIs optimized to run as worker nodes on EKS. They are similar to the Ubuntu Server EKS images, but also include all the premium features of an Ubuntu Pro image such as certified components, hardening options, kernel livepatch and expanded security maintenance.
 

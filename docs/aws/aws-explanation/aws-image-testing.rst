@@ -26,7 +26,7 @@ Canonical's internal test suite launches real instances on EC2 and runs a batter
 
 * **Boot and basic health**: the image boots reliably and reaches a healthy running state.
 * **First-boot configuration**: `cloud-init` runs correctly, including the expected behavior around SSH and password authentication.
-* **AWS guest integration**: ec2-instance-connect allows connection to a running instance and  Amazon SSM agent is present, enabled and running.
+* **AWS guest integration**: ec2-instance-connect allows connection to a running instance and Amazon SSM agent is present, enabled and running.
 * **Hibernation and resume**: on instances that support it, an image can hibernate and later resume correctly, with in-memory workloads and on-disk state preserved across the cycle, and system uptime reflecting the time already spent running before hibernation.
 * **Ubuntu Pro and FIPS**: on Pro and Pro FIPS images, the Pro entitlements and FIPS-certified components are present and enabled as expected.
 * **Package and configuration correctness**: checks such as copyright compliance and APT pin priorities, which guard against subtle packaging or configuration regressions.
