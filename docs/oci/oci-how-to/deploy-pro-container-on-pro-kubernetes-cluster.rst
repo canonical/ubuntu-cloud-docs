@@ -123,7 +123,7 @@ Since your Ubuntu Pro container image is in a private registry, you will need to
 (For more details about pulling images from private registries, check out the `Kubernetes documentation <https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/>`_).
 
 You can use the following example command to create a secret named ``regcred`` for
-`Docker Hub <https://hub.docker.com>`_  (i.e. using ``https://index.docker.io/v1/``
+`Docker Hub <https://hub.docker.com>`_ (i.e. using ``https://index.docker.io/v1/``
 as ``<your-registry-server>``).
 
 ::
