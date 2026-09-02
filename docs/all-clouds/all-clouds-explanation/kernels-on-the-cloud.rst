@@ -14,8 +14,6 @@ Each Ubuntu image is built with a pre-installed kernel meta-package. That meta-p
 
 .. note:: After a new kernel version is installed, the instance must be rebooted in order to run the new kernel. Otherwise, the only way to receive kernel updates without rebooting or redeploying is through `Kernel Livepatch`_, but this is generally limited to security-related patching.
 
-For more information about security updates and Livepatch, see :ref:`Security in the Ubuntu cloud images <security-overview>`.
-
 The default meta-package, or kernel variant, for most Ubuntu cloud images is the :ref:`rolling kernel variant <rolling-kernel>`. However, some images may default to another variant specific to the product. For instance, Ubuntu Pro FIPS images default to a cloud-specific variant tailored to the FIPS environment. Different clouds provide and support different variants, but the common packages are listed below.
 
 .. _rolling-kernel:
