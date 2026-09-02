@@ -13,6 +13,8 @@ This how-to guide explains how to upgrade from Ubuntu 20.04 LTS (Focal Fossa) to
 Classic using the `do-release-upgrade` command. Despite many differences between the two, the upgrade process is
 identical for both IBM VPC and IBM Classic.
 
+For the next upgrade step, see :ref:`Upgrade from Jammy to Noble on IBM Cloud <upgrade-from-jammy-to-noble>`.
+
 General Advice
 ---------------
 

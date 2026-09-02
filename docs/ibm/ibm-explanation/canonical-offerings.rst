@@ -27,7 +27,7 @@ IBM VPC offers multiple advantages over the legacy infrastructure such as better
 Ubuntu Pro
 ----------
 
-Ubuntu Pro is a comprehensive subscription for open-source software security and management running on Ubuntu LTS. It provides a suite of services, including advanced tooling and optional phone and ticket support, to give you confidence in the security of your Ubuntu infrastructure.
+Ubuntu Pro is a comprehensive subscription for open-source software security and management running on Ubuntu LTS. Ubuntu Pro extends standard security maintenance to 10 years through Expanded Security Maintenance (ESM), covering the Main and Universe repositories. The Legacy add-on extends ESM by a further five years, for up to 15 years total. It provides a suite of services, including advanced tooling and optional phone and ticket support, to give you confidence in the security of your Ubuntu infrastructure. For more information, see the :ref:`Security overview <security-overview>`.
 
 Ubuntu Pro can be enabled on any Ubuntu instance running in IBM Cloud. After `setting up an account <https://documentation.ubuntu.com/pro/account-setup/>`__, attach the machine to your Ubuntu Pro subscription `using the Pro client <https://documentation.ubuntu.com/pro-client/en/latest/howtoguides/how_to_attach/>`__. Once attached, run `pro status` to view available features:
 
