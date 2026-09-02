@@ -82,7 +82,7 @@ On completion, it'll give instructions for adding another node to the cluster:
 
 This will add ``k8s-worker-1`` to the cluster as a worker node. Now, repeat these two steps for each worker node, i.e. run ``microk8s add-node`` on ``k8s-main`` and use the new token that is generated to add ``k8s-worker-2`` to the cluster.
 
-Use the ``kubetl get nodes`` command in the control plane VM (``k8s-main``) to check that the nodes have joined the cluster:
+Use the ``kubectl get nodes`` command in the control plane VM (``k8s-main``) to check that the nodes have joined the cluster:
 
 .. code::
 
