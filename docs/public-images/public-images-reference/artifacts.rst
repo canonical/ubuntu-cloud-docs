@@ -39,7 +39,7 @@ Initial ramdisk (initrd)
    * - Extension
      - ``<artifact>-initrd-generic``
    * - Example filename
-     - ``unpacked/noble-server-cloudimg-amd70-initrd-generic``
+     - ``unpacked/noble-server-cloudimg-amd64-initrd-generic``
    * - Format description
      - An initial ramdisk is a temporary root file system loaded into memory during the boot process to initialize the system before the real root file system is mounted.
    * - Use cases
@@ -109,7 +109,7 @@ QEMU Copy On Write (QCOW)
    * - Example filename
      - ``noble-server-cloudimg-amd64.img``
    * - Format description
-     - QCOW image files are disk image files containing raw sector-by-sector copies of a storage device.
+     - QCOW image files are disk image files used by QEMU.
    * - Use cases
      - 
        QCOW images are used for creating bootable disks and virtual machines in virtualization environments. Some of the features that make QCOW images attractive are their support for dynamic disk sizing, snapshot support and copy-on-write. 
@@ -184,7 +184,7 @@ Vagrant box
    * - Format description
      - The Vagrant box format is used to package and distribute virtual machine environments managed by Vagrant.
    * - Use cases
-     - These files contain a virtual machine image along with metadata required for Vagrant. Vagrant simplifies the creation and provisioning of virtual environments, making it easier to manage and share development environments across different systems. You can use a ``.box`` file along with a supported provider to quickly set up environments with specific configurations, tools and dependencies. All Vagrant boxes are provider specific, with our boxes having been built for VirtualBox.
+     - These files contain a virtual machine image along with metadata required for Vagrant. Vagrant simplifies the creation and provisioning of virtual environments, making it easier to manage and share development environments across different systems. You can use a ``.box`` file along with a supported provider to quickly set up environments with specific configurations, tools and dependencies. All Vagrant boxes are provider specific, with our boxes having been built for VirtualBox. See :ref:`Run a Vagrant box <run-a-vagrant-box>` for instructions.
 
 .. _vhd-ref:
 
@@ -208,7 +208,7 @@ Virtual Hard Disk (VHD)
 
 Other files
 -----------
-This section includes information on checksums, GPG signatures, changelogs and manifest files. These files help verify the integrity and authenticity of the images, provide details on changes between versions and list all included packages.
+This section includes information on checksums, GPG signatures, changelogs and manifest files. These files help verify the integrity and authenticity of the images, provide details on changes between versions and list all included packages. See :ref:`Verify an image checksum <verify-image-checksum>` for instructions.
 
 .. note::
   On Ubuntu systems, the public keys for Ubuntu cloud images are present in ``/usr/share/keyrings/ubuntu-cloudimage-keyring.gpg``. You can use this keyring to verify GPG signatures and checksums of downloaded artifacts with a command such as ``gpg --verify --keyring /usr/share/keyrings/ubuntu-cloudimage-keyring.gpg SHA256SUMS.gpg SHA256SUMS && sha256sum -c SHA256SUMS``.
@@ -513,7 +513,7 @@ GPG signatures
         .. code-block:: bash
 
             # Verify the GPG signature
-            gpg ~~verify SHA256SUMS.gpg SHA256SUMS
+            gpg --verify SHA256SUMS.gpg SHA256SUMS
 
 
         If there is no public key for Ubuntu present, you will get an error message with a ``key id``. Use that id to import the GPG key from the Ubuntu keyserver.

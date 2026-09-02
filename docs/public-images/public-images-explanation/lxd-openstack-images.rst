@@ -43,8 +43,8 @@ How do you access them?
 -----------------------
 
 Go to `cloud-images.ubuntu.com`_ and select a release. 
-For the latest LTS release, Ubuntu 24.04 LTS Noble
-Numbat, you would navigate to ``noble > current``. Note that all artifacts are
+For the latest LTS release, Ubuntu 26.04 LTS Resolute
+Raccoon, you would navigate to ``resolute > current``. Note that all artifacts are
 architecture specific, in the format
 ``<release>-<type>-cloudimg-<architecture>-<artifact>``.
 
@@ -75,17 +75,17 @@ To import an image into LXD, you will need two artifacts:
 
    - The bootable disk image for a virtual machine is a :ref:`qcow-ref` image (``*.img``)
 
-The following are example commands to import an image for creating LXD containers and virtual machines based on downloaded Ubuntu 24.04 LTS artifacts:
+The following are example commands to import an image for creating LXD containers and virtual machines based on downloaded Ubuntu 26.04 LTS artifacts:
 
 .. code :: bash
 
-   lxc image import noble-server-cloudimg-amd64-lxd.tar.xz \
-      noble-server-cloudimg-amd64-root.tar.xz --alias noble_container
+   lxc image import resolute-server-cloudimg-amd64-lxd.tar.xz \
+      resolute-server-cloudimg-amd64-root.tar.xz --alias resolute_container
 
 .. code :: bash
 
-   lxc image import noble-server-cloudimg-amd64-lxd.tar.xz \
-      noble-server-cloudimg-amd64.img --alias noble_vm
+   lxc image import resolute-server-cloudimg-amd64-lxd.tar.xz \
+      resolute-server-cloudimg-amd64.img --alias resolute_vm
 
 
 OpenStack images
@@ -99,8 +99,8 @@ An example of uploading an image looks something like this:
 
 .. code :: bash
 
-   openstack image create “Ubuntu-24.04” \
-      --file noble-server-cloudimg-amd64.img \
+   openstack image create “Ubuntu-26.04” \
+      --file resolute-server-cloudimg-amd64.img \
       --disk-format qcow2 \
       --container-format bare \
       --public

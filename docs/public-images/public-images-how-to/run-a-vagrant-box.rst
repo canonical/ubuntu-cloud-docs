@@ -27,7 +27,7 @@ This will create a VM, create an ssh key and associate it with the vagrant user,
 
 Custom boxes
 ------------
-For working on development boxes built by Bartender you'll need to import the box: ``vagrant box add <path/to/box> --name <name-for-box>``. You can then use the newly added box by name. Once a box is added, it is unpacked in ``~/.vagrant.d/boxes/``. The structure then follows the pattern ``<BOX_NAME>/<VERSION>/<PROVIDER>/`` with the unpacked tar .box files.
+For working on development boxes built with :ref:`Bartender <vagrant-bartender>` you'll need to import the box: ``vagrant box add <path/to/box> --name <name-for-box>``. You can then use the newly added box by name. Once a box is added, it is unpacked in ``~/.vagrant.d/boxes/``. The structure then follows the pattern ``<BOX_NAME>/<VERSION>/<PROVIDER>/`` with the unpacked tar .box files.
 
 To ssh into a server, run ``vagrant ssh``. This will use the default generated ssh key for the vagrant user.
 
@@ -101,6 +101,6 @@ This occurs when you try to connect to the same localhost connection, but the un
 
 .. code:: bash
 
-   ssh-keygen -f "/home/$USER$/.ssh/known_hosts" -R "[localhost]:2222"
+   ssh-keygen -f "/home/$USER/.ssh/known_hosts" -R "[localhost]:2222"
 
 This removes the connection from your ``known_hosts`` file and allows you to add the keys from the new guest VM and connect as expected.

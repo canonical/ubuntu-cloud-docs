@@ -8,7 +8,7 @@ Verify an image checksum
 
 For every `ubuntu cloud image`_, Canonical provides a corresponding SHA256 checksum. These checksums help reassure that the image you have downloaded is not corrupted in any way and that it is an authentic image that hasn't been tampered with.
 
-You can use the provided checksums to verify the authenticity of your downloaded image. These steps can be used to verify other related files too, such as changelog files, tarballs and manifests.
+You can use the provided checksums to verify the authenticity of your downloaded image. These steps can be used to verify other related files too, such as changelog files, tarballs and manifests. For descriptions of these files, see :ref:`Ubuntu cloud image artifacts <uci-artifacts>`.
 
 Install the necessary packages
 ------------------------------
@@ -20,7 +20,7 @@ You'll require the ``sha256sum``, ``md5sum`` and ``gpg`` packages. Based on your
         These are part of the ``coreutils`` and ``gnupg`` packages, which are installed by default.
     
     .. tab:: MacOS
-        Install the latest GnuPG and coreutils using `HomeBrew`_:
+        Install the latest GnuPG and coreutils using `Homebrew`_:
 
         .. code:: bash
 
@@ -156,7 +156,7 @@ For more information, you can checkout the following resources
 
 .. _`ubuntu cloud image`: https://cloud-images.ubuntu.com
 .. _`Ubuntu on WSL`: https://ubuntu.com/wsl/docs/stable/
-.. _`HomeBrew`: https://brew.sh/
+.. _`Homebrew`: https://brew.sh/
 .. _`GnuPG`: https://www.gnupg.org/gph/en/manual/x135.html
 .. _`Ubuntu Discourse`: https://discourse.ubuntu.com/
 .. _`SHA-2 checksum`: https://en.wikipedia.org/wiki/SHA-2

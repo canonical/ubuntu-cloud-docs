@@ -28,7 +28,7 @@ In this documentation
       - :ref:`Ubuntu cloud image artifacts <uci-artifacts>` • :ref:`LXD and OpenStack images <lxd-openstack-images>` • :ref:`Vagrant boxes <vagrant-explanation>` • :ref:`Buildd images <buildd>` 
       
     * - **Building and launching images**
-      - :ref:`Build a Vagrant box with Bartender <vagrant-bartender>` • :ref:`Run a Vagrant box <run-a-vagrant-box>` • :ref:`Launch QCOW images using libvirt <launch-libvirt>` • :ref:`Launch QCOW images using QEMU <qcow-qemu>`  • :ref:`Run an OVA using VirtualBox <run-an-ova-using-virtualbox>`  • :ref:`Create and use a local cloud-init datasource <use-local-cloud-init-ds>`  • :ref:`Verify an image checksum <verify-image-checksum>` 
+      - :ref:`Build a Vagrant box with Bartender <vagrant-bartender>` • :ref:`Run a Vagrant box <run-a-vagrant-box>` • :ref:`Launch QCOW images using libvirt <launch-libvirt>` • :ref:`Launch QCOW images using QEMU <qcow-qemu>` • :ref:`Run an OVA using VirtualBox <run-an-ova-using-virtualbox>` • :ref:`Create and use a local cloud-init datasource <use-local-cloud-init-ds>` • :ref:`Verify an image checksum <verify-image-checksum>`
       
     * - **Policies**
       - :ref:`Security overview <ubuntu-security-on-public-images>` • :ref:`Image retention policy <public-image-retention-policy>` 

@@ -50,7 +50,7 @@ The retention policy can be summarized as follows:
 
 where:
   - **EOL** refers to when an interim Ubuntu release (for example, Lunar Lobster 23.04) has reached end-of-life, `and will no longer enjoy support <https://ubuntu.com/about/release-cycle/>`_
-  - **EOSS** refers to when an LTS Ubuntu release (for example, Bionic Beaver 18.04 LTS) has reached "End of Standard Support"
+  - **EOSS** refers to when an LTS Ubuntu release (for example, Bionic Beaver 18.04 LTS) has reached "End of Standard Support"; see :ref:`Ubuntu security on cloud images <ubuntu-security-on-public-images>` for extended support details
 
 .. Links
 .. _cloud-images.ubuntu.com: https://cloud-images.ubuntu.com/

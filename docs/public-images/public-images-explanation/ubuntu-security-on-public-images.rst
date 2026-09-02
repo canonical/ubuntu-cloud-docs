@@ -18,9 +18,9 @@ Enhanced security using Ubuntu Pro
 
 Enhanced security features are available for Ubuntu via the Ubuntu Pro subscription:
 
-* Expanded Security Maintenance (ESM): Provides up to 12 years of support for security updates as detailed in the `ESM <https://ubuntu.com/security/esm>`_ section.
+* Expanded Security Maintenance (ESM): Provides up to 10 years of support for security updates and 5 more years with the Legacy add-on as detailed in the `ESM <https://ubuntu.com/security/esm>`_ section.
 * Kernel livepatching: Shrinks the exploit window for critical kernel vulnerabilities as detailed in the `Livepatch <https://ubuntu.com/security/livepatch>`_ section.
-* Security compliance and certifications: Provides rigorous security certifications such as FIPS and CIS as detailed in the `Compliance automation <hhttps://documentation.ubuntu.com/security/compliance/>`_ section.
+* Security compliance and certifications: Provides rigorous security certifications such as FIPS and CIS as detailed in the `Compliance automation <https://documentation.ubuntu.com/security/compliance/>`_ section.
 
 Common Vulnerabilities and Exposures (CVE)
 ------------------------------------------
@@ -40,7 +40,7 @@ Each image published under `Cloud images <https://cloud-images.ubuntu.com/>`_ co
 it has not been corrupted or tampered with. 
 
 The Ubuntu tutorial `How to verify Ubuntu <https://ubuntu.com/tutorials/how-to-verify-ubuntu>`_ gives a detailed guide on how to
-verify and validate the integrity of an image.
+verify and validate the integrity of an image. For cloud-image-specific instructions, see :ref:`Verify an image checksum <verify-image-checksum>`.
 
 .. _`Ubuntu security page`: https://ubuntu.com/security
 .. _`Ubuntu server's security overview page`: https://ubuntu.com/server/docs/explanation/intro-to/security/
