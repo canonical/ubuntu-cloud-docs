@@ -52,7 +52,7 @@ You can create the policy using the console or the CLI.
                 --compartment-id <compartment_id> \
                 --description "Allow members of the Users group to create and operate bastions" \
                 --name bastionpolicy \
-                --statements  '["Allow group Users to manage bastion-family in tenancy", \
+                --statements '["Allow group Users to manage bastion-family in tenancy", \
                                 "Allow group Users to manage virtual-network-family in tenancy", \
                                 "Allow group Users to read instance-family in tenancy", \
                                 "Allow group Users to read instance-agent-plugins in tenancy", \
@@ -198,7 +198,7 @@ Once the bastion goes into an *Active* state, you can create a session using eit
 
         * Session type: managed SSH session
         * Session name: any name of your choice
-        * Username: ubuntu  (if your VM is an Ubuntu instance, the default user is ubuntu)
+        * Username: ubuntu (if your VM is an Ubuntu instance, the default user is ubuntu)
         * Compute instance: <the VM that you would like to access through the bastion>
         * Add SSH key: add a public SSH key to inject into the bastion and the VM (you must have access to the corresponding private key)
 
@@ -224,7 +224,7 @@ Once the bastion goes into an *Active* state, you can create a session using eit
 
 .. note::
 
-    The SSH key that you use here, will be temporarily added to ``.ssh/authorized_keys`` in both the bastion and the VM. So when you try to access the VM in the next step, you'll have to provide your private key twice -  once to SSH into the bastion, and then again within a proxy command to SSH into the VM.
+    The SSH key that you use here, will be temporarily added to ``.ssh/authorized_keys`` in both the bastion and the VM. So when you try to access the VM in the next step, you'll have to provide your private key twice - once to SSH into the bastion, and then again within a proxy command to SSH into the VM.
 
 
 Access the VM

@@ -1,5 +1,5 @@
 .. meta::
-   :description:  Learn how to upgrade Ubuntu from 20.04 to 22.04  on Oracle Cloud. Includes manual intervention steps and best practices.
+   :description:  Learn how to upgrade Ubuntu from 20.04 to 22.04 on Oracle Cloud. Includes manual intervention steps and best practices.
 
 .. _upgrade-from-focal-to-jammy:
 
@@ -14,6 +14,8 @@ Once you have decided to upgrade your system, the next question is how? There ar
 For fully automated system deployments it is recommended to redeploy with new Jammy instances instead of upgrading from Focal.
 
 For systems that cannot be easily created or destroyed and require manual configuration, running `do-release-upgrade <https://manpages.ubuntu.com/manpages/jammy/en/man8/do-release-upgrade.8.html>`_ is a good option. However this option requires some :ref:`manual intervention <manual intervention oracle>` as explained below. 
+
+For the next upgrade step, see :ref:`Upgrade from Ubuntu 22.04 LTS to 24.04 LTS <upgrade-from-jammy-to-noble>`.
 
 .. warning:: Avoid apt lock conflicts
 
