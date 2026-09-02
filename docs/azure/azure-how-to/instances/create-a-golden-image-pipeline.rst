@@ -68,7 +68,7 @@ The sample application uses the Azure Go SDK to allow programmatic access to Azu
 - Create an image definition
 - Create an image template (this is what AIB actually uses)
 
-The program does not expose all the configuration options for these resources, so you may prefer to perform these steps manually. The steps have to be executed only once to generate the final image template.  The image template is then used to automate the building of your golden images.
+The program does not expose all the configuration options for these resources, so you may prefer to perform these steps manually. The steps have to be executed only once to generate the final image template. The image template is then used to automate the building of your golden images.
 
 ``run_image_builder``
 +++++++++++++++++++++
@@ -122,7 +122,7 @@ Once you have your clone of the sample repository, you can configure it to build
    --rolePermissions value                                            Path to the role permissions file (default: "./config/aibRolePermissions.json")
    --imageProperties value                                            Path to the image definitions properties file (default: "./config/imageDefinitionProperties.json")
    --customizations value                                             Path to the image template customizations file (default: "./config/customizations.json")
-   --exportTemplate                                                   Whether the raw iamge template data should be exported (default: false)
+   --exportTemplate                                                   Whether the raw image template data should be exported (default: false)
    --exportPath value                                                 Path to export the image template to if enabled (default: "generatedTemplate.json")
 
 Some of them have a default value and can be skipped. Two important ones to note are ``--imageProperties`` and ``--customizations``.
@@ -149,7 +149,7 @@ By default, ``--imageProperties`` points to ``./config/imageDefinitionProperties
 Customization
 ~~~~~~~~~~~~~
 
-``--customizations`` points to ``.config/customizations.json`` by default. This is where you define the commands to modify your base image into your golden image:
+``--customizations`` points to ``./config/customizations.json`` by default. This is where you define the commands to modify your base image into your golden image:
 
 .. code::
 

@@ -10,7 +10,7 @@ Get Ubuntu Pro on Azure
 What is Ubuntu Pro?
 -------------------
 
-Ubuntu Pro is an additional stream of security updates and packages that meet compliance requirements such as FIPS or HIPAA, on top of an Ubuntu LTS. To learn more about Ubuntu Pro you can read this `FAQ <https://discourse.ubuntu.com/t/ubuntu-pro-faq/34042>`_.
+Ubuntu Pro is an additional stream of security updates and packages that meet compliance requirements such as FIPS or HIPAA, on top of an Ubuntu LTS. Ubuntu LTS ships with five years of standard security maintenance. Ubuntu Pro extends this to 10 years through Expanded Security Maintenance (ESM), and the Legacy add-on extends ESM by a further five years, for up to 15 years total. ESM covers the main and universe repositories, including 40,000+ packages in universe. To learn more about Ubuntu Pro you can read this `FAQ <https://discourse.ubuntu.com/t/ubuntu-pro-faq/34042>`_ or see :ref:`Ubuntu Security on Azure <security-overview>`.
 
 How to get Ubuntu Pro on Azure?
 -------------------------------

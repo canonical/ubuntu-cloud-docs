@@ -20,7 +20,7 @@ Ubuntu images are specifically fine-tuned to maximize performance on Azure infra
 
 * GB200-Compatible Server images are optimized for AI and designed to run on `NVIDIA GB200 hardware`_. These images are also available with `Ubuntu Pro`_ enabled.
 
-* `Ubuntu Pro images`_ are premium images that include comprehensive security coverage for at least ten years, `kernel Livepatch service`_, and optional `24/7 enterprise-grade support`_. Additional Pro entitlements such as `FIPS-certified modules`_ and the `Ubuntu Security Guide`_ are also available to install.
+* `Ubuntu Pro images`_ are premium images that include 10 years of Expanded Security Maintenance (ESM). The Legacy add-on extends ESM by a further five years, for up to 15 years total. These images also include the `kernel Livepatch service`_ and optional `24/7 enterprise-grade support`_. Additional Pro entitlements such as `FIPS-certified modules`_ and the `Ubuntu Security Guide`_ are also available to install.
 
 * `Ubuntu Pro FIPS images`_ are built on Ubuntu Pro, but with the FIPS-certified modules pre-installed so that they are used from the first boot of the image. Intended for high-security or government usage.
 

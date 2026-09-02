@@ -15,8 +15,10 @@ Prerequisites
 -------------
 
 - Microsoft Azure account
-- Azure CLI
+- :ref:`Azure CLI <install-azure-cli>`
 - Uniform Resource Name (URN) for an Ubuntu image (see :ref:`find-ubuntu-images`)
+
+For details about URN structure, see :ref:`Offer, plan, and SKU naming on Azure <offer-plan-sku-naming-on-azure>`.
 
 Azure CLI commands in this guide share some declared variables:
 
@@ -129,7 +131,6 @@ the deployment - either with or without Trusted Platform Module (TPM)-backed Ful
         --os-disk-security-encryption-type "$OS_ENCRYPTION_TYPE" \
         --size "$VIRTUAL_MACHINE_SIZE" \
         --generate-ssh-keys
-
 
 .. _`official Azure documentation`: https://learn.microsoft.com/en-us/azure/virtual-machines/linux/quick-create-cli
 .. _`Azure Command-Line Interface`: https://learn.microsoft.com/en-us/cli/azure/?view=azure-cli-latest
