@@ -14,7 +14,7 @@ CVE handling, Kernel Livepatch
 Defense against known vulnerabilities
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To defend against known vulnerabilities (`CVEs`_), you need to monitor them and patch them with security updates. Each LTS release of Ubuntu includes five years of security updates for the ~2300 packages available in the main repository. With `Expanded Security Maintenance (ESM)`_, which is available as part of Ubuntu Pro, this expands to up to 12 years and includes an additional ~34000 packages from the universe repository.
+To defend against known vulnerabilities (`CVEs`_), you need to monitor them and patch them with security updates. Each LTS release of Ubuntu includes five years of security updates for the ~2300 packages available in the main repository. With `Expanded Security Maintenance (ESM)`_, which is available as part of Ubuntu Pro, this expands to 10 years and includes an additional 40,000+ packages from the universe repository. The Legacy add-on extends ESM by a further five years, for up to 15 years total.
 
 Ubuntu Pro also supports `Kernel Livepatch`_, a feature that allows patching of high and critical kernel vulnerabilities at run-time, without requiring an immediate reboot. This allows one to remain secure while deferring unplanned reboots for up to a year.
 
@@ -113,6 +113,8 @@ The specialized CPU uses an AES encryption engine within its memory controller t
 Any VM deployed on and capable of using such hardware is called a Confidential Virtual Machine (CVM). If the VM is running Ubuntu, all the other security features mentioned above can also be enabled. 
 
 Finally, it is also possible to verify that a CVM is actually launched on confidential-computing capable hardware without having to take the cloud provider's word for it. This can be done through remote attestation of the TEE. By verifying the signed quote sent by the TEE, it is possible to ensure two things: (1) that the cloud's TEE hardware used is genuine and (2) that the software loaded into the TEE has not been tampered with.
+
+For more detail about protecting data in use, see :ref:`Confidential computing <confidential-computing>`.
 
 
 .. _`the Ubuntu Security Guide (USG)`: https://documentation.ubuntu.com/security/compliance/usg/

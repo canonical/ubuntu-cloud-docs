@@ -20,7 +20,7 @@ Canonical regularly builds and publishes refreshed image versions across all sup
 Running instances are not automatically altered or rebooted when new images are published. To keep running virtual machines secure and updated:
 
 * Use standard package management tools (e.g. ``apt`` or ``unattended-upgrades``) to apply system and package updates.
-* Reboot instances when required to load newly installed kernel updates, or use Canonical's Livepatch service (available with Ubuntu Pro) to apply kernel security patches without downtime.
+* Reboot instances when required to load newly installed kernel updates, or use Canonical's `Livepatch service <https://ubuntu.com/security/livepatch>`_ (available with Ubuntu Pro) to apply kernel security patches without downtime.
 
 When launching instances via the command-line interface (CLI), APIs, or infrastructure-as-code automation, reference the ``latest`` alias or dynamic image query for your target release and variant. This ensures newly deployed instances always launch from the most recent, fully patched image build.
 
