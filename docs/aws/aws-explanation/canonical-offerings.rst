@@ -13,7 +13,7 @@ For each Ubuntu release, Canonical delivers multiple customized images to AWS. T
 
 * `Server images`_ - These are general-purpose customized Amazon Machine Images (AMIs) based on an AWS-optimized kernel. They include improved device drivers and relevant agents such as `EC2 Instance Connect` and `AWS Systems Manager`.
 
-* `Minimal server images`_ - These are designed for automated deployment at scale and have a reduced default package set. Things like interactive usage tools are omitted. They are much smaller, boot faster, and require fewer security updates over time due to the fewer installed packages.
+* :ref:`Minimal server images <all-clouds:ubuntu-base-and-minimal-images>` - These are designed for automated deployment at scale and have a reduced default package set. Things like interactive usage tools are omitted. They are much smaller, boot faster, and require fewer security updates over time due to the fewer installed packages.
 
 * `Ubuntu Pro images`_ - These are premium images that include certified components, hardening options, comprehensive open source security coverage for 10 years (extendable to 15 years with the Legacy add-on), `kernel Livepatch service`_ and optional `24/7 enterprise-grade support`_.
 
@@ -102,7 +102,6 @@ Charmed Kubeflow on AWS
 `Charmed Kubeflow`_ is an open-source, end-to-end, production-ready MLOps platform on top of cloud native technologies. It is available as an appliance at the `AWS marketplace (Charmed Kubeflow)`_.
 
 .. _`Server images`: https://ubuntu.com/aws
-.. _`Minimal server images`: https://wiki.ubuntu.com/Minimal
 .. _`Ubuntu Pro images`: https://ubuntu.com/aws/pro
 .. _`kernel Livepatch service`: https://ubuntu.com/security/livepatch
 .. _`24/7 enterprise-grade support`: https://ubuntu.com/aws/support
