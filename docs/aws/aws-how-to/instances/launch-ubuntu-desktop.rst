@@ -65,71 +65,159 @@ Log in to your instance and install the Ubuntu desktop packages:
 Install and configure RDP
 -------------------------
 
-Install the xrdp server:
+.. tab-set::
 
-.. code:: bash
-    
-    sudo apt-get install -y xrdp
+   .. tab-item:: Ubuntu 26.04 LTS and later
+      :sync: ubuntu-26-04
 
-Configure it to use SSL to get an encrypted connection:
+      Set up a password for the Ubuntu user:
 
-.. code:: bash
+      .. code:: bash
 
-    sudo usermod -a -G ssl-cert xrdp
+          sudo passwd ubuntu
 
-Set up a password for the Ubuntu user:
+      ``gnome-remote-desktop`` is installed automatically as a dependency of ``ubuntu-desktop`` and provides built-in RDP support as a system service, so no separate RDP server needs to be installed.
 
-.. code:: bash
+      Create a directory for a TLS certificate and generate a self-signed one to encrypt the connection:
 
-    sudo passwd ubuntu
+      .. code:: bash
 
-Restart the service:
+          GRD_DIR=/var/lib/gnome-remote-desktop/.local/share/gnome-remote-desktop
 
-.. code:: bash
+          sudo -u gnome-remote-desktop mkdir -p "$GRD_DIR"
+          sudo openssl req -new -newkey rsa:4096 -days 720 -nodes -x509 \
+            -subj /CN=localhost \
+            -out "$GRD_DIR/tls.crt" -keyout "$GRD_DIR/tls.key"
+          sudo chown -R gnome-remote-desktop: /var/lib/gnome-remote-desktop/.local
+          sudo chmod 600 "$GRD_DIR/tls.key"
 
-    sudo systemctl restart xrdp
+      Configure the RDP server with the certificate and a set of credentials, then enable it:
 
+      .. code:: bash
 
-Configure the Ubuntu session
-----------------------------
+          GRD_DIR=/var/lib/gnome-remote-desktop/.local/share/gnome-remote-desktop
 
-Using Nano or your favorite text editor, create the following file:
+          sudo grdctl --system rdp set-tls-key  "$GRD_DIR/tls.key"
+          sudo grdctl --system rdp set-tls-cert "$GRD_DIR/tls.crt"
+          sudo grdctl --system rdp set-auth-methods credentials
 
-.. code:: bash
+      .. note::
+          ``set-auth-methods`` requires at least one authentication method to be set. ``credentials`` is the default on a fresh install, but setting it explicitly makes the configuration clearer.
 
-    sudo nano /usr/local/bin/ubuntu-session
+      Set the credentials used to authenticate RDP connections. Run this command on its own, since it prompts interactively for a username and password:
 
-Insert the following content:
+      .. code:: bash
 
-.. code:: bash
-    
-    #!/bin/sh
-    
-    export GNOME_SHELL_SESSION_MODE=ubuntu
-    export DESKTOP_SESSION=ubuntu-xorg
-    export XDG_SESSION_DESKTOP=ubuntu-xorg
-    export XDG_CURRENT_DESKTOP=ubuntu:GNOME
-    
-    exec /usr/bin/gnome-session --session=ubuntu
+          sudo grdctl --system rdp set-credentials
 
-Make the script executable:
+      .. warning::
+          Don't run this command as part of a larger pasted block. It's the only interactive command in this procedure: if it's pasted together with other commands, the terminal feeds those following lines into the username and password prompts instead of running them, and neither the credentials nor the following commands end up correct. Also never pass the username or password as command-line arguments, since that would record the password in your shell history.
 
-.. code:: bash
+      Once credentials are set, enable the RDP server and start the service:
 
-    sudo chmod +x /usr/local/bin/ubuntu-session
+      .. code:: bash
 
-Finally, update the session manager to use the new session configuration:
+          sudo grdctl --system rdp enable
+          sudo systemctl enable --now gnome-remote-desktop.service
 
-.. code:: bash
+      .. note::
+          On EC2 instances, ``grdctl`` prints ``Init TPM credentials failed because No TPM device found, using GKeyFile as fallback`` on every invocation. This is expected, since EC2 instances have no TPM, and is harmless.
 
-    sudo update-alternatives --install /usr/bin/x-session-manager x-session-manager /usr/local/bin/ubuntu-session 60
+      Check that the service is running and listening on the RDP port:
+
+      .. code:: bash
+
+          sudo grdctl --system status
+          sudo ss -lntp | grep 3389
+
+   .. tab-item:: Ubuntu 24.04 LTS
+      :sync: ubuntu-24-04
+
+      .. warning::
+          This procedure only applies to Ubuntu 24.04 LTS. It doesn't work on Ubuntu 26.04 LTS and later, because GNOME Shell only supports Wayland sessions on those releases. If you're running 26.04 or later, switch to the :guilabel:`Ubuntu 26.04 LTS and later` tab instead.
+
+      Install the xrdp server:
+
+      .. code:: bash
+
+          sudo apt-get install -y xrdp
+
+      Configure it to use SSL to get an encrypted connection:
+
+      .. code:: bash
+
+          sudo usermod -a -G ssl-cert xrdp
+
+      Set up a password for the Ubuntu user:
+
+      .. code:: bash
+
+          sudo passwd ubuntu
+
+      Restart the service:
+
+      .. code:: bash
+
+          sudo systemctl restart xrdp
+
+      Next, configure the Ubuntu session used by the xrdp wrapper. Using Nano or your favorite text editor, create the following file:
+
+      .. code:: bash
+
+          sudo nano /usr/local/bin/ubuntu-session
+
+      Insert the following content:
+
+      .. code:: bash
+
+          #!/bin/sh
+
+          export GNOME_SHELL_SESSION_MODE=ubuntu
+          export DESKTOP_SESSION=ubuntu-xorg
+          export XDG_SESSION_DESKTOP=ubuntu-xorg
+          export XDG_CURRENT_DESKTOP=ubuntu:GNOME
+
+          exec /usr/bin/gnome-session --session=ubuntu
+
+      Make the script executable:
+
+      .. code:: bash
+
+          sudo chmod +x /usr/local/bin/ubuntu-session
+
+      Finally, update the session manager to use the new session configuration:
+
+      .. code:: bash
+
+          sudo update-alternatives --install /usr/bin/x-session-manager x-session-manager /usr/local/bin/ubuntu-session 60
 
 
 Connect to your instance
 ------------------------
 
-Connect to your instance using any RDP client, such as Remmina. You can get the public IP address of the instance from the EC2 console and the RDP connection port is 3389.
+.. tab-set::
 
-The default username for the EC2 instance is ``ubuntu``.
+   .. tab-item:: Ubuntu 26.04 LTS and later
+      :sync: ubuntu-26-04
 
-When prompted to input a password, use the password you configured for the user.
+      Connect to your instance using any RDP client, such as Remmina. You can get the public IP address of the instance from the EC2 console and the RDP connection port is 3389.
+
+      Since the connection uses a self-signed certificate, your RDP client will show a warning on the first connection; this is expected.
+
+      Connecting requires two rounds of authentication:
+
+      1. First, authenticate with the RDP credentials you set with ``grdctl --system rdp set-credentials`` to reach the GDM login screen.
+      2. Then, log in at the GDM screen with a real Linux user account, such as ``ubuntu``, using the password you set earlier.
+
+      This differs from xrdp, which only prompts once.
+
+      Once connected, GNOME shows a remote desktop indicator in the top bar with a stop control that ends the session when selected.
+
+   .. tab-item:: Ubuntu 24.04 LTS
+      :sync: ubuntu-24-04
+
+      Connect to your instance using any RDP client, such as Remmina. You can get the public IP address of the instance from the EC2 console and the RDP connection port is 3389.
+
+      The default username for the EC2 instance is ``ubuntu``.
+
+      When prompted to input a password, use the password you configured for the user.
