@@ -157,6 +157,6 @@ For more information, you can checkout the following resources
 .. _`ubuntu cloud image`: https://cloud-images.ubuntu.com
 .. _`Ubuntu on WSL`: https://ubuntu.com/wsl/docs/stable/
 .. _`Homebrew`: https://brew.sh/
-.. _`GnuPG`: https://www.gnupg.org/gph/en/manual/x135.html
+.. _`GnuPG`: https://www.gnupg.org/gph/en/manual.html
 .. _`Ubuntu Discourse`: https://discourse.ubuntu.com/
 .. _`SHA-2 checksum`: https://en.wikipedia.org/wiki/SHA-2

@@ -47,7 +47,7 @@ available as an add-on feature, and requires purchasing 'Ubuntu Pro + support'.
 .. _`Ubuntu in the public cloud`: https://ubuntu.com/cloud/public-cloud
 .. _`Release cycle`: https://ubuntu.com/about/release-cycle
 .. _`Ubuntu Pro overview`: https://ubuntu.com/pro
-.. _`Ubuntu Pro pricing and support levels`: https://ubuntu.com/pro/pricing
+.. _`Ubuntu Pro pricing and support levels`: https://ubuntu.com/pricing/pro
 .. _`Ubuntu Pro Client documentation`: https://documentation.ubuntu.com/pro-client/en/latest/
 .. _`Ask Ubuntu`: https://askubuntu.com/
 .. _`Ubuntu Discourse`: https://discourse.ubuntu.com/
