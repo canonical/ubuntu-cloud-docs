@@ -175,6 +175,7 @@ linkcheck_anchors_ignore_for_url = [
     # parser (confirmed by running linkcheck against it directly), even
     # though the anchors are present and the pages render fine for readers
     r"https://cloud\.ibm\.com/.*",
+    r"https://docs.cloud-init.io/.*",
 ]
 
 # How long the link checker will wait for a response for each request
@@ -231,6 +232,7 @@ extensions = [
 
 # Disable Sphinx tab closing
 sphinx_tabs_disable_tab_closing = True
+
 
 # Excludes files or directories from processing
 exclude_patterns = [

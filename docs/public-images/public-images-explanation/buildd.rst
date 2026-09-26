@@ -21,7 +21,7 @@ Buildd images are intended to be used for building Ubuntu packages or other Ubun
 * Deb packages for the `Ubuntu Archive <https://archive.ubuntu.com/>`_
 * Snaps for Canonical's `Snapcraft <https://snapcraft.io/>`_
 * Charms for Canonical's `Charmhub <https://charmhub.io/>`_
-* Ubuntu images based on the `Ubuntu Base <https://wiki.ubuntu.com/Base>`_ project.
+* Ubuntu images based on the Ubuntu Base project, which provides a minimal root filesystem for Ubuntu.
 
 
 Difference from other cloud images

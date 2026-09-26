@@ -41,6 +41,8 @@ This documentation uses the `Diátaxis documentation structure <https://diataxis
 
 * :ref:`How-to guides <public-images-how-to>` assume you have basic familiarity with Ubuntu images on public clouds and want to achieve specific goals. They are instructions covering key operations and common tasks involving different types of public Ubuntu cloud images.
 
+* :ref:`Reference <public-images-reference>` includes technical information about the artefacts that we generate and about our support options.
+
 * :ref:`Explanation <public-images-explanation>` includes topic overviews, background and context and detailed discussion. These include key topics, such as the different types of images that we build and support, security aspects and our image retention policy.
 
 ---------
@@ -70,8 +72,7 @@ Governance and policies
 
    public-images-how-to/index
    public-images-explanation/index
-   public-images-reference/artifacts
-   public-images-reference/support
+   public-images-reference/index
    public-images-how-to/contribute-to-these-docs
 
 .. _Get support: https://ubuntu.com/cloud/public-cloud
