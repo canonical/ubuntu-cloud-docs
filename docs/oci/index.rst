@@ -23,10 +23,6 @@ In this documentation
     :widths: 35 65
     :header-rows: 0
 
-
-    * - **Tutorial**
-      - :ref:`Create an Ubuntu FIPS Docker image <how-to-fips-ubuntu-container>`
-
     * - **Canonical's offerings**
       - :ref:`Ubuntu OCI container images <ubuntu-oci-container-images>` • :ref:`Ubuntu Pro OCI container images <ubuntu-pro-oci-container-images>` • :ref:`OCI image configuration <oci-image-configuration>` 
 
@@ -39,8 +35,6 @@ How this documentation is organized
 
 
 This documentation uses the `Diátaxis documentation structure <https://diataxis.fr/>`__.
-
-* The :ref:`Tutorial <how-to-fips-ubuntu-container>` takes you step-by-step through the basics of creating an Ubuntu FIPS Docker image.
 
 * :ref:`How-to guides <oci-how-to>` assume you have basic familiarity with Ubuntu images on OCI container registries and want to achieve specific goals. They are instructions for finding Ubuntu container images and deploying Ubuntu Pro containers on Kubernetes clusters.
 
@@ -80,7 +74,6 @@ Governance and policies
    :maxdepth: 1
    :hidden:
 
-   oci-tutorials/index
    oci-how-to/index
    oci-reference/index
    oci-explanation/index
