@@ -40,9 +40,9 @@ If using the AWS EC2 Console, scroll down to the :guilabel:`Advanced details` se
 
 If using the AWS CLI, add ``--cpu-options AmdSevSnp=enabled`` to your command:
 
-.. code::
+.. code:: bash
 
-    $ aws ec2 run-instances \
+    aws ec2 run-instances \
     --image-id supported_ubuntu_ami_id \
     --instance-type supported_instance_type \
     --key-name key_pair_name \
@@ -63,22 +63,24 @@ For the attestation process (which allows the instance to prove its state and id
 
 1. Install the requirements
 
-Install the compiler to build the tool:        
-    .. code:: 
+Install the compiler to build the tool:   
 
-            sudo apt install build-essential
+.. code:: bash 
+
+    sudo apt install build-essential
 
 
-Install rust using the `rustup`_ snap: 
-    .. code:: 
+Install rust using the `rustup`_ snap:
+ 
+.. code:: bash 
 
-        sudo snap install rustup --classic
-        rustup default stable
+    sudo snap install rustup --classic
+    rustup default stable
 
 
 2. Clone the ``snpguest`` repository:
 
-.. code:: 
+.. code:: bash 
 
     git clone https://github.com/virtee/snpguest.git
     cd snpguest
@@ -86,7 +88,7 @@ Install rust using the `rustup`_ snap:
 
 3. Build (~12 minutes)
 
-.. code:: 
+.. code:: bash 
 
     cargo build -r
 
@@ -97,7 +99,7 @@ Get the attestation report and validate it
 Get the attestation report (``report.bin``) using a randomly generated text file (``request-file.txt``)
 
 
-.. code::
+.. code:: bash
 
     cd target/release
     sudo ./snpguest report report.bin request-file.txt --random
@@ -107,7 +109,7 @@ Get the attestation report (``report.bin``) using a randomly generated text file
 Download the VLEK root of trust certificates from AMD for validation:
 
 
-.. code::
+.. code:: bash
 
     sudo curl --proto '=https' --tlsv1.2 \
               -sSf https://kdsintf.amd.com/vlek/v1/Milan/cert_chain \
@@ -116,14 +118,14 @@ Download the VLEK root of trust certificates from AMD for validation:
 
 (Optional) Use openssl to validate the certificate:
 
-.. code::
+.. code:: bash
 
     sudo openssl verify --CAfile ./cert_chain.pem vlek.pem
 
 
 Use ``snpguest`` to validate that the attestation report is signed by the VLEK certificate.
 
-.. code::
+.. code:: bash
 
     sudo ./snpguest verify attestation ./ report.bin
 
@@ -131,7 +133,7 @@ Use ``snpguest`` to validate that the attestation report is signed by the VLEK c
 
 The expected output should be:
 
-.. code::
+.. code:: bash
 
     Reported TCB Boot Loader from certificate matches the attestation report.
     Reported TCB TEE from certificate matches the attestation report.
