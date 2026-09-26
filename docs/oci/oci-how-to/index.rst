@@ -25,7 +25,7 @@ Ubuntu Pro
 Learn how to build your own Ubuntu Pro container image from a regular Ubuntu container image.
 
 * `Enable Ubuntu Pro services in a Dockerfile`_
-
+* `Create an Ubuntu FIPS Docker image`_
 
 Deployments
 -----------
@@ -49,4 +49,5 @@ information to add (whether it is a tutorial, a guide, or something else), this 
 
    contribute-to-these-docs
 
-.. _Enable Ubuntu Pro services in a Dockerfile: https://documentation.ubuntu.com/pro-client/en/latest/howtoguides/enable_in_dockerfile/
+.. _Enable Ubuntu Pro services in a Dockerfile: https://ubuntu.com/pro-client/docs/en/latest/howtoguides/enable_in_dockerfile/
+.. _Create an Ubuntu FIPS Docker image: https://ubuntu.com/pro-client/docs/en/latest/howtoguides/create_a_fips_docker_image/
