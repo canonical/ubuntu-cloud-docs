@@ -233,8 +233,6 @@ extensions = [
 # Disable Sphinx tab closing
 sphinx_tabs_disable_tab_closing = True
 
-llms_txt_suppress_unknown_node_warnings = True
-
 
 # Excludes files or directories from processing
 exclude_patterns = [
