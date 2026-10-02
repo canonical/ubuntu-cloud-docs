@@ -11,7 +11,7 @@ This guide will walk you through the steps needed to get an EKS cluster of FIPS-
 
 The process involves creating your custom EKS FIPS AMI using Packer, and then deploying it using ``eksctl``. To test and take a peek inside the cluster, ``kubectl`` can be used.
 
-For non-FIPS clusters, see :ref:`deploy-ubuntu-cluster-with-eks-ami` or :ref:`deploy-ubuntu-pro-cluster-with-eks-pro-ami`. For FIPS on OCI containers, see :ref:`FIPS Ubuntu container <oci:how-to-fips-ubuntu-container>`.
+For non-FIPS clusters, see :ref:`deploy-ubuntu-cluster-with-eks-ami` or :ref:`deploy-ubuntu-pro-cluster-with-eks-pro-ami`. For FIPS on OCI containers, see `Create an Ubuntu FIPS Docker image`_.
 
 
 Prerequisites
@@ -254,6 +254,8 @@ You should see an output similar to:
     |  m5.large|  2024-05-31T16:41:38+00:00  |  Ubuntu Pro Linux  |
     +----------+-----------------------------+--------------------+
 
+
+.. _Create an Ubuntu FIPS Docker image: https://ubuntu.com/pro-client/docs/en/latest/howtoguides/create_a_fips_docker_image/
 .. _`Packer installation instructions`: https://developer.hashicorp.com/packer/tutorials/docker-get-started/get-started-install-cli
 .. _`eksctl installation instructions`: https://docs.aws.amazon.com/eks/latest/eksctl/installation.html
 .. _`Packer`: https://developer.hashicorp.com/packer
