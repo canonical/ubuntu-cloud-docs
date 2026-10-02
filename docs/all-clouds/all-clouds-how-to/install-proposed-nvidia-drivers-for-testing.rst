@@ -18,7 +18,7 @@ NVIDIA drivers in the proposed pocket are unsigned.
         2. If you have customized ``apt`` configurations, these instructions may introduce conflicts.
         3. Once the proposed pocket is enabled, new drivers will be installed as available in the proposed pocket. To ensure that new unsigned drivers are not installed, the changes must be rolled back.
 
-.. For more details on installing proposed packages and Stable Release Update (SRU) testing see `Enable Proposed <https://wiki.ubuntu.com/Testing/EnableProposed>`__.
+For more details on installing proposed packages and Stable Release Update (SRU) testing see `Enable Proposed <https://ubuntu.com/project/docs/SRU/reference/enable-proposed/>`__.
 
 Enable the proposed pocket
 ------------------------------
