@@ -25,7 +25,6 @@ Performing upgrades:
 
 * :ref:`Change license between LTS and Pro <upgrade-in-place-from-lts-to-pro>`
 * :ref:`Enable Pro features <enable-pro-features>`
-* :ref:`Upgrade from Focal to Jammy <upgrade-from-focal-to-jammy>`
 * :ref:`Upgrade Ubuntu LTS release <upgrade-ubuntu-lts-release>`
 
 Administrative operations:
@@ -43,7 +42,6 @@ Administrative operations:
    Create customized docker containers <create-customized-docker-container>
    Change license between LTS and Pro <upgrade-in-place-from-lts-to-pro>
    Enable Pro features <enable-pro-features>   
-   Upgrade from Focal to Jammy <upgrade-from-focal-to-jammy>
    Upgrade Ubuntu LTS release <upgrade-ubuntu-lts-release>
    Set hostname <set-hostname-using-cloudinit>
    Use 64K page kernel on ARM64 <arm64-on-google-cloud>

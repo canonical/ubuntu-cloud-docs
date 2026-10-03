@@ -20,7 +20,6 @@ While using Ubuntu on GCP, you'll need to perform tasks such as finding the righ
 * :ref:`Create customized docker containers <create-customized-docker-container>`
 * :ref:`Change license between LTS and Pro <upgrade-in-place-from-lts-to-pro>`
 * :ref:`Enable Pro features <enable-pro-features>`
-* :ref:`Upgrade from Focal to Jammy <upgrade-from-focal-to-jammy>`
 * :ref:`Upgrade Ubuntu LTS release <upgrade-ubuntu-lts-release>`
 * :ref:`Set hostname <set-hostname-using-cloudinit>`
 * :ref:`Use 64K page kernel on ARM64 instances <arm64-on-google-cloud>`
