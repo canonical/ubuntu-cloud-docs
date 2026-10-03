@@ -34,7 +34,7 @@ In this documentation
       - :ref:`Find images <find-ubuntu-images>` • :ref:`Create instances <create-different-instance-types>` • :ref:`Launch a desktop <launch-ubuntu-desktop>` • :ref:`Use 64K page kernel on ARM64 instances <arm64-on-google-cloud>`
       
     * - **Upgrades and maintenance**
-      - :ref:`Switch between LTS and Pro <upgrade-in-place-from-lts-to-pro>` • :ref:`Enable Ubuntu Pro features <enable-pro-features>` • :ref:`Upgrade from Focal to Jammy <upgrade-from-focal-to-jammy>` 
+      - :ref:`Switch between LTS and Pro <upgrade-in-place-from-lts-to-pro>` • :ref:`Enable Ubuntu Pro features <enable-pro-features>` • :ref:`Upgrade from Focal to Jammy <upgrade-from-focal-to-jammy>` • :ref:`Upgrade Ubuntu LTS release <upgrade-ubuntu-lts-release>`
 
     * - **Creating golden images**
       - :ref:`Build a Pro golden image <build-ubuntu-pro-golden-image>`
