@@ -13,3 +13,4 @@ AWS provides multiple features for additional security, many of which are suppor
    :maxdepth: 1
 
    Use Secure Boot and TPM <use-secureboot-and-vtpm>
+   Generate an SPDX SBOM from an AMI <generate-spdx-sbom>

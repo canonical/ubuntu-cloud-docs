@@ -345,6 +345,8 @@ runtimes
 rustc
 rustup
 SaaS
+SBOM
+SBOMs
 scalability
 SDK
 SeaBIOS
@@ -362,6 +364,7 @@ SNP
 softwares
 sqlcmd
 SquashFS
+Syft
 SRU
 ssd
 SSH
