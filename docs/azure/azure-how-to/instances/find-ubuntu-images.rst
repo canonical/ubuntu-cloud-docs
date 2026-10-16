@@ -134,7 +134,46 @@ Interim releases
 ~~~~~~~~~~~~~~~~
 
 To learn more about the difference between LTS releases and interim releases, see `this page <https://ubuntu.com/about/release-cycle#ubuntu>`_.
-There are currently no actively-supported Interim releases.
+
+Ubuntu 26.10 - Stonking Stingray
+++++++++++++++++++++++++++++++++
+
+| Quick start: `26.10 on Azure <https://portal.azure.com/#create/canonical.ubuntu-26_10server>`_
+| Quick start (China): `26.10 on Azure China <https://portal.azure.cn/#create/canonical.ubuntu-26_10server>`_
+
+.. list-table::
+   :widths: 10 10 12 68
+   :header-rows: 1
+
+   * - **Flavor**
+     - **Arch**
+     - **Hyper-V**
+     - **URN**
+   * - Server
+     - AMD64
+     - Gen2
+     - ``Canonical:ubuntu-26_10:server:latest``
+   * - Server
+     - AMD64
+     - Gen1
+     - ``Canonical:ubuntu-26_10:server-gen1:latest``
+   * - Server
+     - ARM64
+     - Gen2
+     - ``Canonical:ubuntu-26_10:server-arm64:latest``
+   * - Minimal
+     - AMD64
+     - Gen2
+     - ``Canonical:ubuntu-26_10:minimal:latest``
+   * - Minimal
+     - AMD64
+     - Gen1
+     - ``Canonical:ubuntu-26_10:minimal-gen1:latest``
+   * - Minimal
+     - ARM64
+     - Gen2
+     - ``Canonical:ubuntu-26_10:minimal-arm64:latest``
+
 
 .. _find-ubuntu-pro-on-azure:
 
