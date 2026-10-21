@@ -32,6 +32,8 @@ Ubuntu 24.04 LTS for EKS 1.34,AMD64,``prod-yekviic7ygm5u``,✓
 Ubuntu 24.04 LTS for EKS 1.34,ARM64,``prod-ock7ogk6tq4zk``,✓
 Ubuntu 24.04 LTS for EKS 1.35,AMD64,``prod-qrmo5s6td573i``,✓
 Ubuntu 24.04 LTS for EKS 1.35,ARM64,``prod-wv777awwyqv22``,✓
+Ubuntu 24.04 LTS for EKS 1.37,AMD64,``prod-ixxcs2znjh4fw``,
+Ubuntu 24.04 LTS for EKS 1.37,ARM64,``prod-nz4cdqxuchrvu``,
 Ubuntu 26.04 LTS for EKS 1.35,AMD64,``prod-wga2stu75iniw``,✓
 Ubuntu 26.04 LTS for EKS 1.35,ARM64,``prod-5wal3hwl2lgnu``,✓
 Ubuntu Pro 20.04 LTS for EKS 1.29,AMD64,``prod-4yrqysyuk6vts``,✓
@@ -68,6 +70,8 @@ Minimal Ubuntu Server 26.04 LTS,AMD64,``prod-t2g5uxqa5bm72``,
 Minimal Ubuntu Server 26.04 LTS,ARM64,``prod-fijpm2fiyfnlw``,
 Ubuntu 26.04 LTS for EKS 1.36,AMD64,``prod-kie2qh25ynmau``,
 Ubuntu 26.04 LTS for EKS 1.36,ARM64,``prod-zdcxdwxjikuoo``,
+Ubuntu 26.04 LTS for EKS 1.37,AMD64,``prod-44otonv552eks``,
+Ubuntu 26.04 LTS for EKS 1.37,ARM64,``prod-oqdikosigwm3c``,
 Ubuntu Pro 18.04 LTS,AMD64,``52fc9672-92b0-4e8f-bf3c-beb17f440d3c``,
 Ubuntu Pro 18.04 LTS,ARM64,``prod-4ozfvg7cjxzym``,
 Ubuntu Pro 20.04 LTS,AMD64,``3a628887-30de-4d23-a949-93b32e4e4c5f``,
@@ -79,8 +83,12 @@ Ubuntu Pro 24.04 LTS,AMD64,``prod-q5jepvjcz2m2e``,
 Ubuntu Pro 24.04 LTS,ARM64,``prod-wskljcxyparyu``,
 Ubuntu Pro 24.04 LTS for EKS 1.36,AMD64,``prod-5c6gqlsgspm44``,
 Ubuntu Pro 24.04 LTS for EKS 1.36,ARM64,``prod-gd6io7wgh55dg``,
+Ubuntu Pro 24.04 LTS for EKS 1.37,AMD64,``prod-k5pk6kif3blrc``,
+Ubuntu Pro 24.04 LTS for EKS 1.37,ARM64,``prod-qb3zurczd5nsc``,
 Ubuntu Pro 26.04 LTS for EKS 1.36,AMD64,``prod-hm3z4zpuyf4sq``,
 Ubuntu Pro 26.04 LTS for EKS 1.36,ARM64,``prod-greqei6wwh4em``,
+Ubuntu Pro 26.04 LTS for EKS 1.37,AMD64,``prod-lrfjygki4alc2``,
+Ubuntu Pro 26.04 LTS for EKS 1.37,ARM64,``prod-23ciiybvjc7r4``,
 Ubuntu Server 26.04 LTS,AMD64,``prod-qls2nau5pwovi``,
 Ubuntu Server 26.04 LTS,ARM64,``prod-vnoa6ytsnfhds``,
 Ubuntu 26.10 - Stonking Stingray,AMD64,``prod-libed5alqhc2u``,
