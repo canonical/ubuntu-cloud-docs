@@ -3,11 +3,21 @@
 
 .. _upgrade-in-place-from-lts-to-pro:
 
-Upgrade from Ubuntu to Ubuntu Pro using AWS License Manager
-===========================================================
+Upgrade from Ubuntu LTS to Ubuntu Pro using AWS License Manager
+===============================================================
 
+Overview
+--------
 
-AWS allows users to upgrade Ubuntu LTS instances to `Ubuntu Pro`_ using the `AWS License Manager`_.
+`Ubuntu Pro`_ expands Ubuntu LTS’ standard security maintenance from 5 to 10 years, with an additional 5 years available through the Legacy add-on. It also expands security coverage beyond the main repository to thousand of packages in the Universe repository.
+
+There are three ways to get Ubuntu Pro on AWS:
+
+1. Launch a fresh instance of Ubuntu Pro from the AWS Marketplace or EC2 console, ready to use with a pay-as-you-go pricing model.
+2. Upgrade an existing instance to Ubuntu Pro using AWS License Manager.
+3. Attach an Ubuntu Pro token to any running Ubuntu LTS instance.
+
+This how-to covers the second option: Upgrading to Ubuntu Pro using `AWS License Manager`_.
 
 
 Requirements
@@ -17,7 +27,7 @@ Requirements
 * The instances must be managed by `AWS Systems Manager`_ (SSM)
     * To check if your instances are managed by SSM, in the `SSM console`_, check if they appear as managed nodes under :guilabel:`Systems Manager` > :guilabel:`Node Management` > :guilabel:`Fleet Manager` > :guilabel:`Managed nodes`
     * If they don't, follow the `AWS instructions for configuring your instance permissions`_ or refer to this tutorial on `enabling AWS SSM`_ to create an IAM role and access your instances with SSM
-    * You may need to either restart the instance or restart the SSM agent by running:
+    * If the role has been recently enabled, you may need to either restart the instance or the SSM agent by running:
 
     .. code::
         
@@ -29,7 +39,7 @@ Requirements
     
     sudo apt install ubuntu-advantage-tools
 
-* If you have removed ``cloud-init`` from your instance for any reason, you'll need to reinstall it for the Pro commands to work correctly.
+* If you have a custom LTS image which hasn't run ``cloud-init`` for the first time in AWS, you'll need to run ``sudo cloud-init clean`` and reboot for the Pro commands to work correctly.
 
 * To give the required network access to your instances, refer to the Ubuntu Pro related `network requirements`_ and `proxy configuration`_
 
@@ -38,17 +48,18 @@ Requirements
 Upgrade to Ubuntu Pro
 ---------------------
 
-Once you have checked all the requirements from the previous section, go to the `EC2 dashboard`_ and stop all the instances that you would like to upgrade. Running instances cannot be selected for an upgrade in the `AWS License Manager`.
+Once you have checked all the requirements from the previous section, go to the `EC2 dashboard`_ and **stop all the instances** that you would like to upgrade. Running instances cannot be selected for an upgrade in the `AWS License Manager`.
 
 * Go to :guilabel:`AWS License Manager` > :guilabel:`License type conversion` and select :guilabel:`Create license type conversion` on the right corner.
 
 * Select :guilabel:`Ubuntu LTS` as the source operating system and from the list of available instances, select all the instances that you want to upgrade.
 
-* Select *Ubuntu Pro* for the :guilabel:`License type destination`.
+
+* Choose :guilabel:`Ubuntu Pro License Manager Upgrade (x86/Arm)` as the target :guilabel:`License type destination` (Note: This option upgrades you to Ubuntu Pro as a Marketplace subscription, so you can opt-in later to volume discount and Private Offers. Selecting :guilabel:`Ubuntu Pro` as a destination license will also upgrade you to Ubuntu Pro, but as an EC2 license.
 
 * Select :guilabel:`Convert` after reviewing the selected instances and license type.
 
-The conversion can take some time and once done the conversion status will show ``Success`` in the `AWS License Manager`_ console. You can also verify the upgrade by logging into one of the instances and running:
+The conversion can take a few minutes. Once done the conversion status will show ``Success`` in the `AWS License Manager`_ console. You can also verify the upgrade by logging into one of the instances and running:
 
 .. code::
     
