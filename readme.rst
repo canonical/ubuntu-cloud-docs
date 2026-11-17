@@ -29,7 +29,7 @@ Once cloned, run::
 	make install
 
 This invokes the ``install`` command from the ``Makefile``, which creates a
-virtual environment (``.sphinx/venv``) and installs all the dependencies specified in
+virtual environment (``docs/.venv``) and installs all the dependencies specified in
 ``docs/requirements.txt``.
 
 
