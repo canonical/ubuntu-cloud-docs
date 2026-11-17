@@ -52,8 +52,8 @@ The command:
 * sends a reload page signal to the browser when the documentation is rebuilt
 
 (This is the most convenient way to work on the documentation, but you can still use
-the more standard ``make html``. For instance, ``PROJECT=azure make html`` will create the 
-azure related html pages in _build/azure.)
+the more standard ``make html``. For instance, ``PROJECT=azure make html`` will create the
+azure related html pages in ``docs/_build``.)
 
 
 Check spelling
