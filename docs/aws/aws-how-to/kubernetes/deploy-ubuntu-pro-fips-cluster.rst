@@ -122,10 +122,10 @@ Define a cluster and its worker nodes (``my-fips-cluster.yaml``):
         instanceType: m5.large
         desiredCapacity: 3
         amiFamily: UbuntuPro2204
-        ami: <<INSERT_YOUR_EKSPRO_FIPS_AMI_ID>>
+        ami: <ekspro-fips-ami-id>
         ssh:
             allow: true
-            publicKeyName: <<INSERT_YOUR_KEYPAIR_NAME>>
+            publicKeyName: <keypair-name>
             enableSsm: true
 
         overrideBootstrapCommand: |
@@ -213,9 +213,9 @@ Using kubectl, check if the new FIPS nodes are attached to the cluster:
     kubectl get nodes -o wide
 
 
-You should see an output similar to:
+You should see an output similar to the following:
 
-..  code-block:: bash
+..  code-block:: text
 
     NAME                             STATUS   ROLES    AGE     VERSION   INTERNAL-IP      EXTERNAL-IP      OS-IMAGE             KERNEL-VERSION         CONTAINER-RUNTIME
     ip-192-168-24-23.ec2.internal    Ready    <none>   2m17s   v1.29.3   192.168.24.23    54.224.xxx.xxx   Ubuntu 22.04.4 LTS   5.15.0-1062-aws-fips   containerd://1.7.2
@@ -238,14 +238,14 @@ Run:
 ..  code-block:: bash
 
     aws ec2 describe-instances \
-        --region <<YOUR_REGION>> \
+        --region <region-name> \
         --filters "Name=instance-state-name,Values=running" "Name=tag:eksctl.io/v1alpha2/nodegroup-name,Values=ng-ubuntu-fips" \
         --query 'Reservations[].Instances[].[InstanceType, LaunchTime, PlatformDetails]' \
         --output table
 
-You should see an output similar to:
+You should see an output similar to the following:
 
-..  code-block::
+..  code-block:: text
 
     ---------------------------------------------------------------
     |                      DescribeInstances                      |

@@ -183,9 +183,9 @@ To find images on AWS, you can use the `SSM Parameter Store`_, the `describe-ima
          .. tab:: EC2
                Sign in to the `EC2 console`_.
 
-               In the navigation pane on the left, choose :guilabel:`Images` > :guilabel:`AMIs`.
+               In the left navigation pane, choose **Images** > **AMIs**.
                
-               From the drop-down next to the search bar, choose :guilabel:`Public images`.
+               From the drop-down next to the search bar, choose **Public images**.
                
                Apply the following two search filters:
 
@@ -203,9 +203,9 @@ To find images on AWS, you can use the `SSM Parameter Store`_, the `describe-ima
                      AMI name: ubuntu/images/hvm-ssd-gp3/ubuntu-resolute-26.04-amd64-server
                
 
-               Select the most recent image based on *Creation date*.
+               Select the most recent image based on Creation date.
 
-               Choose :guilabel:`Launch instance from image` (or copy the AMI ID for CLI use).
+               Choose **Launch instance from image** (or copy the AMI ID for CLI use).
 
                **AMI name filter syntax**
 
@@ -222,9 +222,9 @@ To find images on AWS, you can use the `SSM Parameter Store`_, the `describe-ima
          .. tab:: EKS
                Sign in to the `EC2 console`_.
                
-               In the left navigation pane, choose :guilabel:`Images` > :guilabel:`AMIs`.
+               In the left navigation pane, choose **Images** > **AMIs**.
                
-               From the drop‑down next to the search bar, choose :guilabel:`Public images`.
+               From the drop‑down next to the search bar, choose **Public images**.
 
                Apply the following two search filters:
 
@@ -244,7 +244,7 @@ To find images on AWS, you can use the `SSM Parameter Store`_, the `describe-ima
 
                Select the most recent image based on Creation date
                
-               Choose :guilabel:`Launch instance from image` (or copy the AMI ID for CLI use).
+               Choose **Launch instance from image** (or copy the AMI ID for CLI use).
 
                **AMI name filter syntax**
 

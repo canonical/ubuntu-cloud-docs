@@ -95,7 +95,7 @@ Once the machine is up and running, open an SSH session to your machine. If you 
 
 .. code::
 
-        ssh -i <<YOUR_KEYPAIR>> ubuntu@<<YOUR_MACHINE_IP>>
+        ssh -i <keypair-name> ubuntu@<machine-ip>
 
 
 

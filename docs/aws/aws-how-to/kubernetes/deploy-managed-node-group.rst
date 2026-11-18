@@ -66,7 +66,12 @@ Make a note of the template ID since it'll be needed in the next step.
 Create a managed node group for an existing cluster
 """""""""""""""""""""""""""""""""""""""""""""""""""
 
-To create a managed node group for an existing cluster or even to create a new cluster of managed nodes, you'll need to define the node groups in a YAML file (e.g. ``my-ubuntu-cluster.yaml``):
+To create a managed node group for an existing cluster or a new cluster of managed nodes, 
+you'll need to define the node groups in a YAML file, for example, ``my-ubuntu-cluster.yaml``.
+
+Use the following template to create the YAML file, 
+replacing the region with your desired AWS region and the 
+id with your Launch Template ID:
 
 ..  code-block:: yaml
 
@@ -76,7 +81,7 @@ To create a managed node group for an existing cluster or even to create a new c
 
     metadata:
         name: My-Ubuntu-Cluster
-        region: us-east-1 # Replace with your desired AWS region
+        region: us-east-1
         version: "1.33"
 
     iam:
@@ -85,7 +90,7 @@ To create a managed node group for an existing cluster or even to create a new c
     managedNodeGroups:
       - name: my-managed-ng
         launchTemplate:
-            id: lt-xxxxxxx # Replace with your Launch Template ID
+            id: lt-xxxxxxx
             version: "1"
         minSize: 1
         desiredCapacity: 2

@@ -234,11 +234,11 @@ Create the EKS cluster
 
 To create the EKS cluster, run ``eksctl create cluster -f cluster.yaml``
 (you might need to specify the ``--profile`` option if you have multiple
-profiles). When this command finishes, see the nodes with
+profiles). When this command finishes, you can view the statues of the nodes by running ``kubectl get nodes``. You should see an output similar to:
 
-..  code-block:: bash
+You should see an output similar to the following:
 
-    $ kubectl get nodes
+..  code-block:: text
 
     NAME                                           STATUS   ROLES    AGE     VERSION
     ip-xxx-xxx-xx-xxx.us-east-1.compute.internal   Ready    <none>   2m45s   v1.32.x

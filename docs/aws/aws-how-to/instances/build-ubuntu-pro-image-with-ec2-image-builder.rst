@@ -32,8 +32,8 @@ Before using the component in a pipeline, you must subscribe to it on the AWS Ma
    * `Ubuntu Pro Component for EC2 Image Builder (AMD)`_
    * `Ubuntu Pro Component for EC2 Image Builder (Arm)`_
 
-2. Choose :guilabel:`View purchase options`.
-3. Review the terms and choose :guilabel:`Accept Terms`.
+2. Choose **View purchase options**.
+3. Review the terms and choose **Accept Terms**.
 4. Wait for the subscription to become active.
 
 .. note::
@@ -49,12 +49,12 @@ An image recipe defines the base image and the components to apply during a buil
 To add the Ubuntu Pro component to your image:
 
 1. Open the `EC2 Image Builder console`_.
-2. In the left navigation pane, choose :guilabel:`Image recipes`, then choose :guilabel:`Create image recipe`.
+2. In the left navigation pane, choose **Image recipes**, then choose **Create image recipe**.
 3. Enter a name and version for the recipe.
-4. Under :guilabel:`Base image`, choose :guilabel:`Select managed images` and search for ``ubuntu``. Select the Ubuntu LTS AMI that matches your target architecture (e.g. Ubuntu 24.04 LTS for AMD or ARM).
-5. Under :guilabel:`Components`, choose :guilabel:`Add components`.
-6. Switch to the :guilabel:`AWS Marketplace` tab and search for ``Ubuntu Pro``.
-7. Select :guilabel:`Ubuntu Pro Component for EC2 Image Builder` (or the ARM variant) and choose :guilabel:`Add component`.
+4. Under **Base image**, choose **Select managed images** and search for ``ubuntu``. Select the Ubuntu LTS AMI that matches your target architecture (e.g. Ubuntu 24.04 LTS for AMD or ARM).
+5. Under **Components**, choose **Add components**.
+6. Switch to the **AWS Marketplace** tab and search for ``Ubuntu Pro``.
+7. Select **Ubuntu Pro Component for EC2 Image Builder** (or the ARM variant) and select **Add component**.
 8. Optionally, add any additional build or test components for your workload.
 9. Follow the AWS documentation to complete the infrastructure and distribution configuration, then create and run your pipeline.
 
@@ -64,7 +64,7 @@ Verify the resulting AMI
 
 Once the pipeline run completes:
 
-1. In the pipeline details page, choose the completed image version to view its ARN and AMI ID.
+1. In the pipeline details page, select the completed image version to view its ARN and AMI ID.
 2. Launch an instance from the AMI.
 3. Connect to the instance and confirm that Pro is active:
 

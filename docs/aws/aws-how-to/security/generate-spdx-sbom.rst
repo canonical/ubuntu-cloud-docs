@@ -229,6 +229,8 @@ number, which is the volume ID without the dash:
 
    lsblk -o NAME,SIZE,FSTYPE,LABEL,SERIAL,MOUNTPOINT | grep -v loop
 
+You should see an output similar to the following:
+
 .. code-block:: text
 
    nvme1n1          8G                          vol0cffc917af5a486af
@@ -237,17 +239,31 @@ number, which is the volume ID without the dash:
    `-nvme1n1p16   913M ext4     BOOT
 
 Mount the root partition. The mount options make sure that nothing is written
-to the disk, not even a journal replay:
+to the disk, not even a journal replay.
+
+Run the following command to create the mount point directory: 
 
 .. code-block:: bash
 
    sudo mkdir -p /mnt/ami
 
-   # ext4 (Ubuntu, Debian, ...)
+Then, depending on your filesystem type, run one of the following commands to 
+mount the root partition read-only. 
+
+For an ext4 filesystem (such as Ubuntu or Debian), run:
+
+.. code-block:: bash
    sudo mount -o ro,noload /dev/nvme1n1p1 /mnt/ami
 
-   # XFS (Amazon Linux 2023, RHEL, ...)
+For an XFS filesystem (such as Amazon Linux 2023 or RHEL), run:
+
+.. code-block:: bash
    sudo mount -t xfs -o ro,norecovery,nouuid /dev/nvme1n1p1 /mnt/ami
+
+To verify that the mount was successful, you can run:
+
+.. code-block:: bash
+   findmnt -R /mnt/ami
 
 * **Always mount by device path, never by label or UUID.** If the helper runs
   the same distribution, both disks have the same label (both were
@@ -572,19 +588,20 @@ Notes on the Inspector export:
 
 Verify an SBOM
 --------------
+You can use ``jq`` to perform quick checks on the generated SBOM.
 
-Quick checks with ``jq``:
+To check the SPDX version, document name, or package count, run the following command:
 
 .. code-block:: bash
-
-   # SPDX version, document name, and package count
    jq -r '.spdxVersion, .name, (.packages|length)' ami-sbom.spdx.json
 
-   # Package count per ecosystem (purl type)
+To check the package count per ecosystem (purl type), run the following command:
+.. code-block:: bash
    jq -r '[.packages[].externalRefs[]? | select(.referenceType=="purl")
            | .referenceLocator | split("/")[0]] | group_by(.) | map("\(.[0]) \(length)") | .[]' ami-sbom.spdx.json
 
-   # Look up specific packages
+To look up a specific package, run the following command:
+.. code-block:: bash
    jq -r '.packages[] | select(.name=="openssl") | "\(.name) \(.versionInfo) \(.licenseDeclared)"' ami-sbom.spdx.json
 
 For a schema-level check, use the `SPDX tools-python`_ project:

@@ -34,11 +34,11 @@ After switching to one of the regions mentioned above, launch the instance by en
 
 You can do it using either the AWS EC2 console or the AWS CLI.
 
-If using the AWS EC2 Console, scroll down to the :guilabel:`Advanced details` section and within it, scroll down to :guilabel:`AMD SEV-SNP selector` and select 'Enabled':
+If you are using the AWS EC2 Console, scroll down to the **Advanced details** section, find the **AMD SEV-SNP selector** and select **Enabled**:
 
 .. image:: launch-and-attest-amd-sev-snp-instances-images/enable-amd-sev-snp.png
 
-If using the AWS CLI, add ``--cpu-options AmdSevSnp=enabled`` to your command:
+If you are using the AWS CLI, add ``--cpu-options AmdSevSnp=enabled`` to your command:
 
 .. code:: bash
 

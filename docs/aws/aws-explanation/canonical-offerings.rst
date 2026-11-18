@@ -21,11 +21,11 @@ For each Ubuntu release, Canonical delivers multiple customized images to AWS. T
 
 * Ubuntu Pro with `real-time kernel`_ - These are Ubuntu Pro images with a real-time kernel in them. They are used by enterprises in the automotive, industrial, and telecommunication sectors to unlock real-time compute and reduce development time by validating their code in a cloud environment.
 
-* `Ubuntu server EKS images`_ - These are optimized AMIs that run as worker nodes in Amazon's Elastic Kubernetes Service (EKS). They include the AWS-optimized kernel, a slimmed-down minimal version of Ubuntu, and are optimized for performance and security on EKS clusters. They also come with the Kubernetes worker node related software such as ``kubelet`` and ``kubectl``.
+* `Ubuntu Server EKS images`_ - These are optimized AMIs that run as worker nodes in Amazon's Elastic Kubernetes Service (EKS). They include the AWS-optimized kernel, a slimmed-down minimal version of Ubuntu, and are optimized for performance and security on EKS clusters. They also come with the Kubernetes worker node related software such as ``kubelet`` and ``kubectl``.
 
 * Ubuntu Pro EKS images - These are Ubuntu Pro AMIs optimized to run as worker nodes on EKS. They are similar to the Ubuntu Server EKS images, but also include all the premium features of an Ubuntu Pro image such as certified components, hardening options, kernel livepatch and expanded security maintenance.
 
-Each of these variations have multiple versions that are released at regular intervals. For instance, untested dailies may be published every day, while the fully tested release versions include interim versions published every six months and long-term support (LTS) versions published every 2 years.
+Each of these variations have multiple versions that are released at regular intervals. For instance, untested dailies may be published every day, while the fully tested release versions include interim versions published every six months and long-term support (LTS) versions published every two years.
 
 The different variations and the means to find them in AWS are summarized below: 
 
@@ -107,7 +107,7 @@ Charmed Kubeflow on AWS
 .. _`24/7 enterprise-grade support`: https://ubuntu.com/aws/support
 .. _`Ubuntu Pro FIPS images`: https://ubuntu.com/aws/fips
 .. _`real-time kernel`: https://ubuntu.com/real-time
-.. _`Ubuntu server EKS images`: https://cloud-images.ubuntu.com/docs/aws/eks/
+.. _`Ubuntu Server EKS images`: https://cloud-images.ubuntu.com/docs/aws/eks/
 .. _`ebs-gp3 volumes`: https://aws.amazon.com/ebs/general-purpose/
 .. _`Elastic Fabric Adapter`: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/efa.html
 .. _`Nitro enclaves driver`: https://docs.aws.amazon.com/enclaves/latest/user/nitro-enclave.html
