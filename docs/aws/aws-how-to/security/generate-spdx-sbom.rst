@@ -253,16 +253,19 @@ mount the root partition read-only.
 For an ext4 filesystem (such as Ubuntu or Debian), run:
 
 .. code-block:: bash
+
    sudo mount -o ro,noload /dev/nvme1n1p1 /mnt/ami
 
 For an XFS filesystem (such as Amazon Linux 2023 or RHEL), run:
 
 .. code-block:: bash
+   
    sudo mount -t xfs -o ro,norecovery,nouuid /dev/nvme1n1p1 /mnt/ami
 
 To verify that the mount was successful, you can run:
 
 .. code-block:: bash
+   
    findmnt -R /mnt/ami
 
 * **Always mount by device path, never by label or UUID.** If the helper runs
@@ -593,6 +596,7 @@ You can use ``jq`` to perform quick checks on the generated SBOM.
 To check the SPDX version, document name, or package count, run the following command:
 
 .. code-block:: bash
+
    jq -r '.spdxVersion, .name, (.packages|length)' ami-sbom.spdx.json
 
 To check the package count per ecosystem (purl type), run the following command:

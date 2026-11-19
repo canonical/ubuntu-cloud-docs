@@ -31,10 +31,9 @@ Access keys have to be created and set up to access the various AWS services and
 Create an access key using the **Access keys** tab on the **Security credentials** page of a logged in user. You can find the **Security credentials** page by clicking on your account name in the top right corner of the AWS console and selecting **My Security Credentials**.
 
 #. Select **Create access key**
-#. Set the **Use case** to **Command Line Interface (CLI)**, provide the required confirmation by 
-ticking the check-box and select **Next**.
+#. Under Use case, choose **Command Line Interface (CLI)**. Provide the required confirmation by ticking the check-box, and select **Next**
 #. Optionally set a description tag and select **Create access key**
-#. Save the created Access key ID and Secret access key 
+#. Save the created **Access key ID** and **Secret access key** 
 
 
 Install AWS CLI
