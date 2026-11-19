@@ -54,8 +54,9 @@ Once you have checked all the requirements from the previous section, go to the 
 
 * Choose **Ubuntu LTS** as the source operating system and from the list of available instances, select all the instances that you want to upgrade.
 
-* Choose **Ubuntu Pro License Manager Upgrade (x86/Arm)** as the target License type destination 
-(Note: This option upgrades you to Ubuntu Pro as a Marketplace subscription, so you can opt-in later to volume discount and Private Offers. Selecting Ubuntu Pro as a destination license will also upgrade you to Ubuntu Pro, but as an EC2 license.
+* Choose **Ubuntu Pro License Manager Upgrade (x86/Arm)** as the target **License type destination**.
+
+  This option upgrades you to Ubuntu Pro as a Marketplace subscription, so you can opt in later to volume discounts and Private Offers. Selecting Ubuntu Pro as a destination license will also upgrade you to Ubuntu Pro, but as an EC2 license.
 
 * After reviewing the selected instances and license type, select **Convert**.
 

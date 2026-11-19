@@ -63,7 +63,7 @@ To create the task:
 
     If you also want to run this task for future instances, use the **Selecting registered target groups** option instead. Target groups are configured in `AWS Resource Groups` console and uses tags and other options for grouping instances.
 
-* If you need to store the output from the operation in an external repository such as S3, you can enable it under **Output options**`. Otherwise, you can always browse the results from the AWS console.
+* If you need to store the output from the operation in an external repository such as S3, you can enable it under **Output options**. Otherwise, you can always browse the results from the AWS console.
 
 * Under **Rate control** you can configure:
 
