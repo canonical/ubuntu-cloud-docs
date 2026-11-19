@@ -600,12 +600,16 @@ To check the SPDX version, document name, or package count, run the following co
    jq -r '.spdxVersion, .name, (.packages|length)' ami-sbom.spdx.json
 
 To check the package count per ecosystem (purl type), run the following command:
+
 .. code-block:: bash
+
    jq -r '[.packages[].externalRefs[]? | select(.referenceType=="purl")
            | .referenceLocator | split("/")[0]] | group_by(.) | map("\(.[0]) \(length)") | .[]' ami-sbom.spdx.json
 
 To look up a specific package, run the following command:
+
 .. code-block:: bash
+
    jq -r '.packages[] | select(.name=="openssl") | "\(.name) \(.versionInfo) \(.licenseDeclared)"' ami-sbom.spdx.json
 
 For a schema-level check, use the `SPDX tools-python`_ project:
