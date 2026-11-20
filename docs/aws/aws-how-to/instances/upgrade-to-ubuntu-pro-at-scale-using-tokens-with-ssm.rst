@@ -30,7 +30,7 @@ Prerequisites
 - A basic understanding of `how to write and run SSM Documents <https://docs.aws.amazon.com/systems-manager/latest/userguide/documents-creating-content.html>`_
 
 
-Create an SSM Document to attach the token
+Create an SSM document to attach the token
 --------------------------------------------
 
 .. admonition:: What is an SSM document?

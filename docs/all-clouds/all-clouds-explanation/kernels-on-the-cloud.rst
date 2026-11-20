@@ -47,7 +47,7 @@ LTS package
 
 The LTS kernel package (``linux-<cloud>-lts-<release>``) maintains the stable kernel associated to a specific release for the standard support lifetime of the release. This package behaves in a manner similar to the ``linux-generic`` kernel package. The only difference is that there are no cloud-specific enhancements in the ``linux-generic`` package.
 
-The LTS kernel is more stable than the HWE kernel since it is the accumulation of multiple HWE kernels and is highly scrutinized since the LTS package is only produced every 2 years alongside LTS releases. This kernel does not usually receive feature upgrades, and is generally limited to bug, security, and performance patches.
+The LTS kernel is more stable than the HWE kernel since it is the accumulation of multiple HWE kernels and is highly scrutinized since the LTS package is only produced every two years alongside LTS releases. This kernel does not usually receive feature upgrades, and is generally limited to bug, security, and performance patches.
 
 .. _edge-kernel:
 

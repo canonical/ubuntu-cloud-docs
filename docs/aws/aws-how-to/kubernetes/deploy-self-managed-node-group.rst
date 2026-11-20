@@ -126,11 +126,10 @@ Validation
 ----------
 
 If you have kubectl installed and configured, run ``kubectl get nodes -o wide``
-to get extended information about your clusters:
+to get extended information about your clusters. You should see an output similar to the following:
 
 .. code-block:: text
 
-   kubectl get nodes -o wide
    NAME                             STATUS   ROLES    AGE    VERSION   INTERNAL-IP      EXTERNAL-IP      OS-IMAGE           KERNEL-VERSION           CONTAINER-RUNTIME
    ip-192-168-23-188.ec2.internal   Ready    <none>   3h3m   v1.36.2   192.168.23.188   100.62.88.240    Ubuntu 26.04 LTS   7.0.0-1010-aws (amd64)   containerd://2.2.2
    ip-192-168-58-220.ec2.internal   Ready    <none>   3h2m   v1.36.2   192.168.58.220   100.55.160.174   Ubuntu 26.04 LTS   7.0.0-1010-aws (amd64)   containerd://2.2.2

@@ -27,12 +27,13 @@ SSH key pairs are needed to log in to an EC2 instance from your local machine. T
 Create access keys
 ~~~~~~~~~~~~~~~~~~
 
-Access keys have to be created and set up to access the various AWS services and resources. Create an access key using the :guilabel:`Access keys` tab on the *Security credentials* page (account details menu > *Security credentials*) of a logged in user.
+Access keys have to be created and set up to access the various AWS services and resources. 
+Create an access key using the **Access keys** tab on the **Security credentials** page of a logged in user. You can find the **Security credentials** page by clicking on your account name in the top right corner of the AWS console and selecting **My Security Credentials**.
 
-#. Select :guilabel:`Create access key`
-#. Choose :guilabel:`Command Line Interface (CLI)` as the *Use case*, provide the required confirmation by ticking the check-box and select :guilabel:`Next`
-#. Optionally set a description tag and select :guilabel:`Create access key`
-#. Save the created *Access key ID* and *Secret access key* 
+#. Select **Create access key**
+#. Under Use case, choose **Command Line Interface (CLI)**. Provide the required confirmation by ticking the check-box, and select **Next**
+#. Optionally set a description tag and select **Create access key**
+#. Save the created **Access key ID** and **Secret access key** 
 
 
 Install AWS CLI
@@ -105,7 +106,7 @@ To see the status of your instance, run:
 
     aws ec2 describe-instances --instance-ids <your instance id>
 
-where <your instance id> is obtained either from the output of the previous ``ec2 run-instances`` command or from the *Instances* tab of your EC2 console. 
+where <your instance id> is obtained either from the output of the previous ``ec2 run-instances`` command or from the **Instances** tab of your EC2 console. 
 
 
 Log in to the instance

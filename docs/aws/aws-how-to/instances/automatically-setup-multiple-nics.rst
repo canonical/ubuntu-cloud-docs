@@ -20,17 +20,15 @@ Ubuntu instances running on AWS can be set up to automatically configure source 
 Enable configuration during instance creation
 ---------------------------------------------
 
-To enable network configuration on additional `events`_, one can add supplemental cloud-init user-data at instance creation time:
+To enable network configuration on additional `events`_, you can add supplemental cloud-init user-data at instance creation time. For example, the following command applies network configuration on every hotplug event:
 
 ..  code-block:: yaml
 
-    #cloud-config
-    # apply network config on every hotplug event
     updates:
       network:
         when: ['hotplug']
 
-To specify multiple events use:
+You can also specify multiple events to configure at once. For example, the following command applies network configuration on every boot and hotplug event:
 
 ..  code-block:: yaml
 
@@ -50,7 +48,7 @@ To enable network configuration on hotplug events for already running instances,
 
 .. code-block::
 
-    $ cloud-init devel hotplug-hook -s net enable
+    cloud-init devel hotplug-hook -s net enable
 
 This is a last resort command for administrators to enable hotplug on running instances.
 The recommended method to enable this is using user-data while creating the instance as described in the previous section. For more information about this command, see `cloud-init's CLI documentation`_.

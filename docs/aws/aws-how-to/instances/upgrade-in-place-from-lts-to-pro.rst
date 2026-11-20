@@ -50,14 +50,15 @@ Upgrade to Ubuntu Pro
 
 Once you have checked all the requirements from the previous section, go to the `EC2 dashboard`_ and **stop all the instances** that you would like to upgrade. Running instances cannot be selected for an upgrade in the `AWS License Manager`.
 
-* Go to :guilabel:`AWS License Manager` > :guilabel:`License type conversion` and select :guilabel:`Create license type conversion` on the right corner.
+* Go to **AWS License Manager** > **License type conversion** and select **Create license type conversion** on the right corner.
 
-* Select :guilabel:`Ubuntu LTS` as the source operating system and from the list of available instances, select all the instances that you want to upgrade.
+* Choose **Ubuntu LTS** as the source operating system and from the list of available instances, select all the instances that you want to upgrade.
 
+* Choose **Ubuntu Pro License Manager Upgrade (x86/Arm)** as the target **License type destination**.
 
-* Choose :guilabel:`Ubuntu Pro License Manager Upgrade (x86/Arm)` as the target :guilabel:`License type destination` (Note: This option upgrades you to Ubuntu Pro as a Marketplace subscription, so you can opt-in later to volume discount and Private Offers. Selecting :guilabel:`Ubuntu Pro` as a destination license will also upgrade you to Ubuntu Pro, but as an EC2 license.
+  This option upgrades you to Ubuntu Pro as a Marketplace subscription, so you can opt in later to volume discounts and Private Offers. Selecting Ubuntu Pro as a destination license will also upgrade you to Ubuntu Pro, but as an EC2 license.
 
-* Select :guilabel:`Convert` after reviewing the selected instances and license type.
+* After reviewing the selected instances and license type, select **Convert**.
 
 The conversion can take a few minutes. Once done the conversion status will show ``Success`` in the `AWS License Manager`_ console. You can also verify the upgrade by logging into one of the instances and running:
 

@@ -19,7 +19,7 @@ Launch a GPU-EC2 instance (G4DN instance family)
 ------------------------------------------------
 
 
-Navigate to the EC2 Web console, select :guilabel:`Launch instance` and make sure you select either Ubuntu 22.04 LTS or Ubuntu 24.04 LTS (free or Pro), and any G4DN instance type family.
+Navigate to the EC2 Web console and select **Launch instance**. Ensure that you select either Ubuntu 22.04 LTS or Ubuntu 24.04 LTS (free or Pro), and any G4DN instance type family.
 
 For this example, we are using 22.04 on ``g4dn.xlarge``, which has 4 vCPUs and 16 GB of RAM. It is powered with an NVIDIA T4 GPU.
 
@@ -32,7 +32,7 @@ Connect to your machine. If you are using Linux (including WSL on Windows) or Ma
 
 .. code::
 
-    ssh -i <<YOUR_KEYPAIR>> ubuntu@<<YOUR_MACHINE_IP>>
+    ssh -i <keypair-name> ubuntu@<machine-ip>
 
 
 If you are connecting from Windows, you can use PuTTY.
@@ -137,7 +137,7 @@ Open a new connection to create the tunnel to the deployment port. You can close
 
 .. code::
 
-    ssh -i <<YOUR_KEYPAIR>> ubuntu@<<YOUR_MACHINE_IP>> -L 30633:localhost:30633
+    ssh -i <keypair-name> ubuntu@<machine-ip> -L 30633:localhost:30633
 
 
 Open your browser with the address ``localhost:30633`` and start using your freshly deployed Jupyter Notebook with CUDA enabled.

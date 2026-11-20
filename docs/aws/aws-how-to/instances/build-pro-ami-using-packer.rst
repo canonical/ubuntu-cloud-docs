@@ -51,7 +51,7 @@ If you skip this step and proceed with the build, you can still subscribe later 
 Create AWS Credentials
 ~~~~~~~~~~~~~~~~~~~~~~
 
-Follow the instructions in the *Programmatic access* section of the `IAM page for creating credentials`_. For a list of the minimal set of permissions needed in your IAM user or role policy, refer to `IAM permissions needed for Packer`_.
+Follow the instructions in the **Programmatic access** section of the `IAM page for creating credentials`_. For a list of the minimal set of permissions needed in your IAM user or role policy, refer to `IAM permissions needed for Packer`_.
 For an overview of AWS credentials used with EC2, see :ref:`ec2-credentials`.
 
 Save your credentials, they should be similar to:
@@ -234,7 +234,7 @@ Once this process finishes, you should get the AMI ID of your newly created gold
 Create a VM using the AMI
 -------------------------
 
-In the EC2 console, navigate to :guilabel:`Launch instance` > :guilabel:`My AMIs` and select the new AMI. Follow the wizard to configure options such as instance type, disk, security groups, roles, key-pair etc. Remember to use an instance type with the same architecture as that of the newly created AMI (AMD64 was used in this guide).
+In the EC2 console, navigate to **Launch instance** > **My AMIs** and select the new AMI. Follow the wizard to configure options such as instance type, disk, security groups, roles, key-pair etc. Remember to use an instance type with the same architecture as that of the newly created AMI (AMD64 was used in this guide).
 
 Log in to the instance and run:
 

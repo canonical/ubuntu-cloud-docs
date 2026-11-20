@@ -82,12 +82,15 @@ You can confirm the status of the nodes on your cluster using:
 
 ..  code-block:: bash
 
-    $ kubectl get nodes
+    kubectl get nodes
+
+You should see an output similar to the following:
+
+..  code-block:: text
 
     NAME                                           STATUS   ROLES    AGE     VERSION
     ip-xxx-xxx-xx-xxx.us-east-1.compute.internal   Ready    <none>   2m45s   v1.35.x
     ip-xxx-xxx-x-xx.us-east-1.compute.internal     Ready    <none>   2m45s   v1.35.x
-
 
 (Optional) Verify Pro subscription
 ----------------------------------
@@ -96,10 +99,14 @@ To check that the deployed nodes have Ubuntu Pro, run:
 
 ..  code-block:: bash
 
-    $ aws --region <region_name> ec2 describe-instances \
+    aws --region <region_name> ec2 describe-instances \
           --filters Name=instance-state-name,Values=running \
           --query 'Reservations[*].Instances[*].[InstanceType, LaunchTime, PlatformDetails]' 
           --output table
+
+You should see an output similar to the following:
+
+.. code-block:: text
 
     ----------------------------------------------------------------
     |                       DescribeInstances                      |
@@ -107,8 +114,6 @@ To check that the deployed nodes have Ubuntu Pro, run:
     |  m5.large |  2024-05-07T19:57:33+00:00  |  Ubuntu Pro Linux  |
     |  m5.large |  2024-05-07T19:57:33+00:00  |  Ubuntu Pro Linux  |
     +-----------+-----------------------------+--------------------+
-
-
 
 
 .. _`Pro subscription`: https://ubuntu.com/pro

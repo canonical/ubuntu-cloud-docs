@@ -4,7 +4,7 @@
 
 .. _cis_post_deploy_hardening:
 
-Post-deployment CIS Hardening for Ubuntu 22.04 on EC2
+Post-deployment CIS hardening for Ubuntu 22.04 on EC2
 =====================================================
 
 This guide explains how to apply **CIS Level 1** controls that are **not**
@@ -47,16 +47,20 @@ Limit SSH log-ins to known users or groups.
 
       sudo nano /etc/ssh/sshd_config
 
-2. Add one (or a mix) of the following:
+2. Add one (or a mix) of the following directives depending on your access requirements:
 
    .. code-block:: none
 
       AllowUsers  ubuntu  $ALLOWED_USER_1 $ALLOWED_USER_2
-      AllowGroups $ALLOWED_GROUP_1 $ALLOWED_GROUP_2
-      # DenyUsers  baduser
-      # DenyGroups oldstaff
 
-   The *first* occurrence of each directive takes precedence over any other occurrence of the same directive.
+   .. code-block:: none
+      
+      AllowGroups $ALLOWED_GROUP_1 $ALLOWED_GROUP_2
+
+   The first occurrence of each directive takes precedence over any other occurrence of the same directive.
+
+   If you need to explicitly block specific accounts or groups instead of or in addition to allow-listing, 
+   you can use the corresponding ``DenyUsers`` or ``DenyGroups`` directives (for example, DenyUsers baduser or DenyGroups oldstaff).
 
 3. Reload SSH
 
@@ -73,18 +77,20 @@ CIS 4.2.8 - Set a default-deny policy
 
 The base CIS hardened image already contains the base chains (ordered lists of ``nftables`` rules for how a connection should be handled), so all you need to do is:
 
-1. Add permit rules for ``loopback``, established traffic, and SSH:
+1. Add permit rules for ``loopback``, established traffic, and SSH
+
+Run the following command to allow ssh connections to be made and established connections to continue: 
 
    .. code-block:: console
 
-      # add the ssh input rules to allow ssh connections to be made
       sudo sed -i '/^[[:space:]]*chain input {/a\
       \        ct state established,related accept\n\
       \        tcp dport 22 ct state new accept'  /etc/inet-filter.rules
 
+Then, run this command to allow HTTP/HTTPS traffic to be established and cloud-init to function properly:
+
    .. code-block:: console
    
-      # add http/s output rules to allow cloud-init to function
       sudo sed -i '/^[[:space:]]*chain output {/a\
       \        tcp dport 80 ct state new accept\n\
       \        tcp dport 443 ct state new accept\n\
@@ -95,12 +101,11 @@ The base CIS hardened image already contains the base chains (ordered lists of `
 
    A **DROP** policy denies all traffic by default unless explicitly allowed by earlier rules.
    An **ACCEPT** policy allows all traffic by default. CIS requires a DROP policy on the input chain.
-   The output chain can remain ACCEPT (allowing all outbound traffic) if you prefer, since inbound
-   traffic is already restricted and the rules above permit necessary outbound connections.
+   The output chain can use an ACCEPT policy if preferred, given that inbound traffic is already restricted and the rules established in the previous step permit the necessary outbound connections. 
 
+   Run the following command to set the default policy on the input chain to DROP:
    .. code-block:: console
 
-      # set the default to drop
       sudo sed -Ei 's/\<policy[[:space:]]+accept;/policy drop;/' /etc/inet-filter.rules
 
 3. Reload from disk (make the above ``config`` changes active) ::
@@ -197,7 +202,7 @@ Ubuntu's default GRUB installation allows anyone to modify kernel parameters on 
 
 
 
-Additional Password-Policy Controls
+Additional password-policy controls
 -----------------------------------
 
 By default EC2 instances use SSH public-key authentication - local passwords are disabled.
@@ -322,7 +327,7 @@ Apply all settings:
    || echo 'enforce_for_root' | sudo tee -a "$FILE" >/dev/null
 
 
-Known Scan Issues
+Known scan issues
 -----------------
 
 The following CIS checks are known to produce false-positive failures in Amazon Inspector.

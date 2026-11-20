@@ -16,7 +16,7 @@ To launch an Ubuntu instance, you can either use the EC2 console or the AWS CLI.
 Using the EC2 Console
 ~~~~~~~~~~~~~~~~~~~~~~
 
-On the EC2 console, launch an instance by selecting an Ubuntu AMI.
+On the EC2 console, launch an instance by selecting an **Ubuntu AMI**.
         
 The recommended hardware requirements to run an Ubuntu desktop is at least 2 CPU cores, 8GB of RAM and 8GB of volume. However, if you intend to install additional applications, you'll need a higher volume size.
 

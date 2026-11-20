@@ -21,7 +21,7 @@ There are three types of credentials that can be used to access different AWS re
 Access keys
 ~~~~~~~~~~~
 
-These keys use symmetric key encryption. They are used for making requests to AWS product REST or query APIs. They can be obtained/regenerated from the :guilabel:`Access keys` tab on the *Security credentials* page (accessible from a logged in user's drop-down menu as shown below):
+These keys use symmetric key encryption. They are used for making requests to AWS product REST or query APIs. They can be obtained or regenerated from the **Access keys** tab on the **Security credentials** page (accessible from a logged in user's drop-down menu as shown below):
 
 .. image:: ec2-credentials-images/security-credentials.jpg
   :align: center
@@ -32,12 +32,13 @@ X.509 certificates
 
 These certificates use public key encryption. They can be used to make secure SOAP protocol requests to AWS service APIs. They are the credentials used when using the command-line EC2 API tools.
 
-X.509 certificates can be obtained/regenerated from the :guilabel:`X.509 Signing certificates` tab on the *Security credentials* page.
+X.509 certificates can be obtained/regenerated from the **X.509 Signing certificates** tab on the *Security credentials* page.
 
 
 Key pairs
 ~~~~~~~~~
-These are SSH key pairs. When you create an instance, Amazon inserts the public key of your SSH key pair into your new instance so that you can log in using your private key. You can add new SSH key pairs through the AWS management console by searching for *Key Pairs*. It should be under *Network & Security* in the navigation pane. Select :guilabel:`Create key pair` and after specifying a name you'll be prompted to download and save your private key. For a more detailed explanation, refer to the AWS documentation for `creating key pairs`_
+These are SSH key pairs. When you create an instance, Amazon inserts the public key of your SSH key pair into your new instance so that you can log in using your private key. You can add new SSH key pairs through the AWS management console by searching for **Key Pairs** under **Network & Security** in the navigation pane. 
+Select **Create key pair**. After specifying a name you'll be prompted to download and save your private key. For a more detailed explanation, refer to the AWS documentation for `creating key pairs`_
 
 EC2 stores the public portion of your key pair, and inserts it into ``/home/ubuntu/.ssh/authorized_keys`` when you instantiate your instance. If you lose your private key, it cannot be downloaded again. You'll need to generate a new key pair.
 
