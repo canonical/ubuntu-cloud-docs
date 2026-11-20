@@ -604,8 +604,7 @@ To check the package count per ecosystem (purl type), run the following command:
 .. code-block:: bash
 
    jq -r '[.packages[].externalRefs[]? | select(.referenceType=="purl")
-           | .referenceLocato
-           r | split("/")[0]] | group_by(.) | map("\(.[0]) \(length)") | .[]' ami-sbom.spdx.json
+           | .referenceLocator | split("/")[0]] | group_by(.) | map("\(.[0]) \(length)") | .[]' ami-sbom.spdx.json
 
 To look up a specific package, run the following command:
 
