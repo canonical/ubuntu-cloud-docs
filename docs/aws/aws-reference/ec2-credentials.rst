@@ -21,7 +21,7 @@ There are three types of credentials that can be used to access different AWS re
 Access keys
 ~~~~~~~~~~~
 
-These keys use symmetric key encryption. They are used for making requests to AWS product REST or query APIs. They can be obtained orregenerated from the **Access keys** tab on the **Security credentials** page (accessible from a logged in user's drop-down menu as shown below):
+These keys use symmetric key encryption. They are used for making requests to AWS product REST or query APIs. They can be obtained or regenerated from the **Access keys** tab on the **Security credentials** page (accessible from a logged in user's drop-down menu as shown below):
 
 .. image:: ec2-credentials-images/security-credentials.jpg
   :align: center

@@ -103,7 +103,7 @@ Then, run this command to allow HTTP/HTTPS traffic to be established and cloud-i
    An **ACCEPT** policy allows all traffic by default. CIS requires a DROP policy on the input chain.
    The output chain can use an ACCEPT policy if preferred, given that inbound traffic is already restricted and the rules established in the previous step permit the necessary outbound connections. 
 
-   Run the following commant to set the default policy on the input chain to DROP:
+   Run the following command to set the default policy on the input chain to DROP:
    .. code-block:: console
 
       sudo sed -Ei 's/\<policy[[:space:]]+accept;/policy drop;/' /etc/inet-filter.rules
