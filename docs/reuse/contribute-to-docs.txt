@@ -38,10 +38,11 @@ As a prerequisite, you'll need ``make`` and ``python3`` installed on your system
 Download and install the docs
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-If you are working with these docs for the first time, you'll need to create a fork of the `ubuntu-cloud-docs`_ repository on your GitHub account and then clone that fork to your local machine. Once cloned, go into the ubuntu-cloud-docs directory and run:
+If you are working with these docs for the first time, you'll need to create a fork of the `ubuntu-cloud-docs`_ repository on your GitHub account and then clone that fork to your local machine. Once cloned, run the following from the root of your clone:
 
 .. code::
 
+	cd docs
 	make install
 
 This creates a virtual environment and installs all the required dependencies. You only have to do this step once and can skip it the next time you want to contribute.

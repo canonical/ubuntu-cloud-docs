@@ -29,7 +29,7 @@ Once cloned, run::
 	make install
 
 This invokes the ``install`` command from the ``Makefile``, which creates a
-virtual environment (``.sphinx/venv``) and installs all the dependencies specified in
+virtual environment (``docs/.venv``) and installs all the dependencies specified in
 ``docs/requirements.txt``.
 
 
@@ -52,8 +52,8 @@ The command:
 * sends a reload page signal to the browser when the documentation is rebuilt
 
 (This is the most convenient way to work on the documentation, but you can still use
-the more standard ``make html``. For instance, ``PROJECT=azure make html`` will create the 
-azure related html pages in _build/azure.)
+the more standard ``make html``. For instance, ``PROJECT=azure make html`` will create the
+azure related html pages in ``docs/_build``.)
 
 
 Check spelling
