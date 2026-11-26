@@ -89,7 +89,8 @@ In this documentation
         :ref:`Check CVE status <check-cve-on-instance>` 
         
     * - **Customizations**
-      - :ref:`Install NVIDIA drivers from proposed pocket <install-proposed-nvidia-drivers-for-testing>` •
+      - :ref:`Install NVIDIA drivers <install-nvidia-drivers-all-clouds>` •
+        :ref:`Install NVIDIA drivers from proposed pocket <install-proposed-nvidia-drivers-for-testing>` •
         :ref:`Confidential computing <confidential-computing>` •
         :ref:`Cloud-init metapackages <cloud-init-metapackages>` 
     

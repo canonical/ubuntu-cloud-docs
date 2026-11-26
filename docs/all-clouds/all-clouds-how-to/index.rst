@@ -25,8 +25,9 @@ A guide to help you install NVIDIA drivers from the 'proposed' pocket for testin
 Ubuntu image specifics
 ----------------------
 
-A guide to help you migrate to a different kernel variant.
+Guides to help you install NVIDIA drivers and migrate kernel variants.
 
+* :ref:`Install NVIDIA drivers <install-nvidia-drivers-all-clouds>`
 * :ref:`Migrate kernel variants <migrate-kernel-variants>`
 
 .. toctree::
@@ -34,5 +35,6 @@ A guide to help you migrate to a different kernel variant.
    :maxdepth: 1
   
    Check CVE status of an image <check-cve-on-instance>
+   Install NVIDIA drivers <install-nvidia-drivers>
    Install NVIDIA drivers from proposed pocket for testing <install-proposed-nvidia-drivers-for-testing>
    Migrate kernel variants <migrate-kernel-variants>
